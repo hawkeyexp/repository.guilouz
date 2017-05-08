@@ -4,6 +4,7 @@
 • Fix CDArts position on Global Search screen
 • Fix esthetic appearance
 • Minor fixes
+• Minor changes
 
 [B]2.2.9[/B]
 • Add support for extendedinfo youtube list
