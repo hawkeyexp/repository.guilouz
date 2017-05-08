@@ -1404,9 +1404,8 @@
 		<value>[COLOR grey]0[/COLOR]</value>
 	</variable>
 	<variable name="MusicInfoTextboxVar">
-		<value condition="String.IsEqual(ListItem.DbType,song)">$INFO[ListItem.Comment,[B]$LOCALIZE[569][/B][CR][COLOR=white],[/COLOR]]</value>
-		<value condition="String.IsEqual(ListItem.DbType,album)">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
-		<value condition="String.IsEqual(ListItem.DbType,artist)">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DbType,song) + !String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment,[B]$LOCALIZE[569][/B][CR][COLOR=white],[/COLOR]]</value>
+		<value condition="[String.IsEqual(ListItem.DbType,album) | String.IsEqual(ListItem.DbType,artist)] + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
 		<value>[COLOR=white]$LOCALIZE[19055][/COLOR]</value>
 	</variable>
 	<variable name="NowPlayingSublabelVar">

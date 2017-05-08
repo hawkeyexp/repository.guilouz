@@ -60,7 +60,7 @@
 						<visible>String.IsEmpty(Control.GetLabel(400))</visible>
 					</control>
 					<control type="group">
-						<visible>String.IsEmpty(Control.GetLabel(400)) + String.IsEmpty(ListItem.Art(fanart))</visible>
+						<visible>String.IsEmpty(ListItem.Art(fanart))</visible>
 						<control type="image">
 							<left>616</left>
 							<top>30</top>
@@ -126,17 +126,6 @@
 							<aspectratio aligny="top">scale</aspectratio>
 							<texture>$INFO[ListItem.Art(fanart)]</texture>
 							<visible>String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))</visible>
-						</control>
-						<control type="group">
-							<visible>String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner)) +!Window.IsVisible(Home)</visible>
-							<control type="textbox">
-								<left>626</left>
-								<top>30</top>
-								<width>1113</width>
-								<height>260</height>
-								<align>justify</align>
-								<label>$LOCALIZE[19055]</label>
-							</control>
 						</control>
 					</control>
 				</control>
