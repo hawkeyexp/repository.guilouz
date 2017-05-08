@@ -248,6 +248,13 @@
 					<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle8),Squares)"/>
 				</include>
 			</control>
+			<include content="ImageWidget">
+				<param name="text_label" value="$LOCALIZE[40194]" />
+				<param name="button_id" value="45000"/>
+				<param name="visible_1" value="false"/>
+				<param name="visible_2" value="false"/>
+				<param name="visible" value="[String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
+			</include>
 			<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 				<param name="scrollbar_id" value="26010"/>
 			</include>
@@ -499,6 +506,13 @@
 					<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle8),Squares)"/>
 				</include>
 			</control>
+			<include content="ImageWidget">
+				<param name="text_label" value="$LOCALIZE[40194]" />
+				<param name="button_id" value="45000"/>
+				<param name="visible_1" value="false"/>
+				<param name="visible_2" value="false"/>
+				<param name="visible" value="[String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
+			</include>
 			<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 				<param name="scrollbar_id" value="25010"/>
 			</include>
@@ -750,6 +764,13 @@
 					<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle8),Squares)"/>
 				</include>
 			</control>
+			<include content="ImageWidget">
+				<param name="text_label" value="$LOCALIZE[40194]" />
+				<param name="button_id" value="45000"/>
+				<param name="visible_1" value="false"/>
+				<param name="visible_2" value="false"/>
+				<param name="visible" value="[String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
+			</include>
 			<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 				<param name="scrollbar_id" value="24010"/>
 			</include>
@@ -1001,6 +1022,13 @@
 					<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle8),Squares)"/>
 				</include>
 			</control>
+			<include content="ImageWidget">
+				<param name="text_label" value="$LOCALIZE[40194]" />
+				<param name="button_id" value="45000"/>
+				<param name="visible_1" value="false"/>
+				<param name="visible_2" value="false"/>
+				<param name="visible" value="[String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
+			</include>
 			<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 				<param name="scrollbar_id" value="23010"/>
 			</include>
@@ -1252,6 +1280,13 @@
 					<param name="visible" value="String.Contains(Container(9000).ListItem.Property(WidgetStyle8),Squares)"/>
 				</include>
 			</control>
+			<include content="ImageWidget">
+				<param name="text_label" value="$LOCALIZE[40194]" />
+				<param name="button_id" value="45000"/>
+				<param name="visible_1" value="false"/>
+				<param name="visible_2" value="false"/>
+				<param name="visible" value="[String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
+			</include>
 			<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 				<param name="scrollbar_id" value="22010"/>
 			</include>

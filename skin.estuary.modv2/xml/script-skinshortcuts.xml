@@ -230,6 +230,12 @@
                     <selected>!String.IsEmpty(Container(211).ListItem.Property(HideSubMenu))</selected>
                     <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget2) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget3) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget4) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget5)</visible>
                 </control>
+                <control type="button" id="993">	
+					<label>$LOCALIZE[40186]</label>
+					<label2>$VAR[passcode]</label2>
+					<include>DefaultSettingButton</include>
+					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                </control>
 				<control type="button" id="312">
 					<include>DefaultSettingButton</include>
 					<label></label>

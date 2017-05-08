@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="passcode">
+		<value condition="[String.IsEmpty(Container(211).ListItem.Property(ParentalControl)) | String.IsEqual(Container(211).ListItem.Property(ParentalControl),no)]">$LOCALIZE[106]</value>
+		<value>$LOCALIZE[107]</value>
+	</variable>
+	<variable name="temp_passcode">
+		<value condition="!String.IsEmpty(Skin.String(temp))">$INFO[Skin.String(temp)]</value>
+		<value>$INFO[Skin.String(passcode)]</value>
+	</variable>
+	<variable name="password_time">
+		<value condition="!String.IsEmpty(Skin.String(password_time))">$INFO[Skin.String(password_time)]</value>
+		<value>5</value>
+	</variable>
+	<variable name="password_notification">
+		<value condition="String.IsEqual(Skin.String(mypassword),Skin.String(passcode))">$LOCALIZE[40183] $VAR[password_time] $LOCALIZE[40184]</value>
+		<value>$LOCALIZE[40185]</value>
+	</variable>
 	<variable name="MainLabelMoviesSetsInfoVar">
 		<value condition="Control.HasFocus(50) + !String.IsEmpty(Container(50).ListItem.Title)">$INFO[Container(50).ListItem.Title]$INFO[Container(50).ListItem.Year, (,)]</value>
 		<value condition="Control.HasFocus(50) + String.IsEmpty(Container(50).ListItem.Title)">$INFO[Container(50).ListItem.Label]$INFO[Container(50).ListItem.Year, (,)]</value>

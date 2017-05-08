@@ -14,6 +14,7 @@
 		<onup>20000</onup>
 		<ondown>20001</ondown>
 		<usecontrolcoords>true</usecontrolcoords>
+		<visible>![String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]</visible>
 	</include>
 	<include name="CategoryLabel">
 		<param name="visible">true</param>

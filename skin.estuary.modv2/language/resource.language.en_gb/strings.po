@@ -1625,3 +1625,63 @@ msgstr ""
 msgctxt "#40182"
 msgid "Extended information"
 msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40183"
+msgid "Correct password ! This menu is now available for"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40184"
+msgid "minute(s)"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40185"
+msgid "Incorrect password ! Please Retry."
+msgstr ""
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40186"
+msgid "Password protection"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40187"
+msgid "Parental control"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40188"
+msgid "Set password protection for menu items"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40189"
+msgid "Password has been successfully set !"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40190"
+msgid "Accessibility duration for menu items"
+msgstr ""
+
+#: /xml/Custom_1133_ParentalControl.xml
+msgctxt "#40191"
+msgid "Password-protected content.[CR]Press [B]Enter[/B] and please enter password."
+msgstr ""
+
+#: /xml/DialogKeyboard.xml
+msgctxt "#40192"
+msgid "Please enter password"
+msgstr ""
+
+#: /xml/Includes_Home.xml
+msgctxt "#40193"
+msgid "Enter password"
+msgstr ""
+
+#: /xml/Includes_Home.xml
+msgctxt "#40194"
+msgid "This content is password protected.[CR]Please enter the password to access it."
+msgstr ""

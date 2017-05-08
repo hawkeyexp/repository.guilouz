@@ -30,10 +30,22 @@
 				<width>1542</width>
 				<height>100</height>
 				<font>font45</font>
-				<label>$PARAM[header_label]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<shadowcolor>black</shadowcolor>
+				<visible>!Window.IsVisible(Custom_1133_ParentalControl.xml) + !Window.IsVisible(SkinSettings.xml)</visible>
+			</control>
+			<control type="label">
+				<centerleft>50%</centerleft>
+				<top>50</top>
+				<width>1542</width>
+				<height>100</height>
+				<font>font45</font>
+				<label>$LOCALIZE[40192]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<shadowcolor>black</shadowcolor>
+				<visible>Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Custom_1133_ParentalControl.xml)</visible>
 			</control>
 			<control type="image">
 				<centerleft>50%</centerleft>

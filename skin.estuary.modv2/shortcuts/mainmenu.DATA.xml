@@ -62,7 +62,7 @@
         <defaultID>music</defaultID>
         <icon>icons/sidemenu/music.png</icon>
         <action>ActivateWindow(Music,musicdb://artists/,return)</action>
-        <visible>!Skin.HasSetting(hide_musiccategory)</visible>
+        <visible>Library.HasContent(music) + !Skin.HasSetting(hide_musiccategory)</visible>
     </shortcut>
     <shortcut>
         <label>2</label>
@@ -70,7 +70,15 @@
         <defaultID>music</defaultID>
         <icon>icons/sidemenu/music.png</icon>
         <action>ActivateWindow(Music,root,return)</action>
-        <visible>Skin.HasSetting(hide_musiccategory)</visible>
+        <visible>Library.HasContent(music) + Skin.HasSetting(hide_musiccategory)</visible>
+    </shortcut>
+    <shortcut>
+        <label>2</label>
+        <label2>Common Shortcut</label2>
+        <defaultID>music</defaultID>
+        <icon>icons/sidemenu/music.png</icon>
+        <action>ActivateWindow(Music,Files,return)</action>
+        <visible>!Library.HasContent(music)</visible>
     </shortcut>
     <shortcut>
         <label>20389</label>
@@ -78,7 +86,7 @@
         <defaultID>musicvideos</defaultID>
         <icon>icons/sidemenu/musicvideos.png</icon>
         <action>ActivateWindow(Videos,videodb://musicvideos/titles/,return)</action>
-        <visible>!Skin.HasSetting(hide_musicvideocategory)</visible>
+        <visible>Library.HasContent(musicvideos) + !Skin.HasSetting(hide_musicvideocategory)</visible>
     </shortcut>
     <shortcut>
         <label>20389</label>
@@ -86,7 +94,15 @@
         <defaultID>musicvideos</defaultID>
         <icon>icons/sidemenu/musicvideos.png</icon>
         <action>ActivateWindow(Videos,musicvideos,return)</action>
-        <visible>Skin.HasSetting(hide_musicvideocategory)</visible>
+        <visible>Library.HasContent(musicvideos) + Skin.HasSetting(hide_musicvideocategory)</visible>
+    </shortcut>
+    <shortcut>
+        <label>20389</label>
+        <label2>Common Shortcut</label2>
+        <defaultID>musicvideos</defaultID>
+        <icon>icons/sidemenu/musicvideos.png</icon>
+        <action>ActivateWindow(videos,files,return)</action>
+        <visible>!Library.HasContent(musicvideos)</visible>
     </shortcut>
     <shortcut>
         <label>19020</label>

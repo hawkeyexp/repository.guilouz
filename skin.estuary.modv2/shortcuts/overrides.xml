@@ -131,6 +131,23 @@
 	<property property="WidgetStyle10" label="40140">Squares</property>
 	
 	<propertySettings toggle="HideSubMenu" buttonID="3129" templateonly="True" />
+	
+	<propertySettings property="ParentalControl" buttonID="993" title="$LOCALIZE[40186]" showNone="False" imageBrowse="False" />
+	<property property="ParentalControl" label="$LOCALIZE[106]" icon="icons/parental-control/lock_no.png">No</property>
+	<property property="ParentalControl" label="$LOCALIZE[107]" icon="icons/parental-control/lock_yes.png">Yes</property>
+	<alwaysReset>True</alwaysReset>
+	
+	<override action="globaloverride">
+		<condition>String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))</condition>
+		<action>Skin.SetString(dialog_action,::ACTION::)</action>
+		<action>ActivateWindow(1133)</action> 
+		<action>AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],silent)</action>	
+	</override>
+	<override action="globaloverride">
+		<condition>[String.IsEmpty(Container(9000).ListItem.Property(ParentalControl)) | String.IsEqual(Container(9000).ListItem.Property(ParentalControl),no)] | String.IsEqual(Skin.String(mypassword),Skin.String(passcode))</condition>
+		<action>AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],silent)</action>
+		<action>::ACTION::</action>
+	</override>
     
     <!-- Groupings -->
     <groupings>

@@ -1,4 +1,5 @@
-[B]2.2.10[/B]
+[B]2.3.0[/B]
+• Add parental control to protect home menu items and widgets with password
 • Add support for German language (Thanks to rainman74)
 • Fix CDArts position on Global Search screen
 • Fix esthetic appearance
