@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="AlbumsCount">
+		<value condition="Integer.IsLessOrEqual(Window(Home).Property(SkinHelper.ListItem.AlbumCount),1)">$INFO[Window(Home).Property(SkinHelper.ListItem.AlbumCount),, $LOCALIZE[36918]]</value>
+		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.AlbumCount),, $LOCALIZE[36919]]</value>
+	</variable>
 	<variable name="passcode">
 		<value condition="[String.IsEmpty(Container(211).ListItem.Property(ParentalControl)) | String.IsEqual(Container(211).ListItem.Property(ParentalControl),no)]">$LOCALIZE[106]</value>
 		<value>$LOCALIZE[107]</value>
@@ -1401,8 +1405,9 @@
 	</variable>
 	<variable name="MusicInfoTextboxVar">
 		<value condition="String.IsEqual(ListItem.DbType,song)">$INFO[ListItem.Comment,[B]$LOCALIZE[569][/B][CR][COLOR=white],[/COLOR]]</value>
-		<value condition="String.IsEqual(ListItem.DbType,album)">$INFO[ListItem.Property(Album_Description),[COLOR=white],[/COLOR]]</value>
-		<value condition="String.IsEqual(ListItem.DbType,artist)">$INFO[ListItem.Property(Artist_Description),[COLOR=white],[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DbType,album)">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DbType,artist)">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
+		<value>[COLOR=white]$LOCALIZE[19055][/COLOR]</value>
 	</variable>
 	<variable name="NowPlayingSublabelVar">
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TvShowTitle]</value>

@@ -1,3 +1,7 @@
+[B]2.3.1[/B]
+• Add albums count on artists dialog info
+• Fix artists/albums plots on music dialog info
+
 [B]2.3.0[/B]
 • Add parental control to protect home menu items and widgets with password
 • Add support for German language (Thanks to rainman74)
