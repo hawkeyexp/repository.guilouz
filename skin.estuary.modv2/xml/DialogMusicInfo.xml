@@ -128,7 +128,7 @@
 							<visible>String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))</visible>
 						</control>
 						<control type="group">
-							<visible>String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))</visible>
+							<visible>String.IsEmpty(ListItem.Art(banner)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner)) +!Window.IsVisible(Home)</visible>
 							<control type="textbox">
 								<left>626</left>
 								<top>30</top>
