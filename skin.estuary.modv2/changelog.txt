@@ -4,6 +4,7 @@
 • Changes on PVR
 • Fix artists/albums plots on music dialog info
 • Fix on PVR
+• Fix caterories labels for personalized widgets
 
 [B]2.3.0[/B]
 • Add parental control to protect home menu items and widgets with password
