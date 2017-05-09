@@ -1685,3 +1685,13 @@ msgstr ""
 msgctxt "#40194"
 msgid "This content is password protected.[CR]Please enter the password to access it."
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40195"
+msgid "Enable Next Up popup for Live TV"
+msgstr ""
+
+#: /xml/Custom_1134_PVRNextUp.xml
+msgctxt "#40196"
+msgid "To be continued ..."
+msgstr ""
