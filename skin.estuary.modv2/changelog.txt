@@ -1,6 +1,7 @@
 [B]2.3.1[/B]
 • Add Next Up popup for Live TV
 • Add albums count on artists dialog info
+• Changes on PVR
 • Fix artists/albums plots on music dialog info
 • Fix on PVR
 
