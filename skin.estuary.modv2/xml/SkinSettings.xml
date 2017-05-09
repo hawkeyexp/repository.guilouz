@@ -75,14 +75,20 @@
 					<selected>!Skin.HasSetting(show_discart)</selected>
 					<onclick>Skin.ToggleSetting(show_discart)</onclick>
 				</control>
+				<control type="radiobutton" id="103">
+					<label>$LOCALIZE[40195]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(disable_PVRNextUp)</selected>
+					<onclick>Skin.ToggleSetting(disable_PVRNextUp)</onclick>
+				</control>
 				<control type="image" id="1001">
 					<height>3</height>
 					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
 				</control>
-				<control type="button" id="103">
+				<control type="button" id="104">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">

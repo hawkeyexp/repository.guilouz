@@ -68,7 +68,7 @@
 							<visible>!String.IsEmpty(ListItem.Plot) + Control.HasFocus(11)</visible>
 							<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 							<left>785</left>
-							<top>-130</top>
+							<top>-80</top>
 							<control type="image">
 								<left>0</left>
 								<top>0</top>
