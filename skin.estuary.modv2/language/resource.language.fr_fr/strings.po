@@ -1381,10 +1381,7 @@ msgctxt "#40133"
 msgid "Enable item"
 msgstr "Activer l'élément"
 
-#: /extras/script.skinshortcuts/overrides.xml
-msgctxt "#40134"
-msgid "Personalized widgets"
-msgstr "Widgets personnalisés"
+#: Empty string 40134
 
 #: /extras/script.skinshortcuts/overrides.xml
 msgctxt "#40135"

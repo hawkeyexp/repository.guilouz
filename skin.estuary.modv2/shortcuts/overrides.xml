@@ -41,7 +41,11 @@
     <widget label="3" icon="icons/sidemenu/videos.png">VideoWidget</widget>
     <widget label="10134" icon="icons/sidemenu/favourites.png">FavoritesWidget</widget>
     <widget label="8" icon="icons/sidemenu/weather.png">WeatherWidget</widget>
-    <widget label="40134" icon="DefaultAddonLookAndFeel.png">PersonalWidget</widget>
+    <widget label="40166" icon="DefaultAddonLookAndFeel.png">PersonalWidget</widget>
+    <widget label="40167" icon="DefaultAddonLookAndFeel.png">PersonalWidget2</widget>
+    <widget label="40168" icon="DefaultAddonLookAndFeel.png">PersonalWidget3</widget>
+    <widget label="40169" icon="DefaultAddonLookAndFeel.png">PersonalWidget4</widget>
+    <widget label="40121" icon="DefaultAddonLookAndFeel.png">PersonalWidget5</widget>
     
     <!-- Default Backgrounds -->
     <backgrounddefault labelID="disc">special://skin/extras/home-images/disc.jpg</backgrounddefault>
@@ -119,16 +123,6 @@
 	<property property="WidgetStyle8" label="40138">Posters</property>
 	<property property="WidgetStyle8" label="40139">Thumbs</property>
 	<property property="WidgetStyle8" label="40140">Squares</property>
-	<!-- Widget Style 9 -->
-	<propertySettings property="WidgetStyle9" buttonID="14831" showNone="False" title="$LOCALIZE[40137] 9" />
-	<property property="WidgetStyle9" label="40138">Posters</property>
-	<property property="WidgetStyle9" label="40139">Thumbs</property>
-	<property property="WidgetStyle9" label="40140">Squares</property>
-	<!-- Widget Style 10 -->
-	<propertySettings property="WidgetStyle10" buttonID="14841" showNone="False" title="$LOCALIZE[40137] 10" />
-	<property property="WidgetStyle10" label="40138">Posters</property>
-	<property property="WidgetStyle10" label="40139">Thumbs</property>
-	<property property="WidgetStyle10" label="40140">Squares</property>
 	
 	<propertySettings toggle="HideSubMenu" buttonID="3129" templateonly="True" />
 	
