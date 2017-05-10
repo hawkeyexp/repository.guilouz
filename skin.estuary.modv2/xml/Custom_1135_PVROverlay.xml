@@ -4,8 +4,8 @@
 	<depth>DepthOSD</depth>
 	<controls>
 		<control type="group">
-			<include>Animation_DialogPopupOpenClose</include>
-			<bottom>60</bottom>
+			<include>Animation_BottomSlide</include>
+			<bottom>-20</bottom>
 			<height>380</height>
 			<control type="image">
 				<left>0</left>
@@ -45,7 +45,7 @@
 				<top>20</top>
 				<right>30</right>
 				<height>25</height>
-				<label>$INFO[VideoPlayer.Title]$INFO[VideoPlayer.EpisodeName, (,)]</label>
+				<label>[B]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.EpisodeName, (,)][/B]</label>
 				<aligny>center</aligny>
 				<font>font30</font>
 			</control>

@@ -2,7 +2,7 @@
 • Add Next Up popup for Live TV
 • Add albums count on artists dialog info
 • Add possibility to disable 'Settings' shortcut widget
-• Changes on PVR
+• Add PVR overlay when switching channels
 • Fix artists/albums plots on music dialog info
 • Fix on PVR
 • Fix caterories labels for personalized widgets
