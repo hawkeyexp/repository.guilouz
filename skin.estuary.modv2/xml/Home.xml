@@ -1022,7 +1022,7 @@
 				</control>
 				<control type="group" id="18000">
 					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HideMainMenuWithWidgets)">Conditional</animation>
-					<visible>Control.HasFocus(802)</visible>
+					<visible>Control.HasFocus(802) + !Skin.HasSetting(enable_settingswidget)</visible>
 					<include>OpenClose_Right</include>
 					<include>Visible_Right</include>
 					<include content="Visible_Right_Delayed">

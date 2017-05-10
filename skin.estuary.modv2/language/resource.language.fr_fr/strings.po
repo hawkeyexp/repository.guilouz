@@ -1692,3 +1692,8 @@ msgstr "Activer les notifications des programmes TV suivants"
 msgctxt "#40196"
 msgid "To be continued ..."
 msgstr "A suivre ..."
+
+#: /xml/SkinSettings.xml
+msgctxt "#40197"
+msgid "Show 'Settings' shortcut widget"
+msgstr "Afficher le widget du raccourci 'Paramètres'"

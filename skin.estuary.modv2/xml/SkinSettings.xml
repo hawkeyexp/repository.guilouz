@@ -996,6 +996,21 @@
 					<onclick>Skin.ToggleSetting(greyedout_watched_home)</onclick>
 					<selected>Skin.HasSetting(greyedout_watched_home)</selected>
 				</control>
+				<control type="radiobutton" id="10020">
+					<label>$LOCALIZE[40197]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(enable_settingswidget)</onclick>
+					<selected>!Skin.HasSetting(enable_settingswidget)</selected>
+				</control>
+				<control type="image" id="10021">
+					<height>3</height>
+					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
+				</control>
+				<control type="button" id="10022">
+					<label>$LOCALIZE[10041]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HideMainMenuWithWidgets)|Skin.Reset(enable_power_background)|Skin.Reset(power_background)|Skin.Reset(enable_settings_background)|Skin.Reset(settings_background)|Skin.Reset(enable_search_background)|Skin.Reset(search_background)|Skin.Reset(widgetnumber)|Skin.Reset(UseSmallerCategories)|Skin.Reset(HomeClearLogo)|Skin.Reset(enable_HomeDiscArt)|Skin.Reset(enable_HomeDiscArtOverlay)|Skin.Reset(HomeBanner)|Skin.Reset(greyedout_watched_home)|Skin.Reset(enable_settingswidget))</onclick>
+				</control>
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
