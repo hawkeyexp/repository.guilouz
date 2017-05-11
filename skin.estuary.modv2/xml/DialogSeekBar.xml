@@ -24,6 +24,7 @@
 					<width>110%</width>
 					<height>250</height>
 					<texture flipy="true">frame/InfoBar.png</texture>
+					<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 				</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
@@ -134,6 +135,7 @@
 				<shadowcolor>black</shadowcolor>
 				<visible>!Player.ChannelPreviewActive</visible>
 				<animation effect="fade" start="0" end="100" time="200" delay="1000">Visible</animation>
+				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 			</control>
 			<control type="label" id="40000">
 				<centerleft>50%</centerleft>
@@ -145,6 +147,7 @@
 				<label>$VAR[SeekLabel]</label>
 				<textcolor>$VAR[SkinColorVar]</textcolor>
 				<shadowcolor>black</shadowcolor>
+				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 			</control>
 			<control type="group" id="6000">
 				<top>-5</top>
@@ -199,6 +202,7 @@
 				<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
 				<midtexture>colors/white50.png</midtexture>
 				<visible>!Player.ChannelPreviewActive</visible>
+				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 			</control>
 			<control type="progress">
 				<left>0</left>
@@ -208,6 +212,7 @@
 				<info>Player.Progress</info>
 				<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
 				<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white.png</midtexture>
+				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 			</control>
 			<control type="slider" id="401">
 				<left>5</left>

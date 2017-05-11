@@ -37,6 +37,7 @@
 			<control type="group">
 				<visible>!Window.IsActive(pvrosdchannels) + !Window.IsActive(pvrchannelguide)</visible>
 				<visible>String.IsEmpty(Player.Art(clearlogo))</visible>
+				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 				<animation effect="fade" time="150">VisibleChange</animation>
 				<left>30</left>
 				<right>300</right>

@@ -5,7 +5,7 @@
 	<controls>
 		<control type="group">
 			<include>Animation_BottomSlide</include>
-			<bottom>-20</bottom>
+			<bottom>-140</bottom>
 			<height>380</height>
 			<control type="image">
 				<left>0</left>
