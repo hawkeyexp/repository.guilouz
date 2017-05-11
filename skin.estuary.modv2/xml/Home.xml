@@ -492,12 +492,12 @@
 						<pagecontrol>12010</pagecontrol>
 						<control type="grouplist" id="12855">
 							<height>390</height>
-							<left>-10</left>
+							<left>50</left>
 							<right>0</right>
 							<top>36</top>
 							<orientation>horizontal</orientation>
 							<visible>PVR.IsRecordingTV | PVR.HasNonRecordingTVTimer</visible>
-							<align>center</align>
+							<align>left</align>
 							<control type="group">
 								<width>674</width>
 								<visible>PVR.IsRecordingTV</visible>
@@ -586,14 +586,13 @@
 						<pagecontrol>13010</pagecontrol>
 						<control type="grouplist" id="13855">
 							<height>390</height>
-							<left>25</left>
+							<left>50</left>
 							<top>36</top>
 							<orientation>horizontal</orientation>
-							<align>right</align>
-							<width>1360</width>
+							<align>left</align>
 							<visible>PVR.IsRecordingRadio | PVR.HasNonRecordingRadioTimer</visible>
 							<control type="group">
-								<width>680</width>
+								<width>674</width>
 								<visible>PVR.IsRecordingRadio</visible>
 								<include content="PVRWidget"  condition="!Skin.HasSetting(hide_nowrecordingradio)">
 									<param name="icon" value="$INFO[PVR.RadioNowRecordingChannelIcon]" />
@@ -604,7 +603,7 @@
 							</control>
 							<control type="group">
 								<visible>PVR.HasNonRecordingRadioTimer</visible>
-								<width>680</width>
+								<width>674</width>
 								<include content="PVRWidget" condition="!Skin.HasSetting(hide_nextrecordingradio)">
 									<param name="icon" value="$INFO[PVR.RadioNextRecordingChannelIcon]" />
 									<param name="header" value="$LOCALIZE[19157]" />

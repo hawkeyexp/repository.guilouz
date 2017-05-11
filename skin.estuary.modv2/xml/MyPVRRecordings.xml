@@ -118,7 +118,8 @@
 						<width>560</width>
 						<height>262</height>
 						<wrapmultiline>true</wrapmultiline>
-						<label>$INFO[ListItem.Duration,$LOCALIZE[180]: ][CR]$INFO[ListItem.Date,$LOCALIZE[552]: ]</label>
+						<label>$INFO[ListItem.Duration,$LOCALIZE[180] : [COLOR white],[/COLOR]][CR]$INFO[ListItem.Date,$LOCALIZE[552] : [COLOR white],[/COLOR]]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
 					<control type="label">
 						<left>170</left>

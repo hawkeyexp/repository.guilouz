@@ -50,7 +50,7 @@
 		</control>
 		<control type="label">
 			<left>209</left>
-			<top>127</top>
+			<top>117</top>
 			<height>25</height>
 			<width>430</width>
 			<label>$PARAM[header]</label>
@@ -61,10 +61,21 @@
 		</control>
 		<control type="label">
 			<left>209</left>
-			<top>182</top>
-			<height>105</height>
+			<top>165</top>
+			<height>20</height>
 			<width>430</width>
-			<label>$PARAM[label1][CR]$PARAM[label2]</label>
+			<label>$PARAM[label1]</label>
+			<font>font12</font>
+			<textcolor>$VAR[SkinColorVar]</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<scroll>true</scroll>
+		</control>
+		<control type="label">
+			<left>209</left>
+			<top>205</top>
+			<height>50</height>
+			<width>430</width>
+			<label>$PARAM[label2]</label>
 			<font>font12</font>
 			<shadowcolor>black</shadowcolor>
 			<scroll>true</scroll>

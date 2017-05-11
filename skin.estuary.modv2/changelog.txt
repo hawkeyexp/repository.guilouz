@@ -1,3 +1,6 @@
+[B]2.3.2[/B]
+• Fix on PVR/Radio widgets
+
 [B]2.3.1[/B]
 • Add Next Up popup for Live TV
 • Add albums count on artists dialog info
