@@ -2,7 +2,7 @@
 <window type="dialog" id="1134">
 	<onload>Dialog.Close(fullscreeninfo,true)</onload>
 	<visible>Window.IsActive(fullscreenvideo) + VideoPlayer.Content(livetv) + !Skin.HasSetting(disable_PVRNextUp) + [Integer.IsGreater(Player.Duration(mm),05) | Integer.IsGreater(Player.Duration(hh),00)]</visible>
-	<visible>!Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRChannelGuide.xml) + !Window.IsVisible(DialogFullScreenInfo.xml)</visible>
+	<visible>!Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRChannelGuide.xml) + !Window.IsVisible(DialogFullScreenInfo.xml) + !Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(videoosd) + Window.IsVisible(fullscreenvideo) + Integer.IsEqual(Player.TimeRemaining(hh),00) + Integer.IsEqual(Player.TimeRemaining(mm),00) + Integer.IsLessOrEqual(Player.TimeRemaining(ss),30)</visible>
