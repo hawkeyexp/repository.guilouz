@@ -49,23 +49,12 @@
 							</control>
 						</rulerlayout>
 						<channellayout height="62" width="350">
-							<control type="label">
-								<left>2</left>
-								<top>-2</top>
-								<width>75</width>
-								<height>60</height>
-								<font>font32_title</font>
-								<label>$INFO[ListItem.ChannelNumberLabel]</label>
-								<align>center</align>
-								<aligny>center</aligny>
-								<visible>String.IsEqual(Control.GetLabel(45678),fallback.png)</visible>
-							</control>
-							<control type="image" id="45678">
-								<left>2</left>
+							<control type="image">
+								<left>7</left>
 								<top>3</top>
-								<width>75</width>
+								<width>65</width>
 								<height>56</height>
-								<texture fallback="fallback.png">$INFO[ListItem.Icon]</texture>
+								<texture fallback="DefaultTVGuide.png">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
 							</control>
 							<control type="label" id="1">
@@ -80,24 +69,12 @@
 							</control>
 						</channellayout>
 						<focusedchannellayout height="62" width="350">
-							<control type="label">
-								<left>2</left>
-								<top>-2</top>
-								<width>75</width>
-								<height>60</height>
-								<font>font32_title</font>
-								<label>$INFO[ListItem.ChannelNumberLabel]</label>
-								<textcolor>$VAR[SkinColorVar]</textcolor>
-								<align>center</align>
-								<aligny>center</aligny>
-								<visible>String.IsEqual(Control.GetLabel(45678),fallback.png)</visible>
-							</control>
-							<control type="image" id="45678">
-								<left>2</left>
+							<control type="image">
+								<left>7</left>
 								<top>3</top>
-								<width>75</width>
+								<width>65</width>
 								<height>56</height>
-								<texture fallback="fallback.png">$INFO[ListItem.Icon]</texture>
+								<texture fallback="DefaultTVGuide.png">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
 							</control>
 							<control type="label" id="1">
@@ -383,7 +360,7 @@
 						<height>200</height>
 						<aspectratio align="right">keep</aspectratio>
 						<fadetime>400</fadetime>
-						<texture>$INFO[ListItem.Icon]</texture>
+						<texture fallback="DefaultTVGuide.png">$INFO[ListItem.Icon]</texture>
 						<visible>!Player.HasVideo</visible>
 					</control>
 					<control type="label">

@@ -136,6 +136,7 @@
 					<height>250</height>
 					<align>justify</align>
 					<label>$VAR[MusicInfoTextboxVar]</label>
+					<wrapmultiline>true</wrapmultiline>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<autoscroll delay="7000" time="4500" repeat="7000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
