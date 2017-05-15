@@ -2,6 +2,7 @@
 • Add VP9 video codec icon
 • Add rewind and forward OSD buttons for PVR TimeShift
 • Fix on PVR/Radio widgets
+• Minor changes
 
 [B]2.3.1[/B]
 • Add Next Up popup for Live TV
