@@ -62,11 +62,24 @@
 						<label>$VAR[PlotSpoilerVar][CR][CR]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+						<visible>[String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)]</visible>
+					</control>
+					<control type="textbox">
+						<left>30</left>
+						<top>240</top>
+						<width>537</width>
+						<bottom>225</bottom>
+						<align>justify</align>
+						<visible>!ListItem.IsCollection</visible>
+						<label>$VAR[PlotSpoilerVar][CR][CR]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+						<visible>![String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)]</visible>
 					</control>
 					<control type="textbox">
 						<left>30</left>
 						<top>360</top>
-						<width>535</width>
+						<width>537</width>
 						<height>413</height>
 						<align>center</align>
 						<aligny>center</aligny>
@@ -74,6 +87,16 @@
 						<textcolor>80FFFFFF</textcolor>
 						<label>$LOCALIZE[19055]</label>
 						<visible>String.IsEmpty(Listitem.Plot) + String.IsEmpty(Listitem.Tagline) + !ListItem.IsCollection + !ListItem.IsParentFolder</visible>
+					</control>
+					<control type="image">
+						<depth>DepthContentPopout</depth>
+						<left>30</left>
+						<bottom>110</bottom>
+						<width>537</width>
+						<height>99</height>
+						<texture background="true">$VAR[BannerVar]</texture>
+						<bordertexture>colors/white.png</bordertexture>
+						<bordersize>1</bordersize>
 					</control>
 					<control type="group">
 						<left>20</left>

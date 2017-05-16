@@ -11,13 +11,6 @@
 		<control type="group">
 			<bottom>0</bottom>
 			<height>190</height>
-			<!--<control type="image">
-				<top>50</top>
-				<left>-40</left>
-				<width>120%</width>
-				<height>150</height>
-				<texture flipy="true">frame/osdfade.png</texture>
-			</control>-->
 			<control type="image">
 					<left>0</left>
 					<bottom>0</bottom>
