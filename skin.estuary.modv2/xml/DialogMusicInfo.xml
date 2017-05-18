@@ -139,6 +139,19 @@
 					<wrapmultiline>true</wrapmultiline>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<autoscroll delay="7000" time="4500" repeat="7000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+				</control>
+				<control type="textbox" id="400">
+					<left>626</left>
+					<top>485</top>
+					<width>1113</width>
+					<height>258</height>
+					<align>justify</align>
+					<label>$VAR[MusicInfoTextboxVar]</label>
+					<wrapmultiline>true</wrapmultiline>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<autoscroll delay="7000" time="4500" repeat="7000">Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>String.IsEqual(Skin.Font, Arial)</visible>
 				</control>
 				<control type="panel" id="50">
 					<left>586</left>
@@ -259,6 +272,18 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
+							<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+						</control>
+						<control type="textbox">
+							<left>28</left>
+							<top>212</top>
+							<width>196</width>
+							<height>64</height>
+							<font>fontplot</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>String.IsEqual(Skin.Font, Arial)</visible>
 						</control>
 					</itemlayout>
 					<focusedlayout height="360" width="235.3" condition="Container.Content(artists)">
@@ -291,6 +316,19 @@
 								<aligny>center</aligny>
 								<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
 								<label>$INFO[ListItem.Label]</label>
+								<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+							</control>
+							<control type="textbox">
+								<left>28</left>
+								<top>212</top>
+								<width>196</width>
+								<height>64</height>
+								<font>fontplot</font>
+								<align>center</align>
+								<aligny>center</aligny>
+								<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>String.IsEqual(Skin.Font, Arial)</visible>
 							</control>
 							<control type="image">
 								<left>16</left>

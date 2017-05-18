@@ -2,6 +2,8 @@
 • Add VP9 video codec icon
 • Add rewind and forward OSD buttons for PVR TimeShift
 • Fix on PVR/Radio widgets
+• Fix duration flag icon with Global Search
+• Many fixes for Arial font
 • Minor changes
 • Minor fixes
 

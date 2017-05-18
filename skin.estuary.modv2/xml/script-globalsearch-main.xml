@@ -1126,25 +1126,25 @@
 						<param name="visible" value="!String.IsEmpty(Container(111).ListItem.AudioChannels)" />
 					</include>
 					<include content="MediaFlag">
-						<param name="width" value="20" />
+						<param name="width" value="0" />
 					</include>
 					<control type="group">
-						<width>216</width>
+						<width>176</width>
 						<visible>!String.IsEmpty(Container(111).ListItem.Duration)</visible>
 						<control type="label">
-							<width>149</width>
+							<width>119</width>
 							<centertop>34%</centertop>
 							<height>50</height>
-							<posx>59</posx>
+							<posx>54</posx>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font_flag</font>
-							<label>$INFO[Container(111).ListItem.Duration]</label>
+							<label>$VAR[DurationVar]</label>
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
 						<include content="MediaFlag">
 							<param name="texture" value="flags/time.png" />
-							<param name="width" value="216" />
+							<param name="width" value="176" />
 						</include>
 					</control>
 					<control type="group">
@@ -1205,25 +1205,25 @@
 						<param name="visible" value="!String.IsEmpty(Container(141).ListItem.AudioChannels)" />
 					</include>
 					<include content="MediaFlag">
-						<param name="width" value="20" />
+						<param name="width" value="0" />
 					</include>
 					<control type="group">
-						<width>216</width>
+						<width>176</width>
 						<visible>!String.IsEmpty(Container(141).ListItem.Duration)</visible>
 						<control type="label">
-							<width>149</width>
+							<width>119</width>
 							<centertop>34%</centertop>
 							<height>50</height>
-							<posx>59</posx>
+							<posx>54</posx>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font_flag</font>
-							<label>$INFO[Container(141).ListItem.Duration]</label>
+							<label>$VAR[DurationVar]</label>
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
 						<include content="MediaFlag">
 							<param name="texture" value="flags/time.png" />
-							<param name="width" value="216" />
+							<param name="width" value="176" />
 						</include>
 					</control>
 					<control type="group">
@@ -1284,25 +1284,25 @@
 						<param name="visible" value="!String.IsEmpty(Container(151).ListItem.AudioChannels)" />
 					</include>
 					<include content="MediaFlag">
-						<param name="width" value="20" />
+						<param name="width" value="0" />
 					</include>
 					<control type="group">
-						<width>216</width>
+						<width>176</width>
 						<visible>!String.IsEmpty(Container(151).ListItem.Duration)</visible>
 						<control type="label">
-							<width>149</width>
+							<width>119</width>
 							<centertop>34%</centertop>
 							<height>50</height>
-							<posx>59</posx>
+							<posx>54</posx>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font_flag</font>
-							<label>$INFO[Container(151).ListItem.Duration]</label>
+							<label>$VAR[DurationVar]</label>
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
 						<include content="MediaFlag">
 							<param name="texture" value="flags/time.png" />
-							<param name="width" value="216" />
+							<param name="width" value="176" />
 						</include>
 					</control>
 					<control type="group">
@@ -1363,25 +1363,25 @@
 						<param name="visible" value="!String.IsEmpty(Container(201).ListItem.AudioChannels)" />
 					</include>
 					<include content="MediaFlag">
-						<param name="width" value="20" />
+						<param name="width" value="0" />
 					</include>
 					<control type="group">
-						<width>216</width>
+						<width>176</width>
 						<visible>!String.IsEmpty(Container(201).ListItem.Duration)</visible>
 						<control type="label">
-							<width>149</width>
+							<width>119</width>
 							<centertop>34%</centertop>
 							<height>50</height>
-							<posx>59</posx>
+							<posx>54</posx>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font_flag</font>
-							<label>$INFO[Container(201).ListItem.Duration]</label>
+							<label>$VAR[DurationVar]</label>
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
 						<include content="MediaFlag">
 							<param name="texture" value="flags/time.png" />
-							<param name="width" value="216" />
+							<param name="width" value="176" />
 						</include>
 					</control>
 					<control type="group">
@@ -1442,25 +1442,25 @@
 						<param name="visible" value="!String.IsEmpty(Container(211).ListItem.AudioChannels)" />
 					</include>
 					<include content="MediaFlag">
-						<param name="width" value="20" />
+						<param name="width" value="0" />
 					</include>
 					<control type="group">
-						<width>216</width>
+						<width>176</width>
 						<visible>!String.IsEmpty(Container(211).ListItem.Duration)</visible>
 						<control type="label">
-							<width>149</width>
+							<width>119</width>
 							<centertop>34%</centertop>
 							<height>50</height>
-							<posx>59</posx>
+							<posx>54</posx>
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>font_flag</font>
-							<label>$INFO[Container(211).ListItem.Duration]</label>
+							<label>$VAR[DurationVar]</label>
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
 						<include content="MediaFlag">
 							<param name="texture" value="flags/time.png" />
-							<param name="width" value="216" />
+							<param name="width" value="176" />
 						</include>
 					</control>
 					<control type="group">

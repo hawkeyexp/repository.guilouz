@@ -390,6 +390,17 @@
 						<align>justify</align>
 						<label>$INFO[ListItem.Plot]</label>
 						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+					</control>
+					<control type="textbox">
+						<left>300</left>
+						<top>38</top>
+						<right>30</right>
+						<height>165</height>
+						<align>justify</align>
+						<label>$INFO[ListItem.Plot]</label>
+						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+						<visible>String.IsEqual(Skin.Font, Arial)</visible>
 					</control>
 				</control>
 			</control>

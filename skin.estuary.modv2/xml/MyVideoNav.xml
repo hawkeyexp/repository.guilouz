@@ -34,7 +34,7 @@
 			<control type="group">
 				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Left</include>
-				<visible>Control.IsVisible(50) | Control.Isvisible(54) | Control.IsVisible(505) | [Control.IsVisible(501) + String.IsEqual(Skin.AspectRatio,21:9)]</visible>
+				<visible>Control.IsVisible(50) | Control.IsVisible(54) | Control.IsVisible(505) | [Control.IsVisible(501) + String.IsEqual(Skin.AspectRatio,21:9)]</visible>
 				<include>Visible_Left</include>
 				<top>40</top>
 				<include content="ContentPanel">
@@ -63,6 +63,7 @@
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 						<visible>[String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)]</visible>
+						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
 					</control>
 					<control type="textbox">
 						<left>30</left>
@@ -75,6 +76,33 @@
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 						<visible>![String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)]</visible>
+						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+					</control>
+					<control type="textbox">
+						<left>30</left>
+						<top>240</top>
+						<width>537</width>
+						<bottom>110</bottom>
+						<align>justify</align>
+						<visible>!ListItem.IsCollection</visible>
+						<label>$VAR[PlotSpoilerVar][CR][CR]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+						<visible>[String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)]</visible>
+						<visible>String.IsEqual(Skin.Font, Arial)</visible>
+					</control>
+					<control type="textbox">
+						<left>30</left>
+						<top>240</top>
+						<width>537</width>
+						<bottom>232</bottom>
+						<align>justify</align>
+						<visible>!ListItem.IsCollection</visible>
+						<label>$VAR[PlotSpoilerVar][CR][CR]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+						<visible>![String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)]</visible>
+						<visible>String.IsEqual(Skin.Font, Arial)</visible>
 					</control>
 					<control type="textbox">
 						<left>30</left>
@@ -111,6 +139,18 @@
 							<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
+							<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+						</control>
+						<control type="textbox">
+							<left>10</left>
+							<top>0</top>
+							<width>537</width>
+							<bottom>295</bottom>
+							<align>justify</align>
+							<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
+							<visible>String.IsEqual(Skin.Font, Arial)</visible>
 						</control>
 						<control type="textbox">
 							<left>10</left>
@@ -266,6 +306,7 @@
 				<top>0</top>
 				<height>100%</height>
 				<visible>Control.IsVisible(51) + ListItem.IsCollection</visible>
+				<include>OpenClose_Right</include>
 				<control type="textbox">
 					<left>645</left>
 					<top>673</top>
@@ -276,6 +317,19 @@
 					<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+				</control>
+				<control type="textbox">
+					<left>645</left>
+					<top>673</top>
+					<height>198</height>
+					<right>50</right>
+					<align>justify</align>
+					<autoscroll time="8000" delay="5000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+					<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+					<shadowcolor>text_shadow</shadowcolor>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<visible>String.IsEqual(Skin.Font, Arial)</visible>
 				</control>
 				<control type="textbox">
 					<left>645</left>

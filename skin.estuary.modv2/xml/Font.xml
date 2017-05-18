@@ -629,7 +629,7 @@
 		<font>
 			<name>WeatherTemp</name>
 			<filename>arial.ttf</filename>
-			<size>120</size>
+			<size>100</size>
 			<style>bold</style>
 		</font>
 		<font>

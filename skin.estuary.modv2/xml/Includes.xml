@@ -1097,6 +1097,7 @@
 					<height>100</height>
 					<width>100%</width>
 					<textcolor>$PARAM[subtextcolor]</textcolor>
+					<scroll>true</scroll>
 				</control>
 			</control>
 		</definition>
@@ -1424,6 +1425,7 @@
 						<height>200</height>
 						<width>auto</width>
 						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
+						<animation effect="slide" end="0,-10" time="0" condition="String.IsEqual(Skin.Font,Arial)">Conditional</animation>
 						<label>[B]$INFO[System.Time][/B]</label>
 						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml)</visible>
 					</control>

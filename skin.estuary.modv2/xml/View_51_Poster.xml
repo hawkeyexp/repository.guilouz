@@ -99,11 +99,25 @@
 						<height>250</height>
 						<right>50</right>
 						<align>justify</align>
-						<autoscroll time="3000" delay="7000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="6000" delay="9000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$VAR[PlotSpoilerVar]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>!ListItem.IsCollection</visible>
+						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+					</control>
+					<control type="textbox">
+						<left>645</left>
+						<top>470</top>
+						<height>255</height>
+						<right>50</right>
+						<align>justify</align>
+						<autoscroll time="6000" delay="9000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<label>$VAR[PlotSpoilerVar]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>!ListItem.IsCollection</visible>
+						<visible>String.IsEqual(Skin.Font, Arial)</visible>
 					</control>
 				</control>
 			</control>

@@ -130,7 +130,19 @@
 					<align>justify</align>
 					<label>$VAR[PlotSpoilerVar]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<autoscroll delay="10000" time="4000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll delay="10000" time="5000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+				</control>
+				<control type="textbox">
+					<left>50</left>
+					<right>45</right>
+					<top>769</top>
+					<bottom>85</bottom>
+					<align>justify</align>
+					<label>$VAR[PlotSpoilerVar]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<autoscroll delay="10000" time="5000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+					<visible>String.IsEqual(Skin.Font, Arial)</visible>
 				</control>
 				<control type="scrollbar" id="502600">
 					<left>20</left>
@@ -154,8 +166,20 @@
 						<bottom>105</bottom>
 						<align>justify</align>
 						<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
-						<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+					</control>
+					<control type="textbox">
+						<left>0</left>
+						<top>0</top>
+						<right>45</right>
+						<bottom>85</bottom>
+						<align>justify</align>
+						<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>String.IsEqual(Skin.Font, Arial)</visible>
 					</control>
 					<control type="textbox">
 						<left>0</left>
