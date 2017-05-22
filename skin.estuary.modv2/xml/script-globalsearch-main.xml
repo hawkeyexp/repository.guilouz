@@ -1095,11 +1095,12 @@
 				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<top>1010</top>
+				<bottom>10</bottom>
+				<height>50</height>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
-					<right>20</right>
+					<right>10</right>
 					<align>right</align>
 					<itemgap>5</itemgap>
 					<width>1900</width>
@@ -1133,7 +1134,7 @@
 						<visible>!String.IsEmpty(Container(111).ListItem.Duration)</visible>
 						<control type="label">
 							<width>119</width>
-							<centertop>34%</centertop>
+							<top>-1</top>
 							<height>50</height>
 							<posx>54</posx>
 							<align>center</align>
@@ -1152,7 +1153,7 @@
 						<visible>!String.IsEmpty(Container(111).ListItem.EndTimeResume)</visible>
 						<control type="label">
 							<width>105</width>
-							<centertop>34%</centertop>
+							<top>-1</top>
 							<height>50</height>
 							<posx>54</posx>
 							<align>center</align>
@@ -1174,11 +1175,12 @@
 				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<top>1010</top>
+				<bottom>10</bottom>
+				<height>50</height>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
-					<right>20</right>
+					<right>10</right>
 					<align>right</align>
 					<itemgap>5</itemgap>
 					<width>1900</width>
@@ -1212,7 +1214,7 @@
 						<visible>!String.IsEmpty(Container(141).ListItem.Duration)</visible>
 						<control type="label">
 							<width>119</width>
-							<centertop>34%</centertop>
+							<top>-1</top>
 							<height>50</height>
 							<posx>54</posx>
 							<align>center</align>
@@ -1231,7 +1233,7 @@
 						<visible>!String.IsEmpty(Container(141).ListItem.EndTimeResume)</visible>
 						<control type="label">
 							<width>105</width>
-							<centertop>34%</centertop>
+							<top>-1</top>
 							<height>50</height>
 							<posx>54</posx>
 							<align>center</align>
@@ -1253,11 +1255,12 @@
 				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<top>1010</top>
+				<bottom>10</bottom>
+				<height>50</height>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
-					<right>20</right>
+					<right>10</right>
 					<align>right</align>
 					<itemgap>5</itemgap>
 					<width>1900</width>
@@ -1291,7 +1294,7 @@
 						<visible>!String.IsEmpty(Container(151).ListItem.Duration)</visible>
 						<control type="label">
 							<width>119</width>
-							<centertop>34%</centertop>
+							<top>-1</top>
 							<height>50</height>
 							<posx>54</posx>
 							<align>center</align>
@@ -1310,7 +1313,7 @@
 						<visible>!String.IsEmpty(Container(151).ListItem.EndTimeResume)</visible>
 						<control type="label">
 							<width>105</width>
-							<centertop>34%</centertop>
+							<top>-1</top>
 							<height>50</height>
 							<posx>54</posx>
 							<align>center</align>
@@ -1332,11 +1335,12 @@
 				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<top>1010</top>
+				<bottom>10</bottom>
+				<height>50</height>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
-					<right>20</right>
+					<right>10</right>
 					<align>right</align>
 					<itemgap>5</itemgap>
 					<width>1900</width>
@@ -1370,7 +1374,7 @@
 						<visible>!String.IsEmpty(Container(201).ListItem.Duration)</visible>
 						<control type="label">
 							<width>119</width>
-							<centertop>34%</centertop>
+							<top>-1</top>
 							<height>50</height>
 							<posx>54</posx>
 							<align>center</align>
@@ -1389,7 +1393,7 @@
 						<visible>!String.IsEmpty(Container(201).ListItem.EndTimeResume)</visible>
 						<control type="label">
 							<width>105</width>
-							<centertop>34%</centertop>
+							<top>-1</top>
 							<height>50</height>
 							<posx>54</posx>
 							<align>center</align>
@@ -1411,11 +1415,12 @@
 				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<top>1010</top>
+				<bottom>10</bottom>
+				<height>50</height>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="grouplist">
 					<orientation>horizontal</orientation>
-					<right>20</right>
+					<right>10</right>
 					<align>right</align>
 					<itemgap>5</itemgap>
 					<width>1900</width>
@@ -1449,7 +1454,7 @@
 						<visible>!String.IsEmpty(Container(211).ListItem.Duration)</visible>
 						<control type="label">
 							<width>119</width>
-							<centertop>34%</centertop>
+							<top>-1</top>
 							<height>50</height>
 							<posx>54</posx>
 							<align>center</align>
@@ -1468,7 +1473,7 @@
 						<visible>!String.IsEmpty(Container(211).ListItem.EndTimeResume)</visible>
 						<control type="label">
 							<width>105</width>
-							<centertop>34%</centertop>
+							<top>-1</top>
 							<height>50</height>
 							<posx>54</posx>
 							<align>center</align>

@@ -670,25 +670,25 @@
 		<definition>
 			<control type="list" id="56000">
 				<orientation>horizontal</orientation>
-				<right>16</right>
+				<right>6</right>
 				<top>-15</top>
-				<height>70</height>
+				<height>74</height>
 				<align>right</align>
 				<itemgap>5</itemgap>
-				<width>1240</width>
+				<width>1320</width>
 				<usecontrolcoords>true</usecontrolcoords>
 				<autoscroll time="1500">true</autoscroll>
-				<animation effect="slide" end="1116,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
-				<animation effect="slide" end="992,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
-				<animation effect="slide" end="868,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
-				<animation effect="slide" end="744,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
-				<animation effect="slide" end="620,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
-				<animation effect="slide" end="496,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
-				<animation effect="slide" end="372,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
-				<animation effect="slide" end="248,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,8)">conditional</animation>
-				<animation effect="slide" end="124,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
+				<animation effect="slide" end="1188,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
+				<animation effect="slide" end="1056,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
+				<animation effect="slide" end="924,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
+				<animation effect="slide" end="792,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
+				<animation effect="slide" end="660,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
+				<animation effect="slide" end="528,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
+				<animation effect="slide" end="396,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
+				<animation effect="slide" end="264,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,8)">conditional</animation>
+				<animation effect="slide" end="132,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
 				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set) + Window.IsVisible(Home)</visible>
-				<focusedlayout height="70" width="124">
+				<focusedlayout height="74" width="132">
 					<control type="image">
 						<left>5</left>
 						<top>0</top>
@@ -700,7 +700,7 @@
 						<bordersize>1</bordersize>
 					</control>
 				</focusedlayout>
-				<itemlayout height="70" width="124">
+				<itemlayout height="74" width="132">
 					<control type="image">
 						<left>5</left>
 						<top>0</top>
@@ -716,8 +716,8 @@
 			</control>
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
-				<right>20</right>
-				<top>0</top>
+				<right>10</right>
+				<top>10</top>
 				<height>70</height>
 				<align>right</align>
 				<itemgap>5</itemgap>
@@ -726,13 +726,12 @@
 				<visible>$PARAM[visible]</visible>
 				<control type="group">
 					<width>130</width>
-					<top>0</top>
+					<top>-5</top>
 					<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) | String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,movie) | Control.HasFocus(6600) | Control.HasFocus(66001)</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="$INFO[Skin.String(studiologos.path)]$INFO[$PARAM[infolabel_prefix]ListItem.Studio,,.png]" />
 						<param name="colordiffuse" value="" />
 						<param name="height" value="60" />
-						<param name="visible" value="!Window.IsVisible(movieinformation) + !Window.IsVisible(Custom_1132_MoviesSetsInfo.xml)" />
 					</include>
 				</control>
 				<control type="group">

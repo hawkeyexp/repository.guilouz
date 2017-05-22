@@ -466,7 +466,7 @@
 			<control type="group">
 				<visible>Control.HasFocus(50)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<top>10</top>
+				<top>21</top>
 				<left>0</left>
 				<control type="image">
 					<left>21</left>
@@ -477,8 +477,10 @@
 				</control>
 				<control type="label">
 					<left>74</left>
-					<width>790</width>
-					<height>44</height>
+					<width>750</width>
+					<height>36</height>
+					<font>font12</font>
+					<aligny>center</aligny>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$LOCALIZE[40180]</label>
 					<scroll>true</scroll>
@@ -487,7 +489,7 @@
 			<control type="group">
 				<visible>Control.HasFocus(138)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<top>10</top>
+				<top>21</top>
 				<left>0</left>
 				<control type="image">
 					<top>4</top>
@@ -498,8 +500,10 @@
 				</control>
 				<control type="label">
 					<left>74</left>
-					<width>790</width>
-					<height>44</height>
+					<width>750</width>
+					<height>36</height>
+					<font>font12</font>
+					<aligny>center</aligny>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$LOCALIZE[31126]</label>
 					<scroll>true</scroll>
