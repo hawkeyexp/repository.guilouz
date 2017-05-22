@@ -1,6 +1,7 @@
 [B]2.4.0[/B]
 • Add support for Skin Shortcuts template to avoid pernalized widgets reloading
 • Add possibility to define sort method and sort direction for pernalized widgets
+• Add rating on video osd info
 • Minor changes
 • Minor fixes
 

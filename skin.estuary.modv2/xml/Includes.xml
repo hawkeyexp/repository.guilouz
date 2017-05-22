@@ -339,6 +339,20 @@
 			</control>
 		</definition>
 	</include>
+	<include name="VideoPlayerRatingCircle">
+		<param name="animation">False</param>
+		<definition>
+			<control type="group">
+				<animation effect="fade" time="0" condition="$PARAM[animation]">VisibleChange</animation>
+				<include content="UserRatingContent" condition="Skin.HasSetting(circle_userrating)">
+					<param name="infolabel" value="VideoPlayer.UserRating" />
+				</include>
+				<include content="UserRatingContent" condition="Skin.HasSetting(circle_rating)">
+					<param name="infolabel" value="VideoPlayer.Rating" />
+				</include>
+			</control>
+		</definition>
+	</include>
 	<include name="RatingCircleGreyed">
 		<param name="animation">False</param>
 		<definition>
