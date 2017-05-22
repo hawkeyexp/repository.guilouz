@@ -88,7 +88,7 @@
 						<label>$INFO[ListItem.Label]</label>
 						<visible>!String.IsEmpty(ListItem.Label2)</visible>
 					</control>
-					<control type="textbox">
+					<control type="label">
 						<left>135</left>
 						<top>52.5</top>
 						<right>14</right>
