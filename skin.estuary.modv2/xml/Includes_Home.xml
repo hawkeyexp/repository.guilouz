@@ -10,12 +10,14 @@
 			<font>font25_title</font>
 			<shadowcolor>text_shadow</shadowcolor>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+			<visible>!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
 		</control>
 		<control type="group" id="22900599">
 			<height>160</height>
 			<left>180</left>
 			<visible>Container(22900).IsUpdating + !Integer.IsGreater(Container(22900).NumItems,0)</visible>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+			<visible>!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
 			<control type="image">
 				<top>160</top>
 				<width>100</width>
@@ -41,6 +43,7 @@
 				<param name="list_id" value="22900"/>
 			</include>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+			<visible>!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
 			<itemlayout width="310" height="340">
 				<control type="group">
 					<left>70</left>
@@ -133,12 +136,14 @@
 			<font>font25_title</font>
 			<shadowcolor>text_shadow</shadowcolor>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+			<visible>Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
 		</control>
 		<control type="group" id="229001599">
 			<height>160</height>
 			<left>180</left>
 			<visible>Container(229001).IsUpdating + !Integer.IsGreater(Container(229001).NumItems,0)</visible>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+			<visible>Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
 			<control type="image">
 				<top>160</top>
 				<width>100</width>
@@ -164,6 +169,7 @@
 				<param name="list_id" value="229001"/>
 			</include>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+			<visible>Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
 			<itemlayout width="122.4" height="220">
 				<control type="group">
 					<left>70</left>
