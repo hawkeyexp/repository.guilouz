@@ -1,3 +1,9 @@
+[B]2.4.0[/B]
+• Add support for Skin Shortcuts template to avoid pernalized widgets reloading
+• Add possibility to define sort method and sort direction for pernalized widgets
+• Minor changes
+• Minor fixes
+
 [B]2.3.2[/B]
 • Add VP9 video codec icon
 • Add rewind and forward OSD buttons for PVR TimeShift

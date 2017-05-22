@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template>
+	<other include="PersonalizedWidget">
+		<property name="id" tag="mainmenuid" />
+		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="40138">ListPoster</property>
+		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="40139">NextAiringEpisodes</property>
+		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="40121">NextAiringEpisodesBanner</property>
+		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="40140">ListSquare</property>
+		<property name="WidgetStyle2" tag="property" attribute="name|widgetAspect.2" value="40138">ListPoster</property>
+		<property name="WidgetStyle2" tag="property" attribute="name|widgetAspect.2" value="40139">NextAiringEpisodes</property>
+		<property name="WidgetStyle2" tag="property" attribute="name|widgetAspect.2" value="40121">NextAiringEpisodesBanner</property>
+		<property name="WidgetStyle2" tag="property" attribute="name|widgetAspect.2" value="40140">ListSquare</property>
+		<property name="WidgetStyle3" tag="property" attribute="name|widgetAspect.3" value="40138">ListPoster</property>
+		<property name="WidgetStyle3" tag="property" attribute="name|widgetAspect.3" value="40139">NextAiringEpisodes</property>
+		<property name="WidgetStyle3" tag="property" attribute="name|widgetAspect.3" value="40121">NextAiringEpisodesBanner</property>
+		<property name="WidgetStyle3" tag="property" attribute="name|widgetAspect.3" value="40140">ListSquare</property>
+		<property name="WidgetStyle4" tag="property" attribute="name|widgetAspect.4" value="40138">ListPoster</property>
+		<property name="WidgetStyle4" tag="property" attribute="name|widgetAspect.4" value="40139">NextAiringEpisodes</property>
+		<property name="WidgetStyle4" tag="property" attribute="name|widgetAspect.4" value="40121">NextAiringEpisodesBanner</property>
+		<property name="WidgetStyle4" tag="property" attribute="name|widgetAspect.4" value="40140">ListSquare</property>
+		<property name="WidgetStyle5" tag="property" attribute="name|widgetAspect.5" value="40138">ListPoster</property>
+		<property name="WidgetStyle5" tag="property" attribute="name|widgetAspect.5" value="40139">NextAiringEpisodes</property>
+		<property name="WidgetStyle5" tag="property" attribute="name|widgetAspect.5" value="40121">NextAiringEpisodesBanner</property>
+		<property name="WidgetStyle5" tag="property" attribute="name|widgetAspect.5" value="40140">ListSquare</property>
+		<property name="WidgetStyle6" tag="property" attribute="name|widgetAspect.6" value="40138">ListPoster</property>
+		<property name="WidgetStyle6" tag="property" attribute="name|widgetAspect.6" value="40139">NextAiringEpisodes</property>
+		<property name="WidgetStyle6" tag="property" attribute="name|widgetAspect.6" value="40121">NextAiringEpisodesBanner</property>
+		<property name="WidgetStyle6" tag="property" attribute="name|widgetAspect.6" value="40140">ListSquare</property>
+		<property name="WidgetStyle7" tag="property" attribute="name|widgetAspect.7" value="40138">ListPoster</property>
+		<property name="WidgetStyle7" tag="property" attribute="name|widgetAspect.7" value="40139">NextAiringEpisodes</property>
+		<property name="WidgetStyle7" tag="property" attribute="name|widgetAspect.7" value="40121">NextAiringEpisodesBanner</property>
+		<property name="WidgetStyle7" tag="property" attribute="name|widgetAspect.7" value="40140">ListSquare</property>
+		<property name="WidgetStyle8" tag="property" attribute="name|widgetAspect.8" value="40138">ListPoster</property>
+		<property name="WidgetStyle8" tag="property" attribute="name|widgetAspect.8" value="40139">NextAiringEpisodes</property>
+		<property name="WidgetStyle8" tag="property" attribute="name|widgetAspect.8" value="40121">NextAiringEpisodesBanner</property>
+		<property name="WidgetStyle8" tag="property" attribute="name|widgetAspect.8" value="40140">ListSquare</property>
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="568">lastplayed</property>
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="12012">lastused</property>
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="551">sorttitle</property>
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="563">rating</property>
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="562">year</property>
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="570">dateadded</property>
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="567">playcount</property>
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="180">time</property>
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="590">random</property>
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="135">genre</property>	
+		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="568">lastplayed</property>
+		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="12012">lastused</property>
+		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="551">sorttitle</property>
+		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="563">rating</property>
+		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="562">year</property>
+		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="570">dateadded</property>
+		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="567">playcount</property>
+		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="180">time</property>
+		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="590">random</property>
+		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="135">genre</property>
+		<property name="sortby3" tag="property" attribute="name|widgetSortBy.3" value="568">lastplayed</property>
+		<property name="sortby3" tag="property" attribute="name|widgetSortBy.3" value="12012">lastused</property>
+		<property name="sortby3" tag="property" attribute="name|widgetSortBy.3" value="551">sorttitle</property>
+		<property name="sortby3" tag="property" attribute="name|widgetSortBy.3" value="563">rating</property>
+		<property name="sortby3" tag="property" attribute="name|widgetSortBy.3" value="562">year</property>
+		<property name="sortby3" tag="property" attribute="name|widgetSortBy.3" value="570">dateadded</property>
+		<property name="sortby3" tag="property" attribute="name|widgetSortBy.3" value="567">playcount</property>
+		<property name="sortby3" tag="property" attribute="name|widgetSortBy.3" value="180">time</property>
+		<property name="sortby3" tag="property" attribute="name|widgetSortBy.3" value="590">random</property>
+		<property name="sortby3" tag="property" attribute="name|widgetSortBy.3" value="135">genre</property>
+		<property name="sortby4" tag="property" attribute="name|widgetSortBy.4" value="568">lastplayed</property>
+		<property name="sortby4" tag="property" attribute="name|widgetSortBy.4" value="12012">lastused</property>
+		<property name="sortby4" tag="property" attribute="name|widgetSortBy.4" value="551">sorttitle</property>
+		<property name="sortby4" tag="property" attribute="name|widgetSortBy.4" value="563">rating</property>
+		<property name="sortby4" tag="property" attribute="name|widgetSortBy.4" value="562">year</property>
+		<property name="sortby4" tag="property" attribute="name|widgetSortBy.4" value="570">dateadded</property>
+		<property name="sortby4" tag="property" attribute="name|widgetSortBy.4" value="567">playcount</property>
+		<property name="sortby4" tag="property" attribute="name|widgetSortBy.4" value="180">time</property>
+		<property name="sortby4" tag="property" attribute="name|widgetSortBy.4" value="590">random</property>
+		<property name="sortby4" tag="property" attribute="name|widgetSortBy.4" value="135">genre</property>
+		<property name="sortby5" tag="property" attribute="name|widgetSortBy.5" value="568">lastplayed</property>
+		<property name="sortby5" tag="property" attribute="name|widgetSortBy.5" value="12012">lastused</property>
+		<property name="sortby5" tag="property" attribute="name|widgetSortBy.5" value="551">sorttitle</property>
+		<property name="sortby5" tag="property" attribute="name|widgetSortBy.5" value="563">rating</property>
+		<property name="sortby5" tag="property" attribute="name|widgetSortBy.5" value="562">year</property>
+		<property name="sortby5" tag="property" attribute="name|widgetSortBy.5" value="570">dateadded</property>
+		<property name="sortby5" tag="property" attribute="name|widgetSortBy.5" value="567">playcount</property>
+		<property name="sortby5" tag="property" attribute="name|widgetSortBy.5" value="180">time</property>
+		<property name="sortby5" tag="property" attribute="name|widgetSortBy.5" value="590">random</property>
+		<property name="sortby5" tag="property" attribute="name|widgetSortBy.5" value="135">genre</property>
+		<property name="sortby6" tag="property" attribute="name|widgetSortBy.6" value="568">lastplayed</property>
+		<property name="sortby6" tag="property" attribute="name|widgetSortBy.6" value="12012">lastused</property>
+		<property name="sortby6" tag="property" attribute="name|widgetSortBy.6" value="551">sorttitle</property>
+		<property name="sortby6" tag="property" attribute="name|widgetSortBy.6" value="563">rating</property>
+		<property name="sortby6" tag="property" attribute="name|widgetSortBy.6" value="562">year</property>
+		<property name="sortby6" tag="property" attribute="name|widgetSortBy.6" value="570">dateadded</property>
+		<property name="sortby6" tag="property" attribute="name|widgetSortBy.6" value="567">playcount</property>
+		<property name="sortby6" tag="property" attribute="name|widgetSortBy.6" value="180">time</property>
+		<property name="sortby6" tag="property" attribute="name|widgetSortBy.6" value="590">random</property>
+		<property name="sortby6" tag="property" attribute="name|widgetSortBy.6" value="135">genre</property>
+		<property name="sortby7" tag="property" attribute="name|widgetSortBy.7" value="568">lastplayed</property>
+		<property name="sortby7" tag="property" attribute="name|widgetSortBy.7" value="12012">lastused</property>
+		<property name="sortby7" tag="property" attribute="name|widgetSortBy.7" value="551">sorttitle</property>
+		<property name="sortby7" tag="property" attribute="name|widgetSortBy.7" value="563">rating</property>
+		<property name="sortby7" tag="property" attribute="name|widgetSortBy.7" value="562">year</property>
+		<property name="sortby7" tag="property" attribute="name|widgetSortBy.7" value="570">dateadded</property>
+		<property name="sortby7" tag="property" attribute="name|widgetSortBy.7" value="567">playcount</property>
+		<property name="sortby7" tag="property" attribute="name|widgetSortBy.7" value="180">time</property>
+		<property name="sortby7" tag="property" attribute="name|widgetSortBy.7" value="590">random</property>
+		<property name="sortby7" tag="property" attribute="name|widgetSortBy.7" value="135">genre</property>
+		<property name="sortby8" tag="property" attribute="name|widgetSortBy.8" value="568">lastplayed</property>
+		<property name="sortby8" tag="property" attribute="name|widgetSortBy.8" value="12012">lastused</property>
+		<property name="sortby8" tag="property" attribute="name|widgetSortBy.8" value="551">sorttitle</property>
+		<property name="sortby8" tag="property" attribute="name|widgetSortBy.8" value="563">rating</property>
+		<property name="sortby8" tag="property" attribute="name|widgetSortBy.8" value="562">year</property>
+		<property name="sortby8" tag="property" attribute="name|widgetSortBy.8" value="570">dateadded</property>
+		<property name="sortby8" tag="property" attribute="name|widgetSortBy.8" value="567">playcount</property>
+		<property name="sortby8" tag="property" attribute="name|widgetSortBy.8" value="180">time</property>
+		<property name="sortby8" tag="property" attribute="name|widgetSortBy.8" value="590">random</property>
+		<property name="sortby8" tag="property" attribute="name|widgetSortBy.8" value="135">genre</property>
+		<property name="sortorder1" tag="property" attribute="name|widgetSortDirection.1" value="584">ascending</property>
+		<property name="sortorder1" tag="property" attribute="name|widgetSortDirection.1" value="585">descending</property>
+		<property name="sortorder2" tag="property" attribute="name|widgetSortDirection.2" value="584">ascending</property>
+		<property name="sortorder2" tag="property" attribute="name|widgetSortDirection.2" value="585">descending</property>
+		<property name="sortorder3" tag="property" attribute="name|widgetSortDirection.3" value="584">ascending</property>
+		<property name="sortorder3" tag="property" attribute="name|widgetSortDirection.3" value="585">descending</property>
+		<property name="sortorder4" tag="property" attribute="name|widgetSortDirection.4" value="584">ascending</property>
+		<property name="sortorder4" tag="property" attribute="name|widgetSortDirection.4" value="585">descending</property>
+		<property name="sortorder5" tag="property" attribute="name|widgetSortDirection.5" value="584">ascending</property>
+		<property name="sortorder5" tag="property" attribute="name|widgetSortDirection.5" value="585">descending</property>
+		<property name="sortorder6" tag="property" attribute="name|widgetSortDirection.6" value="584">ascending</property>
+		<property name="sortorder6" tag="property" attribute="name|widgetSortDirection.6" value="585">descending</property>
+		<property name="sortorder7" tag="property" attribute="name|widgetSortDirection.7" value="584">ascending</property>
+		<property name="sortorder7" tag="property" attribute="name|widgetSortDirection.7" value="585">descending</property>
+		<property name="sortorder8" tag="property" attribute="name|widgetSortDirection.8" value="584">ascending</property>
+		<property name="sortorder8" tag="property" attribute="name|widgetSortDirection.8" value="585">descending</property>
+		<property name="name1" tag="property" attribute="name|widgetName.1" />
+		<property name="target1" tag="property" attribute="name|widgetTarget.1" />
+		<property name="content1" tag="property" attribute="name|widgetPath.1" />
+		<property name="name2" tag="property" attribute="name|widgetName.2" />
+		<property name="target2" tag="property" attribute="name|widgetTarget.2" />
+		<property name="content2" tag="property" attribute="name|widgetPath.2" />
+		<property name="name3" tag="property" attribute="name|widgetName.3" />
+		<property name="target3" tag="property" attribute="name|widgetTarget.3" />
+		<property name="content3" tag="property" attribute="name|widgetPath.3" />
+		<property name="name4" tag="property" attribute="name|widgetName.4" />
+		<property name="target4" tag="property" attribute="name|widgetTarget.4" />
+		<property name="content4" tag="property" attribute="name|widgetPath.4" />
+		<property name="name5" tag="property" attribute="name|widgetName.5" />
+		<property name="target5" tag="property" attribute="name|widgetTarget.5" />
+		<property name="content5" tag="property" attribute="name|widgetPath.5" />
+		<property name="name6" tag="property" attribute="name|widgetName.6" />
+		<property name="target6" tag="property" attribute="name|widgetTarget.6" />
+		<property name="content6" tag="property" attribute="name|widgetPath.6" />
+		<property name="name7" tag="property" attribute="name|widgetName.7" />
+		<property name="target7" tag="property" attribute="name|widgetTarget.7" />
+		<property name="content7" tag="property" attribute="name|widgetPath.7" />
+		<property name="name8" tag="property" attribute="name|widgetName.8" />
+		<property name="target8" tag="property" attribute="name|widgetTarget.8" />
+		<property name="content8" tag="property" attribute="name|widgetPath.8" />
+		<controls>
+			<control type="grouplist" id="22001">
+				<include>WidgetGroupListCommon</include>
+				<skinshortcuts>visibility</skinshortcuts>
+				<pagecontrol>22010</pagecontrol>
+				<include condition="!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">PersonalWidgetListCategoriesBig</include>
+				<include condition="Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">PersonalWidgetListCategoriesSmall</include>
+				<include content="Widget$SKINSHORTCUTS[WidgetStyle1]">
+					<param name="content_path" value="$SKINSHORTCUTS[content1]"/>
+					<param name="widget_header" value="$SKINSHORTCUTS[name1]"/>
+					<param name="widget_target" value="$SKINSHORTCUTS[target1]"/>
+					<param name="sortby" value="$SKINSHORTCUTS[sortby1]"/>
+					<param name="sortorder" value="$SKINSHORTCUTS[sortorder1]"/>
+					<param name="list_id" value="22100$SKINSHORTCUTS[id]"/>
+				</include>
+				<include content="Widget$SKINSHORTCUTS[WidgetStyle2]">
+					<param name="content_path" value="$SKINSHORTCUTS[content2]"/>
+					<param name="widget_header" value="$SKINSHORTCUTS[name2]"/>
+					<param name="widget_target" value="$SKINSHORTCUTS[target2]"/>
+					<param name="sortby" value="$SKINSHORTCUTS[sortby2]"/>
+					<param name="sortorder" value="$SKINSHORTCUTS[sortorder2]"/>
+					<param name="list_id" value="22200$SKINSHORTCUTS[id]"/>
+				</include>
+				<include content="Widget$SKINSHORTCUTS[WidgetStyle3]">
+					<param name="content_path" value="$SKINSHORTCUTS[content3]"/>
+					<param name="widget_header" value="$SKINSHORTCUTS[name3]"/>
+					<param name="widget_target" value="$SKINSHORTCUTS[target3]"/>
+					<param name="sortby" value="$SKINSHORTCUTS[sortby3]"/>
+					<param name="sortorder" value="$SKINSHORTCUTS[sortorder3]"/>
+					<param name="list_id" value="22300$SKINSHORTCUTS[id]"/>
+				</include>
+				<include content="Widget$SKINSHORTCUTS[WidgetStyle4]">
+					<param name="content_path" value="$SKINSHORTCUTS[content4]"/>
+					<param name="widget_header" value="$SKINSHORTCUTS[name4]"/>
+					<param name="widget_target" value="$SKINSHORTCUTS[target4]"/>
+					<param name="sortby" value="$SKINSHORTCUTS[sortby4]"/>
+					<param name="sortorder" value="$SKINSHORTCUTS[sortorder4]"/>
+					<param name="list_id" value="22400$SKINSHORTCUTS[id]"/>
+				</include>
+				<include content="Widget$SKINSHORTCUTS[WidgetStyle5]">
+					<param name="content_path" value="$SKINSHORTCUTS[content5]"/>
+					<param name="widget_header" value="$SKINSHORTCUTS[name5]"/>
+					<param name="widget_target" value="$SKINSHORTCUTS[target5]"/>
+					<param name="sortby" value="$SKINSHORTCUTS[sortby5]"/>
+					<param name="sortorder" value="$SKINSHORTCUTS[sortorder5]"/>
+					<param name="list_id" value="22500$SKINSHORTCUTS[id]"/>
+				</include>
+				<include content="Widget$SKINSHORTCUTS[WidgetStyle6]">
+					<param name="content_path" value="$SKINSHORTCUTS[content6]"/>
+					<param name="widget_header" value="$SKINSHORTCUTS[name6]"/>
+					<param name="widget_target" value="$SKINSHORTCUTS[target6]"/>
+					<param name="sortby" value="$SKINSHORTCUTS[sortby6]"/>
+					<param name="sortorder" value="$SKINSHORTCUTS[sortorder6]"/>
+					<param name="list_id" value="22600$SKINSHORTCUTS[id]"/>
+				</include>
+				<include content="Widget$SKINSHORTCUTS[WidgetStyle7]">
+					<param name="content_path" value="$SKINSHORTCUTS[content7]"/>
+					<param name="widget_header" value="$SKINSHORTCUTS[name7]"/>
+					<param name="widget_target" value="$SKINSHORTCUTS[target7]"/>
+					<param name="sortby" value="$SKINSHORTCUTS[sortby7]"/>
+					<param name="sortorder" value="$SKINSHORTCUTS[sortorder7]"/>
+					<param name="list_id" value="22700$SKINSHORTCUTS[id]"/>
+				</include>
+				<include content="Widget$SKINSHORTCUTS[WidgetStyle8]">
+					<param name="content_path" value="$SKINSHORTCUTS[content8]"/>
+					<param name="widget_header" value="$SKINSHORTCUTS[name8]"/>
+					<param name="widget_target" value="$SKINSHORTCUTS[target8]"/>
+					<param name="sortby" value="$SKINSHORTCUTS[sortby8]"/>
+					<param name="sortorder" value="$SKINSHORTCUTS[sortorder8]"/>
+					<param name="list_id" value="22800$SKINSHORTCUTS[id]"/>
+				</include>
+			</control>
+		</controls>
+	</other>
+</template>

@@ -1316,10 +1316,10 @@ msgctxt "#40120"
 msgid "TV shows next aired"
 msgstr "Prochaines diffusions des séries TV"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /xml/script-skinshortcuts.xml
 msgctxt "#40121"
-msgid "Personalized widget 5"
-msgstr "Widget personnalisé 5"
+msgid "Thumbs with banners"
+msgstr "Vignettes avec bannières"
 
 #: /xml/Home.xml
 msgctxt "#40122"
@@ -1346,7 +1346,7 @@ msgctxt "#40126"
 msgid "Hide thumbs episodes to avoid spoilers"
 msgstr "Masquer les vignettes des épisodes pour éviter les spoilers"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40127"
 msgid "Preconfigured widgets"
 msgstr "Widgets préconfigurés"
@@ -1381,9 +1381,12 @@ msgctxt "#40133"
 msgid "Enable item"
 msgstr "Activer l'élément"
 
-#: Empty string 40134
+#: /shortcuts/overrides.xml
+msgctxt "#40134"
+msgid "Not defined"
+msgstr "Non définie"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40135"
 msgid "Skin Helper Service Widgets"
 msgstr "Widgets Skin Helper Service"
@@ -1395,8 +1398,8 @@ msgstr "Définir le type des widgets"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40137"
-msgid "Set widget appearence"
-msgstr "Définir l'apparence du widget"
+msgid "Widget appearence"
+msgstr "Apparence du widget"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40138"
@@ -1405,8 +1408,8 @@ msgstr "Posters"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40139"
-msgid "Thumbs"
-msgstr "Vignettes"
+msgid "Thumbs without banners"
+msgstr "Vignettes sans bannières"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40140"
@@ -1538,25 +1541,22 @@ msgctxt "#40165"
 msgid "Use alphabet for scrolling on library (experimental)"
 msgstr "Utiliser l'alphabet pour défiler sur la bibliothèque (expérimental)"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40166"
-msgid "Personalized widget 1"
-msgstr "Widget personnalisé 1"
+msgid "Personalized widget"
+msgstr "Widget personnalisé"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40167"
-msgid "Personalized widget 2"
-msgstr "Widget personnalisé 2"
+msgid "Sort method of widget"
+msgstr "Méthode de tri du widget"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40168"
-msgid "Personalized widget 3"
-msgstr "Widget personnalisé 3"
+msgid "Sort direction of widget"
+msgstr "Direction du tri du widget"
 
-#: /extras/script.skinshortcuts/overrides.xml
-msgctxt "#40169"
-msgid "Personalized widget 4"
-msgstr "Widget personnalisé 4"
+#: Empty string 40169
 
 #: /xml/SkinSettings.xml
 msgctxt "#40170"

@@ -33,7 +33,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<shadowcolor>black</shadowcolor>
-				<visible>!Window.IsVisible(Custom_1133_ParentalControl.xml) + !Window.IsVisible(SkinSettings.xml)</visible>
+				<visible>!Window.IsVisible(Custom_1133_ParentalControl.xml)</visible>
 			</control>
 			<control type="label">
 				<centerleft>50%</centerleft>
@@ -45,7 +45,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<shadowcolor>black</shadowcolor>
-				<visible>Window.IsVisible(SkinSettings.xml) | Window.IsVisible(Custom_1133_ParentalControl.xml)</visible>
+				<visible>Window.IsVisible(Custom_1133_ParentalControl.xml)</visible>
 			</control>
 			<control type="image">
 				<centerleft>50%</centerleft>

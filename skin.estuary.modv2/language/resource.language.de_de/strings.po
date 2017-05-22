@@ -1314,10 +1314,10 @@ msgctxt "#40120"
 msgid "TV shows next aired"
 msgstr "Nächste ausgestrahlte Serien"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /xml/script-skinshortcuts.xml
 msgctxt "#40121"
-msgid "Personalized widget 5"
-msgstr "Personalisierbares Widget 5"
+msgid "Thumbs with banners"
+msgstr ""
 
 #: /xml/Home.xml
 msgctxt "#40122"
@@ -1344,7 +1344,7 @@ msgctxt "#40126"
 msgid "Hide thumbs episodes to avoid spoilers"
 msgstr "Miniaturansichten von Episoden ausblenden"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40127"
 msgid "Preconfigured widgets"
 msgstr "Vorkonfigurierte Widgets"
@@ -1379,12 +1379,12 @@ msgctxt "#40133"
 msgid "Enable item"
 msgstr "Element aktivieren"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40134"
-msgid "Personalized widgets"
-msgstr "Personalisierbare Widgets"
+msgid "Not defined"
+msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40135"
 msgid "Skin Helper Service Widgets"
 msgstr "Skin-Helper-Service-Widgets"
@@ -1396,8 +1396,8 @@ msgstr "Zusammenstellung der Widgets auswählen"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40137"
-msgid "Set widget appearence"
-msgstr "Aussehen des Widgets anpassen"
+msgid "Widget appearence"
+msgstr "Widgets anpassen"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40138"
@@ -1406,8 +1406,8 @@ msgstr "Poster"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40139"
-msgid "Thumbs"
-msgstr "Miniaturansichten"
+msgid "Thumbs without banners"
+msgstr ""
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40140"
@@ -1539,25 +1539,22 @@ msgctxt "#40165"
 msgid "Use alphabet for scrolling on library (experimental)"
 msgstr "Bibliothek alphabetisch scrollen"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40166"
-msgid "Personalized widget 1"
-msgstr "Personalisierbares Widget 1"
+msgid "Personalized widget"
+msgstr "Personalisierbares Widget"
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40167"
-msgid "Personalized widget 2"
-msgstr "Personalisierbares Widget 2"
+msgid "Sort method of widget"
+msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40168"
-msgid "Personalized widget 3"
-msgstr "Personalisierbares Widget 3"
+msgid "Sort direction of widget"
+msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
-msgctxt "#40169"
-msgid "Personalized widget 4"
-msgstr "Personalisierbares Widget 4"
+#: Empty string 40169
 
 #: /xml/SkinSettings.xml
 msgctxt "#40170"

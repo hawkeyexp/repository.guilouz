@@ -1316,9 +1316,9 @@ msgctxt "#40120"
 msgid "TV shows next aired"
 msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /xml/script-skinshortcuts.xml
 msgctxt "#40121"
-msgid "Personalized widget 5"
+msgid "Thumbs with banners"
 msgstr ""
 
 #: /xml/Home.xml
@@ -1346,7 +1346,7 @@ msgctxt "#40126"
 msgid "Hide thumbs episodes to avoid spoilers"
 msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40127"
 msgid "Preconfigured widgets"
 msgstr ""
@@ -1381,9 +1381,12 @@ msgctxt "#40133"
 msgid "Enable item"
 msgstr ""
 
-#: Empty string 40134
+#: /shortcuts/overrides.xml
+msgctxt "#40134"
+msgid "Not defined"
+msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40135"
 msgid "Skin Helper Service Widgets"
 msgstr ""
@@ -1395,7 +1398,7 @@ msgstr ""
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40137"
-msgid "Set widget appearence"
+msgid "Widget appearence"
 msgstr ""
 
 #: /xml/script-skinshortcuts.xml
@@ -1405,7 +1408,7 @@ msgstr ""
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40139"
-msgid "Thumbs"
+msgid "Thumbs without banners"
 msgstr ""
 
 #: /xml/script-skinshortcuts.xml
@@ -1538,25 +1541,22 @@ msgctxt "#40165"
 msgid "Use alphabet for scrolling on library (experimental)"
 msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40166"
-msgid "Personalized widget 1"
+msgid "Personalized widget"
 msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40167"
-msgid "Personalized widget 2"
+msgid "Sort method of widget"
 msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
+#: /shortcuts/overrides.xml
 msgctxt "#40168"
-msgid "Personalized widget 3"
+msgid "Sort direction of widget"
 msgstr ""
 
-#: /extras/script.skinshortcuts/overrides.xml
-msgctxt "#40169"
-msgid "Personalized widget 4"
-msgstr ""
+#: Empty string 40169
 
 #: /xml/SkinSettings.xml
 msgctxt "#40170"

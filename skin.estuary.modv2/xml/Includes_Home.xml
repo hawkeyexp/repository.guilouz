@@ -1,5 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<include name="PersonalWidgetListCategoriesBig">
+		<control type="label" id="22900666">
+			<left>55</left>
+			<top>80</top>
+			<width>900</width>
+			<height>90</height>
+			<label>$VAR[LabelCategoriesSmallVar]</label>
+			<font>font25_title</font>
+			<shadowcolor>text_shadow</shadowcolor>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+		</control>
+		<control type="group" id="22900599">
+			<height>160</height>
+			<left>180</left>
+			<visible>Container(22900).IsUpdating + !Integer.IsGreater(Container(22900).NumItems,0)</visible>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+			<control type="image">
+				<top>160</top>
+				<width>100</width>
+				<height>100</height>
+				<aspectratio aligny="center">keep</aspectratio>
+				<texture colordiffuse="black">dialogs/extendedprogress/loading-back.png</texture>
+			</control>
+			<control type="image">
+				<top>160</top>
+				<width>100</width>
+				<height>100</height>
+				<aspectratio aligny="center">keep</aspectratio>
+				<texture>dialogs/extendedprogress/loading.png</texture>
+				<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
+			</control>
+		</control>
+		<control type="panel" id="22900">
+			<left>-10</left>
+			<top>110</top>
+			<right>0</right>
+			<height>290</height>
+			<include content="WidgetListCommon">
+				<param name="list_id" value="22900"/>
+			</include>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+			<itemlayout width="310" height="340">
+				<control type="group">
+					<left>70</left>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
+					<control type="image">
+						<centertop>74</centertop>
+						<left>58</left>
+						<width>200</width>
+						<height>120</height>
+						<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="textbox">
+						<left>18</left>
+						<top>107</top>
+						<width>280</width>
+						<height>68</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font25_narrow</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout width="310" height="340">
+				<control type="group">
+					<depth>DepthContentPopout</depth>
+					<left>70</left>
+					<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+						<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="228,70" />
+					</animation>
+					<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+						<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="228,70" />
+					</animation>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+					</control>
+					<control type="image">
+						<centertop>74</centertop>
+						<left>58</left>
+						<width>200</width>
+						<height>120</height>
+						<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="textbox">
+						<left>18</left>
+						<top>107</top>
+						<width>280</width>
+						<height>68</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font25_narrow</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
+					</control>
+				</control>
+			</focusedlayout>
+			<content>
+				<include>skinshortcuts-submenu</include>
+			</content>
+		</control>
+	</include>
+	<include name="PersonalWidgetListCategoriesSmall">
+		<control type="label" id="229001666">
+			<left>55</left>
+			<top>80</top>
+			<width>900</width>
+			<height>90</height>
+			<label>$VAR[LabelCategoriesSmallVar]</label>
+			<font>font25_title</font>
+			<shadowcolor>text_shadow</shadowcolor>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+		</control>
+		<control type="group" id="229001599">
+			<height>160</height>
+			<left>180</left>
+			<visible>Container(229001).IsUpdating + !Integer.IsGreater(Container(229001).NumItems,0)</visible>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+			<control type="image">
+				<top>160</top>
+				<width>100</width>
+				<height>100</height>
+				<aspectratio aligny="center">keep</aspectratio>
+				<texture colordiffuse="black">dialogs/extendedprogress/loading-back.png</texture>
+			</control>
+			<control type="image">
+				<top>160</top>
+				<width>100</width>
+				<height>100</height>
+				<aspectratio aligny="center">keep</aspectratio>
+				<texture>dialogs/extendedprogress/loading.png</texture>
+				<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
+			</control>
+		</control>
+		<control type="panel" id="229001">
+			<left>-10</left>
+			<top>110</top>
+			<right>0</right>
+			<height>220</height>
+			<include content="WidgetListCommon">
+				<param name="list_id" value="229001"/>
+			</include>
+			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+			<itemlayout width="122.4" height="220">
+				<control type="group">
+					<left>70</left>
+					<control type="image">
+						<width>140</width>
+						<height>120</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
+					<control type="image">
+						<top>20</top>
+						<left>30</left>
+						<width>80</width>
+						<height>80</height>
+						<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout width="122.4" height="220">
+				<control type="group">
+					<depth>DepthContentPopout</depth>
+					<left>70</left>
+					<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+						<effect type="zoom" start="100" end="116" time="200" tween="sine" easing="inout" center="140,70" />
+					</animation>
+					<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+						<effect type="zoom" start="116" end="100" time="200" tween="sine" easing="inout" center="140,70" />
+					</animation>
+					<control type="image">
+						<width>140</width>
+						<height>120</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
+					<control type="image">
+						<width>140</width>
+						<height>120</height>
+						<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+					</control>
+					<control type="image">
+						<top>20</top>
+						<left>30</left>
+						<width>80</width>
+						<height>80</height>
+						<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+			</focusedlayout>
+			<content>
+				<include>skinshortcuts-submenu</include>
+			</content>
+		</control>
+	</include>
 	<include name="NotHideMainMenuWithWidgets">
 		<left>462</left>
 	</include>
@@ -231,6 +454,7 @@
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
 				<visible>!ListItem.IsParentFolder</visible>
+				<visible>![String.IsEmpty(ListItem.Season) + String.IsEmpty(Episode)]</visible>
 			</control>
 			<control type="label">
 				<left>31</left>
@@ -258,9 +482,9 @@
 			</control>
 			<control type="textbox">
 				<left>28</left>
-				<top>202</top>
+				<top>207</top>
 				<width>262</width>
-				<height>80</height>
+				<height>70</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -269,6 +493,7 @@
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(videos)</visible>
+				<visible>!String.IsEmpty(ListItem.TVShowTitle)</visible>
 				<control type="label">
 					<left>29</left>
 					<top>210</top>
@@ -289,6 +514,18 @@
 					<scroll>$PARAM[focused]</scroll>
 					<align>center</align>
 				</control>
+			</control>
+			<control type="textbox">
+				<left>28</left>
+				<top>207</top>
+				<width>262</width>
+				<height>70</height>
+				<font>font12</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
+				<visible>String.IsEmpty(ListItem.TVShowTitle)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -354,7 +591,7 @@
 				<top>30</top>
 				<width>276</width>
 				<height>51</height>
-				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[BannerVar]</texture>
+				<texture background="true">$VAR[BannerVar]</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -364,6 +601,7 @@
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
 				<visible>!ListItem.IsParentFolder</visible>
+				<visible>![String.IsEmpty(ListItem.Season) + String.IsEmpty(ListItem.Episode)]</visible>
 			</control>
 			<control type="label">
 				<left>31</left>
@@ -376,16 +614,24 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>236</top>
+				<top>166</top>
+				<width>160</width>
+				<height>70</height>
+				<texture>overlays/overlay-bg.png</texture>
+				<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>203</top>
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
 			</control>
 			<control type="textbox">
 				<left>28</left>
-				<top>262</top>
-				<width>263</width>
-				<height>80</height>
+				<top>235</top>
+				<width>262</width>
+				<height>70</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -395,6 +641,7 @@
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(videos)</visible>
+				<visible>!String.IsEmpty(ListItem.TVShowTitle)</visible>
 				<control type="label">
 					<left>29</left>
 					<top>238</top>
@@ -415,6 +662,18 @@
 					<scroll>$PARAM[focused]</scroll>
 					<align>center</align>
 				</control>
+			</control>
+			<control type="textbox">
+				<left>28</left>
+				<top>235</top>
+				<width>262</width>
+				<height>70</height>
+				<font>font12</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
+				<visible>String.IsEmpty(ListItem.TVShowTitle)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -606,7 +865,7 @@
 				<top>30</top>
 				<width>276</width>
 				<height>51</height>
-				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[BannerVar]</texture>
+				<texture background="true">$VAR[BannerVar]</texture>
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
@@ -625,6 +884,14 @@
 				<font>font20_title</font>
 				<shadowcolor>text_shadow</shadowcolor>
 				<align>right</align>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>166</top>
+				<width>160</width>
+				<height>70</height>
+				<texture>overlays/overlay-bg.png</texture>
+				<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -1254,184 +1521,184 @@
 			</control>
 		</definition>
 	</include>
-		<include name="WidgetListCategoriesBig">
-			<include content="CategoryLabel">
-				<param name="label">$PARAM[widget_header]</param>
+	<include name="WidgetListCategoriesBig">
+		<include content="CategoryLabel">
+			<param name="label">$PARAM[widget_header]</param>
+			<param name="list_id" value="$PARAM[list_id]"/>
+			<param name="visible" value="$PARAM[visible]"/>
+		</include>
+		<include content="BusyListSpinner">
+			<param name="list_id" value="$PARAM[list_id]"/>
+			<param name="visible" value="$PARAM[visible]"/>
+		</include>
+		<control type="panel" id="$PARAM[list_id]">
+			<left>-10</left>
+			<top>110</top>
+			<right>0</right>
+			<height>290</height>
+			<include content="WidgetListCommon">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="visible" value="$PARAM[visible]"/>
 			</include>
-			<include content="BusyListSpinner">
-				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="visible" value="$PARAM[visible]"/>
-			</include>
-			<control type="panel" id="$PARAM[list_id]">
-				<left>-10</left>
-				<top>110</top>
-				<right>0</right>
-				<height>290</height>
-				<include content="WidgetListCommon">
-					<param name="list_id" value="$PARAM[list_id]"/>
-				</include>
-				<visible>$PARAM[visible]</visible>
-				<itemlayout width="310" height="340">
-					<control type="group">
-						<left>70</left>
-						<control type="image">
-							<width>316</width>
-							<height>200</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
-						</control>
-						<control type="image">
-							<centertop>74</centertop>
-							<left>58</left>
-							<width>200</width>
-							<height>120</height>
-							<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
-							<aspectratio>keep</aspectratio>
-						</control>
-						<control type="textbox">
-							<left>18</left>
-							<top>107</top>
-							<width>280</width>
-							<height>68</height>
-							<label>$INFO[ListItem.Label]</label>
-							<font>font25_narrow</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-						</control>
+			<visible>$PARAM[visible]</visible>
+			<itemlayout width="310" height="340">
+				<control type="group">
+					<left>70</left>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
 					</control>
-				</itemlayout>
-				<focusedlayout width="310" height="340">
-					<control type="group">
-						<depth>DepthContentPopout</depth>
-						<left>70</left>
-						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="228,70" />
-						</animation>
-						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="228,70" />
-						</animation>
-						<control type="image">
-							<width>316</width>
-							<height>200</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
-						</control>
-						<control type="image">
-							<width>316</width>
-							<height>200</height>
-							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
-							<bordersize>20</bordersize>
-							<include>Animation_FocusTextureFade</include>
-						</control>
-						<control type="image">
-							<centertop>74</centertop>
-							<left>58</left>
-							<width>200</width>
-							<height>120</height>
-							<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
-							<aspectratio>keep</aspectratio>
-						</control>
-						<control type="textbox">
-							<left>18</left>
-							<top>107</top>
-							<width>280</width>
-							<height>68</height>
-							<label>$INFO[ListItem.Label]</label>
-							<font>font25_narrow</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<align>center</align>
-							<aligny>center</aligny>
-							<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
-						</control>
+					<control type="image">
+						<centertop>74</centertop>
+						<left>58</left>
+						<width>200</width>
+						<height>120</height>
+						<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
-				</focusedlayout>
-				<content>
-					<include>skinshortcuts-submenu</include>
-				</content>
-			</control>
+					<control type="textbox">
+						<left>18</left>
+						<top>107</top>
+						<width>280</width>
+						<height>68</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font25_narrow</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout width="310" height="340">
+				<control type="group">
+					<depth>DepthContentPopout</depth>
+					<left>70</left>
+					<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+						<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="228,70" />
+					</animation>
+					<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+						<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="228,70" />
+					</animation>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+					</control>
+					<control type="image">
+						<centertop>74</centertop>
+						<left>58</left>
+						<width>200</width>
+						<height>120</height>
+						<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="textbox">
+						<left>18</left>
+						<top>107</top>
+						<width>280</width>
+						<height>68</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>font25_narrow</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+						<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
+					</control>
+				</control>
+			</focusedlayout>
+			<content>
+				<include>skinshortcuts-submenu</include>
+			</content>
+		</control>
 	</include>
 	<include name="WidgetListCategoriesSmall">
-			<include content="CategoryLabel">
-				<param name="label">$VAR[LabelCategoriesSmallVar]</param>
+		<include content="CategoryLabel">
+			<param name="label">$VAR[LabelCategoriesSmallVar]</param>
+			<param name="list_id" value="$PARAM[list_id]"/>
+			<param name="visible" value="$PARAM[visible]"/>
+		</include>
+		<include content="BusyListSpinner">
+			<param name="list_id" value="$PARAM[list_id]"/>
+			<param name="visible" value="$PARAM[visible]"/>
+		</include>
+		<control type="panel" id="$PARAM[list_id]">
+			<left>-10</left>
+			<top>110</top>
+			<right>0</right>
+			<height>220</height>
+			<include content="WidgetListCommon">
 				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="visible" value="$PARAM[visible]"/>
 			</include>
-			<include content="BusyListSpinner">
-				<param name="list_id" value="$PARAM[list_id]"/>
-				<param name="visible" value="$PARAM[visible]"/>
-			</include>
-			<control type="panel" id="$PARAM[list_id]">
-				<left>-10</left>
-				<top>110</top>
-				<right>0</right>
-				<height>220</height>
-				<include content="WidgetListCommon">
-					<param name="list_id" value="$PARAM[list_id]"/>
-				</include>
-				<visible>$PARAM[visible]</visible>
-				<itemlayout width="122.4" height="220">
-					<control type="group">
-						<left>70</left>
-						<control type="image">
-							<width>140</width>
-							<height>120</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
-						</control>
-						<control type="image">
-							<top>20</top>
-							<left>30</left>
-							<width>80</width>
-							<height>80</height>
-							<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
-							<aspectratio>keep</aspectratio>
-						</control>
+			<visible>$PARAM[visible]</visible>
+			<itemlayout width="122.4" height="220">
+				<control type="group">
+					<left>70</left>
+					<control type="image">
+						<width>140</width>
+						<height>120</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
 					</control>
-				</itemlayout>
-				<focusedlayout width="122.4" height="220">
-					<control type="group">
-						<depth>DepthContentPopout</depth>
-						<left>70</left>
-						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="116" time="200" tween="sine" easing="inout" center="140,70" />
-						</animation>
-						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="116" end="100" time="200" tween="sine" easing="inout" center="140,70" />
-						</animation>
-						<control type="image">
-							<width>140</width>
-							<height>120</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
-						</control>
-						<control type="image">
-							<width>140</width>
-							<height>120</height>
-							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
-							<bordersize>20</bordersize>
-							<include>Animation_FocusTextureFade</include>
-						</control>
-						<control type="image">
-							<top>20</top>
-							<left>30</left>
-							<width>80</width>
-							<height>80</height>
-							<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
-							<aspectratio>keep</aspectratio>
-						</control>
+					<control type="image">
+						<top>20</top>
+						<left>30</left>
+						<width>80</width>
+						<height>80</height>
+						<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
 					</control>
-				</focusedlayout>
-				<content>
-					<include>skinshortcuts-submenu</include>
-				</content>
-			</control>
+				</control>
+			</itemlayout>
+			<focusedlayout width="122.4" height="220">
+				<control type="group">
+					<depth>DepthContentPopout</depth>
+					<left>70</left>
+					<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+						<effect type="zoom" start="100" end="116" time="200" tween="sine" easing="inout" center="140,70" />
+					</animation>
+					<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+						<effect type="zoom" start="116" end="100" time="200" tween="sine" easing="inout" center="140,70" />
+					</animation>
+					<control type="image">
+						<width>140</width>
+						<height>120</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
+					<control type="image">
+						<width>140</width>
+						<height>120</height>
+						<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+					</control>
+					<control type="image">
+						<top>20</top>
+						<left>30</left>
+						<width>80</width>
+						<height>80</height>
+						<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+			</focusedlayout>
+			<content>
+				<include>skinshortcuts-submenu</include>
+			</content>
+		</control>
 	</include>
 	<include name="SubmenuContent">
 		<content target="$PARAM[widget_target]" limit="$PARAM[item_limit]">$PARAM[content_path]</content>
