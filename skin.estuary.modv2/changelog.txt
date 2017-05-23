@@ -1,3 +1,6 @@
+[B]2.4.1[/B]
+• Minor fixes
+
 [B]2.4.0[/B]
 /!\ Reboot Kodi and 'Reset main menu and power menu settings' in skin settings after installation of this version /!\
 • Add support for Skin Shortcuts template to avoid personalized widgets reloading
