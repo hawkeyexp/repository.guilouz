@@ -482,8 +482,8 @@
 			<control type="group">
 				<visible>Control.HasFocus(130)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<bottom>16</bottom>
-				<height>44</height>
+				<bottom>13</bottom>
+				<height>36</height>
 				<left>0</left>
 				<control type="image">
 					<top>4</top>
@@ -495,7 +495,8 @@
 				<control type="label">
 					<left>74</left>
 					<width>1000</width>
-					<height>44</height>
+					<font>font12</font>
+					<aligny>center</aligny>
 					<shadowcolor>text_shadow</shadowcolor>
 					<label>$LOCALIZE[40061]</label>
 				</control>

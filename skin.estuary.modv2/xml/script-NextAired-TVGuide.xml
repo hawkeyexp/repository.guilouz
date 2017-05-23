@@ -1912,8 +1912,9 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<orientation>horizontal</orientation>
 			<align>right</align>
-			<top>1015</top>
-			<right>24</right>
+			<bottom>2</bottom>
+			<height>48</height>
+			<right>3</right>
 			<width>1200</width>
 			<itemgap>10</itemgap>
 			<animation effect="fade" time="200">VisibleChange</animation>
@@ -1940,8 +1941,9 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<orientation>horizontal</orientation>
 			<align>right</align>
-			<top>1015</top>
-			<right>24</right>
+			<bottom>2</bottom>
+			<height>48</height>
+			<right>3</right>
 			<width>1200</width>
 			<itemgap>10</itemgap>
 			<animation effect="fade" time="200">VisibleChange</animation>
@@ -1968,8 +1970,9 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<orientation>horizontal</orientation>
 			<align>right</align>
-			<top>1015</top>
-			<right>24</right>
+			<bottom>2</bottom>
+			<height>48</height>
+			<right>3</right>
 			<width>1200</width>
 			<itemgap>10</itemgap>
 			<animation effect="fade" time="200">VisibleChange</animation>
@@ -1996,8 +1999,9 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<orientation>horizontal</orientation>
 			<align>right</align>
-			<top>1015</top>
-			<right>24</right>
+			<bottom>2</bottom>
+			<height>48</height>
+			<right>3</right>
 			<width>1200</width>
 			<itemgap>10</itemgap>
 			<animation effect="fade" time="200">VisibleChange</animation>
@@ -2024,8 +2028,9 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<orientation>horizontal</orientation>
 			<align>right</align>
-			<top>1015</top>
-			<right>24</right>
+			<bottom>2</bottom>
+			<height>48</height>
+			<right>3</right>
 			<width>1200</width>
 			<itemgap>10</itemgap>
 			<animation effect="fade" time="200">VisibleChange</animation>
@@ -2052,8 +2057,9 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<orientation>horizontal</orientation>
 			<align>right</align>
-			<top>1015</top>
-			<right>24</right>
+			<bottom>2</bottom>
+			<height>48</height>
+			<right>3</right>
 			<width>1200</width>
 			<itemgap>10</itemgap>
 			<animation effect="fade" time="200">VisibleChange</animation>
@@ -2080,8 +2086,9 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<orientation>horizontal</orientation>
 			<align>right</align>
-			<top>1015</top>
-			<right>24</right>
+			<bottom>2</bottom>
+			<height>48</height>
+			<right>3</right>
 			<width>1200</width>
 			<itemgap>10</itemgap>
 			<animation effect="fade" time="200">VisibleChange</animation>
