@@ -495,9 +495,8 @@
 				<control type="label">
 					<left>74</left>
 					<width>1000</width>
-					<font>font12</font>
+					<font>font25_title</font>
 					<aligny>center</aligny>
-					<shadowcolor>text_shadow</shadowcolor>
 					<label>$LOCALIZE[40061]</label>
 				</control>
 			</control>

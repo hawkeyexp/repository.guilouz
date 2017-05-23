@@ -1650,7 +1650,7 @@
 						<width>300</width>
 						<height>36</height>
 						<aligny>center</aligny>
-						<shadowcolor>text_shadow</shadowcolor>
+						<font>font25_title</font>
 						<label>$LOCALIZE[33063]</label>
 						<onclick>SetFocus(9000)</onclick>
 						<texturefocus />

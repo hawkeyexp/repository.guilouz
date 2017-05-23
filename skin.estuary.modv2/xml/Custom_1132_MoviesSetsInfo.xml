@@ -479,9 +479,8 @@
 					<left>74</left>
 					<width>750</width>
 					<height>36</height>
-					<font>font12</font>
+					<font>font25_title</font>
 					<aligny>center</aligny>
-					<shadowcolor>text_shadow</shadowcolor>
 					<label>$LOCALIZE[40180]</label>
 					<scroll>true</scroll>
 				</control>
@@ -502,9 +501,8 @@
 					<left>74</left>
 					<width>750</width>
 					<height>36</height>
-					<font>font12</font>
+					<font>font25_title</font>
 					<aligny>center</aligny>
-					<shadowcolor>text_shadow</shadowcolor>
 					<label>$LOCALIZE[31126]</label>
 					<scroll>true</scroll>
 				</control>
