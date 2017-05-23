@@ -16,6 +16,9 @@
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<itemgap>20</itemgap>
 				<usecontrolcoords>true</usecontrolcoords>
+				<onunfocus>SetProperty(settingsposition,$INFO[Container(9000).Position],home)</onunfocus>
+				<onfocus>Control.Move(9000,-$INFO[Container(9000).Position])</onfocus>
+				<onfocus>Control.Move(9000,$INFO[Window(home).Property(settingsposition)])</onfocus>
 				<control type="panel" id="9000">
 					<left>0</left>
 					<width>100%</width>
@@ -59,6 +62,7 @@
 					<right>0</right>
 					<height>900</height>
 					<include>SettingsPanel</include>
+					<onfocus>ClearProperty(settingsposition,home)</onfocus>
 					<content>
 						<item>
 							<label>$LOCALIZE[166]</label>
