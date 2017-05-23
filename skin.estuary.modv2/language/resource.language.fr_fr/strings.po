@@ -1697,3 +1697,18 @@ msgstr "A suivre ..."
 msgctxt "#40197"
 msgid "Show 'Settings' shortcut widget"
 msgstr "Afficher le widget du raccourci 'Paramètres'"
+
+#: /xml/Custom_1136_WarningPopUp.xml
+msgctxt "#40198"
+msgid "It's necessary to reboot Kodi and '[B]Reset main menu and power menu settings[/B]' in skin settings after installation of this version."
+msgstr "Il est nécessaire de redémarrer Kodi et de '[B]Réinitialiser les paramètres du menu principal et du menu d'alimentation[/B]' dans les paramètres du thème après l'installation de cette version."
+
+#: /xml/Custom_1136_WarningPopUp.xml
+msgctxt "#40199"
+msgid "Warning!"
+msgstr "Attention !"
+
+#: /xml/Custom_1136_WarningPopUp.xml
+msgctxt "#40200"
+msgid "Do not display anymore"
+msgstr "Ne plus afficher"
