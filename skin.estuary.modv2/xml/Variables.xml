@@ -989,42 +989,34 @@
 		<value>$LOCALIZE[15109]</value>
 	</variable>
 	<variable name="WidgetsAppearence1Label2Var">
-		<value condition="!Skin.HasSetting(widgetVisiblity1)">[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.1))">$INFO[Container(211).ListItem.Property(widgetAspect.1)]</value>
 		<value>[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 	</variable>
 	<variable name="WidgetsAppearence2Label2Var">
-		<value condition="!Skin.HasSetting(widgetVisiblity2)">[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.2))">$INFO[Container(211).ListItem.Property(widgetAspect.2)]</value>
 		<value>[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 	</variable>
 	<variable name="WidgetsAppearence3Label2Var">
-		<value condition="!Skin.HasSetting(widgetVisiblity3)">[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.3))">$INFO[Container(211).ListItem.Property(widgetAspect.3)]</value>
 		<value>[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 	</variable>
 	<variable name="WidgetsAppearence4Label2Var">
-		<value condition="!Skin.HasSetting(widgetVisiblity4)">[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.4))">$INFO[Container(211).ListItem.Property(widgetAspect.4)]</value>
 		<value>[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 	</variable>
 	<variable name="WidgetsAppearence5Label2Var">
-		<value condition="!Skin.HasSetting(widgetVisiblity5)">[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.5))">$INFO[Container(211).ListItem.Property(widgetAspect.5)]</value>
 		<value>[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 	</variable>
 	<variable name="WidgetsAppearence6Label2Var">
-		<value condition="!Skin.HasSetting(widgetVisiblity6)">[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.6))">$INFO[Container(211).ListItem.Property(widgetAspect.6)]</value>
 		<value>[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 	</variable>
 	<variable name="WidgetsAppearence7Label2Var">
-		<value condition="!Skin.HasSetting(widgetVisiblity7)">[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.7))">$INFO[Container(211).ListItem.Property(widgetAspect.7)]</value>
 		<value>[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 	</variable>
 	<variable name="WidgetsAppearence8Label2Var">
-		<value condition="!Skin.HasSetting(widgetVisiblity8)">[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.8))">$INFO[Container(211).ListItem.Property(widgetAspect.8)]</value>
 		<value>[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 	</variable>

@@ -56,7 +56,7 @@
 				<include>OpenClose_Right</include>		
 				<control type="group" id="22000">
 					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets)">Conditional</animation>
-					<visible>Skin.HasSetting(widgetVisiblity1) | Skin.HasSetting(widgetVisiblity2) | Skin.HasSetting(widgetVisiblity3) | Skin.HasSetting(widgetVisiblity4) | Skin.HasSetting(widgetVisiblity5) | Skin.HasSetting(widgetVisiblity6) | Skin.HasSetting(widgetVisiblity7) | Skin.HasSetting(widgetVisiblity8)</visible>
+					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="PersonalWidget"/>
 					</include>

@@ -254,14 +254,6 @@
 					<onclick>Skin.Reset(widgetAnimation6)</onclick>
 					<onclick>Skin.Reset(widgetAnimation7)</onclick>
 					<onclick>Skin.Reset(widgetAnimation8)</onclick>
-					<onclick>Skin.Reset(widgetVisiblity1)</onclick>
-					<onclick>Skin.Reset(widgetVisiblity2)</onclick>
-					<onclick>Skin.Reset(widgetVisiblity3)</onclick>
-					<onclick>Skin.Reset(widgetVisiblity4)</onclick>
-					<onclick>Skin.Reset(widgetVisiblity5)</onclick>
-					<onclick>Skin.Reset(widgetVisiblity6)</onclick>
-					<onclick>Skin.Reset(widgetVisiblity7)</onclick>
-					<onclick>Skin.Reset(widgetVisiblity8)</onclick>
 					<onclick>SetProperty(WidgetVisibility,True,home)</onclick>
 					<onclick>SendClick(312)</onclick>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
@@ -337,7 +329,6 @@
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence1Label2Var]</label2>
 					<onclick>Skin.ToggleSetting(widgetAnimation1)</onclick>
-					<onclick>Skin.ToggleSetting(widgetVisiblity1)</onclick>
 					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.1))]</visible>
 				</control>
 				<control type="button" id="14752">
@@ -367,7 +358,6 @@
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence2Label2Var]</label2>
 					<onclick>Skin.ToggleSetting(widgetAnimation2)</onclick>
-					<onclick>Skin.ToggleSetting(widgetVisiblity2)</onclick>
 					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.2))]</visible>
 				</control>
 				<control type="button" id="14762">
@@ -397,7 +387,6 @@
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence3Label2Var]</label2>
 					<onclick>Skin.ToggleSetting(widgetAnimation3)</onclick>
-					<onclick>Skin.ToggleSetting(widgetVisiblity3)</onclick>
 					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.3))]</visible>
 				</control>
 				<control type="button" id="14772">
@@ -427,7 +416,6 @@
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence4Label2Var]</label2>
 					<onclick>Skin.ToggleSetting(widgetAnimation4)</onclick>
-					<onclick>Skin.ToggleSetting(widgetVisiblity4)</onclick>
 					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.4))]</visible>
 				</control>
 				<control type="button" id="14782">
@@ -457,7 +445,6 @@
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence5Label2Var]</label2>
 					<onclick>Skin.ToggleSetting(widgetAnimation5)</onclick>
-					<onclick>Skin.ToggleSetting(widgetVisiblity5)</onclick>
 					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.5))]</visible>
 				</control>
 				<control type="button" id="14792">
@@ -487,7 +474,6 @@
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence6Label2Var]</label2>
 					<onclick>Skin.ToggleSetting(widgetAnimation6)</onclick>
-					<onclick>Skin.ToggleSetting(widgetVisiblity6)</onclick>
 					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.6))]</visible>
 				</control>
 				<control type="button" id="14802">
@@ -517,7 +503,6 @@
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence7Label2Var]</label2>
 					<onclick>Skin.ToggleSetting(widgetAnimation7)</onclick>
-					<onclick>Skin.ToggleSetting(widgetVisiblity7)</onclick>
 					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.7))]</visible>
 				</control>
 				<control type="button" id="14812">
@@ -547,7 +532,6 @@
 					<include>DefaultSettingButton</include>
 					<label2>$VAR[WidgetsAppearence8Label2Var]</label2>
 					<onclick>Skin.ToggleSetting(widgetAnimation8)</onclick>
-					<onclick>Skin.ToggleSetting(widgetVisiblity8)</onclick>
 					<visible>[String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidget) + !String.IsEmpty(Container(211).ListItem.Property(widgetPath.8))]</visible>
 				</control>
 				<control type="button" id="14822">
