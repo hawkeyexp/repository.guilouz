@@ -3078,7 +3078,7 @@ msgstr "Element aktivieren"
 #: /shortcuts/overrides.xml
 msgctxt "#40134"
 msgid "Not defined"
-msgstr ""
+msgstr "Nicht definiert"
 
 #: /shortcuts/overrides.xml
 msgctxt "#40135"
