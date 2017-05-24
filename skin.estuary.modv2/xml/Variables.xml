@@ -1310,6 +1310,10 @@
 		<value condition="Skin.HasSetting(opacitybars_100)">100%</value>
 		<value>$LOCALIZE[15109]</value>
 	</variable>
+	<variable name="Label_SkinSetting_RatingStringColor">
+		<value condition="!String.IsEmpty(Skin.String(RatingStringColor))">$INFO[Skin.String(RatingStringColor)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
 	<variable name="Label_SkinSetting_SkinColor">
 		<value condition="!String.IsEmpty(Skin.String(SkinColor))">$INFO[Skin.String(SkinColor)]</value>
 		<value>$LOCALIZE[15109]</value>
@@ -1321,6 +1325,10 @@
 	<variable name="Label_SkinSetting_PatternColor">
 		<value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
 		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="RatingColorVar">
+		<value condition="!String.IsEmpty(Skin.String(RatingStringColor))">$INFO[Skin.String(RatingStringColor)]</value>
+		<value>white</value>
 	</variable>
 	<variable name="SkinColorVar">
 		<value condition="!String.IsEmpty(Skin.String(SkinColor))">$INFO[Skin.String(SkinColor)]</value>

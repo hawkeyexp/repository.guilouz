@@ -139,7 +139,7 @@ msgstr "Type de vue"
 #: /xml/SkinSettings.xml
 msgctxt "#31024"
 msgid "Choose rating to display for media items"
-msgstr "Note à afficher pour les médias"
+msgstr "Notes à afficher pour les médias"
 
 #: /xml/DialogFavourites.xml
 msgctxt "#31025"
@@ -1715,3 +1715,13 @@ msgstr "Attention !"
 msgctxt "#40200"
 msgid "Do not display anymore"
 msgstr "Ne plus afficher"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40201"
+msgid "Rating text color"
+msgstr "Couleur du texte des notes"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40202"
+msgid "Reset rating text color"
+msgstr "Réinitialiser la couleur du texte des notes"

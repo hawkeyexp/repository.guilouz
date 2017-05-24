@@ -729,6 +729,19 @@
 					<onclick>Skin.SelectBool(31024, 16018|, 563|circle_rating, 38018|circle_userrating)</onclick>
 					<label2>$VAR[RatingSettingLabel2Var]</label2>
 				</control>
+				<control type="button" id="711">
+					<label>  ∟$LOCALIZE[40201]</label>
+					<label2>$VAR[Label_SkinSetting_RatingStringColor]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.skin.helper.colorpicker,skinstring=RatingStringColor)</onclick>
+					<visible>Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)</visible>
+				</control>
+				<control type="button" id="712">
+					<label>  ∟$LOCALIZE[40202]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.Reset(RatingStringColor)</onclick>
+					<visible>Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)</visible>
+				</control>
 				<control type="radiobutton" id="708">
 					<label>$LOCALIZE[40085]</label>
 					<include>DefaultSettingButton</include>

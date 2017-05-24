@@ -385,6 +385,7 @@
 			<width>44</width>
 			<height>44</height>
 			<font>font20_title</font>
+			<textcolor>$VAR[RatingColorVar]</textcolor>
 			<label>$INFO[$PARAM[infolabel]]</label>
 		</control>
 	</include>
@@ -406,6 +407,7 @@
 			<width>44</width>
 			<height>44</height>
 			<font>font20_title</font>
+			<textcolor>$VAR[RatingColorVar]</textcolor>
 			<label>$INFO[$PARAM[infolabel]]</label>
 		</control>
 		<control type="image">
