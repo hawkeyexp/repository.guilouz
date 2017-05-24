@@ -167,7 +167,7 @@ msgstr "Speicherauslastung"
 #: /xml/SettingsSystemInfo.xml
 msgctxt "#31031"
 msgid "Version info"
-msgstr "Versionsinformationen"
+msgstr "Versionsinfo"
 
 #: /xml/EventLog.xml /xml/Includes_MediaMenu.xml /xml/SmartPlaylistEditor.xml
 msgctxt "#31032"
@@ -182,7 +182,7 @@ msgstr "Persönliche Bewertung"
 #: /xml/DialogVideoInfo.xml
 msgctxt "#31034"
 msgid "Extended info"
-msgstr "Erweiterte Informationen"
+msgstr "Erweiterte Info"
 
 #: /xml/DialogPVRChannelManager.xml /xml/DialogPVRChannelsOSD.xml /xml/DialogPVRGuideOSD.xml /xml/Variables.xml /xml/FileBrowser.xml
 msgctxt "#31035"
@@ -677,7 +677,7 @@ msgstr "Hintergrund-Muster"
 #: /xml/SettingsSystemInfo.xml
 msgctxt "#31157"
 msgid "Library info"
-msgstr "Kategorien editieren"
+msgstr "Bibliotheksinfo"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31158"
@@ -872,7 +872,7 @@ msgstr "Handlung von Episoden ausblenden"
 #: /xml/SkinSettings.xml
 msgctxt "#40032"
 msgid "Debug infos"
-msgstr "Debug-Informationen"
+msgstr "Debuginfo"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40033"
@@ -1322,7 +1322,7 @@ msgstr "Miniaturen mit Banner"
 #: /xml/Home.xml
 msgctxt "#40122"
 msgid "Hardware info"
-msgstr "Hardware-Info"
+msgstr "Hardwareinfo"
 
 #: /xml/Home.xml
 msgctxt "#40123"
@@ -1863,7 +1863,7 @@ msgstr "Speicherauslastung"
 #: /xml/SettingsSystemInfo.xml
 msgctxt "#31031"
 msgid "Version info"
-msgstr "Versionsinformationen"
+msgstr "Versionsinfo"
 
 #: /xml/EventLog.xml /xml/Includes_MediaMenu.xml /xml/SmartPlaylistEditor.xml
 msgctxt "#31032"
@@ -2373,7 +2373,7 @@ msgstr "Hintergrund-Muster"
 #: /xml/SettingsSystemInfo.xml
 msgctxt "#31157"
 msgid "Library info"
-msgstr "Kategorien editieren"
+msgstr "Bibliotheksinfo"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31158"
@@ -2568,7 +2568,7 @@ msgstr "Handlung von Episoden ausblenden"
 #: /xml/SkinSettings.xml
 msgctxt "#40032"
 msgid "Debug infos"
-msgstr "Debug-Informationen"
+msgstr "Debug Informationen"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40033"
@@ -3018,7 +3018,7 @@ msgstr "Miniaturen mit Banner"
 #: /xml/Home.xml
 msgctxt "#40122"
 msgid "Hardware info"
-msgstr "Hardware-Info"
+msgstr "Hardwareinfo"
 
 #: /xml/Home.xml
 msgctxt "#40123"
