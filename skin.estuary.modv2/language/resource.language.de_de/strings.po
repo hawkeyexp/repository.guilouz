@@ -3395,14 +3395,14 @@ msgstr "Zeige 'Einstellungen' Shortcut Widget"
 #: /xml/Custom_1136_WarningPopUp.xml
 msgctxt "#40198"
 msgid "It's necessary to reboot Kodi and '[B]Reset main menu and power menu settings[/B]' in skin settings after installation of this version."
-msgstr "Nach der Installation dieser Version ist es notwendig, Kodi neu zu starten und '[B]Haupt- und Powermenü Einstellung zurück zu setzen.[/B]'"
+msgstr "Nach der Installation dieser Version des Skins ist es notwendig Kodi neu zu starten. [B]Ausserdem müssen  die Haupt- und Powermenü Einstellung zurück gesetzt werden‚‚.[/B]'"
 
 #: /xml/Custom_1136_WarningPopUp.xml
 msgctxt "#40199"
 msgid "Warning!"
-msgstr "Warnung!"
+msgstr "Achtung!"
 
 #: /xml/Custom_1136_WarningPopUp.xml
 msgctxt "#40200"
 msgid "Do not display anymore"
-msgstr "Nicht mehr anzeigen.‚"
+msgstr "Nicht mehr anzeigen"
