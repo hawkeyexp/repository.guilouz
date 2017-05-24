@@ -1018,7 +1018,7 @@ msgstr ""
 
 #: /xml/DialogMusicInfo.xml
 msgctxt "#40061"
-msgid "Press OK to read description"
+msgid "Press [B]OK[/B] to read description"
 msgstr ""
 
 #: /xml/SkinSettings.xml
@@ -1556,7 +1556,10 @@ msgctxt "#40168"
 msgid "Sort direction of widget"
 msgstr ""
 
-#: Empty string 40169
+#: /xml/DialogMusicInfo.xml
+msgctxt "#40169"
+msgid "Press [B]OK[/B] to read description or [B]Left[/B] to show back thumb"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40170"

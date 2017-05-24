@@ -1018,7 +1018,7 @@ msgstr "Démarrer automatiquement Artwork Downloader après la mise à jour de l
 
 #: /xml/DialogMusicInfo.xml
 msgctxt "#40061"
-msgid "Press OK to read description"
+msgid "Press [B]OK[/B] to read description"
 msgstr "Appuyer sur [B]OK[/B] pour afficher la description"
 
 #: /xml/SkinSettings.xml
@@ -1556,7 +1556,10 @@ msgctxt "#40168"
 msgid "Sort direction of widget"
 msgstr "Direction du tri du widget"
 
-#: Empty string 40169
+#: /xml/DialogMusicInfo.xml
+msgctxt "#40169"
+msgid "Press [B]OK[/B] to read description or [B]Left[/B] to show back thumb"
+msgstr "Appuyer sur [B]OK[/B] pour afficher la description ou sur [B]Gauche[/B] pour afficher la pochette arrière"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40170"

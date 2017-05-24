@@ -1016,8 +1016,8 @@ msgstr "Artwork-Downloader nach Bibliotheksaktualisierung automatisch starten"
 
 #: /xml/DialogMusicInfo.xml
 msgctxt "#40061"
-msgid "Press OK to read description"
-msgstr "Drücken Sie OK, um die Beschreibung zu lesen"
+msgid "Press [B]OK[/B] to read description"
+msgstr "Drücken Sie [B]OK(/B], um die Beschreibung zu lesen"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40062"
@@ -1554,7 +1554,10 @@ msgctxt "#40168"
 msgid "Sort direction of widget"
 msgstr "Sortierreihenfolge des Widgets"
 
-#: Empty string 40169
+#: /xml/DialogMusicInfo.xml
+msgctxt "#40169"
+msgid "Press [B]OK[/B] to read description or [B]Left[/B] to show back thumb"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40170"

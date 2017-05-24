@@ -13,6 +13,17 @@
 				<include>OpenClose_Left</include>
 				<top>158</top>
 				<left>30</left>
+				<control type="button" id="1300">
+					<top>-2</top>
+					<left>20</left>
+					<width>622</width>
+					<height>622</height>
+					<onright>130</onright>
+					<ondown>9000</ondown>
+					<label/>
+					<texturenofocus/>
+					<visible>Container.Content(albums) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ThumbBack))</visible>
+				</control>
 				<control type="image">
 					<left>24</left>
 					<top>2</top>
@@ -32,6 +43,19 @@
 					<aspectratio aligny="top">scale</aspectratio>
 					<fadetime>300</fadetime>
 					<texture background="true" fallback="DefaultAudio.png">$VAR[MusicInfoThumbVar]</texture>
+					<animation effect="fade" time="150">VisibleChange</animation>
+				</control>
+				<control type="image">
+					<depth>DepthContentPopout</depth>
+					<left>44</left>
+					<top>22</top>
+					<width>574</width>
+					<height>574</height>
+					<aspectratio aligny="top">scale</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ThumbBack)]</texture>
+					<animation effect="fade" time="150">VisibleChange</animation>
+					<visible>Control.HasFocus(1300) + Container.Content(albums) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ThumbBack))</visible>
 				</control>
 			</control>
 			<control type="group">
@@ -46,6 +70,7 @@
 						<left>586</left>
 						<width>1190</width>
 						<height>614</height>
+						<onleft condition="Container.Content(albums)">1300</onleft>
 						<onup>50</onup>
 						<ondown>9000</ondown>
 						<label/>
@@ -97,6 +122,7 @@
 					<control type="button" id="130">
 						<onup>50</onup>
 						<ondown>9000</ondown>
+						<onleft conditon="Container.Content(albums)">1300</onleft>
 						<left>586</left>
 						<width>1190</width>
 						<height>320</height>
@@ -494,10 +520,10 @@
 				</control>
 				<control type="label">
 					<left>74</left>
-					<width>1000</width>
+					<right>17</right>
 					<font>font25_title</font>
 					<aligny>center</aligny>
-					<label>$LOCALIZE[40061]</label>
+					<label>$VAR[DialogMusicInfoThumbBackVar]</label>
 				</control>
 			</control>
 		</control>

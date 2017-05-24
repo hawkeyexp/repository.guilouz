@@ -1,4 +1,5 @@
 [B]2.4.1[/B]
+• Add support for albums back thumbs (file must be placed in album folder and named 'thumbback.jpg')
 • Fix issue with Appearance for Personal Widgets
 • Minor fixes
 
