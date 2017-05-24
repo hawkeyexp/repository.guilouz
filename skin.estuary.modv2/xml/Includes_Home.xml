@@ -367,6 +367,7 @@
 		<param name="visible_1">true</param>
 		<param name="visible_2">true</param>
 		<param name="button2_onclick">true</param>
+		<param name="right">50</param>
 		<definition>
 			<control type="group" id="$PARAM[button_id]889">
 				<visible>$PARAM[visible]</visible>
@@ -375,7 +376,7 @@
 					<top>0</top>
 					<bottom>0</bottom>
 					<left>50</left>
-					<right>50</right>
+					<right>$PARAM[right]</right>
 					<align>center</align>
 					<control type="textbox">
 						<width>100%</width>
