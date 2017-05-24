@@ -885,16 +885,19 @@
 				<control type="button" id="10002">
 					<label>$LOCALIZE[40106]</label>
 					<include>DefaultSettingButton</include>
+					<onclick condition="!System.HasAddon(script.skinshortcuts)">InstallAddon(script.skinshortcuts)</onclick>
 					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
 				</control>
 				<control type="button" id="10016">
 					<label>$LOCALIZE[40159]</label>
 					<include>DefaultSettingButton</include>
+					<onclick condition="!System.HasAddon(script.skinshortcuts)">InstallAddon(script.skinshortcuts)</onclick>
 					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=powermenu)</onclick>
 				</control>
 				<control type="button" id="10003">
 					<label>  ∟$LOCALIZE[40006]</label>
 					<include>DefaultSettingButton</include>
+					<onclick condition="!System.HasAddon(script.skinshortcuts)">InstallAddon(script.skinshortcuts)</onclick>
 					<onclick>Skin.Reset(widgetAnimation1)</onclick>
 					<onclick>Skin.Reset(widgetAnimation2)</onclick>
 					<onclick>Skin.Reset(widgetAnimation3)</onclick>
