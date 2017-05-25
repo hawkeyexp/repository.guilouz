@@ -1528,6 +1528,103 @@
 			</control>
 		</definition>
 	</include>
+	<include name="WidgetListCategoriesPersonal">
+		<include content="CategoryLabel">
+			<param name="label">$PARAM[widget_header]</param>
+			<param name="list_id" value="$PARAM[list_id]"/>
+			<param name="visible" value="$PARAM[visible]"/>
+		</include>
+		<include content="BusyListSpinner">
+			<param name="list_id" value="$PARAM[list_id]"/>
+			<param name="visible" value="$PARAM[visible]"/>
+		</include>
+		<control type="panel" id="$PARAM[list_id]">
+			<left>-10</left>
+			<top>110</top>
+			<right>0</right>
+			<height>290</height>
+			<include content="WidgetListCommon">
+				<param name="list_id" value="$PARAM[list_id]"/>
+			</include>
+			<visible>$PARAM[visible]</visible>
+			<itemlayout width="310" height="340">
+				<control type="group">
+					<left>70</left>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
+					<control type="image">
+						<top>25</top>
+						<left>25</left>
+						<width>266</width>
+						<height>120</height>
+						<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>-->
+					</control>
+					<control type="label">
+						<left>28</left>
+						<top>143</top>
+						<width>260</width>
+						<height>30</height>
+						<label>$INFO[ListItem.TVShowTitle,, - ]$INFO[ListItem.Label]</label>
+						<font>font25_narrow</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<align>center</align>
+					</control>
+				</control>
+			</itemlayout>
+			<focusedlayout width="310" height="340">
+				<control type="group">
+					<depth>DepthContentPopout</depth>
+					<left>70</left>
+					<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
+						<effect type="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="228,70" />
+					</animation>
+					<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
+						<effect type="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="228,70" />
+					</animation>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+					</control>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+					</control>
+					<control type="image">
+						<top>25</top>
+						<left>25</left>
+						<width>266</width>
+						<height>120</height>
+						<texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>-->
+					</control>
+					<control type="label">
+						<left>28</left>
+						<top>143</top>
+						<width>260</width>
+						<height>30</height>
+						<label>$INFO[ListItem.TVShowTitle,, - ]$INFO[ListItem.Label]</label>
+						<font>font25_narrow</font>
+						<shadowcolor>text_shadow</shadowcolor>
+						<align>center</align>
+						<scroll>true</scroll>
+					</control>
+				</control>
+			</focusedlayout>
+			<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
+		</control>
+	</include>
 	<include name="WidgetListCategoriesBig">
 		<include content="CategoryLabel">
 			<param name="label">$PARAM[widget_header]</param>

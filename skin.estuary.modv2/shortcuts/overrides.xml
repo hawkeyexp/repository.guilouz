@@ -85,41 +85,49 @@
 	<property property="widgetAspect.1">$LOCALIZE[40139]</property>
 	<property property="widgetAspect.1">$LOCALIZE[40121]</property>
 	<property property="widgetAspect.1">$LOCALIZE[40140]</property>
+	<property property="widgetAspect.1">$LOCALIZE[31148]</property>
 	<propertySettings property="widgetAspect.2" buttonID="14761" showNone="False" title="$LOCALIZE[40137] 2" />
 	<property property="widgetAspect.2">$LOCALIZE[40138]</property>
 	<property property="widgetAspect.2">$LOCALIZE[40139]</property>
 	<property property="widgetAspect.2">$LOCALIZE[40121]</property>
 	<property property="widgetAspect.2">$LOCALIZE[40140]</property>
+	<property property="widgetAspect.2">$LOCALIZE[31148]</property>
 	<propertySettings property="widgetAspect.3" buttonID="14771" showNone="False" title="$LOCALIZE[40137] 3" />
 	<property property="widgetAspect.3">$LOCALIZE[40138]</property>
 	<property property="widgetAspect.3">$LOCALIZE[40139]</property>
 	<property property="widgetAspect.3">$LOCALIZE[40121]</property>
 	<property property="widgetAspect.3">$LOCALIZE[40140]</property>
+	<property property="widgetAspect.3">$LOCALIZE[31148]</property>
 	<propertySettings property="widgetAspect.4" buttonID="14781" showNone="False" title="$LOCALIZE[40137] 4" />
 	<property property="widgetAspect.4">$LOCALIZE[40138]</property>
 	<property property="widgetAspect.4">$LOCALIZE[40139]</property>
 	<property property="widgetAspect.4">$LOCALIZE[40121]</property>
 	<property property="widgetAspect.4">$LOCALIZE[40140]</property>
+	<property property="widgetAspect.4">$LOCALIZE[31148]</property>
 	<propertySettings property="widgetAspect.5" buttonID="14791" showNone="False" title="$LOCALIZE[40137] 5" />
 	<property property="widgetAspect.5">$LOCALIZE[40138]</property>
 	<property property="widgetAspect.5">$LOCALIZE[40139]</property>
 	<property property="widgetAspect.5">$LOCALIZE[40121]</property>
 	<property property="widgetAspect.5">$LOCALIZE[40140]</property>
+	<property property="widgetAspect.5">$LOCALIZE[31148]</property>
 	<propertySettings property="widgetAspect.6" buttonID="14801" showNone="False" title="$LOCALIZE[40137] 6" />
 	<property property="widgetAspect.6">$LOCALIZE[40138]</property>
 	<property property="widgetAspect.6">$LOCALIZE[40139]</property>
 	<property property="widgetAspect.6">$LOCALIZE[40121]</property>
 	<property property="widgetAspect.6">$LOCALIZE[40140]</property>
+	<property property="widgetAspect.6">$LOCALIZE[31148]</property>
 	<propertySettings property="widgetAspect.7" buttonID="14811" showNone="False" title="$LOCALIZE[40137] 7" />
 	<property property="widgetAspect.7">$LOCALIZE[40138]</property>
 	<property property="widgetAspect.7">$LOCALIZE[40139]</property>
 	<property property="widgetAspect.7">$LOCALIZE[40121]</property>
 	<property property="widgetAspect.7">$LOCALIZE[40140]</property>
+	<property property="widgetAspect.7">$LOCALIZE[31148]</property>
 	<propertySettings property="widgetAspect.8" buttonID="14821" showNone="False" title="$LOCALIZE[40137] 8" />
 	<property property="widgetAspect.8">$LOCALIZE[40138]</property>
 	<property property="widgetAspect.8">$LOCALIZE[40139]</property>
 	<property property="widgetAspect.8">$LOCALIZE[40121]</property>
 	<property property="widgetAspect.8">$LOCALIZE[40140]</property>
+	<property property="widgetAspect.8">$LOCALIZE[31148]</property>
 	
 	<propertySettings property="widgetSortBy.1" buttonID="14752" showNone="True" title="$LOCALIZE[40167] 1" />
 	<property property="widgetSortBy.1">$LOCALIZE[551]</property>
