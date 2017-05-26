@@ -920,6 +920,7 @@
 					<onclick>Skin.Reset(widgetAnimation7)</onclick>
 					<onclick>Skin.Reset(widgetAnimation8)</onclick>
 					<onclick>Skin.Reset(widgetAnimation9)</onclick>
+					<onclick>Skin.Reset(HomeBanner)</onclick>
 					<onclick>RunScript(script.skinshortcuts,type=resetall)</onclick>
 				</control>
 				<control type="radiobutton" id="10006">
