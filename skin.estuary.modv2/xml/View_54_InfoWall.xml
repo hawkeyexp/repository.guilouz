@@ -173,14 +173,14 @@
 		<param name="main_label">$INFO[ListItem.Title]</param>
 		<param name="sub_label">$INFO[ListItem.TVShowTitle]</param>
 		<param name="thumb_label">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</param>
-		<param name="fallback_image">DefaultVideo.png</param>
+		<param name="fallback_image">DefaultVideoFanart.png</param>
 		<param name="focused">false</param>
 		<param name="label">$INFO[ListItem.Label]</param>
 		<definition>
 			<control type="image">
 				<top>10</top>
 				<width>316</width>
-				<height>288</height>
+				<height>277</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -189,7 +189,7 @@
 				<top>6</top>
 				<left>-4</left>
 				<width>324</width>
-				<height>296</height>
+				<height>282</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -197,17 +197,16 @@
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
-				<left>0</left>
-				<top>10</top>
-				<width>316</width>
-				<height>218</height>
+				<left>20</left>
+				<top>30</top>
+				<width>276</width>
+				<height>156</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
-				<aspectratio>scale</aspectratio>
-				<bordersize>20</bordersize>
+				<aspectratio aligny="top">keep</aspectratio>
 			</control>
 			<control type="image">
 				<left>136</left>
-				<top>138</top>
+				<top>116</top>
 				<width>160</width>
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
@@ -215,7 +214,7 @@
 			</control>
 			<control type="label">
 				<left>31</left>
-				<top>178</top>
+				<top>156</top>
 				<width>260</width>
 				<label>$PARAM[thumb_label]</label>
 				<font>font20_title</font>
@@ -225,7 +224,7 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>138</top>
+				<top>116</top>
 				<width>160</width>
 				<height>70</height>
 				<texture>overlays/overlay-bg.png</texture>
@@ -233,16 +232,16 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>175</top>
+				<top>153</top>
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
 			</control>
 			<control type="textbox">
 				<left>28</left>
-				<top>202</top>
+				<top>191</top>
 				<width>262</width>
-				<height>80</height>
+				<height>70</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -252,9 +251,9 @@
 			</control>
 			<control type="label">
 				<left>28</left>
-				<top>202</top>
+				<top>191</top>
 				<width>262</width>
-				<height>80</height>
+				<height>70</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -266,7 +265,7 @@
 				<visible>!Window.IsActive(videos)</visible>
 				<control type="label">
 					<left>29</left>
-					<top>210</top>
+					<top>195</top>
 					<width>260</width>
 					<label>$PARAM[sub_label]</label>
 					<font>font12</font>
@@ -276,7 +275,7 @@
 				</control>
 				<control type="label">
 					<left>29</left>
-					<top>240</top>
+					<top>225</top>
 					<width>260</width>
 					<label>$PARAM[main_label]</label>
 					<font>font10</font>
@@ -289,7 +288,7 @@
 				<top>30</top>
 				<left>20</left>
 				<width>276</width>
-				<height>248</height>
+				<height>237</height>
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home)</visible>
@@ -298,14 +297,14 @@
 				<top>30</top>
 				<left>20</left>
 				<width>276</width>
-				<height>248</height>
+				<height>237</height>
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>287</top>
+				<top>276</top>
 				<width>276</width>
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
@@ -313,7 +312,7 @@
 			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>259</top>
+				<top>248</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -346,7 +345,7 @@
 		<param name="main_label">$INFO[ListItem.Title]</param>
 		<param name="sub_label">$INFO[ListItem.TVShowTitle]</param>
 		<param name="thumb_label">$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</param>
-		<param name="fallback_image">DefaultVideo.png</param>
+		<param name="fallback_image">DefaultVideoFanart.png</param>
 		<param name="focused">false</param>
 		<param name="label">$INFO[ListItem.Label]</param>
 		<definition>
@@ -375,7 +374,7 @@
 				<width>276</width>
 				<height>155</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
-				<aspectratio>stretch</aspectratio>
+				<aspectratio aligny="top">keep</aspectratio>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -383,7 +382,7 @@
 				<width>276</width>
 				<height>51</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[BannerVar]</texture>
-				<aspectratio>stretch</aspectratio>
+				<aspectratio aligny="top">keep</aspectratio>
 			</control>
 			<control type="image">
 				<left>136</left>

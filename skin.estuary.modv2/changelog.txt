@@ -1,3 +1,8 @@
+[B]2.5.1[/B]
+• Fix aspect ratio for widgets
+• Minor fixes
+• Update German translation
+
 [B]2.5.0[/B]
 /!\ Reboot Kodi and 'Reset main menu and power menu settings' in skin settings after installation of this version /!\
 • Add vertical panels for Personalized Widgets
