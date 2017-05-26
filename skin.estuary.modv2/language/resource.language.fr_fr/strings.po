@@ -1543,8 +1543,8 @@ msgstr "Utiliser l'alphabet pour défiler sur la bibliothèque (expérimental)"
 
 #: /shortcuts/overrides.xml
 msgctxt "#40166"
-msgid "Lists (many items)"
-msgstr "Listes (plusieurs éléments)"
+msgid "Lists (up to 8 items)"
+msgstr "Listes (jusqu'à 8 éléments)"
 
 #: /shortcuts/overrides.xml
 msgctxt "#40167"
@@ -1738,8 +1738,8 @@ msgstr "Widgets à personnaliser"
 
 #: /shortcuts/overrides.xml
 msgctxt "#40205"
-msgid "Vertical panel (one single item)"
-msgstr "Panneau vertical (un seul élément)"
+msgid "Vertical panel (1 item)"
+msgstr "Panneau vertical (1 élément)"
 
 #: /shortcuts/overrides.xml
 msgctxt "#40206"

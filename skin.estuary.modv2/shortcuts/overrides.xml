@@ -41,8 +41,8 @@
     <widget label="3" icon="icons/sidemenu/videos.png">VideoWidget</widget>
     <widget label="10134" icon="icons/sidemenu/favourites.png">FavoritesWidget</widget>
     <widget label="8" icon="icons/sidemenu/weather.png">WeatherWidget</widget>
-    <widget label="40166" icon="DefaultAddonLookAndFeel.png">PersonalWidgetList</widget>
-    <widget label="40205" icon="DefaultAddonLookAndFeel.png">PersonalWidgetPanel</widget>
+    <widget label="40166" icon="icons/PersonalList.png">PersonalWidgetList</widget>
+    <widget label="40205" icon="icons/PersonalPanel.png">PersonalWidgetPanel</widget>
     
     
     <!-- Default Backgrounds -->
@@ -388,8 +388,8 @@
             <shortcut label="8" icon="icons/sidemenu/weather.png" widget="WeatherWidget">WeatherWidget</shortcut>
         </node>
         <node label="40204" condition="!String.IsEmpty(Window(home).Property(WidgetVisibility))">
-            <shortcut label="40166" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidgetList">PersonalWidgetList</shortcut>
-            <shortcut label="40205" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidgetPanel">PersonalWidgetPanel</shortcut>
+            <shortcut label="40166" icon="icons/PersonalList.png" widget="PersonalWidgetList">PersonalWidgetList</shortcut>
+            <shortcut label="40205" icon="icons/PersonalPanel.png" widget="PersonalWidgetPanel">PersonalWidgetPanel</shortcut>
         </node>
   
         <shortcut label="40135" icon="DefaultFolder.png" condition="String.IsEmpty(Window(home).Property(WidgetVisibility)) + System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
