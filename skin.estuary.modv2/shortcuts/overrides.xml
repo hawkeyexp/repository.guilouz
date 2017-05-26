@@ -27,24 +27,6 @@
     <widgetdefault labelID="favorites">FavoritesWidget</widgetdefault>
     <widgetdefault labelID="weather">WeatherWidget</widgetdefault>
     
-    <!-- Additionnal Widgets -->
-    <widget label="427" icon="icons/sidemenu/disc.png">DiscWidget</widget>
-    <widget label="342" icon="icons/sidemenu/movies.png">MoviesWidget</widget>
-    <widget label="20343" icon="icons/sidemenu/tv.png">TVShowsWidget</widget>
-    <widget label="2" icon="icons/sidemenu/music.png" >MusicWidget</widget>
-    <widget label="20389" icon="icons/sidemenu/musicvideos.png">MusicVideosWidget</widget>
-    <widget label="19020" icon="icons/sidemenu/livetv.png">LiveTVWidget</widget>
-    <widget label="19021" icon="icons/sidemenu/radio.png">RadioWidget</widget>
-    <widget label="15016" icon="icons/sidemenu/games.png">GamesWidget</widget>
-    <widget label="24001" icon="icons/sidemenu/addons.png">AddonsWidget</widget>
-    <widget label="1" icon="icons/sidemenu/pictures.png">PicturesWidget</widget>
-    <widget label="3" icon="icons/sidemenu/videos.png">VideoWidget</widget>
-    <widget label="10134" icon="icons/sidemenu/favourites.png">FavoritesWidget</widget>
-    <widget label="8" icon="icons/sidemenu/weather.png">WeatherWidget</widget>
-    <widget label="40166" icon="icons/PersonalList.png">PersonalWidgetList</widget>
-    <widget label="40205" icon="icons/PersonalPanel.png">PersonalWidgetPanel</widget>
-    
-    
     <!-- Default Backgrounds -->
     <backgrounddefault labelID="disc">special://skin/extras/home-images/disc.jpg</backgrounddefault>
     <backgrounddefault labelID="movies">special://skin/extras/home-images/movies.jpg</backgrounddefault>
