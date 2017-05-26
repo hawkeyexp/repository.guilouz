@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template>
-	<other include="PersonalizedWidget">
+	<other include="PersonalWidgetList">
 		<property name="id" tag="mainmenuid" />
 		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="40138">ListPoster</property>
 		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="40139">NextAiringEpisodes</property>
@@ -167,8 +167,8 @@
 				<include>WidgetGroupListCommon</include>
 				<skinshortcuts>visibility</skinshortcuts>
 				<pagecontrol>22010</pagecontrol>
-				<include condition="!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">PersonalWidgetListCategoriesBig</include>
-				<include condition="Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">PersonalWidgetListCategoriesSmall</include>
+				<include condition="!Skin.HasSetting(UseSmallerCategories)">PersonalWidgetListCategoriesBig</include>
+				<include condition="Skin.HasSetting(UseSmallerCategories)">PersonalWidgetListCategoriesSmall</include>
 				<include content="Widget$SKINSHORTCUTS[WidgetStyle1]">
 					<param name="content_path" value="$SKINSHORTCUTS[content1]"/>
 					<param name="widget_header" value="$SKINSHORTCUTS[name1]"/>
@@ -232,6 +232,46 @@
 					<param name="sortby" value="$SKINSHORTCUTS[sortby8]"/>
 					<param name="sortorder" value="$SKINSHORTCUTS[sortorder8]"/>
 					<param name="list_id" value="22800$SKINSHORTCUTS[id]"/>
+				</include>
+			</control>
+		</controls>
+	</other>
+	<other include="PersonalWidgetPanel">
+		<property name="id" tag="mainmenuid" />
+		<property name="WidgetStyle9" tag="property" attribute="name|widgetAspect.9" value="40203">PanelPoster</property>
+		<property name="WidgetStyle9" tag="property" attribute="name|widgetAspect.9" value="40206">PanelEpisodes</property>
+		<property name="WidgetStyle9" tag="property" attribute="name|widgetAspect.9" value="40207">PanelEpisodesBanners</property>
+		<property name="WidgetStyle9" tag="property" attribute="name|widgetAspect.9" value="40208">PanelSquare</property>
+		<property name="WidgetStyle9" tag="property" attribute="name|widgetAspect.9" value="40209">PanelBanners</property>
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="568">lastplayed</property>
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="12012">lastused</property>
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="551">sorttitle</property>
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="563">rating</property>
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="562">year</property>
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="570">dateadded</property>
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="567">playcount</property>
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="180">time</property>
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="590">random</property>
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="135">genre</property>	
+		<property name="sortorder9" tag="property" attribute="name|widgetSortDirection.9" value="584">ascending</property>
+		<property name="sortorder9" tag="property" attribute="name|widgetSortDirection.9" value="585">descending</property>
+		<property name="name9" tag="property" attribute="name|widgetName.9" />
+		<property name="target9" tag="property" attribute="name|widgetTarget.9" />
+		<property name="content9" tag="property" attribute="name|widgetPath.9" />
+		<controls>
+			<control type="grouplist" id="23001">
+				<include>WidgetGroupListCommon</include>
+				<skinshortcuts>visibility</skinshortcuts>
+				<pagecontrol>23010</pagecontrol>
+				<include condition="!Skin.HasSetting(UseSmallerCategories)">PersonalWidgetPanelCategoriesBig</include>
+				<include condition="Skin.HasSetting(UseSmallerCategories)">PersonalWidgetPanelCategoriesSmall</include>
+				<include content="Widget$SKINSHORTCUTS[WidgetStyle9]">
+					<param name="content_path" value="$SKINSHORTCUTS[content9]"/>
+					<param name="widget_header" value="$SKINSHORTCUTS[name9]"/>
+					<param name="widget_target" value="$SKINSHORTCUTS[target9]"/>
+					<param name="sortby" value="$SKINSHORTCUTS[sortby9]"/>
+					<param name="sortorder" value="$SKINSHORTCUTS[sortorder9]"/>
+					<param name="list_id" value="23100$SKINSHORTCUTS[id]"/>
 				</include>
 			</control>
 		</controls>

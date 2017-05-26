@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1136)</onload>
+	<onload condition="!Skin.HasSetting(FirstTimeRun2)">ActivateWindow(1136)</onload>
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=mainmenu|powermenu)</onload>
 	<onload condition="Skin.HasSetting(Skin_EnableAnimatedPosters)">Skin.SetBool(SkinHelper.EnableAnimatedPosters)</onload>
 	<onload condition="!Skin.HasSetting(Skin_EnableAnimatedPosters)">Skin.Reset(SkinHelper.EnableAnimatedPosters)</onload>
@@ -56,12 +56,12 @@
 				<include>OpenClose_Right</include>		
 				<control type="group" id="22000">
 					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets)">Conditional</animation>
-					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)</visible>
+					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)</visible>
 					<include content="Visible_Right_Delayed_Home">
-						<param name="id" value="PersonalWidget"/>
+						<param name="id" value="PersonalWidgetList"/>
 					</include>
 					<animation effect="slide" end="0,35" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
-					<include>skinshortcuts-template-PersonalizedWidget</include>	
+					<include>skinshortcuts-template-PersonalWidgetList</include>	
 					<include content="ImageWidget">
 						<param name="text_label" value="$LOCALIZE[40194]" />
 						<param name="button_id" value="45000"/>
@@ -79,6 +79,33 @@
 					</include>
 					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
 						<param name="scrollbar_id" value="22010"/>
+					</include>
+				</control>
+				<control type="group" id="23000">
+					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets)">Conditional</animation>
+					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)</visible>
+					<include content="Visible_Right_Delayed_Home">
+						<param name="id" value="PersonalWidgetPanel"/>
+					</include>
+					<animation effect="slide" end="0,35" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
+					<include>skinshortcuts-template-PersonalWidgetPanel</include>	
+					<include content="ImageWidget">
+						<param name="text_label" value="$LOCALIZE[40194]" />
+						<param name="button_id" value="45000"/>
+						<param name="visible_1" value="false"/>
+						<param name="visible_2" value="false"/>
+						<param name="visible" value="!Skin.HasSetting(HideMainMenuWithWidgets) + [String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
+					</include>
+					<include content="ImageWidget">
+						<param name="text_label" value="$LOCALIZE[40194]" />
+						<param name="button_id" value="45000"/>
+						<param name="visible_1" value="false"/>
+						<param name="visible_2" value="false"/>
+						<param name="right" value="555"/>
+						<param name="visible" value="Skin.HasSetting(HideMainMenuWithWidgets) + [String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
+					</include>
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
+						<param name="scrollbar_id" value="23010"/>
 					</include>
 				</control>
 				<control type="group" id="5000">
@@ -1680,7 +1707,8 @@
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(widget),VideoWidget)">11000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(widget),FavoritesWidget)">14000</onright>
 					<onright condition="String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget)">15000</onright>
-					<onright condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidget)">22000</onright>
+					<onright condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)">22000</onright>
+					<onright condition="String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)">23000</onright>
 					<onup>700</onup>
 					<ondown>700</ondown>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>

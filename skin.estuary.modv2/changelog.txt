@@ -1,8 +1,10 @@
-[B]2.4.1[/B]
+[B]2.5.0[/B]
+/!\ Reboot Kodi and 'Reset main menu and power menu settings' in skin settings after installation of this version /!\
+• Add vertical panels for Personalized Widgets
+• Add 'Categories' appearance for Personalized Widgets
 • Add support for albums back thumbs (file must be placed in album folder and named 'thumbback.jpg')
-• Add 'Categories' appearance for Personal Widgets
 • Add possibility to change rating text color
-• Fix issue with Appearance for Personal Widgets
+• Fix issue with Appearance for Personalized Widgets
 • Minor fixes
 
 [B]2.4.0[/B]

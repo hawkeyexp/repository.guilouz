@@ -41,7 +41,8 @@
     <widget label="3" icon="icons/sidemenu/videos.png">VideoWidget</widget>
     <widget label="10134" icon="icons/sidemenu/favourites.png">FavoritesWidget</widget>
     <widget label="8" icon="icons/sidemenu/weather.png">WeatherWidget</widget>
-    <widget label="40166" icon="DefaultAddonLookAndFeel.png">PersonalWidget</widget>
+    <widget label="40166" icon="DefaultAddonLookAndFeel.png">PersonalWidgetList</widget>
+    <widget label="40205" icon="DefaultAddonLookAndFeel.png">PersonalWidgetPanel</widget>
     
     
     <!-- Default Backgrounds -->
@@ -128,6 +129,12 @@
 	<property property="widgetAspect.8">$LOCALIZE[40121]</property>
 	<property property="widgetAspect.8">$LOCALIZE[40140]</property>
 	<property property="widgetAspect.8">$LOCALIZE[31148]</property>
+	<propertySettings property="widgetAspect.9" buttonID="14831" showNone="False" title="$LOCALIZE[40137]" />
+	<property property="widgetAspect.9">$LOCALIZE[40203]</property>
+	<property property="widgetAspect.9">$LOCALIZE[40206]</property>
+	<property property="widgetAspect.9">$LOCALIZE[40207]</property>
+	<property property="widgetAspect.9">$LOCALIZE[40208]</property>
+	<property property="widgetAspect.9">$LOCALIZE[40209]</property>
 	
 	<propertySettings property="widgetSortBy.1" buttonID="14752" showNone="True" title="$LOCALIZE[40167] 1" />
 	<property property="widgetSortBy.1">$LOCALIZE[551]</property>
@@ -217,6 +224,17 @@
     <property property="widgetSortBy.8">$LOCALIZE[12012]</property>
     <property property="widgetSortBy.8">$LOCALIZE[135]</property>
     <property property="widgetSortBy.8">$LOCALIZE[590]</property>
+    <propertySettings property="widgetSortBy.9" buttonID="14832" showNone="True" title="$LOCALIZE[40167]" />
+	<property property="widgetSortBy.9">$LOCALIZE[551]</property>
+	<property property="widgetSortBy.9">$LOCALIZE[562]</property>
+	<property property="widgetSortBy.9">$LOCALIZE[563]</property>
+	<property property="widgetSortBy.9">$LOCALIZE[180]</property>
+	<property property="widgetSortBy.9">$LOCALIZE[570]</property>
+    <property property="widgetSortBy.9">$LOCALIZE[567]</property>
+    <property property="widgetSortBy.9">$LOCALIZE[568]</property>
+    <property property="widgetSortBy.9">$LOCALIZE[12012]</property>
+    <property property="widgetSortBy.9">$LOCALIZE[135]</property>
+    <property property="widgetSortBy.9">$LOCALIZE[590]</property>
     
     <propertySettings property="widgetSortDirection.1" buttonID="14753" showNone="True" title="$LOCALIZE[40168] 1" />
     <property property="widgetSortDirection.1">$LOCALIZE[584]</property>
@@ -242,6 +260,9 @@
     <propertySettings property="widgetSortDirection.8" buttonID="14823" showNone="True" title="$LOCALIZE[40168] 8" />
     <property property="widgetSortDirection.8">$LOCALIZE[584]</property>
     <property property="widgetSortDirection.8">$LOCALIZE[585]</property>
+    <propertySettings property="widgetSortDirection.9" buttonID="14833" showNone="True" title="$LOCALIZE[40168]" />
+    <property property="widgetSortDirection.9">$LOCALIZE[584]</property>
+    <property property="widgetSortDirection.9">$LOCALIZE[585]</property>
 	
 	<propertySettings toggle="HideSubMenu" buttonID="3129" templateonly="True" />
 	
@@ -366,7 +387,10 @@
             <shortcut label="10134" icon="icons/sidemenu/favourites.png" widget="FavoritesWidget">FavoritesWidget</shortcut>
             <shortcut label="8" icon="icons/sidemenu/weather.png" widget="WeatherWidget">WeatherWidget</shortcut>
         </node>
-        <shortcut label="40166" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidget" condition="!String.IsEmpty(Window(home).Property(WidgetVisibility))">PersonalWidget</shortcut>
+        <node label="40204" condition="!String.IsEmpty(Window(home).Property(WidgetVisibility))">
+            <shortcut label="40166" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidgetList">PersonalWidgetList</shortcut>
+            <shortcut label="40205" icon="DefaultAddonLookAndFeel.png" widget="PersonalWidgetPanel">PersonalWidgetPanel</shortcut>
+        </node>
   
         <shortcut label="40135" icon="DefaultFolder.png" condition="String.IsEmpty(Window(home).Property(WidgetVisibility)) + System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,librarydataprovider,scriptwidgets,extendedinfo,smartshortcuts,pvr,smartishwidgets</shortcut>
         <shortcut label="32107" type="32021" icon="DefaultAddon.png" condition="String.IsEmpty(Window(home).Property(WidgetVisibility)) + !System.HasAddon(script.skin.helper.service)">::INSTALL::script.skin.helper.service</shortcut>

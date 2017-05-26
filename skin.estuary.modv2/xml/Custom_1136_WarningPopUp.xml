@@ -37,7 +37,7 @@
 					<font>font25_title</font>
 					<textoffsetx>38</textoffsetx>
 					<textwidth>280</textwidth>
-					<onclick>Skin.ToggleSetting(FirstTimeRun)</onclick>
+					<onclick>Skin.ToggleSetting(FirstTimeRun2)</onclick>
 					<align>left</align>
 					<scroll>true</scroll>
 					<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texturefocus>

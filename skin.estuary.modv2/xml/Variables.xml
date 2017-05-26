@@ -1024,6 +1024,10 @@
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.8))">$INFO[Container(211).ListItem.Property(widgetAspect.8)]</value>
 		<value>[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
 	</variable>
+	<variable name="WidgetsAppearence9Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.9))">$INFO[Container(211).ListItem.Property(widgetAspect.9)]</value>
+		<value>[COLOR fff02222]$LOCALIZE[40134][/COLOR]</value>
+	</variable>
 	<variable name="Widget1Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))">$INFO[Container(211).ListItem.Property(widgetName.1)]</value>
 		<value>$LOCALIZE[40064]</value>
@@ -1054,6 +1058,10 @@
 	</variable>
 	<variable name="Widget8Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.8))">$INFO[Container(211).ListItem.Property(widgetName.8)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="Widget9Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetName.9))">$INFO[Container(211).ListItem.Property(widgetName.9)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="WidgetSortBy1Label2Var">
@@ -1088,6 +1096,10 @@
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetSortBy.8))">$INFO[Container(211).ListItem.Property(widgetSortBy.8)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
+	<variable name="WidgetSortBy9Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetSortBy.9))">$INFO[Container(211).ListItem.Property(widgetSortBy.9)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
 	<variable name="WidgetSortDirection1Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetSortDirection.1))">$INFO[Container(211).ListItem.Property(widgetSortDirection.1)]</value>
 		<value>$LOCALIZE[40064]</value>
@@ -1118,6 +1130,10 @@
 	</variable>
 	<variable name="WidgetSortDirection8Label2Var">
 		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetSortDirection.8))">$INFO[Container(211).ListItem.Property(widgetSortDirection.8)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
+	<variable name="WidgetSortDirection9Label2Var">
+		<value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetSortDirection.9))">$INFO[Container(211).ListItem.Property(widgetSortDirection.9)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="LabelCategoriesSmallVar">

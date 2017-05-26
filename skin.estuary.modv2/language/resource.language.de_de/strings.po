@@ -1017,7 +1017,7 @@ msgstr "Artwork-Downloader nach Bibliotheksaktualisierung automatisch starten"
 #: /xml/DialogMusicInfo.xml
 msgctxt "#40061"
 msgid "Press [B]OK[/B] to read description"
-msgstr "Drücken Sie [B]OK(/B], um die Beschreibung zu lesen"
+msgstr "Drücken Sie [B]OK[/B], um die Beschreibung zu lesen"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40062"
@@ -1541,8 +1541,8 @@ msgstr "Bibliothek alphabetisch scrollen"
 
 #: /shortcuts/overrides.xml
 msgctxt "#40166"
-msgid "Personalized widget"
-msgstr "Personalisierbares Widget"
+msgid "Lists (many items)"
+msgstr ""
 
 #: /shortcuts/overrides.xml
 msgctxt "#40167"
@@ -1557,7 +1557,7 @@ msgstr "Sortierreihenfolge des Widgets"
 #: /xml/DialogMusicInfo.xml
 msgctxt "#40169"
 msgid "Press [B]OK[/B] to read description or [B]Left[/B] to show back thumb"
-msgstr ""
+msgstr "Drücken Sie [B]OK[/B], um die Beschreibung zu lesen oder [B]links[/B] zum Anzeigen der Albumrückseite"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40170"
@@ -1717,9 +1717,44 @@ msgstr "Nicht mehr anzeigen"
 #: /xml/SkinSettings.xml
 msgctxt "#40201"
 msgid "Rating text color"
-msgstr ""
+msgstr "Textfarbe für Berwertungen"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40202"
 msgid "Reset rating text color"
+msgstr "Textfarbe für Bewertungen zurücksetzen"
+
+#: /shortcuts/overrides.xml
+msgctxt "#40203"
+msgid "Posters panel"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40204"
+msgid "Widgets to personalize"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40205"
+msgid "Vertical panel (one single item)"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40206"
+msgid "Thumbs without banners panel"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40207"
+msgid "Thumbs with banners panel"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40208"
+msgid "Squares panel"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40209"
+msgid "Banners panel"
 msgstr ""

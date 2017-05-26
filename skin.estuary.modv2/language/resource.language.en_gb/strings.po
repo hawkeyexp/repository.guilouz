@@ -1543,7 +1543,7 @@ msgstr ""
 
 #: /shortcuts/overrides.xml
 msgctxt "#40166"
-msgid "Personalized widget"
+msgid "Lists (many items)"
 msgstr ""
 
 #: /shortcuts/overrides.xml
@@ -1724,4 +1724,39 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#40202"
 msgid "Reset rating text color"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40203"
+msgid "Posters panel"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40204"
+msgid "Widgets to personalize"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40205"
+msgid "Vertical panel (one single item)"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40206"
+msgid "Thumbs without banners panel"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40207"
+msgid "Thumbs with banners panel"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40208"
+msgid "Squares panel"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40209"
+msgid "Banners panel"
 msgstr ""
