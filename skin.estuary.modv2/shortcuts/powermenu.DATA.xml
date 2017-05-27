@@ -87,28 +87,28 @@
 		<label>40009</label>
 		<action>UpdateLibrary(video)</action>
 		<icon>special://skin/extras/icons/Power menu/updatevideo.png</icon>
-		<visible>!Library.IsScanningVideo</visible>
+		<visible>!Library.IsScanningVideo + [Library.HasContent(movies) | Library.HasContent(movies) ) | Library.HasContent(musicvideos)]</visible>
 	</shortcut>
 	<shortcut>
 		<label2>Common Shortcut</label2>
 		<label>40013</label>
 		<action>UpdateLibrary(video)</action>
 		<icon>special://skin/extras/icons/Power menu/cancel.png</icon>
-		<visible>Library.IsScanningVideo</visible>
+		<visible>Library.IsScanningVideo + [Library.HasContent(movies) | Library.HasContent(movies) ) | Library.HasContent(musicvideos)]</visible>
 	</shortcut>
 	<shortcut>
 		<label2>Common Shortcut</label2>
 		<label>40010</label>
 		<action>UpdateLibrary(music)</action>
 		<icon>special://skin/extras/icons/Power menu/updatemusic.png</icon>
-		<visible>!Library.IsScanningMusic</visible>
+		<visible>!Library.IsScanningMusic + Library.HasContent(music)</visible>
 	</shortcut>
 	<shortcut>
 		<label2>Common Shortcut</label2>
 		<label>40014</label>
 		<action>UpdateLibrary(music)</action>
 		<icon>special://skin/extras/icons/Power menu/cancel.png</icon>
-		<visible>Library.IsScanningMusic</visible>
+		<visible>Library.IsScanningMusic + Library.HasContent(music)</visible>
 	</shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
