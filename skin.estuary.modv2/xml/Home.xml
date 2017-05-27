@@ -471,19 +471,17 @@
 						<param name="button_label" value="$LOCALIZE[31118]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
 						<param name="button_id" value="8600"/>
-						<param name="visible" value="!Integer.IsGreater(Container(8001).NumItems,0)"/>
 						<param name="visible_2" value="false"/>
-						<param name="visible" value="!Skin.HasSetting(HideMainMenuWithWidgets) + ![String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]"/>
+						<param name="visible" value="!Integer.IsGreater(Container(8001).NumItems,0) + !Skin.HasSetting(HideMainMenuWithWidgets) + ![String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]"/>
 					</include>
 					<include content="ImageWidget">
 						<param name="text_label" value="$LOCALIZE[31119]" />
 						<param name="button_label" value="$LOCALIZE[31118]" />
 						<param name="button_onclick" value="ActivateWindow(addonbrowser)"/>
 						<param name="button_id" value="8600"/>
-						<param name="visible" value="!Integer.IsGreater(Container(8001).NumItems,0)"/>
 						<param name="visible_2" value="false"/>
 						<param name="right" value="555"/>
-						<param name="visible" value="Skin.HasSetting(HideMainMenuWithWidgets) + ![String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]"/>
+						<param name="visible" value="!Integer.IsGreater(Container(8001).NumItems,0) + Skin.HasSetting(HideMainMenuWithWidgets) + ![String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]"/>
 					</include>
 					<include content="ImageWidget">
 						<param name="text_label" value="$LOCALIZE[40194]" />
