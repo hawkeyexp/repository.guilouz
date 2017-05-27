@@ -3023,6 +3023,18 @@
 							<width>130</width>
 							<height>130</height>
 							<texture>$INFO[ListItem.Icon]</texture>
+							<visible>!String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) + !String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) + !String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)</visible>
+						</control>
+						<control type="multiimage">
+							<left>68</left>
+							<top>113</top>
+							<width>120</width>
+							<height>120</height>
+							<imagepath>$INFO[ListItem.Icon]</imagepath>
+							<timeperimage>110</timeperimage>
+							<randomize>false</randomize>
+							<fadetime>5</fadetime>
+							<visible>String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)</visible>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -3083,6 +3095,18 @@
 							<width>130</width>
 							<height>130</height>
 							<texture>$INFO[ListItem.Icon]</texture>
+							<visible>!String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) + !String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) + !String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)</visible>
+						</control>
+						<control type="multiimage">
+							<left>68</left>
+							<top>113</top>
+							<width>120</width>
+							<height>120</height>
+							<imagepath>$INFO[ListItem.Icon]</imagepath>
+							<timeperimage>110</timeperimage>
+							<randomize>false</randomize>
+							<fadetime>5</fadetime>
+							<visible>String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)</visible>
 						</control>
 						<control type="label">
 							<left>15</left>
@@ -3237,7 +3261,7 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].LongDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].FanartCode)]</property>
 			<thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</thumb>
-			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook)) + String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook)) + !String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].FanartCode)) + String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 		<item>
 			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
@@ -3248,7 +3272,18 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].LongDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].FanartCode)]</property>
 			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].OutlookIcon)]</thumb>
-			<visible>!String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook)) + !String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+			<visible>![String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)] + !String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook)) + !String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+		</item>
+		<item>
+			<label>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Time)]</label>
+			<label2>$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)] ∙ $INFO[Window(weather).Property(Hourly.$PARAM[item_index].Precipitation)]</label2>
+			<property name="Temperature">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Temperature)]</property>
+			<property name="Outlook">$INFO[Window(weather).Property(Hourly.$PARAM[item_id].Outlook)]</property>
+			<property name="Cloudiness">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].Cloudiness)]</property>
+			<property name="ShortDate">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].LongDate)]</property>
+			<property name="FanartCode">$INFO[Window(weather).Property(Hourly.$PARAM[item_index].FanartCode)]</property>
+			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Hourly.$PARAM[item_index].FanartCode)]$INFO[Skin.String(WeatherIcons.multi)]</thumb>
+			<visible>[String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)] + !String.IsEmpty(Window(weather).Property(Hourly.$PARAM[item_index].Outlook)) + !String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 	</include>
 	<include name="WeatherDailyItem">
@@ -3262,7 +3297,7 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]</property>
 			<thumb>resource://resource.images.weathericons.default/$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</thumb>
-			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook)) + String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook)) + !String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].FanartCode)) + String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 		<item>
 			<label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</label>
@@ -3274,7 +3309,19 @@
 			<property name="ShortDate">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDate)]</property>
 			<property name="FanartCode">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]</property>
 			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_index].OutlookIcon)]</thumb>
-			<visible>!String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook)) + !String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+			<visible>![String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)] + !String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].Outlook)) + !String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
+		</item>
+		<item>
+			<label>$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</label>
+			<label2>[COLOR blue]$INFO[Window(weather).Property(Daily.$PARAM[item_index].LowTemperature)][/COLOR] ∙ [COLOR red]$INFO[Window(weather).Property(Daily.$PARAM[item_index].HighTemperature)][/COLOR]</label2>
+			<property name="LongDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDay)]</property>
+			<property name="TempDay">$INFO[Window(weather).Property(Daily.$PARAM[item_index].TempDay)]</property>
+			<property name="Cloudiness">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Cloudiness)]</property>
+			<property name="Outlook">$INFO[Window(weather).Property(Daily.$PARAM[item_index].Outlook)]</property>
+			<property name="ShortDate">$INFO[Window(weather).Property(Daily.$PARAM[item_index].LongDate)]</property>
+			<property name="FanartCode">$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]</property>
+			<thumb>$INFO[Skin.String(WeatherIcons.path)]$INFO[Window(weather).Property(Daily.$PARAM[item_index].FanartCode)]$INFO[Skin.String(WeatherIcons.multi)]</thumb>
+			<visible>[String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)] + !String.IsEmpty(Window(weather).Property(Daily.$PARAM[item_index].FanartCode)) + !String.IsEmpty(Skin.String(WeatherIcons.name))</visible>
 		</item>
 	</include>
 	<include name="WeatherMapItem">

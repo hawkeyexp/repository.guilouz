@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<onunload condition="!String.IsEmpty(Window(home).Property(AddonsZip))">ActivateWindow(Home)</onunload>
-	<onunload>ClearProperty(AddonsZip,home)</onunload>
 	<defaultcontrol always="true">450</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>

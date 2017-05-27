@@ -22,9 +22,7 @@
         <label>24041</label>
         <label2>Common Shortcut</label2>
         <icon>DefaultAddonsZip.png</icon>
-        <action>SetProperty(AddonsZip,True,home)</action>
         <action>ActivateWindow(addonbrowser,addons://install/,return)</action>
-        <action>Select</action>
     </shortcut>
     <shortcut>
         <label>31145</label>
