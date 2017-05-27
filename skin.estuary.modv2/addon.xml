@@ -2,6 +2,9 @@
 <addon id="skin.estuary.modv2" version="2.5.2" name="[COLOR deepskyblue]Estuary MOD V2[/COLOR] (KODI 18)" provider-name="Guilouz">
 	<requires>
 		<import addon="xbmc.gui" version="5.13.0"/>
+		<import addon="script.skinshortcuts" version="0.6.5"/>
+		<import addon="script.skin.helper.service" version="1.0.0"/>
+        <import addon="script.skin.helper.widgets" version="1.0.0"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
