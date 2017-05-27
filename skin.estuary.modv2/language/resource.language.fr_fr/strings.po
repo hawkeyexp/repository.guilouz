@@ -1760,3 +1760,13 @@ msgstr "Panneau de carrés"
 msgctxt "#40209"
 msgid "Banners panel"
 msgstr "Panneau de bannières"
+
+#: /shortcuts/overrides.xml
+msgctxt "#40210"
+msgid "Miniatures"
+msgstr "Miniatures"
+
+#: /shortcuts/overrides.xml
+msgctxt "#40211"
+msgid "Miniatures panel"
+msgstr "Panneau de miniatures"

@@ -6,42 +6,42 @@
 		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="40139">NextAiringEpisodes</property>
 		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="40121">NextAiringEpisodesBanner</property>
 		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="40140">ListSquare</property>
-		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="31148">ListCategoriesPersonal</property>
+		<property name="WidgetStyle1" tag="property" attribute="name|widgetAspect.1" value="40210">ListCategoriesPersonal</property>
 		<property name="WidgetStyle2" tag="property" attribute="name|widgetAspect.2" value="40138">ListPoster</property>
 		<property name="WidgetStyle2" tag="property" attribute="name|widgetAspect.2" value="40139">NextAiringEpisodes</property>
 		<property name="WidgetStyle2" tag="property" attribute="name|widgetAspect.2" value="40121">NextAiringEpisodesBanner</property>
 		<property name="WidgetStyle2" tag="property" attribute="name|widgetAspect.2" value="40140">ListSquare</property>
-		<property name="WidgetStyle2" tag="property" attribute="name|widgetAspect.2" value="31148">ListCategoriesPersonal</property>
+		<property name="WidgetStyle2" tag="property" attribute="name|widgetAspect.2" value="40210">ListCategoriesPersonal</property>
 		<property name="WidgetStyle3" tag="property" attribute="name|widgetAspect.3" value="40138">ListPoster</property>
 		<property name="WidgetStyle3" tag="property" attribute="name|widgetAspect.3" value="40139">NextAiringEpisodes</property>
 		<property name="WidgetStyle3" tag="property" attribute="name|widgetAspect.3" value="40121">NextAiringEpisodesBanner</property>
 		<property name="WidgetStyle3" tag="property" attribute="name|widgetAspect.3" value="40140">ListSquare</property>
-		<property name="WidgetStyle3" tag="property" attribute="name|widgetAspect.3" value="31148">ListCategoriesPersonal</property>
+		<property name="WidgetStyle3" tag="property" attribute="name|widgetAspect.3" value="40210">ListCategoriesPersonal</property>
 		<property name="WidgetStyle4" tag="property" attribute="name|widgetAspect.4" value="40138">ListPoster</property>
 		<property name="WidgetStyle4" tag="property" attribute="name|widgetAspect.4" value="40139">NextAiringEpisodes</property>
 		<property name="WidgetStyle4" tag="property" attribute="name|widgetAspect.4" value="40121">NextAiringEpisodesBanner</property>
 		<property name="WidgetStyle4" tag="property" attribute="name|widgetAspect.4" value="40140">ListSquare</property>
-		<property name="WidgetStyle4" tag="property" attribute="name|widgetAspect.4" value="31148">ListCategoriesPersonal</property>
+		<property name="WidgetStyle4" tag="property" attribute="name|widgetAspect.4" value="40210">ListCategoriesPersonal</property>
 		<property name="WidgetStyle5" tag="property" attribute="name|widgetAspect.5" value="40138">ListPoster</property>
 		<property name="WidgetStyle5" tag="property" attribute="name|widgetAspect.5" value="40139">NextAiringEpisodes</property>
 		<property name="WidgetStyle5" tag="property" attribute="name|widgetAspect.5" value="40121">NextAiringEpisodesBanner</property>
 		<property name="WidgetStyle5" tag="property" attribute="name|widgetAspect.5" value="40140">ListSquare</property>
-		<property name="WidgetStyle5" tag="property" attribute="name|widgetAspect.5" value="31148">ListCategoriesPersonal</property>
+		<property name="WidgetStyle5" tag="property" attribute="name|widgetAspect.5" value="40210">ListCategoriesPersonal</property>
 		<property name="WidgetStyle6" tag="property" attribute="name|widgetAspect.6" value="40138">ListPoster</property>
 		<property name="WidgetStyle6" tag="property" attribute="name|widgetAspect.6" value="40139">NextAiringEpisodes</property>
 		<property name="WidgetStyle6" tag="property" attribute="name|widgetAspect.6" value="40121">NextAiringEpisodesBanner</property>
 		<property name="WidgetStyle6" tag="property" attribute="name|widgetAspect.6" value="40140">ListSquare</property>
-		<property name="WidgetStyle6" tag="property" attribute="name|widgetAspect.6" value="31148">ListCategoriesPersonal</property>
+		<property name="WidgetStyle6" tag="property" attribute="name|widgetAspect.6" value="40210">ListCategoriesPersonal</property>
 		<property name="WidgetStyle7" tag="property" attribute="name|widgetAspect.7" value="40138">ListPoster</property>
 		<property name="WidgetStyle7" tag="property" attribute="name|widgetAspect.7" value="40139">NextAiringEpisodes</property>
 		<property name="WidgetStyle7" tag="property" attribute="name|widgetAspect.7" value="40121">NextAiringEpisodesBanner</property>
 		<property name="WidgetStyle7" tag="property" attribute="name|widgetAspect.7" value="40140">ListSquare</property>
-		<property name="WidgetStyle7" tag="property" attribute="name|widgetAspect.7" value="31148">ListCategoriesPersonal</property>
+		<property name="WidgetStyle7" tag="property" attribute="name|widgetAspect.7" value="40210">ListCategoriesPersonal</property>
 		<property name="WidgetStyle8" tag="property" attribute="name|widgetAspect.8" value="40138">ListPoster</property>
 		<property name="WidgetStyle8" tag="property" attribute="name|widgetAspect.8" value="40139">NextAiringEpisodes</property>
 		<property name="WidgetStyle8" tag="property" attribute="name|widgetAspect.8" value="40121">NextAiringEpisodesBanner</property>
 		<property name="WidgetStyle8" tag="property" attribute="name|widgetAspect.8" value="40140">ListSquare</property>
-		<property name="WidgetStyle8" tag="property" attribute="name|widgetAspect.8" value="31148">ListCategoriesPersonal</property>
+		<property name="WidgetStyle8" tag="property" attribute="name|widgetAspect.8" value="40210">ListCategoriesPersonal</property>
 		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="568">lastplayed</property>
 		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="12012">lastused</property>
 		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="551">sorttitle</property>
@@ -51,7 +51,7 @@
 		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="567">playcount</property>
 		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="180">time</property>
 		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="590">random</property>
-		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="135">genre</property>	
+		<property name="sortby1" tag="property" attribute="name|widgetSortBy.1" value="135">genre</property>
 		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="568">lastplayed</property>
 		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="12012">lastused</property>
 		<property name="sortby2" tag="property" attribute="name|widgetSortBy.2" value="551">sorttitle</property>
@@ -163,75 +163,101 @@
 		<property name="target8" tag="property" attribute="name|widgetTarget.8" />
 		<property name="content8" tag="property" attribute="name|widgetPath.8" />
 		<controls>
-			<control type="grouplist" id="22001">
-				<include>WidgetGroupListCommon</include>
-				<skinshortcuts>visibility</skinshortcuts>
-				<pagecontrol>22010</pagecontrol>
-				<include condition="!Skin.HasSetting(UseSmallerCategories)">PersonalWidgetListCategoriesBig</include>
-				<include condition="Skin.HasSetting(UseSmallerCategories)">PersonalWidgetListCategoriesSmall</include>
-				<include content="Widget$SKINSHORTCUTS[WidgetStyle1]">
-					<param name="content_path" value="$SKINSHORTCUTS[content1]"/>
-					<param name="widget_header" value="$SKINSHORTCUTS[name1]"/>
-					<param name="widget_target" value="$SKINSHORTCUTS[target1]"/>
-					<param name="sortby" value="$SKINSHORTCUTS[sortby1]"/>
-					<param name="sortorder" value="$SKINSHORTCUTS[sortorder1]"/>
-					<param name="list_id" value="22100$SKINSHORTCUTS[id]"/>
+			<control type="group" id="22000">
+				<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets)">Conditional</animation>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)</visible>
+				<include content="Visible_Right_Delayed_Home">
+					<param name="id" value="PersonalWidgetList"/>
 				</include>
-				<include content="Widget$SKINSHORTCUTS[WidgetStyle2]">
-					<param name="content_path" value="$SKINSHORTCUTS[content2]"/>
-					<param name="widget_header" value="$SKINSHORTCUTS[name2]"/>
-					<param name="widget_target" value="$SKINSHORTCUTS[target2]"/>
-					<param name="sortby" value="$SKINSHORTCUTS[sortby2]"/>
-					<param name="sortorder" value="$SKINSHORTCUTS[sortorder2]"/>
-					<param name="list_id" value="22200$SKINSHORTCUTS[id]"/>
+				<animation effect="slide" end="0,35" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
+				<control type="grouplist" id="22001">
+					<include>WidgetGroupListCommon</include>
+					<skinshortcuts>visibility</skinshortcuts>
+					<pagecontrol>22010</pagecontrol>
+					<include condition="!Skin.HasSetting(UseSmallerCategories)">PersonalWidgetListCategoriesBig</include>
+					<include condition="Skin.HasSetting(UseSmallerCategories)">PersonalWidgetListCategoriesSmall</include>
+					<include content="Widget$SKINSHORTCUTS[WidgetStyle1]">
+						<param name="content_path" value="$SKINSHORTCUTS[content1]"/>
+						<param name="widget_header" value="$SKINSHORTCUTS[name1]"/>
+						<param name="widget_target" value="$SKINSHORTCUTS[target1]"/>
+						<param name="sortby" value="$SKINSHORTCUTS[sortby1]"/>
+						<param name="sortorder" value="$SKINSHORTCUTS[sortorder1]"/>
+						<param name="list_id" value="22100$SKINSHORTCUTS[id]"/>
+					</include>
+					<include content="Widget$SKINSHORTCUTS[WidgetStyle2]">
+						<param name="content_path" value="$SKINSHORTCUTS[content2]"/>
+						<param name="widget_header" value="$SKINSHORTCUTS[name2]"/>
+						<param name="widget_target" value="$SKINSHORTCUTS[target2]"/>
+						<param name="sortby" value="$SKINSHORTCUTS[sortby2]"/>
+						<param name="sortorder" value="$SKINSHORTCUTS[sortorder2]"/>
+						<param name="list_id" value="22200$SKINSHORTCUTS[id]"/>
+					</include>
+					<include content="Widget$SKINSHORTCUTS[WidgetStyle3]">
+						<param name="content_path" value="$SKINSHORTCUTS[content3]"/>
+						<param name="widget_header" value="$SKINSHORTCUTS[name3]"/>
+						<param name="widget_target" value="$SKINSHORTCUTS[target3]"/>
+						<param name="sortby" value="$SKINSHORTCUTS[sortby3]"/>
+						<param name="sortorder" value="$SKINSHORTCUTS[sortorder3]"/>
+						<param name="list_id" value="22300$SKINSHORTCUTS[id]"/>
+					</include>
+					<include content="Widget$SKINSHORTCUTS[WidgetStyle4]">
+						<param name="content_path" value="$SKINSHORTCUTS[content4]"/>
+						<param name="widget_header" value="$SKINSHORTCUTS[name4]"/>
+						<param name="widget_target" value="$SKINSHORTCUTS[target4]"/>
+						<param name="sortby" value="$SKINSHORTCUTS[sortby4]"/>
+						<param name="sortorder" value="$SKINSHORTCUTS[sortorder4]"/>
+						<param name="list_id" value="22400$SKINSHORTCUTS[id]"/>
+					</include>
+					<include content="Widget$SKINSHORTCUTS[WidgetStyle5]">
+						<param name="content_path" value="$SKINSHORTCUTS[content5]"/>
+						<param name="widget_header" value="$SKINSHORTCUTS[name5]"/>
+						<param name="widget_target" value="$SKINSHORTCUTS[target5]"/>
+						<param name="sortby" value="$SKINSHORTCUTS[sortby5]"/>
+						<param name="sortorder" value="$SKINSHORTCUTS[sortorder5]"/>
+						<param name="list_id" value="22500$SKINSHORTCUTS[id]"/>
+					</include>
+					<include content="Widget$SKINSHORTCUTS[WidgetStyle6]">
+						<param name="content_path" value="$SKINSHORTCUTS[content6]"/>
+						<param name="widget_header" value="$SKINSHORTCUTS[name6]"/>
+						<param name="widget_target" value="$SKINSHORTCUTS[target6]"/>
+						<param name="sortby" value="$SKINSHORTCUTS[sortby6]"/>
+						<param name="sortorder" value="$SKINSHORTCUTS[sortorder6]"/>
+						<param name="list_id" value="22600$SKINSHORTCUTS[id]"/>
+					</include>
+					<include content="Widget$SKINSHORTCUTS[WidgetStyle7]">
+						<param name="content_path" value="$SKINSHORTCUTS[content7]"/>
+						<param name="widget_header" value="$SKINSHORTCUTS[name7]"/>
+						<param name="widget_target" value="$SKINSHORTCUTS[target7]"/>
+						<param name="sortby" value="$SKINSHORTCUTS[sortby7]"/>
+						<param name="sortorder" value="$SKINSHORTCUTS[sortorder7]"/>
+						<param name="list_id" value="22700$SKINSHORTCUTS[id]"/>
+					</include>
+					<include content="Widget$SKINSHORTCUTS[WidgetStyle8]">
+						<param name="content_path" value="$SKINSHORTCUTS[content8]"/>
+						<param name="widget_header" value="$SKINSHORTCUTS[name8]"/>
+						<param name="widget_target" value="$SKINSHORTCUTS[target8]"/>
+						<param name="sortby" value="$SKINSHORTCUTS[sortby8]"/>
+						<param name="sortorder" value="$SKINSHORTCUTS[sortorder8]"/>
+						<param name="list_id" value="22800$SKINSHORTCUTS[id]"/>
+					</include>
+				</control>
+				<include content="ImageWidget">
+					<param name="text_label" value="$LOCALIZE[40194]" />
+					<param name="button_id" value="45000"/>
+					<param name="visible_1" value="false"/>
+					<param name="visible_2" value="false"/>
+					<param name="visible" value="!Skin.HasSetting(HideMainMenuWithWidgets) + [String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
 				</include>
-				<include content="Widget$SKINSHORTCUTS[WidgetStyle3]">
-					<param name="content_path" value="$SKINSHORTCUTS[content3]"/>
-					<param name="widget_header" value="$SKINSHORTCUTS[name3]"/>
-					<param name="widget_target" value="$SKINSHORTCUTS[target3]"/>
-					<param name="sortby" value="$SKINSHORTCUTS[sortby3]"/>
-					<param name="sortorder" value="$SKINSHORTCUTS[sortorder3]"/>
-					<param name="list_id" value="22300$SKINSHORTCUTS[id]"/>
+				<include content="ImageWidget">
+					<param name="text_label" value="$LOCALIZE[40194]" />
+					<param name="button_id" value="45000"/>
+					<param name="visible_1" value="false"/>
+					<param name="visible_2" value="false"/>
+					<param name="right" value="555"/>
+					<param name="visible" value="Skin.HasSetting(HideMainMenuWithWidgets) + [String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
 				</include>
-				<include content="Widget$SKINSHORTCUTS[WidgetStyle4]">
-					<param name="content_path" value="$SKINSHORTCUTS[content4]"/>
-					<param name="widget_header" value="$SKINSHORTCUTS[name4]"/>
-					<param name="widget_target" value="$SKINSHORTCUTS[target4]"/>
-					<param name="sortby" value="$SKINSHORTCUTS[sortby4]"/>
-					<param name="sortorder" value="$SKINSHORTCUTS[sortorder4]"/>
-					<param name="list_id" value="22400$SKINSHORTCUTS[id]"/>
-				</include>
-				<include content="Widget$SKINSHORTCUTS[WidgetStyle5]">
-					<param name="content_path" value="$SKINSHORTCUTS[content5]"/>
-					<param name="widget_header" value="$SKINSHORTCUTS[name5]"/>
-					<param name="widget_target" value="$SKINSHORTCUTS[target5]"/>
-					<param name="sortby" value="$SKINSHORTCUTS[sortby5]"/>
-					<param name="sortorder" value="$SKINSHORTCUTS[sortorder5]"/>
-					<param name="list_id" value="22500$SKINSHORTCUTS[id]"/>
-				</include>
-				<include content="Widget$SKINSHORTCUTS[WidgetStyle6]">
-					<param name="content_path" value="$SKINSHORTCUTS[content6]"/>
-					<param name="widget_header" value="$SKINSHORTCUTS[name6]"/>
-					<param name="widget_target" value="$SKINSHORTCUTS[target6]"/>
-					<param name="sortby" value="$SKINSHORTCUTS[sortby6]"/>
-					<param name="sortorder" value="$SKINSHORTCUTS[sortorder6]"/>
-					<param name="list_id" value="22600$SKINSHORTCUTS[id]"/>
-				</include>
-				<include content="Widget$SKINSHORTCUTS[WidgetStyle7]">
-					<param name="content_path" value="$SKINSHORTCUTS[content7]"/>
-					<param name="widget_header" value="$SKINSHORTCUTS[name7]"/>
-					<param name="widget_target" value="$SKINSHORTCUTS[target7]"/>
-					<param name="sortby" value="$SKINSHORTCUTS[sortby7]"/>
-					<param name="sortorder" value="$SKINSHORTCUTS[sortorder7]"/>
-					<param name="list_id" value="22700$SKINSHORTCUTS[id]"/>
-				</include>
-				<include content="Widget$SKINSHORTCUTS[WidgetStyle8]">
-					<param name="content_path" value="$SKINSHORTCUTS[content8]"/>
-					<param name="widget_header" value="$SKINSHORTCUTS[name8]"/>
-					<param name="widget_target" value="$SKINSHORTCUTS[target8]"/>
-					<param name="sortby" value="$SKINSHORTCUTS[sortby8]"/>
-					<param name="sortorder" value="$SKINSHORTCUTS[sortorder8]"/>
-					<param name="list_id" value="22800$SKINSHORTCUTS[id]"/>
+				<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
+					<param name="scrollbar_id" value="22010"/>
 				</include>
 			</control>
 		</controls>
@@ -243,6 +269,7 @@
 		<property name="WidgetStyle9" tag="property" attribute="name|widgetAspect.9" value="40207">PanelEpisodesBanners</property>
 		<property name="WidgetStyle9" tag="property" attribute="name|widgetAspect.9" value="40208">PanelSquare</property>
 		<property name="WidgetStyle9" tag="property" attribute="name|widgetAspect.9" value="40209">PanelBanners</property>
+		<property name="WidgetStyle9" tag="property" attribute="name|widgetAspect.9" value="40211">PanelCategoriesPersonal</property>
 		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="568">lastplayed</property>
 		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="12012">lastused</property>
 		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="551">sorttitle</property>
@@ -252,26 +279,52 @@
 		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="567">playcount</property>
 		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="180">time</property>
 		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="590">random</property>
-		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="135">genre</property>	
+		<property name="sortby9" tag="property" attribute="name|widgetSortBy.9" value="135">genre</property>
 		<property name="sortorder9" tag="property" attribute="name|widgetSortDirection.9" value="584">ascending</property>
 		<property name="sortorder9" tag="property" attribute="name|widgetSortDirection.9" value="585">descending</property>
 		<property name="name9" tag="property" attribute="name|widgetName.9" />
 		<property name="target9" tag="property" attribute="name|widgetTarget.9" />
 		<property name="content9" tag="property" attribute="name|widgetPath.9" />
 		<controls>
-			<control type="grouplist" id="23001">
-				<include>WidgetGroupListCommon</include>
-				<skinshortcuts>visibility</skinshortcuts>
-				<pagecontrol>23010</pagecontrol>
-				<include condition="!Skin.HasSetting(UseSmallerCategories)">PersonalWidgetPanelCategoriesBig</include>
-				<include condition="Skin.HasSetting(UseSmallerCategories)">PersonalWidgetPanelCategoriesSmall</include>
-				<include content="Widget$SKINSHORTCUTS[WidgetStyle9]">
-					<param name="content_path" value="$SKINSHORTCUTS[content9]"/>
-					<param name="widget_header" value="$SKINSHORTCUTS[name9]"/>
-					<param name="widget_target" value="$SKINSHORTCUTS[target9]"/>
-					<param name="sortby" value="$SKINSHORTCUTS[sortby9]"/>
-					<param name="sortorder" value="$SKINSHORTCUTS[sortorder9]"/>
-					<param name="list_id" value="23100$SKINSHORTCUTS[id]"/>
+			<control type="group" id="23000">
+				<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets)">Conditional</animation>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)</visible>
+				<include content="Visible_Right_Delayed_Home">
+					<param name="id" value="PersonalWidgetPanel"/>
+				</include>
+				<animation effect="slide" end="0,35" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
+				<control type="grouplist" id="23001">
+					<include>WidgetGroupListCommon</include>
+					<skinshortcuts>visibility</skinshortcuts>
+					<pagecontrol>23010</pagecontrol>
+					<include condition="!Skin.HasSetting(UseSmallerCategories)">PersonalWidgetPanelCategoriesBig</include>
+					<include condition="Skin.HasSetting(UseSmallerCategories)">PersonalWidgetPanelCategoriesSmall</include>
+					<include content="Widget$SKINSHORTCUTS[WidgetStyle9]">
+						<param name="content_path" value="$SKINSHORTCUTS[content9]"/>
+						<param name="widget_header" value="$SKINSHORTCUTS[name9]"/>
+						<param name="widget_target" value="$SKINSHORTCUTS[target9]"/>
+						<param name="sortby" value="$SKINSHORTCUTS[sortby9]"/>
+						<param name="sortorder" value="$SKINSHORTCUTS[sortorder9]"/>
+						<param name="list_id" value="23100$SKINSHORTCUTS[id]"/>
+					</include>
+				</control>
+				<include content="ImageWidget">
+					<param name="text_label" value="$LOCALIZE[40194]" />
+					<param name="button_id" value="45000"/>
+					<param name="visible_1" value="false"/>
+					<param name="visible_2" value="false"/>
+					<param name="visible" value="!Skin.HasSetting(HideMainMenuWithWidgets) + [String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
+				</include>
+				<include content="ImageWidget">
+					<param name="text_label" value="$LOCALIZE[40194]" />
+					<param name="button_id" value="45000"/>
+					<param name="visible_1" value="false"/>
+					<param name="visible_2" value="false"/>
+					<param name="right" value="555"/>
+					<param name="visible" value="Skin.HasSetting(HideMainMenuWithWidgets) + [String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
+				</include>
+				<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
+					<param name="scrollbar_id" value="23010"/>
 				</include>
 			</control>
 		</controls>

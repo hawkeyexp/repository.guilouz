@@ -1,3 +1,7 @@
+[B]2.5.2[/B]
+• Add miniatures panel for Personalized Widgets
+• Fix missing watched icons and progress bars for Personalized Widgets
+
 [B]2.5.1[/B]
 • Fix aspect ratio for widgets
 • Minor fixes

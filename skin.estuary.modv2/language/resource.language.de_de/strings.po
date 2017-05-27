@@ -1758,3 +1758,13 @@ msgstr "Quadrate"
 msgctxt "#40209"
 msgid "Banners panel"
 msgstr "Banner"
+
+#: /shortcuts/overrides.xml
+msgctxt "#40210"
+msgid "Miniatures"
+msgstr ""
+
+#: /shortcuts/overrides.xml
+msgctxt "#40211"
+msgid "Miniatures panel"
+msgstr ""
