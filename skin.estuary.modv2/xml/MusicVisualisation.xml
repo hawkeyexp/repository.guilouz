@@ -113,7 +113,7 @@
 				<width>497</width>
 				<height>490</height>
 				<aspectratio>stretch</aspectratio>
-				<texture>$INFO[MusicPlayer.Cover]</texture>
+				<texture>$VAR[MusicPlayerCover]</texture>
 				<animation effect="slide" end="-43,0" time="0" condition="Skin.HasSetting(hide_cdcase)">Conditional</animation>
 			</control>
 			<control type="image">

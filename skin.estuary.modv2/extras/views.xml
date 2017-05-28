@@ -14,4 +14,5 @@
 	<view id="Gallery" value="503" languageid="40005" type="movies,setmovies,sets,tvshows,episodes" />
 	<view id="Mosaic" value="506" languageid="40017" type="movies,setmovies,sets,tvshows,seasons,musicvideos,artists,albums,pictures" />
 	<view id="Mosaic_Vertical" value="507" languageid="40146" type="movies,setmovies,sets,tvshows,seasons,musicvideos,artists,albums,pictures" />
+	<view id="AlbumsSongs" value="508" languageid="40212" type="albums" />
 </views>

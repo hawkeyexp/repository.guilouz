@@ -1770,3 +1770,9 @@ msgstr ""
 msgctxt "#40211"
 msgid "Miniatures panel"
 msgstr ""
+
+#. viewtype name
+#: /xml/View_508_AlbumsAndSongs.xml
+msgctxt "#40212"
+msgid "List of albums and songs"
+msgstr ""

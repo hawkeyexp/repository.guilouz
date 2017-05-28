@@ -1,3 +1,6 @@
+[B]2.5.3[/B]
+• Add new view 'List of albums and songs' for albums
+
 [B]2.5.2[/B]
 • Add miniatures panel for Personalized Widgets
 • Add support for animated weather icons

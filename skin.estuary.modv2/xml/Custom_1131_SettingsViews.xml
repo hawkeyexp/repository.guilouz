@@ -153,6 +153,13 @@
 						<onclick>Action(close)</onclick>
 						<visible>Container.Content(images) | Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)</visible>
 					</control>
+					<control type="button" id="11124">
+						<label>$LOCALIZE[40212]</label>
+						<include>DefaultSettingButton</include>
+						<onclick>Container.SetViewMode(508)</onclick>
+						<onclick>Action(close)</onclick>
+						<visible>Container.Content(albums)</visible>
+					</control>
 				</control>
 			</control>
 		</control>
