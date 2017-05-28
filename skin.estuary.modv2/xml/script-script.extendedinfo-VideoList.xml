@@ -398,7 +398,7 @@
 					<height>50</height>
 					<fadetime>300</fadetime>
 					<aspectratio aligny="center" align="left">keep</aspectratio>
-					<texture>$INFO[Weather.FanartCode,weather/small/,.png]</texture>
+					<texture>$INFO[Weather.FanartCode,icons/weather/small/,.png]</texture>
 					<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)]</visible>
 				</control>
 				<control type="image">
