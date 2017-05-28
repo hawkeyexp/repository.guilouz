@@ -33,8 +33,8 @@
 			<control type="group">
 				<visible>[Control.IsVisible(500) | Control.IsVisible(506) | Control.IsVisible(507)] + String.IsEqual(listitem.dbtype,artist)</visible>
 				<control type="list" id="5005001">
-					<right>16</right>
-					<bottom>20</bottom>
+					<right>6</right>
+					<bottom>11</bottom>
 					<width>990</width>
 					<height>100</height>
 					<orientation>horizontal</orientation>
@@ -84,7 +84,7 @@
 				<texture>$VAR[LibraryClearLogoVar]</texture>
 				<visible>Control.IsVisible(51)</visible>
 		  		<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
-		  		<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
+		  		<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml) + !ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
 				<top>15</top>
@@ -95,7 +95,7 @@
 				<texture>$VAR[LibraryClearLogoVar]</texture>
 				<visible>Control.IsVisible(53)</visible>
 		  		<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
-		  		<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
+		  		<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml) + !ListItem.IsParentFolder</visible>
 			</control>
 			<control type="image">
 				<top>5</top>
@@ -106,11 +106,11 @@
 				<texture>$VAR[LibraryClearLogoVar]</texture>
 				<visible>Control.IsVisible(506)</visible>
 		  		<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
-		  		<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
+		  		<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml) + !ListItem.IsParentFolder</visible>
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
-				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
+				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml) + !ListItem.IsParentFolder</visible>
 				<visible>Control.IsVisible(507) | Control.IsVisible(508)</visible>
 				<control type="image">
 					<top>0</top>
@@ -132,6 +132,7 @@
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
+				<visible>!ListItem.IsParentFolder</visible>
 			<control type="image">
 				<top>15</top>
 				<width>284</width>
@@ -144,7 +145,7 @@
 			</control>
 			<control type="group">
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
-				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml)</visible>
+				<visible>!Container.Scrolling + !Window.IsVisible(DialogVolumeBar.xml) + !ListItem.IsParentFolder</visible>
 				<visible>Control.IsVisible(500)</visible>
 			<control type="image">
 				<top>0</top>
