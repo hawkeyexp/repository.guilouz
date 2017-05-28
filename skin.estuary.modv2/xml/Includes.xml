@@ -1803,6 +1803,7 @@
 		<param name="top">-10%</param>
 		<param name="height">120%</param>
 		<param name="flipx">false</param>
+		<param name="visible">true</param>
 		<definition>
 			<control type="image">
 				<texture flipx="$PARAM[flipx]" colordiffuse="EDFFFFFF">lists/panel.png</texture>
@@ -1813,6 +1814,7 @@
 				<right>$PARAM[right]</right>
 				<top>$PARAM[top]</top>
 				<height>$PARAM[height]</height>
+				<visible>$PARAM[visible]</visible>
 			</control>
 		</definition>
 	</include>

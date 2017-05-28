@@ -9,6 +9,12 @@
 			<include content="ContentPanel">
 				<param name="width" value="53.1%" />
 				<param name="flipx" value="$PARAM[flip_bg]" />
+				<param name="visible" value="!String.IsEqual(Skin.AspectRatio,21:9)" />
+			</include>
+			<include content="ContentPanel">
+				<param name="width" value="52.35%" />
+				<param name="flipx" value="$PARAM[flip_bg]" />
+				<param name="visible" value="String.IsEqual(Skin.AspectRatio,21:9)" />
 			</include>
 			<control type="fixedlist" id="508">
 				<width>50%</width>
@@ -44,6 +50,18 @@
 							<aspectratio align="left" aligny="center">stretch</aspectratio>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
+							<visible>!ListItem.IsParentFolder</visible>
+						</control>
+						<control type="image">
+							<left>35</left>
+							<top>20</top>
+							<width>120</width>
+							<height>120</height>
+							<texture>DefaultFolderBackSquare.png</texture>
+							<aspectratio align="left" aligny="center">stretch</aspectratio>
+							<bordertexture>colors/white.png</bordertexture>
+							<bordersize>1</bordersize>
+							<visible>ListItem.IsParentFolder</visible>
 						</control>
 						<control type="label">
 							<left>190</left>
@@ -89,6 +107,18 @@
 							<aspectratio align="left" aligny="center">stretch</aspectratio>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
+							<visible>!ListItem.IsParentFolder</visible>
+						</control>
+						<control type="image">
+							<left>35</left>
+							<top>20</top>
+							<width>120</width>
+							<height>120</height>
+							<texture>DefaultFolderBackSquare.png</texture>
+							<aspectratio align="left" aligny="center">stretch</aspectratio>
+							<bordertexture>colors/white.png</bordertexture>
+							<bordersize>1</bordersize>
+							<visible>ListItem.IsParentFolder</visible>
 						</control>
 						<control type="label">
 							<left>190</left>
