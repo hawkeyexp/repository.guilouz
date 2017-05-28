@@ -265,26 +265,27 @@
 			</control>
 			<control type="textbox">
 				<left>28</left>
-				<top>191</top>
+				<top>186</top>
 				<width>262</width>
-				<height>70</height>
+				<height>80</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$PARAM[label]</label>
+				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
 				<visible>Window.IsActive(videos)</visible>
 				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
 			</control>
-			<control type="label">
+			<control type="textbox">
 				<left>28</left>
-				<top>191</top>
+				<top>186</top>
 				<width>262</width>
-				<height>70</height>
+				<height>80</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<label>$PARAM[label]</label>
-				<scroll>$PARAM[focused]</scroll>
+				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
 				<visible>Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
 			</control>
 			<control type="group">

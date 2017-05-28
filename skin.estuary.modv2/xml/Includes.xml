@@ -109,14 +109,14 @@
 					<right>0</right>
 					<top>0</top>
 					<bottom>0</bottom>
-					<width>13</width>
+					<width>11</width>
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<orientation>vertical</orientation>
 					<texturesliderbackground />
 					<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
-					<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
+					<animation effect="slide" end="4,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
 					<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(504) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54) | Control.IsVisible(505) | Control.IsVisible(507)</visible>
 					<hitrect x="-20" y="0" w="80" bottom="0r" />
 				</control>
@@ -131,13 +131,13 @@
 					<left>0</left>
 					<bottom>0</bottom>
 					<width>100%</width>
-					<height>12</height>
+					<height>11</height>
 					<texturesliderbackground />
 					<onup>50</onup>
 					<ondown>50</ondown>
 					<orientation>horizontal</orientation>
 					<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(503) | Control.IsVisible(506)</visible>
-					<animation effect="slide" end="0,6" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
+					<animation effect="slide" end="0,5" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
 					<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 					<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 					<animation effect="slide" end="0,90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
@@ -694,38 +694,39 @@
 				<height>74</height>
 				<align>right</align>
 				<itemgap>5</itemgap>
-				<width>1320</width>
+				<width>1420</width>
 				<usecontrolcoords>true</usecontrolcoords>
 				<autoscroll time="1500">true</autoscroll>
-				<animation effect="slide" end="1188,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
-				<animation effect="slide" end="1056,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
-				<animation effect="slide" end="924,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
-				<animation effect="slide" end="792,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
-				<animation effect="slide" end="660,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
-				<animation effect="slide" end="528,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
-				<animation effect="slide" end="396,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
-				<animation effect="slide" end="264,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,8)">conditional</animation>
-				<animation effect="slide" end="132,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
+				<animation effect="slide" end="1278,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
+				<animation effect="slide" end="1136,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
+				<animation effect="slide" end="994,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
+				<animation effect="slide" end="852,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
+				<animation effect="slide" end="710,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
+				<animation effect="slide" end="568,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
+				<animation effect="slide" end="426,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
+				<animation effect="slide" end="284,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,8)">conditional</animation>
+				<animation effect="slide" end="142,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
 				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set) + Window.IsVisible(Home)</visible>
-				<focusedlayout height="74" width="132">
+				<focusedlayout height="74" width="142">
 					<control type="image">
 						<left>5</left>
 						<top>0</top>
 						<right>5</right>
 						<bottom>0</bottom>
-						<aspectratio>stretch</aspectratio>
+						<width max="132">auto</width>
+						<aspectratio>keep</aspectratio>
 						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
 						<bordertexture>colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>
 				</focusedlayout>
-				<itemlayout height="74" width="132">
+				<itemlayout height="74" width="142">
 					<control type="image">
 						<left>5</left>
 						<top>0</top>
 						<right>5</right>
 						<bottom>0</bottom>
-						<aspectratio>stretch</aspectratio>
+						<aspectratio>keep</aspectratio>
 						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
 						<bordertexture>colors/white.png</bordertexture>
 						<bordersize>1</bordersize>

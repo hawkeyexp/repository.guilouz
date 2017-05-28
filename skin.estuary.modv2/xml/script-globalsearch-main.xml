@@ -910,9 +910,9 @@
 										<aspectratio>keep</aspectratio>
 									</control>
 									<control type="label">
-										<left>42</left>
+										<left>32</left>
 										<top>247</top>
-										<width>245</width>
+										<width>255</width>
 										<height>70</height>
 										<label>$INFO[ListItem.Label]</label>
 										<font>font12</font>
@@ -921,9 +921,9 @@
 										<aligny>top</aligny>
 									</control>
 									<control type="label">
-										<left>42</left>
+										<left>32</left>
 										<top>277</top>
-										<width>245</width>
+										<width>255</width>
 										<height>65</height>
 										<label>$INFO[ListItem.Property(ChannelName)]</label>
 										<font>font12</font>
@@ -963,9 +963,9 @@
 										<aspectratio>keep</aspectratio>
 									</control>
 									<control type="label">
-										<left>42</left>
+										<left>32</left>
 										<top>247</top>
-										<width>245</width>
+										<width>255</width>
 										<height>70</height>
 										<label>$INFO[ListItem.Label]</label>
 										<font>font12</font>
@@ -975,9 +975,9 @@
 										<aligny>top</aligny>
 									</control>
 									<control type="label">
-										<left>42</left>
+										<left>32</left>
 										<top>277</top>
-										<width>245</width>
+										<width>255</width>
 										<height>65</height>
 										<label>$INFO[ListItem.Property(ChannelName)]</label>
 										<font>font12</font>
