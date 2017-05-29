@@ -179,7 +179,7 @@
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Year]</label>
+							<label>$INFO[ListItem.Year]$INFO[ListItem.Property(Album_Style), / ,]</label>
 							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
@@ -223,7 +223,7 @@
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Year]</label>
+							<label>$INFO[ListItem.Year]$INFO[ListItem.Property(Album_Style), / ,]</label>
 							<font>font12</font>
 							<textcolor>grey</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
