@@ -26,8 +26,8 @@
 				<movement>2</movement>
 				<focusposition>3</focusposition>
 				<onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
-				<onright condition="Container.Content(albums) + Control.IsVisible(5081)">SetFocus(5081,1)</onright>
-				<onright condition="Container.Content(artists) + Control.IsVisible(5082)">SetFocus(5082,1)</onright>
+				<onright condition="Container.Content(albums) + Control.IsVisible(5081)">5081</onright>
+				<onright condition="Container.Content(artists) + Control.IsVisible(5082)">5082</onright>
 				<onup>508</onup>
 				<ondown>508</ondown>
 				<viewtype label="$LOCALIZE[40212]">list</viewtype>
