@@ -1,36 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-	<include name="View_508_DoubleLists">
+	<include name="View_509_TripleLists">
 		<control type="group">
 			<include>OpenClose_Left</include>
-			<visible>Control.IsVisible(508)</visible>
+			<visible>Control.IsVisible(509)</visible>
 			<include>Visible_Left</include>
 			<depth>DepthContentPanel</depth>
 			<include content="ContentPanel">
-				<param name="width" value="53.1%" />
-				<param name="flipx" value="true" />
+				<param name="width" value="36.4333333%" />
+				<param name="flipx" value="false" />
 				<param name="visible" value="!String.IsEqual(Skin.AspectRatio,21:9)" />
 			</include>
 			<include content="ContentPanel">
-				<param name="width" value="52.35%" />
-				<param name="flipx" value="true" />
+				<param name="width" value="35.6833333%" />
+				<param name="flipx" value="false" />
 				<param name="visible" value="String.IsEqual(Skin.AspectRatio,21:9)" />
 			</include>
-			<control type="fixedlist" id="508">
-				<width>50%</width>
-				<top>list_y_offset</top>
-				<bottom>list_y_offset</bottom>
+			<control type="fixedlist" id="509">
+				<width>33.3333333%</width>
+				<top>0</top>
+				<bottom>0</bottom>
 				<left>0</left>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<movement>2</movement>
 				<focusposition>3</focusposition>
 				<onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
-				<onright condition="Container.Content(albums) + Control.IsVisible(5081)">5081</onright>
-				<onright condition="Container.Content(artists) + Control.IsVisible(5082)">5082</onright>
-				<onup>508</onup>
-				<ondown>508</ondown>
-				<viewtype label="$LOCALIZE[40212]">list</viewtype>
+				<onright>5091</onright>
+				<onup>509</onup>
+				<ondown>509</ondown>
+				<viewtype label="$LOCALIZE[40214]">list</viewtype>
 				<focusedlayout height="160">
 					<control type="group">
 						<top>-50</top>
@@ -39,8 +38,8 @@
 							<right>0</right>
 							<height>160</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
-							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(5081) | Control.HasFocus(5082)">Conditional</animation>
-							<visible>Control.HasFocus(508) | Control.HasFocus(5081) | Control.HasFocus(5082)</visible>
+							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(5091) | Control.HasFocus(5092)">Conditional</animation>
+							<visible>Control.HasFocus(509) | Control.HasFocus(5091) | Control.HasFocus(5092)</visible>
 						</control>
 						<control type="image">
 							<left>35</left>
@@ -73,40 +72,6 @@
 							<label>$INFO[ListItem.Label,[B],[/B]]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 							<scroll>true</scroll>
-							<visible>Container.Content(artists)</visible>
-						</control>
-						<control type="label">
-							<left>190</left>
-							<top>20</top>
-							<height>40</height>
-							<right>30</right>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label,[B],[/B]]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-							<scroll>true</scroll>
-							<visible>Container.Content(albums)</visible>
-						</control>
-						<control type="label">
-							<left>190</left>
-							<top>100</top>
-							<height>40</height>
-							<right>30</right>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.AlbumArtist]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-							<scroll>true</scroll>
-							<visible>Container.Content(albums)</visible>
-						</control>
-						<control type="label">
-							<left>190</left>
-							<top>60</top>
-							<height>40</height>
-							<right>30</right>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Year]</label>
-							<font>font12</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<visible>Container.Content(albums)</visible>
 						</control>
 					</control>
 				</focusedlayout>
@@ -143,7 +108,50 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label,[B],[/B]]</label>
 							<shadowcolor>text_shadow</shadowcolor>
-							<visible>Container.Content(artists)</visible>
+						</control>
+					</control>
+				</itemlayout>
+			</control>
+		</control>
+		<control type="group">
+			<include>OpenClose_Right</include>
+			<visible>Control.IsVisible(509)</visible>
+			<include>Visible_Right</include>
+			<control type="fixedlist" id="5091">
+				<width>33.3333333%</width>
+				<top>0</top>
+				<bottom>0</bottom>
+				<left>33.3333333%</left>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<orientation>vertical</orientation>
+				<pagecontrol>531</pagecontrol>
+				<movement>2</movement>
+				<focusposition>3</focusposition>
+				<onleft>509</onleft>
+				<onright>5092</onright>
+				<onup>5091</onup>
+				<ondown>5091</ondown>
+				<viewtype label="$LOCALIZE[40214]">list</viewtype>
+				<focusedlayout height="160">
+					<control type="group">
+						<top>-50</top>
+						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<height>160</height>
+							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(509) | Control.HasFocus(5092)">Conditional</animation>
+							<visible>Control.HasFocus(509) | Control.HasFocus(5091) | Control.HasFocus(5092)</visible>
+						</control>
+						<control type="image">
+							<left>35</left>
+							<top>20</top>
+							<width>120</width>
+							<height>120</height>
+							<texture fallback="DefaultAudio.png">$INFO[ListItem.Thumb]</texture>
+							<aspectratio align="left" aligny="center">stretch</aspectratio>
+							<bordertexture>colors/white.png</bordertexture>
+							<bordersize>1</bordersize>
 						</control>
 						<control type="label">
 							<left>190</left>
@@ -153,7 +161,51 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label,[B],[/B]]</label>
 							<shadowcolor>text_shadow</shadowcolor>
-							<visible>Container.Content(albums)</visible>
+							<scroll>true</scroll>
+						</control>
+						<control type="label">
+							<left>190</left>
+							<top>100</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.AlbumArtist]</label>
+							<shadowcolor>text_shadow</shadowcolor>
+							<scroll>true</scroll>
+						</control>
+						<control type="label">
+							<left>190</left>
+							<top>60</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Year]</label>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+						</control>
+					</control>
+				</focusedlayout>
+				<itemlayout height="160">
+					<control type="group">
+						<top>-50</top>
+						<control type="image">
+							<left>35</left>
+							<top>20</top>
+							<width>120</width>
+							<height>120</height>
+							<texture fallback="DefaultAudio.png">$INFO[ListItem.Thumb]</texture>
+							<aspectratio align="left" aligny="center">stretch</aspectratio>
+							<bordertexture>colors/white.png</bordertexture>
+							<bordersize>1</bordersize>
+						</control>
+						<control type="label">
+							<left>190</left>
+							<top>20</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label,[B],[/B]]</label>
+							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
 							<left>190</left>
@@ -164,7 +216,6 @@
 							<label>$INFO[ListItem.AlbumArtist]</label>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
-							<visible>Container.Content(albums)</visible>
 						</control>
 						<control type="label">
 							<left>190</left>
@@ -176,32 +227,43 @@
 							<font>font12</font>
 							<textcolor>grey</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
-							<visible>Container.Content(albums)</visible>
 						</control>
 					</control>
 				</itemlayout>
+					<content target="music" sortby="year" sortorder="ascending">$INFO[Container(509).ListItem.DBID,musicdb://artists/,/]</content>
 			</control>
 		</control>
 		<control type="group">
 			<include>OpenClose_Right</include>
-			<visible>Control.IsVisible(508)</visible>
-			<visible>Container.Content(albums)</visible>
+			<visible>Control.IsVisible(509)</visible>
 			<include>Visible_Right</include>
-			<control type="fixedlist" id="5081">
-				<width>50%</width>
-				<top>list_y_offset</top>
-				<bottom>list_y_offset</bottom>
+			<depth>DepthContentPanel</depth>
+			<include content="ContentPanel">
+				<param name="width" value="36.4333333%" />
+				<param name="flipx" value="true" />
+				<param name="left" value="1260" />
+				<param name="visible" value="!String.IsEqual(Skin.AspectRatio,21:9)" />
+			</include>
+			<include content="ContentPanel">
+				<param name="width" value="35.6833333%" />
+				<param name="flipx" value="true" />
+				<param name="left" value="1686.66667" />
+				<param name="visible" value="String.IsEqual(Skin.AspectRatio,21:9)" />
+			</include>
+			<control type="fixedlist" id="5092">
+				<width>33.3333333%</width>
 				<right>0</right>
+				<top>0</top>
+				<bottom>0</bottom>
+				<onleft>5091</onleft>
+				<onright>531</onright>
+				<onup>5092</onup>
+				<ondown>5092</ondown>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
-				<pagecontrol>531</pagecontrol>
 				<movement>5</movement>
 				<focusposition>6</focusposition>
-				<onleft>508</onleft>
-				<onright>531</onright>
-				<onup>5081</onup>
-				<ondown>5081</ondown>
-				<viewtype label="$LOCALIZE[40212]">list</viewtype>
+				<viewtype label="$LOCALIZE[40214]">list</viewtype>
 				<focusedlayout height="80">
 					<control type="group">
 						<top>30</top>
@@ -210,8 +272,8 @@
 							<right>0</right>
 							<height>80</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
-							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
-							<visible>Control.HasFocus(508) | Control.HasFocus(5081)</visible>
+							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(509) | Control.HasFocus(5091)">Conditional</animation>
+							<visible>Control.HasFocus(509) | Control.HasFocus(5091) | Control.HasFocus(5092)</visible>
 						</control>
 						<control type="label">
 							<left>35</left>
@@ -256,128 +318,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<content target="music" sortby="track" sortorder="ascending">$INFO[Container(508).ListItem.DBID,musicdb://albums/,/]</content>
-			</control>
-		</control>
-		<control type="group">
-			<include>OpenClose_Right</include>
-			<visible>Control.IsVisible(508)</visible>
-			<visible>Container.Content(artists)</visible>
-			<include>Visible_Right</include>
-			<depth>DepthContentPanel</depth>
-			<control type="fixedlist" id="5082">
-				<width>50%</width>
-				<right>0</right>
-				<top>list_y_offset</top>
-				<bottom>list_y_offset</bottom>
-				<onleft>508</onleft>
-				<onright>531</onright>
-				<onup>5082</onup>
-				<ondown>5082</ondown>
-				<scrolltime tween="cubic" easing="out">500</scrolltime>
-				<orientation>vertical</orientation>
-				<movement>2</movement>
-				<focusposition>3</focusposition>
-				<viewtype label="$LOCALIZE[40212]">list</viewtype>
-				<focusedlayout height="160">
-					<control type="group">
-						<top>-50</top>
-						<control type="image">
-							<left>0</left>
-							<right>0</right>
-							<height>160</height>
-							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
-							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
-							<visible>Control.HasFocus(508) | Control.HasFocus(5082)</visible>
-						</control>
-						<control type="image">
-							<left>35</left>
-							<top>20</top>
-							<width>120</width>
-							<height>120</height>
-							<texture fallback="DefaultAudio.png">$INFO[ListItem.Thumb]</texture>
-							<aspectratio align="left" aligny="center">stretch</aspectratio>
-							<bordertexture>colors/white.png</bordertexture>
-							<bordersize>1</bordersize>
-						</control>
-						<control type="label">
-							<left>190</left>
-							<top>20</top>
-							<height>40</height>
-							<right>30</right>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label,[B],[/B]]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-							<scroll>true</scroll>
-						</control>
-						<control type="label">
-							<left>190</left>
-							<top>100</top>
-							<height>40</height>
-							<right>30</right>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.AlbumArtist]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-							<scroll>true</scroll>
-						</control>
-						<control type="label">
-							<left>190</left>
-							<top>60</top>
-							<height>40</height>
-							<right>30</right>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Year]</label>
-							<font>font12</font>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-					</control>
-				</focusedlayout>
-				<itemlayout height="160">
-					<control type="group">
-						<top>-50</top>
-						<control type="image">
-							<left>35</left>
-							<top>20</top>
-							<width>120</width>
-							<height>120</height>
-							<texture fallback="DefaultAudio.png">$INFO[ListItem.Thumb]</texture>
-							<aspectratio align="left" aligny="center">stretch</aspectratio>
-							<bordertexture>colors/white.png</bordertexture>
-							<bordersize>1</bordersize>
-						</control>
-						<control type="label">
-							<left>190</left>
-							<top>20</top>
-							<height>40</height>
-							<right>30</right>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label,[B],[/B]]</label>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="label">
-							<left>190</left>
-							<top>100</top>
-							<height>40</height>
-							<right>30</right>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.AlbumArtist]</label>
-							<textcolor>$VAR[SkinColorVar]</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-						<control type="label">
-							<left>190</left>
-							<top>60</top>
-							<height>40</height>
-							<right>30</right>
-							<aligny>center</aligny>
-							<label>$INFO[ListItem.Year]</label>
-							<font>font12</font>
-							<textcolor>grey</textcolor>
-							<shadowcolor>text_shadow</shadowcolor>
-						</control>
-					</control>
-				</itemlayout>
-					<content target="music" sortby="year" sortorder="ascending">$INFO[Container(508).ListItem.DBID,musicdb://artists/,/]</content>
+				<content target="music" sortby="track" sortorder="ascending">$INFO[Container(5091).ListItem.DBID,musicdb://albums/,/]</content>
 			</control>
 		</control>
 	</include>

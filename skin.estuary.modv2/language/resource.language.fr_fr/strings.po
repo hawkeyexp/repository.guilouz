@@ -1772,7 +1772,7 @@ msgid "Miniatures panel"
 msgstr "Panneau de miniatures"
 
 #. viewtype name
-#: /xml/View_508_AlbumsAndSongs.xml
+#: /xml/View_508_DoubleLists.xml
 msgctxt "#40212"
 msgid "Double lists"
 msgstr "Doubles listes"
@@ -1781,3 +1781,9 @@ msgstr "Doubles listes"
 msgctxt "#40213"
 msgid "Show Skin Helper Service widgets settings"
 msgstr "Afficher les paramètres des widgets Skin Helper Service"
+
+#. viewtype name
+#: /xml/View_509_TripleLists.xml
+msgctxt "#40214"
+msgid "Triple lists"
+msgstr "Triples listes"

@@ -1,5 +1,6 @@
 [B]2.5.3[/B]
-• Add new view 'Double lists' for artists and albums
+• Add new 'Double lists' view for artists and albums
+• Add new 'Triple lists' view for artists
 • Improve esthetic appearance
 • Minor fixes
 

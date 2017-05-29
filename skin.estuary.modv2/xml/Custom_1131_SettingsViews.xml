@@ -160,6 +160,13 @@
 						<onclick>Action(close)</onclick>
 						<visible>Container.Content(artists) | Container.Content(albums)</visible>
 					</control>
+					<control type="button" id="11125">
+						<label>$LOCALIZE[40214]</label>
+						<include>DefaultSettingButton</include>
+						<onclick>Container.SetViewMode(509)</onclick>
+						<onclick>Action(close)</onclick>
+						<visible>Container.Content(artists)</visible>
+					</control>
 				</control>
 			</control>
 		</control>
