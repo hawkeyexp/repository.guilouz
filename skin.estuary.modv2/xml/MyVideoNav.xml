@@ -216,39 +216,39 @@
 				<control type="list" id="50500">
 					<right>6</right>
 					<bottom>11</bottom>
-					<width>800</width>
-					<height>100</height>
+					<width>820</width>
+					<height>102</height>
 					<orientation>horizontal</orientation>
 					<autoscroll time="1500">true</autoscroll>
 					<itemgap>5</itemgap>
-					<animation effect="slide" end="720,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,1)">conditional</animation>
-					<animation effect="slide" end="640,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,2)">conditional</animation>
-					<animation effect="slide" end="560,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,3)">conditional</animation>
-					<animation effect="slide" end="480,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,4)">conditional</animation>
-					<animation effect="slide" end="400,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,5)">conditional</animation>
-					<animation effect="slide" end="320,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,6)">conditional</animation>
-					<animation effect="slide" end="240,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,7)">conditional</animation>
-					<animation effect="slide" end="160,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,8)">conditional</animation>
-					<animation effect="slide" end="80,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,9)">conditional</animation>
-					<focusedlayout height="100" width="80">
+					<animation effect="slide" end="738,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,1)">conditional</animation>
+					<animation effect="slide" end="656,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,2)">conditional</animation>
+					<animation effect="slide" end="574,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,3)">conditional</animation>
+					<animation effect="slide" end="492,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,4)">conditional</animation>
+					<animation effect="slide" end="410,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,5)">conditional</animation>
+					<animation effect="slide" end="328,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,6)">conditional</animation>
+					<animation effect="slide" end="246,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,7)">conditional</animation>
+					<animation effect="slide" end="164,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,8)">conditional</animation>
+					<animation effect="slide" end="82,0" time="0" condition="Integer.IsEqual(Container(50500).NumItems,9)">conditional</animation>
+					<focusedlayout height="102" width="82">
 						<control type="image">
 							<left>5</left>
 							<top>0</top>
 							<right>5</right>
 							<bottom>0</bottom>
-							<aspectratio>stretch</aspectratio>
+							<aspectratio align="center" aligny="center">scale</aspectratio>
 							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>
 					</focusedlayout>
-					<itemlayout height="100" width="80">
+					<itemlayout height="102" width="82">
 						<control type="image">
 							<left>5</left>
 							<top>0</top>
 							<right>5</right>
 							<bottom>0</bottom>
-							<aspectratio>stretch</aspectratio>
+							<aspectratio align="center" aligny="center">scale</aspectratio>
 							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
