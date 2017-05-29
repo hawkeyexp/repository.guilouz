@@ -1776,3 +1776,8 @@ msgstr "Panneau de miniatures"
 msgctxt "#40212"
 msgid "List of albums and songs"
 msgstr "Liste d'albums et de chansons"
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40213"
+msgid "Show Skin Helper Service widgets settings"
+msgstr "Afficher les paramètres des widgets Skin Helper Service"

@@ -228,6 +228,7 @@
                     <label>  ∟$LOCALIZE[31132]</label>
                     <include>DefaultSettingButton</include>
                     <selected>!String.IsEmpty(Container(211).ListItem.Property(HideSubMenu))</selected>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetPanel)</visible>
                 </control>
                 <control type="button" id="993">	
@@ -235,6 +236,14 @@
 					<label2>$VAR[passcode]</label2>
 					<include>DefaultSettingButton</include>
 					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                </control>
+                <control type="button" id="994">	
+					<label>$LOCALIZE[40213]</label>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!System.HasAddon(script.skin.helper.widgets)">InstallAddon(script.skin.helper.widgets)</onclick>
+					<onclick condition="System.HasAddon(script.skin.helper.widgets)">Addon.OpenSettings(script.skin.helper.widgets)</onclick>
+					<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+					<visible>String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(211).ListItem.Property(widget),PersonalWidgetPanel)</visible>
                 </control>
 				<control type="button" id="312">
 					<include>DefaultSettingButton</include>
