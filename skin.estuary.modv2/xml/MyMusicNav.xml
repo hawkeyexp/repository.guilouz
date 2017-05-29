@@ -16,7 +16,7 @@
 			<include>View_500_Wall</include>
 			<include>View_506_Mosaic</include>
 			<include>View_507_Mosaic_Vertical</include>
-			<include>View_508_AlbumsAndSongs</include>
+			<include>View_508_DoubleLists</include>
 			<control type="group">
 				<include>OpenClose_Left</include>
 				<visible>Control.Isvisible(54) | Control.IsVisible(55)</visible>

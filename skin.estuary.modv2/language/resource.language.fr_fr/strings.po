@@ -1774,8 +1774,8 @@ msgstr "Panneau de miniatures"
 #. viewtype name
 #: /xml/View_508_AlbumsAndSongs.xml
 msgctxt "#40212"
-msgid "List of albums and songs"
-msgstr "Liste d'albums et de chansons"
+msgid "Double lists"
+msgstr "Doubles listes"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40213"

@@ -871,6 +871,7 @@
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),500)">$LOCALIZE[31102]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),506)">$LOCALIZE[40017]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),507)">$LOCALIZE[40146]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),508)">$LOCALIZE[40212]</value>
 		<value>$LOCALIZE[40148]</value>
 	</variable>
 	<variable name="SettingsForcedViewsAlbumsVar">
@@ -951,6 +952,7 @@
 		<value condition="Container.Content(artists) + Control.HasFocus(11117)">special://skin/extras/views/artists/500.png</value>
 		<value condition="Container.Content(artists) + Control.HasFocus(11122)">special://skin/extras/views/artists/506.png</value>
 		<value condition="Container.Content(artists) + Control.HasFocus(11123)">special://skin/extras/views/artists/507.png</value>
+		<value condition="Container.Content(artists) + Control.HasFocus(11124)">special://skin/extras/views/artists/508.png</value>
 		<value condition="Container.Content(albums) + Control.HasFocus(11113)">special://skin/extras/views/albums/53.png</value>
 		<value condition="Container.Content(albums) + Control.HasFocus(11114)">special://skin/extras/views/albums/54.png</value>
 		<value condition="Container.Content(albums) + Control.HasFocus(11116)">special://skin/extras/views/albums/55.png</value>

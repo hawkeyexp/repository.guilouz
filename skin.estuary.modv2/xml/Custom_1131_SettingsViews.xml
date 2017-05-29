@@ -158,7 +158,7 @@
 						<include>DefaultSettingButton</include>
 						<onclick>Container.SetViewMode(508)</onclick>
 						<onclick>Action(close)</onclick>
-						<visible>Container.Content(albums)</visible>
+						<visible>Container.Content(artists) | Container.Content(albums)</visible>
 					</control>
 				</control>
 			</control>

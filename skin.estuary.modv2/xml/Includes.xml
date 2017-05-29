@@ -23,7 +23,7 @@
 	<include file="View_505_ThumbsInfoWall.xml" />
 	<include file="View_506_Mosaic.xml" />
 	<include file="View_507_Mosaic_Vertical.xml" />
-	<include file="View_508_AlbumsAndSongs.xml" />
+	<include file="View_508_DoubleLists.xml" />
 	<include file="Variables.xml" />
 	<include file="script-skinshortcuts-includes.xml"/>
 	<constant name="DepthDialog">0.50</constant>

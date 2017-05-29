@@ -1,5 +1,5 @@
 [B]2.5.3[/B]
-• Add new view 'List of albums and songs' for albums
+• Add new view 'Double lists' for artists and albums
 • Improve esthetic appearance
 • Minor fixes
 
