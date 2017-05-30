@@ -810,6 +810,7 @@
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),503)">$LOCALIZE[40005]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),506)">$LOCALIZE[40017]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),507)">$LOCALIZE[40146]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),508)">$LOCALIZE[40212]</value>
 		<value>$LOCALIZE[40148]</value>
 	</variable>
 	<variable name="SettingsForcedViewsSetMoviesVar">
@@ -919,6 +920,7 @@
 		<value condition="Container.Content(sets) + Control.HasFocus(11121)">special://skin/extras/views/sets/503.png</value>
 		<value condition="Container.Content(sets) + Control.HasFocus(11122)">special://skin/extras/views/sets/506.png</value>
 		<value condition="Container.Content(sets) + Control.HasFocus(11123)">special://skin/extras/views/sets/507.png</value>
+		<value condition="Container.Content(sets) + Control.HasFocus(11124)">special://skin/extras/views/sets/508.png</value>
 		<value condition="Container.Content(tvshows) + Control.HasFocus(11111)">special://skin/extras/views/tvshows/50.png</value>
 		<value condition="Container.Content(tvshows) + Control.HasFocus(11112)">special://skin/extras/views/tvshows/51.png</value>
 		<value condition="Container.Content(tvshows) + Control.HasFocus(11113)">special://skin/extras/views/tvshows/53.png</value>

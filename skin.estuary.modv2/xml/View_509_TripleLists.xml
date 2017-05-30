@@ -230,7 +230,7 @@
 						</control>
 					</control>
 				</itemlayout>
-					<content target="music" sortby="year" sortorder="ascending">$INFO[Container(509).ListItem.DBID,musicdb://artists/,/]</content>
+				<content target="music" sortby="year" sortorder="ascending">$INFO[Container(509).ListItem.DBID,musicdb://artists/,/]</content>
 			</control>
 		</control>
 		<control type="group">

@@ -1,5 +1,6 @@
 [B]2.5.4[/B]
 • Add posters on 'Fanart' view
+• Add new 'Double lists' view for sets
 
 [B]2.5.3[/B]
 • Add new 'Double lists' view for artists and albums
