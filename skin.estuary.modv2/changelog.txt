@@ -1,3 +1,6 @@
+[B]2.5.4[/B]
+• Add posters on 'Fanart' view
+
 [B]2.5.3[/B]
 • Add new 'Double lists' view for artists and albums
 • Add new 'Triple lists' view for artists

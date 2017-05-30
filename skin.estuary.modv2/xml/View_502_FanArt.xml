@@ -37,8 +37,30 @@
 					<timeperimage>3000</timeperimage>
 					<randomize>true</randomize>
 				</control>
+				<control type="image">
+					<left>48</left>
+					<top>469</top>
+					<width>228</width>
+					<height>290</height>
+					<texture background="true">lists/panel.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>300</fadetime>
+					<visible>!ListItem.IsCollection</visible>
+				</control>
+				<control type="image">
+					<left>53</left>
+					<top>474</top>
+					<width>218</width>
+					<height>300</height>
+					<texture background="true">$VAR[IconWallPosterVar]</texture>
+					<aspectratio>stretch</aspectratio>
+					<bordertexture>colors/white.png</bordertexture>
+					<bordersize>2</bordersize>
+					<fadetime>300</fadetime>
+					<visible>!ListItem.IsCollection</visible>
+				</control>
 				<control type="group">
-					<top>455</top>
+					<top>472</top>
 					<left>1283</left>
 					<visible>Skin.HasSetting(enable_LibraryDiscArt)</visible>
 					<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
@@ -125,8 +147,8 @@
 				<control type="textbox">
 					<left>50</left>
 					<right>45</right>
-					<top>769</top>
-					<bottom>105</bottom>
+					<top>779</top>
+					<bottom>95</bottom>
 					<align>justify</align>
 					<label>$VAR[PlotSpoilerVar]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -136,8 +158,8 @@
 				<control type="textbox">
 					<left>50</left>
 					<right>45</right>
-					<top>769</top>
-					<bottom>85</bottom>
+					<top>779</top>
+					<bottom>75</bottom>
 					<align>justify</align>
 					<label>$VAR[PlotSpoilerVar]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -161,9 +183,9 @@
 					<visible>ListItem.IsCollection</visible>
 					<control type="textbox">
 						<left>0</left>
-						<top>0</top>
+						<top>10</top>
 						<right>45</right>
-						<bottom>105</bottom>
+						<bottom>95</bottom>
 						<align>justify</align>
 						<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
@@ -172,9 +194,9 @@
 					</control>
 					<control type="textbox">
 						<left>0</left>
-						<top>0</top>
+						<top>10</top>
 						<right>45</right>
-						<bottom>85</bottom>
+						<bottom>75</bottom>
 						<align>justify</align>
 						<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
@@ -183,9 +205,9 @@
 					</control>
 					<control type="textbox">
 						<left>0</left>
-						<top>0</top>
+						<top>10</top>
 						<right>45</right>
-						<bottom>105</bottom>
+						<bottom>95</bottom>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font27</font>
