@@ -35,7 +35,12 @@
 	</variable>
 	<variable name="SubLabelMoviesSetsInfoVar">
 		<value condition="Control.HasFocus(50)">$INFO[Container(50).ListItem.Tagline]</value>
+		<value condition="!Control.HasFocus(50) + String.IsEqual(Window(Home).Property(SkinHelper.ListItem.Count),1)">$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36900]]</value>
 		<value condition="!Control.HasFocus(50)">$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]]</value>
+	</variable>
+	<variable name="CollectionNumberVar">
+		<value condition="String.IsEqual(Window(Home).Property(SkinHelper.ListItem.Count),1)">$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36900]]</value>
+		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]]</value>
 	</variable>
 	<variable name="MPAALabelMoviesSetsVar">
 		<value condition="String.Contains(Container(50).ListItem.mpaa,10) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 10 ans[/COLOR]</value>
@@ -1550,7 +1555,7 @@
 	</variable>
 	<variable name="ShiftRightTextBoxVar">
 		<value condition="Window.IsActive(pictures)">$INFO[ListItem.Size,$LOCALIZE[289] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureAperture,$LOCALIZE[21826] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureFocalLen,$LOCALIZE[21827] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureExpTime,$LOCALIZE[21830] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Date,$LOCALIZE[552] : [COLOR white],[/COLOR][CR]]</value>
-		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)) + !String.IsEqual(Listitem.DBType,movie) + !String.IsEqual(Listitem.DBType,tvshow)">[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901][CR]][/B][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)) + !String.IsEqual(Listitem.DBType,movie) + !String.IsEqual(Listitem.DBType,tvshow)">[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</value>
 		<value condition="String.IsEqual(listitem.dbtype,artist)">[COLOR white]$INFO[ListItem.Property(artist_description)][/COLOR]</value>
 		<value condition="String.IsEqual(listitem.dbtype,album)">COLOR white]$INFO[ListItem.Property(album_description)][/COLOR]</value>
 		<value>$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot,[COLOR white],[/COLOR]]</value>

@@ -138,7 +138,7 @@
 							<width>537</width>
 							<bottom>300</bottom>
 							<align>justify</align>
-							<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+							<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<visible>!String.IsEqual(Skin.Font, Arial)</visible>
@@ -149,7 +149,7 @@
 							<width>537</width>
 							<bottom>295</bottom>
 							<align>justify</align>
-							<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+							<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 							<autoscroll delay="10000" time="3000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<visible>String.IsEqual(Skin.Font, Arial)</visible>
@@ -316,7 +316,7 @@
 					<right>50</right>
 					<align>justify</align>
 					<autoscroll time="8000" delay="5000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
-					<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+					<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<visible>!String.IsEqual(Skin.Font, Arial)</visible>
@@ -328,7 +328,7 @@
 					<right>50</right>
 					<align>justify</align>
 					<autoscroll time="8000" delay="5000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
-					<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+					<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<visible>String.IsEqual(Skin.Font, Arial)</visible>

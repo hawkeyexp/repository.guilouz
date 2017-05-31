@@ -187,7 +187,7 @@
 						<right>45</right>
 						<bottom>95</bottom>
 						<align>justify</align>
-						<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+						<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
@@ -198,7 +198,7 @@
 						<right>45</right>
 						<bottom>75</bottom>
 						<align>justify</align>
-						<label>[B]$INFO[Window(Home).Property(SkinHelper.ListItem.Count),, $LOCALIZE[36901]][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
+						<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>String.IsEqual(Skin.Font, Arial)</visible>
