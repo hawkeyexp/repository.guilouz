@@ -45,7 +45,7 @@
 					<texture background="true">lists/panel.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>!ListItem.IsCollection</visible>
+					<visible>!ListItem.IsCollection + !ListItem.IsParentFolder</visible>
 				</control>
 				<control type="image">
 					<left>53</left>
@@ -57,7 +57,7 @@
 					<bordertexture>colors/white.png</bordertexture>
 					<bordersize>2</bordersize>
 					<fadetime>300</fadetime>
-					<visible>!ListItem.IsCollection</visible>
+					<visible>!ListItem.IsCollection + !ListItem.IsParentFolder</visible>
 				</control>
 				<control type="group">
 					<top>472</top>
