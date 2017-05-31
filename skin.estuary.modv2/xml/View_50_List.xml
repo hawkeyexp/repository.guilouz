@@ -354,7 +354,7 @@
 						<left>10</left>
 						<top>-140</top>
 						<width>535</width>
-						<bottom>270</bottom>
+						<bottom>272</bottom>
 						<align>justify</align>
 						<autoscroll time="5000" delay="7000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$VAR[ListBoxInfoVar]</label>
