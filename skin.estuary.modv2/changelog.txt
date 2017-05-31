@@ -2,6 +2,7 @@
 • Add posters on 'Fanart' view
 • Add new 'Double lists' view for sets
 • Fix end time resume flag icon with AM/PM
+• Fix visibility for 'Double lists' and 'Triple lists' views
 
 [B]2.5.3[/B]
 • Add new 'Double lists' view for artists and albums

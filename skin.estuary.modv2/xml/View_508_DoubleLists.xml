@@ -5,6 +5,7 @@
 			<include>OpenClose_Left</include>
 			<visible>Control.IsVisible(508)</visible>
 			<include>Visible_Left</include>
+			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets)</visible>
 			<depth>DepthContentPanel</depth>
 			<include content="ContentPanel">
 				<param name="width" value="53.1%" />
@@ -32,7 +33,8 @@
 				<onup>508</onup>
 				<ondown>508</ondown>
 				<viewtype label="$LOCALIZE[40212]">list</viewtype>
-				<focusedlayout height="160">
+				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets)</visible>
+				<focusedlayout height="160" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(sets)">
 					<control type="group">
 						<top>-50</top>
 						<control type="image">
@@ -137,7 +139,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="160">
+				<itemlayout height="160" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(sets)">
 					<control type="group">
 						<top>-50</top>
 						<control type="image">
@@ -255,7 +257,8 @@
 				<onup>5081</onup>
 				<ondown>5081</ondown>
 				<viewtype label="$LOCALIZE[40212]">list</viewtype>
-				<focusedlayout height="80">
+				<visible>Container.Content(albums)</visible>
+				<focusedlayout height="80" condition="Container.Content(albums)">
 					<control type="group">
 						<top>30</top>
 						<control type="image">
@@ -286,7 +289,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="80">
+				<itemlayout height="80" condition="Container.Content(albums)">
 					<control type="group">
 						<top>30</top>
 						<control type="label">
@@ -332,7 +335,8 @@
 				<movement>2</movement>
 				<focusposition>3</focusposition>
 				<viewtype label="$LOCALIZE[40212]">list</viewtype>
-				<focusedlayout height="160">
+				<visible>Container.Content(artists)</visible>
+				<focusedlayout height="160" condition="Container.Content(artists)">
 					<control type="group">
 						<top>-50</top>
 						<control type="image">
@@ -385,7 +389,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="160">
+				<itemlayout height="160" condition="Container.Content(artists)">
 					<control type="group">
 						<top>-50</top>
 						<control type="image">
@@ -452,7 +456,8 @@
 				<onup>5083</onup>
 				<ondown>5083</ondown>
 				<viewtype label="$LOCALIZE[40212]">list</viewtype>
-				<focusedlayout height="160">
+				<visible>Container.Content(sets)</visible>
+				<focusedlayout height="160" condition="Container.Content(sets)">
 					<control type="group">
 						<top>-50</top>
 						<control type="image">
@@ -505,7 +510,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="160">
+				<itemlayout height="160" condition="Container.Content(sets)">
 					<control type="group">
 						<top>-50</top>
 						<control type="image">
