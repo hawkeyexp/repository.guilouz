@@ -45,7 +45,7 @@
 					<texture background="true">lists/panel.png</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>300</fadetime>
-					<visible>!ListItem.IsCollection + !ListItem.IsParentFolder</visible>
+					<visible>!ListItem.IsCollection + !ListItem.IsParentFolder + !String.IsEmpty(Listitem.Art(poster))</visible>
 				</control>
 				<control type="image">
 					<left>53</left>
