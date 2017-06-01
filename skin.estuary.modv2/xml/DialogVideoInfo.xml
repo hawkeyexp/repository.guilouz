@@ -386,7 +386,7 @@
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="155" />
-						<param name="label" value="$LOCALIZE[31048] : [COLOR white]$INFO[ListItem.Season,, $LOCALIZE[36905]]$INFO[ListItem.Episode, (, $LOCALIZE[20453])][/COLOR]" />
+						<param name="label" value="$LOCALIZE[31048] : [COLOR white]$VAR[SeasonNumberVar]$VAR[EpisodeNumberVar][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Season) + !String.IsEqual(ListItem.DBType,episode)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
