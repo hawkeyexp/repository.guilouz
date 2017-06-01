@@ -497,6 +497,7 @@
 				<visible>Control.IsVisible(502)</visible>
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!ListItem.IsParentFolder</visible>
+				<include>OpenClose_Right</include>
 			</control>
 			<control type="group">
 				<depth>DepthBars</depth>
