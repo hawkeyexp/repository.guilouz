@@ -1072,8 +1072,19 @@
 							<left>25</left>
 							<width>266</width>
 							<height>120</height>
-							<texture fallback="DefaultFolder.png">$VAR[InfoWidgetThumbVar]</texture>
+							<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+						</control>
+						<control type="image">
+							<top>25</top>
+							<left>25</left>
+							<width>266</width>
+							<height>120</height>
+							<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar2]</texture>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
+							<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
 						</control>
 						<control type="label">
 							<left>28</left>
@@ -1161,8 +1172,19 @@
 							<left>25</left>
 							<width>266</width>
 							<height>120</height>
-							<texture fallback="DefaultFolder.png">$VAR[InfoWidgetThumbVar]</texture>
+							<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+						</control>
+						<control type="image">
+							<top>25</top>
+							<left>25</left>
+							<width>266</width>
+							<height>120</height>
+							<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar2]</texture>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
+							<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
 						</control>
 						<control type="label">
 							<left>28</left>
@@ -1353,6 +1375,17 @@
 				<height>156</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWidgetThumbVar]</texture>
 				<aspectratio aligny="top">keep</aspectratio>
+				<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>30</top>
+				<width>276</width>
+				<height>156</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWidgetThumbVar2]</texture>
+				<aspectratio aligny="top">keep</aspectratio>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
+				<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
 			</control>
 			<control type="image">
 				<left>136</left>
@@ -1509,6 +1542,17 @@
 				<height>155</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWidgetThumbVar]</texture>
 				<aspectratio aligny="top">keep</aspectratio>
+				<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>81</top>
+				<width>276</width>
+				<height>155</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWidgetThumbVar2]</texture>
+				<aspectratio aligny="top">keep</aspectratio>
+				<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
+				<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -2493,8 +2537,19 @@
 						<left>25</left>
 						<width>266</width>
 						<height>120</height>
-						<texture fallback="DefaultFolder.png">$VAR[InfoWidgetThumbVar]</texture>
+						<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+					</control>
+					<control type="image">
+						<top>25</top>
+						<left>25</left>
+						<width>266</width>
+						<height>120</height>
+						<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar2]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
+						<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
 					</control>
 					<control type="label">
 						<left>28</left>
@@ -2582,8 +2637,19 @@
 						<left>25</left>
 						<width>266</width>
 						<height>120</height>
-						<texture fallback="DefaultFolder.png">$VAR[InfoWidgetThumbVar]</texture>
+						<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+					</control>
+					<control type="image">
+						<top>25</top>
+						<left>25</left>
+						<width>266</width>
+						<height>120</height>
+						<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar2]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
+				<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
 					</control>
 					<control type="label">
 						<left>28</left>
