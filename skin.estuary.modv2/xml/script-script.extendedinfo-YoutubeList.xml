@@ -221,7 +221,7 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<visible>!ControlGroup(9000).HasFocus + !Control.HasFocus(6000) + !Control.HasFocus(7000)</visible>
 			<control type="button">
-				<bottom>20</bottom>
+				<bottom>11</bottom>
 				<left>12</left>
 				<width>36</width>
 				<height>36</height>
@@ -232,15 +232,17 @@
 				<visible>!Skin.HasSetting(KioskMode)</visible>
 			</control>
 			<control type="button">
-				<bottom>16</bottom>
-				<left>64</left>
+				<bottom>11</bottom>
+				<left>55</left>
 				<width>300</width>
-				<height>44</height>
+				<height>36</height>
 				<shadowcolor>text_shadow</shadowcolor>
 				<label>$ADDON[script.extendedinfo 32023]</label>
 				<onclick>SetFocus(9000)</onclick>
 				<texturefocus />
 				<texturenofocus />
+				<font>font25_title</font>
+				<aligny>center</aligny>
 				<visible>!Skin.HasSetting(KioskMode)</visible>
 			</control>
 		</control>
@@ -250,17 +252,19 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="label">
-				<bottom>16</bottom>
-				<right>72</right>
-				<width>300</width>
+				<bottom>4</bottom>
+				<right>70</right>
 				<height>44</height>
+				<width>300</width>
+				<aligny>center</aligny>
+				<font>font25_title</font>
 				<align>right</align>
 				<shadowcolor>text_shadow</shadowcolor>
 				<label>$INFO[Window.Property(CurrentPage)]$INFO[Window.Property(TotalPages), / ]</label>
 			</control>
 			<control type="image">
-				<bottom>20</bottom>
-				<right>12</right>
+				<bottom>6</bottom>
+				<right>3</right>
 				<width>54</width>
 				<height>44</height>
 				<aspectratio>keep</aspectratio>

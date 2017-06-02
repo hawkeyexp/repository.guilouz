@@ -1931,7 +1931,7 @@
 				<width>54</width>
 				<height>44</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
+				<texture>frame/item-count.png</texture>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<xvisible>!String.IsEmpty(Container(200).NumItems)</xvisible>
 			</control>
@@ -1961,7 +1961,7 @@
 				<width>54</width>
 				<height>44</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
+				<texture>frame/item-count.png</texture>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<xvisible>!String.IsEmpty(Container(201).NumItems)</xvisible>
 			</control>
@@ -1991,7 +1991,7 @@
 				<width>54</width>
 				<height>44</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
+				<texture>frame/item-count.png</texture>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<xvisible>!String.IsEmpty(Container(202).NumItems)</xvisible>
 			</control>
@@ -2021,7 +2021,7 @@
 				<width>54</width>
 				<height>44</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
+				<texture>frame/item-count.png</texture>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<xvisible>!String.IsEmpty(Container(203).NumItems)</xvisible>
 			</control>
@@ -2051,7 +2051,7 @@
 				<width>54</width>
 				<height>44</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
+				<texture>frame/item-count.png</texture>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<xvisible>!String.IsEmpty(Container(204).NumItems)</xvisible>
 			</control>
@@ -2081,7 +2081,7 @@
 				<width>54</width>
 				<height>44</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
+				<texture>frame/item-count.png</texture>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<xvisible>!String.IsEmpty(Container(205).NumItems)</xvisible>
 			</control>
@@ -2111,7 +2111,7 @@
 				<width>54</width>
 				<height>44</height>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$VAR[SkinColorVar]">frame/item-count.png</texture>
+				<texture>frame/item-count.png</texture>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<xvisible>!String.IsEmpty(Container(206).NumItems)</xvisible>
 			</control>
