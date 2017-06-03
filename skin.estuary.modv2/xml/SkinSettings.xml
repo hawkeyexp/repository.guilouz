@@ -998,6 +998,13 @@
 					<onclick>Skin.ToggleSetting(HomeClearLogo)</onclick>
 					<selected>!Skin.HasSetting(HomeClearLogo)</selected>
 				</control>
+				<control type="radiobutton" id="10023">
+					<include>DefaultSettingButton</include>
+					<label>  ∟$LOCALIZE[40215]</label>
+					<onclick>Skin.ToggleSetting(HomeClearLogoMenu)</onclick>
+					<selected>Skin.HasSetting(HomeClearLogoMenu)</selected>
+					<visible>!Skin.HasSetting(HomeClearLogo)</visible>
+				</control>
 				<control type="radiobutton" id="10018">
 					<label>$LOCALIZE[40170]</label>
 					<include>DefaultSettingButton</include>
@@ -1030,7 +1037,7 @@
 				<control type="button" id="10022">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HideMainMenuWithWidgets)|Skin.Reset(enable_power_background)|Skin.Reset(power_background)|Skin.Reset(enable_settings_background)|Skin.Reset(settings_background)|Skin.Reset(enable_search_background)|Skin.Reset(search_background)|Skin.Reset(widgetnumber)|Skin.Reset(UseSmallerCategories)|Skin.Reset(HomeClearLogo)|Skin.Reset(enable_HomeDiscArt)|Skin.Reset(enable_HomeDiscArtOverlay)|Skin.Reset(greyedout_watched_home)|Skin.Reset(enable_settingswidget))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HideMainMenuWithWidgets)|Skin.Reset(enable_power_background)|Skin.Reset(power_background)|Skin.Reset(enable_settings_background)|Skin.Reset(settings_background)|Skin.Reset(enable_search_background)|Skin.Reset(search_background)|Skin.Reset(widgetnumber)|Skin.Reset(UseSmallerCategories)|Skin.Reset(HomeClearLogo)|Skin.Reset(HomeClearLogoMenu)|Skin.Reset(enable_HomeDiscArt)|Skin.Reset(enable_HomeDiscArtOverlay)|Skin.Reset(greyedout_watched_home)|Skin.Reset(enable_settingswidget))</onclick>
 				</control>
 			</control>
 			<control type="image">

@@ -1832,6 +1832,8 @@
 				<visible>!Skin.HasSetting(HomeClearLogo)</visible>
 				<visible>!Control.HasFocus(9000)</visible>
 				<visible>!Window.IsVisible(DialogVolumeBar.xml)</visible>
+				<visible>!Skin.HasSetting(HomeClearLogoMenu)</visible>
+				<animation effect="slide" end="0,-115" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			</control>
 			<control type="image">
 				<top>5</top>
@@ -1843,12 +1845,29 @@
 				<visible>!Skin.HasSetting(HomeClearLogo)</visible>
 				<visible>!Control.HasFocus(9000)</visible>
 				<visible>!Window.IsVisible(DialogVolumeBar.xml)</visible>
+				<visible>!Skin.HasSetting(HomeClearLogoMenu)</visible>
+				<animation effect="slide" end="0,-115" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>452</width>
+				<height>108</height>
+				<left>5</left>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<texture>$VAR[HomeClearLogoVar]</texture>
+				<visible>!Skin.HasSetting(HomeClearLogo)</visible>
+				<visible>!Control.HasFocus(9000)</visible>
+				<visible>Skin.HasSetting(HomeClearLogoMenu)</visible>
+				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+				<animation effect="slide" end="0,-115" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			</control>
 			<control type="group">
 				<depth>DepthBars</depth>
 				<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="200">VisibleChange</animation>
+				<visible>!Skin.HasSetting(HomeClearLogoMenu) | [Skin.HasSetting(HomeClearLogoMenu) + [String.IsEmpty(Container().ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(Container().ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]]</visible>
 				<top>20</top>
 				<left>20</left>
 				<control type="image">

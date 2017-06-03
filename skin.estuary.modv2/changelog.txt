@@ -1,4 +1,5 @@
 [B]2.5.5[/B]
+• Add possibility to show clearlogos at the top of home menu
 • Fix episodes thumbs with Personalized Widgets
 • Minor fixes
 

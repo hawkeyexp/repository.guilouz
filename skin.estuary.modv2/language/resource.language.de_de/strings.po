@@ -1785,3 +1785,8 @@ msgstr "Zeige die Skin Helper Service Widget Einstellungen"
 msgctxt "#40214"
 msgid "Triple lists"
 msgstr "Dreifach-Liste"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40215"
+msgid "Show clearlogos at the top of menu"
+msgstr ""
