@@ -1004,6 +1004,7 @@
 					<onclick>Skin.ToggleSetting(HomeClearLogoMenu)</onclick>
 					<selected>Skin.HasSetting(HomeClearLogoMenu)</selected>
 					<visible>!Skin.HasSetting(HomeClearLogo)</visible>
+					<enable>!Skin.HasSetting(HideMainMenuWithWidgets)</enable>
 				</control>
 				<control type="radiobutton" id="10018">
 					<label>$LOCALIZE[40170]</label>
