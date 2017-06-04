@@ -32,6 +32,7 @@
 				<onright condition="Container.Content(sets) + Control.IsVisible(5083)">5083</onright>
 				<onup>508</onup>
 				<ondown>508</ondown>
+				<oninfo condition="String.IsEqual(ListItem.DBType,set)">ActivateWindow(1132)</oninfo>
 				<viewtype label="$LOCALIZE[40212]">list</viewtype>
 				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets)</visible>
 				<focusedlayout height="160" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(sets)">

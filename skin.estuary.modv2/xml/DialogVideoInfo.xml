@@ -15,26 +15,29 @@
 				<top>154</top>
 				<left>89</left>
 				<include>OpenClose_Left</include>
-				<control type="image" id="3333">
-					<top>700</top>
+				<control type="image" id="3334">
+					<top>-130</top>
 					<left>4</left>
 					<width>476</width>
-					<height>102</height>
+					<height>110</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture fallback="fallback.png">$VAR[ClearLogoVar]</texture>
 				</control>
-				<!--<control type="image">
-					<bottom>1</bottom>
+				<control type="image">
+					<top>680</top>
 					<left>-16</left>
 					<width>516</width>
-					<height>128</height>
+					<height>142</height>
+					<texture border="21">buttons/button-nofo.png</texture>
+				</control>
+				<control type="image" id="3333">
+					<top>700</top>
+					<left>13</left>
+					<width>458</width>
+					<height>102</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture fallback="fallback.png">$VAR[BannerVar]</texture>
-					<bordertexture border="21">overlays/shadow.png</bordertexture>
-					<bordersize>20</bordersize>
-					<animation effect="fade" time="200">VisibleChange</animation>
-					<visible>!Control.HasFocus(138) + !Control.HasFocus(50)</visible>
-				</control>-->
+				</control>
 				<control type="group">
 					<visible>String.IsEqual(Control.GetLabel(3333),fallback.png)</visible>
 					<control type="image">
@@ -51,7 +54,7 @@
 						<height>102</height>
 						<texture>icons/logo-info2.png</texture>
 					</control>
-				</control>	
+				</control>
 				<control type="image">
 					<top>-16</top>
 					<left>-16</left>
@@ -86,10 +89,10 @@
 						<top>4</top>
 						<width>444</width>
 						<height>678</height>
-						<aspectratio aligny="center">keep</aspectratio>
+						<aspectratio aligny="center" align="center">keep</aspectratio>
 						<texture fallback="DefaultVideoFanart.png">$VAR[EpisodeThumbInfoVar]</texture>
-						<bordertexture border="21">overlays/shadow.png</bordertexture>
-						<bordersize>20</bordersize>
+						<bordertexture>colors/white.png</bordertexture>
+						<bordersize>1</bordersize>
 					</control>
 				</control>
 			</control>
@@ -199,132 +202,132 @@
 						<top>30</top>
 						<width>754</width>
 						<height>142</height>
-				<control type="grouplist">
-					<itemgap>5</itemgap>
-					<orientation>horizontal</orientation>
-					<align>center</align>
-					<aligny>center</aligny>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>icons/infodialogs/audio.png</texture>
-						<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6))]</visible>
+						<control type="grouplist">
+							<itemgap>5</itemgap>
+							<orientation>horizontal</orientation>
+							<align>center</align>
+							<aligny>center</aligny>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>icons/infodialogs/audio.png</texture>
+								<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6))]</visible>
+							</control>
+							<control type="image">
+								<width>10</width>
+								<height>10</height>
+								<aspectratio>keep</aspectratio>
+								<texture/>
+								<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6))]</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(AudioLanguage.1),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(AudioLanguage.2),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(AudioLanguage.3),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.3))</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(AudioLanguage.4),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.4))</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(AudioLanguage.5),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.5))</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(AudioLanguage.6),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.6))</visible>
+							</control>
+							<control type="image">
+								<width>50</width>
+								<height>10</height>
+								<aspectratio>keep</aspectratio>
+								<texture/>
+								<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>icons/infodialogs/subtitles.png</texture>
+								<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
+							</control>
+							<control type="image">
+								<width>10</width>
+								<height>10</height>
+								<aspectratio>keep</aspectratio>
+								<texture/>
+								<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture fallback="lang">$INFO[ListItem.Property(SubtitleLanguage.1),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(SubtitleLanguage.2),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.2))</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(SubtitleLanguage.3),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.3))</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(SubtitleLanguage.4),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.5))</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(SubtitleLanguage.5),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.5))</visible>
+							</control>
+							<control type="image">
+								<width>40</width>
+								<height>40</height>
+								<aspectratio>keep</aspectratio>
+								<texture>$INFO[ListItem.Property(SubtitleLanguage.6),icons/infodialogs/flags/,.png]</texture>
+								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.6))</visible>
+							</control>
+						</control>
 					</control>
-					<control type="image">
-						<width>10</width>
-						<height>10</height>
-						<aspectratio>keep</aspectratio>
-						<texture/>
-						<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6))]</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(AudioLanguage.1),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(AudioLanguage.2),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.2))</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(AudioLanguage.3),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.3))</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(AudioLanguage.4),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.4))</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(AudioLanguage.5),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.5))</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(AudioLanguage.6),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.6))</visible>
-					</control>
-					<control type="image">
-						<width>50</width>
-						<height>10</height>
-						<aspectratio>keep</aspectratio>
-						<texture/>
-						<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>icons/infodialogs/subtitles.png</texture>
-						<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
-					</control>
-					<control type="image">
-						<width>10</width>
-						<height>10</height>
-						<aspectratio>keep</aspectratio>
-						<texture/>
-						<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture fallback="lang">$INFO[ListItem.Property(SubtitleLanguage.1),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(SubtitleLanguage.2),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.2))</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(SubtitleLanguage.3),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.3))</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(SubtitleLanguage.4),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.5))</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(SubtitleLanguage.5),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.5))</visible>
-					</control>
-					<control type="image">
-						<width>40</width>
-						<height>40</height>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Property(SubtitleLanguage.6),icons/infodialogs/flags/,.png]</texture>
-						<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.6))</visible>
-					</control>
-				</control>
-				</control>
 				</control>
 				<control type="grouplist" id="4000">
 					<orientation>vertical</orientation>
@@ -779,11 +782,24 @@
 				<animation effect="fade" start="0" end="100" time="300">Visible</animation>
 				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			</control>
-			<include content="InfoDialogTopBarInfo">
-				<param name="main_label" value="$VAR[VideoInfoMainLabelVar]" />
-				<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
-				<param name="subtextcolor" value="$VAR[SkinColorVar]" />
-			</include>
+			<control type="group">
+				<visible>String.IsEqual(Control.GetLabel(3334),fallback.png)</visible>
+				<include content="InfoDialogTopBarInfo">
+					<param name="main_label" value="$VAR[VideoInfoMainLabelVar]" />
+					<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
+					<param name="subtextcolor" value="$VAR[SkinColorVar]" />
+				</include>
+			</control>
+			<control type="group">
+				<visible>!String.IsEqual(Control.GetLabel(3334),fallback.png)</visible>
+				<include content="InfoDialogTopBarInfo">
+					<param name="main_label" value="$VAR[VideoInfoMainLabelVar]" />
+					<param name="sub_label" value="$VAR[VideoInfoSubLabelVar]" />
+					<param name="subtextcolor" value="$VAR[SkinColorVar]" />
+					<param name="left" value="620" />
+					<param name="right" value="94" />
+				</include>
+			</control>
 		</control>
 		<control type="group">
 			<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>

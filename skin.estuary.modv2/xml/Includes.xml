@@ -1122,10 +1122,12 @@
 		<param name="posy">20</param>
 		<param name="maintextcolor">white</param>
 		<param name="subtextcolor">white</param>
+		<param name="left">10</param>
+		<param name="right">10</param>
 		<definition>
 			<control type="grouplist">
-				<left>10</left>
-				<right>10</right>
+				<left>$PARAM[left]</left>
+				<right>$PARAM[right]</right>
 				<top>$PARAM[posy]</top>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
