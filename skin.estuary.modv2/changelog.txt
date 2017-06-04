@@ -1,6 +1,7 @@
 [B]2.5.5[/B]
 • Add possibility to show clearlogos at the top of home menu
 • Fix episodes thumbs with Personalized Widgets
+• Fix on 'Double lists' and 'Triple lists' views to launch full album
 • Minor fixes
 
 [B]2.5.4[/B]

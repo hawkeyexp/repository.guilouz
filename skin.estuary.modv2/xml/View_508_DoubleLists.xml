@@ -312,7 +312,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<content target="music" sortby="track" sortorder="ascending">$INFO[Container(508).ListItem.DBID,musicdb://albums/,/]</content>
+				<content target="music" sortby="track" sortorder="ascending">$INFO[Container(508).ListItem.FolderPath]</content>
 			</control>
 		</control>
 		<control type="group">
@@ -336,6 +336,7 @@
 				<focusposition>3</focusposition>
 				<viewtype label="$LOCALIZE[40212]">list</viewtype>
 				<visible>Container.Content(artists)</visible>
+				<onclick>RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
 				<focusedlayout height="160" condition="Container.Content(artists)">
 					<control type="group">
 						<top>-50</top>
@@ -434,7 +435,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<content target="music" sortby="year" sortorder="ascending">$INFO[Container(508).ListItem.DBID,musicdb://artists/,/]</content>
+				<content target="music" sortby="year" sortorder="ascending">$INFO[Container(508).ListItem.FolderPath]</content>
 			</control>
 		</control>
 		<control type="group">
@@ -555,7 +556,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<content target="video" sortby="year" sortorder="ascending">$INFO[Container(508).ListItem.DBID,videodb://movies/sets/,/]</content>
+				<content target="video" sortby="year" sortorder="ascending">$INFO[Container(508).ListItem.FolderPath]</content>
 			</control>
 		</control>
 	</include>
