@@ -1710,7 +1710,8 @@
 	</variable>
 	<variable name="BannerVar">
 		<value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
-		<value>$INFO[ListItem.Art(tvshow.banner)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>
+		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Banner)]</value>
 	</variable>
 	<variable name="PosterVar">
 		<value condition="ListItem.IsParentFolder">DefaultFolderBackPoster.png</value>
