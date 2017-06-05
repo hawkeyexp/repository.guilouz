@@ -127,6 +127,7 @@
 						<texture background="true">$VAR[BannerVar]</texture>
 						<bordertexture>colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
+						<visible>!ListItem.IsCollection</visible>
 					</control>
 					<control type="group">
 						<left>20</left>

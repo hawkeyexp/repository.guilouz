@@ -1,3 +1,6 @@
+[B]2.5.6[/B]
+• Minor fixes
+
 [B]2.5.5[/B]
 • Add possibility to show clearlogos at the top of home menu
 • Add clearlogos on dialog music info
