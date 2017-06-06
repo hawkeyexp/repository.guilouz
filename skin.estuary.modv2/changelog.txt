@@ -1,4 +1,7 @@
 [B]2.5.6[/B]
+• Add new 'Triple lists' view for TV shows
+• Add new 'Double lists' view for seasons
+• Changes for Kodi 18 : Migrate add-on settings to settings library
 • Minor fixes
 
 [B]2.5.5[/B]

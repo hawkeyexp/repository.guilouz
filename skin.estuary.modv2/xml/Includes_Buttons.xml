@@ -38,9 +38,11 @@
 		<param name="height">70</param>
 		<param name="textoffsetx">40</param>
 		<param name="font">font13</param>
+		<param name="textwidth"></param>
 		<definition>
 			<textoffsetx>$PARAM[textoffsetx]</textoffsetx>
 			<top>0</top>
+			<textwidth>$PARAM[textwidth]</textwidth>
 			<height>$PARAM[height]</height>
 			<aligny>center</aligny>
 			<invalidcolor>invalid</invalidcolor>

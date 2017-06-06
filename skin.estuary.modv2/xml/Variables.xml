@@ -50,6 +50,10 @@
 		<value condition="String.Equal(ListItem.Episode,1)">$INFO[ListItem.Episode, (, $LOCALIZE[20452])]</value>
 		<value>$INFO[ListItem.Episode, (, $LOCALIZE[20453])]</value>
 	</variable>
+	<variable name="EpisodeNumberViewVar">
+		<value condition="String.Equal(ListItem.Episode,1)">$INFO[ListItem.Episode,, $LOCALIZE[20452]]</value>
+		<value>$INFO[ListItem.Episode,, $LOCALIZE[20453]]</value>
+	</variable>
 	<variable name="MPAALabelMoviesSetsVar">
 		<value condition="String.Contains(Container(50).ListItem.mpaa,10) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 10 ans[/COLOR]</value>
 		<value condition="String.Contains(Container(50).ListItem.mpaa,12) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 12 ans[/COLOR]</value>
@@ -855,6 +859,7 @@
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),503)">$LOCALIZE[40005]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),506)">$LOCALIZE[40017]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),507)">$LOCALIZE[40146]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),509)">$LOCALIZE[40214]</value>
 		<value>$LOCALIZE[40148]</value>
 	</variable>
 	<variable name="SettingsForcedViewsSeasonsVar">
@@ -869,6 +874,7 @@
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),502)">$LOCALIZE[20445]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),506)">$LOCALIZE[40017]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),507)">$LOCALIZE[40146]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),508)">$LOCALIZE[40212]</value>
 		<value>$LOCALIZE[40148]</value>
 	</variable>
 	<variable name="SettingsForcedViewsEpisodesVar">
@@ -947,6 +953,7 @@
 		<value condition="Container.Content(tvshows) + Control.HasFocus(11121)">special://skin/extras/views/tvshows/503.png</value>
 		<value condition="Container.Content(tvshows) + Control.HasFocus(11122)">special://skin/extras/views/tvshows/506.png</value>
 		<value condition="Container.Content(tvshows) + Control.HasFocus(11123)">special://skin/extras/views/tvshows/507.png</value>
+		<value condition="Container.Content(tvshows) + Control.HasFocus(11125)">special://skin/extras/views/tvshows/509.png</value>
 		<value condition="Container.Content(seasons) + Control.HasFocus(11111)">special://skin/extras/views/seasons/50.png</value>
 		<value condition="Container.Content(seasons) + Control.HasFocus(11112)">special://skin/extras/views/seasons/51.png</value>
 		<value condition="Container.Content(seasons) + Control.HasFocus(11113)">special://skin/extras/views/seasons/53.png</value>
@@ -958,6 +965,7 @@
 		<value condition="Container.Content(seasons) + Control.HasFocus(11120)">special://skin/extras/views/seasons/502.png</value>
 		<value condition="Container.Content(seasons) + Control.HasFocus(11122)">special://skin/extras/views/seasons/506.png</value>
 		<value condition="Container.Content(seasons) + Control.HasFocus(11123)">special://skin/extras/views/seasons/507.png</value>
+		<value condition="Container.Content(seasons) + Control.HasFocus(11124)">special://skin/extras/views/seasons/508.png</value>
 		<value condition="Container.Content(episodes) + Control.HasFocus(11114)">special://skin/extras/views/episodes/54.png</value>
 		<value condition="Container.Content(episodes) + Control.HasFocus(11116)">special://skin/extras/views/episodes/55.png</value>
 		<value condition="Container.Content(episodes) + Control.HasFocus(11117)">special://skin/extras/views/episodes/500.png</value>

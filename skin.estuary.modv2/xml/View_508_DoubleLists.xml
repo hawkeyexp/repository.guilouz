@@ -5,7 +5,7 @@
 			<include>OpenClose_Left</include>
 			<visible>Control.IsVisible(508)</visible>
 			<include>Visible_Left</include>
-			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets)</visible>
+			<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets) | Container.Content(seasons)</visible>
 			<depth>DepthContentPanel</depth>
 			<include content="ContentPanel">
 				<param name="width" value="53.1%" />
@@ -30,12 +30,13 @@
 				<onright condition="Container.Content(albums) + Control.IsVisible(5081)">5081</onright>
 				<onright condition="Container.Content(artists) + Control.IsVisible(5082)">5082</onright>
 				<onright condition="Container.Content(sets) + Control.IsVisible(5083)">5083</onright>
+				<onright condition="Container.Content(seasons) + Control.IsVisible(5084)">5084</onright>
 				<onup>508</onup>
 				<ondown>508</ondown>
 				<oninfo condition="String.IsEqual(ListItem.DBType,set)">ActivateWindow(1132)</oninfo>
 				<viewtype label="$LOCALIZE[40212]">list</viewtype>
-				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets)</visible>
-				<focusedlayout height="160" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(sets)">
+				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets) | Container.Content(seasons)</visible>
+				<focusedlayout height="160" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(sets) | Container.Content(seasons)">
 					<control type="group">
 						<top>-50</top>
 						<control type="image">
@@ -43,8 +44,8 @@
 							<right>0</right>
 							<height>160</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
-							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(5081) | Control.HasFocus(5082) | Control.HasFocus(5083)">Conditional</animation>
-							<visible>Control.HasFocus(508) | Control.HasFocus(5081) | Control.HasFocus(5082) | Control.HasFocus(5083)</visible>
+							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(5081) | Control.HasFocus(5082) | Control.HasFocus(5083) | Control.HasFocus(5084)">Conditional</animation>
+							<visible>Control.HasFocus(508) | Control.HasFocus(5081) | Control.HasFocus(5082) | Control.HasFocus(5083) | Control.HasFocus(5084)</visible>
 						</control>
 						<control type="image">
 							<left>35</left>
@@ -56,7 +57,7 @@
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 							<visible>!ListItem.IsParentFolder</visible>
-							<visible>!Container.Content(sets)</visible>
+							<visible>!Container.Content(sets) + !Container.Content(seasons)</visible>
 						</control>
 						<control type="image">
 							<left>35</left>
@@ -68,10 +69,10 @@
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 							<visible>ListItem.IsParentFolder</visible>
-							<visible>!Container.Content(sets)</visible>
+							<visible>!Container.Content(sets) + !Container.Content(seasons)</visible>
 						</control>
 						<control type="image">
-							<left>53</left>
+							<left>30</left>
 							<top>20</top>
 							<width>84</width>
 							<height>120</height>
@@ -80,10 +81,10 @@
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 							<visible>!ListItem.IsParentFolder</visible>
-							<visible>Container.Content(sets)</visible>
+							<visible>Container.Content(sets) | Container.Content(seasons)</visible>
 						</control>
 						<control type="image">
-							<left>53</left>
+							<left>30</left>
 							<top>20</top>
 							<width>84</width>
 							<height>120</height>
@@ -92,7 +93,23 @@
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 							<visible>ListItem.IsParentFolder</visible>
+							<visible>Container.Content(sets) | Container.Content(seasons)</visible>
+						</control>
+						<control type="image">
+							<left>145</left>
+							<top>65</top>
+							<width>32</width>
+							<height>32</height>
+							<texture>$VAR[ListWatchedIconVar]</texture>
 							<visible>Container.Content(sets)</visible>
+						</control>
+						<control type="image">
+							<left>145</left>
+							<top>25</top>
+							<width>32</width>
+							<height>32</height>
+							<texture>$VAR[ListWatchedIconVar]</texture>
+							<visible>Container.Content(seasons)</visible>
 						</control>
 						<control type="label">
 							<left>190</left>
@@ -104,6 +121,7 @@
 							<shadowcolor>text_shadow</shadowcolor>
 							<scroll>true</scroll>
 							<visible>Container.Content(artists) | Container.Content(sets)</visible>
+							<animation effect="slide" end="-5,0" time="0" condition="Container.Content(sets)">Conditional</animation>
 						</control>
 						<control type="label">
 							<left>190</left>
@@ -111,10 +129,11 @@
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label,[B],[/B]]</label>
+							<label>$INFO[ListItem.TvShowTitle,[B], / [/B]]$INFO[ListItem.Label,[B],[/B]]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 							<scroll>true</scroll>
-							<visible>Container.Content(albums)</visible>
+							<visible>Container.Content(albums) | Container.Content(seasons)</visible>
+							<animation effect="slide" end="-5,0" time="0" condition="Container.Content(seasons)">Conditional</animation>
 						</control>
 						<control type="label">
 							<left>190</left>
@@ -128,6 +147,17 @@
 							<visible>Container.Content(albums)</visible>
 						</control>
 						<control type="label">
+							<left>150</left>
+							<top>100</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$VAR[EpisodeNumberViewVar]$INFO[ListItem.Property(UnWatchedEpisodes), ($LOCALIZE[31064] : ,)]</label>
+							<shadowcolor>text_shadow</shadowcolor>
+							<scroll>true</scroll>
+							<visible>Container.Content(seasons)</visible>
+						</control>
+						<control type="label">
 							<left>190</left>
 							<top>60</top>
 							<height>40</height>
@@ -136,11 +166,12 @@
 							<label>$INFO[ListItem.Year]$INFO[ListItem.Property(Album_Style), / ,]</label>
 							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
-							<visible>Container.Content(albums)</visible>
+							<visible>Container.Content(albums) | Container.Content(seasons)</visible>
+							<animation effect="slide" end="-40,0" time="0" condition="Container.Content(seasons)">Conditional</animation>
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout height="160" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(sets)">
+				<itemlayout height="160" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(sets) | Container.Content(seasons)">
 					<control type="group">
 						<top>-50</top>
 						<control type="image">
@@ -153,7 +184,7 @@
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 							<visible>!ListItem.IsParentFolder</visible>
-							<visible>!Container.Content(sets)</visible>
+							<visible>!Container.Content(sets) + !Container.Content(seasons)</visible>
 						</control>
 						<control type="image">
 							<left>35</left>
@@ -165,10 +196,10 @@
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 							<visible>ListItem.IsParentFolder</visible>
-							<visible>!Container.Content(sets)</visible>
+							<visible>!Container.Content(sets) + !Container.Content(seasons)</visible>
 						</control>
 						<control type="image">
-							<left>53</left>
+							<left>30</left>
 							<top>20</top>
 							<width>84</width>
 							<height>120</height>
@@ -177,10 +208,10 @@
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 							<visible>!ListItem.IsParentFolder</visible>
-							<visible>Container.Content(sets)</visible>
+							<visible>Container.Content(sets) | Container.Content(seasons)</visible>
 						</control>
 						<control type="image">
-							<left>53</left>
+							<left>30</left>
 							<top>20</top>
 							<width>84</width>
 							<height>120</height>
@@ -189,7 +220,41 @@
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 							<visible>ListItem.IsParentFolder</visible>
+							<visible>Container.Content(sets) | Container.Content(seasons)</visible>
+						</control>
+						<control type="image">
+							<left>145</left>
+							<top>65</top>
+							<width>32</width>
+							<height>32</height>
+							<texture>$VAR[ListWatchedIconVar]</texture>
 							<visible>Container.Content(sets)</visible>
+						</control>
+						<control type="image">
+							<left>145</left>
+							<top>65</top>
+							<width>32</width>
+							<height>32</height>
+							<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
+							<visible>Container.Content(sets)</visible>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+						</control>
+						<control type="image">
+							<left>145</left>
+							<top>25</top>
+							<width>32</width>
+							<height>32</height>
+							<texture>$VAR[ListWatchedIconVar]</texture>
+							<visible>Container.Content(seasons)</visible>
+						</control>
+						<control type="image">
+							<left>145</left>
+							<top>25</top>
+							<width>32</width>
+							<height>32</height>
+							<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
+							<visible>Container.Content(seasons)</visible>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
 						</control>
 						<control type="label">
 							<left>190</left>
@@ -200,6 +265,20 @@
 							<label>$INFO[ListItem.Label,[B],[/B]]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 							<visible>Container.Content(artists) | Container.Content(sets)</visible>
+							<animation effect="slide" end="-5,0" time="0" condition="Container.Content(sets)">Conditional</animation>
+						</control>
+						<control type="label">
+							<left>190</left>
+							<top>0</top>
+							<height>160</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label,[B],[/B]]</label>
+							<textcolor>grey</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+							<visible>Container.Content(sets)</visible>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+							<animation effect="slide" end="-5,0" time="0" condition="Container.Content(sets)">Conditional</animation>
 						</control>
 						<control type="label">
 							<left>190</left>
@@ -207,9 +286,23 @@
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
-							<label>$INFO[ListItem.Label,[B],[/B]]</label>
+							<label>$INFO[ListItem.TvShowTitle,[B], / [/B]]$INFO[ListItem.Label,[B],[/B]]</label>
 							<shadowcolor>text_shadow</shadowcolor>
-							<visible>Container.Content(albums)</visible>
+							<visible>Container.Content(albums) | Container.Content(seasons)</visible>
+							<animation effect="slide" end="-5,0" time="0" condition="Container.Content(seasons)">Conditional</animation>
+						</control>
+						<control type="label">
+							<left>190</left>
+							<top>20</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.TvShowTitle,[B], / [/B]]$INFO[ListItem.Label,[B],[/B]]</label>
+							<textcolor>grey</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+							<visible>Container.Content(seasons)</visible>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+							<animation effect="slide" end="-5,0" time="0" condition="Container.Content(seasons)">Conditional</animation>
 						</control>
 						<control type="label">
 							<left>190</left>
@@ -223,6 +316,17 @@
 							<visible>Container.Content(albums)</visible>
 						</control>
 						<control type="label">
+							<left>150</left>
+							<top>100</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$VAR[EpisodeNumberViewVar]$INFO[ListItem.Property(UnWatchedEpisodes), ($LOCALIZE[31064] : ,)]</label>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+							<visible>Container.Content(seasons)</visible>
+						</control>
+						<control type="label">
 							<left>190</left>
 							<top>60</top>
 							<height>40</height>
@@ -232,7 +336,8 @@
 							<font>font12</font>
 							<textcolor>grey</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
-							<visible>Container.Content(albums)</visible>
+							<visible>Container.Content(albums) | Container.Content(seasons)</visible>
+							<animation effect="slide" end="-40,0" time="0" condition="Container.Content(seasons)">Conditional</animation>
 						</control>
 					</control>
 				</itemlayout>
@@ -471,7 +576,7 @@
 							<visible>Control.HasFocus(508) | Control.HasFocus(5083)</visible>
 						</control>
 						<control type="image">
-							<left>53</left>
+							<left>30</left>
 							<top>20</top>
 							<width>84</width>
 							<height>120</height>
@@ -480,8 +585,15 @@
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>
+						<control type="image">
+							<left>145</left>
+							<top>25</top>
+							<width>32</width>
+							<height>32</height>
+							<texture>$VAR[ListWatchedIconVar]</texture>
+						</control>
 						<control type="label">
-							<left>190</left>
+							<left>185</left>
 							<top>20</top>
 							<height>40</height>
 							<right>30</right>
@@ -491,7 +603,7 @@
 							<scroll>true</scroll>
 						</control>
 						<control type="label">
-							<left>190</left>
+							<left>150</left>
 							<top>100</top>
 							<height>40</height>
 							<right>30</right>
@@ -501,7 +613,7 @@
 							<scroll>true</scroll>
 						</control>
 						<control type="label">
-							<left>190</left>
+							<left>150</left>
 							<top>60</top>
 							<height>40</height>
 							<right>30</right>
@@ -516,7 +628,7 @@
 					<control type="group">
 						<top>-50</top>
 						<control type="image">
-							<left>53</left>
+							<left>30</left>
 							<top>20</top>
 							<width>84</width>
 							<height>120</height>
@@ -525,8 +637,23 @@
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>
+						<control type="image">
+							<left>145</left>
+							<top>25</top>
+							<width>32</width>
+							<height>32</height>
+							<texture>$VAR[ListWatchedIconVar]</texture>
+						</control>
+						<control type="image">
+							<left>145</left>
+							<top>25</top>
+							<width>32</width>
+							<height>32</height>
+							<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+						</control>
 						<control type="label">
-							<left>190</left>
+							<left>185</left>
 							<top>20</top>
 							<height>40</height>
 							<right>30</right>
@@ -535,7 +662,18 @@
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
-							<left>190</left>
+							<left>185</left>
+							<top>20</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label,[B],[/B]]</label>
+							<textcolor>grey</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+						</control>
+						<control type="label">
+							<left>150</left>
 							<top>100</top>
 							<height>40</height>
 							<right>30</right>
@@ -545,12 +683,177 @@
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 						<control type="label">
-							<left>190</left>
+							<left>150</left>
+							<top>100</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Genre]</label>
+							<textcolor>grey</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+						</control>
+						<control type="label">
+							<left>150</left>
 							<top>60</top>
 							<height>40</height>
 							<right>30</right>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Year]</label>
+							<font>font12</font>
+							<textcolor>grey</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+						</control>
+					</control>
+				</itemlayout>
+				<content target="video" sortby="year" sortorder="ascending">$INFO[Container(508).ListItem.FolderPath]</content>
+			</control>
+		</control>
+		<control type="group">
+			<include>OpenClose_Right</include>
+			<visible>Control.IsVisible(508)</visible>
+			<include>Visible_Right</include>
+			<visible>Container.Content(seasons)</visible>
+			<depth>DepthContentPanel</depth>
+			<control type="fixedlist" id="5084">
+				<width>50%</width>
+				<top>list_y_offset</top>
+				<bottom>list_y_offset</bottom>
+				<right>0</right>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<orientation>vertical</orientation>
+				<movement>2</movement>
+				<focusposition>3</focusposition>
+				<onleft>508</onleft>
+				<onup>5084</onup>
+				<ondown>5084</ondown>
+				<viewtype label="$LOCALIZE[40212]">list</viewtype>
+				<visible>Container.Content(seasons)</visible>
+				<focusedlayout height="160" condition="Container.Content(seasons)">
+					<control type="group">
+						<top>-50</top>
+						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<height>160</height>
+							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
+							<visible>Control.HasFocus(508) | Control.HasFocus(5084)</visible>
+						</control>
+						<control type="image">
+							<left>30</left>
+							<top>20</top>
+							<width>120</width>
+							<height>120</height>
+							<texture fallback="DefaultVideoFanart.png">$VAR[InfoWallThumbVar]</texture>
+							<aspectratio align="left" aligny="center">keep</aspectratio>
+							<bordertexture>colors/white.png</bordertexture>
+							<bordersize>1</bordersize>
+						</control>
+						<control type="image">
+							<left>175</left>
+							<top>25</top>
+							<width>32</width>
+							<height>32</height>
+							<texture>$VAR[ListWatchedIconVar]</texture>
+						</control>
+						<control type="label">
+							<left>215</left>
+							<top>20</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label,[B],[/B]]</label>
+							<shadowcolor>text_shadow</shadowcolor>
+							<scroll>true</scroll>
+						</control>
+						<control type="label">
+							<left>180</left>
+							<top>100</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.TVShowTitle]</label>
+							<shadowcolor>text_shadow</shadowcolor>
+							<scroll>true</scroll>
+						</control>
+						<control type="label">
+							<left>180</left>
+							<top>60</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Premiered]</label>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+						</control>
+					</control>
+				</focusedlayout>
+				<itemlayout height="160" condition="Container.Content(seasons)">
+					<control type="group">
+						<top>-50</top>
+						<control type="image">
+							<left>30</left>
+							<top>20</top>
+							<width>120</width>
+							<height>120</height>
+							<texture fallback="DefaultVideoFanart.png">$VAR[InfoWallThumbVar]</texture>
+							<aspectratio align="left" aligny="center">keep</aspectratio>
+							<bordertexture>colors/white.png</bordertexture>
+							<bordersize>1</bordersize>
+						</control>
+						<control type="image">
+							<left>175</left>
+							<top>25</top>
+							<width>32</width>
+							<height>32</height>
+							<texture>$VAR[ListWatchedIconVar]</texture>
+						</control>
+						<control type="image">
+							<left>175</left>
+							<top>25</top>
+							<width>32</width>
+							<height>32</height>
+							<texture colordiffuse="grey">$VAR[ListWatchedIconVar]</texture>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+						</control>
+						<control type="label">
+							<left>215</left>
+							<top>20</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label,[B],[/B]]</label>
+							<shadowcolor>text_shadow</shadowcolor>
+						</control>
+						<control type="label">
+							<left>215</left>
+							<top>20</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label,[B],[/B]]</label>
+							<textcolor>grey</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+						</control>
+						<control type="label">
+							<left>180</left>
+							<top>100</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.TVShowTitle]</label>
+							<textcolor>$VAR[SkinColorVar]</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+						</control>
+						<control type="label">
+							<left>180</left>
+							<top>60</top>
+							<height>40</height>
+							<right>30</right>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Premiered]</label>
 							<font>font12</font>
 							<textcolor>grey</textcolor>
 							<shadowcolor>text_shadow</shadowcolor>
