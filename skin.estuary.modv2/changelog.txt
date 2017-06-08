@@ -1,3 +1,6 @@
+[B]2.5.7[/B]
+• Remove always attrib for defaultcontrol on Settings
+
 [B]2.5.6[/B]
 • Add new 'Triple lists' view for TV shows
 • Add new 'Double lists' view for seasons

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<onload condition="!Skin.HasSetting(FirstTimeRun2)">ActivateWindow(1136)</onload>
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<include>DefaultBackground</include>
