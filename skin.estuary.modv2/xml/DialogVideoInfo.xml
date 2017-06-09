@@ -225,7 +225,7 @@
 								<width>40</width>
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
-								<texture>$INFO[ListItem.Property(AudioLanguage.1),icons/infodialogs/flags/,.png]</texture>
+								<texture fallback="icons/infodialogs/flags/fallback.png">$INFO[ListItem.Property(AudioLanguage.1),icons/infodialogs/flags/,.png]</texture>
 								<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.1))</visible>
 							</control>
 							<control type="image">
@@ -449,7 +449,7 @@
 					</include>
 				</control>
 				<control type="group">
-					<visible>Integer.IsEqual(Container(50).NumItems,0) + String.IsEmpty(ListItem.Art(tvshow.banner)) + String.IsEmpty(ListItem.Art(banner))</visible>
+					<visible>Integer.IsEqual(Container(50).NumItems,0)</visible>
 					<control type="image">
 						<left>0</left>
 						<top>164</top>
@@ -467,24 +467,6 @@
 						<font>font36_title</font>
 						<label>$LOCALIZE[31079]</label>
 					</control>
-				</control>
-				<control type="image">
-					<left>0</left>
-					<top>168</top>
-					<width>1247</width>
-					<height>280</height>
-					<texture border="21">dialogs/dialog-bg.png</texture>
-					<visible>Integer.IsEqual(Container(50).NumItems,0) + [!String.IsEmpty(ListItem.Art(tvshow.banner)) | !String.IsEmpty(ListItem.Art(banner))]</visible>
-				</control>
-				<control type="image">
-					<left>30</left>
-					<top>198</top>
-					<width>1187</width>
-					<height>220</height>
-					<fadetime>150</fadetime>
-					<aspectratio>stretch</aspectratio>
-					<texture>$VAR[BannerVar]</texture>
-					<visible>Integer.IsEqual(Container(50).NumItems,0)</visible>
 				</control>
 				<control type="panel" id="50">
 					<top>158</top>
