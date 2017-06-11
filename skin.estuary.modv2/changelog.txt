@@ -1,5 +1,6 @@
 [B]2.5.7[/B]
 • Remove always attrib for defaultcontrol on Settings
+• Changes on login screen
 • Minor fixes
 
 [B]2.5.6[/B]
