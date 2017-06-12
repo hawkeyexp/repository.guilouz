@@ -747,7 +747,7 @@
 				<control type="group">
 					<width>130</width>
 					<top>0</top>
-					<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) | String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,movie) | Control.HasFocus(6600) | Control.HasFocus(66001)</visible>
+					<visible>[String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !Control.HasFocus(5094)] | [String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,season) + !Control.HasFocus(5084)] | String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,movie) | Control.HasFocus(6600) | Control.HasFocus(66001)</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="$INFO[Skin.String(studiologos.path)]$INFO[$PARAM[infolabel_prefix]ListItem.Studio,,.png]" />
 						<param name="colordiffuse" value="" />
@@ -757,7 +757,7 @@
 				<control type="group">
 					<width>150</width>
 					<top>0</top>
-					<visible>!String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,movie) + !Control.HasFocus(6600)  + !Control.HasFocus(66001)</visible>
+					<visible>!String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,season) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,movie) + !Control.HasFocus(6600)  + !Control.HasFocus(66001)</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="$INFO[Skin.String(recordlabels.path)]$INFO[$PARAM[infolabel_prefix]ListItem.Property(Album_Label),,.png]" />
 						<param name="colordiffuse" value="" />
