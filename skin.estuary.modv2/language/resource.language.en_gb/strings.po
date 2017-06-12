@@ -1792,3 +1792,8 @@ msgstr ""
 msgctxt "#40215"
 msgid "Show clearlogos at the top of menu"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40216"
+msgid "Minimize main menu"
+msgstr ""

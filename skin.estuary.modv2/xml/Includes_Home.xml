@@ -464,6 +464,17 @@
 	<include name="HideMainMenuWithWidgets">
 		<left>-40</left>
 	</include>
+	<include name="MinimizeMainMenu">
+		<left>95</left>
+	</include>
+	<include name="NoMinimizeTopMainMenu">
+		<left>-8</left>
+		<width>480</width>
+	</include>
+	<include name="MinimizeTopMainMenu">
+		<left>-10</left>
+		<width>120</width>
+	</include>
 	<include name="WidgetGroupListCommon">
 		<orientation>vertical</orientation>
 		<height>100%</height>
@@ -567,7 +578,7 @@
 				<onright/>
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
-				<itemlayout width="300" height="430">
+				<itemlayout width="310" height="430">
 					<control type="group">
 						<left>68</left>
 						<top>10</top>
@@ -576,7 +587,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="300" height="430">
+				<focusedlayout width="310" height="430">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>68</left>
@@ -1256,7 +1267,7 @@
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
-				<itemlayout width="300" height="486">
+				<itemlayout width="310" height="486">
 					<control type="group">
 						<left>68</left>
 						<top>10</top>
@@ -1265,7 +1276,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="300" height="486">
+				<focusedlayout width="310" height="486">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>68</left>

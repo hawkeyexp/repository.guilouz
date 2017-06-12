@@ -1,4 +1,5 @@
 [B]2.5.7[/B]
+• Add possibility to minimize main menu
 • Add media flags icons for 'Triple lists' and 'Double lists' views
 • Remove always attrib for defaultcontrol on Settings
 • Changes on login screen
