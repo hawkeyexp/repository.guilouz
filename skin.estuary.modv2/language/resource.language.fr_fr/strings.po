@@ -169,7 +169,7 @@ msgstr "Mémoire utilisée "
 #: /xml/SettingsSystemInfo.xml
 msgctxt "#31031"
 msgid "Version info"
-msgstr "Informations de version "
+msgstr "Informations de version"
 
 #: /xml/EventLog.xml /xml/Includes_MediaMenu.xml /xml/SmartPlaylistEditor.xml
 msgctxt "#31032"
