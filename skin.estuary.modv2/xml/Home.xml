@@ -8,7 +8,7 @@
 	<onload>Skin.SetBool(SkinHelper.EnableMusicArt)</onload>
 	<onload>Skin.SetBool(SkinHelper.EnableAddonsLookups)</onload>
 	<onload condition="Window.Previous(startup)">Skin.Reset(mypassword)</onload>
-    <onload condition="!Window.Previous(startup)">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],silent)</onload>
+	<onload condition="!Window.Previous(startup)">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],silent)</onload>
 	<onunload>ClearProperty(SkinHelper.WidgetContainer,home)</onunload>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
@@ -55,9 +55,9 @@
 					<effect type="slide" end="0,-20" time="60" tween="sine" />
 					<effect type="slide" end="0,20" time="180" tween="sine" delay="80" />
 				</animation>
-				<include>OpenClose_Right</include>		
-				<include>skinshortcuts-template-PersonalWidgetList</include>	
-				<include>skinshortcuts-template-PersonalWidgetPanel</include>				
+				<include>OpenClose_Right</include>
+				<include>skinshortcuts-template-PersonalWidgetList</include>
+				<include>skinshortcuts-template-PersonalWidgetPanel</include>
 				<control type="group" id="5000">
 					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
@@ -1649,7 +1649,7 @@
 									<scroll>true</scroll>
 								</control>
 							</control>
-						</control>			
+						</control>
 						<control type="grouplist">
 							<orientation>horizontal</orientation>
 							<itemgap>0</itemgap>
@@ -1726,7 +1726,7 @@
 									<scroll>true</scroll>
 								</control>
 							</control>
-						</control>					
+						</control>
 					</control>
 				</control>
 			</control>
@@ -1964,6 +1964,44 @@
 						<param name="texturefocus" value="buttons/roundbutton-fo2.png" />
 						<param name="radioposx" value="28" />
 					</include>
+				</control>
+				<control type="group">
+					<control type="image">
+						<left>15</left>
+						<top>195</top>
+						<width>14</width>
+						<height>14</height>
+						<texture flipx="true" colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
+						<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
+						<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+						<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
+						<visible>ControlGroup(700).HasFocus + Container(700).HasPrevious</visible>
+						<visible>Skin.HasSetting(MinimizeMainMenu)</visible>
+					</control>
+					<control type="image">
+						<top>201</top>
+						<height>2</height>
+						<left>30</left>
+						<width>35</width>
+						<texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+						<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
+						<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+						<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
+						<visible>ControlGroup(700).HasFocus + [Container(700).HasPrevious | Container(700).HasNext]</visible>
+						<visible>Skin.HasSetting(MinimizeMainMenu)</visible>
+					</control>
+					<control type="image">
+						<left>66</left>
+						<top>195</top>
+						<width>14</width>
+						<height>14</height>
+						<texture colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
+						<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
+						<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
+						<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
+						<visible>ControlGroup(700).HasFocus + Container(700).HasNext</visible>
+						<visible>Skin.HasSetting(MinimizeMainMenu)</visible>
+					</control>
 				</control>
 			</control>
 			<include>BottomBar</include>
