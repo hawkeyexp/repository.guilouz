@@ -1,6 +1,7 @@
 [B]2.5.8[/B]
 • Show mute icon on libraries when mute is enable
 • Fix clearlogos disappearance when mute is enable
+• Fix for LibreELEC settings addon
 • Minor fixes
 
 [B]2.5.7[/B]
