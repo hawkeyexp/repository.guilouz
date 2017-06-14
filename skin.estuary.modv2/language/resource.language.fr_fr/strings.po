@@ -1797,3 +1797,8 @@ msgstr "Afficher les Clearlogos au dessus du menu"
 msgctxt "#40216"
 msgid "Minimize main menu"
 msgstr "Minimiser le menu principal"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40217"
+msgid "Show item label on top"
+msgstr "Afficher le nom de l'élément en haut de l'écran"

@@ -2129,6 +2129,56 @@
 					<visible>!Skin.HasSetting(MinimizeMainMenu)</visible>
 				</control>
 			</control>
+			<control type="label">
+				<left>115</left>
+				<top>20</top>
+				<height>56</height>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
+				<label>$INFO[Container(9000).ListItem.Label]</label>
+				<visible>Control.HasFocus(9000) + Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(TopNameItem)</visible>
+			</control>
+			<control type="label">
+				<left>115</left>
+				<top>20</top>
+				<height>56</height>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
+				<label>$LOCALIZE[33060]</label>
+				<visible>Control.HasFocus(804)+ Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(TopNameItem)</visible>
+			</control>
+			<control type="label">
+				<left>115</left>
+				<top>20</top>
+				<height>56</height>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
+				<label>$LOCALIZE[21417]</label>
+				<visible>Control.HasFocus(802) + Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(TopNameItem)</visible>
+			</control>
+			<control type="label">
+				<left>115</left>
+				<top>20</top>
+				<height>56</height>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
+				<label>$LOCALIZE[137]</label>
+				<visible>Control.HasFocus(801) + Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(TopNameItem)</visible>
+			</control>
+			<control type="label">
+				<left>115</left>
+				<top>20</top>
+				<height>56</height>
+				<aligny>center</aligny>
+				<font>font30_title</font>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
+				<label>$LOCALIZE[31000]</label>
+				<visible>Control.HasFocus(803) + Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(TopNameItem)</visible>
+			</control>
 		</control>
 	</controls>
 </window>

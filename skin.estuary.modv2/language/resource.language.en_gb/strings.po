@@ -1797,3 +1797,8 @@ msgstr ""
 msgctxt "#40216"
 msgid "Minimize main menu"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40217"
+msgid "Show item label on top"
+msgstr ""
