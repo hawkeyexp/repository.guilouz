@@ -2049,7 +2049,7 @@
 				<visible>![String.IsEmpty(Container().ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(Container().ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
 				<visible>!Skin.HasSetting(HomeClearLogo)</visible>
 				<visible>!Control.HasFocus(9000)</visible>
-				<visible>!Window.IsVisible(DialogVolumeBar.xml)</visible>
+				<visible>![Window.IsVisible(DialogVolumeBar.xml) + !Player.Muted]</visible>
 				<visible>!Skin.HasSetting(HomeClearLogoMenu) | [Skin.HasSetting(HomeClearLogoMenu) + [Skin.HasSetting(HideMainMenuWithWidgets) | Skin.HasSetting(MinimizeMainMenu)]]</visible>
 				<animation effect="slide" end="0,-115" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			</control>
@@ -2062,7 +2062,7 @@
 				<texture>$VAR[HomeClearLogoVar]</texture>
 				<visible>!Skin.HasSetting(HomeClearLogo)</visible>
 				<visible>!Control.HasFocus(9000)</visible>
-				<visible>!Window.IsVisible(DialogVolumeBar.xml)</visible>
+				<visible>![Window.IsVisible(DialogVolumeBar.xml) + !Player.Muted]</visible>
 				<visible>!Skin.HasSetting(HomeClearLogoMenu) | [Skin.HasSetting(HomeClearLogoMenu) + [Skin.HasSetting(HideMainMenuWithWidgets) | Skin.HasSetting(MinimizeMainMenu)]]</visible>
 				<animation effect="slide" end="0,-115" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			</control>
