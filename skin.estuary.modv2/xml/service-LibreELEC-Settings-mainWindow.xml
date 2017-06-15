@@ -6,20 +6,6 @@
 	<controls>
 		<include>DefaultBackground</include>
 		<control type="group">
-			<include>OpenClose_Right</include>
-			<control type="textbox" id="1400">
-				<left>510</left>
-				<bottom>27</bottom>
-				<width>1350</width>
-				<height>100</height>
-				<label>$INFO[Window.Property(InfoText)]</label>
-				<font>font12</font>
-				<align>justify</align>
-				<textcolor>$VAR[SkinColorVar]</textcolor>
-				<autoscroll time="3000" delay="5000" repeat="5000">true</autoscroll>
-			</control>
-		</control>
-		<control type="group">
 			<left>470</left>
 			<top>160</top>
 			<right>0</right>
@@ -1033,16 +1019,6 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<control type="image">
-				<description>LOGO</description>
-				<left>15</left>
-				<bottom>40</bottom>
-				<width>440</width>
-				<height>128</height>
-				<aspectratio>keep</aspectratio>
-				<texture>icons/libreELEC/logo.png</texture>
-				<animation effect="slide" end="0,-50" time="0" condition="Skin.HasSetting(touchmode)">Conditional</animation>
-			</control>
 		</control>
 		<control type="group">
 			<include>OpenClose_Right</include>
@@ -1069,5 +1045,32 @@
 		<include content="BottomBar">
 			<param name="info_visible" value="true" />
 		</include>
+		<control type="group">
+			<include>OpenClose_Left</include>
+			<control type="image">
+				<description>LOGO</description>
+				<left>15</left>
+				<bottom>40</bottom>
+				<width>440</width>
+				<height>128</height>
+				<aspectratio>keep</aspectratio>
+				<texture>icons/libreELEC/logo.png</texture>
+				<animation effect="slide" end="0,-50" time="0" condition="Skin.HasSetting(touchmode)">Conditional</animation>
+			</control>
+		</control>	
+		<control type="group">
+			<include>OpenClose_Right</include>
+			<control type="textbox" id="1400">
+				<left>510</left>
+				<bottom>27</bottom>
+				<width>1350</width>
+				<height>100</height>
+				<label>$INFO[Window.Property(InfoText)]</label>
+				<font>font12</font>
+				<align>justify</align>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
+				<autoscroll time="3000" delay="5000" repeat="5000">true</autoscroll>
+			</control>
+		</control>
 	</controls>
 </window>
