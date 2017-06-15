@@ -721,8 +721,7 @@
 						<height>20</height>
 						<font>font13</font>
 						<aligny>center</aligny>
-						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<label>$ADDON[service.libreelec.settings 605] : [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
+						<label>$ADDON[service.libreelec.settings 605] : $INFO[ListItem.Property(Address)]</label>
 					</control>
 					<!-- Connected State -->
 					<control type="label">
@@ -732,8 +731,7 @@
 						<height>20</height>
 						<font>font13</font>
 						<aligny>center</aligny>
-						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<label>$ADDON[service.libreelec.settings 32333][COLOR=white]$INFO[ListItem.Property(ConnectedState)][/COLOR]</label>
+						<label>$ADDON[service.libreelec.settings 32333] $INFO[ListItem.Property(ConnectedState)]</label>
 					</control>
 					<!-- Paired Symbol (bottom right) -->
 					<control type="image">
@@ -911,7 +909,7 @@
 						<height>20</height>
 						<font>font13</font>
 						<aligny>center</aligny>
-						<label>$ADDON[service.libreelec.settings 32333]$INFO[ListItem.Property(ConnectedState)]</label>
+						<label>$ADDON[service.libreelec.settings 32333] $INFO[ListItem.Property(ConnectedState)]</label>
 					</control>
 					<!-- Paired Symbol (bottom right) -->
 					<control type="image">
