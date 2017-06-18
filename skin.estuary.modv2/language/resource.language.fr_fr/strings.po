@@ -688,7 +688,7 @@ msgstr "Mode tactile"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31159"
-msgid "Artwork"
+msgid "Artworks"
 msgstr "Artworks"
 
 #: /xml/SkinSettings.xml
@@ -1078,7 +1078,7 @@ msgstr "Définir l'emplacement de la sauvegarde"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40073"
-msgid "Necessary addons"
+msgid "Necessary add-ons"
 msgstr "Extensions nécéssaires"
 
 #: /xml/script-nextup-notification-PostPlayInfo.xml
@@ -1802,3 +1802,13 @@ msgstr "Minimiser le menu principal"
 msgctxt "#40217"
 msgid "Show item label on top"
 msgstr "Afficher le nom de l'élément en haut de l'écran"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40218"
+msgid "Required add-ons"
+msgstr "Extensions requises"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40219"
+msgid "Optional add-ons"
+msgstr "Extensions facultatives"

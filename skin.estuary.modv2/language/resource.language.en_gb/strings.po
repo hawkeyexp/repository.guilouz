@@ -688,7 +688,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#31159"
-msgid "Artwork"
+msgid "Artworks"
 msgstr ""
 
 #: /xml/SkinSettings.xml
@@ -1078,7 +1078,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40073"
-msgid "Necessary addons"
+msgid "Necessary add-ons"
 msgstr ""
 
 #: /xml/script-nextup-notification-PostPlayInfo.xml
@@ -1801,4 +1801,14 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#40217"
 msgid "Show item label on top"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40218"
+msgid "Required add-ons"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40219"
+msgid "Optional add-ons"
 msgstr ""

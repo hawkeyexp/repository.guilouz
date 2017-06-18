@@ -686,8 +686,8 @@ msgstr "Touch-Modus"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31159"
-msgid "Artwork"
-msgstr "Artwork"
+msgid "Artworks"
+msgstr "Artworks"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31160"
@@ -1076,7 +1076,7 @@ msgstr "Speicherort der Sicherungsdatei"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40073"
-msgid "Necessary addons"
+msgid "Necessary add-ons"
 msgstr "Erforderliche Addons"
 
 #: /xml/script-nextup-notification-PostPlayInfo.xml
@@ -1800,3 +1800,13 @@ msgstr "Verkleinertes Hauptmenü"
 msgctxt "#40217"
 msgid "Show item label on top"
 msgstr "Label des Eintrags oberhalb anzeigen"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40218"
+msgid "Required add-ons"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40219"
+msgid "Optional add-ons"
+msgstr ""
