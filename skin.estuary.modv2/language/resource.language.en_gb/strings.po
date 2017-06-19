@@ -1812,3 +1812,18 @@ msgstr ""
 msgctxt "#40219"
 msgid "Optional add-ons"
 msgstr ""
+
+#: /xml/DialogVideoInfo.xml
+msgctxt "#40220"
+msgid "Click button to play[CR]movie trailer[CR][CR]Click again to stop playback"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40221"
+msgid "Stop playback"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40222"
+msgid "Play trailers on movie information screen"
+msgstr ""

@@ -6,6 +6,33 @@
 	<controls>
 		<include condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml)">DefaultBackground</include>
 		<control type="group">
+			<visible>Skin.HasSetting(TrailerInWindow) + Player.HasVideo + String.IsEqual(ListItem.DBType,movie)</visible>
+			<control type="group">
+				<include>FullScreenDimensions</include>
+				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
+				<control type="group">
+					<animation effect="fade" start="100" end="bg_alpha" time="0" condition="!Control.IsVisible(31111)">Conditional</animation>
+					<animation effect="fade" start="0" end="100" time="300" condition="Window.Previous(fullscreenvideo) | Window.Previous(startup)">WindowOpen</animation>
+					<include>ColoredBackgroundImages</include>
+				</control>
+				<control type="group" id="31111">
+					<depth>DepthBackground</depth>
+					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+					<animation effect="fade" time="400">VisibleChange</animation>
+					<control type="multiimage" id="32111">
+						<include>FullScreenDimensions</include>
+						<aspectratio>scale</aspectratio>
+						<fadetime>400</fadetime>
+						<animation effect="fade" time="400">VisibleChange</animation>
+						<imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[MediaFanartVar]</imagepath>
+						<timeperimage>3000</timeperimage>
+						<randomize>true</randomize>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control type="group">
 			<centertop>50%</centertop>
 			<height>1080</height>
 			<centerleft>50%</centerleft>
@@ -125,6 +152,7 @@
 				<top>-30</top>
 				<control type="group" id="140">
 					<top>468</top>
+					<visible>!Control.HasFocus(439)</visible>
 					<control type="button" id="138">
 						<width>754</width>
 						<height>418</height>
@@ -192,6 +220,7 @@
 				<control type="group">
 					<visible>String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
 					<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
+					<visible>!Control.HasFocus(439)</visible>
 					<top>786</top>
 					<control type="image">
 						<width>754</width>
@@ -339,6 +368,7 @@
 					<onup>50</onup>
 					<onright>140</onright>
 					<onleft>140</onleft>
+					<visible>!Control.HasFocus(439)</visible>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="147" />
 						<param name="label" value="$INFO[ListItem.Director,$LOCALIZE[20339] : [COLOR white],[/COLOR]]" />
@@ -479,6 +509,7 @@
 					<ondown>140</ondown>
 					<scrolltime>200</scrolltime>
 					<orientation>horizontal</orientation>
+					<visible>!Control.HasFocus(439)</visible>
 					<itemlayout height="317" width="246">
 						<control type="group">
 							<top>10</top>
@@ -592,6 +623,37 @@
 						</control>
 					</focusedlayout>
 				</control>
+				<control type="group">
+					<top>168</top>
+					<left>0</left>
+					<visible>Control.HasFocus(439) + Skin.HasSetting(TrailerInWindow)</visible>
+					<control type="image">
+						<left>0</left>
+						<width>1246</width>
+						<height>718</height>
+						<aligny>bottom</aligny>
+						<texture border="21">buttons/button-nofo.png</texture>
+					</control>
+					<control type="textbox">
+						<left>40</left>
+						<top>40</top>
+						<width>1166</width>
+						<height>638</height>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font36_title</font>
+						<label>$LOCALIZE[40220]</label>
+						<visible>!Player.HasVideo</visible>
+					</control>
+					<control type="videowindow">
+						<description>Trailer Window</description>
+						<left>20</left>
+						<top>20</top>
+						<width>1206</width>
+						<height>678</height>
+						<visible>Player.HasVideo</visible>
+					</control>
+				</control>
 				<control type="grouplist" id="5000">
 					<left>0</left>
 					<top>864</top>
@@ -615,7 +677,17 @@
 						<param name="id" value="11" />
 						<param name="icon" value="icons/infodialogs/trailer.png" />
 						<param name="label" value="$LOCALIZE[20410]" />
-						<param name="visible" value="!String.IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)]" />
+						<param name="visible" value="!String.IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)] + !Skin.HasSetting(TrailerInWindow)" />
+					</include>
+					<include content="InfoDialogButton">
+						<param name="id" value="439" />
+						<param name="icon" value="icons/infodialogs/trailer.png" />
+						<param name="onclick_1" value="PlayMedia($INFO[ListItem.Trailer],1)" />
+						<param name="condition_1" value="!Player.HasVideo" />
+						<param name="onclick_2" value="Stop" />
+						<param name="condition_2" value="Player.HasVideo" />
+						<param name="label" value="$VAR[TrailerButtonLabelVar]" />
+						<param name="visible" value="!String.IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)] + Skin.HasSetting(TrailerInWindow)" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="440" />
@@ -623,7 +695,7 @@
 						<param name="label" value="$LOCALIZE[31090]" />
 						<param name="onclick_1" value="Action(close)" />
 						<param name="onclick_2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])" />
-						<param name="visible" value="System.hasAddon(script.extendedinfo) + [String.IsEqual(ListItem.DBType,movie) | Container.Content(tvshows)] + !Control.IsVisible(11)" />
+						<param name="visible" value="System.hasAddon(script.extendedinfo) + [String.IsEqual(ListItem.DBType,movie) | Container.Content(tvshows)] + !Control.IsVisible(11) + !Control.IsVisible(439)" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="441" />

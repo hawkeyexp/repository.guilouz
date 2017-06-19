@@ -223,6 +223,8 @@
 	</include>
 	<include name="InfoDialogButton">
 		<param name="width">262</param>
+		<param name="condition_1"></param>
+		<param name="condition_2"></param>
 		<definition>
 			<control type="radiobutton" id="$PARAM[id]">
 				<width>$PARAM[width]</width>
@@ -244,8 +246,8 @@
 				<textureradiooffdisabled colordiffuse="disabled">$PARAM[icon]</textureradiooffdisabled>
 				<textureradioondisabled colordiffuse="disabled">$PARAM[icon]</textureradioondisabled>
 				<label>$PARAM[label]</label>
-				<onclick>$PARAM[onclick_1]</onclick>
-				<onclick>$PARAM[onclick_2]</onclick>
+				<onclick condition="$PARAM[condition_1]">$PARAM[onclick_1]</onclick>
+				<onclick condition="$PARAM[condition_2]">$PARAM[onclick_2]</onclick>
 				<visible>$PARAM[visible]</visible>
 				<animation effect="fade" start="100" end="0" time="300" delay="300">Hidden</animation>
 			</control>

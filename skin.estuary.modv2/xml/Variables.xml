@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="TrailerButtonLabelVar">
+		<value condition="Player.HasVideo">$LOCALIZE[40221]</value>
+		<value>$LOCALIZE[20410]</value>
+	</variable>
 	<variable name="MusicPlayerCover">
 		<value condition="!String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
 		<value>$INFO[Window(Home).Property(SkinHelper.Player.Art.Thumb)]</value>
@@ -2981,7 +2985,7 @@
 		<value condition="Window.IsActive(visualisation) + Integer.IsGreater(Playlist.Length,1)">$LOCALIZE[554] $INFO[Playlist.Position] / $INFO[Playlist.Length]</value>
 		<value condition="VideoPlayer.Content(musicvideos)">[UPPERCASE]$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ][/UPPERCASE]</value>
 		<value condition="VideoPlayer.Content(episodes)">[UPPERCASE]$INFO[VideoPlayer.TVShowTitle,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] ,][/UPPERCASE]</value>
-		<value condition="VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording">[UPPERCASE]$INFO[VideoPlayer.ChannelName][/UPPERCASE]</value>
+		<value condition="VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording">[UPPERCASE]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.EpisodeName, - ][/UPPERCASE]</value>
 		<value>[UPPERCASE]$INFO[VideoPlayer.Genre][/UPPERCASE]</value>
 	</variable>
 	<variable name="AddonsFanartVar">

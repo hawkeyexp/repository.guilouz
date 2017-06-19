@@ -1812,3 +1812,18 @@ msgstr "Extensions requises"
 msgctxt "#40219"
 msgid "Optional add-ons"
 msgstr "Extensions facultatives"
+
+#: /xml/DialogVideoInfo.xml
+msgctxt "#40220"
+msgid "Click button to play[CR]movie trailer[CR][CR]Click again to stop playback"
+msgstr "Cliquez sur le bouton pour lire[CR]la bande-annonce du film[CR][CR]Cliquez à nouveau pour stopper la lecture"
+
+#: /xml/Variables.xml
+msgctxt "#40221"
+msgid "Stop playback"
+msgstr "Stopper la lecture"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40222"
+msgid "Play trailers on movie information screen"
+msgstr "Lire les bandes-annonces sur l'écran des informations du film"
