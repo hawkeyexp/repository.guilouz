@@ -1815,7 +1815,7 @@ msgstr ""
 
 #: /xml/DialogVideoInfo.xml
 msgctxt "#40220"
-msgid "Click button to play[CR]movie trailer[CR][CR]Click again to stop playback"
+msgid "Click button to play movie trailer[CR][CR][CR]Click again to stop playback"
 msgstr ""
 
 #: /xml/Variables.xml
