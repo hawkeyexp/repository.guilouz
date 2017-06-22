@@ -1,3 +1,6 @@
+[B]2.5.10[/B]
+• Improvements
+
 [B]2.5.9[/B]
 • Add possibility to play trailers on movie information screen
 • Reorder necessary addons in Skin Settings
