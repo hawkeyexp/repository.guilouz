@@ -98,6 +98,7 @@
 			<visible>!Window.IsVisible(playerprocessinfo) + !VideoPlayer.Content(LiveTV)</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="group">
+				<visible>!VideoPlayer.HasMenu</visible>
 				<control type="image">
 					<left>50</left>
 					<top>-460</top>
@@ -132,7 +133,7 @@
 					<top>69</top>
 					<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">VideoPlayerRatingCircle</include>
 					<include>OpenClose_Left</include>
-					<visible>!String.StartsWith(Player.FolderPath,http)</visible>
+					<visible>!String.StartsWith(Player.FolderPath,http) + !VideoPlayer.HasMenu</visible>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -146,9 +147,11 @@
 					<bordersize>20</bordersize>
 					<include>OpenClose_Left</include>
 					<visible>String.StartsWith(Player.FolderPath,http)</visible>
+					<visible>!VideoPlayer.HasMenu</visible>
 				</control>
 				<control type="group">
 					<include>OpenClose_Right</include>
+					<visible>!VideoPlayer.HasMenu</visible>
 					<control type="image">
 						<right>30</right>
 						<bottom>450</bottom>
@@ -182,6 +185,7 @@
 				<top>-260</top>
 				<width>1000</width>
 				<height>100</height>
+				<visible>!VideoPlayer.HasMenu</visible>
 				<control type="image">
 					<left>-23</left>
 					<top>-10</top>
@@ -299,6 +303,67 @@
 					<param name="width" value="73" />
 					<param name="visible" value="String.Contains(Player.Filenameandpath,bluray) | String.Contains(Player.Filenameandpath,blu-ray) | String.Contains(Player.Filenameandpath,bdrip) | String.Contains(Player.Filenameandpath,BLURAY) | String.Contains(Player.Filenameandpath,BLU-RAY) | String.Contains(Player.Filenameandpath,BDRIP)" />
 				</include>
+			</control>
+			<control type="grouplist">
+				<left>-450</left>
+				<top>160</top>
+				<width>1000</width>
+				<height>100</height>
+				<align>right</align>
+				<include>Animation_BottomSlide</include>
+				<orientation>horizontal</orientation>
+				<itemgap>5</itemgap>
+				<visible>![Player.ChannelPreviewActive | Window.IsActive(videoosd)]</visible>
+				<visible>VideoPlayer.HasMenu</visible>
+				<control type="image">
+					<width>40</width>
+					<height>40</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/infodialogs/audio.png</texture>
+					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage))</visible>
+				</control>
+				<control type="image">
+					<width>5</width>
+					<height>10</height>
+					<aspectratio>keep</aspectratio>
+					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage))</visible>
+					<texture/>
+				</control>
+				<control type="image">
+					<width>40</width>
+					<height>40</height>
+					<aspectratio>keep</aspectratio>
+					<texture fallback="icons/infodialogs/flags/fallback.png">$INFO[VideoPlayer.AudioLanguage,icons/infodialogs/flags/,.png]</texture>
+					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage))</visible>
+				</control>
+				<control type="image">
+					<width>30</width>
+					<height>10</height>
+					<aspectratio>keep</aspectratio>
+					<texture/>
+					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+				</control>
+				<control type="image">
+					<width>40</width>
+					<height>40</height>
+					<aspectratio>keep</aspectratio>
+					<texture>icons/infodialogs/subtitles.png</texture>
+					<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+				</control>
+				<control type="image">
+					<width>5</width>
+					<height>10</height>
+					<aspectratio>keep</aspectratio>
+					<texture/>
+					<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+				</control>
+				<control type="image">
+					<width>40</width>
+					<height>40</height>
+					<aspectratio>keep</aspectratio>
+					<texture>$INFO[VideoPlayer.SubtitlesLanguage,icons/infodialogs/flags/,.png]</texture>
+					<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+				</control>
 			</control>
 		</control>
 	</controls>

@@ -1,5 +1,8 @@
 [B]2.5.10[/B]
+• Add missing H262 flag icon
 • Improvements
+• Fix for PVR in some conditions
+• Minor fixes
 
 [B]2.5.9[/B]
 • Add possibility to play trailers on movie information screen
