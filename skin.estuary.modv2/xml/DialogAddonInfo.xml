@@ -203,7 +203,7 @@
 					<top>24</top>
 					<width>500</width>
 					<height>500</height>
-					<aspectratio aligny="top">scale</aspectratio>
+					<aspectratio>scale</aspectratio>
 					<fadetime>300</fadetime>
 					<texture fallback="DefaultAddon.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
 				</control>
