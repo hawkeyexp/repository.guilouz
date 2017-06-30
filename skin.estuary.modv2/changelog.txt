@@ -1,4 +1,5 @@
 [B]2.5.10[/B]
+• Add support for movies genres icons for Personalized Widgets
 • Add missing H262 flag icon
 • Improvements
 • Fix for PVR in some conditions

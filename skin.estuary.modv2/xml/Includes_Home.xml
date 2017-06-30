@@ -881,6 +881,7 @@
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
+							<animation effect="slide" end="0,-20" time="0" condition="String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]">Condtional</animation>
 						</control>
 						<control type="image">
 							<left>109</left>
@@ -889,6 +890,7 @@
 							<height>60</height>
 							<texture>overlays/overlay-bg.png</texture>
 							<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 						</control>
 						<control type="image">
 							<left>115</left>
@@ -896,6 +898,7 @@
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[WallWatchedIconVar]</texture>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 						</control>
 						<control type="image">
 							<left>109</left>
@@ -987,6 +990,7 @@
 							<align>center</align>
 							<scroll>true</scroll>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
+							<animation effect="slide" end="0,-20" time="0" condition="String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]">Condtional</animation>
 						</control>
 						<control type="image">
 							<left>105</left>
@@ -1003,6 +1007,7 @@
 							<height>60</height>
 							<texture>overlays/overlay-bg.png</texture>
 							<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 						</control>
 						<control type="image">
 							<left>115</left>
@@ -1010,6 +1015,7 @@
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[WallWatchedIconVar]</texture>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 						</control>
 						<control type="group">
 							<left>400</left>
@@ -1086,6 +1092,7 @@
 							<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 						</control>
 						<control type="image">
 							<top>25</top>
@@ -1096,6 +1103,16 @@
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
 							<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="image">
+							<top>30</top>
+							<left>30</left>
+							<width>256</width>
+							<height>110</height>
+							<texture fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
 						</control>
 						<control type="label">
 							<left>28</left>
@@ -1113,6 +1130,7 @@
 							<width>30</width>
 							<height>30</height>
 							<texture>$VAR[WallWatchedIconVar]</texture>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 						</control>
 						<control type="image">
 							<top>20</top>
@@ -1186,6 +1204,7 @@
 							<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar]</texture>
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 						</control>
 						<control type="image">
 							<top>25</top>
@@ -1196,6 +1215,16 @@
 							<aspectratio align="center" aligny="center">keep</aspectratio>
 							<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
 							<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="image">
+							<top>30</top>
+							<left>30</left>
+							<width>256</width>
+							<height>110</height>
+							<texture fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
+							<aspectratio align="center" aligny="center">keep</aspectratio>
+							<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml)]</visible>
 						</control>
 						<control type="label">
 							<left>28</left>
@@ -1214,6 +1243,7 @@
 							<width>30</width>
 							<height>30</height>
 							<texture>$VAR[WallWatchedIconVar]</texture>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 						</control>
 						<control type="image">
 							<left>20</left>
@@ -1706,6 +1736,7 @@
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWidgetThumbVar]</texture>
 				<aspectratio aligny="top">keep</aspectratio>
 				<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+				<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -1716,6 +1747,16 @@
 				<aspectratio aligny="top">keep</aspectratio>
 				<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
 				<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
+				<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+			</control>
+			<control type="image">
+				<left>30</left>
+				<top>40</top>
+				<width>256</width>
+				<height>156</height>
+				<texture fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
 			</control>
 			<control type="image">
 				<left>136</left>
@@ -1742,6 +1783,7 @@
 				<height>70</height>
 				<texture>overlays/overlay-bg.png</texture>
 				<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -1749,6 +1791,7 @@
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
+				<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 			</control>
 			<control type="textbox">
 				<left>28</left>
@@ -1873,6 +1916,7 @@
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWidgetThumbVar]</texture>
 				<aspectratio aligny="top">keep</aspectratio>
 				<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+				<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -1883,6 +1927,7 @@
 				<aspectratio aligny="top">keep</aspectratio>
 				<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
 				<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
+				<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -1891,6 +1936,15 @@
 				<height>51</height>
 				<texture background="true">$VAR[BannerVar]</texture>
 				<aspectratio aligny="top">keep</aspectratio>
+			</control>
+			<control type="image">
+				<left>30</left>
+				<top>50</top>
+				<width>256</width>
+				<height>185</height>
+				<texture fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
 			</control>
 			<control type="image">
 				<left>136</left>
@@ -1917,6 +1971,7 @@
 				<height>70</height>
 				<texture>overlays/overlay-bg.png</texture>
 				<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -1924,6 +1979,7 @@
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
+				<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 			</control>
 			<control type="textbox">
 				<left>28</left>
@@ -2998,6 +3054,7 @@
 						<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+						<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 					</control>
 					<control type="image">
 						<top>25</top>
@@ -3008,6 +3065,16 @@
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
 						<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
+						<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+					</control>
+					<control type="image">
+						<top>30</top>
+						<left>30</left>
+						<width>256</width>
+						<height>110</height>
+						<texture fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
 					</control>
 					<control type="label">
 						<left>28</left>
@@ -3025,6 +3092,7 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$VAR[WallWatchedIconVar]</texture>
+						<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 					</control>
 					<control type="image">
 						<top>20</top>
@@ -3098,6 +3166,7 @@
 						<texture fallback="DefaultVideoFanart.png">$VAR[InfoWidgetThumbVar]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>![[String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)] + String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)]</visible>
+						<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 					</control>
 					<control type="image">
 						<top>25</top>
@@ -3108,6 +3177,16 @@
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogVideoInfo.xml)</visible>
 						<visible>String.IsEqual($PARAM[infolabel_prefix]listitem.dbtype,episode)</visible>
+						<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+					</control>
+					<control type="image">
+						<top>30</top>
+						<left>30</left>
+						<width>256</width>
+						<height>110</height>
+						<texture fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
 					</control>
 					<control type="label">
 						<left>28</left>
@@ -3126,6 +3205,7 @@
 						<width>30</width>
 						<height>30</height>
 						<texture>$VAR[WallWatchedIconVar]</texture>
+						<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 					</control>
 					<control type="image">
 						<left>20</left>
