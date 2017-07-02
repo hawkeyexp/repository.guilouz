@@ -768,6 +768,7 @@
 					<width>344</width>
 					<top>5</top>
 					<visible>Control.HasFocus(6600) | Control.HasFocus(66001)</visible>
+					<visible>!String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,AM) + !String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,PM)</visible>
 					<control type="label">
 						<width>293</width>
 						<top>-1</top>
@@ -782,6 +783,27 @@
 					<include content="MediaFlag">
 						<param name="texture" value="flags/airdate.png" />
 						<param name="width" value="350" />
+					</include>
+				</control>
+				<control type="group">
+					<width>404</width>
+					<top>5</top>
+					<visible>Control.HasFocus(6600) | Control.HasFocus(66001)</visible>
+					<visible>String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,AM) | String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,PM)</visible>
+					<control type="label">
+						<width>353</width>
+						<top>-1</top>
+						<height>50</height>
+						<posx>54</posx>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font_flag</font>
+						<label>$INFO[$PARAM[infolabel_prefix]ListItem.Property(airdatetime)]</label>
+						<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+					</control>
+					<include content="MediaFlag">
+						<param name="texture" value="flags/airdate_long.png" />
+						<param name="width" value="410" />
 					</include>
 				</control>
 				<include content="MediaFlag">
