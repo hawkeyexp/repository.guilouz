@@ -768,7 +768,7 @@
 					<width>344</width>
 					<top>5</top>
 					<visible>Control.HasFocus(6600) | Control.HasFocus(66001)</visible>
-					<visible>!String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,AM) + !String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,PM)</visible>
+					<visible>!String.Contains($PARAM[infolabel_prefix]ListItem.Property(airdatetime),AM) + !String.Contains($PARAM[infolabel_prefix]ListItem.Property(airdatetime),PM)</visible>
 					<control type="label">
 						<width>293</width>
 						<top>-1</top>
@@ -789,7 +789,7 @@
 					<width>404</width>
 					<top>5</top>
 					<visible>Control.HasFocus(6600) | Control.HasFocus(66001)</visible>
-					<visible>String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,AM) | String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,PM)</visible>
+					<visible>String.Contains($PARAM[infolabel_prefix]ListItem.Property(airdatetime),AM) | String.Contains($PARAM[infolabel_prefix]ListItem.Property(airdatetime),PM)</visible>
 					<control type="label">
 						<width>353</width>
 						<top>-1</top>
