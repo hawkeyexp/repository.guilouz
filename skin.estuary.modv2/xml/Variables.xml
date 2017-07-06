@@ -3126,6 +3126,9 @@
 		<value condition="ListItem.HasTimerSchedule">icons/pvr/PVR-HasTimerSchedule.png</value>
 		<value condition="ListItem.HasTimer">icons/pvr/PVR-HasTimer.png</value>
 	</variable>
+	<variable name="ExpirationDateTimeLabel">
+ 		<value condition="!String.IsEmpty(ListItem.ExpirationDate)">$LOCALIZE[19299] : [COLOR white]$INFO[ListItem.ExpirationDate] $INFO[ListItem.ExpirationTime][/COLOR][CR]</value>
+ 	</variable>
 	<variable name="VideoHWDecoder">
 		<value condition="Player.Process(videohwdecoder)">$LOCALIZE[40028]</value>
 		<value>$LOCALIZE[40029]</value>
