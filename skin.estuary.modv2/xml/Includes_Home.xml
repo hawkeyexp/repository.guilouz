@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include name="PersonalWidgetListCategoriesBig">
-		<control type="label" id="22900666">
+		<control type="group" id="22900666">
 			<left>55</left>
 			<top>80</top>
-			<width>900</width>
 			<height>90</height>
-			<label>$VAR[LabelCategoriesSmallVar]</label>
-			<font>font25_title</font>
-			<shadowcolor>text_shadow</shadowcolor>
+			<width>900</width>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)</visible>
 			<visible>!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
+			<control type="image">
+				<left>2</left>
+				<top>13</top>
+				<width>11</width>
+				<height>11</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">frame/puce.png</texture>
+			</control>
+			<control type="label">
+				<left>22</left>
+				<top>0</top>
+				<width>900</width>
+				<height>90</height>
+				<label>$VAR[LabelCategoriesSmallVar]</label>
+				<font>font25_title</font>
+				<shadowcolor>text_shadow</shadowcolor>
+			</control>
 		</control>
 		<control type="group" id="22900599">
 			<height>160</height>
@@ -127,16 +140,29 @@
 		</control>
 	</include>
 	<include name="PersonalWidgetPanelCategoriesBig">
-		<control type="label" id="23900666">
+		<control type="group" id="23900666">
 			<left>55</left>
 			<top>80</top>
-			<width>900</width>
 			<height>90</height>
-			<label>$VAR[LabelCategoriesSmallVar]</label>
-			<font>font25_title</font>
-			<shadowcolor>text_shadow</shadowcolor>
+			<width>900</width>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)</visible>
 			<visible>!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
+			<control type="image">
+				<left>2</left>
+				<top>13</top>
+				<width>11</width>
+				<height>11</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">frame/puce.png</texture>
+			</control>
+			<control type="label">
+				<left>22</left>
+				<top>0</top>
+				<width>900</width>
+				<height>90</height>
+				<label>$VAR[LabelCategoriesSmallVar]</label>
+				<font>font25_title</font>
+				<shadowcolor>text_shadow</shadowcolor>
+			</control>
 		</control>
 		<control type="group" id="23900599">
 			<height>160</height>
@@ -253,16 +279,29 @@
 		</control>
 	</include>
 	<include name="PersonalWidgetListCategoriesSmall">
-		<control type="label" id="229001666">
+		<control type="group" id="229001666">
 			<left>55</left>
 			<top>80</top>
-			<width>900</width>
 			<height>90</height>
-			<label>$VAR[LabelCategoriesSmallVar]</label>
-			<font>font25_title</font>
-			<shadowcolor>text_shadow</shadowcolor>
+			<width>900</width>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)</visible>
 			<visible>Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
+			<control type="image">
+				<left>2</left>
+				<top>13</top>
+				<width>11</width>
+				<height>11</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">frame/puce.png</texture>
+			</control>
+			<control type="label">
+				<left>22</left>
+				<top>0</top>
+				<width>900</width>
+				<height>90</height>
+				<label>$VAR[LabelCategoriesSmallVar]</label>
+				<font>font25_title</font>
+				<shadowcolor>text_shadow</shadowcolor>
+			</control>
 		</control>
 		<control type="group" id="229001599">
 			<height>160</height>
@@ -356,16 +395,29 @@
 		</control>
 	</include>
 	<include name="PersonalWidgetPanelCategoriesSmall">
-		<control type="label" id="239001666">
+		<control type="group" id="239001666">
 			<left>55</left>
 			<top>80</top>
-			<width>900</width>
 			<height>90</height>
-			<label>$VAR[LabelCategoriesSmallVar]</label>
-			<font>font25_title</font>
-			<shadowcolor>text_shadow</shadowcolor>
+			<width>900</width>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)</visible>
 			<visible>Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
+			<control type="image">
+				<left>2</left>
+				<top>13</top>
+				<width>11</width>
+				<height>11</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">frame/puce.png</texture>
+			</control>
+			<control type="label">
+				<left>22</left>
+				<top>0</top>
+				<width>900</width>
+				<height>90</height>
+				<label>$VAR[LabelCategoriesSmallVar]</label>
+				<font>font25_title</font>
+				<shadowcolor>text_shadow</shadowcolor>
+			</control>
 		</control>
 		<control type="group" id="239001599">
 			<height>160</height>
@@ -488,16 +540,29 @@
 	<include name="CategoryLabel">
 		<param name="visible">true</param>
 		<definition>
-			<control type="label" id="$PARAM[list_id]666">
+			<control type="group" id="$PARAM[list_id]666">
 				<left>55</left>
 				<top>80</top>
-				<width>900</width>
 				<height>90</height>
-				<label>$PARAM[label]</label>
-				<font>font25_title</font>
-				<shadowcolor>text_shadow</shadowcolor>
+				<width>900</width>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<control type="image">
+					<left>2</left>
+					<top>13</top>
+					<width>11</width>
+					<height>11</height>
+					<texture colordiffuse="$VAR[SkinColorVar]">frame/puce.png</texture>
+				</control>
+				<control type="label">
+					<left>22</left>
+					<top>0</top>
+					<width>900</width>
+					<height>90</height>
+					<label>$PARAM[label]</label>
+					<font>font25_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+				</control>
 			</control>
 		</definition>
 	</include>

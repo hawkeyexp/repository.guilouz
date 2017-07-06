@@ -1,4 +1,5 @@
 [B]2.5.11[/B]
+• Improvements
 • Minor fixes
 
 [B]2.5.10[/B]
