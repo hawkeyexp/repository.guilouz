@@ -1806,7 +1806,7 @@
 								<height>95</height>
 								<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
 								<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000) | System.HasActiveModalDialog">Conditional</animation>
-								<visible>Skin.HasSetting(MinimizeMainMenu)</visible>
+								<visible>Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 							<control type="image">
 								<left>0</left>
