@@ -1582,7 +1582,7 @@
 						<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(screencalibration)">WindowClose</animation>
 						<animation effect="slide" end="0,-10" time="0" condition="String.IsEqual(Skin.Font,Arial)">Conditional</animation>
 						<label>[B]$INFO[System.Time][/B]</label>
-						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml)</visible>
+						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml) + ![Window.IsVisible(DialogButtonMenu.xml) + Skin.HasSetting(powermenu_list)]</visible>
 					</control>
 				</control>
 				<control type="grouplist">
@@ -1601,7 +1601,7 @@
 						<textoffsetx>-8</textoffsetx>
 						<label>$INFO[System.AlarmPos]</label>
 						<visible>System.HasAlarm(shutdowntimer)</visible>
-						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml)</visible>
+						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml) + ![Window.IsVisible(DialogButtonMenu.xml) + Skin.HasSetting(powermenu_list)]</visible>
 					</control>
 					<control type="image">
 						<top>16</top>
@@ -1611,7 +1611,7 @@
 						<aspectratio aligny="center" align="left">keep</aspectratio>
 						<texture>icons/power.png</texture>
 						<visible>System.HasAlarm(shutdowntimer)</visible>
-						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml)</visible>
+						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml) + ![Window.IsVisible(DialogButtonMenu.xml) + Skin.HasSetting(powermenu_list)]</visible>
 					</control>
 					<control type="label">
 						<height>50</height>
@@ -1619,7 +1619,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
 						<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)]</visible>
-						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml)</visible>
+						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml) + ![Window.IsVisible(DialogButtonMenu.xml) + Skin.HasSetting(powermenu_list)]</visible>
 					</control>
 					<control type="image">
 						<top>1</top>
@@ -1629,7 +1629,7 @@
 						<aspectratio aligny="center" align="left">keep</aspectratio>
 						<texture>$INFO[Weather.FanartCode,special://skin/extras/weather/,.png]</texture>
 						<visible>Skin.HasSetting(show_weatherinfo) + Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na)]</visible>
-						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml)</visible>
+						<visible>!Window.IsVisible(MyVideoNav.xml) + !Window.IsVisible(MyMusicNav.xml) + !Window.IsVisible(MyPics.xml) + ![Window.IsVisible(DialogButtonMenu.xml) + Skin.HasSetting(powermenu_list)]</visible>
 					</control>
 					<control type="image">
 						<top>8</top>
@@ -1641,6 +1641,7 @@
 						<texture>dialogs/volume/mute.png</texture>
 						<visible>Player.Muted</visible>
 						<animation effect="slide" end="-3,-58" time="0" condition="Window.IsVisible(MyVideoNav.xml) | Window.IsVisible(MyMusicNav.xml) | Window.IsVisible(MyPics.xml)">Conditional</animation>
+						<visible>![Window.IsVisible(DialogButtonMenu.xml) + Skin.HasSetting(powermenu_list)]</visible>
 					</control>
 				</control>
 				<control type="label" id="23000">

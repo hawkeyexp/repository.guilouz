@@ -2402,7 +2402,8 @@
 	</variable>
 	<variable name="PowerMenuAspectLabel2Var">
 		<value condition="Skin.HasSetting(powermenu_panel)">$LOCALIZE[31099]</value>
-		<value condition="Skin.HasSetting(powermenu_list)">$LOCALIZE[535]</value>
+		<value condition="Skin.HasSetting(powermenu_iconlist)">$LOCALIZE[40228]</value>
+		<value condition="Skin.HasSetting(powermenu_list)">$LOCALIZE[40227]</value>
 		<value>$LOCALIZE[31099]</value>
 	</variable>
 	<variable name="OpacitySettingLabel2Var">

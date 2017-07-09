@@ -1847,3 +1847,13 @@ msgstr ""
 msgctxt "#40226"
 msgid "Personalize 'Categories' widget"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40227"
+msgid "Classic list"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40228"
+msgid "Icons list"
+msgstr ""

@@ -2,15 +2,16 @@
 <window>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
+	<include condition="Skin.HasSetting(powermenu_list)">Animation_DialogPopupOpenClose</include>
 	<controls>
-		<include>DefaultBackground</include>
+		<include condition="!Skin.HasSetting(powermenu_list)">DefaultBackground</include>
 		<control type="group">
 			<centerleft>50%</centerleft>
 			<width>1600</width>
 			<centertop>50%</centertop>
 			<height>795</height>
 			<include>OpenClose_Right</include>
-			<visible>!Skin.HasSetting(powermenu_list)</visible>
+			<visible>!Skin.HasSetting(powermenu_iconlist) + !Skin.HasSetting(powermenu_list)</visible>
 			<control id="9000" type="panel">
 				<left>0</left>
 				<width>100%</width>
@@ -109,7 +110,7 @@
 			<right>0</right>
 			<centertop>50%</centertop>
 			<include>OpenClose_Right</include>
-			<visible>Skin.HasSetting(powermenu_list)</visible>
+			<visible>Skin.HasSetting(powermenu_iconlist)</visible>
 			<control id="9000" type="wraplist">
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
@@ -172,6 +173,15 @@
 							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
+							<left>0</left>
+							<width>380</width>
+							<height>380</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+							<bordersize>20</bordersize>
+							<include>Animation_FocusTextureFade</include>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+						<control type="image">
 							<left>40</left>
 							<top>70</top>
 							<width>300</width>
@@ -196,13 +206,33 @@
 				</content>
 			</control>
 		</control>
-		<include>TopBar</include>
-		<include>BottomBar</include>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<width>700</width>
+			<centertop>50%</centertop>
+			<height>700</height>
+			<visible>Skin.HasSetting(powermenu_list)</visible>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="700" />
+				<param name="height" value="80" />
+				<param name="header_label" value="$LOCALIZE[31072]" />
+				<param name="header_id" value="2" />
+			</include>
+			<control type="panel" id="9000">
+				<include>ButtonMenuList</include>
+				<content>
+					<include>skinshortcuts-group-powermenu</include>
+				</content>
+			</control>
+		</control>
+		<include condition="!Skin.HasSetting(powermenu_list)">TopBar</include>
+		<include condition="!Skin.HasSetting(powermenu_list)">BottomBar</include>
 		<control type="group">
 			<depth>DepthBars</depth>
 			<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+			<visible>!Skin.HasSetting(powermenu_list)</visible>
 			<top>20</top>
 			<left>20</left>
 			<control type="image">

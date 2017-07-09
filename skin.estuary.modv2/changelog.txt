@@ -1,5 +1,6 @@
 [B]2.6.0[/B]
 • Add possibility to choose gradient colors
+• Add classic list for power menu
 • Add Game OSD
 • Improvements
 • Minor fixes

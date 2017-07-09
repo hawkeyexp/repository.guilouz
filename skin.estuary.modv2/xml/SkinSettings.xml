@@ -480,7 +480,7 @@
 				<control type="button" id="506">
 					<label>$LOCALIZE[40125]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(40125, 31099|powermenu_panel, 535|powermenu_list)</onclick>
+					<onclick>Skin.SelectBool(40125, 31099|powermenu_panel, 40228|powermenu_iconlist, 40227|powermenu_list)</onclick>
 					<label2>$VAR[PowerMenuAspectLabel2Var]</label2>
 				</control>
 				<control type="button" id="502">
@@ -516,7 +516,7 @@
 				<control type="button" id="507">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_updateartworks)|Skin.Reset(powermenu_list)|Skin.Reset(SplashScreen)|Skin.Reset(touchmode)|Skin.Reset(KioskMode)|Skin.Reset(Skin.ToggleDebug))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_updateartworks)|Skin.Reset(powermenu_iconlist)|Skin.Reset(powermenu_list)|Skin.Reset(SplashScreen)|Skin.Reset(touchmode)|Skin.Reset(KioskMode)|Skin.Reset(Skin.ToggleDebug))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="800">

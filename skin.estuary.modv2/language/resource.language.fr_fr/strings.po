@@ -1847,3 +1847,13 @@ msgstr "Réinitialiser la couleur secondaire"
 msgctxt "#40226"
 msgid "Personalize 'Categories' widget"
 msgstr "Personaliser le widget 'Catégories'"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40227"
+msgid "Classic list"
+msgstr "Liste classique"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40228"
+msgid "Icons list"
+msgstr "Liste d'icônes"
