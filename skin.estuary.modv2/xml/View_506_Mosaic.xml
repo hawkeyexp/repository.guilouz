@@ -44,6 +44,14 @@
 						<texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
 					</control>
 					<control type="image">
+						<left>20</left>
+						<top>20</top>
+						<width>290</width>
+						<height>190</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					</control>
+					<control type="image">
 						<left>10</left>
 						<top>10</top>
 						<width>310</width>
@@ -95,6 +103,14 @@
 						<width>310</width>
 						<height>310</height>
 						<texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+					</control>
+					<control type="image">
+						<left>20</left>
+						<top>20</top>
+						<width>310</width>
+						<height>310</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
 					</control>
 					<control type="group">
 						<control type="image">
@@ -195,6 +211,14 @@
 						<width>220</width>
 						<height>310</height>
 						<texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+					</control>
+					<control type="image">
+						<left>20</left>
+						<top>20</top>
+						<width>220</width>
+						<height>310</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
 					</control>
 					<control type="image">
 						<left>10</left>

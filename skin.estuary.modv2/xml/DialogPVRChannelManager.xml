@@ -98,6 +98,14 @@
 							<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(20)">conditional</animation>
 						</control>
 						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<bottom>0</bottom>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<animation effect="fade" start="100" end="30" time="0" condition="!Control.HasFocus(20)">conditional</animation>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+						<control type="image">
 							<left>15</left>
 							<top>10</top>
 							<width>50</width>

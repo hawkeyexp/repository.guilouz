@@ -566,8 +566,8 @@ msgstr "Addons-Einstellungen"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#31132"
-msgid "Hide submenus widget"
-msgstr "Untermenü Widget ausblenden"
+msgid "Hide 'Categories' widget"
+msgstr "'Kategorien' Widget ausblenden"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31133"
@@ -1825,3 +1825,23 @@ msgstr "Stoppe Wiedergabe"
 msgctxt "#40222"
 msgid "Play trailers on movie information screen"
 msgstr "Zeige Filmvorschauen im Film-Info Bildschirm"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40223"
+msgid "Enable gradient colors"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40224"
+msgid "Secondary color"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40225"
+msgid "Reset secondary color"
+msgstr ""
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40226"
+msgid "Personalize 'Categories' widget"
+msgstr ""

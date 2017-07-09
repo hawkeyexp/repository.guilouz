@@ -78,6 +78,15 @@
 					<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 					<animation effect="fade" start="100" end="40" time="100" condition="ControlGroup(9001).HasFocus">Conditional</animation>
 				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>880</width>
+					<height>69</height>
+					<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+					<animation effect="fade" start="100" end="40" time="100" condition="ControlGroup(9001).HasFocus">Conditional</animation>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
 				<control type="label">
 					<left>0</left>
 					<textoffsetx>20</textoffsetx>

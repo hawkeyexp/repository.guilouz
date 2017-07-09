@@ -70,6 +70,14 @@
 					<visible>Control.HasFocus($PARAM[list_id])</visible>
 				</control>
 				<control type="image">
+					<left>0</left>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
+				<control type="image">
 					<width>60</width>
 					<height>60</height>
 					<right>5</right>

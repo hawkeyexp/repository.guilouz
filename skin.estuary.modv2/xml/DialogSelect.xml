@@ -43,7 +43,7 @@
 				<onright>61</onright>
 				<pagecontrol>61</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<include content="DefaultSimpleListLayout">
+				<include content="DefaultSimpleListLayout2">
 					<param name="width" value="880" />
 					<param name="list_id" value="3" />
 				</include>

@@ -90,7 +90,7 @@
 			<control type="button" id="10">
 				<description>Default Category Button</description>
 				<left>0</left>
-				<height>90</height>
+				<height>72</height>
 				<width>470</width>
 				<textoffsetx>40</textoffsetx>
 				<aligny>center</aligny>
@@ -102,7 +102,7 @@
 				<width>470</width>
 				<left>0</left>
 				<bottom>110</bottom>
-				<height>90</height>
+				<height>72</height>
 				<aligny>center</aligny>
 				<onclick>SettingsLevelChange</onclick>
 				<textoffsetx>100</textoffsetx>

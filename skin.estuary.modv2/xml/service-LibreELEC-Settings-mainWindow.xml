@@ -987,31 +987,31 @@
 				<left>0</left>
 				<top>160</top>
 				<width>470</width>
-				<height>700</height>
+				<height>720</height>
 				<onleft>1500</onleft>
 				<onup>1000</onup>
 				<ondown>1000</ondown>
-				<itemlayout height="70" width="470">
+				<itemlayout height="72" width="470">
 					<control type="label">
 						<textoffsetx>30</textoffsetx>
 						<width>470</width>
-						<height>70</height>
+						<height>72</height>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font30_title</font>
 						<aligny>center</aligny>
 					</control>
 				</itemlayout>
-				<focusedlayout height="70" width="470">
+				<focusedlayout height="72" width="470">
 					<control type="image">
 						<width>470</width>
-						<height>70</height>
+						<height>72</height>
 						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 						<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(1000)">Conditional</animation>
 					</control>
 					<control type="label">
 						<textoffsetx>30</textoffsetx>
 						<width>470</width>
-						<height>70</height>
+						<height>72</height>
 						<font>font30_title</font>
 						<aligny>center</aligny>
 						<scroll>true</scroll>

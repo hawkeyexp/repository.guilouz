@@ -568,7 +568,7 @@ msgstr ""
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#31132"
-msgid "Hide submenus widget"
+msgid "Hide 'Categories' widget"
 msgstr ""
 
 #: /xml/SkinSettings.xml
@@ -1826,4 +1826,24 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#40222"
 msgid "Play trailers on movie information screen"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40223"
+msgid "Enable gradient colors"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40224"
+msgid "Secondary color"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40225"
+msgid "Reset secondary color"
+msgstr ""
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40226"
+msgid "Personalize 'Categories' widget"
 msgstr ""

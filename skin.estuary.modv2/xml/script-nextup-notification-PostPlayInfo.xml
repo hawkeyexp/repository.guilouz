@@ -75,6 +75,27 @@
 									<posx>0</posx>
 									<posy>0</posy>
 									<control type="image">
+										<posx>17</posx>
+										<posy>17</posy>
+										<width>499</width>
+										<height>266</height>
+										<aspectratio>stretch</aspectratio>
+										<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
+										<animation effect="fade" start="0" end="100" time="200" tween="sine" condition="Control.HasFocus(101)">Conditional</animation>
+										<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="!Control.HasFocus(101)">Conditional</animation>
+									</control>
+									<control type="image">
+										<posx>17</posx>
+										<posy>17</posy>
+										<width>499</width>
+										<height>266</height>
+										<aspectratio>stretch</aspectratio>
+										<texture border="8" colordiffuse="$VAR[GradientColorVar]">buttons/thumbnail_focused-gradient.png</texture>
+										<animation effect="fade" start="0" end="100" time="200" tween="sine" condition="Control.HasFocus(101)">Conditional</animation>
+										<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="!Control.HasFocus(101)">Conditional</animation>
+										<visible>Skin.HasSetting(EnableGradientColor)</visible>
+									</control>
+									<control type="image">
 										<posx>0</posx>
 										<posy>0</posy>
 										<width>533</width>
@@ -125,16 +146,6 @@
 											<aligny>center</aligny>
 											<label>[UPPERCASE]$ADDON[service.nextup.notification 30020][/UPPERCASE]</label>
 										</control>
-									</control>
-									<control type="image">
-										<posx>18</posx>
-										<posy>18</posy>
-										<width>497</width>
-										<height>264</height>
-										<aspectratio>stretch</aspectratio>
-										<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
-										<animation effect="fade" start="0" end="100" time="200" tween="sine" condition="Control.HasFocus(101)">Conditional</animation>
-										<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="!Control.HasFocus(101)">Conditional</animation>
 									</control>
 									<control type="group">
 										<posx>228.5</posx>
@@ -191,6 +202,27 @@
 										<posx>0</posx>
 										<posy>0</posy>
 										<control type="image">
+											<posx>17</posx>
+											<posy>17</posy>
+											<width>499</width>
+											<height>266</height>
+											<aspectratio>stretch</aspectratio>
+											<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
+											<animation effect="fade" start="0" end="100" time="200" tween="sine" condition="Control.HasFocus(102)">Conditional</animation>
+											<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="!Control.HasFocus(102)">Conditional</animation>
+										</control>
+										<control type="image">
+											<posx>17</posx>
+											<posy>17</posy>
+											<width>499</width>
+											<height>266</height>
+											<aspectratio>stretch</aspectratio>
+											<texture border="8" colordiffuse="$VAR[GradientColorVar]">buttons/thumbnail_focused-gradient.png</texture>
+											<animation effect="fade" start="0" end="100" time="200" tween="sine" condition="Control.HasFocus(102)">Conditional</animation>
+											<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="!Control.HasFocus(102)">Conditional</animation>
+											<visible>Skin.HasSetting(EnableGradientColor)</visible>
+										</control>
+										<control type="image">
 											<posx>0</posx>
 											<posy>0</posy>
 											<width>533</width>
@@ -241,16 +273,6 @@
 												<aligny>center</aligny>
 												<label>[UPPERCASE]$ADDON[service.nextup.notification 30021][/UPPERCASE]</label>
 											</control>
-										</control>
-										<control type="image">
-											<posx>18</posx>
-											<posy>18</posy>
-											<width>497</width>
-											<height>264</height>
-											<aspectratio>stretch</aspectratio>
-											<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
-											<animation effect="fade" start="0" end="100" time="200" tween="sine" condition="Control.HasFocus(102)">Conditional</animation>
-											<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="!Control.HasFocus(102)">Conditional</animation>
 										</control>
 										<control type="group">
 											<visible>!String.IsEmpty(Window.Property(countdown)) + Integer.IsGreater(Window.Property(countdown),-1)</visible>

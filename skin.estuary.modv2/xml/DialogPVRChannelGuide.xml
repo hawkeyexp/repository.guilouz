@@ -49,6 +49,15 @@
 							<visible>Control.HasFocus(11)</visible>
 							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 						</control>
+						<control type="image">
+							<left>0</left>
+							<width>780</width>
+							<bottom>0</bottom>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<visible>Control.HasFocus(11)</visible>
+							<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
 						<control type="label">
 							<left>20</left>
 							<width>150</width>

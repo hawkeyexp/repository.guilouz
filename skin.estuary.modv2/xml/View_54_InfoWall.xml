@@ -23,6 +23,18 @@
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
+				<top>-14</top>
+				<left>-4</left>
+				<width>384</width>
+				<height>388</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+			</control>
+			<control type="image">
 				<left>20</left>
 				<top>10</top>
 				<width>336</width>
@@ -69,6 +81,18 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+			</control>
+			<control type="image">
+				<top>-4</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>394</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -232,6 +256,18 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+			</control>
+			<control type="image">
+				<top>6</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>282</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -407,6 +443,18 @@
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
+				<top>7</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>324</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+			</control>
+			<control type="image">
 				<left>20</left>
 				<top>81</top>
 				<width>276</width>
@@ -555,6 +603,17 @@
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				</control>
+				<control type="image">
+					<left>15</left>
+					<top>-10</top>
+					<width>290</width>
+					<height>400</height>
+					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
+					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
 				<control type="textbox">
 					<left>40</left>
 					<top>244</top>
@@ -599,6 +658,18 @@
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				</control>
+				<control type="image">
+					<left>10</left>
+					<top>-15</top>
+					<width>300</width>
+					<height>410</height>
+					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
+					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
 				</control>
 				<control type="image">
 					<left>15</left>
@@ -734,6 +805,16 @@
 					<visible>[!Skin.HasSetting(enable_LibraryDiscArtOverlay) + !Window.IsVisible(Home)] | [!Skin.HasSetting(enable_HomeDiscArtOverlay) + Window.IsVisible(Home)]</visible>
 				</control>
 				<control type="image">
+					<right>-6</right>
+					<top>0</top>
+					<width>172</width>
+					<height>172</height>
+					<texture background="true" colordiffuse="$VAR[GradientColorVar]">overlays/circle-172-gradient.png</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>[!Skin.HasSetting(enable_LibraryDiscArtOverlay) + !Window.IsVisible(Home)] | [!Skin.HasSetting(enable_HomeDiscArtOverlay) + Window.IsVisible(Home)]</visible>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
+				<control type="image">
 					<right>-5</right>
 					<top>1</top>
 					<width>170</width>
@@ -759,6 +840,18 @@
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				</control>
+				<control type="image">
+					<left>12</left>
+					<top>-14</top>
+					<width>597</width>
+					<height>339</height>
+					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
+					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
 				</control>
 				<control type="image">
 					<left>15</left>
@@ -814,6 +907,18 @@
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
 					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				</control>
+				<control type="image">
+					<left>12</left>
+					<top>-14</top>
+					<width>597</width>
+					<height>339</height>
+					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
+					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
 				</control>
 				<control type="image">
 					<left>15</left>
@@ -944,6 +1049,16 @@
 					<texture background="true" colordiffuse="$VAR[SkinColorVar]">overlays/circle-172.png</texture>
 					<aspectratio>keep</aspectratio>
 					<visible>!Skin.HasSetting(enable_LibraryDiscArtOverlay)</visible>
+				</control>
+				<control type="image">
+					<right>3</right>
+					<top>0</top>
+					<width>172</width>
+					<height>172</height>
+					<texture background="true" colordiffuse="$VAR[GradientColorVar]">overlays/circle-172-gradient.png</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>!Skin.HasSetting(enable_LibraryDiscArtOverlay)</visible>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
 				</control>
 				<control type="image">
 					<right>4</right>

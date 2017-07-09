@@ -1,4 +1,5 @@
-[B]2.5.11[/B]
+[B]2.6.0[/B]
+• Add possibility to choose gradient colors
 • Add Game OSD
 • Improvements
 • Minor fixes

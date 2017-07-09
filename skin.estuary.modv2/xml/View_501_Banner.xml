@@ -78,6 +78,33 @@
 							<effect type="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="450,180" />
 						</animation>
 						<posy>130</posy>
+						<control type="group">
+							<include>Animation_FocusTextureFade</include>
+							<control type="image">
+								<left>16</left>
+								<top>16</top>
+								<width>828</width>
+								<height>163</height>
+								<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
+							</control>
+							<control type="image">
+								<left>16</left>
+								<top>16</top>
+								<width>828</width>
+								<height>163</height>
+								<texture border="8" colordiffuse="$VAR[GradientColorVar]">buttons/thumbnail_focused-gradient2.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
+								<left>22</left>
+								<top>115</top>
+								<width>816</width>
+								<height>60</height>
+								<texture>overlays/overlayfade.png</texture>
+								<animation effect="fade" start="0" end="80" time="50">Focus</animation>
+								<visible>!Listitem.IsParentFolder</visible>
+							</control>
+						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
@@ -101,22 +128,6 @@
 						</control>
 						<control type="group">
 							<include>Animation_FocusTextureFade</include>
-							<control type="image">
-								<left>18</left>
-								<top>18</top>
-								<width>824</width>
-								<height>161</height>
-								<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
-							</control>
-							<control type="image">
-								<left>22</left>
-								<top>115</top>
-								<width>816</width>
-								<height>60</height>
-								<texture>overlays/overlayfade.png</texture>
-								<animation effect="fade" start="0" end="80" time="50">Focus</animation>
-								<visible>!Listitem.IsParentFolder</visible>
-							</control>
 							<control type="image">
 								<left>35</left>
 								<top>138</top>

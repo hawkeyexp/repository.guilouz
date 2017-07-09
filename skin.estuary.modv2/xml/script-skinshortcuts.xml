@@ -57,6 +57,7 @@
 							<height>95</height>
 							<texture colordiffuse="51FFFFFF">colors/black.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(211)">Conditional</animation>
+							<visible>!Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 					</control>
 					<control type="image">
@@ -220,7 +221,7 @@
 				<control type="button" id="405">
                    <description>Edit submenu</description>
                    <include>DefaultSettingButton</include>
-                   <label>$ADDON[script.skinshortcuts 32072]</label>
+                   <label>$LOCALIZE[40226]</label>
                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                    <visible>!String.IsEqual(Container(211).ListItem.Property(defaultID),libreelec) + !String.IsEqual(Container(211).ListItem.Property(widget),PicturesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),GamesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),FavoritesWidget) + !String.IsEqual(Container(211).ListItem.Property(widget),WeatherWidget)</visible>
                 </control>

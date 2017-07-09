@@ -675,6 +675,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>299</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Poster</description>
 								<posx>4</posx>
 								<posy>4</posy>
@@ -703,6 +711,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>40</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Banner</description>
 								<posx>2</posx>
 								<posy>2</posy>
@@ -729,6 +745,14 @@
 								<width>210</width>
 								<height>81</height>
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>81</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -864,6 +888,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>299</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Poster</description>
 								<posx>4</posx>
 								<posy>4</posy>
@@ -892,6 +924,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>40</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Banner</description>
 								<posx>2</posx>
 								<posy>2</posy>
@@ -918,6 +958,14 @@
 								<width>210</width>
 								<height>81</height>
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>81</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -1053,6 +1101,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>299</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Poster</description>
 								<posx>4</posx>
 								<posy>4</posy>
@@ -1081,6 +1137,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>40</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Banner</description>
 								<posx>2</posx>
 								<posy>2</posy>
@@ -1107,6 +1171,14 @@
 								<width>210</width>
 								<height>81</height>
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>81</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -1242,6 +1314,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>299</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Poster</description>
 								<posx>4</posx>
 								<posy>4</posy>
@@ -1270,6 +1350,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>40</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Banner</description>
 								<posx>2</posx>
 								<posy>2</posy>
@@ -1296,6 +1384,14 @@
 								<width>210</width>
 								<height>81</height>
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>81</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -1431,6 +1527,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>299</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Poster</description>
 								<posx>4</posx>
 								<posy>4</posy>
@@ -1459,6 +1563,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>40</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Banner</description>
 								<posx>2</posx>
 								<posy>2</posy>
@@ -1485,6 +1597,14 @@
 								<width>210</width>
 								<height>81</height>
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>81</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -1620,6 +1740,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>299</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Poster</description>
 								<posx>4</posx>
 								<posy>4</posy>
@@ -1648,6 +1776,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>40</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Banner</description>
 								<posx>2</posx>
 								<posy>2</posy>
@@ -1674,6 +1810,14 @@
 								<width>210</width>
 								<height>81</height>
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>81</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 							<control type="image">
 								<description>Logo</description>
@@ -1809,6 +1953,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>299</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Poster</description>
 								<posx>4</posx>
 								<posy>4</posy>
@@ -1837,6 +1989,14 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							</control>
 							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>40</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
+							</control>
+							<control type="image">
 								<description>Banner</description>
 								<posx>2</posx>
 								<posy>2</posy>
@@ -1863,6 +2023,14 @@
 								<width>210</width>
 								<height>81</height>
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							</control>
+							<control type="image">
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>210</width>
+								<height>81</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 							<control type="image">
 								<description>Logo</description>

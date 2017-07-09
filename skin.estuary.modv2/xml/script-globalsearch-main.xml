@@ -341,6 +341,15 @@
 									<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
 								</control>
 								<control type="image">
+									<left>0</left>
+									<top>0</top>
+									<width>462</width>
+									<height>95</height>
+									<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+									<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
+									<visible>Skin.HasSetting(EnableGradientColor)</visible>
+								</control>
+								<control type="image">
 									<left>-3</left>
 									<top>1</top>
 									<width>95</width>
@@ -355,6 +364,7 @@
 									<height>95</height>
 									<texture colordiffuse="51FFFFFF">colors/black.png</texture>
 									<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000) | System.HasActiveModalDialog">Conditional</animation>
+									<visible>!Skin.HasSetting(EnableGradientColor)</visible>
 								</control>
 							</control>
 							<control type="image">
@@ -1522,6 +1532,13 @@
 					<width>56</width>
 					<height>56</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">icons/logo.png</texture>
+				</control>
+				<control type="image">
+					<aspectratio>keep</aspectratio>
+					<width>56</width>
+					<height>56</height>
+					<texture colordiffuse="$VAR[GradientColorVar]">icons/logo-gradient.png</texture>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
 				</control>
 				<control type="image">
 					<left>80</left>

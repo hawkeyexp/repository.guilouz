@@ -113,6 +113,14 @@
 						<include>Animation_FocusTextureFade</include>
 					</control>
 					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					</control>
+					<control type="image">
 						<centertop>74</centertop>
 						<left>58</left>
 						<width>200</width>
@@ -252,6 +260,14 @@
 						<include>Animation_FocusTextureFade</include>
 					</control>
 					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					</control>
+					<control type="image">
 						<centertop>74</centertop>
 						<left>58</left>
 						<width>200</width>
@@ -380,6 +396,14 @@
 						<include>Animation_FocusTextureFade</include>
 					</control>
 					<control type="image">
+						<width>140</width>
+						<height>120</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					</control>
+					<control type="image">
 						<top>20</top>
 						<left>30</left>
 						<width>80</width>
@@ -494,6 +518,14 @@
 						<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 						<bordersize>20</bordersize>
 						<include>Animation_FocusTextureFade</include>
+					</control>
+					<control type="image">
+						<width>140</width>
+						<height>120</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
 					</control>
 					<control type="image">
 						<top>20</top>
@@ -1015,6 +1047,23 @@
 							<effect type="zoom" start="109" end="100" time="200" tween="sine" easing="inout" center="430,92.5" />
 						</animation>
 						<control type="image">
+							<left>105</left>
+							<top>16</top>
+							<width>640</width>
+							<height>125</height>
+							<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
+							<include>Animation_FocusTextureFade</include>
+						</control>
+						<control type="image">
+							<left>105</left>
+							<top>16</top>
+							<width>640</width>
+							<height>125</height>
+							<texture border="8" colordiffuse="$VAR[GradientColorVar]">buttons/thumbnail_focused-gradient2.png</texture>
+							<include>Animation_FocusTextureFade</include>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>850</width>
@@ -1056,14 +1105,6 @@
 							<scroll>true</scroll>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
 							<animation effect="slide" end="0,-20" time="0" condition="String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]">Condtional</animation>
-						</control>
-						<control type="image">
-							<left>105</left>
-							<top>16</top>
-							<width>640</width>
-							<height>125</height>
-							<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
-							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
 							<left>109</left>
@@ -1260,6 +1301,14 @@
 							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							<bordersize>20</bordersize>
 							<include>Animation_FocusTextureFade</include>
+						</control>
+						<control type="image">
+							<width>316</width>
+							<height>200</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+							<bordersize>20</bordersize>
+							<include>Animation_FocusTextureFade</include>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="image">
 							<top>25</top>
@@ -1475,6 +1524,18 @@
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
+				<top>6</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>282</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+			</control>
+			<control type="image">
 				<left>20</left>
 				<top>30</top>
 				<width>276</width>
@@ -1629,6 +1690,18 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+			</control>
+			<control type="image">
+				<top>7</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>324</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -1792,6 +1865,18 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+			</control>
+			<control type="image">
+				<top>6</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>282</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -1972,6 +2057,18 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+			</control>
+			<control type="image">
+				<top>7</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>324</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -2161,6 +2258,18 @@
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
+				<top>6</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>282</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+			</control>
+			<control type="image">
 				<left>20</left>
 				<top>30</top>
 				<width>276</width>
@@ -2284,6 +2393,18 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+			</control>
+			<control type="image">
+				<top>7</top>
+				<left>-4</left>
+				<width>324</width>
+				<height>324</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -3050,6 +3171,14 @@
 							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
+							<width>316</width>
+							<height>200</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+							<bordersize>20</bordersize>
+							<include>Animation_FocusTextureFade</include>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+						<control type="image">
 							<centertop>74</centertop>
 							<left>58</left>
 							<width>200</width>
@@ -3224,6 +3353,14 @@
 						<include>Animation_FocusTextureFade</include>
 					</control>
 					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					</control>
+					<control type="image">
 						<top>25</top>
 						<left>25</left>
 						<width>266</width>
@@ -3375,6 +3512,14 @@
 						<include>Animation_FocusTextureFade</include>
 					</control>
 					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					</control>
+					<control type="image">
 						<centertop>74</centertop>
 						<left>58</left>
 						<width>200</width>
@@ -3463,6 +3608,14 @@
 						<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 						<bordersize>20</bordersize>
 						<include>Animation_FocusTextureFade</include>
+					</control>
+					<control type="image">
+						<width>140</width>
+						<height>120</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+						<bordersize>20</bordersize>
+						<include>Animation_FocusTextureFade</include>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
 					</control>
 					<control type="image">
 						<top>20</top>
@@ -3613,6 +3766,14 @@
 							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
+							<width>319</width>
+							<height>340</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+							<bordersize>20</bordersize>
+							<include>Animation_FocusTextureFade</include>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+						<control type="image">
 							<top>43</top>
 							<left>38</left>
 							<width>245</width>
@@ -3757,6 +3918,16 @@
 							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							<bordersize>20</bordersize>
 							<include>Animation_FocusTextureFade</include>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>20</top>
+							<width>254</width>
+							<height>280</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+							<bordersize>20</bordersize>
+							<include>Animation_FocusTextureFade</include>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="image">
 							<left>68</left>

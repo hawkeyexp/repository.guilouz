@@ -48,6 +48,15 @@
 							<visible>Control.HasFocus(508) | Control.HasFocus(5081) | Control.HasFocus(5082) | Control.HasFocus(5083) | Control.HasFocus(5084)</visible>
 						</control>
 						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<height>160</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(5081) | Control.HasFocus(5082) | Control.HasFocus(5083) | Control.HasFocus(5084)">Conditional</animation>
+							<visible>Control.HasFocus(508) | Control.HasFocus(5081) | Control.HasFocus(5082) | Control.HasFocus(5083) | Control.HasFocus(5084)</visible>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+						<control type="image">
 							<left>35</left>
 							<top>20</top>
 							<width>120</width>
@@ -375,6 +384,15 @@
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
 							<visible>Control.HasFocus(508) | Control.HasFocus(5081)</visible>
 						</control>
+						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<height>80</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
+							<visible>Control.HasFocus(508) | Control.HasFocus(5081)</visible>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
 						<control type="label">
 							<left>35</left>
 							<height>80</height>
@@ -453,6 +471,15 @@
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
 							<visible>Control.HasFocus(508) | Control.HasFocus(5082)</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<height>160</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
+							<visible>Control.HasFocus(508) | Control.HasFocus(5082)</visible>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="image">
 							<left>35</left>
@@ -574,6 +601,15 @@
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
 							<visible>Control.HasFocus(508) | Control.HasFocus(5083)</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<height>160</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
+							<visible>Control.HasFocus(508) | Control.HasFocus(5083)</visible>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="image">
 							<left>30</left>
@@ -739,6 +775,15 @@
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
 							<visible>Control.HasFocus(508) | Control.HasFocus(5084)</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<height>160</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="Control.HasFocus(508)">Conditional</animation>
+							<visible>Control.HasFocus(508) | Control.HasFocus(5084)</visible>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="image">
 							<left>30</left>

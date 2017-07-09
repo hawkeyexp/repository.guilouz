@@ -32,6 +32,14 @@
 							<visible>Control.hasFocus(11)</visible>
 						</control>
 						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<bottom>0</bottom>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<visible>Control.hasFocus(11)</visible>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+						<control type="image">
 							<right>20</right>
 							<top>10</top>
 							<width>80</width>

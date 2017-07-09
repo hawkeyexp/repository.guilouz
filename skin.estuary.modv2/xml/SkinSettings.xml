@@ -530,6 +530,36 @@
 				<ondown>800</ondown>
 				<pagecontrol>60</pagecontrol>
 				<visible>Container(9000).HasFocus(4)</visible>
+				<control type="button" id="803">
+					<label>$LOCALIZE[40020]</label>
+					<label2>$VAR[Label_SkinSetting_SkinColor]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.skin.helper.colorpicker,skinstring=SkinColor)</onclick>
+				</control>
+				<control type="button" id="804">
+					<label>  ∟$LOCALIZE[40021]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.Reset(SkinColor)</onclick>
+				</control>
+				<control type="radiobutton" id="810">
+					<label>$LOCALIZE[40223]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(EnableGradientColor)</onclick>
+					<selected>Skin.HasSetting(EnableGradientColor)</selected>
+				</control>
+				<control type="button" id="811">
+					<label>$LOCALIZE[40224]</label>
+					<label2>$VAR[Label_SkinSetting_GradientColor]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick>RunScript(script.skin.helper.colorpicker,skinstring=GradientColor)</onclick>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
+				<control type="button" id="812">
+					<label>  ∟$LOCALIZE[40225]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.Reset(GradientColor)</onclick>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
 				<control type="button" id="801">
 					<label>$LOCALIZE[40033]</label>
 					<label2>$VAR[Label_SkinSetting_BackgroundColor]</label2>
@@ -541,16 +571,24 @@
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.Reset(BackgroundColor)</onclick>
 				</control>
-				<control type="button" id="803">
-					<label>$LOCALIZE[40020]</label>
-					<label2>$VAR[Label_SkinSetting_SkinColor]</label2>
+				<control type="button" id="809">
+					<label>$LOCALIZE[31156]</label>
+					<label2>$VAR[BackgroundOverlayTypeVar]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.colorpicker,skinstring=SkinColor)</onclick>
-				</control>
-				<control type="button" id="804">
-					<label>  ∟$LOCALIZE[40021]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.Reset(SkinColor)</onclick>
+					<onclick condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,0)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),12)">Skin.SetString(background_overlay,0)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),11)">Skin.SetString(background_overlay,12)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),10)">Skin.SetString(background_overlay,11)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),9)">Skin.SetString(background_overlay,10)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),8)">Skin.SetString(background_overlay,9)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),7)">Skin.SetString(background_overlay,8)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),6)">Skin.SetString(background_overlay,7)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),5)">Skin.SetString(background_overlay,6)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),4)">Skin.SetString(background_overlay,5)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),3)">Skin.SetString(background_overlay,4)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),2)">Skin.SetString(background_overlay,3)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),1)">Skin.SetString(background_overlay,2)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),0)">Skin.SetString(background_overlay,1)</onclick>
 				</control>
 				<control type="button" id="805">
 					<label>$LOCALIZE[40035]</label>
@@ -841,25 +879,6 @@
 					<onclick>Skin.ToggleSetting(Skin_EnableAnimatedPosters)</onclick>
 					<selected>Skin.HasSetting(Skin_EnableAnimatedPosters)</selected>
 				</control>
-				<control type="button" id="604">
-					<label>$LOCALIZE[31156]</label>
-					<label2>$VAR[BackgroundOverlayTypeVar]</label2>
-					<include>DefaultSettingButton</include>
-					<onclick condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),12)">Skin.SetString(background_overlay,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),11)">Skin.SetString(background_overlay,12)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),10)">Skin.SetString(background_overlay,11)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),9)">Skin.SetString(background_overlay,10)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),8)">Skin.SetString(background_overlay,9)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),7)">Skin.SetString(background_overlay,8)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),6)">Skin.SetString(background_overlay,7)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),5)">Skin.SetString(background_overlay,6)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),4)">Skin.SetString(background_overlay,5)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),3)">Skin.SetString(background_overlay,4)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),2)">Skin.SetString(background_overlay,3)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),1)">Skin.SetString(background_overlay,2)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),0)">Skin.SetString(background_overlay,1)</onclick>
-				</control>
 				<control type="button" id="606">
 					<label>$LOCALIZE[31149]</label>
 					<label2>$VAR[Label_SkinSetting_MovieGenreFanart]</label2>
@@ -911,7 +930,7 @@
 				<control type="button" id="612">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_fanart)|Skin.Reset(SkinHelper.EnableExtraFanart)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(background_overlay)|Skin.Reset(HomeFanart.name)|Skin.Reset(MovieGenreFanart.name)|Skin.Reset(moviegenreicons.name)|Skin.Reset(WeatherFanart.name)|Skin.Reset(WeatherIcons.name)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_fanart)|Skin.Reset(SkinHelper.EnableExtraFanart)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(HomeFanart.name)|Skin.Reset(MovieGenreFanart.name)|Skin.Reset(moviegenreicons.name)|Skin.Reset(WeatherFanart.name)|Skin.Reset(WeatherIcons.name)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="1000">

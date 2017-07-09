@@ -98,6 +98,14 @@
 							<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
 						</control>
 						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<bottom>0</bottom>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+						<control type="image">
 							<left>-3</left>
 							<top>0</top>
 							<width>95</width>
@@ -111,6 +119,7 @@
 							<bottom>0</bottom>
 							<texture colordiffuse="51FFFFFF">colors/black.png</texture>
 							<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
+							<visible>!Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="image">
 							<left>-3</left>

@@ -568,8 +568,8 @@ msgstr "Paramètres des extensions"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#31132"
-msgid "Hide submenus widget"
-msgstr "Masquer le widget des sous-menus"
+msgid "Hide 'Categories' widget"
+msgstr "Masquer le widget 'Catégories'"
 
 #: /xml/SkinSettings.xml
 msgctxt "#31133"
@@ -1827,3 +1827,23 @@ msgstr "Stopper la lecture"
 msgctxt "#40222"
 msgid "Play trailers on movie information screen"
 msgstr "Lire les bandes-annonces sur l'écran des informations du film"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40223"
+msgid "Enable gradient colors"
+msgstr "Activer le dégradé de couleurs"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40224"
+msgid "Secondary color"
+msgstr "Couleur secondaire"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40225"
+msgid "Reset secondary color"
+msgstr "Réinitialiser la couleur secondaire"
+
+#: /xml/script-skinshortcuts.xml
+msgctxt "#40226"
+msgid "Personalize 'Categories' widget"
+msgstr "Personaliser le widget 'Catégories'"

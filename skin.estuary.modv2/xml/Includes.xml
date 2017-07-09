@@ -547,6 +547,15 @@
 					<visible>Control.HasFocus($PARAM[list_id])</visible>
 				</control>
 				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
+				<control type="image">
 					<left>8</left>
 					<top>8</top>
 					<width>64</width>
@@ -600,6 +609,57 @@
 		</control>
 	</include>
 	<include name="DefaultSimpleListLayout">
+		<param name="align">left</param>
+		<param name="height">70</param>
+		<param name="font">font13</param>
+		<param name="fontcolor">grey</param>
+		<definition>
+			<itemlayout width="$PARAM[width]" height="$PARAM[height]">
+				<control type="label">
+					<left>20</left>
+					<top>0</top>
+					<right>20</right>
+					<bottom>0</bottom>
+					<align>$PARAM[align]</align>
+					<font>$PARAM[font]</font>
+					<aligny>center</aligny>
+					<textcolor>$PARAM[fontcolor]</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</itemlayout>
+			<focusedlayout width="$PARAM[width]" height="$PARAM[height]">
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<right>0</right>
+					<bottom>0</bottom>
+					<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+					<visible>Control.HasFocus($PARAM[list_id])</visible>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
+				<control type="label">
+					<left>20</left>
+					<top>0</top>
+					<right>20</right>
+					<bottom>0</bottom>
+					<align>$PARAM[align]</align>
+					<font>$PARAM[font]</font>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<scroll>true</scroll>
+				</control>
+			</focusedlayout>
+		</definition>
+	</include>
+		<include name="DefaultSimpleListLayout2">
 		<param name="align">left</param>
 		<param name="height">70</param>
 		<param name="font">font13</param>
@@ -974,6 +1034,15 @@
 						<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
 					</control>
 					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<right>0</right>
+						<bottom>0</bottom>
+						<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+						<animation effect="fade" start="100" end="0" time="0" condition="!Control.HasFocus($PARAM[list_id])">Conditional</animation>
+						<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					</control>
+					<control type="image">
 						<left>15</left>
 						<top>0</top>
 						<width>32</width>
@@ -1307,6 +1376,14 @@
 				<right>0</right>
 				<height>70</height>
 				<texture colordiffuse="$VAR[SkinColorVar]" border="2">colors/white70.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<right>0</right>
+				<height>70</height>
+				<texture colordiffuse="$VAR[GradientColorVar]" border="2">lists/focus-gradient.png</texture>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="label" id="$PARAM[header_id]">
 				<left>20</left>
@@ -2002,6 +2079,15 @@
 					<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 					<bordersize>20</bordersize>
 					<include>Animation_FocusTextureFade</include>
+				</control>
+				<control type="image">
+					<left>-5</left>
+					<width>410</width>
+					<height>270</height>
+					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+					<bordersize>20</bordersize>
+					<include>Animation_FocusTextureFade</include>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
 				</control>
 				<control type="image">
 					<centerleft>50%</centerleft>

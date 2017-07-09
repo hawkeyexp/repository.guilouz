@@ -44,6 +44,20 @@
 					<animation effect="slide" start="0,0" end="365,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,3) | Integer.IsEqual(Container.Position,4)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="365,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,4)">Conditional</animation>
 				</control>
+				<control type="image">
+					<left>600</left>
+					<top>600</top>
+					<width>340</width>
+					<height>110</height>
+					<visible>Control.HasFocus(53)</visible>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+					<animation effect="slide" start="0,0" end="-365,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,1) | Integer.IsEqual(Container.Position,0)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="-365,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,0)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="365,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,3) | Integer.IsEqual(Container.Position,4)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="365,0" time="300" tween="sine" easing="inout" condition="Integer.IsEqual(Container.Position,4)">Conditional</animation>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
 				<control type="fixedlist" id="53">
 					<left>-150</left>
 					<top>0</top>
@@ -166,6 +180,16 @@
 								<texture background="true" colordiffuse="$VAR[SkinColorVar]">overlays/circle-172.png</texture>
 								<aspectratio>keep</aspectratio>
 								<visible>!Skin.HasSetting(enable_LibraryDiscArtOverlay)</visible>
+							</control>
+							<control type="image">
+								<right>15</right>
+								<top>0</top>
+								<width>172</width>
+								<height>172</height>
+								<texture background="true" colordiffuse="$VAR[GradientColorVar]">overlays/circle-172-gradient.png</texture>
+								<aspectratio>keep</aspectratio>
+								<visible>!Skin.HasSetting(enable_LibraryDiscArtOverlay)</visible>
+								<visible>Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 							<control type="image">
 								<right>16</right>

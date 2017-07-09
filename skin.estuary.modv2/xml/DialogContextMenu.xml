@@ -68,6 +68,14 @@
 				<height>70</height>
 				<texture colordiffuse="$VAR[SkinColorVar]" border="2">colors/white70.png</texture>
 			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<right>0</right>
+				<height>70</height>
+				<texture colordiffuse="$VAR[GradientColorVar]" border="2">lists/focus-gradient.png</texture>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+			</control>
 			<control type="label">
 				<left>20</left>
 				<top>0</top>

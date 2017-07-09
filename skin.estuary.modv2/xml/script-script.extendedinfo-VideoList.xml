@@ -145,6 +145,15 @@
 							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 							<visible>Control.HasFocus(50)</visible>
 						</control>
+						<control type="image">
+							<left>0</left>
+							<right>0</right>
+							<top>0</top>
+							<bottom>0</bottom>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<visible>Control.HasFocus(50)</visible>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
 						<control type="label">
 							<left>70</left>
 							<right>70</right>
