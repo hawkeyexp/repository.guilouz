@@ -64,7 +64,7 @@
 						<label>$VAR[PlotSpoilerVar][CR][CR]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-						<visible>[String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)]</visible>
+						<visible>[String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))]</visible>
 						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
 					</control>
 					<control type="textbox">
@@ -77,7 +77,7 @@
 						<label>$VAR[PlotSpoilerVar][CR][CR]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-						<visible>![String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)]</visible>
+						<visible>![String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))]</visible>
 						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
 					</control>
 					<control type="textbox">
@@ -90,7 +90,7 @@
 						<label>$VAR[PlotSpoilerVar][CR][CR]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-						<visible>[String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)]</visible>
+						<visible>[String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))]</visible>
 						<visible>String.IsEqual(Skin.Font, Arial)</visible>
 					</control>
 					<control type="textbox">
@@ -103,7 +103,7 @@
 						<label>$VAR[PlotSpoilerVar][CR][CR]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
-						<visible>![String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)]</visible>
+						<visible>![String.IsEmpty(ListItem.Art(banner) + String.IsEmpty(ListItem.Art(tvshow.banner)+ String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))]</visible>
 						<visible>String.IsEqual(Skin.Font, Arial)</visible>
 					</control>
 					<control type="textbox">
