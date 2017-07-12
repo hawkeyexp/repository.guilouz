@@ -204,7 +204,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="radiobutton" id="301">
-					<label>$INFO[System.AddonTitle(repository.guilouz)]$INFO[System.AddonVersion(repository.guilouz), (,)]</label>
+					<label>Guilouz Repository $INFO[System.AddonVersion(repository.guilouz),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -215,7 +215,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="302">
-					<label>$INFO[System.AddonTitle(repository.marcelveldt)]$INFO[System.AddonVersion(repository.marcelveldt), (,)]</label>
+					<label>Marcelveldt's BETA repository $INFO[System.AddonVersion(repository.marcelveldt),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -241,7 +241,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="radiobutton" id="303">
-					<label>$INFO[System.AddonTitle(script.skinshortcuts)]$INFO[System.AddonVersion(script.skinshortcuts), (,)]</label>
+					<label>Skin Shortcuts $INFO[System.AddonVersion(script.skinshortcuts),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -252,7 +252,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="304">
-					<label>$INFO[System.AddonTitle(script.skin.helper.service)]$INFO[System.AddonVersion(script.skin.helper.service), (,)]</label>
+					<label>Skin Helper Service $INFO[System.AddonVersion(script.skin.helper.service),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -263,7 +263,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="305">
-					<label>$INFO[System.AddonTitle(script.skin.helper.widgets)]$INFO[System.AddonVersion(script.skin.helper.widgets), (,)]</label>
+					<label>Skin Helper Service Widgets $INFO[System.AddonVersion(script.skin.helper.widgets),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -274,7 +274,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="306">
-					<label>$INFO[System.AddonTitle(script.image.resource.select)]$INFO[System.AddonVersion(script.image.resource.select), (,)]</label>
+					<label>Image Resource Select Addon $INFO[System.AddonVersion(script.image.resource.select),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -300,7 +300,7 @@
 					<shadowcolor>black</shadowcolor>
 				</control>
 				<control type="radiobutton" id="307">
-					<label>$INFO[System.AddonTitle(script.extendedinfo)]$INFO[System.AddonVersion(script.extendedinfo), (,)]</label>
+					<label>ExtendedInfo Script $INFO[System.AddonVersion(script.extendedinfo),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -311,7 +311,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="308">
-					<label>$INFO[System.AddonTitle(script.skin.helper.colorpicker)]$INFO[System.AddonVersion(script.skin.helper.colorpicker), (,)]</label>
+					<label>Skin Helper Service ColorPicker $INFO[System.AddonVersion(script.skin.helper.colorpicker),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -322,7 +322,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="309">
-					<label>$INFO[System.AddonTitle(script.skin.helper.skinbackup)]$INFO[System.AddonVersion(script.skin.helper.skinbackup), (,)]</label>
+					<label>Skin Helper Service Backup $INFO[System.AddonVersion(script.skin.helper.skinbackup),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -333,7 +333,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="310">
-					<label>$INFO[System.AddonTitle(script.playalbum)]$INFO[System.AddonVersion(script.playalbum), (,)]</label>
+					<label>Play Album Script $INFO[System.AddonVersion(script.playalbum),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -344,7 +344,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="311">
-					<label>$INFO[System.AddonTitle(script.globalsearch)]$INFO[System.AddonVersion(script.globalsearch), (,)]</label>
+					<label>Global Search $INFO[System.AddonVersion(script.globalsearch),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -355,7 +355,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="312">
-					<label>$INFO[System.AddonTitle(service.nextup.notification)]$INFO[System.AddonVersion(service.nextup.notification), (,)]</label>
+					<label>Nextup Service Notification $INFO[System.AddonVersion(service.nextup.notification),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -366,7 +366,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="313">
-					<label>$INFO[System.AddonTitle(script.artwork.downloader)]$INFO[System.AddonVersion(script.artwork.downloader), (,)]</label>
+					<label>Artwork Downloader $INFO[System.AddonVersion(script.artwork.downloader),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -377,7 +377,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="314">
-					<label>$INFO[System.AddonTitle(plugin.program.autocompletion)]$INFO[System.AddonVersion(plugin.program.autocompletion), (,)]</label>
+					<label>AutoCompletion for virtual keyboard $INFO[System.AddonVersion(plugin.program.autocompletion),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -388,7 +388,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="315">
-					<label>$INFO[System.AddonTitle(plugin.video.youtube)]$INFO[System.AddonVersion(plugin.video.youtube), (,)]</label>
+					<label>YouTube $INFO[System.AddonVersion(plugin.video.youtube),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -399,7 +399,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="316">
-					<label>$INFO[System.AddonTitle(script.cu.lrclyrics)]$INFO[System.AddonVersion(script.cu.lrclyrics), (,)]</label>
+					<label>CU LRC Lyrics $INFO[System.AddonVersion(script.cu.lrclyrics),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -410,7 +410,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="317">
-					<label>$INFO[System.AddonTitle(script.libraryeditor)]$INFO[System.AddonVersion(script.libraryeditor), (,)]</label>
+					<label>Library Editor Script $INFO[System.AddonVersion(script.libraryeditor),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
@@ -421,7 +421,7 @@
 					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="318">
-					<label>$INFO[System.AddonTitle(script.tv.show.next.aired)]$INFO[System.AddonVersion(script.tv.show.next.aired), (,)]</label>
+					<label>TV Show - Next Aired $INFO[System.AddonVersion(script.tv.show.next.aired),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
 					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
 					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
