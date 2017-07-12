@@ -96,7 +96,7 @@
 				<centerleft>50%</centerleft>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture>$VAR[LibraryClearLogoVar]</texture>
-				<visible>Control.IsVisible(506)</visible>
+				<visible>Control.IsVisible(506) + !Control.HasFocus(5199)</visible>
 		  		<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 		  		<visible>!Container.Scrolling + ![Window.IsVisible(DialogVolumeBar.xml) + !Player.Muted] + !ListItem.IsParentFolder</visible>
 		  		<animation effect="slide" end="0,-100" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
@@ -104,7 +104,7 @@
 			<control type="group">
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!Container.Scrolling + ![Window.IsVisible(DialogVolumeBar.xml) + !Player.Muted] + !ListItem.IsParentFolder</visible>
-				<visible>Control.IsVisible(507) | Control.IsVisible(508) | Control.IsVisible(509)</visible>
+				<visible>[Control.IsVisible(507) + !Control.HasFocus(531)] | Control.IsVisible(508) | Control.IsVisible(509)</visible>
 				<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 				<control type="image">
 					<top>0</top>
@@ -140,7 +140,7 @@
 			<control type="group">
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!Container.Scrolling + ![Window.IsVisible(DialogVolumeBar.xml) + !Player.Muted] + !ListItem.IsParentFolder</visible>
-				<visible>Control.IsVisible(500)</visible>
+				<visible>Control.IsVisible(500) + !Control.HasFocus(531)</visible>
 				<animation effect="slide" end="0,-115" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			<control type="image">
 				<top>0</top>
