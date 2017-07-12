@@ -1,6 +1,7 @@
 [B]2.6.1[/B]
 • Changes for Kodi 18
 • Add 4K HDR flag icon (filename must contain 'HDR')
+• Add shortcut in skin settings to configure personal API key
 • Minor fixes
 
 [B]2.6.0[/B]

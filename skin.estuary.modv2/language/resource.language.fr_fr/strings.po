@@ -1857,3 +1857,8 @@ msgstr "Liste classique"
 msgctxt "#40228"
 msgid "Icons list"
 msgstr "Liste d'icônes"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40229"
+msgid "Configure personal API keys"
+msgstr "Configurer les clés API personnelles"

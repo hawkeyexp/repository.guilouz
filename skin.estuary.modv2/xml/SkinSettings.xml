@@ -502,6 +502,12 @@
 					<onclick>Skin.ToggleSetting(KioskMode)</onclick>
 					<selected>Skin.HasSetting(KioskMode)</selected>
 				</control>
+				<control type="button" id="508">
+					<label>$LOCALIZE[40229]</label>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">InstallAddon(script.skin.helper.service)</onclick>
+					<onclick condition="System.HasAddon(script.module.metadatautils)">Addon.OpenSettings(script.module.metadatautils)</onclick>
+				</control>
 				<control type="radiobutton" id="505">
 					<label>$LOCALIZE[40032]</label>
 					<include>DefaultSettingButton</include>
