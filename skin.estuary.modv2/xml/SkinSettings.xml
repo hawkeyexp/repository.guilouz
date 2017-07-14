@@ -10,10 +10,10 @@
 			<left>470</left>
 			<include>OpenClose_Right</include>		
 			<control type="grouplist" id="110">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>100</onup>
@@ -43,10 +43,6 @@
 					<onclick condition="String.IsEqual(Skin.String(password_time),1)">Skin.SetString(password_time,5)</onclick>
 					<onclick>AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],Silent)</onclick>
 				</control>
-				<control type="image" id="1101">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="button" id="113">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
@@ -54,10 +50,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="100">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>100</onup>
@@ -88,10 +84,6 @@
 					<selected>!Skin.HasSetting(disable_PVRNextUp)</selected>
 					<onclick>Skin.ToggleSetting(disable_PVRNextUp)</onclick>
 				</control>
-				<control type="image" id="1001">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="button" id="104">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
@@ -99,10 +91,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="200">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>200</onup>
@@ -171,27 +163,29 @@
 					<onclick>Skin.ToggleSetting(enable_animatedlyrics)</onclick>
 					<selected>!Skin.HasSetting(enable_animatedlyrics)</selected>
 				</control>
+				<control type="radiobutton" id="213">
+					<label>$LOCALIZE[40231]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(enable_scrollingtext)</onclick>
+					<selected>!Skin.HasSetting(enable_scrollingtext)</selected>
+				</control>
 				<control type="radiobutton" id="210">
 					<label>$LOCALIZE[40086]</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(SkinHelper.DisableScreenSaverOnFullScreenMusic)</selected>
 					<onclick>Skin.ToggleSetting(SkinHelper.DisableScreenSaverOnFullScreenMusic)</onclick>
 				</control>
-				<control type="image" id="2001">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="button" id="211">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(show_musicvisualisation)|Skin.Reset(hide_background_fanart)|Skin.Reset(enable_artistslideshow)|Skin.Reset(animate_artistslideshow)|Skin.Reset(enable_visualisation)|Skin.Reset(show_disc)|Skin.Reset(hide_cdcase)|Skin.Reset(show_artistclearlogo)|Skin.Reset(show_artistbanner)|Skin.Reset(enable_animatedlyrics)|Skin.Reset(SkinHelper.DisableScreenSaverOnFullScreenMusic))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(show_musicvisualisation)|Skin.Reset(hide_background_fanart)|Skin.Reset(enable_artistslideshow)|Skin.Reset(animate_artistslideshow)|Skin.Reset(enable_visualisation)|Skin.Reset(show_disc)|Skin.Reset(hide_cdcase)|Skin.Reset(show_artistclearlogo)|Skin.Reset(show_artistbanner)|Skin.Reset(enable_animatedlyrics)|Skin.Reset(enable_scrollingtext)|Skin.Reset(SkinHelper.DisableScreenSaverOnFullScreenMusic))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="300">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>300</onup>
@@ -201,11 +195,11 @@
 				<control type="label" id="30011">
 					<textoffsetx>45</textoffsetx>
 					<top>0</top>
-					<height>50</height>
+					<height>70</height>
 					<label>$LOCALIZE[24011]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font25_title</font>
+					<font>font28_title</font>
 					<textcolor>grey</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -231,18 +225,14 @@
 					<selected>System.HasAddon(repository.marcelveldt)</selected>
 					<include>DefaultSettingButton</include>
 				</control>
-				<control type="image" id="30012">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="label" id="30013">
 					<textoffsetx>45</textoffsetx>
 					<top>0</top>
-					<height>50</height>
+					<height>70</height>
 					<label>$LOCALIZE[40218]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font25_title</font>
+					<font>font28_title</font>
 					<textcolor>grey</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -290,18 +280,14 @@
 					<selected>System.HasAddon(script.image.resource.select)</selected>
 					<include>DefaultSettingButton</include>
 				</control>
-				<control type="image" id="30014">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="label" id="30015">
 					<textoffsetx>45</textoffsetx>
 					<top>0</top>
-					<height>50</height>
+					<height>70</height>
 					<label>$LOCALIZE[40219]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font25_title</font>
+					<font>font28_title</font>
 					<textcolor>grey</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -439,10 +425,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="400">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>400</onup>
@@ -467,10 +453,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="500">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>500</onup>
@@ -521,10 +507,6 @@
 					<onclick>Skin.ToggleSetting(Skin.ToggleDebug)</onclick>
 					<onclick>Skin.ToggleDebug</onclick>
 				</control>
-				<control type="image" id="5001">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="button" id="507">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
@@ -532,10 +514,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="800">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>800</onup>
@@ -627,10 +609,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="900">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>900</onup>
@@ -761,10 +743,6 @@
 					<label>  ∟$LOCALIZE[40158]</label>
 					<label2>$VAR[SettingsForcedViewsMusicVideosVar]</label2>
 				</control>
-				<control type="image" id="9001">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="button" id="915">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
@@ -772,10 +750,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="700">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>700</onup>
@@ -851,10 +829,6 @@
 					<onclick>Skin.ToggleSetting(background_showvisualisation)</onclick>
 					<selected>!Skin.HasSetting(background_showvisualisation)</selected>
 				</control>
-				<control type="image" id="7001">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="button" id="710">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
@@ -862,10 +836,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="600">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>600</onup>
@@ -935,10 +909,6 @@
 					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=recordlabels&amp;type=resource.images.recordlabels)</onclick>
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 				</control>
-				<control type="image" id="6001">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="button" id="612">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
@@ -946,10 +916,10 @@
 				</control>
 			</control>
 			<control type="grouplist" id="1000">
-				<top>160</top>
+				<top>168</top>
 				<left>0</left>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
 				<onup>1000</onup>
@@ -959,11 +929,11 @@
 				<control type="label" id="100011">
 					<textoffsetx>45</textoffsetx>
 					<top>0</top>
-					<height>50</height>
+					<height>70</height>
 					<label>$LOCALIZE[40000]</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font25_title</font>
+					<font>font28_title</font>
 					<textcolor>grey</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -1056,18 +1026,14 @@
                     <onclick condition="Skin.String(search_background)">Skin.Reset(search_background)</onclick>
                     <visible>!Skin.HasSetting(enable_search_background)</visible>
                 </control>
-				<control type="image" id="100012">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="label" id="100013">
 					<textoffsetx>45</textoffsetx>
 					<top>0</top>
-					<height>50</height>
+					<height>70</height>
 					<label>Widgets</label>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font25_title</font>
+					<font>font28_title</font>
 					<textcolor>grey</textcolor>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -1122,10 +1088,6 @@
 					<onclick>Skin.ToggleSetting(enable_settingswidget)</onclick>
 					<selected>!Skin.HasSetting(enable_settingswidget)</selected>
 				</control>
-				<control type="image" id="10021">
-					<height>3</height>
-					<texture colordiffuse="AAAAAAAA" border="3">dialogs/separator-grey.png</texture>
-				</control>
 				<control type="button" id="10022">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
@@ -1137,7 +1099,7 @@
 				<left>0</left>
 				<top>160</top>
 				<right>0</right>
-				<height>3</height>
+				<height>2</height>
 				<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/separator-grey.png</texture>
 			</control>
 			<control type="image">
@@ -1145,7 +1107,7 @@
 				<left>0</left>
 				<bottom>134</bottom>
 				<right>0</right>
-				<height>3</height>
+				<height>2</height>
 				<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/separator-grey.png</texture>
 			</control>
 		</control>
@@ -1159,34 +1121,34 @@
 			<control type="list" id="9000">
 				<description>button area</description>
 				<left>0</left>
-				<top>160</top>
+				<top>168</top>
 				<width>470</width>
-				<height>720</height>
+				<height>700</height>
 				<onleft>10000</onleft>
 				<onright>10000</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
-				<itemlayout height="72" width="470">
+				<itemlayout height="70" width="470">
 					<control type="label">
 						<textoffsetx>30</textoffsetx>
 						<width>470</width>
-						<height>72</height>
+						<height>70</height>
 						<label>$INFO[ListItem.Label]</label>
 						<font>font30_title</font>
 						<aligny>center</aligny>
 					</control>
 				</itemlayout>
-				<focusedlayout height="72" width="470">
+				<focusedlayout height="70" width="470">
 					<control type="image">
 						<width>470</width>
-						<height>72</height>
+						<height>70</height>
 						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 						<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
 						<textoffsetx>30</textoffsetx>
 						<width>470</width>
-						<height>72</height>
+						<height>70</height>
 						<font>font30_title</font>
 						<aligny>center</aligny>
 						<scroll>true</scroll>

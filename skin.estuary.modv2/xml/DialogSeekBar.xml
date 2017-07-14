@@ -3,7 +3,7 @@
 	<visible>Player.Seeking | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsActive(fullscreeninfo) | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | !String.IsEmpty(Player.SeekNumeric) | !String.IsEmpty(PVR.ChannelNumberInput)</visible>
 	<visible>![Window.IsActive(sliderdialog) | Window.IsActive(pvrosdchannels)]</visible>
 	<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)</visible>
-	<visible>![Skin.HasSetting(hide_osdwithpause) + Player.Paused + !Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(MusicVisualisation.xml)]</visible>
+	<visible>![Skin.HasSetting(hide_osdwithpause) + Player.Paused + !Window.IsVisible(VideoOSD.xml) + Window.IsVisible(VideoFullScreen.xml)]</visible>
 	<include>Animation_BottomSlide</include>
 	<depth>DepthOSD</depth>
 	<zorder>0</zorder>

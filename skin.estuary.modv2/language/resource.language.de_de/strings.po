@@ -1859,9 +1859,14 @@ msgstr "Icon Liste"
 #: /xml/SkinSettings.xml
 msgctxt "#40229"
 msgid "Configure personal API keys"
-msgstr ""
+msgstr "Persönliche API Schlüssel konfigurieren"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40230"
 msgid "Hide OSD when video is paused"
+msgstr "OSD in pausierten Videos ausblenden"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40231"
+msgid "Show scrolling text"
 msgstr ""

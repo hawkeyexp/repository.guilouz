@@ -176,9 +176,9 @@
 			<include>OpenClose_Right</include>
 			<control type="grouplist" id="90001">
 				<left>0</left>
-				<top>160</top>
+				<top>168</top>
 				<right>0</right>
-				<bottom>140</bottom>
+				<bottom>142</bottom>
 				<onleft>211</onleft>
 				<onright>60</onright>
 				<onup>90001</onup>

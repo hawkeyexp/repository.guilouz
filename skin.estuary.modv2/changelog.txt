@@ -3,6 +3,7 @@
 • Add possibility to hide OSD when video is paused
 • Add 4K HDR flag icon (filename must contain 'HDR')
 • Add shortcut in skin settings to configure personal API key
+• Add scrolling text on music visualisation (thanks to jurialmunkey)
 • Improvements
 • Minor fixes
 

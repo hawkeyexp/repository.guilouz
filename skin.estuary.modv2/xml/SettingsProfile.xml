@@ -6,17 +6,17 @@
 		<include>DefaultBackground</include>
 		<control type="group" id="9100">
 			<include>OpenClose_Right</include>
-			<left>472</left>
+			<left>470</left>
 			<control type="image">
 				<top>160</top>
 				<right>0</right>
-				<height>3</height>
+				<height>2</height>
 				<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/separator-grey.png</texture>
 			</control>
 			<control type="image">
 				<bottom>134</bottom>
 				<right>0</right>
-				<height>3</height>
+				<height>2</height>
 				<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/separator-grey.png</texture>
 			</control>
 			<control type="panel" id="2">
@@ -26,9 +26,10 @@
 				<right>0</right>
 				<bottom>137</bottom>
 				<onleft>9000</onleft>
-				<onright>9000</onright>
+				<onright>60</onright>
 				<onup>2</onup>
 				<ondown>2</ondown>
+				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="390" width="354">
 					<control type="image">
@@ -144,8 +145,8 @@
 			<control type="grouplist" id="9001">
 				<visible>Container(9000).Hasfocus(1)</visible>
 				<right>0</right>
-				<height>735</height>
-				<top>163</top>
+				<top>168</top>
+				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>9001</onup>
@@ -170,15 +171,15 @@
 			</include>
 			<control type="list" id="9000">
 				<left>0</left>
-				<top>160</top>
+				<top>168</top>
 				<width>470</width>
-				<height>567</height>
+				<height>700</height>
 				<onleft>9100</onleft>
 				<onright>9100</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<scrolltime>300</scrolltime>
-				<itemlayout height="90" width="470">
+				<itemlayout height="70" width="470">
 					<control type="label">
 						<left>30</left>
 						<right>30</right>
@@ -188,7 +189,7 @@
 						<aligny>center</aligny>
 					</control>
 				</itemlayout>
-				<focusedlayout height="90" width="470">
+				<focusedlayout height="70" width="470">
 					<control type="image">
 						<right>0</right>
 						<bottom>0</bottom>
@@ -214,6 +215,28 @@
 						<icon></icon>
 					</item>
 				</content>
+			</control>
+		</control>
+		<control type="group">
+			<right>0</right>
+			<top>163</top>
+			<bottom>137</bottom>
+			<width>60</width>
+			<control type="scrollbar" id="60">
+				<right>0</right>
+				<top>0</top>
+				<bottom>0</bottom>
+				<width>12</width>
+				<orientation>vertical</orientation>
+				<texturesliderbackground />
+				<animation effect="slide" end="6,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">Conditional</animation>
+				<onleft condition="Container(9000).HasFocus(2)">2</onleft>
+				<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+				<animation effect="fade" start="0" end="100" delay="300" time="320">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
+				<hitrect x="0" y="0" w="60" h="100%" />
+				<visible>Container(9000).Hasfocus(2)</visible>
 			</control>
 		</control>
 		<include content="TopBar">

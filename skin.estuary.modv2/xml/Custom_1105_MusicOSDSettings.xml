@@ -52,6 +52,13 @@
 						<selected>Skin.HasSetting(hide_cdcase)</selected>
 						<onclick>Skin.ToggleSetting(hide_cdcase)</onclick>
 					</control>
+					<control type="radiobutton" id="50014">
+						<width>700</width>
+						<include>DialogSettingButton</include>
+						<label>$LOCALIZE[40231]</label>
+						<onclick>Skin.ToggleSetting(enable_scrollingtext)</onclick>
+						<selected>!Skin.HasSetting(enable_scrollingtext)</selected>
+					</control>
 					<control type="button" id="5004">
 						<width>700</width>
 						<include>DialogSettingButton</include>

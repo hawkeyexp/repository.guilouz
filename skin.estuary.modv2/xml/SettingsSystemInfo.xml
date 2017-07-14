@@ -96,7 +96,7 @@
 				<left>360</left>
 				<top>90</top>
 				<right>0</right>
-				<height>3</height>
+				<height>2</height>
 				<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/separator-grey.png</texture>
 			</control>
 			<control type="group">
@@ -106,7 +106,7 @@
 					<left>360</left>
 					<top>20</top>
 					<right>0</right>
-					<height>3</height>
+					<height>2</height>
 					<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/separator-grey.png</texture>
 				</control>
 				<control type="grouplist">
@@ -219,7 +219,7 @@
 			</include>
 			<control type="grouplist" id="9000">
 				<left>0</left>
-				<top>160</top>
+				<top>168</top>
 				<width>420</width>
 				<height>100%</height>
 				<onup>9000</onup>

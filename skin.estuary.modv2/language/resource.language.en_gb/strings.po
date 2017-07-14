@@ -1867,3 +1867,8 @@ msgstr ""
 msgctxt "#40230"
 msgid "Hide OSD when video is paused"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40231"
+msgid "Show scrolling text"
+msgstr ""

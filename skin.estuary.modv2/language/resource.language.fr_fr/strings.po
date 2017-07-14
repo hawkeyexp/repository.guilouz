@@ -1867,3 +1867,8 @@ msgstr "Configurer les clés API personnelles"
 msgctxt "#40230"
 msgid "Hide OSD when video is paused"
 msgstr "Masquer l'OSD lorsque la vidéo est mise en pause"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40231"
+msgid "Show scrolling text"
+msgstr "Afficher les textes défilants"
