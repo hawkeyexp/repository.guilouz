@@ -64,6 +64,12 @@
 				<ondown>100</ondown>
 				<pagecontrol>60</pagecontrol>
 				<visible>Container(9000).HasFocus(10)</visible>
+				<control type="radiobutton" id="105">
+					<label>$LOCALIZE[40230]</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(hide_osdwithpause)</selected>
+					<onclick>Skin.ToggleSetting(hide_osdwithpause)</onclick>
+				</control>
 				<control type="radiobutton" id="101">
 					<label>$LOCALIZE[40094]</label>
 					<include>DefaultSettingButton</include>
@@ -89,7 +95,7 @@
 				<control type="button" id="104">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(hide_osdwithpause)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">

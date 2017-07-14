@@ -1862,3 +1862,8 @@ msgstr "Liste d'icônes"
 msgctxt "#40229"
 msgid "Configure personal API keys"
 msgstr "Configurer les clés API personnelles"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40230"
+msgid "Hide OSD when video is paused"
+msgstr "Masquer l'OSD lorsque la vidéo est mise en pause"
