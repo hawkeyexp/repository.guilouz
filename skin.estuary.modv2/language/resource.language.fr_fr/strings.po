@@ -1188,8 +1188,8 @@ msgstr "Afficher le logo transparent sur les informations de la vidéo"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40095"
-msgid "Show CDArt"
-msgstr "Afficher le disque"
+msgid "Show CDArt on video infos"
+msgstr "Afficher le disque sur les informations de la vidéo"
 
 #: /xml/VideoOSD.xml
 msgctxt "#40096"

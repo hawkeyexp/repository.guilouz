@@ -1188,7 +1188,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40095"
-msgid "Show CDArt"
+msgid "Show CDArt on video infos"
 msgstr ""
 
 #: /xml/VideoOSD.xml
