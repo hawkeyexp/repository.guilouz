@@ -1809,22 +1809,6 @@
 								<visible>Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>95</width>
-								<height>95</height>
-								<texture colordiffuse="$VAR[SkinColorVar]">$INFO[ListItem.Icon]</texture>
-								<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
-							</control>
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>95</width>
-								<height>95</height>
-								<texture colordiffuse="$VAR[SkinColorVar]">$INFO[ListItem.Icon]</texture>
-								<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
-							</control>
-							<control type="image">
 								<left>71</left>
 								<top>69</top>
 								<width>22</width>
@@ -1839,7 +1823,7 @@
 								<height>95</height>
 								<texture colordiffuse="51FFFFFF">colors/black.png</texture>
 								<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000) | System.HasActiveModalDialog">Conditional</animation>
-								<visible>!Skin.HasSetting(EnableGradientColor)</visible>
+								<visible>!Skin.HasSetting(MinimizeMainMenu) + !Skin.HasSetting(EnableGradientColor)</visible>
 							</control>
 						</control>
 						<control type="image">
@@ -1848,6 +1832,7 @@
 							<width>95</width>
 							<height>95</height>
 							<texture>$INFO[ListItem.Icon]</texture>
+							<include>Animation_FocusBounce_Home</include>
 						</control>
 						<control type="image">
 							<left>71</left>
