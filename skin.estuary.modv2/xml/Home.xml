@@ -1932,6 +1932,70 @@
 						<param name="visible" value="Player.HasMedia" />
 					</include>
 				</control>
+				<control type="group">
+					<visible>!Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(EnableGradientColor)</visible>
+					<control type="image">
+						<top>120</top>
+						<left>32</left>
+						<width>80</width>
+						<height>80</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">buttons/roundbutton-fo-gradient.png</texture>
+						<visible>Control.HasFocus(804) | Control.HasFocus(802) | Control.HasFocus(801) | Control.HasFocus(803)</visible>
+						<animation effect="slide" end="-20,0" time="0" condition="Control.HasFocus(804) + Player.HasMedia">Conditional</animation>
+						<animation effect="slide" end="160,0" time="0" condition="Control.HasFocus(802) + !Player.HasMedia">Conditional</animation>
+						<animation effect="slide" end="100,0" time="0" condition="Control.HasFocus(802) + Player.HasMedia">Conditional</animation>
+						<animation effect="slide" end="320,0" time="0" condition="Control.HasFocus(801) + !Player.HasMedia">Conditional</animation>
+						<animation effect="slide" end="220,0" time="0" condition="Control.HasFocus(801) + Player.HasMedia">Conditional</animation>
+						<animation effect="slide" end="340,0" time="0" condition="Control.HasFocus(803) + Player.HasMedia">Conditional</animation>
+					</control>
+					<control type="image">
+						<top>140</top>
+						<left>52</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/power.png</texture>
+						<visible>Control.HasFocus(804)</visible>
+						<animation effect="slide" end="-20,0" time="0" condition="Control.HasFocus(804) + Player.HasMedia">Conditional</animation>
+					</control>
+					<control type="image">
+						<top>140</top>
+						<left>212</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/settings.png</texture>
+						<visible>Control.HasFocus(802)</visible>
+						<animation effect="slide" end="-60,0" time="0" condition="Control.HasFocus(802) + Player.HasMedia">Conditional</animation>
+					</control>
+					<control type="image">
+						<top>140</top>
+						<left>372</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/search.png</texture>
+						<visible>Control.HasFocus(801)</visible>
+						<animation effect="slide" end="-100,0" time="0" condition="Control.HasFocus(801) + Player.HasMedia">Conditional</animation>
+					</control>
+					<control type="image">
+						<top>140</top>
+						<left>392</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/now-playing/fullscreen.png</texture>
+						<visible>Control.HasFocus(803) + Player.HasMedia</visible>
+					</control>
+				</control>
+				<control type="image">
+					<top>108</top>
+					<left>0</left>
+					<width>95</width>
+					<height>80</height>
+					<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+					<visible>Skin.HasSetting(MinimizeMainMenu) + !Skin.HasSetting(EnableGradientColor) + [Control.HasFocus(804) | Control.HasFocus(802) | Control.HasFocus(801) | Control.HasFocus(803)]</visible>
+				</control>
 				<control type="grouplist" id="700">
 					<orientation>horizontal</orientation>
 					<left>0</left>
@@ -1949,7 +2013,7 @@
 						<param name="label" value="$LOCALIZE[33060]" />
 						<param name="height" value="95" />
 						<param name="width" value="95" />
-						<param name="texturefocus" value="buttons/roundbutton-fo2.png" />
+						<param name="texturefocus" value="" />
 						<param name="radioposx" value="28" />
 					</include>
 					<include content="IconButton">
@@ -1959,7 +2023,7 @@
 						<param name="label" value="$LOCALIZE[21417]" />
 						<param name="height" value="95" />
 						<param name="width" value="95" />
-						<param name="texturefocus" value="buttons/roundbutton-fo2.png" />
+						<param name="texturefocus" value="" />
 						<param name="radioposx" value="28" />
 					</include>
 					<include content="IconButton">
@@ -1969,7 +2033,7 @@
 						<param name="label" value="$LOCALIZE[137]" />
 						<param name="height" value="95" />
 						<param name="width" value="95" />
-						<param name="texturefocus" value="buttons/roundbutton-fo2.png" />
+						<param name="texturefocus" value="" />
 						<param name="radioposx" value="28" />
 					</include>
 					<include content="IconButton">
@@ -1980,9 +2044,64 @@
 						<param name="visible" value="Player.HasMedia" />
 						<param name="height" value="95" />
 						<param name="width" value="95" />
-						<param name="texturefocus" value="buttons/roundbutton-fo2.png" />
+						<param name="texturefocus" value="" />
 						<param name="radioposx" value="28" />
 					</include>
+				</control>
+				<control type="image">
+					<top>108</top>
+					<left>0</left>
+					<width>95</width>
+					<height>80</height>
+					<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+					<visible>Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(EnableGradientColor) + [Control.HasFocus(804) | Control.HasFocus(802) | Control.HasFocus(801) | Control.HasFocus(803)]</visible>
+				</control>
+				<control type="group">
+					<visible>Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(EnableGradientColor)</visible>
+					<control type="image">
+						<top>108</top>
+						<left>0</left>
+						<width>95</width>
+						<height>80</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+						<visible>Control.HasFocus(804) | Control.HasFocus(802) | Control.HasFocus(801) | Control.HasFocus(803)</visible>
+					</control>
+					<control type="image">
+						<top>128</top>
+						<left>28</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/power.png</texture>
+						<visible>Control.HasFocus(804)</visible>
+					</control>
+					<control type="image">
+						<top>128</top>
+						<left>28</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/settings.png</texture>
+						<visible>Control.HasFocus(802)</visible>
+					</control>
+					<control type="image">
+						<top>128</top>
+						<left>28</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/search.png</texture>
+						<visible>Control.HasFocus(801)</visible>
+					</control>
+					<control type="image">
+						<top>128</top>
+						<left>28</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/now-playing/fullscreen.png</texture>
+						<visible>Control.HasFocus(803) + Player.HasMedia</visible>
+					</control>
 				</control>
 				<control type="group">
 					<control type="image">
@@ -1990,7 +2109,7 @@
 						<top>195</top>
 						<width>14</width>
 						<height>14</height>
-						<texture flipx="true" colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
+						<texture flipx="true">overlays/arrowright.png</texture>
 						<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 						<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 						<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -2002,7 +2121,7 @@
 						<height>2</height>
 						<left>30</left>
 						<width>35</width>
-						<texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+						<texture>colors/white.png</texture>
 						<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 						<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 						<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -2014,7 +2133,7 @@
 						<top>195</top>
 						<width>14</width>
 						<height>14</height>
-						<texture colordiffuse="$VAR[SkinColorVar]">overlays/arrowright.png</texture>
+						<texture>overlays/arrowright.png</texture>
 						<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 						<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 						<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
@@ -2213,7 +2332,7 @@
 				<aligny>center</aligny>
 				<font>font30_title</font>
 				<textcolor>$VAR[SkinColorVar]</textcolor>
-				<label>$LOCALIZE[31000]</label>
+				<label>$LOCALIZE[244]</label>
 				<visible>Control.HasFocus(803) + Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(TopNameItem)</visible>
 				<include>OpenClose_Right</include>
 			</control>
