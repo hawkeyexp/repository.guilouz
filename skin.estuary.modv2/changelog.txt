@@ -1,5 +1,6 @@
 [B]2.6.2[/B]
 • Fix duplicate ratings in list views
+• Minor fixes
 
 [B]2.6.1[/B]
 • Changes for Kodi 18

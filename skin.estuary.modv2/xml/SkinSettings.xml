@@ -16,8 +16,8 @@
 				<bottom>142</bottom>
 				<onleft>9000</onleft>
 				<onright>60</onright>
-				<onup>100</onup>
-				<ondown>100</ondown>
+				<onup>110</onup>
+				<ondown>110</ondown>
 				<pagecontrol>60</pagecontrol>
 				<visible>Container(9000).HasFocus(11)</visible>
 				<control type="radiobutton" id="111">
