@@ -284,6 +284,7 @@
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
 				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]] + ![String.IsEqual(listitem.dbtype,episode) + Window.IsVisible(MyVideoNav.xml) + [String.IsEqual(Container.ViewMode,$LOCALIZE[31102]) | String.IsEqual(Container.ViewMode,$LOCALIZE[31101])]]</visible>
+				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
 			</control>
 			<control type="label">
 				<left>31</left>
@@ -790,11 +791,12 @@
 				<visible>[Skin.HasSetting(enable_LibraryDiscArt) + !Window.IsVisible(Home)] | [Skin.HasSetting(enable_HomeDiscArt) + Window.IsVisible(Home)]</visible>
 				<visible>$PARAM[focused]</visible>
 				<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
+				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
 				<animation effect="slide" start="0,50" end="0,0" time="300" tween="cubic" easing="out" reversible="false">Focus</animation>
 				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 				<animation effect="slide" end="56,0" time="0" condition="Window.IsVisible(Home)">Conditional</animation>
 				<animation effect="slide" end="11,0" time="0" condition="Control.IsVisible(54) | [String.IsEqual(Container.ViewMode,$LOCALIZE[31101]) + [Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogKeyboard.xml) | Window.IsVisible(DialogConfirm.xml) | Window.IsVisible(DialogVideoInfo.xml)]]">Conditional</animation>
-				<animation effect="slide" end="-57,0" time="0" condition="Window.IsVisible(script-globalsearch-main.xml)">Conditional</animation>
+				<animation effect="slide" end="-46,0" time="0" condition="Window.IsVisible(script-globalsearch-main.xml)">Conditional</animation>
 				<control type="image">
 					<right>-6</right>
 					<top>0</top>

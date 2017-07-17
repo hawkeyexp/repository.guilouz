@@ -23,6 +23,7 @@
 				<animation effect="fade" start="100" end="70" time="0" condition="true">Conditional</animation>
 				<animation effect="fade" start="100" end="0" time="240" condition="Window.IsVisible(fullscreenvideo)">Conditional</animation>
 				<visible>Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)</visible>
+				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)</visible>
 			</control>
 			<control type="group">
 				<visible>![Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)]</visible>
@@ -62,6 +63,7 @@
 			</control>
 			<control type="group">
 				<visible>Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)</visible>
+				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)</visible>
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
 				<top>168</top>

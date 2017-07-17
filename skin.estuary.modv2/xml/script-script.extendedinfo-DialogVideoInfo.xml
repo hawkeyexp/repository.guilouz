@@ -1112,6 +1112,14 @@
 										<include>Animation_FocusTextureFade</include>
 									</control>
 									<control type="image">
+										<width>316</width>
+										<height>200</height>
+										<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient2.png</texture>
+										<bordersize>20</bordersize>
+										<include>Animation_FocusTextureFade</include>
+										<visible>Skin.HasSetting(EnableGradientColor)</visible>
+									</control>
+									<control type="image">
 										<centertop>74</centertop>
 										<left>58</left>
 										<width>200</width>
@@ -1212,6 +1220,14 @@
 										<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 										<bordersize>20</bordersize>
 										<include>Animation_FocusTextureFade</include>
+									</control>
+									<control type="image">
+										<width>316</width>
+										<height>200</height>
+										<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient2.png</texture>
+										<bordersize>20</bordersize>
+										<include>Animation_FocusTextureFade</include>
+										<visible>Skin.HasSetting(EnableGradientColor)</visible>
 									</control>
 									<control type="image">
 										<centertop>74</centertop>
@@ -1318,6 +1334,16 @@
 										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
 									</control>
 									<control type="image">
+										<left>20</left>
+										<top>20</top>
+										<width>160</width>
+										<height>180</height>
+										<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient2.png</texture>
+										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
+										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
+										<visible>Skin.HasSetting(EnableGradientColor)</visible>
+									</control>
+									<control type="image">
 										<top>50</top>
 										<width>200</width>
 										<height>70</height>
@@ -1403,6 +1429,16 @@
 										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
 										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
 									</control>
+									<control type="image">
+										<left>20</left>
+										<top>20</top>
+										<width>240</width>
+										<height>60</height>
+										<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient2.png</texture>
+										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
+										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
+										<visible>Skin.HasSetting(EnableGradientColor)</visible>
+									</control>
 									<control type="label">
 										<left>20</left>
 										<top>0</top>
@@ -1480,6 +1516,16 @@
 										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
 										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
 									</control>
+									<control type="image">
+										<left>20</left>
+										<top>20</top>
+										<width>590</width>
+										<height>360</height>
+										<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient2.png</texture>
+										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
+										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
+										<visible>Skin.HasSetting(EnableGradientColor)</visible>
+									</control>
 									<control type="textbox">
 										<left>40</left>
 										<top>40</top>
@@ -1555,6 +1601,16 @@
 										<texture border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texture>
 										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
 										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
+									</control>
+									<control type="image">
+										<left>20</left>
+										<top>20</top>
+										<width>240</width>
+										<height>60</height>
+										<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient2.png</texture>
+										<animation effect="fade" start="0" end="100" time="160">Focus</animation>
+										<animation effect="fade" start="0" end="100" time="0">UnFocus</animation>
+										<visible>Skin.HasSetting(EnableGradientColor)</visible>
 									</control>
 									<control type="label">
 										<left>20</left>
@@ -1671,6 +1727,17 @@
 										<bordertexture border="21">overlays/shadow.png</bordertexture>
 										<bordersize>20</bordersize>
 										<include>Animation_FocusTextureFade</include>
+									</control>
+									<control type="image">
+										<left>10</left>
+										<top>-14</top>
+										<width>622</width>
+										<height>371</height>
+										<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+										<bordertexture border="21">overlays/shadow.png</bordertexture>
+										<bordersize>20</bordersize>
+										<include>Animation_FocusTextureFade</include>
+										<visible>Skin.HasSetting(EnableGradientColor)</visible>
 									</control>
 									<control type="image">
 										<left>15</left>
