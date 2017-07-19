@@ -5,13 +5,13 @@
 	<controls>
 		<control type="group">
 			<centertop>50%</centertop>
-			<height>870</height>
+			<height>920</height>
 			<centerleft>50%</centerleft>
 			<width>1820</width>
 			<include>Animation_DialogPopupVisible</include>
 			<include content="DialogBackgroundCommons">
 				<param name="width" value="1820" />
-				<param name="height" value="870" />
+				<param name="height" value="920" />
 				<param name="header_label" value="" />
 				<param name="header_id" value="2" />
 			</include>
@@ -20,7 +20,7 @@
 				<left>29</left>
 				<top>80</top>
 				<width>400</width>
-				<height>750</height>
+				<height>790</height>
 				<itemgap>-25</itemgap>
 				<orientation>vertical</orientation>
 				<onleft>9000</onleft>
@@ -42,7 +42,7 @@
 				<left>410</left>
 				<top>80</top>
 				<width>1100</width>
-				<height>790</height>
+				<height>830</height>
 				<texture border="40">buttons/dialogbutton-nofo.png</texture>
 			</control>
 			<control type="grouplist" id="5">
@@ -50,7 +50,7 @@
 				<left>429</left>
 				<top>100</top>
 				<width>1060</width>
-				<height>750</height>
+				<height>790</height>
 				<onleft>3</onleft>
 				<onright>9000</onright>
 				<onup>5</onup>

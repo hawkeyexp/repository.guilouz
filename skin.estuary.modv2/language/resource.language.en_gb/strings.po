@@ -1872,3 +1872,13 @@ msgstr ""
 msgctxt "#40231"
 msgid "Show scrolling text"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40232"
+msgid "Scrapers ratings"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40233"
+msgid "My ratings"
+msgstr ""

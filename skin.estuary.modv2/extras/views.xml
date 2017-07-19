@@ -10,7 +10,7 @@
 	<view id="Wall" value="500" languageid="31102" type="movies,setmovies,sets,tvshows,seasons,episodes,musicvideos,artists,albums,pictures" />
 	<view id="ThumbsWall" value="504" languageid="40015" type="movies,setmovies,sets,tvshows,seasons" />
 	<view id="Banner" value="501" languageid="20020" type="tvshows" />
-	<view id="FanArt" value="502" languageid="20445" type="movies,setmovies,sets,tvshows,seasons" />
+	<view id="FanArt" value="502" languageid="20445" type="movies,setmovies,sets,tvshows,seasons,episodes" />
 	<view id="Gallery" value="503" languageid="40005" type="movies,setmovies,sets,tvshows,episodes" />
 	<view id="Mosaic" value="506" languageid="40017" type="movies,setmovies,sets,tvshows,seasons,musicvideos,artists,albums,pictures" />
 	<view id="Mosaic_Vertical" value="507" languageid="40146" type="movies,setmovies,sets,tvshows,seasons,musicvideos,artists,albums,pictures" />

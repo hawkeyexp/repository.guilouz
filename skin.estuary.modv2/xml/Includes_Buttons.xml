@@ -75,6 +75,7 @@
 		<aligny>center</aligny>
 		<font>font25_title</font>
 		<textcolor>grey</textcolor>
+		<scroll>true</scroll>
 	</include>
 	<include name="SettingsItemCommon">
 		<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
