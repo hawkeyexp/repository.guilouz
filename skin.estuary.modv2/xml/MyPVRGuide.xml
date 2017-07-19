@@ -355,12 +355,12 @@
 						<visible>Player.HasVideo</visible>
 					</control>
 					<control type="image">
-						<left>10</left>
-						<width>240</width>
-						<height>200</height>
-						<aspectratio align="right">keep</aspectratio>
+						<left>30</left>
+						<width>242</width>
+						<height>202</height>
 						<fadetime>400</fadetime>
-						<texture fallback="DefaultTVGuide.png">$INFO[ListItem.Icon]</texture>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture fallback="DefaultTVGuide.png">$VAR[PVRArtworksVar]</texture>						
 						<visible>!Player.HasVideo</visible>
 					</control>
 					<control type="label">

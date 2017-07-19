@@ -1,4 +1,5 @@
 [B]2.6.2[/B]
+• Add support for Skin Helper Service PVR Artworks
 • Enable 'Fanart' view for episodes
 • Update thumbs previews for views
 • Fix duplicate ratings in list views

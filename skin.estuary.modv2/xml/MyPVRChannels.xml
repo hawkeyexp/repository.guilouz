@@ -319,7 +319,7 @@
 					<left>0</left>
 					<top>202</top>
 					<control type="progress">
-						<top>125</top>
+						<top>128</top>
 						<width>520</width>
 						<height>12</height>
 						<colordiffuse>88FFFFFF</colordiffuse>
@@ -327,13 +327,13 @@
 						<info>ListItem.Progress</info>
 					</control>
 					<control type="label">
-						<top>82</top>
+						<top>85</top>
 						<width>560</width>
 						<height>262</height>
 						<label>$INFO[ListItem.StartTime]</label>
 					</control>
 					<control type="label">
-						<top>82</top>
+						<top>85</top>
 						<width>520</width>
 						<height>262</height>
 						<align>right</align>
@@ -366,10 +366,10 @@
 				<control type="image">
 					<left>540</left>
 					<top>122</top>
-					<width>240</width>
+					<width>290</width>
 					<height>220</height>
-					<aspectratio align="right">keep</aspectratio>
-					<texture fallback="DefaultTVShows.png">$INFO[Listitem.Icon]</texture>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<texture fallback="DefaultTVGuide.png">$VAR[PVRArtworksVar]</texture>
 					<fadetime>200</fadetime>
 				</control>
 				<control type="textbox">
