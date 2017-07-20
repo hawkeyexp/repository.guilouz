@@ -1904,6 +1904,7 @@
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),505)">$LOCALIZE[40016]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),500)">$LOCALIZE[31102]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),504)">$LOCALIZE[40015]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),501)">$LOCALIZE[20020]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),502)">$LOCALIZE[20445]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),503)">$LOCALIZE[40005]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),506)">$LOCALIZE[40017]</value>
@@ -2020,6 +2021,7 @@
 		<value condition="Container.Content(movies) + Control.HasFocus(11116)">special://skin/extras/views/movies/55.png</value>
 		<value condition="Container.Content(movies) + Control.HasFocus(11117)">special://skin/extras/views/movies/500.png</value>
 		<value condition="Container.Content(movies) + Control.HasFocus(11118)">special://skin/extras/views/movies/504.png</value>
+		<value condition="Container.Content(movies) + Control.HasFocus(11119)">special://skin/extras/views/movies/501.png</value>
 		<value condition="Container.Content(movies) + Control.HasFocus(11120)">special://skin/extras/views/movies/502.png</value>
 		<value condition="Container.Content(movies) + Control.HasFocus(11121)">special://skin/extras/views/movies/503.png</value>
 		<value condition="Container.Content(movies) + Control.HasFocus(11122)">special://skin/extras/views/movies/506.png</value>

@@ -1,6 +1,8 @@
 [B]2.6.2[/B]
 • Add support for Skin Helper Service PVR Artworks
 • Enable 'Fanart' view for episodes
+• Enable 'Banner' view for movies
+• Improve 'Banner' view 
 • Update thumbs previews for views
 • Fix duplicate ratings in list views
 • Improvements

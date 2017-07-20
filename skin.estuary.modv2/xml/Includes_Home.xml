@@ -936,16 +936,25 @@
 				<onright/>
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
-				<itemlayout height="185" width="680">
+				<itemlayout height="210" width="680">
 					<control type="group">
+						<control type="image">
+							<left>89</left>
+							<top>0</top>
+							<width>672</width>
+							<height>200</height>
+							<texture background="true">dialogs/dialog-bg-nobo.png</texture>
+							<aspectratio aligny="center" align="center">scale</aspectratio>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>850</width>
 							<height>157</height>
-							<texture fallback="dialogs/dialog-bg-nobo.png" background="true">$INFO[ListItem.Art(banner)]</texture>
+							<texture background="true">$INFO[ListItem.Art(banner)]</texture>
 							<aspectratio aligny="center" align="center">keep</aspectratio>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>!String.IsEmpty(ListItem.Art(banner))</visible>
 						</control>
@@ -954,52 +963,41 @@
 							<top>0</top>
 							<width>672</width>
 							<height>157</height>
-							<texture fallback="dialogs/dialog-bg-nobo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+							<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 							<aspectratio aligny="center" align="center">scale</aspectratio>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
 						</control>
 						<control type="image">
-							<left>109</left>
-							<top>57</top>
-							<width>632</width>
-							<height>80</height>
-							<texture colordiffuse="B3FFFFFF">overlays/overlayfade.png</texture>
+							<left>120</left>
+							<top>25</top>
+							<width>276</width>
+							<height>107</height>
+							<texture background="true">$VAR[LibraryClearLogoVar]</texture>
+							<aspectratio aligny="center" align="left">keep</aspectratio>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
 						</control>
 						<control type="label">
-							<left>119</left>
-							<top>60</top>
-							<width>612</width>
-							<height>117</height>
+							<left>154</left>
+							<top>140</top>
+							<width>576</width>
+							<height>43</height>
 							<label>$INFO[ListItem.TVShowTitle,, - ]$INFO[ListItem.Label]</label>
-							<font>font52_title</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<align>center</align>
-							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
+							<font>font25_title</font>
+							<align>left</align>
 							<animation effect="slide" end="0,-20" time="0" condition="String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]">Condtional</animation>
 						</control>
 						<control type="image">
-							<left>109</left>
-							<top>77</top>
-							<width>160</width>
-							<height>60</height>
-							<texture>overlays/overlay-bg.png</texture>
-							<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
-							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
-						</control>
-						<control type="image">
 							<left>115</left>
-							<top>100</top>
+							<top>143</top>
 							<width>32</width>
 							<height>32</height>
-							<texture>$VAR[WallWatchedIconVar]</texture>
+							<texture>$VAR[ListWatchedIconVar]</texture>
 							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 						</control>
 						<control type="image">
 							<left>109</left>
-							<top>146</top>
+							<top>189</top>
 							<width>632</width>
 							<height>4</height>
 							<texture>dialogs/back.png</texture>
@@ -1007,7 +1005,7 @@
 						</control>
 						<control type="progress">
 							<left>109</left>
-							<top>118</top>
+							<top>161</top>
 							<width>632</width>
 							<height>1</height>
 							<texturebg></texturebg>
@@ -1019,7 +1017,7 @@
 							<left>109</left>
 							<top>20</top>
 							<width>632</width>
-							<height>117</height>
+							<height>160</height>
 							<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0)</visible>
@@ -1037,7 +1035,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout height="185" width="680">
+				<focusedlayout height="210" width="680">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
@@ -1050,7 +1048,7 @@
 							<left>105</left>
 							<top>16</top>
 							<width>640</width>
-							<height>125</height>
+							<height>170</height>
 							<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 							<include>Animation_FocusTextureFade</include>
 						</control>
@@ -1058,19 +1056,28 @@
 							<left>105</left>
 							<top>16</top>
 							<width>640</width>
-							<height>125</height>
+							<height>170</height>
 							<texture border="8" colordiffuse="$VAR[GradientColorVar]">buttons/thumbnail_focused-gradient2.png</texture>
 							<include>Animation_FocusTextureFade</include>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+						<control type="image">
+							<left>89</left>
+							<top>0</top>
+							<width>672</width>
+							<height>200</height>
+							<texture background="true">dialogs/dialog-bg-nobo.png</texture>
+							<aspectratio aligny="center" align="center">scale</aspectratio>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>850</width>
 							<height>157</height>
-							<texture fallback="dialogs/dialog-bg-nobo.png" background="true">$INFO[ListItem.Art(banner)]</texture>
+							<texture background="true">$INFO[ListItem.Art(banner)]</texture>
 							<aspectratio aligny="center" align="center">keep</aspectratio>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>!String.IsEmpty(ListItem.Art(banner))</visible>
 						</control>
@@ -1079,48 +1086,37 @@
 							<top>0</top>
 							<width>672</width>
 							<height>157</height>
-							<texture fallback="dialogs/dialog-bg-nobo.png" background="true">$INFO[ListItem.Art(fanart)]</texture>
+							<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 							<aspectratio aligny="center" align="center">scale</aspectratio>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
 						</control>
 						<control type="image">
-							<left>109</left>
-							<top>57</top>
-							<width>632</width>
-							<height>80</height>
-							<texture colordiffuse="B3FFFFFF">overlays/overlayfade.png</texture>
+							<left>120</left>
+							<top>25</top>
+							<width>276</width>
+							<height>107</height>
+							<texture background="true">$VAR[LibraryClearLogoVar]</texture>
+							<aspectratio aligny="center" align="left">keep</aspectratio>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
 						</control>
 						<control type="label">
-							<left>119</left>
-							<top>60</top>
-							<width>612</width>
-							<height>117</height>
+							<left>154</left>
+							<top>140</top>
+							<width>576</width>
+							<height>43</height>
 							<label>$INFO[ListItem.TVShowTitle,, - ]$INFO[ListItem.Label]</label>
-							<font>font52_title</font>
-							<shadowcolor>text_shadow</shadowcolor>
-							<align>center</align>
+							<font>font25_title</font>
+							<align>left</align>
 							<scroll>true</scroll>
-							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
 							<animation effect="slide" end="0,-20" time="0" condition="String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]">Condtional</animation>
 						</control>
 						<control type="image">
-							<left>109</left>
-							<top>77</top>
-							<width>160</width>
-							<height>60</height>
-							<texture>overlays/overlay-bg.png</texture>
-							<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
-							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
-						</control>
-						<control type="image">
 							<left>115</left>
-							<top>100</top>
+							<top>143</top>
 							<width>32</width>
 							<height>32</height>
-							<texture>$VAR[WallWatchedIconVar]</texture>
+							<texture>$VAR[ListWatchedIconVar]</texture>
 							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 						</control>
 						<control type="group">
@@ -1130,7 +1126,7 @@
 						</control>
 						<control type="image">
 							<left>109</left>
-							<top>146</top>
+							<top>189</top>
 							<width>632</width>
 							<height>4</height>
 							<texture>dialogs/back.png</texture>
@@ -1138,7 +1134,7 @@
 						</control>
 						<control type="progress">
 							<left>109</left>
-							<top>118</top>
+							<top>161</top>
 							<width>632</width>
 							<height>1</height>
 							<texturebg></texturebg>
