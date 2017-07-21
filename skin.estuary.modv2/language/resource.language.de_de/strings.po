@@ -1880,3 +1880,18 @@ msgstr "Bewertungen des Informationsanbieters"
 msgctxt "#40233"
 msgid "My ratings"
 msgstr "Meine Bewertungen"
+
+#: /xml/Variables.xml
+msgctxt "#40234"
+msgid "win"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40235"
+msgid "wins"
+msgstr ""
+
+#: /xml/DialogVideoInfo.xml
+msgctxt "#40236"
+msgid "Oscars"
+msgstr ""

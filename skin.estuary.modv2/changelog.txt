@@ -1,3 +1,8 @@
+[B]2.6.3[/B]
+• Add number of oscars on video info (thanks to jurialmunkey)
+• Improve 'Wall (thumbnails)' view
+• Minor fixes
+
 [B]2.6.2[/B]
 • Add support for Skin Helper Service PVR Artworks
 • Enable 'Fanart' view for episodes

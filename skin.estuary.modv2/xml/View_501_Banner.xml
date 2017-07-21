@@ -30,7 +30,7 @@
 							<top>0</top>
 							<width>860</width>
 							<height>238</height>
-							<texture fallback="" background="true">dialogs/dialog-bg-nobo.png</texture>
+							<texture background="true">dialogs/dialog-bg-nobo.png</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -49,7 +49,7 @@
 							<top>0</top>
 							<width>860</width>
 							<height>195</height>
-							<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+							<texture background="true" fallback="DefaultBanner.png">$INFO[ListItem.Art(fanart)]</texture>
 							<aspectratio aligny="center" align="center">scale</aspectratio>
 							<bordersize>20</bordersize>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
@@ -175,7 +175,7 @@
 							<top>0</top>
 							<width>860</width>
 							<height>238</height>
-							<texture fallback="" background="true">dialogs/dialog-bg-nobo.png</texture>
+							<texture background="true">dialogs/dialog-bg-nobo.png</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -194,7 +194,7 @@
 							<top>0</top>
 							<width>860</width>
 							<height>195</height>
-							<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+							<texture background="true" fallback="DefaultBanner.png">$INFO[ListItem.Art(fanart)]</texture>
 							<aspectratio aligny="center" align="center">scale</aspectratio>
 							<bordersize>20</bordersize>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>

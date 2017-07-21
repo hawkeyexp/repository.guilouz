@@ -362,7 +362,7 @@
 					<orientation>vertical</orientation>
 					<left>770</left>
 					<top>488</top>
-					<height>355</height>
+					<height>358</height>
 					<itemgap>-8</itemgap>
 					<ondown>5000</ondown>
 					<onup>50</onup>
@@ -445,6 +445,12 @@
 						<param name="control_id" value="164" />
 						<param name="label" value="$LOCALIZE[563] TVDB : [COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TVDB)]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.TVDB), (, $LOCALIZE[40027])][/COLOR]" />
 						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TVDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.TVDB))] + [Container.Content(tvshows) |Container.Content(seasons) | Container.Content(episodes)]" />
+						<param name="textcolor" value="$VAR[SkinColorVar]" />
+					</include>
+					<include content="InfoDialogMetadata">
+						<param name="control_id" value="167" />
+						<param name="label" value="$LOCALIZE[40236] : [COLOR white]$VAR[OscarsVar][/COLOR]" />
+						<param name="visible" value="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),Oscar)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata">
