@@ -167,10 +167,10 @@
                             <include content="OSDButton">
                                 <param name="texture" value="osd/fullscreen/buttons/extendedinfo.png"/>
                             </include>
-                            <onclick condition="!Skin.HasSetting(disable_PauseOnExtraInfos)">PlayerControl(Play)</onclick>
+                            <onclick>PlayerControl(Play)</onclick>
                             <onclick>RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[VideoPlayer.Title])</onclick>
                             <visible>!VideoPlayer.Content(livetv) + !VideoPlayer.HasMenu + !VideoPlayer.Content(musicvideos)</visible>
-                            <visible>VideoPlayer.Content(movies)</visible>
+                            <visible>VideoPlayer.Content(movies) + System.HasAddon(script.extendedinfo)</visible>
                     </control>
 					<control type="radiobutton" id="70013">
                             <include content="OSDButton">
@@ -179,7 +179,7 @@
                             <onclick>PlayerControl(Play)</onclick>
                             <onclick>RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[VideoPlayer.TvShowTitle])</onclick>
                             <visible>!VideoPlayer.Content(livetv) + !VideoPlayer.HasMenu + !VideoPlayer.Content(musicvideos)</visible>
-                            <visible>VideoPlayer.Content(episodes)</visible>
+                            <visible>VideoPlayer.Content(episodes) + System.HasAddon(script.extendedinfo)</visible>
                     </control>
                     <control type="radiobutton" id="70014">
                             <include content="OSDButton">
