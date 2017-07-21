@@ -987,6 +987,15 @@
 			</control>
 			<control type="image">
 				<left>35</left>
+				<top>242</top>
+				<width>160</width>
+				<height>60</height>
+				<texture>overlays/overlay-bg.png</texture>
+				<visible>ListItem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<visible>!Control.IsVisible(504)</visible>
+			</control>
+			<control type="image">
+				<left>35</left>
 				<top>270</top>
 				<width>32</width>
 				<height>32</height>
@@ -1001,6 +1010,32 @@
 				<texture>$VAR[ListWatchedIconVar]</texture>
 				<visible>Control.IsVisible(504)</visible>
 			</control>
+			<control type="group">
+				<visible>[Container.Content(tvshows) | Container.Content(seasons)] + !Control.IsVisible(504)</visible>
+				<control type="image">
+					<right>15</right>
+					<top>242</top>
+					<width>220</width>
+					<height>60</height>
+					<texture flipx="true">overlays/overlay-bg.png</texture>
+				</control>
+				<control type="label">
+					<left>298</left>
+					<top>270</top>
+					<width>244</width>
+					<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</label>
+					<font>font20_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<align>right</align>
+				</control>
+				<control type="image">
+					<left>552</left>
+					<top>273</top>
+					<width>24</width>
+					<height>24</height>
+					<texture>lists/played-total.png</texture>
+				</control>
+			</control>	
 			<control type="image">
 				<left>35</left>
 				<top>10</top>
