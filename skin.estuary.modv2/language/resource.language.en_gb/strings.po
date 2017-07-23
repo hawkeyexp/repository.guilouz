@@ -1897,3 +1897,8 @@ msgstr ""
 msgctxt "#40236"
 msgid "Oscars"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40237"
+msgid "Hide fanart opacity in fullscreen mode"
+msgstr ""

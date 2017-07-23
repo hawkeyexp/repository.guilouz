@@ -2339,6 +2339,10 @@
 		<value condition="Skin.HasSetting(enable_artistslideshow) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Player.Art(fanart)]</value>
 		<value condition="!Skin.HasSetting(enable_artistslideshow)">$INFO[Player.Art(fanart)]</value>
 	</variable>
+	<variable name="PlayerFanartOpacityVar">
+		<value condition="Skin.HasSetting(hide_fanartopacity) + !Player.ShowInfo + !Window.IsVisible(musicosd)"></value>
+		<value>88FFFFFF</value>
+	</variable>
 	<variable name="PlayerInfoClearArtVar">
 		<value condition="!String.IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
 		<value>$INFO[Player.Art(clearart)]</value>

@@ -140,19 +140,19 @@
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<left>1</left>
-				<top>1</top>
-				<width>482</width>
-				<height>722</height>
+				<left>0</left>
+				<top>0</top>
+				<width>484</width>
+				<height>724</height>
 				<visible>Control.HasFocus(51)</visible>
 				<animation effect="fade" time="100">VisibleChange</animation>
 				<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 			</control>
 			<control type="image">
-				<left>1</left>
-				<top>1</top>
-				<width>482</width>
-				<height>722</height>
+				<left>0</left>
+				<top>0</top>
+				<width>484</width>
+				<height>724</height>
 				<visible>Control.HasFocus(51)</visible>
 				<animation effect="fade" time="100">VisibleChange</animation>
 				<texture border="8" colordiffuse="$VAR[GradientColorVar]">buttons/thumbnail_focused-gradient.png</texture>

@@ -1,6 +1,10 @@
 [B]2.6.3[/B]
 • Add number of oscars on video info (thanks to jurialmunkey)
+• Add possibility to hide fanart opacity in fullscreen mode on music visualisation
+• Improve navigation with better focus animation
 • Improve 'Wall (thumbnails)' view
+• Improve 'Banner' view
+• Improvements
 • Minor fixes
 
 [B]2.6.2[/B]

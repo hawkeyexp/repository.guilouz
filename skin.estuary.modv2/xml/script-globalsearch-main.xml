@@ -490,7 +490,29 @@
 					<textureradioofffocus>icons/search.png</textureradioofffocus>
 					<textureradiooffnofocus colordiffuse="grey">icons/search.png</textureradiooffnofocus>
 					<visible>!Control.IsVisible(998)</visible>
+					<include>OpenClose_Left</include>
 				</control>
+				<control type="group">
+					<visible>Skin.HasSetting(EnableGradientColor) + !Control.IsVisible(998)</visible>
+					<include>OpenClose_Left</include>
+					<control type="image">
+						<top>120</top>
+						<left>352</left>
+						<width>80</width>
+						<height>80</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">buttons/roundbutton-fo-gradient.png</texture>
+						<visible>Control.HasFocus(9981)</visible>
+					</control>
+					<control type="image">
+						<top>140</top>
+						<left>372</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/search.png</texture>
+						<visible>Control.HasFocus(9981)</visible>
+					</control>
+				</control>	
 				<control type="label">
 					<left>50</left>
 					<top>130</top>
@@ -500,6 +522,7 @@
 					<font>font13</font>
 					<label>$LOCALIZE[31001]...</label>
 					<visible>Control.HasFocus(998)</visible>
+					<include>OpenClose_Left</include>
 				</control>
 				<control type="label" id="990">
 					<left>50</left>
@@ -508,6 +531,7 @@
 					<height>55</height>
 					<aligny>center</aligny>
 					<font>font13</font>
+					<include>OpenClose_Left</include>
 					<label/>
 				</control>
 				<control type="label" id="991">
@@ -517,6 +541,7 @@
 					<height>55</height>
 					<aligny>center</aligny>
 					<font>font13</font>
+					<include>OpenClose_Left</include>
 					<label/>
 				</control>
 				<control type="radiobutton" id="998">
@@ -542,7 +567,29 @@
 					<textureradioonnofocus colordiffuse="grey">icons/search.png</textureradioonnofocus>
 					<textureradioofffocus>icons/search.png</textureradioofffocus>
 					<textureradiooffnofocus colordiffuse="grey">icons/search.png</textureradiooffnofocus>
+					<include>OpenClose_Left</include>
 				</control>
+				<control type="group">
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					<include>OpenClose_Left</include>
+					<control type="image">
+						<top>120</top>
+						<left>352</left>
+						<width>80</width>
+						<height>80</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">buttons/roundbutton-fo-gradient.png</texture>
+						<visible>Control.HasFocus(998)</visible>
+					</control>
+					<control type="image">
+						<top>140</top>
+						<left>372</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/search.png</texture>
+						<visible>Control.HasFocus(998)</visible>
+					</control>
+				</control>	
 				<control type="group" id="500">
 					<control type="group" id="119">
 						<control type="panel" id="111">
@@ -575,8 +622,10 @@
 								<control type="group">
 									<depth>DepthContentPopout</depth>
 									<left>30</left>
-									<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<top>120</top>
 									<include content="InfoWallMovieLayout">
 										<param name="focused" value="true" />
@@ -616,8 +665,10 @@
 								<control type="group">
 									<depth>DepthContentPopout</depth>
 									<left>30</left>
-									<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<top>120</top>
 									<include content="InfoWallMovieLayout">
 										<param name="focused" value="true" />
@@ -657,8 +708,10 @@
 								<control type="group">
 									<depth>DepthContentPopout</depth>
 									<left>30</left>
-									<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<top>120</top>
 									<include content="InfoWallMovieLayout">
 										<param name="focused" value="true" />
@@ -699,8 +752,10 @@
 							<focusedlayout height="300" width="300">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="220,250" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="220,250" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<left>64</left>
 									<top>110</top>
 									<include content="InfoWallEpisodeLayout">
@@ -740,8 +795,10 @@
 							<focusedlayout height="410" width="310">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<top>150</top>
 									<left>40</left>
 									<include content="InfoWallMusicLayout">
@@ -781,8 +838,10 @@
 							<focusedlayout height="410" width="310">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<top>150</top>
 									<left>40</left>
 									<include content="InfoWallMusicLayout">
@@ -822,8 +881,10 @@
 							<focusedlayout height="410" width="310">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<top>150</top>
 									<left>40</left>
 									<include content="InfoWallMusicLayout">
@@ -867,8 +928,10 @@
 							<focusedlayout height="410" width="310">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<top>150</top>
 									<left>40</left>
 									<include content="InfoWallMusicLayout">
@@ -946,8 +1009,10 @@
 							<focusedlayout width="310" height="410">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<top>150</top>
 									<left>40</left>
 									<control type="image">
@@ -958,18 +1023,22 @@
 										<bordersize>20</bordersize>
 									</control>
 									<control type="image">
-										<width>319</width>
-										<height>340</height>
+										<top>-6</top>
+										<left>-6</left>
+										<width>331</width>
+										<height>352</height>
 										<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+										<bordertexture border="21">overlays/shadow.png</bordertexture>
 										<bordersize>20</bordersize>
-										<include>Animation_FocusTextureFade</include>
 									</control>
 									<control type="image">
-										<width>319</width>
-										<height>340</height>
+										<top>-6</top>
+										<left>-6</left>
+										<width>331</width>
+										<height>352</height>
 										<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+										<bordertexture border="21">overlays/shadow.png</bordertexture>
 										<bordersize>20</bordersize>
-										<include>Animation_FocusTextureFade</include>
 										<visible>Skin.HasSetting(EnableGradientColor)</visible>
 									</control>
 									<control type="image">
@@ -1039,8 +1108,10 @@
 								<control type="group">
 									<depth>DepthContentPopout</depth>
 									<left>30</left>
-									<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<top>120</top>
 									<include content="InfoWallMovieLayout">
 										<param name="focused" value="true" />
@@ -1080,8 +1151,10 @@
 								<control type="group">
 									<depth>DepthContentPopout</depth>
 									<left>30</left>
-									<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 			</animation>
 									<top>120</top>
 									<include content="InfoWallMovieLayout">
 										<param name="focused" value="true" />

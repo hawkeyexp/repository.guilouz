@@ -129,6 +129,24 @@
 							<aspectratio aligny="center">scale</aspectratio>
 							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
 						</control>
+						<control type="image">
+							<left>20</left>
+							<top>228</top>
+							<width>820</width>
+							<height>4</height>
+							<texture>dialogs/back.png</texture>
+							<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+						</control>
+						<control type="progress">
+							<left>20</left>
+							<top>200</top>
+							<width>820</width>
+							<height>1</height>
+							<texturebg></texturebg>
+							<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+							<info>ListItem.PercentPlayed</info>
+							<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+						</control>
 						<control type="group">
 							<left>405</left>
 							<top>1</top>
@@ -145,31 +163,11 @@
 				<focusedlayout height="275" width="900">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="109" time="200" tween="sine" easing="inout" center="450,250" />
-						</animation>
-						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="109" end="100" time="200" tween="sine" easing="inout" center="450,250" />
-						</animation>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					</animation>
 						<posy>130</posy>
-						<control type="group">
-							<include>Animation_FocusTextureFade</include>
-							<control type="image">
-								<left>16</left>
-								<top>16</top>
-								<width>828</width>
-								<height>206</height>
-								<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
-							</control>
-							<control type="image">
-								<left>16</left>
-								<top>16</top>
-								<width>828</width>
-								<height>206</height>
-								<texture border="8" colordiffuse="$VAR[GradientColorVar]">buttons/thumbnail_focused-gradient2.png</texture>
-								<visible>Skin.HasSetting(EnableGradientColor)</visible>
-							</control>
-						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
@@ -179,6 +177,25 @@
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<left>-6</left>
+							<top>-6</top>
+							<width>872</width>
+							<height>250</height>
+							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+						</control>
+						<control type="image">
+							<left>-6</left>
+							<top>-6</top>
+							<width>872</width>
+							<height>250</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -266,6 +283,24 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<label>$VAR[BannerLabel2Var]</label>
+						</control>
+						<control type="image">
+							<left>20</left>
+							<top>228</top>
+							<width>820</width>
+							<height>4</height>
+							<texture>dialogs/back.png</texture>
+							<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+						</control>
+						<control type="progress">
+							<left>20</left>
+							<top>200</top>
+							<width>820</width>
+							<height>1</height>
+							<texturebg></texturebg>
+							<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+							<info>ListItem.PercentPlayed</info>
+							<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
 						</control>
 						<control type="group">
 							<left>405</left>

@@ -249,7 +249,7 @@
 					<textwidth>230</textwidth>
 					<texturefocus colordiffuse="$VAR[SkinColorVar]">buttons/roundbutton-fo.png</texturefocus>
 					<texturenofocus />
-					<radioposx>39</radioposx>
+					<radioposx>40</radioposx>
 					<radioposy>0</radioposy>
 					<radiowidth>40</radiowidth>
 					<radioheight>40</radioheight>
@@ -316,6 +316,66 @@
 					<shadowcolor>text_shadow</shadowcolor>
 				</control>
 			</control>
+			<control type="group">
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					<include>OpenClose_Left</include>
+					<control type="image">
+						<top>155</top>
+						<left>52</left>
+						<width>80</width>
+						<height>80</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">buttons/roundbutton-fo-gradient.png</texture>
+						<visible>Control.HasFocus(801) | Control.HasFocus(803)</visible>
+						<animation effect="slide" end="277,0" time="0" condition="Control.HasFocus(803)">Conditional</animation>
+					</control>
+					<control type="image">
+						<top>160</top>
+						<left>172</left>
+						<width>117</width>
+						<height>70</height>
+						<texture colordiffuse="$VAR[GradientColorVar]">buttons/dialogbutton-fo-gradient.png</texture>
+						<visible>Control.HasFocus(802)</visible>
+					</control>
+					<control type="image">
+						<top>175</top>
+						<left>187</left>
+						<width>40</width>
+						<height>40</height>
+						<texture>icons/submenu/updatelibrary.png</texture>
+						<visible>Control.HasFocus(802)</visible>
+					</control>
+					<control type="label">
+						<left>212</left>
+						<top>157</top>
+						<height>70</height>
+						<width>100</width>
+						<aligny>center</aligny>
+						<align>center</align>
+						<font>font32_title</font>
+						<label>$VAR[AddonCountLabel]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<visible>Control.HasFocus(802)</visible>
+					</control>
+					<control type="image">
+						<top>175</top>
+						<left>72</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/submenu/add-ons.png</texture>
+						<visible>Control.HasFocus(801)</visible>
+					</control>
+					<control type="image">
+						<top>175</top>
+						<left>72</left>
+						<width>40</width>
+						<height>40</height>
+						<aspectratio>keep</aspectratio>
+						<texture>icons/settings.png</texture>
+						<visible>Control.HasFocus(803)</visible>
+						<animation effect="slide" end="277,0" time="0" condition="Control.HasFocus(803)">Conditional</animation>
+					</control>
+				</control>
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$LOCALIZE[24001]" />
 			</include>

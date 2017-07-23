@@ -265,12 +265,10 @@
 							<focusedlayout width="316" height="400">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-										<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="158,120" />
-									</animation>
-									<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-										<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="158,120" />
-									</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					  			</animation>
 									<include content="InfoWallMusicLayout">
 										<param name="sub_label" value="$INFO[ListItem.Property(character)]" />
 										<param name="main_label" value="$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]" />
@@ -317,12 +315,10 @@
 							<focusedlayout width="316" height="400">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-										<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="158,120" />
-									</animation>
-									<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-										<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="158,120" />
-									</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					  			</animation>
 									<include content="InfoWallMusicLayout">
 										<param name="sub_label" value="$INFO[ListItem.Property(character)]" />
 										<param name="main_label" value="$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]" />
@@ -369,12 +365,10 @@
 							<focusedlayout width="316" height="400">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-										<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="158,120" />
-									</animation>
-									<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-										<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="158,120" />
-									</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					  			</animation>
 									<include content="InfoWallMusicLayout">
 										<param name="sub_label" value="$INFO[ListItem.Property(Job)]" />
 										<param name="main_label" value="$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]" />
@@ -421,12 +415,10 @@
 							<focusedlayout width="316" height="400">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-										<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="158,120" />
-									</animation>
-									<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-										<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="158,120" />
-									</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					  			</animation>
 									<include content="InfoWallMusicLayout">
 										<param name="sub_label" value="$INFO[ListItem.Property(Job)]" />
 										<param name="main_label" value="$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]" />
@@ -472,8 +464,10 @@
 							<focusedlayout height="300" width="316.5">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
-									<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="155,120" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="155,120" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					  			</animation>
 									<include content="InfoWallEpisodeLayout">
 										<param name="focused" value="true" />
 										<param name="label" value="$INFO[ListItem.Label]" />
@@ -517,8 +511,10 @@
 									<depth>DepthContentPopout</depth>
 									<left>0</left>
 									<top>20</top>
-									<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="173,120" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="173,120" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					  			</animation>
 									<include content="InfoWallMovieLayout">
 										<param name="focused" value="true" />
 									</include>
@@ -581,27 +577,27 @@
 									<depth>DepthContentPopout</depth>
 									<left>0</left>
 									<top>20</top>
-									<animation effect="zoom" start="100" end="105" time="200" tween="sine" easing="inout" center="346,120" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-									<animation effect="zoom" start="105" end="100" time="200" tween="sine" easing="inout" center="346,120" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					  			</animation>
 									<control type="image">
-										<left>10</left>
-										<top>-14</top>
-										<width>622</width>
-										<height>371</height>
+										<left>9</left>
+										<top>-15</top>
+										<width>624</width>
+										<height>373</height>
 										<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 										<bordertexture border="21">overlays/shadow.png</bordertexture>
 										<bordersize>20</bordersize>
-										<include>Animation_FocusTextureFade</include>
 									</control>
 									<control type="image">
-										<left>10</left>
-										<top>-14</top>
-										<width>622</width>
-										<height>371</height>
+										<left>9</left>
+										<top>-15</top>
+										<width>624</width>
+										<height>373</height>
 										<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 										<bordertexture border="21">overlays/shadow.png</bordertexture>
 										<bordersize>20</bordersize>
-										<include>Animation_FocusTextureFade</include>
 										<visible>Skin.HasSetting(EnableGradientColor)</visible>
 									</control>
 									<control type="image">
@@ -611,7 +607,6 @@
 										<height>362</height>
 										<texture background="true" fallback="icons/extendedinfo/DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
 										<aspectratio>stretch</aspectratio>
-										<bordertexture border="21">overlays/shadow.png</bordertexture>
 										<bordersize>20</bordersize>
 									</control>
 								</control>

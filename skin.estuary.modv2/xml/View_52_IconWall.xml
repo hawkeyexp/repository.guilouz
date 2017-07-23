@@ -31,10 +31,10 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<left>120</left>
-							<top>30</top>
-							<width>160</width>
-							<height>110</height>
+							<left>100</left>
+							<top>10</top>
+							<width>200</width>
+							<height>150</height>
 							<texture>$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
@@ -60,19 +60,12 @@
 							<align>center</align>
 							<visible>String.StartsWith(Container.FolderPath,musicdb://)</visible>
 						</control>
-						<control type="image">
-							<left>20</left>
-							<top>150</top>
-							<width>356</width>
-							<height>75</height>
-							<texture colordiffuse="border_alpha">colors/black.png</texture>
-						</control>
 						<control type="textbox">
 							<left>25</left>
 							<top>148</top>
-							<width>350</width>
+							<width>346</width>
 							<height>74</height>
-							<font>font12</font>
+							<font>font25_title</font>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -82,12 +75,10 @@
 				<focusedlayout height="280" width="440" condition="Container.Content() | Container.Content(tags) | Container.Content(playlists) | [Container.Content(studios) + !String.IsEmpty(Skin.String(studiologos.path))]  | [Container.Content(genres) + !String.IsEmpty(Skin.String(moviegenreicons.path))]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="auto" />
-						</animation>
-						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="auto" />
-						</animation>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 </animation>
 						<top>150</top>
 						<control type="image">
 							<width>396</width>
@@ -97,25 +88,29 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<width>396</width>
-							<height>245</height>
+							<top>-6</top>
+							<left>-6</left>
+							<width>408</width>
+							<height>257</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
-							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
-							<width>396</width>
-							<height>245</height>
+							<top>-6</top>
+							<left>-6</left>
+							<width>408</width>
+							<height>257</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient2.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
-							<include>Animation_FocusTextureFade</include>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="image">
-							<left>120</left>
-							<top>30</top>
-							<width>160</width>
-							<height>110</height>
+							<left>100</left>
+							<top>10</top>
+							<width>200</width>
+							<height>150</height>
 							<texture>$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
@@ -141,19 +136,12 @@
 							<align>center</align>
 							<visible>String.StartsWith(Container.FolderPath,musicdb://)</visible>
 						</control>
-						<control type="image">
-							<left>20</left>
-							<top>150</top>
-							<width>356</width>
-							<height>75</height>
-							<texture colordiffuse="border_alpha">colors/black.png</texture>
-						</control>
 						<control type="textbox">
 							<left>25</left>
 							<top>148</top>
-							<width>350</width>
+							<width>346</width>
 							<height>74</height>
-							<font>font12</font>
+							<font>font25_title</font>
 							<label>$INFO[ListItem.Label]</label>
 							<align>center</align>
 							<aligny>center</aligny>
@@ -177,6 +165,7 @@
 							<width>270</width>
 							<height>100</height>
 							<label>$INFO[ListItem.Label]</label>
+							<font>font25_title</font>
 							<align>center</align>
 							<aligny>center</aligny>
 						</control>
@@ -187,12 +176,10 @@
 						<animation effect="slide" end="43,0" time="0" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
 						<depth>DepthContentPopout</depth>
 						<top>120</top>
-						<animation type="Focus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="100" end="112" time="200" tween="sine" easing="inout" center="auto" />
-						</animation>
-						<animation type="Unfocus" condition="!Skin.HasSetting(no_animations)">
-							<effect type="zoom" start="112" end="100" time="200" tween="sine" easing="inout" center="auto" />
-						</animation>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					</animation>
 						<control type="image">
 							<width>330</width>
 							<height>140</height>
@@ -201,18 +188,22 @@
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<width>330</width>
-							<height>140</height>
+							<top>-6</top>
+							<left>-6</left>
+							<width>342</width>
+							<height>152</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
-							<include>Animation_FocusTextureFade</include>
 						</control>
 						<control type="image">
-							<width>330</width>
-							<height>140</height>
+							<top>-6</top>
+							<left>-6</left>
+							<width>342</width>
+							<height>152</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient2.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
-							<include>Animation_FocusTextureFade</include>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="textbox">
@@ -221,6 +212,7 @@
 							<width>270</width>
 							<height>100</height>
 							<label>$INFO[ListItem.Label]</label>
+							<font>font25_title</font>
 							<align>center</align>
 							<aligny>center</aligny>
 							<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>

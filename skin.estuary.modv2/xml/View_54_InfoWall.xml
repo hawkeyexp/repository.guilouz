@@ -12,26 +12,24 @@
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<top>-14</top>
-				<left>-4</left>
-				<width>384</width>
-				<height>388</height>
+				<top>-16</top>
+				<left>-6</left>
+				<width>388</width>
+				<height>392</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
-				<top>-14</top>
-				<left>-4</left>
-				<width>384</width>
-				<height>388</height>
+				<top>-16</top>
+				<left>-6</left>
+				<width>388</width>
+				<height>392</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
@@ -72,26 +70,24 @@
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<top>-4</top>
-				<left>-4</left>
-				<width>324</width>
-				<height>394</height>
+				<top>-6</top>
+				<left>-6</left>
+				<width>328</width>
+				<height>398</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
-				<top>-4</top>
-				<left>-4</left>
-				<width>324</width>
-				<height>394</height>
+				<top>-6</top>
+				<left>-6</left>
+				<width>328</width>
+				<height>398</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
@@ -186,7 +182,7 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>375</top>
+				<top>376</top>
 				<width>276</width>
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
@@ -194,7 +190,7 @@
 			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>347</top>
+				<top>348</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -247,26 +243,24 @@
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<top>6</top>
-				<left>-4</left>
-				<width>324</width>
-				<height>282</height>
+				<top>4</top>
+				<left>-6</left>
+				<width>328</width>
+				<height>289</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
-				<top>6</top>
-				<left>-4</left>
-				<width>324</width>
-				<height>282</height>
+				<top>4</top>
+				<left>-6</left>
+				<width>328</width>
+				<height>289</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
@@ -276,6 +270,16 @@
 				<height>156</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio aligny="top">keep</aspectratio>
+				<visible>!Container.Content(videos)</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>30</top>
+				<width>276</width>
+				<height>156</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>Container.Content(videos)</visible>
 			</control>
 			<control type="image">
 				<left>136</left>
@@ -284,7 +288,7 @@
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
 				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]] + ![String.IsEqual(listitem.dbtype,episode) + Window.IsVisible(MyVideoNav.xml) + [String.IsEqual(Container.ViewMode,$LOCALIZE[31102]) | String.IsEqual(Container.ViewMode,$LOCALIZE[31101])]]</visible>
-				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
+				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + !String.Isempty(ListItem.Label2)</visible>
 			</control>
 			<control type="label">
 				<left>31</left>
@@ -379,7 +383,7 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>276</top>
+				<top>277</top>
 				<width>276</width>
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
@@ -387,7 +391,7 @@
 			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>248</top>
+				<top>249</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -433,26 +437,24 @@
 				<bordersize>20</bordersize>
 			</control>
 			<control type="image">
-				<top>7</top>
-				<left>-4</left>
-				<width>324</width>
-				<height>324</height>
+				<top>4</top>
+				<left>-6</left>
+				<width>328</width>
+				<height>328</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 			</control>
 			<control type="image">
-				<top>7</top>
-				<left>-4</left>
-				<width>324</width>
-				<height>324</height>
+				<top>4</top>
+				<left>-6</left>
+				<width>328</width>
+				<height>328</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
@@ -550,7 +552,7 @@
 			</control>
 			<control type="image">
 				<left>20</left>
-				<top>315</top>
+				<top>316</top>
 				<width>276</width>
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
@@ -558,7 +560,7 @@
 			</control>
 			<control type="progress">
 				<left>20</left>
-				<top>287</top>
+				<top>288</top>
 				<width>276</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -595,24 +597,24 @@
 					<bordersize>20</bordersize>
 				</control>
 				<control type="image">
-					<left>15</left>
-					<top>-10</top>
-					<width>290</width>
-					<height>400</height>
+					<left>9</left>
+					<top>-16</top>
+					<width>302</width>
+					<height>412</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
-					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				</control>
 				<control type="image">
-					<left>15</left>
-					<top>-10</top>
-					<width>290</width>
-					<height>400</height>
+					<left>9</left>
+					<top>-16</top>
+					<width>302</width>
+					<height>412</height>
 					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
-					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 					<visible>Skin.HasSetting(EnableGradientColor)</visible>
 				</control>
 				<control type="textbox">
@@ -650,27 +652,35 @@
 			<control type="group">
 				<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
 				<control type="image">
-					<left>10</left>
-					<top>-15</top>
-					<width>300</width>
-					<height>410</height>
+					<left>9</left>
+					<top>-16</top>
+					<width>302</width>
+					<height>412</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
-					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				</control>
 				<control type="image">
-					<left>10</left>
-					<top>-15</top>
-					<width>300</width>
-					<height>410</height>
+					<left>9</left>
+					<top>-16</top>
+					<width>302</width>
+					<height>412</height>
 					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused]</visible>
-					<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
+				<control type="image">
+					<left>15</left>
+					<top>-10</top>
+					<width>290</width>
+					<height>400</height>
+					<texture background="true">$VAR[IconWallPosterVar]</texture>
+					<aspectratio>stretch</aspectratio>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused]</visible>
 				</control>
 				<control type="image">
 					<left>15</left>
@@ -681,6 +691,7 @@
 					<aspectratio>stretch</aspectratio>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
+					<visible>!$PARAM[focused]</visible>
 				</control>
 				<control type="image">
 					<left>35</left>
@@ -770,7 +781,7 @@
 			</control>
 			<control type="image">
 				<left>35</left>
-				<top>379</top>
+				<top>380</top>
 				<width>250</width>
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
@@ -778,7 +789,7 @@
 			</control>
 			<control type="progress">
 				<left>35</left>
-				<top>351</top>
+				<top>352</top>
 				<width>250</width>
 				<height>1</height>
 				<texturebg></texturebg>
@@ -831,31 +842,6 @@
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
-				<left>12</left>
-				<top>-14</top>
-				<width>597</width>
-				<height>339</height>
-				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
-				<visible>!Control.IsVisible(504)</visible>
-			</control>
-			<control type="image">
-				<left>12</left>
-				<top>-14</top>
-				<width>597</width>
-				<height>339</height>
-				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
-				<bordersize>20</bordersize>
-				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
-				<visible>Skin.HasSetting(EnableGradientColor)</visible>
-				<visible>!Control.IsVisible(504)</visible>
-			</control>
-			<control type="image">
 				<left>15</left>
 				<top>-10</top>
 				<width>590</width>
@@ -863,33 +849,189 @@
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
-				<visible>!Control.IsVisible(504)</visible>
 			</control>
 			<control type="image">
-				<left>12</left>
-				<top>-14</top>
-				<width>597</width>
-				<height>383</height>
+				<left>9</left>
+				<top>-16</top>
+				<width>602</width>
+				<height>344</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
-				<visible>Control.IsVisible(504)</visible>
 			</control>
 			<control type="image">
-				<left>12</left>
-				<top>-14</top>
-				<width>597</width>
-				<height>383</height>
+				<left>9</left>
+				<top>-16</top>
+				<width>602</width>
+				<height>344</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
-				<include condition="$PARAM[focused]">Animation_FocusTextureFade</include>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
-				<visible>Control.IsVisible(504)</visible>
 			</control>
+			<control type="image">
+				<left>15</left>
+				<top>-10</top>
+				<width>590</width>
+				<height>332</height>
+				<texture background="true">$VAR[WidgetThumbViewVar]</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordersize>20</bordersize>
+			</control>
+			<control type="image">
+				<left>15</left>
+				<top>-10</top>
+				<width>590</width>
+				<height>332</height>
+				<texture background="true" fallback="DefaultVideoFanart.png">$INFO[ListItem.Art(fanart)]</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordersize>20</bordersize>
+				<visible>String.IsEmpty(ListItem.Art(season.landscape)) + String.IsEmpty(ListItem.Art(tvshow.landscape)) + String.IsEmpty(ListItem.Art(landscape))</visible>
+				<visible>!ListItem.IsParentFolder</visible>
+			</control>
+			<control type="image">
+				<left>55</left>
+				<top>156</top>
+				<width>351</width>
+				<height>136</height>
+				<texture background="true">$VAR[LibraryClearLogoVar]</texture>
+				<aspectratio aligny="bottom" align="left">keep</aspectratio>
+				<visible>String.IsEmpty(ListItem.Art(season.landscape)) + String.IsEmpty(ListItem.Art(tvshow.landscape)) + String.IsEmpty(ListItem.Art(landscape))</visible>
+			</control>
+			<control type="image">
+				<left>15</left>
+				<top>-10</top>
+				<width>590</width>
+				<height>332</height>
+				<texture background="true">DefaultFolderBackFanart.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordersize>20</bordersize>
+				<visible>ListItem.IsParentFolder</visible>
+			</control>
+			<control type="image">
+				<left>35</left>
+				<top>242</top>
+				<width>160</width>
+				<height>60</height>
+				<texture>overlays/overlay-bg.png</texture>
+				<visible>ListItem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+			</control>
+			<control type="image">
+				<left>35</left>
+				<top>270</top>
+				<width>32</width>
+				<height>32</height>
+				<texture>$VAR[WallWatchedIconVar]</texture>
+			</control>
+			<control type="group">
+				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+				<control type="image">
+					<right>15</right>
+					<top>242</top>
+					<width>220</width>
+					<height>60</height>
+					<texture flipx="true">overlays/overlay-bg.png</texture>
+				</control>
+				<control type="label">
+					<left>298</left>
+					<top>270</top>
+					<width>244</width>
+					<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</label>
+					<font>font20_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<align>right</align>
+				</control>
+				<control type="image">
+					<left>552</left>
+					<top>273</top>
+					<width>24</width>
+					<height>24</height>
+					<texture>lists/played-total.png</texture>
+				</control>
+			</control>	
+			<control type="image">
+				<left>35</left>
+				<top>10</top>
+				<width>550</width>
+				<height>292</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+			</control>
+			<control type="group">
+				<left>285</left>
+				<top>-9</top>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+			</control>
+			<control type="group">
+				<left>285</left>
+				<top>-9</top>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+			</control>
+			<control type="image">
+				<left>35</left>
+				<top>312</top>
+				<width>550</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
+			<control type="progress">
+				<left>35</left>
+				<top>284</top>
+				<width>550</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.PercentPlayed</info>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
+			<control type="group">
+				<top>126</top>
+				<visible>Skin.HasSetting(enable_LibraryDiscArt)</visible>
+				<visible>$PARAM[focused]</visible>
+				<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
+				<animation effect="slide" start="0,50" end="0,0" time="300" tween="cubic" easing="out" reversible="false">Focus</animation>
+				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
+				<animation effect="slide" end="1,0" time="0" condition="Control.IsVisible(505) | [String.IsEqual(Container.ViewMode,$LOCALIZE[40016]) + [Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogKeyboard.xml) | Window.IsVisible(DialogConfirm.xml) | Window.IsVisible(DialogVideoInfo.xml)]]">Conditional</animation>
+				<control type="image">
+					<right>3</right>
+					<top>0</top>
+					<width>172</width>
+					<height>172</height>
+					<texture background="true" colordiffuse="$VAR[SkinColorVar]">overlays/circle-172.png</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>!Skin.HasSetting(enable_LibraryDiscArtOverlay)</visible>
+				</control>
+				<control type="image">
+					<right>3</right>
+					<top>0</top>
+					<width>172</width>
+					<height>172</height>
+					<texture background="true" colordiffuse="$VAR[GradientColorVar]">overlays/circle-172-gradient.png</texture>
+					<aspectratio>keep</aspectratio>
+					<visible>!Skin.HasSetting(enable_LibraryDiscArtOverlay)</visible>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
+				<control type="image">
+					<right>4</right>
+					<top>1</top>
+					<width>170</width>
+					<height>170</height>
+					<texture background="true">$INFO[ListItem.Art(discart)]</texture>
+					<aspectratio>keep</aspectratio>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="WallThumbsLayout">
+		<param name="focused">false</param>
+		<definition>
 			<control type="image">
 				<left>15</left>
 				<top>-10</top>
@@ -898,7 +1040,27 @@
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
-				<visible>Control.IsVisible(504)</visible>
+			</control>
+			<control type="image">
+				<left>9</left>
+				<top>-16</top>
+				<width>602</width>
+				<height>387</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+			</control>
+			<control type="image">
+				<left>9</left>
+				<top>-16</top>
+				<width>602</width>
+				<height>387</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
 			</control>
 			<control type="image">
 				<left>15</left>
@@ -950,7 +1112,6 @@
 				<aligny>center</aligny>
 				<scroll>$PARAM[focused]</scroll>
 				<visible>Container.Content(movies) | Container.Content(sets)</visible>
-				<visible>Control.IsVisible(504)</visible>
 			</control>
 			<control type="label">
 				<left>73</left>
@@ -963,7 +1124,6 @@
 				<aligny>center</aligny>
 				<scroll>$PARAM[focused]</scroll>
 				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
-				<visible>Control.IsVisible(504)</visible>
 			</control>
 			<control type="image">
 				<right>25</right>
@@ -972,7 +1132,6 @@
 				<height>28</height>
 				<texture>lists/played-total.png</texture>
 				<visible>[Container.Content(tvshows) | Container.Content(seasons)] + !String.IsEmpty(ListItem.Property(TotalEpisodes))</visible>
-				<visible>Control.IsVisible(504)</visible>
 			</control>
 			<control type="label">
 				<right>63</right>
@@ -983,24 +1142,6 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<label>$VAR[BannerLabel2Var]</label>
-				<visible>Control.IsVisible(504)</visible>
-			</control>
-			<control type="image">
-				<left>35</left>
-				<top>242</top>
-				<width>160</width>
-				<height>60</height>
-				<texture>overlays/overlay-bg.png</texture>
-				<visible>ListItem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
-				<visible>!Control.IsVisible(504)</visible>
-			</control>
-			<control type="image">
-				<left>35</left>
-				<top>270</top>
-				<width>32</width>
-				<height>32</height>
-				<texture>$VAR[WallWatchedIconVar]</texture>
-				<visible>!Control.IsVisible(504)</visible>
 			</control>
 			<control type="image">
 				<left>38</left>
@@ -1008,44 +1149,6 @@
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[ListWatchedIconVar]</texture>
-				<visible>Control.IsVisible(504)</visible>
-			</control>
-			<control type="group">
-				<visible>[Container.Content(tvshows) | Container.Content(seasons)] + !Control.IsVisible(504)</visible>
-				<control type="image">
-					<right>15</right>
-					<top>242</top>
-					<width>220</width>
-					<height>60</height>
-					<texture flipx="true">overlays/overlay-bg.png</texture>
-				</control>
-				<control type="label">
-					<left>298</left>
-					<top>270</top>
-					<width>244</width>
-					<label>$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</label>
-					<font>font20_title</font>
-					<shadowcolor>text_shadow</shadowcolor>
-					<align>right</align>
-				</control>
-				<control type="image">
-					<left>552</left>
-					<top>273</top>
-					<width>24</width>
-					<height>24</height>
-					<texture>lists/played-total.png</texture>
-				</control>
-			</control>	
-			<control type="image">
-				<left>35</left>
-				<top>10</top>
-				<width>550</width>
-				<height>292</height>
-				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
-				<aspectratio>stretch</aspectratio>
-				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
-				<visible>!Control.IsVisible(504)</visible>
 			</control>
 			<control type="image">
 				<left>35</left>
@@ -1056,7 +1159,6 @@
 				<aspectratio>stretch</aspectratio>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
-				<visible>Control.IsVisible(504)</visible>
 			</control>
 			<control type="group">
 				<left>285</left>
@@ -1072,43 +1174,21 @@
 			</control>
 			<control type="image">
 				<left>35</left>
-				<top>310</top>
+				<top>355</top>
 				<width>550</width>
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
-				<visible>!Control.IsVisible(504)</visible>
 			</control>
 			<control type="progress">
 				<left>35</left>
-				<top>282</top>
+				<top>327</top>
 				<width>550</width>
 				<height>1</height>
 				<texturebg></texturebg>
 				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
 				<info>ListItem.PercentPlayed</info>
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
-				<visible>!Control.IsVisible(504)</visible>
-			</control>
-			<control type="image">
-				<left>35</left>
-				<top>353</top>
-				<width>550</width>
-				<height>4</height>
-				<texture>dialogs/back.png</texture>
-				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
-				<visible>Control.IsVisible(504)</visible>
-			</control>
-			<control type="progress">
-				<left>35</left>
-				<top>325</top>
-				<width>550</width>
-				<height>1</height>
-				<texturebg></texturebg>
-				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
-				<info>ListItem.PercentPlayed</info>
-				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
-				<visible>Control.IsVisible(504)</visible>
 			</control>
 			<control type="group">
 				<top>126</top>
@@ -1182,8 +1262,10 @@
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>30</left>
-						<animation effect="zoom" start="100" end="109" time="200" tween="sine" easing="inout" center="200,300" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-						<animation effect="zoom" start="109" end="100" time="200" tween="sine" easing="inout" center="200,300" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 </animation>
 						<top>120</top>
 						<include content="InfoWallMovieLayout">
 							<param name="focused" value="true" />
@@ -1203,8 +1285,10 @@
 				<focusedlayout height="300" width="300" condition="Container.Content(episodes) | Container.Content(videos)">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="220,250" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="220,250" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 </animation>
 						<left>64</left>
 						<top>110</top>
 						<include content="InfoWallEpisodeLayout">
@@ -1223,8 +1307,10 @@
 				<focusedlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<animation effect="zoom" start="100" end="115" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-						<animation effect="zoom" start="115" end="100" time="200" tween="sine" easing="inout" center="200,350" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 </animation>
 						<top>150</top>
 						<left>40</left>
 						<include content="InfoWallMusicLayout">
@@ -1232,20 +1318,22 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout height="400" width="378" condition="Container.Content(images)">
+				<itemlayout height="400" width="420" condition="Container.Content(images)">
 					<control type="group">
-						<left>0</left>
+						<left>10</left>
 						<top>150</top>
 						<include>InfoWallPictureLayout</include>
 					</control>
 				</itemlayout>
-				<focusedlayout height="400" width="378" condition="Container.Content(images)">
+				<focusedlayout height="400" width="420" condition="Container.Content(images)">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<left>0</left>
+						<left>10</left>
 						<top>150</top>
-						<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="180,330" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-						<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="180,330" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 </animation>
 						<include content="InfoWallPictureLayout">
 							<param name="focused" value="true" />
 						</include>

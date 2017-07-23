@@ -222,7 +222,7 @@
 							<top>120</top>
 							<bottom>124</bottom>
 							<fadetime>200</fadetime>
-							<aspectratio aligny="center">keep</aspectratio>
+							<aspectratio aligny="bottom">keep</aspectratio>
 							<texture fallback="DefaultVideo.png" background="true">$VAR[InfoWallThumbVar]</texture>
 						</control>
 						<control type="group">
@@ -264,8 +264,10 @@
 						<control type="group">
 							<depth>DepthContentPopout</depth>
 							<left>30</left>
-							<animation effect="zoom" start="100" end="110" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">Focus</animation>
-							<animation effect="zoom" start="110" end="100" time="200" tween="sine" easing="inout" center="185,300" condition="!Skin.HasSetting(no_animations)">UnFocus</animation>
+							<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            					<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            					<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 	</animation>
 							<top>120</top>
 							<include content="InfoWallMovieLayout">
 								<param name="focused" value="true" />
@@ -455,7 +457,7 @@
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 					<control type="button">
-						<bottom>20</bottom>
+						<bottom>9</bottom>
 						<left>12</left>
 						<width>36</width>
 						<height>36</height>
@@ -466,12 +468,13 @@
 						<visible>!Skin.HasSetting(KioskMode)</visible>
 					</control>
 					<control type="button">
-						<bottom>16</bottom>
-						<left>64</left>
+						<bottom>7</bottom>
+						<left>55</left>
 						<width>300</width>
 						<height>44</height>
 						<shadowcolor>text_shadow</shadowcolor>
 						<label>$LOCALIZE[33063]</label>
+						<font>font25_title</font>
 						<onclick>SetFocus(9000)</onclick>
 						<texturefocus />
 						<texturenofocus />
