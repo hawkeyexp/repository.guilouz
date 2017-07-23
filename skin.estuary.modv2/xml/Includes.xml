@@ -752,23 +752,24 @@
 				<orientation>horizontal</orientation>
 				<right>6</right>
 				<bottom>11</bottom>
-				<height>76</height>
+				<height>86</height>
 				<align>right</align>
 				<itemgap>5</itemgap>
-				<width>1440</width>
+				<width>1793</width>
 				<usecontrolcoords>true</usecontrolcoords>
 				<autoscroll time="1500">true</autoscroll>
-				<animation effect="slide" end="1296,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
-				<animation effect="slide" end="1152,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
-				<animation effect="slide" end="1008,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
-				<animation effect="slide" end="864,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
-				<animation effect="slide" end="720,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
-				<animation effect="slide" end="576,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
-				<animation effect="slide" end="432,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
-				<animation effect="slide" end="288,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,8)">conditional</animation>
-				<animation effect="slide" end="144,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
-				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set) + Window.IsVisible(Home)</visible>
-				<focusedlayout height="76" width="144">
+				<animation effect="slide" end="1630,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
+				<animation effect="slide" end="1467,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
+				<animation effect="slide" end="1304,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
+				<animation effect="slide" end="1141,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
+				<animation effect="slide" end="978,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
+				<animation effect="slide" end="815,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
+				<animation effect="slide" end="652,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
+				<animation effect="slide" end="489,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,8)">conditional</animation>
+				<animation effect="slide" end="326,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
+				<animation effect="slide" end="163,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,10)">conditional</animation>
+				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set) + Window.IsVisible(Home) + Skin.HasSetting(MinimizeMainMenu)</visible>
+				<focusedlayout height="86" width="163">
 					<control type="image">
 						<left>5</left>
 						<top>0</top>
@@ -780,7 +781,51 @@
 						<bordersize>1</bordersize>
 					</control>
 				</focusedlayout>
-				<itemlayout height="76" width="144">
+				<itemlayout height="86" width="163">
+					<control type="image">
+						<left>5</left>
+						<top>0</top>
+						<right>5</right>
+						<bottom>0</bottom>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
+						<bordertexture>colors/white.png</bordertexture>
+						<bordersize>1</bordersize>
+					</control>
+				</itemlayout>
+				<content sortby="year" sortorder="ascending">$INFO[$PARAM[infolabel_prefix]ListItem.FolderPath]</content>
+			</control>
+			<control type="list" id="56000">
+				<orientation>horizontal</orientation>
+				<right>6</right>
+				<bottom>11</bottom>
+				<height>86</height>
+				<align>right</align>
+				<itemgap>5</itemgap>
+				<width>1304</width>
+				<usecontrolcoords>true</usecontrolcoords>
+				<autoscroll time="1500">true</autoscroll>
+				<animation effect="slide" end="1141,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
+				<animation effect="slide" end="978,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
+				<animation effect="slide" end="815,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
+				<animation effect="slide" end="652,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
+				<animation effect="slide" end="489,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
+				<animation effect="slide" end="326,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
+				<animation effect="slide" end="163,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
+				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set) + Window.IsVisible(Home) + !Skin.HasSetting(MinimizeMainMenu)</visible>
+				<focusedlayout height="86" width="163">
+					<control type="image">
+						<left>5</left>
+						<top>0</top>
+						<right>5</right>
+						<bottom>0</bottom>
+						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
+						<bordertexture>colors/white.png</bordertexture>
+						<bordersize>1</bordersize>
+					</control>
+				</focusedlayout>
+				<itemlayout height="86" width="163">
 					<control type="image">
 						<left>5</left>
 						<top>0</top>

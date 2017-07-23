@@ -101,15 +101,6 @@
 						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 					</control>
 					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<right>0</right>
-						<height>71</height>
-						<visible>Control.HasFocus(450)</visible>
-						<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
-						<visible>Skin.HasSetting(EnableGradientColor)</visible>
-					</control>
-					<control type="image">
 						<left>10</left>
 						<top>10</top>
 						<width>50</width>
@@ -166,15 +157,6 @@
 						<height>71</height>
 						<visible>Control.HasFocus(451)</visible>
 						<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
-					</control>
-					<control type="image">
-						<left>0</left>
-						<top>0</top>
-						<right>0</right>
-						<height>71</height>
-						<visible>Control.HasFocus(451)</visible>
-						<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
-						<visible>Skin.HasSetting(EnableGradientColor)</visible>
 					</control>
 					<control type="image">
 						<left>10</left>
