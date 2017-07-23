@@ -60,8 +60,8 @@
 				<include>skinshortcuts-template-PersonalWidgetList</include>
 				<include>skinshortcuts-template-PersonalWidgetPanel</include>
 				<control type="group" id="5000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),MoviesWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="MoviesWidget"/>
@@ -169,8 +169,8 @@
 					</include>
 				</control>
 				<control type="group" id="6000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),TVShowsWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="TVShowsWidget"/>
@@ -298,8 +298,8 @@
 					</include>
 				</control>
 				<control type="group" id="7000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),MusicWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="MusicWidget"/>
@@ -399,8 +399,8 @@
 					</include>
 				</control>
 				<control type="group" id="8000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),AddonsWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="AddonsWidget"/>
@@ -510,8 +510,8 @@
 					</include>
 				</control>
 				<control type="group" id="11000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),VideoWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="VideoWidget"/>
@@ -580,8 +580,8 @@
 					</include>
 				</control>
 				<control type="group" id="12000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),LiveTVWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="LiveTVWidget"/>
@@ -693,8 +693,8 @@
 					</include>
 				</control>
 				<control type="group" id="13000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),RadioWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="RadioWidget"/>
@@ -805,8 +805,8 @@
 					</include>
 				</control>
 				<control type="group" id="14000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),FavoritesWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="FavoritesWidget"/>
@@ -896,8 +896,8 @@
 					</include>
 				</control>
 				<control type="group" id="15000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),WeatherWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="WeatherWidget"/>
@@ -1026,8 +1026,8 @@
 					</include>
 				</control>
 				<control type="group" id="16000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),MusicVideosWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="MusicVideosWidget"/>
@@ -1129,8 +1129,8 @@
 					</include>
 				</control>
 				<control type="group" id="4000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PicturesWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="PicturesWidget"/>
@@ -1178,8 +1178,8 @@
 					</include>
 				</control>
 				<control type="group" id="17000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),GamesWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="GamesWidget"/>
@@ -1229,8 +1229,8 @@
 					</include>
 				</control>
 				<control type="group" id="21000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>String.IsEqual(Container(9000).ListItem.Property(widget),DiscWidget)</visible>
 					<include content="Visible_Right_Delayed_Home">
 						<param name="id" value="DiscWidget"/>
@@ -1271,8 +1271,8 @@
 					</include>
 				</control>
 				<control type="group" id="18000">
-					<animation effect="slide" end="502,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-					<animation effect="slide" end="135,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+					<animation effect="slide" end="135,0" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 					<visible>Control.HasFocus(802) + !Skin.HasSetting(enable_settingswidget)</visible>
 					<include>OpenClose_Right</include>
 					<include>Visible_Right</include>
@@ -1304,8 +1304,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<label>[UPPERCASE]• $LOCALIZE[31031] •[/UPPERCASE]</label>
 								<scroll>true</scroll>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>200</top>
@@ -1317,8 +1317,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<label>KODI $INFO[System.BuildVersion] - $INFO[System.BuildDate]</label>
 								<scroll>true</scroll>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>240</top>
@@ -1330,8 +1330,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<label>$LOCALIZE[166] Estuary MOD V2 • $INFO[System.AddonVersion(skin.estuary.modv2),$LOCALIZE[24051] ]</label>
 								<scroll>true</scroll>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>280</top>
@@ -1343,8 +1343,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<label>$INFO[System.KernelVersion]</label>
 								<scroll>true</scroll>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>350</top>
@@ -1358,8 +1358,8 @@
 								<textcolor>$VAR[SkinColorVar]</textcolor>
 								<label>[UPPERCASE]• $LOCALIZE[130] •[/UPPERCASE]</label>
 								<scroll>true</scroll>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>410</top>
@@ -1371,8 +1371,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<label>$LOCALIZE[13287] $INFO[System.ScreenResolution]</label>
 								<scroll>true</scroll>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>450</top>
@@ -1384,8 +1384,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<label>$LOCALIZE[12390]: [LOWERCASE]$INFO[System.Uptime][/LOWERCASE]</label>
 								<scroll>true</scroll>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>490</top>
@@ -1397,8 +1397,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<label>$LOCALIZE[12394]: [LOWERCASE]$INFO[System.TotalUptime][/LOWERCASE]</label>
 								<scroll>true</scroll>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>530</top>
@@ -1410,8 +1410,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<label>$LOCALIZE[150]: $INFO[Network.IPAddress] [B]-[/B] $LOCALIZE[149]: $INFO[Network.MACAddress] [B]-[/B] $INFO[Network.LinkState]</label>
 								<scroll>true</scroll>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>610</top>
@@ -1423,8 +1423,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<textcolor>$VAR[SkinColorVar]</textcolor>
 								<label>[UPPERCASE]• $LOCALIZE[40122] •[/UPPERCASE]</label>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>660</top>
@@ -1437,8 +1437,8 @@
 								<label>$LOCALIZE[13271] $INFO[System.CPUUsage] [B]-[/B] $INFO[System.CPUTemperature]</label>
 								<scroll>true</scroll>
 								<visible>Integer.IsGreaterOrEqual()(System.CPUTemperature,1)</visible>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>660</top>
@@ -1451,8 +1451,8 @@
 								<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
 								<scroll>true</scroll>
 								<visible>Integer.IsEqual(System.CPUTemperature,0)</visible>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="progress">
 								<top>710</top>
@@ -1460,8 +1460,8 @@
 								<width>1200</width>
 								<height>16</height>
 								<info>System.CPUUsage</info>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>736</top>
@@ -1473,8 +1473,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<label>$LOCALIZE[31030] : $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)] [LOWERCASE]$LOCALIZE[20162][/LOWERCASE]</label>
 								<scroll>true</scroll>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="progress">
 								<top>786</top>
@@ -1482,8 +1482,8 @@
 								<width>1200</width>
 								<height>16</height>
 								<info>system.memory(used)</info>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 							<control type="label">
 								<top>846</top>
@@ -1495,8 +1495,8 @@
 								<shadowcolor>text_shadow</shadowcolor>
 								<textcolor>$VAR[SkinColorVar]</textcolor>
 								<label>[UPPERCASE]• $LOCALIZE[31157] •[/UPPERCASE]</label>
-								<animation effect="slide" end="-250,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-								<animation effect="slide" end="-67,0" time="200" tween="quadratic" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-250,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+								<animation effect="slide" end="-67,0" time="300" tween="sine" easing="out" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 							</control>
 						</control>
 						<control type="grouplist">
@@ -1734,8 +1734,8 @@
 				</control>
 			</control>
 			<control type="group">
-				<animation effect="slide" end="-522,0" time="200" tween="quadratic" easing="out" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-				<animation effect="slide" end="-95,0" time="200" tween="quadratic" easing="out" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+				<animation effect="slide" end="-522,0" time="300" tween="sine" easing="inout" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+				<animation effect="slide" end="-95,0" time="300" tween="sine" easing="inout" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Left</include>
 				<include content="ContentPanel">
@@ -2203,13 +2203,13 @@
 				<visible>Skin.HasSetting(HomeClearLogoMenu)</visible>
 				<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
 				<animation effect="slide" end="0,-115" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
-				<animation effect="slide" end="-522,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HideMainMenuWithWidgets) | Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+				<animation effect="slide" end="-522,0" time="300" tween="sine" easing="out" condition="Skin.HasSetting(HideMainMenuWithWidgets) | Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 			</control>
 			<control type="group">
 				<visible>[!Skin.HasSetting(HomeClearLogo) + String.IsEqual(Control.GetLabel(55000),fallback.png)] | Skin.HasSetting(HomeClearLogo)</visible>
 				<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
 				<animation effect="slide" end="0,-115" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
-				<animation effect="slide" end="-522,0" time="200" tween="quadratic" easing="out" condition="Skin.HasSetting(HideMainMenuWithWidgets) | Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+				<animation effect="slide" end="-522,0" time="280" tween="sine" easing="out" condition="Skin.HasSetting(HideMainMenuWithWidgets) | Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 				<top>20</top>
 				<left>20</left>
 				<control type="image">
@@ -2241,8 +2241,8 @@
 				<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 				<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
-				<animation effect="slide" end="-522,0" time="200" tween="quadratic" easing="out" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
-				<animation effect="slide" end="-95,0" time="200" tween="quadratic" easing="out" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+				<animation effect="slide" end="-522,0" time="300" tween="sine" easing="out" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
+				<animation effect="slide" end="-95,0" time="230" tween="sine" easing="out" condition="[!Control.HasFocus(9000) + !ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
 				<visible>[![Skin.HasSetting(HomeClearLogoMenu) + !Skin.HasSetting(HideMainMenuWithWidgets)]] | [![Skin.HasSetting(HomeClearLogoMenu) + !Skin.HasSetting(MinimizeMainMenu)]]</visible>
 				<top>20</top>
 				<left>20</left>
