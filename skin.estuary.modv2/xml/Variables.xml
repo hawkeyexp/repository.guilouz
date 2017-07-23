@@ -2581,7 +2581,7 @@
 		<value condition="Skin.HasSetting(opacitybars_90)">E6FFFFFF</value>
 		<value condition="Skin.HasSetting(opacitybars_95)">F2FFFFFF</value>
 		<value condition="Skin.HasSetting(opacitybars_100)">FFFFFFFF</value>
-		<value>FFFFFFFF</value>
+		<value>CCFFFFFF</value>
 	</variable>
 	<variable name="HideWatchedMoviesFromRecentlyVar">
 		<value condition="Skin.HasSetting(HideWatchedMoviesFromRecently)">special://skin/playlists/recent_unwatched_movies.xsp</value>
