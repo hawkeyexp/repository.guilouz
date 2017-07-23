@@ -39,8 +39,8 @@
 						<top>170</top>
 						<width>350</width>
 						<height>80</height>
-						<label>$INFO[ListItem.Label]</label>
-						<font>font25_title</font>
+						<font>font25_narrow</font>
+						<label>$INFO[ListItem.Label,[B],[/B]]</label>
 						<align>center</align>
 						<aligny>center</aligny>
 					</control>
@@ -92,8 +92,8 @@
 							<top>170</top>
 							<width>350</width>
 							<height>80</height>
-							<label>$INFO[ListItem.Label]</label>
-							<font>font25_title</font>
+							<font>font25_narrow</font>
+							<label>$INFO[ListItem.Label,[B],[/B]]</label>
 							<align>center</align>
 							<aligny>center</aligny>
 						</control>
@@ -143,8 +143,8 @@
 						<height>80</height>
 						<align>center</align>
 						<aligny>center</aligny>
-						<font>font25_title</font>
-						<label>$INFO[ListItem.Label]</label>
+						<font>font25_narrow</font>
+						<label>$INFO[ListItem.Label,[B],[/B]]</label>
 					</control>
 				</itemlayout>
 				<focusedlayout height="380" width="380">
@@ -194,8 +194,8 @@
 							<height>80</height>
 							<align>center</align>
 							<aligny>center</aligny>
-							<font>font25_title</font>
-							<label>$INFO[ListItem.Label]</label>
+							<font>font25_narrow</font>
+							<label>$INFO[ListItem.Label,[B],[/B]]</label>
 						</control>
 					</control>
 				</focusedlayout>
