@@ -27,6 +27,27 @@
 					<control type="group">
 						<posy>130</posy>
 						<control type="image">
+							<left>-2</left>
+							<top>-2</top>
+							<width>864</width>
+							<height>242</height>
+							<texture>dialogs/border-bannerlayout.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders)</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>860</width>
+							<height>238</height>
+							<texture background="true">dialogs/dialog-bg-nobo.png</texture>
+							<aspectratio aligny="center">scale</aspectratio>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders)</visible>
+						</control>
+						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<width>860</width>
@@ -35,6 +56,7 @@
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+							<visible>!Skin.HasSetting(show_borders)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>

@@ -935,6 +935,27 @@
 				<itemlayout height="210" width="680">
 					<control type="group">
 						<control type="image">
+							<left>87</left>
+							<top>-2</top>
+							<width>676</width>
+							<height>204</height>
+							<texture>dialogs/border-personalbanner.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="image">
+							<left>89</left>
+							<top>0</top>
+							<width>672</width>
+							<height>200</height>
+							<texture background="true">dialogs/dialog-bg-nobo.png</texture>
+							<aspectratio aligny="center" align="center">scale</aspectratio>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="image">
 							<left>89</left>
 							<top>0</top>
 							<width>672</width>
@@ -943,6 +964,18 @@
 							<aspectratio aligny="center" align="center">scale</aspectratio>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders) + [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="image">
+							<left>89</left>
+							<top>0</top>
+							<width>672</width>
+							<height>200</height>
+							<texture background="true">dialogs/dialog-bg-nobo.png</texture>
+							<aspectratio aligny="center" align="center">scale</aspectratio>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>!Skin.HasSetting(show_borders)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -963,6 +996,18 @@
 							<aspectratio aligny="center" align="center">scale</aspectratio>
 							<bordersize>20</bordersize>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="image">
+							<left>99</left>
+							<top>10</top>
+							<width>652</width>
+							<height>137</height>
+							<texture background="true" fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
+							<aspectratio aligny="center" align="center">keep</aspectratio>
+							<bordersize>20</bordersize>
+							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
+							<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
 						</control>
 						<control type="image">
 							<left>120</left>
@@ -981,7 +1026,17 @@
 							<label>$INFO[ListItem.TVShowTitle,, - ]$INFO[ListItem.Label]</label>
 							<font>font25_title</font>
 							<align>left</align>
-							<animation effect="slide" end="0,-20" time="0" condition="String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]">Condtional</animation>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="label">
+							<left>99</left>
+							<top>140</top>
+							<width>652</width>
+							<height>43</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font25_title</font>
+							<align>center</align>
+							<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
 						</control>
 						<control type="image">
 							<left>115</left>
@@ -1086,6 +1141,18 @@
 							<aspectratio aligny="center" align="center">scale</aspectratio>
 							<bordersize>20</bordersize>
 							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="image">
+							<left>99</left>
+							<top>10</top>
+							<width>652</width>
+							<height>137</height>
+							<texture background="true" fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
+							<aspectratio aligny="center" align="center">keep</aspectratio>
+							<bordersize>20</bordersize>
+							<visible>String.IsEmpty(ListItem.Art(banner))</visible>
+							<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
 						</control>
 						<control type="image">
 							<left>120</left>
@@ -1105,7 +1172,18 @@
 							<font>font25_title</font>
 							<align>left</align>
 							<scroll>true</scroll>
-							<animation effect="slide" end="0,-20" time="0" condition="String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]">Condtional</animation>
+							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="label">
+							<left>99</left>
+							<top>140</top>
+							<width>652</width>
+							<height>43</height>
+							<label>$INFO[ListItem.Label]</label>
+							<font>font25_title</font>
+							<align>center</align>
+							<scroll>true</scroll>
+							<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
 						</control>
 						<control type="image">
 							<left>115</left>
@@ -1176,12 +1254,39 @@
 					<control type="group">
 						<left>70</left>
 						<control type="image">
-							<width>316</width>
-							<height>200</height>
-							<texture>dialogs/dialog-bg-nobo.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
-							<bordersize>20</bordersize>
-						</control>
+						<left>-2</left>
+						<top>-2</top>
+						<width>320</width>
+						<height>204</height>
+						<texture>dialogs/border-category.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+						<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+					</control>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordersize>20</bordersize>
+						<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+					</control>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+						<visible>Skin.HasSetting(show_borders) + [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+					</control>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+						<visible>!Skin.HasSetting(show_borders)</visible>
+					</control>
 						<control type="image">
 							<top>20</top>
 							<left>-2</left>
@@ -1521,12 +1626,32 @@
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
+				<left>-2</left>
+				<top>8</top>
+				<width>320</width>
+				<height>281</height>
+				<texture>dialogs/border-episodelayout.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>277</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+			</control>
+			<control type="image">
 				<top>10</top>
 				<width>316</width>
 				<height>277</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
+				<visible>!Skin.HasSetting(show_borders)</visible>
 			</control>
 			<control type="image">
 				<top>4</top>
@@ -1687,12 +1812,32 @@
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
+				<left>-2</left>
+				<top>8</top>
+				<width>320</width>
+				<height>320</height>
+				<texture>dialogs/border-episodebannerlayout.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>316</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+			</control>
+			<control type="image">
 				<top>10</top>
 				<width>316</width>
 				<height>316</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
+				<visible>!Skin.HasSetting(show_borders)</visible>
 			</control>
 			<control type="image">
 				<top>4</top>
@@ -1860,12 +2005,41 @@
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
+				<left>-2</left>
+				<top>8</top>
+				<width>320</width>
+				<height>281</height>
+				<texture>dialogs/border-episodelayout.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>277</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+			</control>
+			<control type="image">
 				<top>10</top>
 				<width>316</width>
 				<height>277</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders) + [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>277</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>!Skin.HasSetting(show_borders)</visible>
 			</control>
 			<control type="image">
 				<top>4</top>
@@ -2050,12 +2224,41 @@
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
+				<left>-2</left>
+				<top>8</top>
+				<width>320</width>
+				<height>320</height>
+				<texture>dialogs/border-episodebannerlayout.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>316</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+			</control>
+			<control type="image">
 				<top>10</top>
 				<width>316</width>
 				<height>316</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders) + [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>316</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>!Skin.HasSetting(show_borders)</visible>
 			</control>
 			<control type="image">
 				<top>4</top>
@@ -2247,12 +2450,32 @@
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
+				<left>-2</left>
+				<top>8</top>
+				<width>320</width>
+				<height>281</height>
+				<texture>dialogs/border-episodelayout.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>277</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+			</control>
+			<control type="image">
 				<top>10</top>
 				<width>316</width>
 				<height>277</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
+				<visible>!Skin.HasSetting(show_borders)</visible>
 			</control>
 			<control type="image">
 				<top>4</top>
@@ -2382,12 +2605,32 @@
 		<param name="focused">false</param>
 		<definition>
 			<control type="image">
+				<left>-2</left>
+				<top>8</top>
+				<width>320</width>
+				<height>320</height>
+				<texture>dialogs/border-episodebannerlayout.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>316</width>
+				<height>316</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+			</control>
+			<control type="image">
 				<top>10</top>
 				<width>316</width>
 				<height>316</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
+				<visible>!Skin.HasSetting(show_borders)</visible>
 			</control>
 			<control type="image">
 				<top>4</top>
@@ -3222,11 +3465,38 @@
 				<control type="group">
 					<left>70</left>
 					<control type="image">
+						<left>-2</left>
+						<top>-2</top>
+						<width>320</width>
+						<height>204</height>
+						<texture>dialogs/border-category.png</texture>
+						<aspectratio>stretch</aspectratio>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+						<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+					</control>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordersize>20</bordersize>
+						<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+					</control>
+					<control type="image">
 						<width>316</width>
 						<height>200</height>
 						<texture>dialogs/dialog-bg-nobo.png</texture>
 						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
+						<visible>Skin.HasSetting(show_borders) + [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+					</control>
+					<control type="image">
+						<width>316</width>
+						<height>200</height>
+						<texture>dialogs/dialog-bg-nobo.png</texture>
+						<bordertexture border="21">overlays/shadow.png</bordertexture>
+						<bordersize>20</bordersize>
+						<visible>!Skin.HasSetting(show_borders)</visible>
 					</control>
 					<control type="image">
 						<top>20</top>

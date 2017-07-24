@@ -1900,3 +1900,8 @@ msgstr ""
 msgctxt "#40237"
 msgid "Hide fanart opacity in fullscreen mode"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40238"
+msgid "Show a white border for media"
+msgstr ""

@@ -805,6 +805,12 @@
 					<selected>Skin.HasSetting(enable_mediaflagscolor)</selected>
 					<enable>!Skin.HasSetting(hide_mediaflags)</enable>
 				</control>
+				<control type="radiobutton" id="713">
+					<label>$LOCALIZE[40238]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(show_borders)</onclick>
+					<selected>Skin.HasSetting(show_borders)</selected>
+				</control>
 				<control type="button" id="707">
 					<label>$LOCALIZE[31024]</label>
 					<include>DefaultSettingButton</include>
@@ -839,7 +845,7 @@
 				<control type="button" id="710">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_slide_animations)|Skin.Reset(no_animations)|Skin.Reset(hide_popup)|Skin.Reset(show_weatherinfo)|Skin.Reset(hide_mediaflags)|Skin.Reset(enable_mediaflagscolor)|Skin.Reset(background_showvideo)|Skin.Reset(background_showvisualisation))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_slide_animations)|Skin.Reset(no_animations)|Skin.Reset(hide_popup)|Skin.Reset(show_weatherinfo)|Skin.Reset(hide_mediaflags)|Skin.Reset(enable_mediaflagscolor)|Skin.Reset(show_borders)|Skin.Reset(background_showvideo)|Skin.Reset(background_showvisualisation))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="600">

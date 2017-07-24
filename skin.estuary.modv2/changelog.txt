@@ -1,4 +1,5 @@
 [B]2.7.1[/B]
+• Add possibility to show a white border for media
 • Fix movies sets info with 'Banner' view
 • Fix media flags for sets with 'Banner' view
 • Minor fixes
