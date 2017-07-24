@@ -1,6 +1,7 @@
 [B]2.7.1[/B]
 • Fix movies sets info with 'Banner' view
 • Fix media flags for sets with 'Banner' view
+• Minor fixes
 
 [B]2.7.0[/B]
 • Add number of oscars on video info (thanks to jurialmunkey)
