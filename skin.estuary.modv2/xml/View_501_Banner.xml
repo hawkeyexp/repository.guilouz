@@ -12,6 +12,7 @@
 				<top>0</top>
 				<width>1840</width>
 				<height>100%</height>
+				<oninfo condition="String.IsEqual(ListItem.DBType,set)">ActivateWindow(1132)</oninfo>
 				<onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
 				<onright>531</onright>
 				<onup>501</onup>

@@ -215,7 +215,7 @@
 				<param name="info_visible" value="true" />
 			</include>
 			<control type="group">
-				<visible>[Control.IsVisible(500) | Control.IsVisible(504) | Control.IsVisible(506) | Control.IsVisible(507)] + ListItem.IsCollection</visible>
+				<visible>[Control.IsVisible(500) | Control.IsVisible(501) | Control.IsVisible(504) | Control.IsVisible(506) | Control.IsVisible(507)] + ListItem.IsCollection</visible>
 				<control type="list" id="50500">
 					<right>6</right>
 					<bottom>11</bottom>
