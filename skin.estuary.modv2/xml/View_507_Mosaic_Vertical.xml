@@ -35,7 +35,7 @@
 							<top>8</top>
 							<width>410</width>
 							<height>259</height>
-							<texture>colors/white.png</texture>
+							<texture colordiffuse="$VAR[BorderColorVar]">colors/white.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -109,7 +109,7 @@
 							<top>8</top>
 							<width>259</width>
 							<height>259</height>
-							<texture>colors/white.png</texture>
+							<texture colordiffuse="$VAR[BorderColorVar]">colors/white.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -224,7 +224,7 @@
 							<top>8</top>
 							<width>244</width>
 							<height>334</height>
-							<texture>colors/white.png</texture>
+							<texture colordiffuse="$VAR[BorderColorVar]">colors/white.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>

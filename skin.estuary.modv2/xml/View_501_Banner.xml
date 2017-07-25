@@ -31,7 +31,7 @@
 							<top>-2</top>
 							<width>864</width>
 							<height>242</height>
-							<texture>dialogs/border-bannerlayout.png</texture>
+							<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-bannerlayout.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>

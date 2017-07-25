@@ -796,6 +796,14 @@
 					<onclick>Skin.ToggleSetting(show_borders)</onclick>
 					<selected>Skin.HasSetting(show_borders)</selected>
 				</control>
+				<control type="button" id="712">
+					<label>  ∟$LOCALIZE[40021]</label>
+					<label2>$VAR[Label_SkinSetting_BorderColor]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!Skin.String(BorderColor)">RunScript(script.skin.helper.colorpicker,skinstring=BorderColor)</onclick>
+					<onclick condition="Skin.String(BorderColor)">Skin.Reset(BorderColor)</onclick>
+					<visible>Skin.HasSetting(show_borders)</visible>
+				</control>
 				<control type="button" id="707">
 					<label>$LOCALIZE[31024]</label>
 					<include>DefaultSettingButton</include>

@@ -939,7 +939,7 @@
 							<top>-2</top>
 							<width>676</width>
 							<height>204</height>
-							<texture>dialogs/border-personalbanner.png</texture>
+							<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-personalbanner.png</texture>
 							<aspectratio>stretch</aspectratio>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
@@ -1258,7 +1258,7 @@
 						<top>-2</top>
 						<width>320</width>
 						<height>204</height>
-						<texture>dialogs/border-category.png</texture>
+						<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-category.png</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
@@ -1630,7 +1630,7 @@
 				<top>8</top>
 				<width>320</width>
 				<height>281</height>
-				<texture>dialogs/border-episodelayout.png</texture>
+				<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-episodelayout.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -1816,7 +1816,7 @@
 				<top>8</top>
 				<width>320</width>
 				<height>320</height>
-				<texture>dialogs/border-episodebannerlayout.png</texture>
+				<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-episodebannerlayout.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -2009,7 +2009,7 @@
 				<top>8</top>
 				<width>320</width>
 				<height>281</height>
-				<texture>dialogs/border-episodelayout.png</texture>
+				<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-episodelayout.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -2228,7 +2228,7 @@
 				<top>8</top>
 				<width>320</width>
 				<height>320</height>
-				<texture>dialogs/border-episodebannerlayout.png</texture>
+				<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-episodebannerlayout.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -2454,7 +2454,7 @@
 				<top>8</top>
 				<width>320</width>
 				<height>281</height>
-				<texture>dialogs/border-episodelayout.png</texture>
+				<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-episodelayout.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -2609,7 +2609,7 @@
 				<top>8</top>
 				<width>320</width>
 				<height>320</height>
-				<texture>dialogs/border-episodebannerlayout.png</texture>
+				<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-episodebannerlayout.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
@@ -3469,7 +3469,7 @@
 						<top>-2</top>
 						<width>320</width>
 						<height>204</height>
-						<texture>dialogs/border-category.png</texture>
+						<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-category.png</texture>
 						<aspectratio>stretch</aspectratio>
 						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>

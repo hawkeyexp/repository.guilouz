@@ -816,7 +816,10 @@ msgctxt "#40020"
 msgid "Main color"
 msgstr ""
 
-#: Empty String 40021
+#: /xml/SkinSettings.xml
+msgctxt "#40021"
+msgid "Border color"
+msgstr ""
 
 #: /xml/script-skin_helper_service-ColorPicker.xml
 msgctxt "#40022"
@@ -1890,5 +1893,5 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40238"
-msgid "Show a white border for media"
+msgid "Show a border for media"
 msgstr ""

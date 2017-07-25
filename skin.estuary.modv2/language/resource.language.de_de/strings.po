@@ -814,7 +814,10 @@ msgctxt "#40020"
 msgid "Main color"
 msgstr "Hauptfarbe"
 
-#: Empty String 40021
+#: /xml/SkinSettings.xml
+msgctxt "#40021"
+msgid "Border color"
+msgstr "Farben für Rahmen"
 
 #: /xml/script-skin_helper_service-ColorPicker.xml
 msgctxt "#40022"
@@ -1888,5 +1891,5 @@ msgstr "Keine Durchsichtigkeit für Fanart im Vollbildmodus"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40238"
-msgid "Show a white border for media"
-msgstr "Zeige Medien mit weissem Rahmen"
+msgid "Show a border for media"
+msgstr "Zeige Medien mit Rahmen"

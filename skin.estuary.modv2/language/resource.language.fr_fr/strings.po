@@ -816,7 +816,10 @@ msgctxt "#40020"
 msgid "Main color"
 msgstr "Couleur principale"
 
-#: Empty String 40021
+#: /xml/SkinSettings.xml
+msgctxt "#40021"
+msgid "Border color"
+msgstr "Couleur du contour"
 
 #: /xml/script-skin_helper_service-ColorPicker.xml
 msgctxt "#40022"
@@ -1890,5 +1893,5 @@ msgstr "Masquer l'opacité de l'arière-plan en mode plein écran"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40238"
-msgid "Show a white border for media"
-msgstr "Afficher un contour blanc aux médias"
+msgid "Show a border for media"
+msgstr "Afficher un contour aux médias"
