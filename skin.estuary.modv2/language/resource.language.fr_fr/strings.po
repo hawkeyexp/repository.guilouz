@@ -816,10 +816,7 @@ msgctxt "#40020"
 msgid "Main color"
 msgstr "Couleur principale"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40021"
-msgid "Reset main color"
-msgstr "Réinitialiser la couleur principale"
+#: Empty String 40021
 
 #: /xml/script-skin_helper_service-ColorPicker.xml
 msgctxt "#40022"
@@ -881,20 +878,14 @@ msgctxt "#40033"
 msgid "Background color"
 msgstr "Couleur de l'arrière-plan"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40034"
-msgid "Reset background color"
-msgstr "Réinitialiser la couleur de l'arrière-plan"
+#: Empty String 40034
 
 #: /xml/SkinSettings.xml
 msgctxt "#40035"
 msgid "Background pattern color"
 msgstr "Couleur du modèle d'arrière-plan"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40036"
-msgid "Reset background pattern color"
-msgstr "Réinitialiser la couleur du modèle d'arrière-plan"
+#: Empty String 40036
 
 #: /xml/SkinSettings.xml
 msgctxt "#40037"
@@ -1178,8 +1169,8 @@ msgstr "Source des paroles"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40093"
-msgid "Media flags of the same color as main skin color"
-msgstr "Indicateurs des médias de la même couleur que la couleur principale du thème"
+msgid "Media flags color"
+msgstr "Couleur des indicateurs des médias"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40094"
@@ -1721,10 +1712,7 @@ msgctxt "#40201"
 msgid "Rating text color"
 msgstr "Couleur du texte des notes"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40202"
-msgid "Reset rating text color"
-msgstr "Réinitialiser la couleur du texte des notes"
+#: Empty String 40202
 
 #: /shortcuts/overrides.xml
 msgctxt "#40203"
@@ -1838,10 +1826,7 @@ msgctxt "#40224"
 msgid "Secondary color"
 msgstr "Couleur secondaire"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40225"
-msgid "Reset secondary color"
-msgstr "Réinitialiser la couleur secondaire"
+#: Empty String 40225
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40226"

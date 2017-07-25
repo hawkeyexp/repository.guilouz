@@ -814,10 +814,7 @@ msgctxt "#40020"
 msgid "Main color"
 msgstr "Hauptfarbe"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40021"
-msgid "Reset main color"
-msgstr "Hauptfarbe zurücksetzen"
+#: Empty String 40021
 
 #: /xml/script-skin_helper_service-ColorPicker.xml
 msgctxt "#40022"
@@ -879,20 +876,14 @@ msgctxt "#40033"
 msgid "Background color"
 msgstr "Hintergrundfarbe"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40034"
-msgid "Reset background color"
-msgstr "Hintergrundfarbe zurücksetzen"
+#: Empty String 40034
 
 #: /xml/SkinSettings.xml
 msgctxt "#40035"
 msgid "Background pattern color"
 msgstr "Hintergrund-Musterfarbe"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40036"
-msgid "Reset background pattern color"
-msgstr "Hintergrund-Musterfarbe zurücksetzen"
+#: Empty String 40036
 
 #: /xml/SkinSettings.xml
 msgctxt "#40037"
@@ -1176,8 +1167,8 @@ msgstr "Lyrics-Quelle"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40093"
-msgid "Media flags of the same color as main skin color"
-msgstr "Hauptfarbe für die Medien-Flags verwenden"
+msgid "Media flags color"
+msgstr "Farben für die Medien-Flags"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40094"
@@ -1719,10 +1710,7 @@ msgctxt "#40201"
 msgid "Rating text color"
 msgstr "Textfarbe für Berwertungen"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40202"
-msgid "Reset rating text color"
-msgstr "Textfarbe für Bewertungen zurücksetzen"
+#: Empty String 40202
 
 #: /shortcuts/overrides.xml
 msgctxt "#40203"
@@ -1836,10 +1824,7 @@ msgctxt "#40224"
 msgid "Secondary color"
 msgstr "Zweite Farbe"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40225"
-msgid "Reset secondary color"
-msgstr "Zweite Farbe zurücksetzen"
+#: Empty String 40225
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40226"

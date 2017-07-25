@@ -535,12 +535,8 @@
 					<label>$LOCALIZE[40020]</label>
 					<label2>$VAR[Label_SkinSetting_SkinColor]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.colorpicker,skinstring=SkinColor)</onclick>
-				</control>
-				<control type="button" id="804">
-					<label>  ∟$LOCALIZE[40021]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.Reset(SkinColor)</onclick>
+					<onclick condition="!Skin.String(SkinColor)">RunScript(script.skin.helper.colorpicker,skinstring=SkinColor)</onclick>
+					<onclick condition="Skin.String(SkinColor)">Skin.Reset(SkinColor)</onclick>
 				</control>
 				<control type="radiobutton" id="810">
 					<label>$LOCALIZE[40223]</label>
@@ -549,28 +545,19 @@
 					<selected>Skin.HasSetting(EnableGradientColor)</selected>
 				</control>
 				<control type="button" id="811">
-					<label>$LOCALIZE[40224]</label>
+					<label>  ∟$LOCALIZE[40224]</label>
 					<label2>$VAR[Label_SkinSetting_GradientColor]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.colorpicker,skinstring=GradientColor)</onclick>
-					<visible>Skin.HasSetting(EnableGradientColor)</visible>
-				</control>
-				<control type="button" id="812">
-					<label>  ∟$LOCALIZE[40225]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.Reset(GradientColor)</onclick>
+					<onclick condition="!Skin.String(GradientColor)">RunScript(script.skin.helper.colorpicker,skinstring=GradientColor)</onclick>
+					<onclick condition="Skin.String(GradientColor)">Skin.Reset(GradientColor)</onclick>
 					<visible>Skin.HasSetting(EnableGradientColor)</visible>
 				</control>
 				<control type="button" id="801">
 					<label>$LOCALIZE[40033]</label>
 					<label2>$VAR[Label_SkinSetting_BackgroundColor]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.colorpicker,skinstring=BackgroundColor)</onclick>
-				</control>
-				<control type="button" id="802">
-					<label>  ∟$LOCALIZE[40034]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.Reset(BackgroundColor)</onclick>
+					<onclick condition="!Skin.String(BackgroundColor)">RunScript(script.skin.helper.colorpicker,skinstring=BackgroundColor)</onclick>
+					<onclick condition="Skin.String(BackgroundColor)">Skin.Reset(BackgroundColor)</onclick>
 				</control>
 				<control type="button" id="809">
 					<label>$LOCALIZE[31156]</label>
@@ -592,15 +579,12 @@
 					<onclick condition="String.IsEqual(Skin.String(background_overlay),0)">Skin.SetString(background_overlay,1)</onclick>
 				</control>
 				<control type="button" id="805">
-					<label>$LOCALIZE[40035]</label>
+					<label>  ∟$LOCALIZE[40035]</label>
 					<label2>$VAR[Label_SkinSetting_PatternColor]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.colorpicker,skinstring=PatternColor)</onclick>
-				</control>
-				<control type="button" id="806">
-					<label>  ∟$LOCALIZE[40036]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.Reset(PatternColor)</onclick>
+					<onclick condition="!Skin.String(PatternColor)">RunScript(script.skin.helper.colorpicker,skinstring=PatternColor)</onclick>
+					<onclick condition="Skin.String(PatternColor)">Skin.Reset(PatternColor)</onclick>
+					<visible>!String.IsEmpty(Skin.String(background_overlay)) + !String.IsEqual(Skin.String(background_overlay),0)</visible>
 				</control>
 				<control type="button" id="807">
 					<label>$LOCALIZE[40037]</label>
@@ -798,11 +782,12 @@
 					<onclick>Skin.ToggleSetting(hide_mediaflags)</onclick>
 					<selected>!Skin.HasSetting(hide_mediaflags)</selected>
 				</control>
-				<control type="radiobutton" id="706">
+				<control type="button" id="706">
 					<label>  ∟$LOCALIZE[40093]</label>
+					<label2>$VAR[Label_SkinSetting_MediaFlagsColor]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(enable_mediaflagscolor)</onclick>
-					<selected>Skin.HasSetting(enable_mediaflagscolor)</selected>
+					<onclick condition="!Skin.String(MediaFlagsColor)">RunScript(script.skin.helper.colorpicker,skinstring=MediaFlagsColor)</onclick>
+					<onclick condition="Skin.String(MediaFlagsColor)">Skin.Reset(MediaFlagsColor)</onclick>
 					<enable>!Skin.HasSetting(hide_mediaflags)</enable>
 				</control>
 				<control type="radiobutton" id="713">
@@ -821,13 +806,8 @@
 					<label>  ∟$LOCALIZE[40201]</label>
 					<label2>$VAR[Label_SkinSetting_RatingStringColor]</label2>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.colorpicker,skinstring=RatingStringColor)</onclick>
-					<visible>Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)</visible>
-				</control>
-				<control type="button" id="712">
-					<label>  ∟$LOCALIZE[40202]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.Reset(RatingStringColor)</onclick>
+					<onclick condition="!Skin.String(RatingStringColor)">RunScript(script.skin.helper.colorpicker,skinstring=RatingStringColor)</onclick>
+					<onclick condition="Skin.String(RatingStringColor)">Skin.Reset(RatingStringColor)</onclick>
 					<visible>Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)</visible>
 				</control>
 				<control type="radiobutton" id="708">
@@ -845,7 +825,7 @@
 				<control type="button" id="710">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_slide_animations)|Skin.Reset(no_animations)|Skin.Reset(hide_popup)|Skin.Reset(show_weatherinfo)|Skin.Reset(hide_mediaflags)|Skin.Reset(enable_mediaflagscolor)|Skin.Reset(show_borders)|Skin.Reset(background_showvideo)|Skin.Reset(background_showvisualisation))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_slide_animations)|Skin.Reset(no_animations)|Skin.Reset(hide_popup)|Skin.Reset(show_weatherinfo)|Skin.Reset(hide_mediaflags)|Skin.Reset(MediaFlagsColor)|Skin.Reset(show_borders)|Skin.Reset(background_showvideo)|Skin.Reset(background_showvisualisation))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="600">
