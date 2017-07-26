@@ -87,13 +87,13 @@
 		<value>$INFO[ListItem.Episode,, $LOCALIZE[20453]]</value>
 	</variable>
 	<variable name="MPAALabelMoviesSetsVar">
-		<value condition="String.Contains(Container(50).ListItem.mpaa,10) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 10 ans[/COLOR]</value>
-		<value condition="String.Contains(Container(50).ListItem.mpaa,12) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 12 ans[/COLOR]</value>
-		<value condition="String.Contains(Container(50).ListItem.mpaa,16) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 16 ans[/COLOR]</value>
-		<value condition="String.Contains(Container(50).ListItem.mpaa,18) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Interdit au moins de 18 ans[/COLOR]</value>
-		<value condition="String.Contains(Container(50).ListItem.mpaa,U) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Tout public[/COLOR]</value>
-		<value condition="String.Contains(Container(50).ListItem.mpaa,Rated) + String.Contains(System.Language,French)">$LOCALIZE[31017] : [COLOR white]Inconnue[/COLOR]</value>
-		<value>$LOCALIZE[31017] : [COLOR white]$INFO[Container(50).ListItem.mpaa][/COLOR]</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,10) + String.Contains(System.Language,French)">Interdit au moins de 10 ans</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,12) + String.Contains(System.Language,French)">Interdit au moins de 12 ans</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,16) + String.Contains(System.Language,French)">Interdit au moins de 16 ans</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,18) + String.Contains(System.Language,French)">Interdit au moins de 18 ans</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,U) + String.Contains(System.Language,French)">Tout public</value>
+		<value condition="String.Contains(Container(50).ListItem.mpaa,Rated) + String.Contains(System.Language,French)">Inconnue</value>
+		<value>$INFO[Container(50).ListItem.mpaa]</value>
 	</variable>
 	<variable name="PosterMoviesSetsInfoVar">
         <value condition="!Control.HasFocus(50)">$INFO[ListItem.Art(poster)]</value>

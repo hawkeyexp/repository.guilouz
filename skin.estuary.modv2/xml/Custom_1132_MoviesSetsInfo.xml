@@ -81,7 +81,7 @@
 				<control type="group" id="140">
 					<top>468</top>
 					<control type="button" id="138">
-						<width>754</width>
+						<width>631</width>
 						<height>418</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -98,7 +98,7 @@
 						<visible>!Control.HasFocus(50)</visible>
 					</control>
 					<control type="button" id="138">
-						<width>754</width>
+						<width>631</width>
 						<height>345</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -117,7 +117,7 @@
 					<control type="textbox">
 						<left>35</left>
 						<top>23</top>
-						<width>685</width>
+						<width>562</width>
 						<height>372</height>
 						<align>justify</align>
 						<font>fontplot</font>
@@ -128,7 +128,7 @@
 					<control type="textbox">
 						<left>35</left>
 						<top>23</top>
-						<width>685</width>
+						<width>562</width>
 						<height>300</height>
 						<align>justify</align>
 						<font>fontplot</font>
@@ -137,8 +137,8 @@
 						<visible>Control.HasFocus(50)</visible>
 					</control>
 					<control type="image">
-						<left>735</left>
-						<width>512</width>
+						<left>615</left>
+						<width>632</width>
 						<height>538</height>
 						<aligny>bottom</aligny>
 						<texture border="21">dialogs/dialog-bg.png</texture>
@@ -154,16 +154,16 @@
 				</control>
 				<control type="group">
 					<visible>Control.HasFocus(50)</visible>
-					<visible>![String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.4)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.5)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.6)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(Container(50).SubtitleLanguage.5)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.6))]</visible>
+					<visible>![String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.4)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(Container(50).SubtitleLanguage.4))]</visible>
 					<top>786</top>
 					<control type="image">
-						<width>754</width>
+						<width>631</width>
 						<height>100</height>
 						<texture border="21">dialogs/dialog-bg.png</texture>
 					</control>
 					<control type="group">
 						<top>30</top>
-						<width>754</width>
+						<width>631</width>
 						<height>142</height>
 						<control type="grouplist">
 							<itemgap>5</itemgap>
@@ -175,14 +175,14 @@
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
 								<texture>icons/infodialogs/audio.png</texture>
-								<visible>![String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.4)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.5)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.6))]</visible>
+								<visible>![String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.4))]</visible>
 							</control>
 							<control type="image">
 								<width>10</width>
 								<height>10</height>
 								<aspectratio>keep</aspectratio>
 								<texture/>
-								<visible>![String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.4)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.5)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.6))]</visible>
+								<visible>![String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.4))]</visible>
 							</control>
 							<control type="image">
 								<width>40</width>
@@ -213,39 +213,25 @@
 								<visible>!String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.4))</visible>
 							</control>
 							<control type="image">
-								<width>40</width>
-								<height>40</height>
-								<aspectratio>keep</aspectratio>
-								<texture>$INFO[Container(50).ListItem.Property(AudioLanguage.5),icons/infodialogs/flags/,.png]</texture>
-								<visible>!String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.5))</visible>
-							</control>
-							<control type="image">
-								<width>40</width>
-								<height>40</height>
-								<aspectratio>keep</aspectratio>
-								<texture>$INFO[Container(50).ListItem.Property(AudioLanguage.6),icons/infodialogs/flags/,.png]</texture>
-								<visible>!String.IsEmpty(Container(50).ListItem.Property(AudioLanguage.6))</visible>
-							</control>
-							<control type="image">
 								<width>50</width>
 								<height>10</height>
 								<aspectratio>keep</aspectratio>
 								<texture/>
-								<visible>![String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.6))]</visible>
+								<visible>![String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.4))]</visible>
 							</control>
 							<control type="image">
 								<width>40</width>
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
 								<texture>icons/infodialogs/subtitles.png</texture>
-								<visible>![String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.6))]</visible>
+								<visible>![String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.4))]</visible>
 							</control>
 							<control type="image">
 								<width>10</width>
 								<height>10</height>
 								<aspectratio>keep</aspectratio>
 								<texture/>
-								<visible>![String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.6))]</visible>
+								<visible>![String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.4))]</visible>
 							</control>
 							<control type="image">
 								<width>40</width>
@@ -273,28 +259,14 @@
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
 								<texture>$INFO[Container(50).ListItem.Property(SubtitleLanguage.4),icons/infodialogs/flags/,.png]</texture>
-								<visible>!String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.5))</visible>
-							</control>
-							<control type="image">
-								<width>40</width>
-								<height>40</height>
-								<aspectratio>keep</aspectratio>
-								<texture>$INFO[Container(50).ListItem.Property(SubtitleLanguage.5),icons/infodialogs/flags/,.png]</texture>
-								<visible>!String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.5))</visible>
-							</control>
-							<control type="image">
-								<width>40</width>
-								<height>40</height>
-								<aspectratio>keep</aspectratio>
-								<texture>$INFO[Container(50).ListItem.Property(SubtitleLanguage.6),icons/infodialogs/flags/,.png]</texture>
-								<visible>!String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.6))</visible>
+								<visible>!String.IsEmpty(Container(50).ListItem.Property(SubtitleLanguage.4))</visible>
 							</control>
 						</control>
 					</control>
 				</control>
 				<control type="grouplist" id="4000">
 					<orientation>vertical</orientation>
-					<left>768</left>
+					<left>647</left>
 					<top>488</top>
 					<height>355</height>
 					<itemgap>-8</itemgap>
@@ -308,70 +280,70 @@
 						<param name="label" value="$INFO[Container(50).ListItem.Director,$LOCALIZE[20339] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Director)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
-						<param name="width" value="447" />
+						<param name="width" value="568" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="148" />
 						<param name="label" value="$INFO[Container(50).ListItem.Writer,$LOCALIZE[20417] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Writer)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
-						<param name="width" value="447" />
+						<param name="width" value="568" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="149" />
 						<param name="label" value="$INFO[Container(50).ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Genre)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
-						<param name="width" value="447" />
+						<param name="width" value="568" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="150" />
 						<param name="label" value="$INFO[Container(50).ListItem.Country,$LOCALIZE[21875] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Country)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
-						<param name="width" value="447" />
+						<param name="width" value="568" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="151" />
 						<param name="label" value="$INFO[Container(50).ListItem.Studio,$LOCALIZE[29909] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Studio)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
-						<param name="width" value="447" />
+						<param name="width" value="568" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="152" />
 						<param name="label" value="$INFO[Container(50).ListItem.Premiered,$LOCALIZE[20416] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Premiered)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
-						<param name="width" value="447" />
+						<param name="width" value="568" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="153" />
 						<param name="label" value="$LOCALIZE[31017] : [COLOR white]$VAR[MPAALabelMoviesSetsVar][/COLOR]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Mpaa)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
-						<param name="width" value="447" />
+						<param name="width" value="568" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="154" />
 						<param name="label" value="$INFO[Container(50).ListItem.Tag,$LOCALIZE[20459] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Tag)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
-						<param name="width" value="447" />
+						<param name="width" value="568" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="155" />
 						<param name="label" value="$INFO[Container(50).ListItem.LastPlayed,$LOCALIZE[568] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.LastPlayed)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
-						<param name="width" value="447" />
+						<param name="width" value="568" />
 					</include>
 				</control>
 				<control type="textbox">
-					<left>768</left>
-					<top>495</top>
-					<width>447</width>
-					<height>485</height>
+					<left>647</left>
+					<top>491</top>
+					<width>567</width>
+					<height>489</height>
 					<font>font12</font>
 					<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Director),$LOCALIZE[20348] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Writer),$LOCALIZE[20418] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Genre),$LOCALIZE[135] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Country),$LOCALIZE[20451] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Studio),$LOCALIZE[20388] : [COLOR white],[/COLOR]][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Years),$LOCALIZE[652] : [COLOR white],[/COLOR]]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -433,7 +405,7 @@
 					<content sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/</content>
 				</control>
 				<control type="grouplist" id="5000">
-					<left>-246</left>
+					<left>-308</left>
 					<top>864</top>
 					<width>1246</width>
 					<height>400</height>
@@ -452,6 +424,8 @@
 						<param name="label" value="$LOCALIZE[31114]" />
 						<param name="onclick_1" value="Action(close)" />
 						<param name="onclick_2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title])" />
+						<param name="width" value="323.5" />
+						<param name="radioposx" value="138.5" />
 						<param name="visible" value="System.hasAddon(script.extendedinfo)" />
 					</include>
 					<include content="InfoDialogButton">
@@ -460,13 +434,9 @@
 						<param name="label" value="$LOCALIZE[31028]" />
 						<param name="onclick_1" value="SetProperty(fanart,$ESCINFO[ListItem.Art(fanart)],home)" />
 						<param name="onclick_2" value="ActivateWindow(1104)" />
+						<param name="width" value="323.5" />
+						<param name="radioposx" value="138.5" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Art(fanart))" />
-					</include>
-					<include content="InfoDialogButton">
-						<param name="id" value="104" />
-						<param name="icon" value="icons/infodialogs/disable.png" />
-						<param name="onclick_1" value="Dialog.Close(all)" />
-						<param name="label" value="$LOCALIZE[15067]" />
 					</include>
 				</control>
 				<include content="LeftRightArrows">

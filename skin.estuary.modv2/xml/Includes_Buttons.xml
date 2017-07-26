@@ -20,7 +20,7 @@
 	</include>
 	<include name="InfoDialogMetadata">
 		 <param name="textcolor">white</param>
-		 <param name="width">444</param>
+		 <param name="width">567</param>
         <definition>
             <control type="label" id="$PARAM[control_id]">
                 <width>$PARAM[width]</width>
@@ -224,6 +224,7 @@
 	</include>
 	<include name="InfoDialogButton">
 		<param name="width">262</param>
+		<param name="radioposx">108</param>
 		<param name="condition_1"></param>
 		<param name="condition_2"></param>
 		<definition>
@@ -236,7 +237,7 @@
 				<texturenofocus border="21">buttons/button-nofo.png</texturenofocus>
 				<textoffsetx>35</textoffsetx>
 				<textoffsety>78</textoffsety>
-				<radioposx>108</radioposx>
+				<radioposx>$PARAM[radioposx]</radioposx>
 				<radioposy>16</radioposy>
 				<radiowidth>48</radiowidth>
 				<font>font12</font>

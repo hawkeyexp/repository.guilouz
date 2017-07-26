@@ -1,6 +1,7 @@
 [B]2.7.1[/B]
 • Add possibility to change media flags color
 • Add possibility to show a border for media and choose his color
+• Improve dialog video info
 • Fix movies sets info with 'Banner' view
 • Fix media flags for sets with 'Banner' view
 • Minor fixes

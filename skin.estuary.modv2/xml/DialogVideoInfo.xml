@@ -154,7 +154,7 @@
 					<top>468</top>
 					<visible>!Control.HasFocus(439)</visible>
 					<control type="button" id="138">
-						<width>754</width>
+						<width>631</width>
 						<height>418</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -168,11 +168,11 @@
 						<onright>138</onright>
 						<ondown>5000</ondown>
 						<texturenofocus border="21">dialogs/dialog-bg.png</texturenofocus>
-						<visible>String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))</visible>
+						<visible>String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4))</visible>
 					</control>
 					<control type="image">
-						<left>738</left>
-						<width>508</width>
+						<left>615</left>
+						<width>631</width>
 						<height>418</height>
 						<aligny>bottom</aligny>
 						<texture border="21">dialogs/dialog-bg.png</texture>
@@ -180,16 +180,16 @@
 					<control type="textbox">
 						<left>35</left>
 						<top>23</top>
-						<width>685</width>
+						<width>562</width>
 						<height>372</height>
 						<align>justify</align>
 						<font>fontplot</font>
 						<label fallback="19055">$VAR[PlotSpoilerInfoVar]</label>
 						<autoscroll delay="12000" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-						<visible>String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))</visible>
+						<visible>String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4))</visible>
 					</control>
 					<control type="button" id="138">
-						<width>754</width>
+						<width>631</width>
 						<height>345</height>
 						<textoffsetx>40</textoffsetx>
 						<textoffsety>20</textoffsety>
@@ -203,33 +203,33 @@
 						<onright>138</onright>
 						<ondown>5000</ondown>
 						<texturenofocus border="21">dialogs/dialog-bg.png</texturenofocus>
-						<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
+						<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4))]</visible>
 					</control>
 					<control type="textbox">
 						<left>35</left>
 						<top>23</top>
-						<width>685</width>
+						<width>562</width>
 						<height>300</height>
 						<align>justify</align>
 						<font>fontplot</font>
 						<label fallback="19055">$VAR[PlotSpoilerInfoVar]</label>
 						<autoscroll delay="12000" time="4000" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
-						<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
+						<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4))]</visible>
 					</control>
 				</control>
 				<control type="group">
 					<visible>String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,musicvideo)</visible>
-					<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
+					<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4))]</visible>
 					<visible>!Control.HasFocus(439)</visible>
 					<top>786</top>
 					<control type="image">
-						<width>754</width>
+						<width>631</width>
 						<height>100</height>
 						<texture border="21">dialogs/dialog-bg.png</texture>
 					</control>
 					<control type="group">
 						<top>30</top>
-						<width>754</width>
+						<width>631</width>
 						<height>142</height>
 						<control type="grouplist">
 							<itemgap>5</itemgap>
@@ -241,14 +241,14 @@
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
 								<texture>icons/infodialogs/audio.png</texture>
-								<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6))]</visible>
+								<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4))]</visible>
 							</control>
 							<control type="image">
 								<width>10</width>
 								<height>10</height>
 								<aspectratio>keep</aspectratio>
 								<texture/>
-								<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4)) + String.IsEmpty(ListItem.Property(AudioLanguage.5)) + String.IsEmpty(ListItem.Property(AudioLanguage.6))]</visible>
+								<visible>![String.IsEmpty(ListItem.Property(AudioLanguage.1)) + String.IsEmpty(ListItem.Property(AudioLanguage.2)) + String.IsEmpty(ListItem.Property(AudioLanguage.3)) + String.IsEmpty(ListItem.Property(AudioLanguage.4))]</visible>
 							</control>
 							<control type="image">
 								<width>40</width>
@@ -279,39 +279,25 @@
 								<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.4))</visible>
 							</control>
 							<control type="image">
-								<width>40</width>
-								<height>40</height>
-								<aspectratio>keep</aspectratio>
-								<texture>$INFO[ListItem.Property(AudioLanguage.5),icons/infodialogs/flags/,.png]</texture>
-								<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.5))</visible>
-							</control>
-							<control type="image">
-								<width>40</width>
-								<height>40</height>
-								<aspectratio>keep</aspectratio>
-								<texture>$INFO[ListItem.Property(AudioLanguage.6),icons/infodialogs/flags/,.png]</texture>
-								<visible>!String.IsEmpty(ListItem.Property(AudioLanguage.6))</visible>
-							</control>
-							<control type="image">
 								<width>50</width>
 								<height>10</height>
 								<aspectratio>keep</aspectratio>
 								<texture/>
-								<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
+								<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4))]</visible>
 							</control>
 							<control type="image">
 								<width>40</width>
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
 								<texture>icons/infodialogs/subtitles.png</texture>
-								<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
+								<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4))]</visible>
 							</control>
 							<control type="image">
 								<width>10</width>
 								<height>10</height>
 								<aspectratio>keep</aspectratio>
 								<texture/>
-								<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.5)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.6))]</visible>
+								<visible>![String.IsEmpty(ListItem.Property(SubtitleLanguage.1)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.2)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.3)) + String.IsEmpty(ListItem.Property(SubtitleLanguage.4))]</visible>
 							</control>
 							<control type="image">
 								<width>40</width>
@@ -339,28 +325,14 @@
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
 								<texture>$INFO[ListItem.Property(SubtitleLanguage.4),icons/infodialogs/flags/,.png]</texture>
-								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.5))</visible>
-							</control>
-							<control type="image">
-								<width>40</width>
-								<height>40</height>
-								<aspectratio>keep</aspectratio>
-								<texture>$INFO[ListItem.Property(SubtitleLanguage.5),icons/infodialogs/flags/,.png]</texture>
-								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.5))</visible>
-							</control>
-							<control type="image">
-								<width>40</width>
-								<height>40</height>
-								<aspectratio>keep</aspectratio>
-								<texture>$INFO[ListItem.Property(SubtitleLanguage.6),icons/infodialogs/flags/,.png]</texture>
-								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.6))</visible>
+								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.4))</visible>
 							</control>
 						</control>
 					</control>
 				</control>
 				<control type="grouplist" id="4000">
 					<orientation>vertical</orientation>
-					<left>770</left>
+					<left>647</left>
 					<top>488</top>
 					<height>358</height>
 					<itemgap>-8</itemgap>
