@@ -4,6 +4,7 @@
 • Improve dialog video info
 • Fix movies sets info with 'Banner' view
 • Fix media flags for sets with 'Banner' view
+• Improvements
 • Minor fixes
 
 [B]2.7.0[/B]
