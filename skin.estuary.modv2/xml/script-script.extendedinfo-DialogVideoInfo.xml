@@ -1715,6 +1715,27 @@
 									<left>0</left>
 									<top>20</top>
 									<control type="image">
+										<left>13</left>
+										<top>-12</top>
+										<width>616</width>
+										<height>366</height>
+										<texture colordiffuse="$VAR[BorderColorVar]">colors/white.png</texture>
+										<aspectratio>stretch</aspectratio>
+										<bordertexture border="21">overlays/shadow.png</bordertexture>
+										<bordersize>20</bordersize>
+										<visible>Skin.HasSetting(show_borders)</visible>
+									</control>
+									<control type="image">
+										<left>15</left>
+										<top>-10</top>
+										<width>612</width>
+										<height>362</height>
+										<texture background="true" fallback="icons/extendedinfo/DefaultVideo.png">$INFO[ListItem.Thumb]</texture>
+										<aspectratio>stretch</aspectratio>
+										<bordersize>20</bordersize>
+										<visible>Skin.HasSetting(show_borders)</visible>
+									</control>
+									<control type="image">
 										<left>15</left>
 										<top>-10</top>
 										<width>612</width>
@@ -1723,6 +1744,7 @@
 										<aspectratio>stretch</aspectratio>
 										<bordertexture border="21">overlays/shadow.png</bordertexture>
 										<bordersize>20</bordersize>
+										<visible>!Skin.HasSetting(show_borders)</visible>
 									</control>
 								</control>
 							</itemlayout>

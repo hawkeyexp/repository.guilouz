@@ -48,12 +48,32 @@
 						<left>75</left>
 						<top>190</top>
 						<control type="image">
+							<left>-2</left>
+							<top>-72</top>
+							<width>444</width>
+							<height>424</height>
+							<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-youtubelist.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders)</visible>
+						</control>
+						<control type="image">
+							<top>-70</top>
+							<width>440</width>
+							<height>420</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders)</visible>
+						</control>
+						<control type="image">
 							<top>-70</top>
 							<width>440</width>
 							<height>420</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+							<visible>!Skin.HasSetting(show_borders)</visible>
 						</control>
 						<control type="image">
 							<left>25</left>
