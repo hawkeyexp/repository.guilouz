@@ -1223,6 +1223,10 @@
 					<control type="group">
 						<width>176</width>
 						<visible>!String.IsEmpty(Container(111).ListItem.Duration)</visible>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/time.png" />
+							<param name="width" value="176" />
+						</include>
 						<control type="label">
 							<width>119</width>
 							<top>-1</top>
@@ -1234,14 +1238,15 @@
 							<label>$VAR[DurationVar]</label>
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/time.png" />
-							<param name="width" value="176" />
-						</include>
 					</control>
 					<control type="group">
 						<width>162</width>
 						<visible>!String.IsEmpty(Container(111).ListItem.EndTimeResume)</visible>
+						<visible>!String.Contains(Container(111).ListItem.EndTimeResume,AM) + !String.Contains(Container(111).ListItem.EndTimeResume,PM)</visible>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/finishtime.png" />
+							<param name="width" value="162" />
+						</include>
 						<control type="label">
 							<width>105</width>
 							<top>-1</top>
@@ -1254,10 +1259,28 @@
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 							<scroll>true</scroll>
 						</control>
+					</control>
+					<control type="group">
+						<width>222</width>
+						<top>5</top>
+						<visible>!String.IsEmpty(Container(111).ListItem.EndTimeResume)</visible>
+						<visible>String.Contains(Container(111).ListItem.EndTimeResume,AM) | String.Contains(Container(111).ListItem.EndTimeResume,PM)</visible>
 						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime.png" />
-							<param name="width" value="162" />
+							<param name="texture" value="flags/finishtime_long.png" />
+							<param name="width" value="222" />
 						</include>
+						<control type="label">
+							<width>165</width>
+							<top>-1</top>
+							<height>50</height>
+							<posx>54</posx>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font_flag</font>
+							<label>$INFO[Container(111).ListItem.EndTimeResume]</label>
+							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+							<scroll>true</scroll>
+						</control>
 					</control>
 				</control>
 			</control>
@@ -1303,6 +1326,10 @@
 					<control type="group">
 						<width>176</width>
 						<visible>!String.IsEmpty(Container(141).ListItem.Duration)</visible>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/time.png" />
+							<param name="width" value="176" />
+						</include>
 						<control type="label">
 							<width>119</width>
 							<top>-1</top>
@@ -1314,14 +1341,15 @@
 							<label>$VAR[DurationVar]</label>
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/time.png" />
-							<param name="width" value="176" />
-						</include>
 					</control>
 					<control type="group">
 						<width>162</width>
 						<visible>!String.IsEmpty(Container(141).ListItem.EndTimeResume)</visible>
+						<visible>!String.Contains(Container(141).ListItem.EndTimeResume,AM) + !String.Contains(Container(141).ListItem.EndTimeResume,PM)</visible>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/finishtime.png" />
+							<param name="width" value="162" />
+						</include>
 						<control type="label">
 							<width>105</width>
 							<top>-1</top>
@@ -1334,10 +1362,28 @@
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 							<scroll>true</scroll>
 						</control>
+					</control>
+					<control type="group">
+						<width>222</width>
+						<top>5</top>
+						<visible>!String.IsEmpty(Container(141).ListItem.EndTimeResume)</visible>
+						<visible>String.Contains(Container(141).ListItem.EndTimeResume,AM) | String.Contains(Container(141).ListItem.EndTimeResume,PM)</visible>
 						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime.png" />
-							<param name="width" value="162" />
+							<param name="texture" value="flags/finishtime_long.png" />
+							<param name="width" value="222" />
 						</include>
+						<control type="label">
+							<width>165</width>
+							<top>-1</top>
+							<height>50</height>
+							<posx>54</posx>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font_flag</font>
+							<label>$INFO[Container(141).ListItem.EndTimeResume]</label>
+							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+							<scroll>true</scroll>
+						</control>
 					</control>
 				</control>
 			</control>
@@ -1383,6 +1429,10 @@
 					<control type="group">
 						<width>176</width>
 						<visible>!String.IsEmpty(Container(151).ListItem.Duration)</visible>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/time.png" />
+							<param name="width" value="176" />
+						</include>
 						<control type="label">
 							<width>119</width>
 							<top>-1</top>
@@ -1394,14 +1444,15 @@
 							<label>$VAR[DurationVar]</label>
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/time.png" />
-							<param name="width" value="176" />
-						</include>
 					</control>
 					<control type="group">
 						<width>162</width>
 						<visible>!String.IsEmpty(Container(151).ListItem.EndTimeResume)</visible>
+						<visible>!String.Contains(Container(151).ListItem.EndTimeResume,AM) + !String.Contains(Container(151).ListItem.EndTimeResume,PM)</visible>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/finishtime.png" />
+							<param name="width" value="162" />
+						</include>
 						<control type="label">
 							<width>105</width>
 							<top>-1</top>
@@ -1414,10 +1465,28 @@
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 							<scroll>true</scroll>
 						</control>
+					</control>
+					<control type="group">
+						<width>222</width>
+						<top>5</top>
+						<visible>!String.IsEmpty(Container(151).ListItem.EndTimeResume)</visible>
+						<visible>String.Contains(Container(151).ListItem.EndTimeResume,AM) | String.Contains(Container(151).ListItem.EndTimeResume,PM)</visible>
 						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime.png" />
-							<param name="width" value="162" />
+							<param name="texture" value="flags/finishtime_long.png" />
+							<param name="width" value="222" />
 						</include>
+						<control type="label">
+							<width>165</width>
+							<top>-1</top>
+							<height>50</height>
+							<posx>54</posx>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font_flag</font>
+							<label>$INFO[Container(151).ListItem.EndTimeResume]</label>
+							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+							<scroll>true</scroll>
+						</control>
 					</control>
 				</control>
 			</control>
@@ -1463,6 +1532,10 @@
 					<control type="group">
 						<width>176</width>
 						<visible>!String.IsEmpty(Container(201).ListItem.Duration)</visible>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/time.png" />
+							<param name="width" value="176" />
+						</include>
 						<control type="label">
 							<width>119</width>
 							<top>-1</top>
@@ -1474,14 +1547,15 @@
 							<label>$VAR[DurationVar]</label>
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/time.png" />
-							<param name="width" value="176" />
-						</include>
 					</control>
 					<control type="group">
 						<width>162</width>
 						<visible>!String.IsEmpty(Container(201).ListItem.EndTimeResume)</visible>
+						<visible>!String.Contains(Container(201).ListItem.EndTimeResume,AM) + !String.Contains(Container(201).ListItem.EndTimeResume,PM)</visible>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/finishtime.png" />
+							<param name="width" value="162" />
+						</include>
 						<control type="label">
 							<width>105</width>
 							<top>-1</top>
@@ -1494,10 +1568,28 @@
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 							<scroll>true</scroll>
 						</control>
+					</control>
+					<control type="group">
+						<width>222</width>
+						<top>5</top>
+						<visible>!String.IsEmpty(Container(201).ListItem.EndTimeResume)</visible>
+						<visible>String.Contains(Container(201).ListItem.EndTimeResume,AM) | String.Contains(Container(201).ListItem.EndTimeResume,PM)</visible>
 						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime.png" />
-							<param name="width" value="162" />
+							<param name="texture" value="flags/finishtime_long.png" />
+							<param name="width" value="222" />
 						</include>
+						<control type="label">
+							<width>165</width>
+							<top>-1</top>
+							<height>50</height>
+							<posx>54</posx>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font_flag</font>
+							<label>$INFO[Container(201).ListItem.EndTimeResume]</label>
+							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+							<scroll>true</scroll>
+						</control>
 					</control>
 				</control>
 			</control>
@@ -1543,6 +1635,10 @@
 					<control type="group">
 						<width>176</width>
 						<visible>!String.IsEmpty(Container(211).ListItem.Duration)</visible>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/time.png" />
+							<param name="width" value="176" />
+						</include>
 						<control type="label">
 							<width>119</width>
 							<top>-1</top>
@@ -1554,14 +1650,15 @@
 							<label>$VAR[DurationVar]</label>
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 						</control>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/time.png" />
-							<param name="width" value="176" />
-						</include>
 					</control>
 					<control type="group">
 						<width>162</width>
 						<visible>!String.IsEmpty(Container(211).ListItem.EndTimeResume)</visible>
+						<visible>!String.Contains(Container(211).ListItem.EndTimeResume,AM) + !String.Contains(Container(211).ListItem.EndTimeResume,PM)</visible>
+						<include content="MediaFlag">
+							<param name="texture" value="flags/finishtime.png" />
+							<param name="width" value="162" />
+						</include>
 						<control type="label">
 							<width>105</width>
 							<top>-1</top>
@@ -1574,10 +1671,28 @@
 							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 							<scroll>true</scroll>
 						</control>
+					</control>
+					<control type="group">
+						<width>222</width>
+						<top>5</top>
+						<visible>!String.IsEmpty(Container(211).ListItem.EndTimeResume)</visible>
+						<visible>String.Contains(Container(211).ListItem.EndTimeResume,AM) | String.Contains(Container(211).ListItem.EndTimeResume,PM)</visible>
 						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime.png" />
-							<param name="width" value="162" />
+							<param name="texture" value="flags/finishtime_long.png" />
+							<param name="width" value="222" />
 						</include>
+						<control type="label">
+							<width>165</width>
+							<top>-1</top>
+							<height>50</height>
+							<posx>54</posx>
+							<align>center</align>
+							<aligny>center</aligny>
+							<font>font_flag</font>
+							<label>$INFO[Container(211).ListItem.EndTimeResume]</label>
+							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
+							<scroll>true</scroll>
+						</control>
 					</control>
 				</control>
 			</control>
