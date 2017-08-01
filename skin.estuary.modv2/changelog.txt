@@ -1,3 +1,7 @@
+[B]2.7.2[/B]
+• Add Top 250 from IMDb on dialog video info
+• Minor changes
+
 [B]2.7.1[/B]
 • Add possibility to change media flags color
 • Add possibility to show a border for media and choose his color

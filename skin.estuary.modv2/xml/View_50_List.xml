@@ -82,7 +82,8 @@
 					<control type="group">
 						<left>293</left>
 						<top>937</top>
-						<include content="RatingCircle">
+						<visible>![Control.IsVisible(50) + [String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | [String.IsEqual(Container.SortMethod,$LOCALIZE[563]) + Skin.HasSetting(circle_rating)] | [String.IsEqual(Container.SortMethod,$LOCALIZE[38018]) + Skin.HasSetting(circle_userrating)]]]</visible>
+						<include content="RatingCircle" condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">
 							<param name="animation" value="True" />
 						</include>
 					</control>
@@ -254,7 +255,7 @@
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>300</fadetime>
 					<texture background="true" fallback="DefaultVideo.png">$VAR[IconWallThumbVar]</texture>
-					<visible>!String.IsEqual(ListItem.DbType,episode) + !String.IsEqual(ListItem.DbType,artist) + !String.IsEqual(ListItem.DbType,album) + !String.IsEqual(ListItem.DbType,song) + !Container.Content(games) + !Container.Content(addons)</visible>
+					<visible>!String.IsEqual(ListItem.DbType,episode) + !String.IsEqual(ListItem.DbType,artist) + !String.IsEqual(ListItem.DbType,album) + !String.IsEqual(ListItem.DbType,song) + !Container.Content(games) + !Container.Content(addons) + !Container.Content(years) + !Container.Content(genres) + !Container.Content(actors) + !Container.Content(directors) + !Container.Content(studios) + !Container.Content(countries) + !Container.Content(tags) + !Container.Content(roles) + !Container.Content(playlists) + !Container.Content(files)</visible>
 				</control>
 				<control type="group">
 					<top>405</top>
@@ -325,6 +326,106 @@
 					<left>30</left>
 					<top>140</top>
 					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true">DefaultMusicYears.png</texture>
+					<visible>Container.Content(years)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" fallback="DefaultGenre.png">$VAR[IconWallThumbVar]</texture>
+					<visible>Container.Content(genres) + Window.IsVisible(MyVideoNav.xml)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" fallback="DefaultMusicGenres.png">$VAR[IconWallThumbVar]</texture>
+					<visible>Container.Content(genres) + Window.IsVisible(MyMusicNav.xml)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" fallback="DefaultActor.png">$INFO[Container.ListItem.Art(thumb)]</texture>
+					<visible>Container.Content(actors) | Container.Content(directors)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" fallback="DefaultStudios.png">$VAR[IconWallThumbVar]</texture>
+					<visible>Container.Content(studios)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true">DefaultCountry.png</texture>
+					<visible>Container.Content(countries)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true">$VAR[IconWallThumbVar]</texture>
+					<visible>Container.Content(tags)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true">DefaultMusicRoles.png</texture>
+					<visible>Container.Content(roles)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" fallback="DefaultFile.png">$VAR[IconWallThumbVar]</texture>
+					<visible>Container.Content(files)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" fallback="DefaultPlaylist.png">$INFO[ListItem.Icon]</texture>
+					<visible>Container.Content(playlists)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
 					<height>330</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>300</fadetime>
@@ -336,6 +437,7 @@
 					<top>591</top>
 					<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 					<animation effect="slide" end="0,-140" time="0" condition="String.IsEqual(ListItem.DbType,episode)">conditional</animation>
+					<visible>![Control.IsVisible(55) + [String.IsEqual(Container.SortMethod,$LOCALIZE[556]) | String.IsEqual(Container.SortMethod,$LOCALIZE[20359]) | String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | [String.IsEqual(Container.SortMethod,$LOCALIZE[563]) + Skin.HasSetting(circle_rating)] | [String.IsEqual(Container.SortMethod,$LOCALIZE[38018]) + Skin.HasSetting(circle_userrating)]]]</visible>
 				</control>
 				<control type="group">
 					<visible>!Container.Content() | !String.IsEmpty(ListItem.Plot)</visible>
@@ -349,7 +451,7 @@
 						<label>$VAR[ListBoxInfoVar]</label>
 						<visible>!String.IsEqual(ListItem.DbType,episode) + !String.IsEqual(listitem.dbtype,artist)</visible>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+						<visible>!String.IsEqual(Skin.Font, Arial) + !Container.Content(genres)</visible>
 					</control>
 					<control type="textbox" id="15500">
 						<top>640</top>
@@ -360,7 +462,7 @@
 						<label>$VAR[ListBoxInfoVar]</label>
 						<visible>!String.IsEqual(ListItem.DbType,episode) + !String.IsEqual(listitem.dbtype,artist)</visible>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>String.IsEqual(Skin.Font, Arial)</visible>
+						<visible>String.IsEqual(Skin.Font, Arial) + !Container.Content(genres)</visible>
 					</control>
 					<control type="textbox" id="15501">
 						<top>495</top>
@@ -548,7 +650,7 @@
 						<visible>!ListItem.IsParentFolder</visible>
 						<visible>!Integer.IsGreater(Container(42000).NumItems,0) + !Integer.IsGreater(Container(43000).NumItems,0)</visible>
 						<visible>!Container.Content() | !String.isEmpty(ListItem.Plot)</visible>
-						<visible>!Container.Content(games)</visible>
+						<visible>!Container.Content(games) + !Container.Content(years) + !Container.Content(genres) + !Container.Content(actors) + !Container.Content(directors) + !Container.Content(studios) + !Container.Content(countries) + !Container.Content(tags) + !Container.Content(roles) + !Container.Content(playlists) + !Container.Content(files)</visible>
 					</control>
 					<control type="group">
 						<left>20</left>

@@ -383,6 +383,10 @@
 						<control type="group">
 							<left>0</left>
 							<top>10</top>
+							<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            					<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            					<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       						</animation>
 							<control type="image">
 								<top>20</top>
 								<left>20</left>
@@ -447,6 +451,40 @@
 					<param name="visible" value="true" />
 				</include>
 			</control>
+			<control type="label">
+				<right>93</right>
+				<top>972</top>
+				<align>right</align>
+				<width>1400</width>
+				<height>44</height>
+				<font>font20_title</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<shadowcolor>text_shadow</shadowcolor>
+				<haspath>true</haspath>
+				<label>$LOCALIZE[31126]</label>
+				<visible>Control.HasFocus(138)</visible>
+				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			</control>
+			<control type="label">
+				<right>93</right>
+				<top>972</top>
+				<align>right</align>
+				<width>1400</width>
+				<height>44</height>
+				<font>font20_title</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<shadowcolor>text_shadow</shadowcolor>
+				<haspath>true</haspath>
+				<label>$LOCALIZE[40180]</label>
+				<visible>Control.HasFocus(50)</visible>
+				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+			</control>
 			<control type="group">
 				<visible>String.IsEqual(Control.GetLabel(3334),fallback.png)</visible>
 				<include content="InfoDialogTopBarInfo">
@@ -478,7 +516,7 @@
 				<param name="infolabel_prefix" value="Container(50)."/>
 				<param name="visible" value="Control.HasFocus(50)"/>
 			</include>
-			<control type="group">
+			<!--<control type="group">
 				<visible>Control.HasFocus(50)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<top>21</top>
@@ -521,7 +559,7 @@
 					<label>$LOCALIZE[31126]</label>
 					<scroll>true</scroll>
 				</control>
-			</control>
+			</control>-->
 		</control>
 	</controls>
 </window>
