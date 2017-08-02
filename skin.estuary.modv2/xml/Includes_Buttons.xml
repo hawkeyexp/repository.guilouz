@@ -209,15 +209,15 @@
 			<texturefocus border="21" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 			<texturenofocus border="21">buttons/button-nofo.png</texturenofocus>
 			<textoffsetx>35</textoffsetx>
-			<textoffsety>78</textoffsety>
+			<textoffsety>86</textoffsety>
 			<radioposx>108</radioposx>
-			<radioposy>16</radioposy>
+			<radioposy>18</radioposy>
 			<radiowidth>48</radiowidth>
-			<font>font12</font>
-			<textureradioonfocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonfocus>
-			<textureradioonnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonnofocus>
-			<textureradioofffocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioofffocus>
-			<textureradiooffnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradiooffnofocus>
+			<font>font20_title</font>
+			<textureradioonfocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioonfocus>
+			<textureradioonnofocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioonnofocus>
+			<textureradioofffocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioofffocus>
+			<textureradiooffnofocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradiooffnofocus>
 			<textureradiooffdisabled colordiffuse="disabled">$PARAM[icon]</textureradiooffdisabled>
 			<textureradioondisabled colordiffuse="disabled">$PARAM[icon]</textureradioondisabled>
 		</definition>
@@ -236,15 +236,15 @@
 				<texturefocus border="21" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 				<texturenofocus border="21">buttons/button-nofo.png</texturenofocus>
 				<textoffsetx>35</textoffsetx>
-				<textoffsety>78</textoffsety>
+				<textoffsety>86</textoffsety>
 				<radioposx>$PARAM[radioposx]</radioposx>
-				<radioposy>16</radioposy>
+				<radioposy>18</radioposy>
 				<radiowidth>48</radiowidth>
-				<font>font12</font>
-				<textureradioonfocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonfocus>
-				<textureradioonnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioonnofocus>
-				<textureradioofffocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradioofffocus>
-				<textureradiooffnofocus colordiffuse="D0FFFFFF">$PARAM[icon]</textureradiooffnofocus>
+				<font>font20_title</font>
+				<textureradioonfocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioonfocus>
+				<textureradioonnofocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioonnofocus>
+				<textureradioofffocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioofffocus>
+				<textureradiooffnofocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradiooffnofocus>
 				<textureradiooffdisabled colordiffuse="disabled">$PARAM[icon]</textureradiooffdisabled>
 				<textureradioondisabled colordiffuse="disabled">$PARAM[icon]</textureradioondisabled>
 				<label>$PARAM[label]</label>
@@ -266,15 +266,15 @@
 				<texturefocus border="21" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 				<texturenofocus border="21">buttons/button-nofo.png</texturenofocus>
 				<textoffsetx>35</textoffsetx>
-				<textoffsety>78</textoffsety>
+				<textoffsety>86</textoffsety>
 				<radioposx>108</radioposx>
-				<radioposy>16</radioposy>
+				<radioposy>18</radioposy>
 				<radiowidth>48</radiowidth>
-				<font>font12</font>
-				<textureradioonfocus colordiffuse="D0FFFFFF">$PARAM[icon_on]</textureradioonfocus>
-				<textureradioonnofocus colordiffuse="D0FFFFFF">$PARAM[icon_on]</textureradioonnofocus>
-				<textureradioofffocus colordiffuse="D0FFFFFF">$PARAM[icon_off]</textureradioofffocus>
-				<textureradiooffnofocus colordiffuse="D0FFFFFF">$PARAM[icon_off]</textureradiooffnofocus>
+				<font>font20_title</font>
+				<textureradioonfocus colordiffuse="FFFFFFFF">$PARAM[icon_on]</textureradioonfocus>
+				<textureradioonnofocus colordiffuse="FFFFFFFF">$PARAM[icon_on]</textureradioonnofocus>
+				<textureradioofffocus colordiffuse="FFFFFFFF">$PARAM[icon_off]</textureradioofffocus>
+				<textureradiooffnofocus colordiffuse="FFFFFFFF">$PARAM[icon_off]</textureradiooffnofocus>
 				<textureradiooffdisabled colordiffuse="disabled">$PARAM[icon_off]</textureradiooffdisabled>
 				<textureradioondisabled colordiffuse="disabled">$PARAM[icon_on]</textureradioondisabled>
 				<selected>$PARAM[selected]</selected>

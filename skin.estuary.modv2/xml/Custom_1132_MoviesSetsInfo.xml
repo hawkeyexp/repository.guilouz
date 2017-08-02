@@ -516,50 +516,6 @@
 				<param name="infolabel_prefix" value="Container(50)."/>
 				<param name="visible" value="Control.HasFocus(50)"/>
 			</include>
-			<!--<control type="group">
-				<visible>Control.HasFocus(50)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<top>21</top>
-				<left>0</left>
-				<control type="image">
-					<left>21</left>
-					<width>36</width>
-					<height>36</height>
-					<animation effect="rotate" end="-90" center="36,19" time="0" condition="true">Conditional</animation>
-					<texture>frame/menu-nofo.png</texture>
-				</control>
-				<control type="label">
-					<left>74</left>
-					<width>750</width>
-					<height>36</height>
-					<font>font25_title</font>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[40180]</label>
-					<scroll>true</scroll>
-				</control>
-			</control>
-			<control type="group">
-				<visible>Control.HasFocus(138)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<top>21</top>
-				<left>0</left>
-				<control type="image">
-					<top>4</top>
-					<left>17</left>
-					<width>36</width>
-					<height>36</height>
-					<texture>lists/played-total.png</texture>
-				</control>
-				<control type="label">
-					<left>74</left>
-					<width>750</width>
-					<height>36</height>
-					<font>font25_title</font>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[31126]</label>
-					<scroll>true</scroll>
-				</control>
-			</control>-->
 		</control>
 	</controls>
 </window>

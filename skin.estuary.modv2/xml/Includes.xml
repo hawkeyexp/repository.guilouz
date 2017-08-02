@@ -941,26 +941,6 @@
 						<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
 					</control>
 				</control>
-				<control type="group">
-					<width>146</width>
-					<top>5</top>
-					<visible>Integer.IsGreater(Window(home).Property(SkinHelper.ListItem.IMDB.Top250),0) + Window.IsVisible(DialogVideoInfo.xml)</visible>
-					<include content="MediaFlag">
-						<param name="texture" value="flags/top250.png" />
-						<param name="width" value="146" />
-					</include>
-					<control type="label">
-						<width>89</width>
-						<top>-1</top>
-						<height>50</height>
-						<posx>54</posx>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font_flag</font>
-						<label>$INFO[Window(Home).Property(SkinHelper.ListItem.IMDB.Top250),#,]</label>
-						<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-					</control>
-				</control>
 				<include content="MediaFlag">
 					<param name="texture" value="flags/webdl.png" />
 					<param name="width" value="73" />

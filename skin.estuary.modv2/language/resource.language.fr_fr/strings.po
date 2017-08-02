@@ -1895,3 +1895,8 @@ msgstr "Masquer l'opacité de l'arière-plan en mode plein écran"
 msgctxt "#40238"
 msgid "Show a border for media"
 msgstr "Afficher un contour aux médias"
+
+#: /xml/DialogVideoInfo.xml
+msgctxt "#40239"
+msgid "Get all Artworks"
+msgstr "Obtenir tous les Artworks"

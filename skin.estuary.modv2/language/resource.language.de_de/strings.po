@@ -1893,3 +1893,8 @@ msgstr "Keine Durchsichtigkeit für Fanart im Vollbildmodus"
 msgctxt "#40238"
 msgid "Show a border for media"
 msgstr "Zeige Medien mit Rahmen"
+
+#: /xml/DialogVideoInfo.xml
+msgctxt "#40239"
+msgid "Get all Artworks"
+msgstr ""

@@ -411,8 +411,8 @@
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="162" />
-						<param name="label" value="$LOCALIZE[563] IMDb : [COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.IMDB), (, $LOCALIZE[40027])][/COLOR]" />
-						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.IMDB))] + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)" />
+						<param name="label" value="$LOCALIZE[563] IMDb : [COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.IMDB), (, $LOCALIZE[40027])][/COLOR]$INFO[Window(Home).Property(SkinHelper.ListItem.IMDB.Top250), [COLOR white]-[/COLOR] Top 250 : [COLOR white]#,[/COLOR]]" />
+						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.IMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250))] + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata">
@@ -743,7 +743,7 @@
 							<align>center</align>
 						</control>
 						<control type="image">
-							<texture colordiffuse="D0FFFFFF">icons/infodialogs/rating.png</texture>
+							<texture colordiffuse="FFFFFFFF">icons/infodialogs/rating.png</texture>
 							<left>107</left>
 							<top>30</top>
 							<width>48</width>
@@ -768,17 +768,23 @@
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="103" />
-						<param name="icon" value="icons/infodialogs/download.png" />
+						<param name="icon" value="icons/infodialogs/artworkdownloader.png" />
 						<param name="label" value="Artwork Downloader" />
 						<param name="onclick_1" value="XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])" />
-						<param name="visible" value="System.HasAddon(script.artwork.downloader) + String.IsEqual(ListItem.DBType,movie)" />
+						<param name="condition_1" value="String.IsEqual(ListItem.DBType,movie)" />
+						<param name="onclick_2" value="XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])" />
+						<param name="condition_2" value="String.IsEqual(ListItem.DBType,tvshow)" />
+						<param name="visible" value="System.HasAddon(script.artwork.downloader) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)]" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="104" />
 						<param name="icon" value="icons/infodialogs/download.png" />
-						<param name="label" value="Artwork Downloader" />
-						<param name="onclick_1" value="XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])" />
-						<param name="visible" value="System.HasAddon(script.artwork.downloader) + String.IsEqual(ListItem.DBType,tvshow)" />
+						<param name="label" value="$LOCALIZE[40239]" />
+						<param name="onclick_1" value="XBMC.RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])" />
+						<param name="condition_1" value="String.IsEqual(ListItem.DBType,movie)" />
+						<param name="onclick_2" value="XBMC.RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID])" />
+						<param name="condition_2" value="String.IsEqual(ListItem.DBType,tvshow)" />
+						<param name="visible" value="System.HasAddon(script.artwork.downloader) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)]" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="6" />
@@ -898,98 +904,6 @@
 			<bottom>0</bottom>
 			<height>70</height>
 			<include>MediaFlags</include>
-			<!--<control type="group">
-				<visible>Control.HasFocus(50)</visible>
-				<visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<top>21</top>
-				<left>0</left>
-				<control type="image">
-					<left>21</left>
-					<width>36</width>
-					<height>36</height>
-					<animation effect="rotate" end="-90" center="36,19" time="0" condition="true">Conditional</animation>
-					<texture>frame/menu-nofo.png</texture>
-				</control>
-				<control type="label">
-					<left>74</left>
-					<width>750</width>
-					<height>36</height>
-					<font>font25_title</font>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[31125]</label>
-					<scroll>true</scroll>
-				</control>
-			</control>-->
-			<!--<control type="group">
-				<visible>Control.HasFocus(50)</visible>
-				<visible>!String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(ListItem.DBType,episode)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<top>21</top>
-				<left>0</left>
-				<control type="image">
-					<left>21</left>
-					<width>36</width>
-					<height>36</height>
-					<animation effect="rotate" end="-90" center="36,19" time="0" condition="true">Conditional</animation>
-					<texture>frame/menu-nofo.png</texture>
-				</control>
-				<control type="label">
-					<left>74</left>
-					<right>21</right>
-					<height>36</height>
-					<font>font25_title</font>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[31125]</label>
-					<scroll>true</scroll>
-				</control>
-			</control>-->
-			<!--<control type="group">
-				<visible>Control.HasFocus(138)</visible>
-				<visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,episode)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<top>21</top>
-				<left>0</left>
-				<control type="image">
-					<top>4</top>
-					<left>17</left>
-					<width>36</width>
-					<height>36</height>
-					<texture>lists/played-total.png</texture>
-				</control>
-				<control type="label">
-					<left>74</left>
-					<width>750</width>
-					<height>36</height>
-					<font>font25_title</font>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[31126]</label>
-					<scroll>true</scroll>
-				</control>
-			</control>-->
-			<!--<control type="group">
-				<visible>Control.HasFocus(138)</visible>
-				<visible>!String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(ListItem.DBType,episode)</visible>
-				<animation effect="fade" time="200">VisibleChange</animation>
-				<top>21</top>
-				<left>0</left>
-				<control type="image">
-					<top>4</top>
-					<left>17</left>
-					<width>36</width>
-					<height>36</height>
-					<texture>lists/played-total.png</texture>
-				</control>
-				<control type="label">
-					<left>74</left>
-					<right>21</right>
-					<height>36</height>
-					<font>font25_title</font>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[31126]</label>
-					<scroll>true</scroll>
-				</control>
-			</control>-->
 		</control>
 		<include condition="Skin.HasSetting(touchmode)">TouchBackButton</include>
 	</controls>

@@ -161,11 +161,11 @@
 						<align>center</align>
 						<aligny>top</aligny>
 						<textoffsetx>35</textoffsetx>
-						<textoffsety>76</textoffsety>
+						<textoffsety>85</textoffsety>
 						<radioposx>56</radioposx>
-						<radioposy>14</radioposy>
+						<radioposy>18</radioposy>
 						<radiowidth>150</radiowidth>
-						<font>font12</font>
+						<font>font20_title</font>
 						<visible>Control.IsEnabled(13)</visible>
 					</control>
 					<include content="InfoDialogButton">
