@@ -1905,3 +1905,8 @@ msgstr "Obtenir tous les Artworks"
 msgctxt "#40240"
 msgid "Standard colors for genres"
 msgstr "Couleurs standards pour les genres"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40241"
+msgid "Pause video during access to extended info"
+msgstr "Mettre la vidéo en pause lors de l'accès aux informations étendues"
