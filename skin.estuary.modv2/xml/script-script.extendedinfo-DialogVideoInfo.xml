@@ -124,19 +124,19 @@
 							<scrolltime tween="quadratic">200</scrolltime>
 							<control type="radiobutton" id="8">
 								<label>$LOCALIZE[208]</label>
-								<textureradioonfocus colordiffuse="D0FFFFFF">icons/infodialogs/play.png</textureradioonfocus>
-								<textureradioofffocus colordiffuse="D0FFFFFF">icons/infodialogs/play.png</textureradioofffocus>
-								<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/infodialogs/play.png</textureradiooffnofocus>
-								<textureradioonnofocus colordiffuse="D0FFFFFF">icons/infodialogs/play.png</textureradioonnofocus>
+								<textureradioonfocus colordiffuse="FFFFFFFF">icons/infodialogs/play.png</textureradioonfocus>
+								<textureradioofffocus colordiffuse="FFFFFFFF">icons/infodialogs/play.png</textureradioofffocus>
+								<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/infodialogs/play.png</textureradiooffnofocus>
+								<textureradioonnofocus colordiffuse="FFFFFFFF">icons/infodialogs/play.png</textureradioonnofocus>
 								<width>290</width>
 								<height>140</height>
 								<textoffsetx>0</textoffsetx>
 								<align>center</align>
 								<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 								<texturenofocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-nofo.png</texturenofocus>
-								<font>font12</font>
+								<font>font20_title</font>
 								<aligny>bottom</aligny>
-								<textoffsety>77</textoffsety>
+								<textoffsety>82</textoffsety>
 								<radioposx>123</radioposx>
 								<radioposy>30</radioposy>
 								<radiowidth>44</radiowidth>
@@ -145,19 +145,19 @@
 							</control>
 							<control type="radiobutton" id="120">
 								<label>$LOCALIZE[21385]</label>
-								<textureradioonfocus colordiffuse="D0FFFFFF">icons/infodialogs/play.png</textureradioonfocus>
-								<textureradioofffocus colordiffuse="D0FFFFFF">icons/infodialogs/play.png</textureradioofffocus>
-								<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/infodialogs/play.png</textureradiooffnofocus>
-								<textureradioonnofocus colordiffuse="D0FFFFFF">icons/infodialogs/play.png</textureradioonnofocus>
+								<textureradioonfocus colordiffuse="FFFFFFFF">icons/infodialogs/play.png</textureradioonfocus>
+								<textureradioofffocus colordiffuse="FFFFFFFF">icons/infodialogs/play.png</textureradioofffocus>
+								<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/infodialogs/play.png</textureradiooffnofocus>
+								<textureradioonnofocus colordiffuse="FFFFFFFF">icons/infodialogs/play.png</textureradioonnofocus>
 								<width>290</width>
 								<height>140</height>
 								<textoffsetx>0</textoffsetx>
 								<align>center</align>
 								<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 								<texturenofocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-nofo.png</texturenofocus>
-								<font>font12</font>
+								<font>font20_title</font>
 								<aligny>bottom</aligny>
-								<textoffsety>77</textoffsety>
+								<textoffsety>82</textoffsety>
 								<radioposx>123</radioposx>
 								<radioposy>30</radioposy>
 								<radiowidth>44</radiowidth>
@@ -176,9 +176,9 @@
 									<align>center</align>
 									<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 									<texturenofocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-nofo.png</texturenofocus>
-									<font>font12</font>
+									<font>font20_title</font>
 									<aligny>bottom</aligny>
-									<textoffsety>77</textoffsety>
+									<textoffsety>82</textoffsety>
 									<onclick>Action(Close)</onclick>
 									<onleft>120</onleft>
 									<onright>6001</onright>
@@ -209,8 +209,8 @@
 								<control type="radiobutton" id="6001">
 									<label>$ADDON[script.extendedinfo 32129]</label>
 									<textureradioonfocus/>
-									<textureradioofffocus colordiffuse="D0FFFFFF">icons/infodialogs/rating.png</textureradioofffocus>
-									<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/infodialogs/rating.png</textureradiooffnofocus>
+									<textureradioofffocus colordiffuse="FFFFFFFF">icons/infodialogs/rating.png</textureradioofffocus>
+									<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/infodialogs/rating.png</textureradiooffnofocus>
 									<textureradioonnofocus/>
 									<left>0</left>
 									<top>0</top>
@@ -220,14 +220,14 @@
 									<align>center</align>
 									<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 									<texturenofocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-nofo.png</texturenofocus>
-									<font>font12</font>
+									<font>font20_title</font>
 									<onleft>9</onleft>
 									<onright>6003</onright>
 									<onup>132</onup>
 									<ondown>1000</ondown>
 									<aligny>bottom</aligny>
 									<selected>!String.IsEmpty(Window.Property(rated))</selected>
-									<textoffsety>77</textoffsety>
+									<textoffsety>82</textoffsety>
 									<radioposx>123</radioposx>
 									<radioposy>30</radioposy>
 									<radiowidth>44</radiowidth>
@@ -250,19 +250,19 @@
 							<control type="radiobutton" id="6003">
 								<label>$INFO[Window.Property(FavButton_Label)]</label>
 								<onleft>6001</onleft>
-								<textureradioonfocus colordiffuse="D0FFFFFF">icons/extendedinfo/starminus.png</textureradioonfocus>
-								<textureradioofffocus colordiffuse="D0FFFFFF">icons/extendedinfo/star.png</textureradioofffocus>
-								<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/star.png</textureradiooffnofocus>
-								<textureradioonnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/starminus.png</textureradioonnofocus>
+								<textureradioonfocus colordiffuse="FFFFFFFF">icons/extendedinfo/starminus.png</textureradioonfocus>
+								<textureradioofffocus colordiffuse="FFFFFFFF">icons/extendedinfo/star.png</textureradioofffocus>
+								<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/star.png</textureradiooffnofocus>
+								<textureradioonnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/starminus.png</textureradioonnofocus>
 								<width>290</width>
 								<height>140</height>
 								<textoffsetx>0</textoffsetx>
 								<align>center</align>
 								<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 								<texturenofocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-nofo.png</texturenofocus>
-								<font>font12</font>
+								<font>font20_title</font>
 								<aligny>bottom</aligny>
-								<textoffsety>77</textoffsety>
+								<textoffsety>82</textoffsety>
 								<radioposx>123</radioposx>
 								<radioposy>30</radioposy>
 								<radiowidth>44</radiowidth>
@@ -273,19 +273,19 @@
 							</control>
 							<control type="radiobutton" id="6005">
 								<label>$ADDON[script.extendedinfo 32107]</label>
-								<textureradioonfocus colordiffuse="D0FFFFFF">icons/extendedinfo/checkmark.png</textureradioonfocus>
-								<textureradioofffocus colordiffuse="D0FFFFFF">icons/extendedinfo/checkmark.png</textureradioofffocus>
-								<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/checkmark.png</textureradiooffnofocus>
-								<textureradioonnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/checkmark.png</textureradioonnofocus>
+								<textureradioonfocus colordiffuse="FFFFFFFF">icons/extendedinfo/checkmark.png</textureradioonfocus>
+								<textureradioofffocus colordiffuse="FFFFFFFF">icons/extendedinfo/checkmark.png</textureradioofffocus>
+								<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/checkmark.png</textureradiooffnofocus>
+								<textureradioonnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/checkmark.png</textureradioonnofocus>
 								<width>290</width>
 								<height>140</height>
 								<textoffsetx>0</textoffsetx>
 								<align>center</align>
 								<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 								<texturenofocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-nofo.png</texturenofocus>
-								<font>font12</font>
+								<font>font20_title</font>
 								<aligny>bottom</aligny>
-								<textoffsety>77</textoffsety>
+								<textoffsety>82</textoffsety>
 								<radioposx>123</radioposx>
 								<radioposy>30</radioposy>
 								<radiowidth>44</radiowidth>
@@ -295,19 +295,19 @@
 							</control>
 							<control type="radiobutton" id="6002">
 								<label>$ADDON[script.extendedinfo 32130]</label>
-								<textureradioonfocus colordiffuse="D0FFFFFF">icons/extendedinfo/list.png</textureradioonfocus>
-								<textureradioofffocus colordiffuse="D0FFFFFF">icons/extendedinfo/list.png</textureradioofffocus>
-								<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/list.png</textureradiooffnofocus>
-								<textureradioonnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/list.png</textureradioonnofocus>
+								<textureradioonfocus colordiffuse="FFFFFFFF">icons/extendedinfo/list.png</textureradioonfocus>
+								<textureradioofffocus colordiffuse="FFFFFFFF">icons/extendedinfo/list.png</textureradioofffocus>
+								<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/list.png</textureradiooffnofocus>
+								<textureradioonnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/list.png</textureradioonnofocus>
 								<width>290</width>
 								<height>140</height>
 								<textoffsetx>0</textoffsetx>
 								<align>center</align>
 								<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 								<texturenofocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-nofo.png</texturenofocus>
-								<font>font12</font>
+								<font>font20_title</font>
 								<aligny>bottom</aligny>
-								<textoffsety>77</textoffsety>
+								<textoffsety>82</textoffsety>
 								<radioposx>123</radioposx>
 								<radioposy>30</radioposy>
 								<radiowidth>44</radiowidth>
@@ -317,19 +317,19 @@
 							</control>
 							<control type="radiobutton" id="6006">
 								<label>$ADDON[script.extendedinfo 32131]</label>
-								<textureradioonfocus colordiffuse="D0FFFFFF">icons/extendedinfo/list.png</textureradioonfocus>
-								<textureradioofffocus colordiffuse="D0FFFFFF">icons/extendedinfo/list.png</textureradioofffocus>
-								<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/list.png</textureradiooffnofocus>
-								<textureradioonnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/list.png</textureradioonnofocus>
+								<textureradioonfocus colordiffuse="FFFFFFFF">icons/extendedinfo/list.png</textureradioonfocus>
+								<textureradioofffocus colordiffuse="FFFFFFFF">icons/extendedinfo/list.png</textureradioofffocus>
+								<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/list.png</textureradiooffnofocus>
+								<textureradioonnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/list.png</textureradioonnofocus>
 								<width>290</width>
 								<height>140</height>
 								<textoffsetx>0</textoffsetx>
 								<align>center</align>
 								<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 								<texturenofocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-nofo.png</texturenofocus>
-								<font>font12</font>
+								<font>font20_title</font>
 								<aligny>bottom</aligny>
-								<textoffsety>77</textoffsety>
+								<textoffsety>82</textoffsety>
 								<radioposx>123</radioposx>
 								<radioposy>30</radioposy>
 								<radiowidth>44</radiowidth>
@@ -344,9 +344,9 @@
 								<align>center</align>
 								<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 								<texturenofocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-nofo.png</texturenofocus>
-								<font>font12</font>
+								<font>font20_title</font>
 								<aligny>bottom</aligny>
-								<textoffsety>77</textoffsety>
+								<textoffsety>82</textoffsety>
 								<radioposx>123</radioposx>
 								<radioposy>30</radioposy>
 								<radiowidth>44</radiowidth>
@@ -355,10 +355,10 @@
 								<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[Window.Property(FilenameAndPath)]")</onclick>
 								<visible>System.HasAddon(script.videoextras) + String.IsEmpty(Window(movieinformation).Property(HideVideoExtrasButton))</visible>
 								<visible>!String.IsEmpty(Window.Property(FilenameAndPath))</visible>
-								<textureradioonfocus colordiffuse="D0FFFFFF">icons/extendedinfo/plus2.png</textureradioonfocus>
-								<textureradioofffocus colordiffuse="D0FFFFFF">icons/extendedinfo/plus2.png</textureradioofffocus>
-								<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/plus2.png</textureradiooffnofocus>
-								<textureradioonnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/plus2.png</textureradioonnofocus>
+								<textureradioonfocus colordiffuse="FFFFFFFF">icons/extendedinfo/plus2.png</textureradioonfocus>
+								<textureradioofffocus colordiffuse="FFFFFFFF">icons/extendedinfo/plus2.png</textureradioofffocus>
+								<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/plus2.png</textureradiooffnofocus>
+								<textureradioonnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/plus2.png</textureradioonnofocus>
 							</control>
 							<control type="radiobutton" id="445">
 								<width>290</width>
@@ -367,17 +367,17 @@
 								<align>center</align>
 								<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-fo.png</texturefocus>
 								<texturenofocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/button-nofo.png</texturenofocus>
-								<font>font12</font>
+								<font>font20_title</font>
 								<aligny>bottom</aligny>
-								<textoffsety>77</textoffsety>
+								<textoffsety>82</textoffsety>
 								<radioposx>123</radioposx>
 								<radioposy>30</radioposy>
 								<radiowidth>44</radiowidth>
 								<radioheight>44</radioheight>
-								<textureradioonfocus colordiffuse="D0FFFFFF">icons/extendedinfo/tool2.png</textureradioonfocus>
-								<textureradioofffocus colordiffuse="D0FFFFFF">icons/extendedinfo/tool2.png</textureradioofffocus>
-								<textureradiooffnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/tool2.png</textureradiooffnofocus>
-								<textureradioonnofocus colordiffuse="D0FFFFFF">icons/extendedinfo/tool2.png</textureradioonnofocus>
+								<textureradioonfocus colordiffuse="FFFFFFFF">icons/extendedinfo/tool2.png</textureradioonfocus>
+								<textureradioofffocus colordiffuse="FFFFFFFF">icons/extendedinfo/tool2.png</textureradioofffocus>
+								<textureradiooffnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/tool2.png</textureradiooffnofocus>
+								<textureradioonnofocus colordiffuse="FFFFFFFF">icons/extendedinfo/tool2.png</textureradioonnofocus>
 								<label>$ADDON[script.extendedinfo 32133]</label>
 								<visible>!Skin.HasSetting(kioskmode)</visible>
 							</control>

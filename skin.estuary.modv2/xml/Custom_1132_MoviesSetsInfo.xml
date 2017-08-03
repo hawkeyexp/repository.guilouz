@@ -37,6 +37,15 @@
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture fallback="fallback.png">$VAR[BannerVar]</texture>
 				</control>
+				<control type="image">
+					<top>820</top>
+					<left>4</left>
+					<width>476</width>
+					<height>95</height>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<texture fallback="fallback.png">$INFO[Skin.String(studiologos.path)]$INFO[Container(50).ListItem.Studio,,.png]</texture>
+					<visible>Control.HasFocus(50)</visible>
+				</control>
 				<control type="group">
 					<visible>String.IsEqual(Control.GetLabel(3333),fallback.png)</visible>
 					<control type="image">
