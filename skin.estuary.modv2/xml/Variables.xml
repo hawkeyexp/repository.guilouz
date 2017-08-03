@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="PVRGenresVar">
+		<value condition="Skin.HasSetting(standard_PVRGenres)">$INFO[ListItem.Property(GenreType),windows/pvr/epg-genres/,.png]</value>
+		<value>$INFO[ListItem.Genre,special://skin/extras/epg-genres/,.png]</value>
+	</variable>
 	<variable name="OscarsVar">
         <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),20 Oscar)">20 $LOCALIZE[40235]</value>
         <value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.Awards),19 Oscar)">19 $LOCALIZE[40235]</value>

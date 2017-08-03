@@ -36,7 +36,6 @@
 			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<animation effect="fade" time="400">VisibleChange</animation>
-			<animation effect="slide" end="-96,0" time="0" condition="Skin.HasSetting(MinimizeMainMenu) + String.IsEqual(Container(9000).ListItem.Property(defaultID),libreelec)">Conditional</animation>
 			<imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[HomeFanartVar]</imagepath>
 			<timeperimage>3000</timeperimage>
 			<randomize>true</randomize>

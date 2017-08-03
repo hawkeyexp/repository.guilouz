@@ -60,7 +60,7 @@
 							<control type="label" id="1">
 								<left>68</left>
 								<top>-2</top>
-								<width>300</width>
+								<width>290</width>
 								<height>60</height>
 								<font>font12</font>
 								<label>$INFO[ListItem.ChannelName]</label>
@@ -80,7 +80,7 @@
 							<control type="label" id="1">
 								<left>68</left>
 								<top>-2</top>
-								<width>300</width>
+								<width>290</width>
 								<height>60</height>
 								<font>font12</font>
 								<label>$INFO[ListItem.ChannelName]</label>
@@ -94,7 +94,7 @@
 							<control type="image" id="2">
 								<width>58</width>
 								<height>58</height>
-								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$INFO[ListItem.Genre,special://skin/extras/epg-genres/,.png]</texture>
+								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[PVRGenresVar]</texture>
 							</control>
 							<control type="label" id="1">
 								<left>6</left>
@@ -131,7 +131,7 @@
 								<width>58</width>
 								<height>58</height>
 								<top>0</top>
-								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$INFO[ListItem.Genre,special://skin/extras/epg-genres/,.png]</texture>
+								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[PVRGenresVar]</texture>
 								<visible>!Control.HasFocus(50)</visible>
 							</control>
 							<control type="label" id="1">
@@ -261,7 +261,7 @@
 							<control type="image" id="2">
 								<width>58</width>
 								<height>58</height>
-								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$INFO[ListItem.Genre,special://skin/extras/epg-genres/,.png]</texture>
+								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[PVRGenresVar]</texture>
 							</control>
 							<control type="label" id="1">
 								<left>6</left>
@@ -298,7 +298,7 @@
 								<width>58</width>
 								<height>58</height>
 								<top>0</top>
-								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$INFO[ListItem.Genre,special://skin/extras/epg-genres/,.png]</texture>
+								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[PVRGenresVar]</texture>
 								<visible>!Control.HasFocus(51)</visible>
 							</control>
 							<control type="label" id="1">

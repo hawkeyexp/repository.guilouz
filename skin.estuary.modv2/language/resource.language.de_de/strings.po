@@ -1898,3 +1898,8 @@ msgstr "Zeige Medien mit Rahmen"
 msgctxt "#40239"
 msgid "Get all Artworks"
 msgstr ""
+
+#: /xml/Includes_MediaMenu.xml
+msgctxt "#40240"
+msgid "Standard colors for genres"
+msgstr ""

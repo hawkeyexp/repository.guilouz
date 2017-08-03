@@ -1900,3 +1900,8 @@ msgstr "Afficher un contour aux médias"
 msgctxt "#40239"
 msgid "Get all Artworks"
 msgstr "Obtenir tous les Artworks"
+
+#: /xml/Includes_MediaMenu.xml
+msgctxt "#40240"
+msgid "Standard colors for genres"
+msgstr "Couleurs standards pour les genres"
