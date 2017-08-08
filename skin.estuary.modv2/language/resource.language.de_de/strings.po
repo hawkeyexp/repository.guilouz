@@ -1305,8 +1305,8 @@ msgstr "Animierte Poster anzeigen"
 
 #: /xml/script-NextAired-TVGuide.xml
 msgctxt "#40120"
-msgid "TV shows next aired"
-msgstr "Nächste ausgestrahlte Serien"
+msgid "Next aired episode"
+msgstr ""
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40121"
@@ -1897,14 +1897,24 @@ msgstr "Zeige Medien mit Rahmen"
 #: /xml/DialogVideoInfo.xml
 msgctxt "#40239"
 msgid "Get all Artworks"
-msgstr ""
+msgstr "Hole alle Grafiken"
 
 #: /xml/Includes_MediaMenu.xml
 msgctxt "#40240"
 msgid "Standard colors for genres"
-msgstr ""
+msgstr "Standardfarben für Genres"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40241"
 msgid "Pause video during access to extended info"
+msgstr "Während Zugriff auf erweiterte Info, Video pausieren"
+
+#: /xml/script-NextAired-TVGuide.xml
+msgctxt "#40242"
+msgid "Last aired episode"
+msgstr ""
+
+#: /xml/script-NextAired-TVGuide.xml
+msgctxt "#40243"
+msgid "Date and time of broadcast"
 msgstr ""

@@ -388,13 +388,13 @@
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="160" />
 						<param name="label" value="$INFO[Window(Home).Property(NextAired.LatestDate),$LOCALIZE[40026] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.LatestNumber),, : ]$INFO[Window(Home).Property(NextAired.LatestTitle)][/COLOR]" />
-						<param name="visible" value="String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestDate))" />
+						<param name="visible" value="String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + !String.IsEmpty(Window(Home).Property(NextAired.LatestDate)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="161" />
 						<param name="label" value="$INFO[Window(Home).Property(NextAired.NextDate),$LOCALIZE[40025] : [COLOR white], - [/COLOR]][COLOR white]$INFO[Window(Home).Property(NextAired.NextNumber),, : ]$INFO[Window(Home).Property(NextAired.NextTitle)][/COLOR]" />
-						<param name="visible" value="!String.IsEmpty(Window(Home).Property(NextAired.NextDate))" />
+						<param name="visible" value="!String.IsEmpty(Window(Home).Property(NextAired.NextDate)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata">
@@ -453,8 +453,8 @@
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="165" />
-						<param name="label" value="$LOCALIZE[126] : [COLOR white]$INFO[Window(Home).Property(NextAired.Status)][/COLOR]" />
-						<param name="visible" value="String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(NextAired.Status))" />
+						<param name="label" value="$LOCALIZE[126] : [COLOR white]$VAR[StatusNextAiredVar][/COLOR]" />
+						<param name="visible" value="String.IsEmpty(ListItem.Status) + !String.IsEmpty(Window(Home).Property(NextAired.Status)) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 				</control>

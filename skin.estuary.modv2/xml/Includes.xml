@@ -145,177 +145,177 @@
 					<hitrect x="0" y="20" w="100%" h="40" />
 				</control>
 			</control>
-		</control>	
+		</control>
 		<control type="group">
-        	<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(504) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54) | Control.IsVisible(505) | Control.IsVisible(507)</visible>
-        	<visible>Integer.IsGreater(Container.NumPages,1)</visible>
-        	<visible>Skin.HasSetting(scroll_alphabet) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])]</visible>
-        	<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+			<visible>Control.IsVisible(52) | Control.IsVisible(500) | Control.IsVisible(504) | Control.IsVisible(55) | Control.IsVisible(501) | Control.IsVisible(54) | Control.IsVisible(505) | Control.IsVisible(507)</visible>
+			<visible>Integer.IsGreater(Container.NumPages,1)</visible>
+			<visible>Skin.HasSetting(scroll_alphabet) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])]</visible>
+			<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			<animation effect="slide" end="41,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
 			<control type="image">
 				<right>0</right>
-             	<top>0</top>
-             	<bottom>0</bottom>
-			  	<width>46</width>
-			  	<texture>dialogs/back.png</texture>
+				<top>0</top>
+				<bottom>0</bottom>
+				<width>46</width>
+				<texture>dialogs/back.png</texture>
 			</control>
 			<control type="image">
 				<right>0</right>
-             	<top>0</top>
-             	<bottom>0</bottom>
-			  	<width>46</width>
-			  	<texture>dialogs/back.png</texture>
+				<top>0</top>
+				<bottom>0</bottom>
+				<width>46</width>
+				<texture>dialogs/back.png</texture>
 			</control>
 			<control type="image">
 				<right>0</right>
-             	<top>0</top>
-             	<bottom>0</bottom>
-			  	<width>5</width>
-			  	<texture colordiffuse="FFAAAAAA">colors/white.png</texture>
-			  	<animation effect="slide" end="5,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(531)">conditional</animation>
-			  	<animation effect="slide" end="-41,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
+				<top>0</top>
+				<bottom>0</bottom>
+				<width>5</width>
+				<texture colordiffuse="FFAAAAAA">colors/white.png</texture>
+				<animation effect="slide" end="5,0" time="300" tween="sine" easing="inout" condition="Control.HasFocus(531)">conditional</animation>
+				<animation effect="slide" end="-41,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(531)">conditional</animation>
 			</control>
-            <control type="panel" id="531">
-                <orientation>vertical</orientation>
-                <right>0</right>
-                <top>0</top>
-                <bottom>0</bottom>
-                <onleft>50</onleft>
+			<control type="panel" id="531">
+				<orientation>vertical</orientation>
+				<right>0</right>
+				<top>0</top>
+				<bottom>0</bottom>
+				<onleft>50</onleft>
 				<onright>50</onright>
 				<width>46</width>
-                <visible>!Container.Content(seasons)</visible>
-                <itemlayout height="40" width="46">
-                    <control type="label">
-                        <aligny>center</aligny>
-                        <align>center</align>
-                        <height>40</height>
-                        <label>$INFO[ListItem.Label]</label>
-                        <textcolor>white</textcolor>
-                        <font>font30_title</font>
-                        <animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-                    </control>
-                    <control type="label">
-                        <aligny>center</aligny>
-                        <align>center</align>
-                        <height>40</height>
-                        <label>$INFO[ListItem.Label]</label>
-                        <textcolor>$VAR[SkinColorVar]</textcolor>
-                        <font>font30_title</font>
-                        <visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="40" width="46">
-                    <control type="image">
-                        <height>4</height>
-                        <bottom>0</bottom>
-                        <texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
-                        <visible>String.IsEmpty(ListItem.Property(NotAvailable))</visible>
-                    </control>
-                    <control type="label">
-                        <aligny>center</aligny>
-                        <align>center</align>
-                        <height>40</height>
-                        <label>$INFO[ListItem.Label]</label>
-                        <textcolor>$VAR[SkinColorVar]</textcolor>
-                        <font>font30_title</font>
-                        <animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-                    </control>
-                    <control type="button">
-                        <visible>visible</visible>
-                        <label />
-                        <onfocus condition="!String.IsEmpty(Container(531).ListItem.Property(NotAvailable)) + Container(531).OnNext">Control.Move(531,1)</onfocus>
-                        <onfocus condition="!String.IsEmpty(Container(531).ListItem.Property(NotAvailable)) + Container(531).OnPrevious">Control.Move(531,-1)</onfocus>
-                    </control>
-                </focusedlayout>
-                <content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
-            </control>
-        </control>
-        <control type="group">
-        	<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(503) | Control.IsVisible(506)</visible>
-        	<visible>Integer.IsGreater(Container.NumPages,1)</visible>
-        	<visible>Skin.HasSetting(scroll_alphabet) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])]</visible>
-        	<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+				<visible>!Container.Content(seasons)</visible>
+				<itemlayout height="40" width="46">
+					<control type="label">
+						<aligny>center</aligny>
+						<align>center</align>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>white</textcolor>
+						<font>font30_title</font>
+						<animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>center</align>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<font>font30_title</font>
+						<visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="40" width="46">
+					<control type="image">
+						<height>4</height>
+						<bottom>0</bottom>
+						<texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+						<visible>String.IsEmpty(ListItem.Property(NotAvailable))</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>center</align>
+						<height>40</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<font>font30_title</font>
+						<animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+					</control>
+					<control type="button">
+						<visible>visible</visible>
+						<label />
+						<onfocus condition="!String.IsEmpty(Container(531).ListItem.Property(NotAvailable)) + Container(531).OnNext">Control.Move(531,1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(531).ListItem.Property(NotAvailable)) + Container(531).OnPrevious">Control.Move(531,-1)</onfocus>
+					</control>
+				</focusedlayout>
+				<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(503) | Control.IsVisible(506)</visible>
+			<visible>Integer.IsGreater(Container.NumPages,1)</visible>
+			<visible>Skin.HasSetting(scroll_alphabet) + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])]</visible>
+			<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
 			<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 			<animation effect="slide" end="0,41" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
 			<control type="image">
 				<left>0</left>
-             	<right>0</right>
-             	<bottom>0</bottom>
-			  	<height>46</height>
-			  	<texture>dialogs/back.png</texture>
+				<right>0</right>
+				<bottom>0</bottom>
+				<height>46</height>
+				<texture>dialogs/back.png</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
-             	<right>0</right>
-             	<bottom>0</bottom>
-			  	<height>46</height>
-			  	<texture>dialogs/back.png</texture>
+				<right>0</right>
+				<bottom>0</bottom>
+				<height>46</height>
+				<texture>dialogs/back.png</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
-             	<right>0</right>
-             	<bottom>0</bottom>
-			  	<height>5</height>
-			  	<texture colordiffuse="FFAAAAAA">colors/white.png</texture>
-			  	<animation effect="slide" end="0,5" time="300" tween="sine" easing="inout" condition="Control.HasFocus(5199)">conditional</animation>
-			  	<animation effect="slide" end="0,-41" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
+				<right>0</right>
+				<bottom>0</bottom>
+				<height>5</height>
+				<texture colordiffuse="FFAAAAAA">colors/white.png</texture>
+				<animation effect="slide" end="0,5" time="300" tween="sine" easing="inout" condition="Control.HasFocus(5199)">conditional</animation>
+				<animation effect="slide" end="0,-41" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5199)">conditional</animation>
 			</control>
-            <control type="panel" id="5199">
-                <orientation>horizontal</orientation>
-                <centerleft>50%</centerleft>
-                <width>1080</width>
-                <bottom>0</bottom>
-                <onup>50</onup>
+			<control type="panel" id="5199">
+				<orientation>horizontal</orientation>
+				<centerleft>50%</centerleft>
+				<width>1080</width>
+				<bottom>0</bottom>
+				<onup>50</onup>
 				<ondown>50</ondown>
 				<height>46</height>
-                <visible>!Container.Content(seasons)</visible>
-                <itemlayout height="46" width="40">
-                    <control type="label">
-                        <aligny>center</aligny>
-                        <align>center</align>
-                        <height>46</height>
-                        <label>$INFO[ListItem.Label]</label>
-                        <textcolor>white</textcolor>
-                        <font>font30_title</font>
-                        <animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-                    </control>
-                    <control type="label">
-                        <aligny>center</aligny>
-                        <align>center</align>
-                        <height>46</height>
-                        <label>$INFO[ListItem.Label]</label>
-                        <textcolor>$VAR[SkinColorVar]</textcolor>
-                        <font>font30_title</font>
-                        <visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
-                    </control>
-                </itemlayout>
-                <focusedlayout height="46" width="40">
-                    <control type="image">
-                        <height>4</height>
-                        <bottom>0</bottom>
-                        <texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
-                        <visible>String.IsEmpty(ListItem.Property(NotAvailable))</visible>
-                    </control>
-                    <control type="label">
-                        <aligny>center</aligny>
-                        <align>center</align>
-                        <height>46</height>
-                        <label>$INFO[ListItem.Label]</label>
-                        <textcolor>$VAR[SkinColorVar]</textcolor>
-                        <font>font30_title</font>
-                        <animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
-                    </control>
-                    <control type="button">
-                        <visible>visible</visible>
-                        <label />
-                        <onfocus condition="!String.IsEmpty(Container(5199).ListItem.Property(NotAvailable)) + Container(5199).OnNext">Control.Move(5199,1)</onfocus>
-                        <onfocus condition="!String.IsEmpty(Container(5199).ListItem.Property(NotAvailable)) + Container(5199).OnPrevious">Control.Move(5199,-1)</onfocus>
-                    </control>
-                </focusedlayout>
-                <content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
-            </control>
-        </control>
+				<visible>!Container.Content(seasons)</visible>
+				<itemlayout height="46" width="40">
+					<control type="label">
+						<aligny>center</aligny>
+						<align>center</align>
+						<height>46</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>white</textcolor>
+						<font>font30_title</font>
+						<animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>center</align>
+						<height>46</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<font>font30_title</font>
+						<visible>String.IsEqual(ListItem.Label,Container.ListItem.SortLetter)</visible>
+					</control>
+				</itemlayout>
+				<focusedlayout height="46" width="40">
+					<control type="image">
+						<height>4</height>
+						<bottom>0</bottom>
+						<texture colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
+						<visible>String.IsEmpty(ListItem.Property(NotAvailable))</visible>
+					</control>
+					<control type="label">
+						<aligny>center</aligny>
+						<align>center</align>
+						<height>46</height>
+						<label>$INFO[ListItem.Label]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<font>font30_title</font>
+						<animation effect="fade" start="100" end="10" time="0" condition="!String.IsEmpty(ListItem.Property(NotAvailable))">Conditional</animation>
+					</control>
+					<control type="button">
+						<visible>visible</visible>
+						<label />
+						<onfocus condition="!String.IsEmpty(Container(5199).ListItem.Property(NotAvailable)) + Container(5199).OnNext">Control.Move(5199,1)</onfocus>
+						<onfocus condition="!String.IsEmpty(Container(5199).ListItem.Property(NotAvailable)) + Container(5199).OnPrevious">Control.Move(5199,-1)</onfocus>
+					</control>
+				</focusedlayout>
+				<content>plugin://script.skin.helper.service/?action=alphabet&amp;reload=$INFO[Container.NumItems]</content>
+			</control>
+		</control>
 	</include>
 	<include name="HiddenObject">
 		<left>-3000</left>
@@ -659,7 +659,7 @@
 			</focusedlayout>
 		</definition>
 	</include>
-		<include name="DefaultSimpleListLayout2">
+	<include name="DefaultSimpleListLayout2">
 		<param name="align">left</param>
 		<param name="height">70</param>
 		<param name="font">font13</param>
@@ -772,46 +772,46 @@
 		<definition>
 			<control type="list" id="56000">
 				<orientation>horizontal</orientation>
-				<right>6</right>
+				<right>10</right>
 				<bottom>11</bottom>
 				<height>86</height>
 				<align>right</align>
 				<itemgap>5</itemgap>
-				<width>1793</width>
+				<width>1738</width>
 				<usecontrolcoords>true</usecontrolcoords>
 				<autoscroll time="1500">true</autoscroll>
-				<animation effect="slide" end="1630,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
-				<animation effect="slide" end="1467,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
-				<animation effect="slide" end="1304,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
-				<animation effect="slide" end="1141,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
-				<animation effect="slide" end="978,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
-				<animation effect="slide" end="815,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
-				<animation effect="slide" end="652,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
-				<animation effect="slide" end="489,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,8)">conditional</animation>
-				<animation effect="slide" end="326,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
-				<animation effect="slide" end="163,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,10)">conditional</animation>
+				<animation effect="slide" end="1580,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
+				<animation effect="slide" end="1422,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
+				<animation effect="slide" end="1264,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
+				<animation effect="slide" end="1106,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
+				<animation effect="slide" end="948,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
+				<animation effect="slide" end="790,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
+				<animation effect="slide" end="632,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
+				<animation effect="slide" end="474,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,8)">conditional</animation>
+				<animation effect="slide" end="316,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
+				<animation effect="slide" end="158,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,10)">conditional</animation>
 				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set) + Window.IsVisible(Home) + Skin.HasSetting(MinimizeMainMenu)</visible>
-				<focusedlayout height="86" width="163">
+				<focusedlayout height="86" width="158">
 					<control type="image">
 						<left>5</left>
 						<top>0</top>
-						<right>5</right>
-						<bottom>0</bottom>
-						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<width>153</width>
+						<height>86</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
-						<bordertexture>colors/white.png</bordertexture>
+						<bordertexture colordiffuse="$VAR[MediaFlagsColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>
 				</focusedlayout>
-				<itemlayout height="86" width="163">
+				<itemlayout height="86" width="158">
 					<control type="image">
 						<left>5</left>
 						<top>0</top>
-						<right>5</right>
-						<bottom>0</bottom>
-						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<width>153</width>
+						<height>86</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
-						<bordertexture>colors/white.png</bordertexture>
+						<bordertexture colordiffuse="$VAR[MediaFlagsColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>
 				</itemlayout>
@@ -819,43 +819,43 @@
 			</control>
 			<control type="list" id="56000">
 				<orientation>horizontal</orientation>
-				<right>6</right>
+				<right>10</right>
 				<bottom>11</bottom>
 				<height>86</height>
 				<align>right</align>
 				<itemgap>5</itemgap>
-				<width>1304</width>
+				<width>1264</width>
 				<usecontrolcoords>true</usecontrolcoords>
 				<autoscroll time="1500">true</autoscroll>
-				<animation effect="slide" end="1141,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
-				<animation effect="slide" end="978,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
-				<animation effect="slide" end="815,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
-				<animation effect="slide" end="652,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
-				<animation effect="slide" end="489,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
-				<animation effect="slide" end="326,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
-				<animation effect="slide" end="163,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
+				<animation effect="slide" end="1106,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,1)">conditional</animation>
+				<animation effect="slide" end="948,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,2)">conditional</animation>
+				<animation effect="slide" end="790,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,3)">conditional</animation>
+				<animation effect="slide" end="632,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,4)">conditional</animation>
+				<animation effect="slide" end="474,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,5)">conditional</animation>
+				<animation effect="slide" end="316,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
+				<animation effect="slide" end="158,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
 				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set) + Window.IsVisible(Home) + !Skin.HasSetting(MinimizeMainMenu)</visible>
-				<focusedlayout height="86" width="163">
+				<focusedlayout height="86" width="158">
 					<control type="image">
 						<left>5</left>
 						<top>0</top>
-						<right>5</right>
-						<bottom>0</bottom>
-						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<width>153</width>
+						<height>86</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
-						<bordertexture>colors/white.png</bordertexture>
+						<bordertexture colordiffuse="$VAR[MediaFlagsColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>
 				</focusedlayout>
-				<itemlayout height="86" width="163">
+				<itemlayout height="86" width="158">
 					<control type="image">
 						<left>5</left>
 						<top>0</top>
-						<right>5</right>
-						<bottom>0</bottom>
-						<aspectratio align="center" aligny="center">scale</aspectratio>
+						<width>153</width>
+						<height>86</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
 						<texture background="true" fallback="DefaultVideoCover.png">$VAR[InfoWidgetThumbVar]</texture>
-						<bordertexture>colors/white.png</bordertexture>
+						<bordertexture colordiffuse="$VAR[MediaFlagsColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
 					</control>
 				</itemlayout>
@@ -1220,9 +1220,9 @@
 							<control type="group">
 								<top>150</top>
 								<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            						<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            						<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       							</animation>
+									<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+									<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+								</animation>
 								<include content="InfoWallMusicLayout">
 									<param name="fallback_image" value="DefaultAddon.png" />
 									<param name="focused" value="true" />
@@ -1674,7 +1674,7 @@
 					<align>right</align>
 					<itemgap>5</itemgap>
 					<orientation>horizontal</orientation>
-					<usecontrolcoords>true</usecontrolcoords>				
+					<usecontrolcoords>true</usecontrolcoords>
 					<control type="label">
 						<height>50</height>
 						<width>auto</width>
@@ -1789,7 +1789,7 @@
 					<include>ColoredBackgroundImages</include>
 				</control>
 				<control type="group" id="31111">
-					<visible>![Player.HasVideo | [Player.HasAudio + Visualisation.Enabled + !String.IsEmpty(Visualisation.Name)]] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+					<visible>![[Player.HasVideo + !Skin.HasSetting(background_showvideo)] | [Player.HasAudio + Visualisation.Enabled + !String.IsEmpty(Visualisation.Name)]] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 					<depth>DepthBackground</depth>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
@@ -2142,9 +2142,9 @@
 			<control type="group">
 				<depth>DepthContentPopout</depth>
 				<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            		<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            		<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       			</animation>
+					<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+					<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+				</animation>
 				<control type="image">
 					<left>-5</left>
 					<width>410</width>
@@ -2192,5 +2192,126 @@
 				</control>
 			</control>
 		</focusedlayout>
+	</include>
+	<include name="NextAiredPosterWidget">
+		<param name="visible">true</param>
+		<definition>
+			<include content="CategoryLabel">
+				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="posy" value="250"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<control type="panel" id="$PARAM[list_id]">
+				<left>-23</left>
+				<top>115</top>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<visible>$PARAM[visible]</visible>
+				<right>0</right>
+				<height>493</height>
+				<include content="WidgetListCommon">
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
+				<itemlayout width="310" height="486">
+					<control type="group">
+						<left>68</left>
+						<top>10</top>
+						<include content="NextAiredPosterLayout">
+							<param name="focused" value="false" />
+						</include>
+					</control>
+				</itemlayout>
+				<focusedlayout width="310" height="486">
+					<control type="group">
+						<depth>DepthContentPopout</depth>
+						<left>68</left>
+						<top>10</top>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
+						<include content="NextAiredPosterLayout">
+							<param name="focused" value="true" />
+						</include>
+					</control>
+				</focusedlayout>
+			</control>
+		</definition>
+	</include>
+	<include name="NextAiredPosterLayout">
+		<param name="focused">false</param>
+		<param name="Container.Label"></param>
+		<definition>
+			<control type="image">
+				<left>9</left>
+				<top>-16</top>
+				<width>302</width>
+				<height>412</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+			</control>
+			<control type="image">
+				<left>9</left>
+				<top>-16</top>
+				<width>302</width>
+				<height>412</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+			</control>
+			<control type="image">
+				<left>15</left>
+				<top>-10</top>
+				<width>290</width>
+				<height>400</height>
+				<texture background="true">$INFO[ListItem.Property(poster)]</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+			</control>
+			<control type="image">
+				<left>13</left>
+				<top>-12</top>
+				<width>294</width>
+				<height>404</height>
+				<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-movielayout.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(show_borders)</visible>
+			</control>
+			<control type="image">
+				<left>15</left>
+				<top>-10</top>
+				<width>290</width>
+				<height>400</height>
+				<texture background="true">$INFO[ListItem.Property(poster)]</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordersize>20</bordersize>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(show_borders)</visible>
+			</control>
+			<control type="image">
+				<left>15</left>
+				<top>-10</top>
+				<width>290</width>
+				<height>400</height>
+				<texture background="true">$INFO[ListItem.Property(poster)]</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>!$PARAM[focused]</visible>
+				<visible>!Skin.HasSetting(show_borders)</visible>
+			</control>
+		</definition>
 	</include>
 </includes>

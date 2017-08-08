@@ -39,7 +39,7 @@
 			<imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[HomeFanartVar]</imagepath>
 			<timeperimage>3000</timeperimage>
 			<randomize>true</randomize>
-			<visible>!Player.HasMedia</visible>
+			<visible>![Player.HasMedia + !Skin.HasSetting(background_showvideo)]</visible>
 		</control>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>

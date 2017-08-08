@@ -25,7 +25,7 @@
 			<visible>!Skin.HasSetting(hide_background_fanart)</visible>
 		</control>
 		<control type="group">
-			<animation effect="fade" start="100" end="30" time="0" condition="!String.IsEmpty(Player.Art(fanart)) | Visualisation.Enabled">Conditional</animation>
+			<animation effect="fade" start="100" end="30" time="0" condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)) | !String.IsEmpty(Player.Art(fanart)) | Visualisation.Enabled">Conditional</animation>
 			<include>ColoredBackgroundImages</include>
 		</control>
 		<control type="group">

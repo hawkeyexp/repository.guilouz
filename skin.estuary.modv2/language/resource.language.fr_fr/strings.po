@@ -1307,8 +1307,8 @@ msgstr "Afficher les posters animés"
 
 #: /xml/script-NextAired-TVGuide.xml
 msgctxt "#40120"
-msgid "TV shows next aired"
-msgstr "Prochaines diffusions des séries TV"
+msgid "Next aired episode"
+msgstr "Prochain épisode diffusé"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40121"
@@ -1910,3 +1910,13 @@ msgstr "Couleurs standards pour les genres"
 msgctxt "#40241"
 msgid "Pause video during access to extended info"
 msgstr "Mettre la vidéo en pause lors de l'accès aux informations étendues"
+
+#: /xml/script-NextAired-TVGuide.xml
+msgctxt "#40242"
+msgid "Last aired episode"
+msgstr "Dernier épisode diffusé"
+
+#: /xml/script-NextAired-TVGuide.xml
+msgctxt "#40243"
+msgid "Date and time of broadcast"
+msgstr "Date et heure de diffusion"

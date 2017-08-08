@@ -1307,7 +1307,7 @@ msgstr ""
 
 #: /xml/script-NextAired-TVGuide.xml
 msgctxt "#40120"
-msgid "TV shows next aired"
+msgid "Next aired episode"
 msgstr ""
 
 #: /xml/script-skinshortcuts.xml
@@ -1909,4 +1909,14 @@ msgstr ""
 #: /xml/SkinSettings.xml
 msgctxt "#40241"
 msgid "Pause video during access to extended info"
+msgstr ""
+
+#: /xml/script-NextAired-TVGuide.xml
+msgctxt "#40242"
+msgid "Last aired episode"
+msgstr ""
+
+#: /xml/script-NextAired-TVGuide.xml
+msgctxt "#40243"
+msgid "Date and time of broadcast"
 msgstr ""
