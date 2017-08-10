@@ -1920,3 +1920,68 @@ msgstr "Dernier épisode diffusé"
 msgctxt "#40243"
 msgid "Date and time of broadcast"
 msgstr "Date et heure de diffusion"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40244"
+msgid "Configure media flags"
+msgstr "Configurer les indicateurs des médias"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40245"
+msgid "Show media source"
+msgstr "Afficher la source du média"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40246"
+msgid "Show media resolution"
+msgstr "Afficher la résolution du média"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40247"
+msgid "Show media video codec"
+msgstr "Afficher le codec vidéo du média"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40248"
+msgid "Show media aspect ratio"
+msgstr "Afficher l'aspect ratio du média"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40249"
+msgid "Show media audio codec"
+msgstr "Afficher le codec audio du média"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40250"
+msgid "Show media audio channels"
+msgstr "Afficher le nombre de canaux audio du média"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40251"
+msgid "Show media duration"
+msgstr "Afficher la durée du média"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40252"
+msgid "Show media finish time"
+msgstr "Afficher l'heure de fin du média"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40253"
+msgid "Show media studio logo"
+msgstr "Afficher le logo du studio du média"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40254"
+msgid "Show media record label logo"
+msgstr "Afficher le logo de la maison de disque du média"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40255"
+msgid "Show movies of saga"
+msgstr "Afficher les films de la saga"
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40256"
+msgid "Show albums of artist"
+msgstr "Afficher les albums de l'artiste"

@@ -216,6 +216,7 @@
 			</include>
 			<control type="group">
 				<visible>[Control.IsVisible(500) | Control.IsVisible(501) | Control.IsVisible(504) | Control.IsVisible(506) | Control.IsVisible(507)] + ListItem.IsCollection</visible>
+				<visible>!Skin.HasSetting(show_moviessetflag)</visible>
 				<control type="list" id="50500">
 					<right>6</right>
 					<bottom>11</bottom>
@@ -262,6 +263,7 @@
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(503) + ListItem.IsCollection</visible>
+				<visible>!Skin.HasSetting(show_moviessetflag)</visible>
 				<control type="list" id="500503">
 					<right>6</right>
 					<bottom>11</bottom>
@@ -310,6 +312,7 @@
 				<top>0</top>
 				<height>100%</height>
 				<visible>Control.IsVisible(51) + ListItem.IsCollection</visible>
+				<visible>!Skin.HasSetting(show_moviessetflag)</visible>
 				<include>OpenClose_Right</include>
 				<control type="textbox">
 					<left>645</left>

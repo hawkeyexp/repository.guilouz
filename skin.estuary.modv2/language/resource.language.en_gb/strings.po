@@ -1920,3 +1920,68 @@ msgstr ""
 msgctxt "#40243"
 msgid "Date and time of broadcast"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40244"
+msgid "Configure media flags"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40245"
+msgid "Show media source"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40246"
+msgid "Show media resolution"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40247"
+msgid "Show media video codec"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40248"
+msgid "Show media aspect ratio"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40249"
+msgid "Show media audio codec"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40250"
+msgid "Show media audio channels"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40251"
+msgid "Show media duration"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40252"
+msgid "Show media finish time"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40253"
+msgid "Show media studio logo"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40254"
+msgid "Show media record label logo"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40255"
+msgid "Show movies of saga"
+msgstr ""
+
+#: /xml/Custom_1137_SettingsFlags.xml
+msgctxt "#40256"
+msgid "Show albums of artist"
+msgstr ""

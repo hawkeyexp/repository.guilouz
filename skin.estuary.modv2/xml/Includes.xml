@@ -791,6 +791,7 @@
 				<animation effect="slide" end="316,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,9)">conditional</animation>
 				<animation effect="slide" end="158,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,10)">conditional</animation>
 				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set) + Window.IsVisible(Home) + Skin.HasSetting(MinimizeMainMenu)</visible>
+				<visible>!Skin.HasSetting(show_moviessetflag)</visible>
 				<focusedlayout height="86" width="158">
 					<control type="image">
 						<left>5</left>
@@ -835,6 +836,7 @@
 				<animation effect="slide" end="316,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,6)">conditional</animation>
 				<animation effect="slide" end="158,0" time="0" condition="Integer.IsEqual(Container(56000).NumItems,7)">conditional</animation>
 				<visible>String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,set) + Window.IsVisible(Home) + !Skin.HasSetting(MinimizeMainMenu)</visible>
+				<visible>!Skin.HasSetting(show_moviessetflag)</visible>
 				<focusedlayout height="86" width="158">
 					<control type="image">
 						<left>5</left>
@@ -876,6 +878,7 @@
 					<top>0</top>
 					<visible>[String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !Control.HasFocus(5094)] | [String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,season) + !Control.HasFocus(5084)] | String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,movie) | Control.HasFocus(6600) | Control.HasFocus(66001)</visible>
 					<visible>!Window.IsVisible(DialogVideoInfo.xml) + !Window.IsVisible(Custom_1132_MoviesSetsInfo.xml)</visible>
+					<visible>!Skin.HasSetting(show_mediastudioflag)</visible>
 					<include content="MediaFlagStudio">
 						<param name="texture" value="$INFO[Skin.String(studiologos.path)]$INFO[$PARAM[infolabel_prefix]ListItem.Studio,,.png]" />
 						<param name="colordiffuse" value="$VAR[MediaFlagsColorVar]" />
@@ -893,6 +896,7 @@
 					<width>150</width>
 					<top>0</top>
 					<visible>!String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,season) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,movie) + !Control.HasFocus(6600)  + !Control.HasFocus(66001)</visible>
+					<visible>!Skin.HasSetting(show_mediarecordlabelflag)</visible>
 					<include content="MediaFlagStudio">
 						<param name="texture" value="$INFO[Skin.String(recordlabels.path)]$INFO[$PARAM[infolabel_prefix]ListItem.Property(Album_Label),,.png]" />
 						<param name="colordiffuse" value="" />
@@ -945,63 +949,71 @@
 					<param name="texture" value="flags/webdl.png" />
 					<param name="width" value="73" />
 					<param name="visible" value="String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,WEB-DL) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,WEBDL) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,WEB) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,web-dl) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,webdl) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,web)" />
-					<param name="visible2" value="!Control.HasFocus(11100)" />
+					<param name="visible2" value="!Control.HasFocus(11100) + !Skin.HasSetting(show_mediasourceflag)" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="flags/dvd.png" />
 					<param name="width" value="73" />
 					<param name="visible" value="String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,DVD) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,dvd)" />
-					<param name="visible2" value="!Control.HasFocus(11100)" />
+					<param name="visible2" value="!Control.HasFocus(11100) + !Skin.HasSetting(show_mediasourceflag)" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="flags/bluray.png" />
 					<param name="width" value="73" />
 					<param name="visible" value="String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,bluray) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,blu-ray) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,bdrip) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,BLURAY) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,BLU-RAY) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,BDRIP)" />
-					<param name="visible2" value="!Control.HasFocus(11100)" />
+					<param name="visible2" value="!Control.HasFocus(11100) + !Skin.HasSetting(show_mediasourceflag)" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="flags/hdr.png" />
 					<param name="visible" value="String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,hdr) | String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,HDR)" />
+					<param name="visible2" value="!Skin.HasSetting(show_mediaresolutionflag)" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$PARAM[resolution_var]" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoResolution) + !String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,hdr) + !String.Contains($PARAM[infolabel_prefix]ListItem.Filenameandpath,HDR)" />
+					<param name="visible2" value="!Skin.HasSetting(show_mediaresolutionflag)" />
 					<param name="width" value="73" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.VideoCodec,flags/videocodec/,.png]" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoCodec)" />
+					<param name="visible2" value="!Skin.HasSetting(show_mediavideocodecflag)" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.VideoAspect,flags/aspectratio/,.png]" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoAspect)" />
+					<param name="visible2" value="!Skin.HasSetting(show_mediaaspectratioflag)" />
 					<param name="width" value="108" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$PARAM[audiocodec_var]" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioCodec)" />
+					<param name="visible2" value="!Skin.HasSetting(show_mediaaudiocodecflag)" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.AudioChannels,flags/audiochannel/,.png]" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioChannels)" />
+					<param name="visible2" value="!Skin.HasSetting(show_mediaaudiochannelsflag)" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="width" value="0" />
 					<param name="top" value="5" />
+					<param name="visible" value="![Skin.HasSetting(show_mediadurationflag) + Skin.HasSetting(show_mediaendtimeflag)]" />
 				</include>
 				<control type="group">
 					<width>176</width>
 					<top>5</top>
 					<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.Duration) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,song) + !Control.HasFocus(6600)  + !Control.HasFocus(66001)</visible>
+					<visible>!Skin.HasSetting(show_mediadurationflag)</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="flags/time.png" />
 						<param name="width" value="176" />
@@ -1023,6 +1035,7 @@
 					<top>5</top>
 					<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.EndTimeResume) + !$PARAM[infolabel_prefix]ListItem.IsFolder + !$PARAM[infolabel_prefix]ListItem.IsCollection + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !Control.HasFocus(5500) + !Control.HasFocus(6400) + !Control.HasFocus(6500) + !Control.HasFocus(6600) + !Control.HasFocus(66001) + !Control.HasFocus(16200) + !Control.HasFocus(16600) + !Container.Content(genres) + !Container.Content(years) + !Container.Content(actors) + !Container.Content(directors) + !Container.Content(studios) + !Container.Content(countries) + !Container.Content(artists) + !Container.Content(albums) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,season) + !String.StartsWith(Container.FolderPath,plugin://) + ![String.IsEqual($PARAM[infolabel_prefix]ListItem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]]</visible>
 					<visible>!String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,AM) + !String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,PM)</visible>
+					<visible>!Skin.HasSetting(show_mediaendtimeflag)</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="flags/finishtime.png" />
 						<param name="width" value="162" />
@@ -1045,6 +1058,7 @@
 					<top>5</top>
 					<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.EndTimeResume) + !$PARAM[infolabel_prefix]ListItem.IsFolder + !$PARAM[infolabel_prefix]ListItem.IsCollection + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,tvshow) + !Control.HasFocus(5500) + !Control.HasFocus(6400) + !Control.HasFocus(6500) + !Control.HasFocus(6600) + !Control.HasFocus(66001) + !Control.HasFocus(16200) + !Control.HasFocus(16600) + !Container.Content(genres) + !Container.Content(years) + !Container.Content(actors) + !Container.Content(directors) + !Container.Content(studios) + !Container.Content(countries) + !Container.Content(artists) + !Container.Content(albums) + !String.IsEqual($PARAM[infolabel_prefix]ListItem.DBtype,season) + !String.StartsWith(Container.FolderPath,plugin://) + ![String.IsEqual($PARAM[infolabel_prefix]ListItem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]]</visible>
 					<visible>String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,AM) | String.Contains($PARAM[infolabel_prefix]ListItem.EndTimeResume,PM)</visible>
+					<visible>!Skin.HasSetting(show_mediaendtimeflag)</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="flags/finishtime_long.png" />
 						<param name="width" value="222" />

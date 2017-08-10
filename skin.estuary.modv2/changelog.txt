@@ -3,6 +3,7 @@
 • Add button to download all Artworks on dialog video info
 • Add toggle button on PVR Guide to enable standard colors for genres
 • Add setting to pause video during access to extended info
+• Add possibility to configure media flags
 • Change appearance of 'TV Show - Next Aired' addon
 • Fix fanarts when 'Show video on background' is disable
 • Minor changes

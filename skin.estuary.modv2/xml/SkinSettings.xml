@@ -788,13 +788,19 @@
 					<onclick>Skin.ToggleSetting(hide_mediaflags)</onclick>
 					<selected>!Skin.HasSetting(hide_mediaflags)</selected>
 				</control>
+				<control type="button" id="714">
+					<label>  ∟$LOCALIZE[40244]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>ActivateWindow(1137)</onclick>
+					<visible>!Skin.HasSetting(hide_mediaflags)</visible>
+				</control>
 				<control type="button" id="706">
 					<label>  ∟$LOCALIZE[40093]</label>
 					<label2>$VAR[Label_SkinSetting_MediaFlagsColor]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick condition="!Skin.String(MediaFlagsColor)">RunScript(script.skin.helper.colorpicker,skinstring=MediaFlagsColor)</onclick>
 					<onclick condition="Skin.String(MediaFlagsColor)">Skin.Reset(MediaFlagsColor)</onclick>
-					<enable>!Skin.HasSetting(hide_mediaflags)</enable>
+					<visible>!Skin.HasSetting(hide_mediaflags)</visible>
 				</control>
 				<control type="radiobutton" id="713">
 					<label>$LOCALIZE[40238]</label>
