@@ -738,7 +738,7 @@
 				<aspectratio align="right" aligny="center">keep</aspectratio>
 				<texture colordiffuse="$PARAM[colordiffuse]">$PARAM[texture]</texture>
 				<bordertexture colordiffuse="80FFFFFF">dialogs/back.png</bordertexture>
-				<bordersize>0</bordersize>
+				<bordersize>-1</bordersize>
 				<visible>$PARAM[visible]</visible>
 				<visible>$PARAM[visible2]</visible>
 			</control>
