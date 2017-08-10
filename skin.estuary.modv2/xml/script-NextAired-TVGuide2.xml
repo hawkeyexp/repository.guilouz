@@ -6,13 +6,7 @@
 		<include>DefaultBackground</include>
 		<control type="button" id="20000">
 			<include>HiddenObject</include>
-			<onfocus>SetFocus(200)</onfocus>
-			<visible>!String.IsEqual(Window(Home).Property(NextAired.200.Wday),)</visible>
-		</control>
-		<control type="button" id="20000">
-			<include>HiddenObject</include>
 			<onfocus>SetFocus(201)</onfocus>
-			<visible>String.IsEqual(Window(Home).Property(NextAired.200.Wday),)</visible>
 		</control>
 		<control type="button" id="20001">
 			<include>HiddenObject</include>
