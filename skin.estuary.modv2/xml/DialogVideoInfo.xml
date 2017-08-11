@@ -430,7 +430,7 @@
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="163" />
 						<param name="label" value="$LOCALIZE[563] TheMovieDB : [COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.TMDB), (, $LOCALIZE[40027])][/COLOR]" />
-						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.TMDB))]" />
+						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.TMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.TMDB))] + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata">

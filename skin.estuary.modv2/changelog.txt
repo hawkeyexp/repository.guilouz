@@ -1,3 +1,6 @@
+[B]2.7.3[/B]
+• Minor fixes
+
 [B]2.7.2[/B]
 • Add Top 250 from IMDb on dialog video info
 • Add button to download all Artworks on dialog video info
