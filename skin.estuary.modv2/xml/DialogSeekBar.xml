@@ -79,8 +79,21 @@
 					<aligny>center</aligny>
 					<font>font30</font>
 					<wrapmultiline>true</wrapmultiline>
-					<label>$LOCALIZE[21396] :[CR][COLOR white]$INFO[player.chapter]$INFO[player.chaptercount, / ][/COLOR]</label>
+					<label>$LOCALIZE[21396][CR][COLOR white]$INFO[player.chapter]$INFO[player.chaptercount, / ][/COLOR]</label>
 					<visible>player.chaptercount</visible>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+				</control>
+				<control type="label">
+					<top>110</top>
+					<right>20</right>
+					<width>400</width>
+					<height>50</height>
+					<aligny>center</aligny>
+					<align>right</align>
+					<font>font30</font>
+					<wrapmultiline>true</wrapmultiline>
+					<label>$LOCALIZE[345][CR][COLOR white]$INFO[VideoPlayer.Year][/COLOR]</label>
+					<visible>!String.IsEmpty(VideoPlayer.Year)</visible>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 				<control type="group">

@@ -3234,16 +3234,13 @@
 	</variable>
 	<variable name="NowPlayingBreadcrumbsVar">
 		<value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.Title]</value>
-		<value condition="Window.IsActive(fullscreenvideo)">$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)]</value>
+		<value condition="Window.IsActive(fullscreenvideo)"></value>
 		<value condition="MusicPartyMode.Enabled">$LOCALIZE[589]</value>
 		<value>$LOCALIZE[31000]...</value>
 	</variable>
 	<variable name="OSDSubLabelVar">
 		<value condition="Window.IsActive(visualisation) + Integer.IsGreater(Playlist.Length,1)">$LOCALIZE[554] $INFO[Playlist.Position] / $INFO[Playlist.Length]</value>
-		<value condition="VideoPlayer.Content(musicvideos)">[UPPERCASE]$INFO[VideoPlayer.Artist]$INFO[VideoPlayer.Album, - ][/UPPERCASE]</value>
-		<value condition="VideoPlayer.Content(episodes)">[UPPERCASE]$INFO[VideoPlayer.TVShowTitle,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] ,][/UPPERCASE]</value>
 		<value condition="VideoPlayer.Content(LiveTV) | PVR.IsPlayingRecording">[UPPERCASE]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.EpisodeName, - ][/UPPERCASE]</value>
-		<value>[UPPERCASE]$INFO[VideoPlayer.Genre][/UPPERCASE]</value>
 	</variable>
 	<variable name="AddonsFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)"></value>

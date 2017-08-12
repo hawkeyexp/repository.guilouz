@@ -311,7 +311,7 @@
 								<width>40</width>
 								<height>40</height>
 								<aspectratio>keep</aspectratio>
-								<texture fallback="lang">$INFO[ListItem.Property(SubtitleLanguage.1),icons/infodialogs/flags/,.png]</texture>
+								<texture fallback="icons/infodialogs/flags/fallback.png">$INFO[ListItem.Property(SubtitleLanguage.1),icons/infodialogs/flags/,.png]</texture>
 								<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.1))</visible>
 							</control>
 							<control type="image">
