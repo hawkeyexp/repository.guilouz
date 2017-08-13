@@ -1853,8 +1853,8 @@ msgstr "Configurer les clés API personnelles"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40230"
-msgid "Hide OSD when video is paused"
-msgstr "Masquer l'OSD lorsque la vidéo est mise en pause"
+msgid "Hide info when video is paused"
+msgstr "Masquer les informations lorsque la vidéo est mise en pause"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40231"

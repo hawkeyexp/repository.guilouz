@@ -3,7 +3,7 @@
 	<visible>Player.Seeking | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Player.ShowInfo | Window.IsActive(fullscreeninfo) | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | !String.IsEmpty(Player.SeekNumeric) | !String.IsEmpty(PVR.ChannelNumberInput)</visible>
 	<visible>![Window.IsActive(sliderdialog) | Window.IsActive(pvrosdchannels)]</visible>
 	<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)</visible>
-	<visible>![Skin.HasSetting(hide_osdwithpause) + Player.Paused + !Window.IsVisible(VideoOSD.xml) + Window.IsVisible(VideoFullScreen.xml)]</visible>
+	<visible>![Skin.HasSetting(hide_infowithpause) + Player.Paused + !Window.IsVisible(VideoOSD.xml) + Window.IsVisible(VideoFullScreen.xml) + !Window.IsVisible(DialogFullScreenInfo.xml)]</visible>
 	<include>Animation_BottomSlide</include>
 	<depth>DepthOSD</depth>
 	<zorder>0</zorder>
@@ -83,19 +83,6 @@
 					<visible>player.chaptercount</visible>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
-				<control type="label">
-					<top>110</top>
-					<right>20</right>
-					<width>400</width>
-					<height>50</height>
-					<aligny>center</aligny>
-					<align>right</align>
-					<font>font30</font>
-					<wrapmultiline>true</wrapmultiline>
-					<label>$LOCALIZE[345][CR][COLOR white]$INFO[VideoPlayer.Year][/COLOR]</label>
-					<visible>!String.IsEmpty(VideoPlayer.Year)</visible>
-					<textcolor>$VAR[SkinColorVar]</textcolor>
-				</control>
 				<control type="group">
 					<visible>Player.Recording + !Player.ChannelPreviewActive</visible>
 					<control type="image">
@@ -125,8 +112,8 @@
 					<font>font30</font>
 					<wrapmultiline>true</wrapmultiline>
 					<animation effect="fade" time="200">VisibleChange</animation>
-					<label>$INFO[Player.TimeRemaining,$LOCALIZE[31134] :[CR][COLOR white],[/COLOR]]</label>
-					<visible>!Player.ShowInfo + !Window.IsActive(fullscreeninfo)</visible>
+					<label>$INFO[Player.TimeRemaining,$LOCALIZE[31134][CR][COLOR white],[/COLOR]]</label>
+					<visible>!Player.ShowInfo + ![[Window.IsVisible(DialogFullscreenInfo.xml) | Window.IsVisible(Custom_1138_InfoOnPause.xml)] + VideoPlayer.Content(LiveTV)]</visible>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 				</control>
 			</control>

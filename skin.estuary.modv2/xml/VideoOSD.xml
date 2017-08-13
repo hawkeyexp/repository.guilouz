@@ -22,14 +22,14 @@
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="label">
 				<right>30</right>
-				<top>0</top>
+				<top>5</top>
 				<align>right</align>
-				<textoffsetx>20</textoffsetx>
 				<aligny>center</aligny>
 				<left>30</left>
+				<font>font25_title</font>
 				<height>60</height>
 				<label>$VAR[VideoOSDHelpTextVar]</label>
-				<visible>!Player.ShowInfo + !PVR.IsTimeShift + !Window.ISVisible(fullscreeninfo)</visible>
+				<visible>!Player.ShowInfo + !PVR.IsTimeShift</visible>
 			</control>
 			<control type="group" id="200">
 				<control type="grouplist" id="201">

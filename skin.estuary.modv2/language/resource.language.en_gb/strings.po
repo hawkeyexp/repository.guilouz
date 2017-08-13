@@ -1853,7 +1853,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40230"
-msgid "Hide OSD when video is paused"
+msgid "Hide info when video is paused"
 msgstr ""
 
 #: /xml/SkinSettings.xml

@@ -2,7 +2,6 @@
 <window type="dialog" id="1109">
 	<visible>Window.IsActive(fullscreenvideo) | Window.IsActive(visualisation)</visible>
 	<visible>Window.IsActive(seekbar) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrchannelguide)</visible>
-	<visible>![Skin.HasSetting(hide_osdwithpause) + Player.Paused + !Window.IsVisible(VideoOSD.xml) + Window.IsVisible(VideoFullScreen.xml)]</visible>
 	<depth>DepthOSD</depth>
 	<include>Animation_TopSlide</include>
 	<zorder>0</zorder>
@@ -11,17 +10,17 @@
 			<animation effect="slide" end="0,-200" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			<depth>DepthBars</depth>
 			<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>110%</width>
-					<height>250</height>
-					<texture>frame/InfoBar.png</texture>
-				</control>
+				<left>0</left>
+				<top>0</top>
+				<width>110%</width>
+				<height>250</height>
+				<texture>frame/InfoBar.png</texture>
+			</control>
 			<control type="image">
 				<left>30</left>
 				<top>20</top>
 				<width>400</width>
-				<height>155</height>
+				<height>135</height>
 				<texture>$INFO[Player.Art(clearlogo)]</texture>
 				<aspectratio aligny="top" align="center">keep</aspectratio>
 			</control>
@@ -29,7 +28,7 @@
 				<left>30</left>
 				<top>20</top>
 				<width>400</width>
-				<height>155</height>
+				<height>135</height>
 				<texture>$INFO[Player.Art(tvshow.clearlogo)]</texture>
 				<aspectratio aligny="top" align="center">keep</aspectratio>
 			</control>

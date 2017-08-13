@@ -63,8 +63,8 @@
 				<control type="radiobutton" id="105">
 					<label>$LOCALIZE[40230]</label>
 					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(hide_osdwithpause)</selected>
-					<onclick>Skin.ToggleSetting(hide_osdwithpause)</onclick>
+					<selected>Skin.HasSetting(hide_infowithpause)</selected>
+					<onclick>Skin.ToggleSetting(hide_infowithpause)</onclick>
 				</control>
 				<control type="radiobutton" id="106">
 					<label>$LOCALIZE[40241]</label>
@@ -93,7 +93,7 @@
 				<control type="button" id="104">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(hide_osdwithpause)|Skin.Reset(disable_PauseOnExtraInfos)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(hide_infowithpause)|Skin.Reset(disable_PauseOnExtraInfos)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">

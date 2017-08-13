@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<window>
-	<depth>DepthOSD</depth>
-	<defaultcontrol always="true">5553</defaultcontrol>
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog" id="1138">
+	<visible>!Skin.HasSetting(hide_infowithpause) + Player.Paused + Window.IsVisible(VideoFullScreen.xml) + !Window.IsActive(fullscreeninfo)</visible>
+	<visible>!Window.IsVisible(1122) + !Window.IsVisible(VideoOSDBookmarks.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRChannelGuide.xml)</visible>
 	<controls>
 		<control type="button">
 			<description>background close area</description>
