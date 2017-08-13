@@ -218,16 +218,67 @@
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<scroll>true</scroll>
 					</control>
-					<control type="label">
-						<top>155</top>
-						<width>930</width>
-						<height>40</height>
-						<label>$INFO[MusicPlayer.DiscNumber,$LOCALIZE[427] ,]</label>
-						<font>font37</font>
-						<shadowcolor>black</shadowcolor>
-						<scroll>true</scroll>
+					<control type="group">
+					<left>-30</left>
+					<top>15</top>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<control type="image">
+					<left>30</left>
+					<top>155</top>
+					<width>130</width>
+					<height>50</height>
+					<texture>$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
+					<bordertexture colordiffuse="80FFFFFF">dialogs/back.png</bordertexture>
+					<bordersize>-1</bordersize>
+					<aspectratio>keep</aspectratio>
+					<visible>!Player.ChannelPreviewActive</visible>
+				</control>
+				<control type="image">
+					<left>165</left>
+					<top>155</top>
+					<width>130</width>
+					<height>50</height>
+					<texture>$INFO[MusicPlayer.Channels,flags/audiochannel/,.png]</texture>
+					<bordertexture colordiffuse="80FFFFFF">dialogs/back.png</bordertexture>
+					<bordersize>-1</bordersize>
+					<aspectratio>keep</aspectratio>
+					<visible>!Player.ChannelPreviewActive</visible>
+				</control>
+				<control type="group">
+					<width>171</width>
+					<height>50</height>
+					<left>300</left>
+					<top>155</top>
+					<visible>!String.IsEmpty(MusicPlayer.Bitrate)</visible>
+					<control type="image">
+						<width>171</width>
+						<height>50</height>
+						<texture>flags/cadre.png</texture>
+						<bordertexture colordiffuse="80FFFFFF">dialogs/back.png</bordertexture>
+						<bordersize>-1</bordersize>
+						<aspectratio>keep</aspectratio>
 					</control>
+					<control type="label">
+						<width>171</width>
+						<height>50</height>
+						<align>center</align>
+						<top>-3</top>
+						<label>$INFO[MusicPlayer.BitRate] kbps</label>
+						<font>Font-Flag</font>
+					</control>
+				</control>
+				<control type="image">
+					<left>476</left>
+					<top>155</top>
+					<width>204</width>
+					<height>50</height>
+					<texture>$INFO[MusicPlayer.UserRating,flags/starrating/,.png]</texture>
+					<bordertexture colordiffuse="80FFFFFF">dialogs/back.png</bordertexture>
+					<bordersize>-1</bordersize>
+					<aspectratio>keep</aspectratio>
+				</control>
 				</control>		
+				</control>
 			</control>	
 		</control>
 		<control type="group">

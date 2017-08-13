@@ -171,12 +171,12 @@
 			<control type="label">
 				<right>30</right>
 				<top>-60</top>
-				<textoffsetx>20</textoffsetx>
 				<aligny>center</aligny>
 				<align>right</align>
 				<width>1858</width>
 				<height>60</height>
 				<label>$VAR[MusicOSDHelpTextVar]</label>
+				<font>font25_title</font>
 			</control>
 		</control>
 		<control type="group">

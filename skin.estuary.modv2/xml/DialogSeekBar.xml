@@ -14,63 +14,26 @@
 			<bottom>0</bottom>
 			<height>190</height>
 			<control type="image">
-					<left>0</left>
-					<bottom>0</bottom>
-					<width>110%</width>
-					<height>250</height>
-					<texture flipy="true">frame/InfoBar.png</texture>
-					<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
-				</control>
+				<left>0</left>
+				<bottom>0</bottom>
+				<width>110%</width>
+				<height>250</height>
+				<texture flipy="true">frame/InfoBar.png</texture>
+				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
+				<visible>!Window.IsVisible(MusicVisualisation.xml)</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<bottom>0</bottom>
+				<width>110%</width>
+				<height>200</height>
+				<texture flipy="true">frame/InfoBar.png</texture>
+				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
+				<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
+			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<control type="image">
-					<left>30</left>
-					<top>114</top>
-					<width>130</width>
-					<height>50</height>
-					<texture>$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
-					<aspectratio>keep</aspectratio>
-					<visible>!Player.ChannelPreviewActive</visible>
-				</control>
-				<control type="image">
-					<left>165</left>
-					<top>114</top>
-					<width>130</width>
-					<height>50</height>
-					<texture>$INFO[MusicPlayer.Channels,flags/audiochannel/,.png]</texture>
-					<aspectratio>keep</aspectratio>
-					<visible>!Player.ChannelPreviewActive</visible>
-				</control>
-				<control type="group">
-					<width>171</width>
-					<height>50</height>
-					<left>300</left>
-					<top>114</top>
-					<visible>!String.IsEmpty(MusicPlayer.Bitrate)</visible>
-					<control type="image">
-						<width>171</width>
-						<height>50</height>
-						<texture>flags/cadre.png</texture>
-						<aspectratio>keep</aspectratio>
-					</control>
-					<control type="label">
-						<width>171</width>
-						<height>50</height>
-						<align>center</align>
-						<top>-3</top>
-						<label>$INFO[MusicPlayer.BitRate] kbps</label>
-						<font>Font-Flag</font>
-					</control>
-				</control>
-				<control type="image">
-					<left>476</left>
-					<top>114</top>
-					<width>204</width>
-					<height>50</height>
-					<texture>$INFO[MusicPlayer.UserRating,flags/starrating/,.png]</texture>
-					<aspectratio>keep</aspectratio>
-				</control>
 				<control type="label">
 					<top>110</top>
 					<left>20</left>

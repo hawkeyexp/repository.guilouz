@@ -1776,6 +1776,7 @@
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
 			<texture colordiffuse="$VAR[PatternColorVar]">$INFO[Skin.String(background_overlay),special://skin/extras/patterns/pattern,.png]</texture>
+			<visible>!Window.IsVisible(MusicVisualisation.xml)</visible>
 		</control>
 	</include>
 	<include name="DefaultBackground">
