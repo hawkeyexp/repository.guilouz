@@ -728,6 +728,7 @@
 		<param name="visible">true</param>
 		<param name="visible2">true</param>
 		<param name="colordiffuse">$VAR[MediaFlagsColorVar]</param>
+		<param name="fallback"></param>
 		<definition>
 			<control type="image">
 				<top>$PARAM[top]</top>
@@ -735,7 +736,7 @@
 				<height>$PARAM[height]</height>
 				<fadetime>0</fadetime>
 				<aspectratio align="right" aligny="center">keep</aspectratio>
-				<texture colordiffuse="$PARAM[colordiffuse]">$PARAM[texture]</texture>
+				<texture colordiffuse="$PARAM[colordiffuse]" fallback="$PARAM[fallback]">$PARAM[texture]</texture>
 				<bordertexture colordiffuse="80FFFFFF">dialogs/back.png</bordertexture>
 				<bordersize>-1</bordersize>
 				<visible>$PARAM[visible]</visible>
@@ -758,6 +759,26 @@
 				<fadetime>0</fadetime>
 				<aspectratio align="right" aligny="center">keep</aspectratio>
 				<texture colordiffuse="$PARAM[colordiffuse]">$PARAM[texture]</texture>
+				<visible>$PARAM[visible]</visible>
+				<visible>$PARAM[visible2]</visible>
+			</control>
+		</definition>
+	</include>
+	<include name="MediaFlagOSD">
+		<param name="top">0</param>
+		<param name="width">130</param>
+		<param name="height">50</param>
+		<param name="visible">true</param>
+		<param name="visible2">true</param>
+		<param name="fallback"></param>
+		<definition>
+			<control type="image">
+				<top>$PARAM[top]</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<fadetime>0</fadetime>
+				<aspectratio align="right" aligny="center">keep</aspectratio>
+				<texture fallback="$PARAM[fallback]">$PARAM[texture]</texture>
 				<visible>$PARAM[visible]</visible>
 				<visible>$PARAM[visible2]</visible>
 			</control>
@@ -864,7 +885,7 @@
 			</control>
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
-				<right>10</right>
+				<right>11</right>
 				<top>5</top>
 				<height>70</height>
 				<align>right</align>
@@ -898,7 +919,7 @@
 					<visible>!Skin.HasSetting(show_mediarecordlabelflag)</visible>
 					<include content="MediaFlagStudio">
 						<param name="texture" value="$INFO[Skin.String(recordlabels.path)]$INFO[$PARAM[infolabel_prefix]ListItem.Property(Album_Label),,.png]" />
-						<param name="colordiffuse" value="" />
+						<param name="colordiffuse" value="$VAR[MediaFlagsColorVar]" />
 						<param name="height" value="60" />
 					</include>
 				</control>
@@ -980,12 +1001,14 @@
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.VideoCodec,flags/videocodec/,.png]" />
+					<param name="fallback" value="flags/videocodec/fallback.png" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoCodec)" />
 					<param name="visible2" value="!Skin.HasSetting(show_mediavideocodecflag)" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.VideoAspect,flags/aspectratio/,.png]" />
+					<param name="fallback" value="flags/aspectratio/fallback.png" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.VideoAspect)" />
 					<param name="visible2" value="!Skin.HasSetting(show_mediaaspectratioflag)" />
 					<param name="width" value="108" />
@@ -993,12 +1016,14 @@
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$PARAM[audiocodec_var]" />
+					<param name="fallback" value="flags/audiocodec/fallback.png" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioCodec)" />
 					<param name="visible2" value="!Skin.HasSetting(show_mediaaudiocodecflag)" />
 					<param name="top" value="5" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[$PARAM[infolabel_prefix]ListItem.AudioChannels,flags/audiochannel/,.png]" />
+					<param name="fallback" value="flags/audiochannel/fallback.png" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioChannels)" />
 					<param name="visible2" value="!Skin.HasSetting(show_mediaaudiochannelsflag)" />
 					<param name="top" value="5" />

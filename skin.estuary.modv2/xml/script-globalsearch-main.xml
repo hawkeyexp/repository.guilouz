@@ -1186,515 +1186,128 @@
 				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<bottom>10</bottom>
-				<height>50</height>
+				<bottom>0</bottom>
+				<height>70</height>
+				<centerleft>50%</centerleft>
+				<width>1920</width>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<control type="grouplist">
-					<orientation>horizontal</orientation>
-					<right>10</right>
-					<align>right</align>
-					<itemgap>5</itemgap>
-					<width>1900</width>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(111).ListItem.VideoResolution,flags/videoresolution/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(111).ListItem.VideoResolution)" />
-						<param name="width" value="73" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(111).ListItem.VideoCodec,flags/videocodec/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(111).ListItem.VideoCodec)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(111).ListItem.VideoAspect,flags/aspectratio/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(111).ListItem.VideoAspect)" />
-						<param name="width" value="108" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(111).ListItem.AudioCodec,flags/audiocodec/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(111).ListItem.AudioCodec)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(111).ListItem.AudioChannels,flags/audiochannel/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(111).ListItem.AudioChannels)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="width" value="0" />
-					</include>
-					<control type="group">
-						<width>176</width>
-						<visible>!String.IsEmpty(Container(111).ListItem.Duration)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/time.png" />
-							<param name="width" value="176" />
-						</include>
-						<control type="label">
-							<width>119</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$VAR[DurationVar]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-						</control>
-					</control>
-					<control type="group">
-						<width>162</width>
-						<visible>!String.IsEmpty(Container(111).ListItem.EndTimeResume)</visible>
-						<visible>!String.Contains(Container(111).ListItem.EndTimeResume,AM) + !String.Contains(Container(111).ListItem.EndTimeResume,PM)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime.png" />
-							<param name="width" value="162" />
-						</include>
-						<control type="label">
-							<width>105</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$INFO[Container(111).ListItem.EndTimeResume]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-							<scroll>true</scroll>
-						</control>
-					</control>
-					<control type="group">
-						<width>222</width>
-						<top>5</top>
-						<visible>!String.IsEmpty(Container(111).ListItem.EndTimeResume)</visible>
-						<visible>String.Contains(Container(111).ListItem.EndTimeResume,AM) | String.Contains(Container(111).ListItem.EndTimeResume,PM)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime_long.png" />
-							<param name="width" value="222" />
-						</include>
-						<control type="label">
-							<width>165</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$INFO[Container(111).ListItem.EndTimeResume]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-							<scroll>true</scroll>
-						</control>
-					</control>
-				</control>
+				<include content="MediaFlags">
+					<param name="infolabel_prefix" value="Container(111)."/>
+					<param name="resolution_var">$VAR[ContainerResolutionFlagVar]</param>
+					<param name="audiocodec_var">$VAR[ContainerAudioCodecFlagVar]</param>
+				</include>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(121)</visible>
+				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
+				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<bottom>0</bottom>
+				<height>70</height>
+				<centerleft>50%</centerleft>
+				<width>1920</width>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<include content="MediaFlags">
+					<param name="infolabel_prefix" value="Container(121)."/>
+					<param name="resolution_var">$VAR[ContainerResolutionFlagVar]</param>
+					<param name="audiocodec_var">$VAR[ContainerAudioCodecFlagVar]</param>
+				</include>
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(141)</visible>
 				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<bottom>10</bottom>
-				<height>50</height>
+				<bottom>0</bottom>
+				<height>70</height>
+				<centerleft>50%</centerleft>
+				<width>1920</width>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<control type="grouplist">
-					<orientation>horizontal</orientation>
-					<right>10</right>
-					<align>right</align>
-					<itemgap>5</itemgap>
-					<width>1900</width>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(141).ListItem.VideoResolution,flags/videoresolution/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(141).ListItem.VideoResolution)" />
-						<param name="width" value="73" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(141).ListItem.VideoCodec,flags/videocodec/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(141).ListItem.VideoCodec)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(141).ListItem.VideoAspect,flags/aspectratio/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(141).ListItem.VideoAspect)" />
-						<param name="width" value="108" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(141).ListItem.AudioCodec,flags/audiocodec/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(141).ListItem.AudioCodec)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(141).ListItem.AudioChannels,flags/audiochannel/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(141).ListItem.AudioChannels)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="width" value="0" />
-					</include>
-					<control type="group">
-						<width>176</width>
-						<visible>!String.IsEmpty(Container(141).ListItem.Duration)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/time.png" />
-							<param name="width" value="176" />
-						</include>
-						<control type="label">
-							<width>119</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$VAR[DurationVar]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-						</control>
-					</control>
-					<control type="group">
-						<width>162</width>
-						<visible>!String.IsEmpty(Container(141).ListItem.EndTimeResume)</visible>
-						<visible>!String.Contains(Container(141).ListItem.EndTimeResume,AM) + !String.Contains(Container(141).ListItem.EndTimeResume,PM)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime.png" />
-							<param name="width" value="162" />
-						</include>
-						<control type="label">
-							<width>105</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$INFO[Container(141).ListItem.EndTimeResume]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-							<scroll>true</scroll>
-						</control>
-					</control>
-					<control type="group">
-						<width>222</width>
-						<top>5</top>
-						<visible>!String.IsEmpty(Container(141).ListItem.EndTimeResume)</visible>
-						<visible>String.Contains(Container(141).ListItem.EndTimeResume,AM) | String.Contains(Container(141).ListItem.EndTimeResume,PM)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime_long.png" />
-							<param name="width" value="222" />
-						</include>
-						<control type="label">
-							<width>165</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$INFO[Container(141).ListItem.EndTimeResume]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-							<scroll>true</scroll>
-						</control>
-					</control>
-				</control>
+				<include content="MediaFlags">
+					<param name="infolabel_prefix" value="Container(141)."/>
+					<param name="resolution_var">$VAR[ContainerResolutionFlagVar]</param>
+					<param name="audiocodec_var">$VAR[ContainerAudioCodecFlagVar]</param>
+				</include>
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(151)</visible>
 				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<bottom>10</bottom>
-				<height>50</height>
+				<bottom>0</bottom>
+				<height>70</height>
+				<centerleft>50%</centerleft>
+				<width>1920</width>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<control type="grouplist">
-					<orientation>horizontal</orientation>
-					<right>10</right>
-					<align>right</align>
-					<itemgap>5</itemgap>
-					<width>1900</width>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(151).ListItem.VideoResolution,flags/videoresolution/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(151).ListItem.VideoResolution)" />
-						<param name="width" value="73" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(151).ListItem.VideoCodec,flags/videocodec/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(151).ListItem.VideoCodec)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(151).ListItem.VideoAspect,flags/aspectratio/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(151).ListItem.VideoAspect)" />
-						<param name="width" value="108" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(151).ListItem.AudioCodec,flags/audiocodec/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(151).ListItem.AudioCodec)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(151).ListItem.AudioChannels,flags/audiochannel/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(151).ListItem.AudioChannels)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="width" value="0" />
-					</include>
-					<control type="group">
-						<width>176</width>
-						<visible>!String.IsEmpty(Container(151).ListItem.Duration)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/time.png" />
-							<param name="width" value="176" />
-						</include>
-						<control type="label">
-							<width>119</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$VAR[DurationVar]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-						</control>
-					</control>
-					<control type="group">
-						<width>162</width>
-						<visible>!String.IsEmpty(Container(151).ListItem.EndTimeResume)</visible>
-						<visible>!String.Contains(Container(151).ListItem.EndTimeResume,AM) + !String.Contains(Container(151).ListItem.EndTimeResume,PM)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime.png" />
-							<param name="width" value="162" />
-						</include>
-						<control type="label">
-							<width>105</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$INFO[Container(151).ListItem.EndTimeResume]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-							<scroll>true</scroll>
-						</control>
-					</control>
-					<control type="group">
-						<width>222</width>
-						<top>5</top>
-						<visible>!String.IsEmpty(Container(151).ListItem.EndTimeResume)</visible>
-						<visible>String.Contains(Container(151).ListItem.EndTimeResume,AM) | String.Contains(Container(151).ListItem.EndTimeResume,PM)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime_long.png" />
-							<param name="width" value="222" />
-						</include>
-						<control type="label">
-							<width>165</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$INFO[Container(151).ListItem.EndTimeResume]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-							<scroll>true</scroll>
-						</control>
-					</control>
-				</control>
+				<include content="MediaFlags">
+					<param name="infolabel_prefix" value="Container(151)."/>
+					<param name="resolution_var">$VAR[ContainerResolutionFlagVar]</param>
+					<param name="audiocodec_var">$VAR[ContainerAudioCodecFlagVar]</param>
+				</include>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(171)</visible>
+				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
+				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<bottom>0</bottom>
+				<height>70</height>
+				<centerleft>50%</centerleft>
+				<width>1920</width>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<include content="MediaFlags">
+					<param name="infolabel_prefix" value="Container(171)."/>
+					<param name="resolution_var">$VAR[ContainerResolutionFlagVar]</param>
+					<param name="audiocodec_var">$VAR[ContainerAudioCodecFlagVar]</param>
+				</include>
+			</control>
+			<control type="group">
+				<visible>Control.IsVisible(181)</visible>
+				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
+				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+				<bottom>0</bottom>
+				<height>70</height>
+				<centerleft>50%</centerleft>
+				<width>1920</width>
+				<animation effect="fade" time="200">VisibleChange</animation>
+				<include content="MediaFlags">
+					<param name="infolabel_prefix" value="Container(181)."/>
+					<param name="resolution_var">$VAR[ContainerResolutionFlagVar]</param>
+					<param name="audiocodec_var">$VAR[ContainerAudioCodecFlagVar]</param>
+				</include>
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(201)</visible>
 				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<bottom>10</bottom>
-				<height>50</height>
+				<bottom>0</bottom>
+				<height>70</height>
+				<centerleft>50%</centerleft>
+				<width>1920</width>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<control type="grouplist">
-					<orientation>horizontal</orientation>
-					<right>10</right>
-					<align>right</align>
-					<itemgap>5</itemgap>
-					<width>1900</width>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(201).ListItem.VideoResolution,flags/videoresolution/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(201).ListItem.VideoResolution)" />
-						<param name="width" value="73" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(201).ListItem.VideoCodec,flags/videocodec/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(201).ListItem.VideoCodec)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(201).ListItem.VideoAspect,flags/aspectratio/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(201).ListItem.VideoAspect)" />
-						<param name="width" value="108" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(201).ListItem.AudioCodec,flags/audiocodec/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(201).ListItem.AudioCodec)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(201).ListItem.AudioChannels,flags/audiochannel/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(201).ListItem.AudioChannels)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="width" value="0" />
-					</include>
-					<control type="group">
-						<width>176</width>
-						<visible>!String.IsEmpty(Container(201).ListItem.Duration)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/time.png" />
-							<param name="width" value="176" />
-						</include>
-						<control type="label">
-							<width>119</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$VAR[DurationVar]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-						</control>
-					</control>
-					<control type="group">
-						<width>162</width>
-						<visible>!String.IsEmpty(Container(201).ListItem.EndTimeResume)</visible>
-						<visible>!String.Contains(Container(201).ListItem.EndTimeResume,AM) + !String.Contains(Container(201).ListItem.EndTimeResume,PM)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime.png" />
-							<param name="width" value="162" />
-						</include>
-						<control type="label">
-							<width>105</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$INFO[Container(201).ListItem.EndTimeResume]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-							<scroll>true</scroll>
-						</control>
-					</control>
-					<control type="group">
-						<width>222</width>
-						<top>5</top>
-						<visible>!String.IsEmpty(Container(201).ListItem.EndTimeResume)</visible>
-						<visible>String.Contains(Container(201).ListItem.EndTimeResume,AM) | String.Contains(Container(201).ListItem.EndTimeResume,PM)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime_long.png" />
-							<param name="width" value="222" />
-						</include>
-						<control type="label">
-							<width>165</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$INFO[Container(201).ListItem.EndTimeResume]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-							<scroll>true</scroll>
-						</control>
-					</control>
-				</control>
+				<include content="MediaFlags">
+					<param name="infolabel_prefix" value="Container(201)."/>
+					<param name="resolution_var">$VAR[ContainerResolutionFlagVar]</param>
+					<param name="audiocodec_var">$VAR[ContainerAudioCodecFlagVar]</param>
+				</include>
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(211)</visible>
 				<visible>!Control.HasFocus(9000) + !Control.HasFocus(998) + !Window.IsVisible(movieinformation)</visible>
 				<animation effect="fade" start="0" end="100" time="300" delay="300">WindowOpen</animation>
 				<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-				<bottom>10</bottom>
-				<height>50</height>
+				<bottom>0</bottom>
+				<height>70</height>
+				<centerleft>50%</centerleft>
+				<width>1920</width>
 				<animation effect="fade" time="200">VisibleChange</animation>
-				<control type="grouplist">
-					<orientation>horizontal</orientation>
-					<right>10</right>
-					<align>right</align>
-					<itemgap>5</itemgap>
-					<width>1900</width>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(211).ListItem.VideoResolution,flags/videoresolution/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(211).ListItem.VideoResolution)" />
-						<param name="width" value="73" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(211).ListItem.VideoCodec,flags/videocodec/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(211).ListItem.VideoCodec)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(211).ListItem.VideoAspect,flags/aspectratio/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(211).ListItem.VideoAspect)" />
-						<param name="width" value="108" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(211).ListItem.AudioCodec,flags/audiocodec/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(211).ListItem.AudioCodec)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="texture" value="$INFO[Container(211).ListItem.AudioChannels,flags/audiochannel/,.png]" />
-						<param name="visible" value="!String.IsEmpty(Container(211).ListItem.AudioChannels)" />
-					</include>
-					<include content="MediaFlag">
-						<param name="width" value="0" />
-					</include>
-					<control type="group">
-						<width>176</width>
-						<visible>!String.IsEmpty(Container(211).ListItem.Duration)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/time.png" />
-							<param name="width" value="176" />
-						</include>
-						<control type="label">
-							<width>119</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$VAR[DurationVar]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-						</control>
-					</control>
-					<control type="group">
-						<width>162</width>
-						<visible>!String.IsEmpty(Container(211).ListItem.EndTimeResume)</visible>
-						<visible>!String.Contains(Container(211).ListItem.EndTimeResume,AM) + !String.Contains(Container(211).ListItem.EndTimeResume,PM)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime.png" />
-							<param name="width" value="162" />
-						</include>
-						<control type="label">
-							<width>105</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$INFO[Container(211).ListItem.EndTimeResume]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-							<scroll>true</scroll>
-						</control>
-					</control>
-					<control type="group">
-						<width>222</width>
-						<top>5</top>
-						<visible>!String.IsEmpty(Container(211).ListItem.EndTimeResume)</visible>
-						<visible>String.Contains(Container(211).ListItem.EndTimeResume,AM) | String.Contains(Container(211).ListItem.EndTimeResume,PM)</visible>
-						<include content="MediaFlag">
-							<param name="texture" value="flags/finishtime_long.png" />
-							<param name="width" value="222" />
-						</include>
-						<control type="label">
-							<width>165</width>
-							<top>-1</top>
-							<height>50</height>
-							<posx>54</posx>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font_flag</font>
-							<label>$INFO[Container(211).ListItem.EndTimeResume]</label>
-							<textcolor>$VAR[MediaFlagsColorVar]</textcolor>
-							<scroll>true</scroll>
-						</control>
-					</control>
-				</control>
+				<include content="MediaFlags">
+					<param name="infolabel_prefix" value="Container(211)."/>
+					<param name="resolution_var">$VAR[ContainerResolutionFlagVar]</param>
+					<param name="audiocodec_var">$VAR[ContainerAudioCodecFlagVar]</param>
+				</include>
 			</control>
 			<control type="group">
 				<right>0</right>

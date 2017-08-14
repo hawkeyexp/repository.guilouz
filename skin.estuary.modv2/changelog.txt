@@ -1,6 +1,7 @@
 [B]2.7.3[/B]
 • Video info are now displayed when video is paused with possibility to disable it
 • Improve OSD info
+• Add fallback icons for mediaflags
 • Minor changes and improvements
 • Minor fixes
 

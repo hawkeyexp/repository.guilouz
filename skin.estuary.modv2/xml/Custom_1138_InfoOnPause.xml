@@ -69,25 +69,30 @@
 				<itemgap>5</itemgap>
 				<visible>![Player.ChannelPreviewActive | Window.IsActive(videoosd)]</visible>
 				<animation effect="fade" start="0" end="100" time="200" delay="1000">Visible</animation>
-				<include content="MediaFlag">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="$VAR[VideoPlayerResolutionFlagVar]" />
+					<param name="fallback" value="flags/videoresolution/fallback.png" />
 					<param name="width" value="73" />
 				</include>
-				<include content="MediaFlag">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]" />
+					<param name="fallback" value="flags/videocodec/fallback.png" />
 					<param name="visible" value="!String.IsEmpty(VideoPlayer.VideoCodec)" />
 				</include>
-				<include content="MediaFlag">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]" />
+					<param name="fallback" value="flags/aspectratio/fallback.png" />
 					<param name="visible" value="!String.IsEmpty(VideoPlayer.VideoAspect)" />
 					<param name="width" value="108" />
 				</include>
-				<include content="MediaFlag">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]" />
+					<param name="fallback" value="flags/audiocodec/fallback.png" />
 					<param name="visible" value="!String.IsEmpty(VideoPlayer.AudioCodec)" />
 				</include>
-				<include content="MediaFlag">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]" />
+					<param name="fallback" value="flags/audiochannel/fallback.png" />
 					<param name="visible" value="!String.IsEmpty(VideoPlayer.AudioChannels)" />
 				</include>
 			</control>
@@ -292,42 +297,47 @@
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
 				<visible>!Player.ChannelPreviewActive</visible>
-				<include content="MediaFlagStudio">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="flags/webdl.png" />
 					<param name="width" value="58" />
 					<param name="visible" value="String.Contains(Player.Filenameandpath,WEB-DL) | String.Contains(Player.Filenameandpath,WEBDL) | String.Contains(Player.Filenameandpath,WEB) | String.Contains(Player.Filenameandpath,web-dl) | String.Contains(Player.Filenameandpath,webdl) | String.Contains(Player.Filenameandpath,web)" />
 				</include>
-				<include content="MediaFlagStudio">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="flags/dvd.png" />
 					<param name="width" value="58" />
 					<param name="visible" value="String.Contains(Player.Filenameandpath,DVD) | String.Contains(Player.Filenameandpath,dvd)" />
 				</include>
-				<include content="MediaFlagStudio">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="flags/bluray.png" />
 					<param name="width" value="58" />
 					<param name="visible" value="String.Contains(Player.Filenameandpath,bluray) | String.Contains(Player.Filenameandpath,blu-ray) | String.Contains(Player.Filenameandpath,bdrip) | String.Contains(Player.Filenameandpath,BLURAY) | String.Contains(Player.Filenameandpath,BLU-RAY) | String.Contains(Player.Filenameandpath,BDRIP)" />
 				</include>
-				<include content="MediaFlagStudio">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="$VAR[VideoPlayerResolutionFlagVar]" />
+					<param name="fallback" value="flags/videoresolution/fallback.png" />
 					<param name="width" value="58" />
 				</include>
-				<include content="MediaFlagStudio">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]" />
+					<param name="fallback" value="flags/videocodec/fallback.png" />
 					<param name="width" value="104" />
 				</include>
-				<include content="MediaFlagStudio">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]" />
+					<param name="fallback" value="flags/aspectratio/fallback.png" />
 					<param name="width" value="86" />
 				</include>
-				<include content="MediaFlagStudio">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="$VAR[VideoPlayerAudioCodecFlagVar]" />
+					<param name="fallback" value="flags/audiocodec/fallback.png" />
 					<param name="width" value="104" />
 				</include>
-				<include content="MediaFlagStudio">
+				<include content="MediaFlagOSD">
 					<param name="texture" value="$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]" />
+					<param name="fallback" value="flags/audiochannel/fallback.png" />
 					<param name="width" value="104" />
 				</include>
-				<include content="MediaFlagStudio">
+				<include content="MediaFlagOSD">
 					<param name="width" value="10" />
 				</include>
 				<control type="image">
