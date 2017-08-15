@@ -1016,7 +1016,6 @@
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$PARAM[audiocodec_var]" />
-					<param name="fallback" value="flags/audiocodec/fallback.png" />
 					<param name="visible" value="!String.IsEmpty($PARAM[infolabel_prefix]ListItem.AudioCodec)" />
 					<param name="visible2" value="!Skin.HasSetting(show_mediaaudiocodecflag)" />
 					<param name="top" value="5" />
