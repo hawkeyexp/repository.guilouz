@@ -18,14 +18,14 @@
 
 ### • Download my Repository :
 
-[ ![Download](http://i.imgur.com/L5Bov8X.png) ](https://github.com/Guilouz/repository.guilouz/raw/master/_repo/repository.guilouz/repository.guilouz-1.0.3.zip)
+[ ![Download](http://i.imgur.com/CYTD9na.png) ](https://github.com/Guilouz/repository.guilouz/raw/master/_repo/repository.guilouz/repository.guilouz-1.0.3.zip)
 
 ### • Donation :
 
 If you like my work and would like to buy me a beer or a coffee, I would appreciate :)
 
-[ ![Download](http://i.imgur.com/XRmqzTX.png) ](https://pledgie.com/campaigns/29797)
+[ ![Download](http://i.imgur.com/zNN1EYG.png) ](https://pledgie.com/campaigns/29797)
 
 ### • Support on Kodi forum :
 
-[ ![Download](http://i.imgur.com/1CUrX2A.png) ](https://forum.kodi.tv/showthread.php?tid=306757)
+[ ![Download](http://i.imgur.com/hA3nKiV.png) ](https://forum.kodi.tv/showthread.php?tid=306757)
