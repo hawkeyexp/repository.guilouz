@@ -25,3 +25,7 @@
 If you like my work and would like to buy me a beer or a coffee, I would appreciate :)
 
 [ ![Download](http://i.imgur.com/XRmqzTX.png) ](https://pledgie.com/campaigns/29797)
+
+### • Support Kodi forum :
+
+[ ![Download](http://i.imgur.com/1CUrX2A.png) ](https://forum.kodi.tv/showthread.php?tid=306757)
