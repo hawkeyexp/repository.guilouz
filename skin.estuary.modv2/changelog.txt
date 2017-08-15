@@ -2,6 +2,8 @@
 • Video info are now displayed when video is paused with possibility to disable it
 • Improve OSD info
 • Add fallback icons for mediaflags
+• Add animated poster on video info dialog
+• Fix issue with scripts for others skins
 • Minor changes and improvements
 • Minor fixes
 
