@@ -18,11 +18,11 @@
       	<menu id="kodi.core.main">
       		<item library="scripts/context_menu_moviessets.py">
  				<label>$LOCALIZE[40181]</label>
- 				<visible>String.IsEqual(ListItem.DBType,set) + !Window.IsVisible(Home)</visible>
+ 				<visible>!String.IsEmpty(Window(home).Property(CurrentSkin)) + String.IsEqual(ListItem.DBType,set) + !Window.IsVisible(Home)</visible>
  			</item>
       		<item library="scripts/context_menu_extendedinfo.py">
         		<label>$LOCALIZE[40182]</label>
-        		<visible>System.HasAddon(script.extendedinfo) + [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)]</visible>
+        		<visible>!String.IsEmpty(Window(home).Property(CurrentSkin)) + System.HasAddon(script.extendedinfo) + !System.HasAddon(context.extendedinfo.dialog) + [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)]</visible>
       		</item>
     	</menu>
  	</extension>

@@ -16,6 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import xbmc
+import xbmcgui
 import sys
 
 
@@ -36,5 +37,9 @@ def main():
     elif db_type in ["actor", "director"]:
         xbmc.executebuiltin("%sextendedactorinfo,name=%s)" % (BASE, sys.listitem.getLabel()))
 
-if __name__ == '__main__':
+home = xbmcgui.Window(10000)
+skin=home.getProperty("CurrentSkin")
+if skin == "skin.estuary.modv2":
     main()
+else:
+    pass     

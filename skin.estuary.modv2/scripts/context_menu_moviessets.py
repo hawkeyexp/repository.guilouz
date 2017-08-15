@@ -1,5 +1,9 @@
 import xbmc
-import sys
+import xbmcgui
 
-if __name__ == '__main__':
+home = xbmcgui.Window(10000)
+skin=home.getProperty("CurrentSkin")
+if skin == "skin.estuary.modv2":
     xbmc.executebuiltin("ActivateWindow(1132)")
+else:
+    pass 
