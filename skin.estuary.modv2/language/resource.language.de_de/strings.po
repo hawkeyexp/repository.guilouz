@@ -1851,8 +1851,8 @@ msgstr "Persönliche API Schlüssel konfigurieren"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40230"
-msgid "Hide info when video is paused"
-msgstr "Info in pausierten Videos ausblenden"
+msgid "Displaying video information"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40231"
@@ -1983,3 +1983,18 @@ msgstr "Zeige Filme der Saga"
 msgctxt "#40256"
 msgid "Show albums of artist"
 msgstr "Zeige Alben des Künstlers"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40257"
+msgid "Never"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40258"
+msgid "Only when video is paused"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40259"
+msgid "Always"
+msgstr ""

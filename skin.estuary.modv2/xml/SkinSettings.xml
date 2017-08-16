@@ -60,11 +60,11 @@
 				<ondown>100</ondown>
 				<pagecontrol>60</pagecontrol>
 				<visible>Container(9000).HasFocus(10)</visible>
-				<control type="radiobutton" id="105">
+				<control type="button" id="105">
 					<label>$LOCALIZE[40230]</label>
 					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(hide_infowithpause)</selected>
-					<onclick>Skin.ToggleSetting(hide_infowithpause)</onclick>
+					<onclick>Skin.SelectBool(40230, 40257|enable_neverinfo, 40258|enable_infowithpause, 40259|enable_alwaysinfo)</onclick>
+					<label2>$VAR[OSDInfoLabel2Var]</label2>
 				</control>
 				<control type="radiobutton" id="106">
 					<label>$LOCALIZE[40241]</label>
@@ -93,7 +93,7 @@
 				<control type="button" id="104">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(hide_infowithpause)|Skin.Reset(disable_PauseOnExtraInfos)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_neverinfo)|Skin.Reset(enable_infowithpause)|Skin.Reset(enable_alwaysinfo)|Skin.Reset(disable_PauseOnExtraInfos)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">

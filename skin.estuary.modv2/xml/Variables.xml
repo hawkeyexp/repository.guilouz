@@ -2992,6 +2992,12 @@
 		<value condition="Skin.HasSetting(circle_userrating)">$LOCALIZE[40233]</value>
 		<value>$LOCALIZE[40148]</value>
 	</variable>
+	<variable name="OSDInfoLabel2Var">
+		<value condition="Skin.HasSetting(enable_infowithpause)">$LOCALIZE[40258]</value>
+		<value condition="Skin.HasSetting(enable_alwaysinfo)">$LOCALIZE[40259]</value>
+		<value condition="Skin.HasSetting(enable_neverinfo)">$LOCALIZE[40257]</value>
+		<value>$LOCALIZE[40259]</value>
+	</variable>
 	<variable name="AddonsListIconVar">
 		<value condition="!String.IsEmpty(ListItem.AddonBroken)">icons/addonstatus/disable.png</value>
 		<value condition="ListItem.Property(addon.orphaned)">icons/addonstatus/orphan.png</value>
