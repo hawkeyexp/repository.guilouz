@@ -27,13 +27,35 @@
 			<control type="textbox">
 				<left>0</left>
 				<top>1</top>
-				<width>1920</width>
+				<right>0</right>
 				<height>410</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font45_title</font>
 				<label>$LOCALIZE[19055]</label>
-				<visible>Integer.IsEqual(Container(11).NumItems,0)</visible>
+				<visible>!Container(11).IsUpdating + Integer.IsEqual(Container(11).NumItems,0)</visible>
+			</control>
+			<control type="group">
+				<height>410</height>
+				<width>100%</width>
+				<visible>Container(11).IsUpdating + !Integer.IsGreater(Container(11).NumItems,0)</visible>
+				<control type="image">
+					<top>180</top>
+					<centerleft>50%</centerleft>
+					<width>100</width>
+					<height>100</height>
+					<aspectratio aligny="center">keep</aspectratio>
+					<texture colordiffuse="black">dialogs/extendedprogress/loading-back.png</texture>
+				</control>
+				<control type="image">
+					<top>180</top>
+					<centerleft>50%</centerleft>
+					<width>100</width>
+					<height>100</height>
+					<aspectratio aligny="center">keep</aspectratio>
+					<texture>dialogs/extendedprogress/loading.png</texture>
+					<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
+				</control>
 			</control>
 			<control type="grouplist" id="9001">
 				<orientation>horizontal</orientation>
@@ -91,6 +113,16 @@
 							<top>5</top>
 							<width>180</width>
 							<height>270</height>
+							<aspectratio align="center" aligny="center">scale</aspectratio>
+							<texture background="true" fallback="DefaultActorSolid.png">$INFO[ListItem.Icon]</texture>
+							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
+							<bordersize>4</bordersize>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>5</top>
+							<width>180</width>
+							<height>270</height>
 							<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 							<visible>Control.HasFocus(11)</visible>
 						</control>
@@ -102,16 +134,6 @@
 							<texture border="8" colordiffuse="$VAR[GradientColorVar]">buttons/thumbnail_focused-gradient.png</texture>
 							<visible>Control.HasFocus(11)</visible>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>5</top>
-							<width>180</width>
-							<height>270</height>
-							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture background="true" fallback="DefaultActorSolid.png">$INFO[ListItem.Icon]</texture>
-							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
-							<bordersize>4</bordersize>
 						</control>
 					</control>
 				</focusedlayout>

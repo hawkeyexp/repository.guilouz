@@ -187,12 +187,19 @@
                             <visible>!VideoPlayer.Content(livetv) + !VideoPlayer.HasMenu + !VideoPlayer.Content(musicvideos)</visible>
                             <visible>VideoPlayer.Content(episodes) + System.HasAddon(script.extendedinfo)</visible>
                     </control>
+                    <control type="radiobutton" id="70015">
+                            <include content="OSDButton">
+                                <param name="texture" value="osd/fullscreen/buttons/recommended.png"/>
+                            </include>
+                            <onclick>ActivateWindow(1139)</onclick>
+                            <visible>String.Contains(Player.Art(thumb),ytimg)</visible>
+                    </control>
                     <control type="radiobutton" id="70014">
                             <include content="OSDButton">
                                 <param name="texture" value="osd/fullscreen/buttons/actors.png"/>
                             </include>
                             <onclick>ActivateWindow(1122)</onclick>
-                            <visible>!VideoPlayer.Content(livetv) + !VideoPlayer.HasMenu + !VideoPlayer.Content(musicvideos)</visible>
+                            <visible>!VideoPlayer.Content(livetv) + !VideoPlayer.HasMenu + !VideoPlayer.Content(musicvideos) + !String.Contains(Player.Art(thumb),ytimg) + !VideoPlayer.Content(files)</visible>
                     </control>
 					<control type="radiobutton" id="700">
 						<include content="OSDButton">

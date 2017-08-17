@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window>
-	<defaultcontrol always="true">2</defaultcontrol>
+<window type="dialog" id="1139">
+	<onload condition="String.Contains(Player.Art(thumb),ytimg)">RunScript(script.skin.helper.service,action=stripstring,splitchar=/,string=$INFO[Window(Home).Property(ThumbSplit1)],output=ThumbSplit2,index=0)</onload>
+	<defaultcontrol always="true">1</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
 	<controls>
 		<control type="button">
@@ -32,8 +33,30 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font45_title</font>
-				<label>$LOCALIZE[31155]</label>
-				<visible>Integer.IsEqual(Container(11).NumItems,0)</visible>
+				<label>$LOCALIZE[19055]</label>
+				<visible>!Container(11).IsUpdating + Integer.IsEqual(Container(11).NumItems,0)</visible>
+			</control>
+			<control type="group">
+				<height>410</height>
+				<width>100%</width>
+				<visible>Container(11).IsUpdating + !Integer.IsGreater(Container(11).NumItems,0)</visible>
+				<control type="image">
+					<top>180</top>
+					<centerleft>50%</centerleft>
+					<width>100</width>
+					<height>100</height>
+					<aspectratio aligny="center">keep</aspectratio>
+					<texture colordiffuse="black">dialogs/extendedprogress/loading-back.png</texture>
+				</control>
+				<control type="image">
+					<top>180</top>
+					<centerleft>50%</centerleft>
+					<width>100</width>
+					<height>100</height>
+					<aspectratio aligny="center">keep</aspectratio>
+					<texture>dialogs/extendedprogress/loading.png</texture>
+					<animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="true">Conditional</animation>
+				</control>
 			</control>
 			<control type="grouplist" id="9001">
 				<orientation>horizontal</orientation>
@@ -45,29 +68,13 @@
 				<onup>11</onup>
 				<ondown>11</ondown>
 				<include content="DefaultDialogButton">
-					<param name="id" value="2" />
-					<param name="label" value="$LOCALIZE[294]" />
-					<param name="width" value="350" />
-				</include>
-				<include content="DefaultDialogButton">
-					<param name="id" value="3" />
-					<param name="label" value="$LOCALIZE[296]" />
-					<param name="width" value="350" />
-				</include>
-				<include content="DefaultDialogButton">
-					<param name="id" value="4" />
-					<param name="label" value="$LOCALIZE[20406]" />
-					<param name="width" value="350" />
-					<param name="visible" value="Control.IsEnabled(4)" />
-				</include>
-				<include content="DefaultDialogButton">
-					<param name="id" value="5" />
+					<param name="id" value="1" />
 					<param name="label" value="$LOCALIZE[15067]" />
 					<param name="width" value="350" />
 					<param name="onclick" value="Action(close)" />
 				</include>
 			</control>
-			<control type="panel" id="11">
+			<control type="wraplist" id="11">
 				<left>5</left>
 				<top>81</top>
 				<width>100%</width>
@@ -75,8 +82,10 @@
 				<onup>9001</onup>
 				<ondown>9001</ondown>
 				<preloaditems>2</preloaditems>
-				<scrolltime tween="sine">200</scrolltime>
 				<orientation>horizontal</orientation>
+				<focusposition>2</focusposition>
+				<autoscroll time="3000">!Control.HasFocus(11)</autoscroll>
+				<scrolltime easing="inout" tween="sine">300</scrolltime>
 				<itemlayout width="360" height="340">
 					<control type="group">
 						<left>70</left>
@@ -86,16 +95,26 @@
 							<width>330</width>
 							<height>250</height>
 							<aspectratio>scale</aspectratio>
-							<texture border="4" fallback="DefaultVideo.png">$INFO[ListItem.Art(thumb)]</texture>
+							<texture background="true" border="4" fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
 						</control>
 						<control type="label">
-							<left>20</left>
-							<top>255</top>
-							<width>290</width>
-							<height>40</height>
-							<label>[B]$INFO[ListItem.Label][/B][CR]$INFO[ListItem.Label2]</label>
+							<left>10</left>
+							<top>260</top>
+							<width>310</width>
+							<height>20</height>
+							<label>[B]$INFO[ListItem.Label][/B]</label>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+						</control>
+						<control type="label">
+							<left>10</left>
+							<top>290</top>
+							<width>310</width>
+							<height>20</height>
+							<label>$INFO[ListItem.Premiered]</label>
 							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
@@ -111,7 +130,7 @@
 							<width>330</width>
 							<height>250</height>
 							<aspectratio>scale</aspectratio>
-							<texture border="4" fallback="DefaultVideo.png">$INFO[ListItem.Art(thumb)]</texture>
+							<texture background="true" border="4" fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
 						</control>
@@ -133,19 +152,42 @@
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="label">
-							<left>20</left>
-							<top>255</top>
-							<width>290</width>
-							<height>40</height>
-							<label>[B]$INFO[ListItem.Label][/B][CR][COLOR white]$INFO[ListItem.Label2][/COLOR]</label>
+							<left>10</left>
+							<top>260</top>
+							<width>310</width>
+							<height>20</height>
+							<label>[B]$INFO[ListItem.Label][/B]</label>
+							<font>font12</font>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<visible>!Control.HasFocus(11)</visible>
+						</control>
+						<control type="label">
+							<left>10</left>
+							<top>260</top>
+							<width>310</width>
+							<height>20</height>
+							<label>[B]$INFO[ListItem.Label][/B]</label>
 							<font>font12</font>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
+							<shadowcolor>text_shadow</shadowcolor>
+							<align>center</align>
+							<visible>Control.HasFocus(11)</visible>
+						</control>
+						<control type="label">
+							<left>10</left>
+							<top>290</top>
+							<width>310</width>
+							<height>20</height>
+							<label>$INFO[ListItem.Premiered]</label>
+							<font>font12</font>
 							<shadowcolor>text_shadow</shadowcolor>
 							<align>center</align>
 						</control>
 					</control>
 				</focusedlayout>
+				<content>plugin://plugin.video.youtube/special/related_videos/?video_id=$INFO[Window(Home).Property(ThumbSplit2)]</content>
 			</control>
 		</control>
 	</controls>
-</window>
+</window> 

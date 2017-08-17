@@ -2005,3 +2005,8 @@ msgstr "Toujours"
 msgctxt "#40260"
 msgid "Your library is currently empty.[CR]In order to populate it with your personal media, add  sources and configure them."
 msgstr "Votre bibliothèque est actuellement vide.[CR]Afin de la remplir avec vos médias personnels, ajoutez des sources et configurez-les."
+
+#: /xml/Variables.xml
+msgctxt "#40261"
+msgid "Recommended Youtube videos"
+msgstr "Vidéos Youtube recommandées"
