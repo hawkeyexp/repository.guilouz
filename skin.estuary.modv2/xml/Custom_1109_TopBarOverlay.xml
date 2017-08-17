@@ -32,7 +32,7 @@
 				<height>108</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</texture>
-				<visible>![Window.IsVisible(MusicVisualisation.xml) + Window.IsVisible(DialogVolumeBar.xml)]</visible>
+				<visible>!Window.IsActive(fullscreenvideo) + ![Window.IsVisible(MusicVisualisation.xml) + Window.IsVisible(DialogVolumeBar.xml)]</visible>
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(pvrosdchannels) + !Window.IsActive(pvrchannelguide)</visible>
