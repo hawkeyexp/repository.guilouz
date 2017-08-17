@@ -296,7 +296,7 @@
 					<width>600</width>
 					<height>111</height>
 					<aspectratio align="right" aligny="center">keep</aspectratio>
-					<texture>$INFO[Window(Home).Property(SkinHelper.Player.Art.Banner)]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.Banner)]</texture>
 					<bordertexture>dialogs/back.png</bordertexture>
 					<bordersize>2</bordersize>
 					<animation effect="slide" end="0,165" time="0" condition="String.IsEmpty(MusicPlayer.Offset(1).Title)">Conditional</animation>

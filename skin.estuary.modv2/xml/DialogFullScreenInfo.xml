@@ -121,7 +121,7 @@
 						<effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="out" />
 					</animation>
 					<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
-					<texture background="true">$VAR[PlayerInfoDiscArtVar]</texture>
+					<texture background="true">$INFO[Player.Art(discart)]</texture>
 					<visible>!Skin.HasSetting(show_discart)</visible>
 					<include>OpenClose_Left</include>
 				</control>
@@ -166,7 +166,7 @@
 						<bottom>450</bottom>
 						<width>500</width>
 						<height>281</height>
-						<texture>$VAR[PlayerInfoClearArtVar]</texture>
+						<texture background="true">$VAR[PlayerInfoClearArtVar]</texture>
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
 						<visible>!Skin.HasSetting(enable_playerclearart)</visible>
 					</control>
