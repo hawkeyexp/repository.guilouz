@@ -2000,3 +2000,8 @@ msgstr ""
 msgctxt "#40259"
 msgid "Always"
 msgstr ""
+
+#: /xml/Home.xml
+msgctxt "#40260"
+msgid "Your library is currently empty.[CR]In order to populate it with your personal media, add  sources and configure them."
+msgstr ""

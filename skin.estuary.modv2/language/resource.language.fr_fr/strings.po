@@ -2000,3 +2000,8 @@ msgstr "Uniquement quand la vidéo est en pause"
 msgctxt "#40259"
 msgid "Always"
 msgstr "Toujours"
+
+#: /xml/Home.xml
+msgctxt "#40260"
+msgid "Your library is currently empty.[CR]In order to populate it with your personal media, add  sources and configure them."
+msgstr "Votre bibliothèque est actuellement vide.[CR]Afin de la remplir avec vos médias personnels, ajoutez des sources et configurez-les."
