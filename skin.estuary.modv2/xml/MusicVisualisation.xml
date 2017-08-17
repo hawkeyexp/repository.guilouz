@@ -314,22 +314,67 @@
 				</control>
 				<control type="image">
 					<right>155</right>
-					<top>54</top>
+					<top>56</top>
 					<width>16</width>
 					<height>18</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">osd/arrow.png</texture>
 					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 				</control>
-				<control type="textbox">
+				<control type="label">
+					<top>7</top>
 					<right>177</right>
 					<width>723</width>
 					<align>right</align>
-					<height>170</height>
-					<label>[B][UPPERCASE]$LOCALIZE[40090][/UPPERCASE][/B][CR][COLOR white]$INFO[MusicPlayer.Offset(1).Title]$INFO[MusicPlayer.Offset(1).Artist, - [B],[/B]]$INFO[MusicPlayer.Offset(1).Duration, - ,][CR]$INFO[MusicPlayer.Offset(2).Title]$INFO[MusicPlayer.Offset(2).Artist, - [B],[/B]]$INFO[MusicPlayer.Offset(2).Duration, - ,][CR]$INFO[MusicPlayer.Offset(3).Title]$INFO[MusicPlayer.Offset(3).Artist, - [B],[/B]]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
+					<height>38</height>
+					<label>[B][UPPERCASE]$LOCALIZE[40090][/UPPERCASE][/B]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<font>font13</font>
+					<aligny>center</aligny>
+					<scroll>true</scroll>
 					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+				</control>
+				<control type="label">
+					<top>44.5</top>
+					<right>177</right>
+					<width>723</width>
+					<align>right</align>
+					<height>38</height>
+					<label>[COLOR white]$INFO[MusicPlayer.Offset(1).Title]$INFO[MusicPlayer.Offset(1).Artist, - [B],[/B]]$INFO[MusicPlayer.Offset(1).Duration, - ,][/COLOR]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<scroll>true</scroll>
+					<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+				</control>
+				<control type="label">
+					<top>82</top>
+					<right>177</right>
+					<width>723</width>
+					<align>right</align>
+					<height>38</height>
+					<label>[COLOR white]$INFO[MusicPlayer.Offset(2).Title]$INFO[MusicPlayer.Offset(2).Artist, - [B],[/B]]$INFO[MusicPlayer.Offset(2).Duration, - ,][/COLOR]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<scroll>true</scroll>
+					<visible>!String.IsEmpty(MusicPlayer.Offset(2).Title)</visible>
+				</control>
+				<control type="label">
+					<top>120</top>
+					<right>177</right>
+					<width>723</width>
+					<align>right</align>
+					<height>38</height>
+					<label>[COLOR white]$INFO[MusicPlayer.Offset(3).Title]$INFO[MusicPlayer.Offset(3).Artist, - [B],[/B]]$INFO[MusicPlayer.Offset(3).Duration, - ,][/COLOR]</label>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<scroll>true</scroll>
+					<visible>!String.IsEmpty(MusicPlayer.Offset(3).Title)</visible>
 				</control>
 			</control>
 		</control>
