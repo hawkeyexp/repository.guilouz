@@ -21,16 +21,9 @@
 				<top>20</top>
 				<width>400</width>
 				<height>135</height>
-				<texture>$INFO[Player.Art(clearlogo)]</texture>
+				<texture>$VAR[PlayerInfoClearLogoVar]</texture>
 				<aspectratio aligny="top" align="center">keep</aspectratio>
-			</control>
-			<control type="image">
-				<left>30</left>
-				<top>20</top>
-				<width>400</width>
-				<height>135</height>
-				<texture>$INFO[Player.Art(tvshow.clearlogo)]</texture>
-				<aspectratio aligny="top" align="center">keep</aspectratio>
+				<visible>!Window.IsVisible(MusicVisualisation.xml)</visible>
 			</control>
 			<control type="image">
 				<top>10</top>
@@ -39,12 +32,11 @@
 				<height>108</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</texture>
-				<visible>Window.IsVisible(MusicVisualisation.xml) + !Window.IsVisible(DialogVolumeBar.xml)</visible>
-				<visible>!Skin.HasSetting(show_artistclearlogo)</visible>
+				<visible>![Window.IsVisible(MusicVisualisation.xml) + Window.IsVisible(DialogVolumeBar.xml)]</visible>
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(pvrosdchannels) + !Window.IsActive(pvrchannelguide)</visible>
-				<visible>String.IsEmpty(Player.Art(clearlogo)) + String.IsEmpty(Player.Art(tvshow.clearlogo))</visible>
+				<visible>String.IsEmpty(Player.Art(clearlogo)) + String.IsEmpty(Player.Art(tvshow.clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.clearlogo))</visible>
 				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 				<animation effect="fade" time="150">VisibleChange</animation>
 				<left>30</left>

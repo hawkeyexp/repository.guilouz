@@ -2526,9 +2526,19 @@
 		<value condition="Skin.HasSetting(hide_fanartopacity) + !Player.ShowInfo + !Window.IsVisible(musicosd)"></value>
 		<value>88FFFFFF</value>
 	</variable>
+	<variable name="PlayerInfoClearLogoVar">
+		<value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
+		<value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
+		<value>$INFO[Window(Home).Property(SkinHelper.Player.Art.clearlogo)]</value>
+	</variable>
 	<variable name="PlayerInfoClearArtVar">
 		<value condition="!String.IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
-		<value>$INFO[Player.Art(clearart)]</value>
+        <value condition="!String.IsEmpty(Player.Art(clearart))">$INFO[Player.Art(clearart)]</value>
+        <value>$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearart)]</value>
+	</variable>
+	<variable name="PlayerInfoDiscArtVar">
+        <value condition="!String.IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
+        <value>$INFO[Window(Home).Property(SkinHelper.Player.Art.Discart)]</value>
 	</variable>
 	<variable name="PlayerClearArtVar">
 		<value condition="!String.IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
