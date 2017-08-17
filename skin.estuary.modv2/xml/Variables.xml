@@ -2529,7 +2529,7 @@
 	<variable name="PlayerInfoClearLogoVar">
 		<value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
 		<value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
-		<value>$INFO[Window(Home).Property(SkinHelper.Player.Art.clearlogo)]</value>
+		<value>$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</value>
 	</variable>
 	<variable name="PlayerInfoClearArtVar">
 		<value condition="!String.IsEmpty(Player.Art(tvshow.clearart))">$INFO[Player.Art(tvshow.clearart)]</value>
