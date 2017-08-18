@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="1138">
-	<visible>[Skin.HasSetting(enable_infowithpause) + Player.Paused + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)] | [Skin.HasSetting(enable_alwaysinfo) + Window.IsActive(seekbar) + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)] | [!Skin.HasSetting(enable_infowithpause) + !Skin.HasSetting(enable_alwaysinfo) + !Skin.HasSetting(enable_neverinfo) + Window.IsActive(seekbar) + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]</visible>
-	<visible>!Window.IsVisible(1122) + !Window.IsVisible(1139) + !Window.IsVisible(VideoOSDBookmarks.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRChannelGuide.xml)</visible>
+	<visible>[Skin.HasSetting(enable_infowithpause) + Player.Paused + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo) ] | [Skin.HasSetting(enable_alwaysinfo) + Window.IsActive(seekbar) + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)] | [!Skin.HasSetting(enable_infowithpause) + !Skin.HasSetting(enable_alwaysinfo) + !Skin.HasSetting(enable_neverinfo) + Window.IsActive(seekbar) + Window.IsActive(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]</visible>
+	<visible>!Window.IsVisible(1122) + !Window.IsVisible(1139) + !Window.IsVisible(VideoOSDBookmarks.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRChannelGuide.xml) + !Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 	<controls>
 		<control type="button">
 			<description>background close area</description>
