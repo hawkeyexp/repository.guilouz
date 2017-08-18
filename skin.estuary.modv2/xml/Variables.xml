@@ -2911,6 +2911,7 @@
 		<value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.estuarymod/)">$INFO[ListItem.Label,resource://resource.images.studios.estuarymod/,.png]</value>
 		<value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.white/)">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</value>
 		<value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.coloured/)">$INFO[ListItem.Label,resource://resource.images.studios.coloured/,.png]</value>
+		<value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.squarehd/)">$INFO[ListItem.Label,resource://resource.images.studios.squarehd/,.jpg]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)">$INFO[ListItem.Art(animatedposter)]</value>
 		<value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
 		<value>$INFO[ListItem.Icon]</value>

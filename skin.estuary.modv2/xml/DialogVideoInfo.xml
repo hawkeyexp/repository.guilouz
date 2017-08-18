@@ -72,6 +72,16 @@
 					<height>95</height>
 					<aspectratio align="center" aligny="bottom">keep</aspectratio>
 					<texture fallback="fallback.png">$INFO[Skin.String(studiologos.path)]$INFO[ListItem.Studio,,.png]</texture>
+					<visible>!String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.squarehd/)</visible>
+				</control>
+				<control type="image">
+					<top>820</top>
+					<left>4</left>
+					<width>476</width>
+					<height>95</height>
+					<aspectratio align="center" aligny="bottom">keep</aspectratio>
+					<texture fallback="fallback.png">$INFO[Skin.String(studiologos.path)]$INFO[ListItem.Studio,,.jpg]</texture>
+					<visible>String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.squarehd/)</visible>
 				</control>
 				<control type="group">
 					<visible>String.IsEqual(Control.GetLabel(3333),fallback.png)</visible>
