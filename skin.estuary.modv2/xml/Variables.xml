@@ -261,11 +261,11 @@
 		<value>$INFO[ListItem.Season,, $LOCALIZE[36905]]</value>
 	</variable>
 	<variable name="EpisodeNumberVar">
-		<value condition="String.Equal(ListItem.Episode,1)">$INFO[ListItem.Episode, (, $LOCALIZE[20452])]</value>
+		<value condition="String.IsEqual(ListItem.Episode,1)">$INFO[ListItem.Episode, (, $LOCALIZE[20452])]</value>
 		<value>$INFO[ListItem.Episode, (, $LOCALIZE[20453])]</value>
 	</variable>
 	<variable name="EpisodeNumberViewVar">
-		<value condition="String.Equal(ListItem.Episode,1)">$INFO[ListItem.Episode,, $LOCALIZE[20452]]</value>
+		<value condition="String.IsEqual(ListItem.Episode,1)">$INFO[ListItem.Episode,, $LOCALIZE[20452]]</value>
 		<value>$INFO[ListItem.Episode,, $LOCALIZE[20453]]</value>
 	</variable>
 	<variable name="MPAALabelMoviesSetsVar">
