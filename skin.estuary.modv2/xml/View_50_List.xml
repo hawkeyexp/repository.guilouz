@@ -379,7 +379,7 @@
 					<height>470</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>300</fadetime>
-					<texture background="true">DefaultCountry.png</texture>
+					<texture background="true" fallback="DefaultCountry.png">$VAR[IconWallThumbVar]</texture>
 					<visible>Container.Content(countries)</visible>
 				</control>
 				<control type="image">

@@ -2590,6 +2590,10 @@
 		<value condition="!String.IsEmpty(Skin.String(moviegenreicons.name))">$INFO[Skin.String(moviegenreicons.name)]</value>
 		<value>$LOCALIZE[40064]</value>
 	</variable>
+	<variable name="Label_SkinSetting_MovieCountryIcons">
+		<value condition="!String.IsEmpty(Skin.String(moviecountryicons.name))">$INFO[Skin.String(moviecountryicons.name)]</value>
+		<value>$LOCALIZE[40064]</value>
+	</variable>
 	<variable name="Label_SkinSetting_WeatherFanart">
 		<value condition="!String.IsEmpty(Skin.String(WeatherFanart.name))">$INFO[Skin.String(WeatherFanart.name)]</value>
 		<value>$LOCALIZE[40064]</value>
@@ -2892,6 +2896,8 @@
 		<value>$INFO[Listitem.Art(poster)]</value>
 	</variable>
 	<variable name="IconWallThumbVar">
+		<value condition="Container.Content(countries) + String.IsEqual(Skin.String(moviecountryicons.path),resource://resource.images.moviecountryicons.maps/)">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.maps/,.png]</value>
+		<value condition="Container.Content(countries) + String.IsEqual(Skin.String(moviecountryicons.path),resource://resource.images.moviecountryicons.flags/)">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.flags/,.png]</value>
 		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.arctic.zephyr/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.arctic.zephyr/,.png]</value>
 		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.coloured/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.coloured/,.jpg]</value>
 		<value condition="String.IsEqual(listitem.dbtype,genre) + String.IsEqual(Skin.String(moviegenreicons.path),resource://resource.images.moviegenreicons.filmstrip/)">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.filmstrip/,.jpg]</value>

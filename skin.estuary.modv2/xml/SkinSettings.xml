@@ -892,6 +892,13 @@
 					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
 					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=moviegenreicons&amp;type=resource.images.moviegenreicons)</onclick>
 				</control>
+				<control type="button" id="613">
+					<label>$LOCALIZE[40262]</label>
+					<label2>$VAR[Label_SkinSetting_MovieCountryIcons]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!System.HasAddon(script.image.resource.select)">InstallAddon(script.image.resource.select)</onclick>
+					<onclick condition="System.HasAddon(script.image.resource.select)">RunScript(script.image.resource.select,property=moviecountryicons&amp;type=resource.images.moviecountryicons)</onclick>
+				</control>
 				<control type="button" id="608">
 					<label>$LOCALIZE[31062]</label>
 					<label2>$VAR[Label_SkinSetting_WeatherFanart]</label2>
@@ -925,7 +932,7 @@
 				<control type="button" id="612">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_fanart)|Skin.Reset(SkinHelper.EnableExtraFanart)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(HomeFanart.name)|Skin.Reset(MovieGenreFanart.name)|Skin.Reset(moviegenreicons.name)|Skin.Reset(WeatherFanart.name)|Skin.Reset(WeatherIcons.name)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_fanart)|Skin.Reset(SkinHelper.EnableExtraFanart)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(HomeFanart.name)|Skin.Reset(MovieGenreFanart.name)|Skin.Reset(moviegenreicons.name)|Skin.Reset(moviecountryicons.name)|Skin.Reset(WeatherFanart.name)|Skin.Reset(WeatherIcons.name)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="1000">

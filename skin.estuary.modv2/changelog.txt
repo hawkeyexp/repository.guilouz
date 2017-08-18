@@ -2,6 +2,7 @@
 • Add possibility to choose when video info must be shown on video OSD
 • Add support for Artworks on OSD video info for addons
 • Add 'Recommended Youtube videos' button on OSD for Youtube addon (Thanks to jurialmunkey)
+• Add support for video countries icons pack
 • Improve music visualisation
 • Minor fixes
 

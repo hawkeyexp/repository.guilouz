@@ -2010,3 +2010,8 @@ msgstr "Votre bibliothèque est actuellement vide.[CR]Afin de la remplir avec vo
 msgctxt "#40261"
 msgid "Recommended Youtube videos"
 msgstr "Vidéos Youtube recommandées"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40262"
+msgid "Video countries icons pack"
+msgstr "Pack d'icônes pour les pays des vidéos"
