@@ -14,7 +14,7 @@
 				<top>0</top>
 				<width>110%</width>
 				<height>250</height>
-				<texture>frame/InfoBar.png</texture>
+				<texture colordiffuse="$VAR[Bars_Opacity]">frame/InfoBar.png</texture>
 			</control>
 			<control type="image">
 				<left>30</left>
@@ -36,7 +36,6 @@
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(pvrosdchannels) + !Window.IsActive(pvrchannelguide)</visible>
-				<visible>String.IsEmpty(Player.Art(clearlogo)) + String.IsEmpty(Player.Art(tvshow.clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.clearlogo))</visible>
 				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 				<animation effect="fade" time="150">VisibleChange</animation>
 				<left>30</left>

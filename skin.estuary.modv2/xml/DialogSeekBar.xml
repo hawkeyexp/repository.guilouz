@@ -18,7 +18,7 @@
 				<bottom>0</bottom>
 				<width>110%</width>
 				<height>250</height>
-				<texture flipy="true">frame/InfoBar.png</texture>
+				<texture flipy="true" colordiffuse="$VAR[Bars_Opacity]">frame/InfoBar.png</texture>
 				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 				<visible>!Window.IsVisible(MusicVisualisation.xml)</visible>
 			</control>
@@ -27,7 +27,7 @@
 				<bottom>0</bottom>
 				<width>110%</width>
 				<height>200</height>
-				<texture flipy="true">frame/InfoBar.png</texture>
+				<texture flipy="true" colordiffuse="$VAR[Bars_Opacity]">frame/InfoBar.png</texture>
 				<visible>!Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 				<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
 			</control>

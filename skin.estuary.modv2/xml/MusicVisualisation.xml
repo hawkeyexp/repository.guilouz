@@ -3,6 +3,7 @@
 	<defaultcontrol></defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
+		<include>ColoredBackgroundImages</include>
 		<control type="visualisation">
 			<include>FullScreenDimensions</include>
 			<visible>Player.HasAudio</visible>
@@ -23,10 +24,6 @@
 			<animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 			<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 			<visible>!Skin.HasSetting(hide_background_fanart)</visible>
-		</control>
-		<control type="group">
-			<animation effect="fade" start="100" end="30" time="0" condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)) | !String.IsEmpty(Player.Art(fanart)) | Visualisation.Enabled">Conditional</animation>
-			<include>ColoredBackgroundImages</include>
 		</control>
 		<control type="group">
             <top>160</top>
@@ -228,8 +225,6 @@
 					<width>130</width>
 					<height>50</height>
 					<texture>$INFO[MusicPlayer.Codec,flags/audiocodec/,.png]</texture>
-					<bordertexture colordiffuse="80FFFFFF">dialogs/back.png</bordertexture>
-					<bordersize>-1</bordersize>
 					<aspectratio>keep</aspectratio>
 					<visible>!Player.ChannelPreviewActive</visible>
 				</control>
@@ -239,8 +234,6 @@
 					<width>130</width>
 					<height>50</height>
 					<texture>$INFO[MusicPlayer.Channels,flags/audiochannel/,.png]</texture>
-					<bordertexture colordiffuse="80FFFFFF">dialogs/back.png</bordertexture>
-					<bordersize>-1</bordersize>
 					<aspectratio>keep</aspectratio>
 					<visible>!Player.ChannelPreviewActive</visible>
 				</control>
@@ -254,8 +247,6 @@
 						<width>171</width>
 						<height>50</height>
 						<texture>flags/cadre.png</texture>
-						<bordertexture colordiffuse="80FFFFFF">dialogs/back.png</bordertexture>
-						<bordersize>-1</bordersize>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
@@ -273,8 +264,6 @@
 					<width>204</width>
 					<height>50</height>
 					<texture>$INFO[MusicPlayer.UserRating,flags/starrating/,.png]</texture>
-					<bordertexture colordiffuse="80FFFFFF">dialogs/back.png</bordertexture>
-					<bordersize>-1</bordersize>
 					<aspectratio>keep</aspectratio>
 				</control>
 				</control>		
