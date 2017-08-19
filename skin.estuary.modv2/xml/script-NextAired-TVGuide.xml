@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<defaultcontrol>20000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<include>DefaultBackground</include>
-		<control type="button" id="20000">
-			<include>HiddenObject</include>
-			<onfocus>SetFocus(200)</onfocus>
-		</control>
-		<control type="button" id="20001">
-			<include>HiddenObject</include>
-			<animation effect="fade" time="300" start="100" end="0">Focus</animation>
-			<onfocus>SetFocus(2000)</onfocus>
-			<visible allowhiddenfocus="true">Control.HasFocus(20001)</visible>
-		</control>
-		<control type="button" id="20002">
-			<include>HiddenObject</include>
-			<animation effect="fade" time="300" start="100" end="0">Focus</animation>
-			<onfocus>SetFocus(2000)</onfocus>
-			<visible allowhiddenfocus="true">Control.HasFocus(20002)</visible>
-		</control>
 		<control type="image">
 			<depth>DepthBackground</depth>
 			<include>FullScreenDimensions</include>
@@ -36,8 +19,8 @@
 			<height>100%</height>
 			<scrolltime tween="cubic" easing="out">500</scrolltime>
 			<itemgap>-160</itemgap>
-			<onup>20001</onup>
-			<ondown>20002</ondown>
+			<onup>2000</onup>
+			<ondown>2000</ondown>
 			<usecontrolcoords>true</usecontrolcoords>
 			<include>OpenClose_Right</include>
 			<include>Visible_Right</include>
@@ -45,43 +28,36 @@
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.200.Weekday)] $INFO[Window(home).Property(NextAired.200.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(200).ListItem.Label]"/>
 				<param name="list_id" value="200"/>
-				<param name="visible" value="!String.IsEqual(Window(Home).Property(NextAired.200.Wday),)"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Tuesday">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.201.Weekday)] $INFO[Window(home).Property(NextAired.201.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(201).ListItem.Label]"/>
 				<param name="list_id" value="201"/>
-				<param name="visible" value="!String.IsEqual(Window(Home).Property(NextAired.201.Wday),)"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Wednesday">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.202.Weekday)] $INFO[Window(home).Property(NextAired.202.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(202).ListItem.Label]"/>
 				<param name="list_id" value="202"/>
-				<param name="visible" value="!String.IsEqual(Window(Home).Property(NextAired.202.Wday),)"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Thursday">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.203.Weekday)] $INFO[Window(home).Property(NextAired.203.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(203).ListItem.Label]"/>
 				<param name="list_id" value="203"/>
-				<param name="visible" value="!String.IsEqual(Window(Home).Property(NextAired.203.Wday),)"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Friday">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.204.Weekday)] $INFO[Window(home).Property(NextAired.204.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(204).ListItem.Label]"/>
 				<param name="list_id" value="204"/>
-				<param name="visible" value="!String.IsEqual(Window(Home).Property(NextAired.204.Wday),)"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Saturday">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.205.Weekday)] $INFO[Window(home).Property(NextAired.205.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(205).ListItem.Label]"/>
 				<param name="list_id" value="205"/>
-				<param name="visible" value="!String.IsEqual(Window(Home).Property(NextAired.205.Wday),)"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Sunday">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.206.Weekday)] $INFO[Window(home).Property(NextAired.206.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(206).ListItem.Label]"/>
 				<param name="list_id" value="206"/>
-				<param name="visible" value="!String.IsEqual(Window(Home).Property(NextAired.206.Wday),)"/>
 			</include>
 		</control>
 		<control type="group">
@@ -245,8 +221,8 @@
 			<include>MediaMenuCommon</include>
 			<control type="grouplist" id="9000">
 				<top>90</top>
-				<onleft>20000</onleft>
-				<onright>20000</onright>
+				<onleft>8</onleft>
+				<onright>2000</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<itemgap>0</itemgap>

@@ -2015,3 +2015,8 @@ msgstr "Vidéos Youtube recommandées"
 msgctxt "#40262"
 msgid "Video countries icons pack"
 msgstr "Pack d'icônes pour les pays des vidéos"
+
+#: /xml/Includes.xml
+msgctxt "#40263"
+msgid "No broadcast"
+msgstr "Aucune diffusion"

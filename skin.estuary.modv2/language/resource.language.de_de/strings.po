@@ -2013,3 +2013,8 @@ msgstr "Empfohlene Youtube Videos"
 msgctxt "#40262"
 msgid "Video countries icons pack"
 msgstr "Länder Icons Paket für Videos"
+
+#: /xml/Includes.xml
+msgctxt "#40263"
+msgid "No broadcast"
+msgstr ""

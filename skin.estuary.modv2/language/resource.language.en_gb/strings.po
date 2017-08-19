@@ -2015,3 +2015,8 @@ msgstr ""
 msgctxt "#40262"
 msgid "Video countries icons pack"
 msgstr ""
+
+#: /xml/Includes.xml
+msgctxt "#40263"
+msgid "No broadcast"
+msgstr ""
