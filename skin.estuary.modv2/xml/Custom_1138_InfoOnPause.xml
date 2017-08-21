@@ -406,13 +406,13 @@
 					<height>40</height>
 					<aspectratio>keep</aspectratio>
 					<texture>icons/infodialogs/audio.png</texture>
-					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage))</visible>
+					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
 				</control>
 				<control type="image">
 					<width>5</width>
 					<height>10</height>
 					<aspectratio>keep</aspectratio>
-					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage))</visible>
+					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
 					<texture/>
 				</control>
 				<control type="image">
@@ -420,7 +420,7 @@
 					<height>40</height>
 					<aspectratio>keep</aspectratio>
 					<texture fallback="icons/infodialogs/flags/fallback.png">$INFO[VideoPlayer.AudioLanguage,icons/infodialogs/flags/,.png]</texture>
-					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage))</visible>
+					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
 				</control>
 				<control type="image">
 					<width>30</width>
