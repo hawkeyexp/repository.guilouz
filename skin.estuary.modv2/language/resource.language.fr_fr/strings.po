@@ -1918,8 +1918,8 @@ msgstr "Dernier épisode diffusé"
 
 #: /xml/script-NextAired-TVGuide.xml
 msgctxt "#40243"
-msgid "Date and time of broadcast"
-msgstr "Date et heure de diffusion"
+msgid "Airs"
+msgstr "Diffusion"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40244"
@@ -2018,5 +2018,5 @@ msgstr "Pack d'icônes pour les pays des vidéos"
 
 #: /xml/Includes.xml
 msgctxt "#40263"
-msgid "No broadcast"
-msgstr "Aucune diffusion"
+msgid "No broadcast this day"
+msgstr "Aucune diffusion ce jour"

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<include>DefaultBackground</include>
@@ -13,105 +14,123 @@
 			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
 			<animation effect="fade" time="400">VisibleChange</animation>
 		</control>
-		<control type="grouplist" id="2000">
-			<left>617</left>
-			<orientation>vertical</orientation>
-			<height>100%</height>
-			<scrolltime tween="cubic" easing="out">500</scrolltime>
-			<itemgap>-160</itemgap>
-			<onup>2000</onup>
-			<ondown>2000</ondown>
-			<usecontrolcoords>true</usecontrolcoords>
+		<control type="image">
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture background="true" colordiffuse="$VAR[Background_Opacity]">special://skin/extras/home-images/tvshows.jpg</texture>
+			<fadetime>400</fadetime>
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<animation effect="fade" time="400">VisibleChange</animation>
+			<visible>Control.HasFocus(9000)</visible>
+		</control>
+		<control type="group" id="2000">
+			<left>500</left>
 			<include>OpenClose_Right</include>
-			<include>Visible_Right</include>
 			<include content="NextAiredPosterWidget" description="Yesterday">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.YesterdayText)] $INFO[Window(home).Property(NextAired.200.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(200).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),yesterday)"/>
 				<param name="list_id" value="200"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.TodayText)] $INFO[Window(home).Property(NextAired.201.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(201).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today)"/>
 				<param name="list_id" value="201"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +1">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.TomorrowText)] $INFO[Window(home).Property(NextAired.202.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(202).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),tomorrow)"/>
 				<param name="list_id" value="202"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +2">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.203.Weekday)] $INFO[Window(home).Property(NextAired.203.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(203).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today2)"/>
 				<param name="list_id" value="203"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +3">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.204.Weekday)] $INFO[Window(home).Property(NextAired.204.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(204).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today3)"/>
 				<param name="list_id" value="204"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +4">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.205.Weekday)] $INFO[Window(home).Property(NextAired.205.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(205).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today4)"/>
 				<param name="list_id" value="205"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +5">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.206.Weekday)] $INFO[Window(home).Property(NextAired.206.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(206).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today5)"/>
 				<param name="list_id" value="206"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +6">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.207.Weekday)] $INFO[Window(home).Property(NextAired.207.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(207).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today6)"/>
 				<param name="list_id" value="207"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +7">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.208.Weekday)] $INFO[Window(home).Property(NextAired.208.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(208).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today7)"/>
 				<param name="list_id" value="208"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +8">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.209.Weekday)] $INFO[Window(home).Property(NextAired.209.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(209).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today8)"/>
 				<param name="list_id" value="209"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +9">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.210.Weekday)] $INFO[Window(home).Property(NextAired.210.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(210).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today9)"/>
 				<param name="list_id" value="210"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +10">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.211.Weekday)] $INFO[Window(home).Property(NextAired.211.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(211).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today10)"/>
 				<param name="list_id" value="211"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +11">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.212.Weekday)] $INFO[Window(home).Property(NextAired.212.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(212).ListItem.Label]"/>
-				<param name="list_id" value="212"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today11)"/>
+				<param name="list_id" value="2121"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +12">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.213.Weekday)] $INFO[Window(home).Property(NextAired.213.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(213).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today12)"/>
 				<param name="list_id" value="213"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +13">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.214.Weekday)] $INFO[Window(home).Property(NextAired.214.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(214).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today13)"/>
 				<param name="list_id" value="214"/>
 			</include>
 			<include content="NextAiredPosterWidget" description="Today +14">
 				<param name="widget_header" value="$INFO[Window(Home).Property(NextAired.215.Weekday)] $INFO[Window(home).Property(NextAired.215.Date),(,)]"/>
 				<param name="Container.Label" value="$INFO[Container(215).ListItem.Label]"/>
+				<param name="visible" value="String.IsEqual(Container(9000).ListItem.Property(id),today14)"/>
 				<param name="list_id" value="215"/>
 			</include>
 		</control>
 		<control type="group">
 			<depth>DepthContentPanel</depth>
 			<include>OpenClose_Left</include>
-			<include>Visible_Left</include>
 			<top>40</top>
 			<include content="ContentPanel">
-				<param name="width" value="698" />
+				<param name="width" value="560" />
 			</include>
 		</control>
 		<include content="TopBar">
@@ -123,152 +142,330 @@
 		<control type="group">
 			<depth>DepthContentPanel</depth>
 			<include>OpenClose_Left</include>
-			<include>Visible_Left</include>
-			<top>40</top>
 			<control type="image">
-				<top>0</top>
+				<top>15</top>
 				<width>362</width>
 				<height>140</height>
-				<left>137.5</left>
+				<left>69</left>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<texture>$VAR[NextAiredClearlogoVar]</texture>
+				<texture fallback="icons/nextaired/logo.png">$VAR[NextAiredClearlogoVar]</texture>
+				<animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+			</control>
+			<control type="fixedlist" id="9000">
+				<left>0</left>
+				<top>170</top>
+				<width>500</width>
+				<bottom>80</bottom>
+				<movement>6</movement>
+				<focusposition>1</focusposition>
+				<onright>2000</onright>
+				<onleft>8000</onleft>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<focusedlayout height="95">
+					<control type="group">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>500</width>
+							<height>95</height>
+							<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>500</width>
+							<height>95</height>
+							<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
+							<visible>Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+						<control type="label">
+							<left>0</left>
+							<top>0</top>
+							<height>95</height>
+							<width>95</width>
+							<aligny>center</aligny>
+							<align>center</align>
+							<font>font_flag</font>
+							<label>$INFO[ListItem.Label2]</label>
+							<shadowcolor>text_shadow</shadowcolor>
+							<animation effect="fade" start="0" end="100" time="300" reversible="false">Focus</animation>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>95</width>
+							<height>95</height>
+							<texture colordiffuse="51FFFFFF">colors/black.png</texture>
+							<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000)">Conditional</animation>
+							<visible>!Skin.HasSetting(EnableGradientColor)</visible>
+						</control>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>0</top>
+						<height>95</height>
+						<width>95</width>
+						<aligny>center</aligny>
+						<align>center</align>
+						<font>font_flag</font>
+						<label>$INFO[ListItem.Label2]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>104</left>
+						<top>0</top>
+						<height>95</height>
+						<width>582</width>
+						<aligny>center</aligny>
+						<font>font37</font>
+						<label>$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<scroll>true</scroll>
+					</control>
+				</focusedlayout>
+				<itemlayout height="95">
+					<control type="label">
+						<left>0</left>
+						<top>0</top>
+						<height>95</height>
+						<width>95</width>
+						<aligny>center</aligny>
+						<align>center</align>
+						<font>font_flag</font>
+						<label>$INFO[ListItem.Label2]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+					<control type="label">
+						<left>104</left>
+						<top>0</top>
+						<height>95</height>
+						<width>582</width>
+						<aligny>center</aligny>
+						<font>font37</font>
+						<label>$INFO[ListItem.Label]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+					</control>
+				</itemlayout>
+				<content>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.YesterdayText)] $INFO[Window(home).Property(NextAired.200.Date),(,)]</label>
+						<label2>-1</label2>
+						<property name="menu_id">2001</property>
+						<property name="id">yesterday</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.200.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.TodayText)] $INFO[Window(home).Property(NextAired.201.Date),(,)]</label>
+						<label2>+0</label2>
+						<property name="menu_id">2011</property>
+						<property name="id">today</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.201.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.TomorrowText)] $INFO[Window(home).Property(NextAired.202.Date),(,)]</label>
+						<label2>+1</label2>
+						<property name="menu_id">2021</property>
+						<property name="id">tomorrow</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.202.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.203.Weekday)] $INFO[Window(home).Property(NextAired.203.Date),(,)]</label>
+						<label2>+2</label2>
+						<property name="menu_id">2031</property>
+						<property name="id">today2</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.203.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.204.Weekday)] $INFO[Window(home).Property(NextAired.204.Date),(,)]</label>
+						<label2>+3</label2>
+						<property name="menu_id">2041</property>
+						<property name="id">today3</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.204.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.205.Weekday)] $INFO[Window(home).Property(NextAired.205.Date),(,)]</label>
+						<label2>+4</label2>
+						<property name="menu_id">2051</property>
+						<property name="id">today4</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.205.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.206.Weekday)] $INFO[Window(home).Property(NextAired.206.Date),(,)]</label>
+						<label2>+5</label2>
+						<property name="menu_id">2061</property>
+						<property name="id">today5</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.206.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.207.Weekday)] $INFO[Window(home).Property(NextAired.207.Date),(,)]</label>
+						<label2>+6</label2>
+						<property name="menu_id">2071</property>
+						<property name="id">today6</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.207.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.208.Weekday)] $INFO[Window(home).Property(NextAired.208.Date),(,)]</label>
+						<label2>+7</label2>
+						<property name="menu_id">2081</property>
+						<property name="id">today7</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.208.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.209.Weekday)] $INFO[Window(home).Property(NextAired.209.Date),(,)]</label>
+						<label2>+8</label2>
+						<property name="menu_id">2091</property>
+						<property name="id">today8</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.209.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.210.Weekday)] $INFO[Window(home).Property(NextAired.210.Date),(,)]</label>
+						<label2>+9</label2>
+						<property name="menu_id">2101</property>
+						<property name="id">today9</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.210.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.211.Weekday)] $INFO[Window(home).Property(NextAired.211.Date),(,)]</label>
+						<label2>+10</label2>
+						<property name="menu_id">2111</property>
+						<property name="id">today10</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.211.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.212.Weekday)] $INFO[Window(home).Property(NextAired.212.Date),(,)]</label>
+						<label2>+11</label2>
+						<property name="menu_id">2121</property>
+						<property name="id">today11</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.212.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.213.Weekday)] $INFO[Window(home).Property(NextAired.213.Date),(,)]</label>
+						<label2>+12</label2>
+						<property name="menu_id">2131</property>
+						<property name="id">today12</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.213.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.214.Weekday)] $INFO[Window(home).Property(NextAired.214.Date),(,)]</label>
+						<label2>+13</label2>
+						<property name="menu_id">2141</property>
+						<property name="id">today13</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.214.Wday),)</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(Home).Property(NextAired.215.Weekday)] $INFO[Window(home).Property(NextAired.215.Date),(,)]</label>
+						<label2>+14</label2>
+						<property name="menu_id">2151</property>
+						<property name="id">today14</property>
+						<visible>!String.IsEqual(Window(Home).Property(NextAired.215.Wday),)</visible>
+					</item>
+				</content>
+			</control>
+		</control>
+		<control type="group">
+			<depth>DepthContentPanel</depth>
+			<include>OpenClose_Right</include>
+			<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+			<left>500</left>
+			<top>550</top>
+			<visible>Control.HasFocus(200) | Control.HasFocus(201) | Control.HasFocus(202) | Control.HasFocus(203) | Control.HasFocus(204) | Control.HasFocus(205) | Control.HasFocus(206) | Control.HasFocus(207) | Control.HasFocus(208) | Control.HasFocus(209) | Control.HasFocus(210) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(213) | Control.HasFocus(214) | Control.HasFocus(215)</visible>
+			<control type="image">
+				<left>0</left>
+				<right>-10</right>
+				<height>380</height>
+				<texture>dialogs/back.png</texture>
 			</control>
 			<control type="group">
-				<width>591</width>
-				<control type="textbox">
-					<top>140</top>
-					<left>30</left>
-					<width>578</width>
-					<aligny>center</aligny>
-					<align>center</align>
-					<height>110</height>
-					<font>font36_title</font>
-					<label>$VAR[NextAiredLabelVar]</label>
-					<autoscroll delay="1000" time="1000" repeat="1000">true</autoscroll>
-				</control>
+				<top>0</top>
+				<left>0</left>
 				<control type="image">
-					<left>50.5</left>
-					<top>265</top>
-					<width max="537">auto</width>
-					<height>330</height>
+					<right>30</right>
+					<top>30</top>
+					<width>569</width>
+					<height>320</height>
 					<aspectratio aligny="top" align="center">keep</aspectratio>
 					<texture background="true" fallback="DefaultVideoFanart.png">$VAR[NextAiredLandscapeVar]</texture>
 					<bordertexture>colors/white.png</bordertexture>
 					<bordersize>1</bordersize>
 				</control>
 				<control type="label">
+					<top>18</top>
 					<left>30</left>
-					<top>576</top>
+					<width>767</width>
+					<height>36</height>
+					<font>font36_title</font>
+					<label>$VAR[NextAiredLabelVar]</label>
+					<scroll>true</scroll>
+				</control>
+				<control type="label">
+					<left>30</left>
+					<top>80</top>
 					<height>30</height>
-					<width>578</width>
+					<width>767</width>
 					<aligny>center</aligny>
-					<align>center</align>
-					<label>$LOCALIZE[40120]</label>
+					<label>$LOCALIZE[40120] : [COLOR white]$VAR[NextAiredNextTitleVar][/COLOR]</label>
+					<font>font12</font>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<font>font25_title</font>
 					<scroll>true</scroll>
 					<visible>!Control.HasFocus(200)</visible>
 				</control>
 				<control type="label">
 					<left>30</left>
-					<top>576</top>
+					<top>80</top>
 					<height>30</height>
-					<width>578</width>
+					<width>767</width>
 					<aligny>center</aligny>
-					<align>center</align>
-					<label>$LOCALIZE[40242]</label>
+					<label>$LOCALIZE[40242] : [COLOR white]$VAR[NextAiredNextTitleVar][/COLOR]</label>
+					<font>font12</font>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<font>font25_title</font>
 					<scroll>true</scroll>
 					<visible>Control.HasFocus(200)</visible>
 				</control>
 				<control type="label">
 					<left>30</left>
-					<top>606</top>
+					<top>120</top>
 					<height>30</height>
-					<width>578</width>
+					<width>767</width>
 					<aligny>center</aligny>
-					<align>center</align>
-					<label>$VAR[NextAiredNextTitleVar]</label>
+					<label>$LOCALIZE[515] : [COLOR white]$VAR[NextAiredGenreVar][/COLOR]</label>
 					<font>font12</font>
-					<scroll>true</scroll>
-				</control>
-				<control type="label">
-					<left>30</left>
-					<top>651</top>
-					<height>30</height>
-					<width>578</width>
-					<aligny>center</aligny>
-					<align>center</align>
-					<label>$LOCALIZE[515]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<font>font25_title</font>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
 					<left>30</left>
-					<top>681</top>
+					<top>160</top>
 					<height>30</height>
-					<width>578</width>
+					<width>767</width>
 					<aligny>center</aligny>
-					<align>center</align>
-					<label>$VAR[NextAiredGenreVar]</label>
+					<label>$LOCALIZE[40243] : [COLOR white]$VAR[NextAiredAirTimeVar] @ $VAR[NextAiredNetworkVar][/COLOR]</label>
 					<font>font12</font>
-					<scroll>true</scroll>
-				</control>
-				<control type="label">
-					<left>30</left>
-					<top>731</top>
-					<height>30</height>
-					<width>578</width>
-					<aligny>center</aligny>
-					<align>center</align>
-					<label>$LOCALIZE[40243]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<font>font25_title</font>
 					<scroll>true</scroll>
 				</control>
 				<control type="label">
 					<left>30</left>
-					<top>761</top>
+					<top>200</top>
 					<height>30</height>
-					<width>578</width>
+					<width>767</width>
 					<aligny>center</aligny>
-					<align>center</align>
-					<label>$VAR[NextAiredAirTimeVar]</label>
+					<label>$LOCALIZE[126] : [COLOR white]$VAR[NextAiredStatutVar][/COLOR]</label>
 					<font>font12</font>
-					<scroll>true</scroll>
-				</control>
-				<control type="label">
-					<left>30</left>
-					<top>811</top>
-					<height>30</height>
-					<width>578</width>
-					<aligny>center</aligny>
-					<align>center</align>
-					<label>$LOCALIZE[29909]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<font>font25_title</font>
-					<scroll>true</scroll>
-				</control>
-				<control type="label">
-					<left>30</left>
-					<top>841</top>
-					<height>30</height>
-					<width>578</width>
-					<aligny>center</aligny>
-					<align>center</align>
-					<label>$VAR[NextAiredNetworkVar]</label>
-					<font>font12</font>
 					<scroll>true</scroll>
 				</control>
 			</control>
 			<control type="image">
 				<depth>DepthContentPopout</depth>
-				<left>50.5</left>
-				<bottom>60</bottom>
-				<width max="537">auto</width>
-				<height>99</height>
+				<left>30</left>
+				<top>250</top>
+				<width>541</width>
+				<height>100</height>
 				<aspectratio align="bottom" aligny="center">keep</aspectratio>
 				<texture background="true">$VAR[NextAiredBannerVar]</texture>
 				<bordertexture>colors/white.png</bordertexture>
@@ -278,12 +475,11 @@
 		<include>MediaMenuMouseOverlay</include>
 		<control type="group">
 			<include>MediaMenuCommon</include>
-			<control type="grouplist" id="9000">
+			<control type="grouplist" id="8000">
 				<top>90</top>
-				<onleft>8</onleft>
-				<onright>2000</onright>
-				<onup>9000</onup>
-				<ondown>9000</ondown>
+				<onright>9000</onright>
+				<onup>8000</onup>
+				<ondown>8000</ondown>
 				<itemgap>0</itemgap>
 				<control type="label">
 					<include>MediaMenuLabelCommon</include>

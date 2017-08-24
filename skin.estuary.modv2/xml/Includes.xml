@@ -42,7 +42,7 @@
 	<constant name="list_y_offset">0</constant>
 	<constant name="list_item_height">80</constant>
 	<expression name="infodialog_active">Window.IsActive(musicinformation) | Window.IsActive(songinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)</expression>
-	<expression name="sidebar_visible">ControlGroup(9000).HasFocus | Control.HasFocus(6130) | Control.HasFocus(6131) | Window.IsActive(MyPlaylist.xml)</expression>
+	<expression name="sidebar_visible">ControlGroup(9000).HasFocus | ControlGroup(8000).HasFocus | Control.HasFocus(6130) | Control.HasFocus(6131) | Window.IsActive(MyPlaylist.xml)</expression>
 	<include name="CommonScrollbars">
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
@@ -2243,49 +2243,26 @@
 	<include name="NextAiredPosterWidget">
 		<definition>
 			<control type="group" id="$PARAM[list_id]666">
-				<left>55</left>
-				<top>80</top>
-				<height>90</height>
-				<width>900</width>
-				<control type="image">
-					<left>2</left>
-					<top>13</top>
-					<width>11</width>
-					<height>11</height>
-					<texture colordiffuse="$VAR[SkinColorVar]">frame/puce.png</texture>
-				</control>
-				<control type="label">
-					<left>22</left>
-					<top>0</top>
-					<width>900</width>
-					<height>90</height>
-					<label>$PARAM[widget_header]</label>
-					<font>font25_title</font>
-					<shadowcolor>text_shadow</shadowcolor>
-				</control>
+				<left>20</left>
+				<right>20</right>
+				<centertop>50%</centertop>
+				<height>300</height>
+				<visible>$PARAM[visible]</visible>
 				<control type="group">
 					<visible>Integer.IsEqual(Container($PARAM[list_id]).NumItems,0)</visible>
-					<control type="image">
-						<left>25</left>
-						<top>65</top>
-						<width>250</width>
-						<height>360</height>
-						<texture background="true">dialogs/back.png</texture>
-					</control>
 					<control type="textbox">
-						<left>30</left>
-						<top>70</top>
-						<width>240</width>
-						<height>350</height>
-						<aligny>center</aligny>
-						<align>center</align>
+						<width>100%</width>
+						<height>300</height>
 						<label>$LOCALIZE[40263]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+						<font>font36_title</font>
 					</control>
 				</control>
 			</control>
 			<control type="panel" id="$PARAM[list_id]">
-				<left>-23</left>
-				<top>115</top>
+				<left>0</left>
+				<top>135</top>
 				<right>0</right>
 				<height>493</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
@@ -2293,9 +2270,10 @@
 				<orientation>horizontal</orientation>
 				<onleft>9000</onleft>
 				<onright/>
+				<visible>$PARAM[visible]</visible>
 				<itemlayout width="310" height="486">
 					<control type="group">
-						<left>68</left>
+						<left>-2</left>
 						<top>10</top>
 						<include content="NextAiredPosterLayout">
 							<param name="focused" value="false" />
@@ -2305,7 +2283,7 @@
 				<focusedlayout width="310" height="486">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<left>68</left>
+						<left>-2</left>
 						<top>10</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
 							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />

@@ -1918,7 +1918,7 @@ msgstr ""
 
 #: /xml/script-NextAired-TVGuide.xml
 msgctxt "#40243"
-msgid "Date and time of broadcast"
+msgid "Airs"
 msgstr ""
 
 #: /xml/SkinSettings.xml
@@ -2018,5 +2018,5 @@ msgstr ""
 
 #: /xml/Includes.xml
 msgctxt "#40263"
-msgid "No broadcast"
+msgid "No broadcast this day"
 msgstr ""

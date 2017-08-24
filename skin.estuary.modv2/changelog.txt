@@ -1,5 +1,6 @@
 [B]2.7.5[/B]
 • Improve PVR OSD info
+• Improve 'TV Show - Next Aired' addon
 
 [B]2.7.4[/B]
 • Add possibility to choose when video info must be shown on video OSD
