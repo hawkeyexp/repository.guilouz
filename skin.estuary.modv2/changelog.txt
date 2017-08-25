@@ -1,5 +1,6 @@
 [B]2.7.5[/B]
 • Improve PVR OSD info
+• Improve video OSD info
 • Improve 'TV Show - Next Aired' addon
 
 [B]2.7.4[/B]

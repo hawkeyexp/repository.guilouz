@@ -112,12 +112,28 @@
 			</control>
 		</control>
 		<control type="group">
-			<bottom>20</bottom>
+			<bottom>40</bottom>
 			<height>230</height>
 			<visible>!Window.IsVisible(playerprocessinfo) + !VideoPlayer.Content(LiveTV)</visible>
+			<include>Animation_DialogPopupOpenClose</include>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="group">
 				<visible>!VideoPlayer.HasMenu</visible>
+				<control type="image">
+					<left>-40</left>
+					<top>-270</top>
+					<width>476</width>
+					<height>50</height>
+					<texture diffuse="colors/white.png">dialogs/dialog-bg-nobo.png</texture>
+				</control>
+				<control type="image">
+					<left>-40</left>
+					<top>-240</top>
+					<right>-40</right>
+					<height>370</height>
+					<texture>dialogs/dialog-bg-nobo.png</texture>
+					<bordersize>20</bordersize>
+				</control>
 				<control type="image">
 					<left>50</left>
 					<top>-660</top>
@@ -126,18 +142,9 @@
 					<aligny>top</aligny>
 					<aspectratio align="left">keep</aspectratio>
 					<fadetime>300</fadetime>
-					<animation type="WindowOpen">
-						<effect type="fade" start="0" end="100" time="300" tween="sine" easing="out" />
-						<effect type="slide" start="-320" end="0" time="400" tween="cubic" easing="out" />
-					</animation>
-					<animation type="WindowClose">
-						<effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
-						<effect type="slide" start="0" end="-320" time="300" tween="cubic" easing="out" />
-					</animation>
 					<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
 					<texture background="true">$INFO[Player.Art(discart)]</texture>
 					<visible>!Skin.HasSetting(show_discart)</visible>
-					<include>OpenClose_Left</include>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -149,14 +156,12 @@
 					<texture background="true">$VAR[NowPlayingPosterVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
-					<include>OpenClose_Left</include>
 					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)</visible>
 				</control>
 				<control type="group">
 					<left>205</left>
 					<top>69</top>
 					<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">VideoPlayerRatingCircle</include>
-					<include>OpenClose_Left</include>
 					<visible>!String.StartsWith(Player.FolderPath,http) + !VideoPlayer.HasMenu</visible>
 				</control>
 				<control type="image">
@@ -169,11 +174,22 @@
 					<texture background="true">$VAR[NowPlayingPosterVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
-					<include>OpenClose_Left</include>
+					<visible>!VideoPlayer.HasMenu + !VideoPlayer.Content(movies) + !VideoPlayer.Content(episodes) + !VideoPlayer.Content(files)</visible>
+				</control>
+				<control type="image">
+					<depth>DepthOSD+</depth>
+					<left>10</left>
+					<top>-270</top>
+					<width>440</width>
+					<height>380</height>
+					<aspectratio aligny="center" align="center">keep</aspectratio>
+					<texture background="true">$VAR[NowPlayingPosterVar]</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
 					<visible>!VideoPlayer.HasMenu + !VideoPlayer.Content(movies) + !VideoPlayer.Content(episodes)</visible>
+					<visible>VideoPlayer.Content(files)</visible>
 				</control>
 				<control type="group">
-					<include>OpenClose_Right</include>
 					<visible>!VideoPlayer.HasMenu</visible>
 					<control type="image">
 						<right>30</right>
@@ -184,37 +200,30 @@
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
 						<visible>!Skin.HasSetting(enable_playerclearart)</visible>
 					</control>
-					<control type="image">
-						<left>440</left>
-						<top>-240</top>
-						<right>10</right>
-						<height>350</height>
-						<texture>dialogs/dialog-bg-nobo.png</texture>
-						<bordersize>20</bordersize>
-					</control>
 					<control type="textbox">
-						<left>483</left>
-						<top>-165</top>
-						<right>54</right>
-						<height>245</height>
+						<left>459</left>
+						<top>-150</top>
+						<right>30</right>
+						<height>230</height>
 						<label fallback="19055">$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</label>
 						<align>justify</align>
 						<autoscroll delay="10000" repeat="7000" time="5000"></autoscroll>
 						<visible>String.IsEmpty(VideoPlayer.Genre)</visible>
 					</control>
 					<control type="label">
-						<left>483</left>
+						<left>459</left>
 						<top>-212</top>
-						<right>54</right>
+						<right>30</right>
 						<height>30</height>
 						<label>[B]$INFO[VideoPlayer.Artist,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Album,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.TVShowTitle,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] , [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)][/B]</label>
 						<scroll>true</scroll>
+						<font>font37</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
 					<control type="textbox">
-						<left>483</left>
-						<top>-165</top>
-						<right>54</right>
+						<left>459</left>
+						<top>-150</top>
+						<right>30</right>
 						<height>214</height>
 						<label fallback="19055">$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</label>
 						<align>justify</align>
@@ -222,9 +231,9 @@
 						<visible>!String.IsEmpty(VideoPlayer.Genre)</visible>
 					</control>
 					<control type="label">
-						<left>483</left>
-						<top>48</top>
-						<right>54</right>
+						<left>459</left>
+						<top>63</top>
+						<right>30</right>
 						<height>30</height>
 						<label>$INFO[VideoPlayer.Genre]</label>
 						<align>right</align>
@@ -234,14 +243,12 @@
 						<autoscroll delay="5000" repeat="7500" time="5000"></autoscroll>
 					</control>
 				</control>
-			</control>
 			<control type="group">
-				<left>483</left>
+				<left>459</left>
 				<top>-260</top>
 				<width>1000</width>
 				<height>100</height>
 				<visible>!VideoPlayer.HasMenu</visible>
-				<include>OpenClose_Right</include>
 				<control type="image">
 					<left>-23</left>
 					<top>-10</top>
@@ -302,15 +309,14 @@
 				</control>
 			</control>
 			<control type="grouplist">
-				<left>483</left>
+				<left>459</left>
 				<top>-266</top>
 				<width>1000</width>
 				<height>50</height>
 				<align>left</align>
-				<include>OpenClose_Right</include>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
-				<visible>!Player.ChannelPreviewActive</visible>
+				<visible>!Player.ChannelPreviewActive + !VideoPlayer.HasMenu</visible>
 				<include content="MediaFlagOSD">
 					<param name="texture" value="flags/webdl.png" />
 					<param name="width" value="58" />
@@ -404,66 +410,6 @@
 					<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
 				</control>
 			</control>
-			<control type="grouplist">
-				<left>-450</left>
-				<top>160</top>
-				<width>1000</width>
-				<height>100</height>
-				<align>right</align>
-				<include>Animation_BottomSlide</include>
-				<orientation>horizontal</orientation>
-				<itemgap>5</itemgap>
-				<visible>![Player.ChannelPreviewActive | Window.IsActive(videoosd)]</visible>
-				<visible>VideoPlayer.HasMenu</visible>
-				<control type="image">
-					<width>40</width>
-					<height>40</height>
-					<aspectratio>keep</aspectratio>
-					<texture>icons/infodialogs/audio.png</texture>
-					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
-				</control>
-				<control type="image">
-					<width>5</width>
-					<height>10</height>
-					<aspectratio>keep</aspectratio>
-					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
-					<texture/>
-				</control>
-				<control type="image">
-					<width>40</width>
-					<height>40</height>
-					<aspectratio>keep</aspectratio>
-					<texture fallback="icons/infodialogs/flags/fallback.png">$INFO[VideoPlayer.AudioLanguage,icons/infodialogs/flags/,.png]</texture>
-					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage)</visible>
-				</control>
-				<control type="image">
-					<width>30</width>
-					<height>10</height>
-					<aspectratio>keep</aspectratio>
-					<texture/>
-					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
-				</control>
-				<control type="image">
-					<width>40</width>
-					<height>40</height>
-					<aspectratio>keep</aspectratio>
-					<texture>icons/infodialogs/subtitles.png</texture>
-					<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
-				</control>
-				<control type="image">
-					<width>5</width>
-					<height>10</height>
-					<aspectratio>keep</aspectratio>
-					<texture/>
-					<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
-				</control>
-				<control type="image">
-					<width>40</width>
-					<height>40</height>
-					<aspectratio>keep</aspectratio>
-					<texture fallback="icons/infodialogs/flags/fallback.png">$INFO[VideoPlayer.SubtitlesLanguage,icons/infodialogs/flags/,.png]</texture>
-					<visible>!String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
-				</control>
 			</control>
 		</control>
 	</controls>
