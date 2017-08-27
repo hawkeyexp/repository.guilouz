@@ -11,7 +11,7 @@
             <height>700</height>
             <include content="View_Gallery_21x9">
                 <param name="id" value="503" />
-                <param name="visible" value="Container.Content(sets) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(movies)" />
+                <param name="visible" value="Container.Content(sets) | Container.Content(episodes) | Container.Content(tvshows) | Container.Content(movies) | String.StartsWith(Container.FolderPath,plugin://)" />
             </include>
         </control>
     </include>
@@ -71,7 +71,8 @@
                             <top>20</top>
                             <height>36</height>
                             <width>36</width>
-                            <texture>$VAR[ListWatchedIconVar]</texture>>
+                            <texture>$VAR[ListWatchedIconVar]</texture>
+                            <visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
                         </control>
                         <control type="image">
                             <centerleft>50%</centerleft>
@@ -139,6 +140,7 @@
 				<height>110</height>
 				<texture flipy="true">overlays/overlay-bg.png</texture>
 				<visible>ListItem.IsResumable | Listitem.IsCollection | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 			</control>
 			<control type="image">
 				<left>5</left>
@@ -146,6 +148,7 @@
 				<width>36</width>
 				<height>36</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
+				<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 			</control>
             <control type="image">
                 <width>100%</width>

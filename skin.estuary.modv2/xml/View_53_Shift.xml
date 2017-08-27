@@ -68,7 +68,7 @@
 					<pagecontrol>5199</pagecontrol>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
 					<orientation>horizontal</orientation>
-					<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(mixed) | Container.Content(images) | Container.Content(videos)</visible>
+					<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(mixed) | Container.Content(images) | Container.Content(videos) | String.StartsWith(Container.FolderPath,plugin://)</visible>
 					<onleft>53</onleft>
 					<oninfo condition="String.IsEqual(ListItem.DBType,set)">ActivateWindow(1132)</oninfo>
 					<onup condition="!Skin.HasSetting(KioskMode)">9000</onup>
@@ -151,6 +151,7 @@
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[WallWatchedIconVar]</texture>
+							<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 						</control>
 					</itemlayout>
 					<focusedlayout width="370">
@@ -238,6 +239,7 @@
 							<width>32</width>
 							<height>32</height>
 							<texture>$VAR[WallWatchedIconVar]</texture>
+							<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 						</control>
 					</focusedlayout>
 				</control>

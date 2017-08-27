@@ -32,9 +32,9 @@
 						</control>
 						<control type="image">
 							<left>100</left>
-							<top>10</top>
+							<top>30</top>
 							<width>200</width>
-							<height>150</height>
+							<height>130</height>
 							<texture>$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>
@@ -119,9 +119,9 @@
 						</control>
 						<control type="image">
 							<left>100</left>
-							<top>10</top>
+							<top>30</top>
 							<width>200</width>
-							<height>150</height>
+							<height>130</height>
 							<texture>$VAR[IconWallThumbVar]</texture>
 							<aspectratio>keep</aspectratio>
 							<align>center</align>

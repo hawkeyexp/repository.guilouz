@@ -1082,6 +1082,7 @@
 				<height>60</height>
 				<texture>overlays/overlay-bg.png</texture>
 				<visible>ListItem.IsCollection | ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 			</control>
 			<control type="image">
 				<left>35</left>
@@ -1089,6 +1090,7 @@
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
+				<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 			</control>
 			<control type="group">
 				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
@@ -1300,6 +1302,18 @@
 				<visible>Container.Content(movies) | Container.Content(sets)</visible>
 			</control>
 			<control type="label">
+				<left>42</left>
+				<top>302</top>
+				<width>536</width>
+				<height>43</height>
+				<label>$INFO[ListItem.Label]</label>
+				<font>font25_title</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<scroll>$PARAM[focused]</scroll>
+				<visible>String.StartsWith(Container.FolderPath,plugin://)</visible>
+			</control>
+			<control type="label">
 				<left>73</left>
 				<top>302</top>
 				<width>365</width>
@@ -1335,6 +1349,7 @@
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[ListWatchedIconVar]</texture>
+				<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 			</control>
 			<control type="image">
 				<left>35</left>
