@@ -53,11 +53,11 @@
 					<autoscroll time="3000" delay="4000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
 				<control type="grouplist" id="9000">
-					<left>150</left>
+					<left>-7</left>
 					<top>600</top>
-					<width>1520</width>
+					<width>1834</width>
 					<height>160</height>
-					<itemgap>10</itemgap>
+					<itemgap>-3.6</itemgap>
 					<align>center</align>
 					<orientation>horizontal</orientation>
 					<defaultcontrol>5</defaultcontrol>
@@ -72,9 +72,9 @@
 						<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
 					</include>
 					<include content="InfoDialogButton">
-						<param name="id" value="4" />
-						<param name="icon" value="icons/infodialogs/similar.png" />
-						<param name="label" value="$LOCALIZE[19003]" />
+						<param name="id" value="10" />
+						<param name="icon" value="icons/infodialogs/play.png" />
+						<param name="label" value="$LOCALIZE[19190]" />
 						<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
 					</include>
 					<include content="InfoDialogButton">
@@ -92,6 +92,12 @@
 						<param name="id" value="9" />
 						<param name="icon" value="icons/infodialogs/timer.png" />
 						<param name="label" value="$LOCALIZE[19061]" />
+						<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
+					</include>
+					<include content="InfoDialogButton">
+						<param name="id" value="4" />
+						<param name="icon" value="icons/infodialogs/similar.png" />
+						<param name="label" value="$LOCALIZE[19003]" />
 						<param name="visible" value="Window.IsActive(PVRGuideInfo)" />
 					</include>
 					<include content="InfoDialogButton">
