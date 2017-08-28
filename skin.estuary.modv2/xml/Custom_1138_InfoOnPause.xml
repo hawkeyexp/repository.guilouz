@@ -218,6 +218,7 @@
 						<label>[B]$INFO[VideoPlayer.Artist,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Album,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.TVShowTitle,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] , [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)][/B]</label>
 						<scroll>true</scroll>
 						<font>font37</font>
+						<scroll>true</scroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 					</control>
 					<control type="textbox">
