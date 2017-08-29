@@ -2020,3 +2020,8 @@ msgstr "Pack d'icônes pour les pays des vidéos"
 msgctxt "#40263"
 msgid "No broadcast this day"
 msgstr "Aucune diffusion ce jour"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40264"
+msgid "Automatically show music video info at beginning and end of playing"
+msgstr "Afficher automatiquement les informations des clips vidéos au début et à la fin de la lecture"

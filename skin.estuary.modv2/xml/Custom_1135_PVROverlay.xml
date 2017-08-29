@@ -47,7 +47,6 @@
 				<height>25</height>
 				<label>[B]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.EpisodeName, (,)][/B]</label>
 				<aligny>center</aligny>
-				<font>font30</font>
 			</control>
 			<control type="progress">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
@@ -93,24 +92,25 @@
 				<visible>!Player.ChannelPreviewActive</visible>
 				<include content="MediaFlag">
 					<param name="texture" value="$VAR[VideoPlayerResolutionFlagVar]" />
+					<param name="fallback" value="flags/videoresolution/fallback.png" />
 					<param name="width" value="73" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]" />
-					<param name="visible" value="!String.IsEmpty(VideoPlayer.VideoCodec)" />
+					<param name="fallback" value="flags/videocodec/fallback.png" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[VideoPlayer.VideoAspect,flags/aspectratio/,.png]" />
-					<param name="visible" value="!String.IsEmpty(VideoPlayer.VideoAspect)" />
+					<param name="fallback" value="flags/aspectratio/fallback.png" />
 					<param name="width" value="108" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[VideoPlayer.AudioCodec,flags/audiocodec/,.png]" />
-					<param name="visible" value="!String.IsEmpty(VideoPlayer.AudioCodec)" />
+					<param name="fallback" value="flags/audiocodec/fallback.png" />
 				</include>
 				<include content="MediaFlag">
 					<param name="texture" value="$INFO[VideoPlayer.AudioChannels,flags/audiochannel/,.png]" />
-					<param name="visible" value="!String.IsEmpty(VideoPlayer.AudioChannels)" />
+					<param name="fallback" value="flags/audiochannel/fallback.png" />
 				</include>
 			</control>
 		</control>

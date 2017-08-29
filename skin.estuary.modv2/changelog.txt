@@ -1,6 +1,7 @@
 [B]2.7.5[/B]
 • KODI 18 : Add support for epg tag playback
 • KODI 18 : New OSD dialog for video games settings
+• Add possibility to automatically show music video info at beginning and end of playing (Thanks to jurialmunkey)
 • Improve PVR OSD info
 • Improve video OSD info
 • Improve 'TV Show - Next Aired' addon

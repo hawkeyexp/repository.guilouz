@@ -40,7 +40,6 @@
 					<width>400</width>
 					<height>50</height>
 					<aligny>center</aligny>
-					<font>font30</font>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$LOCALIZE[21396][CR][COLOR white]$INFO[player.chapter]$INFO[player.chaptercount, / ][/COLOR]</label>
 					<visible>player.chaptercount</visible>
@@ -72,7 +71,6 @@
 					<height>50</height>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>font30</font>
 					<wrapmultiline>true</wrapmultiline>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<label>$INFO[Player.TimeRemaining,$LOCALIZE[31134][CR][COLOR white],[/COLOR]]</label>
@@ -118,7 +116,6 @@
 					<height>50</height>
 					<align>right</align>
 					<aligny>center</aligny>
-					<font>font30</font>
 					<label>$INFO[PVR.TimeShiftEnd]</label>
 				</control>
 				<control type="label">
@@ -128,7 +125,6 @@
 					<height>50</height>
 					<align>left</align>
 					<aligny>center</aligny>
-					<font>font30</font>
 					<label>$INFO[PVR.TimeShiftStart]</label>
 				</control>
 				<control type="label">
@@ -138,7 +134,6 @@
 					<height>50</height>
 					<align>center</align>
 					<aligny>center</aligny>
-					<font>font30</font>
 					<label>[B]$LOCALIZE[31026][/B] $INFO[PVR.timeshiftcur]</label>
 				</control>
 				<control type="progress">
