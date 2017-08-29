@@ -9,6 +9,14 @@
 			<bottom>-140</bottom>
 			<height>380</height>
 			<control type="image">
+				<top>-8</top>
+				<right>30</right>
+				<width>280</width>
+				<height>108</height>
+				<aspectratio align="right" aligny="bottom">keep</aspectratio>
+				<texture background="true">$INFO[Player.Art(clearlogo)]</texture>
+			</control>
+			<control type="image">
 					<left>-40</left>
 					<top>50</top>
 					<width>865</width>
@@ -56,6 +64,18 @@
 				<right>30</right>
 				<height>25</height>
 				<label>[B][I]$LOCALIZE[558] : [COLOR white]$INFO[VideoPlayer.Album][/I][/B][/COLOR]</label>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
+				<scroll>true</scroll>
+			</control>
+			<control type="label">
+				<left>270</left>
+				<top>191</top>
+				<right>30</right>
+				<height>25</height>
+				<align>right</align>
+				<label>[B][I]$LOCALIZE[515] : [COLOR white]$INFO[VideoPlayer.Genre][/I][/B][/COLOR]</label>
+				<font>font12</font>
+				<aligny>bottom</aligny>
 				<textcolor>$VAR[SkinColorVar]</textcolor>
 				<scroll>true</scroll>
 			</control>
