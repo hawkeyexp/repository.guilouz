@@ -1300,6 +1300,7 @@
 				<aligny>center</aligny>
 				<scroll>$PARAM[focused]</scroll>
 				<visible>Container.Content(movies) | Container.Content(sets)</visible>
+				<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 			</control>
 			<control type="label">
 				<left>42</left>
@@ -1324,6 +1325,7 @@
 				<aligny>center</aligny>
 				<scroll>$PARAM[focused]</scroll>
 				<visible>Container.Content(tvshows) | Container.Content(seasons)</visible>
+				<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 			</control>
 			<control type="image">
 				<right>25</right>
