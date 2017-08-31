@@ -2025,3 +2025,8 @@ msgstr ""
 msgctxt "#40264"
 msgid "Automatically show music video info at beginning and end of playing"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40265"
+msgid "Background replacement"
+msgstr ""

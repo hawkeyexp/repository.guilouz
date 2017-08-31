@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="Label_SkinSetting_GlobalBackground">
+        <value condition="!String.IsEmpty(Skin.String(global-background))">$INFO[Skin.String(global-background)]</value>
+        <value>$LOCALIZE[40064]</value>
+    </variable>
 	<variable name="NextAiredStatutVar">
 		<value condition="Control.HasFocus(200) + String.Contains(Container(200).ListItem.Property(Status),Ended) + String.Contains(System.Language,French)">Terminé</value>
 		<value condition="Control.HasFocus(200) + String.Contains(Container(200).ListItem.Property(Status),Continuing) + String.Contains(System.Language,French)">En cours</value>

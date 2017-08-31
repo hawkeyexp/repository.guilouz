@@ -2025,3 +2025,8 @@ msgstr "Aucune diffusion ce jour"
 msgctxt "#40264"
 msgid "Automatically show music video info at beginning and end of playing"
 msgstr "Afficher automatiquement les informations des clips vidéos au début et à la fin de la lecture"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40265"
+msgid "Background replacement"
+msgstr "Arrière-plan de remplacement"

@@ -1854,6 +1854,18 @@
 						<visible>!Window.IsVisible(Home.xml)</visible>
 						<visible>![Control.IsVisible(52) + !ListItem.IsParentFolder] + ![Control.IsVisible(55) + [Container.Content(directors) | Container.Content(actors) | Container.Content(playlists) | Container.Content(files)]]</visible>
 					</control>
+					<control type="multiimage" id="32112">
+						<include>FullScreenDimensions</include>
+						<aspectratio>scale</aspectratio>
+						<fadetime>400</fadetime>
+						<animation effect="fade" time="400">VisibleChange</animation>
+						<imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Skin.String(global-background)]</imagepath>
+						<timeperimage>3000</timeperimage>
+						<randomize>true</randomize>
+						<visible>!Control.IsVisible(502) | $EXP[infodialog_active]</visible>
+						<visible>!Window.IsVisible(Home.xml)</visible>
+						<visible>Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))</visible>
+					</control>
 					<control type="image">
 						<left>-3</left>
 						<top>0</top>
@@ -1864,7 +1876,7 @@
 						<include>OpenClose_Left</include>
 						<animation effect="fade" time="400">VisibleChange</animation>
 						<texture background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[PosterVar]</texture>
-						<visible>!Control.IsVisible(32111)</visible>
+						<visible>!Control.IsVisible(32111) + !Control.IsVisible(32112)</visible>
 						<visible>!Window.IsVisible(Home.xml)</visible>
 						<visible>![Control.IsVisible(55) + [Container.Content(directors) | Container.Content(actors) | Container.Content(playlists)]]</visible>
 					</control>

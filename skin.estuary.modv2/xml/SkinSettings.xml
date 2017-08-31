@@ -6,6 +6,16 @@
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<include>DefaultBackground</include>
+		<control type="multiimage" id="32112">
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<fadetime>400</fadetime>
+			<animation effect="fade" time="400">VisibleChange</animation>
+			<imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$INFO[Skin.String(global-background)]</imagepath>
+			<timeperimage>3000</timeperimage>
+			<randomize>true</randomize>
+			<visible>Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))</visible>
+		</control>
 		<control type="group" id="10000">
 			<left>470</left>
 			<include>OpenClose_Right</include>		
@@ -872,6 +882,14 @@
 					<onclick>Skin.ToggleSetting(no_fanart)</onclick>
 					<selected>!Skin.HasSetting(no_fanart)</selected>
 				</control>
+				<control type="button" id="614">
+                    <label>  ∟$LOCALIZE[40265]</label>
+                    <label2>$VAR[Label_SkinSetting_GlobalBackground]</label2>
+                    <include>DefaultSettingButton</include>
+                    <onclick condition="String.IsEmpty(Skin.String(global-background))">Skin.SetImage(global-background)</onclick>
+                    <onclick condition="!String.IsEmpty(Skin.String(global-background))">Skin.Reset(global-background)</onclick>
+                    <visible>Skin.HasSetting(no_fanart)</visible>
+                </control>
 				<control type="radiobutton" id="602">
 					<label>$LOCALIZE[40059]</label>
 					<include>DefaultSettingButton</include>
@@ -939,7 +957,7 @@
 				<control type="button" id="612">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_fanart)|Skin.Reset(SkinHelper.EnableExtraFanart)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(HomeFanart.name)|Skin.Reset(MovieGenreFanart.name)|Skin.Reset(moviegenreicons.name)|Skin.Reset(moviecountryicons.name)|Skin.Reset(WeatherFanart.name)|Skin.Reset(WeatherIcons.name)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(no_fanart)|Skin.Reset(global-background)|Skin.Reset(SkinHelper.EnableExtraFanart)|Skin.Reset(Skin_EnableAnimatedPosters)|Skin.Reset(HomeFanart.name)|Skin.Reset(MovieGenreFanart.name)|Skin.Reset(moviegenreicons.name)|Skin.Reset(moviecountryicons.name)|Skin.Reset(WeatherFanart.name)|Skin.Reset(WeatherIcons.name)|Skin.Reset(studiologos.name)|Skin.Reset(recordlabels.name))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="1000">
