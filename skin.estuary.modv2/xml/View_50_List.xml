@@ -515,13 +515,10 @@
 					</control>
 					<control type="textbox">
 						<left>10</left>
-						<top>-140</top>
+						<top>-99</top>
 						<width>535</width>
-						<bottom>270</bottom>
-						<align>center</align>
-						<aligny>center</aligny>
+						<bottom>311</bottom>
 						<label>$LOCALIZE[19055]</label>
-						<textcolor>80FFFFFF</textcolor>
 						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))</visible>
 					</control>
 					<control type="list" id="500551">
@@ -588,13 +585,11 @@
 						<visible>String.IsEqual(Skin.Font, Arial)</visible>
 					</control>
 					<control type="textbox">
-						<top>0</top>
+						<top>41</top>
 						<width>535</width>
-						<bottom>235</bottom>
+						<bottom>276</bottom>
 						<left>10</left>
-						<align>center</align>
 						<label>$LOCALIZE[19055]</label>
-						<textcolor>80FFFFFF</textcolor>
 						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))</visible>
 					</control>
 					<control type="list" id="50055">
@@ -645,7 +640,6 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font27</font>
-						<textcolor>80FFFFFF</textcolor>
 						<label>$LOCALIZE[19055]</label>
 						<visible>!ListItem.IsParentFolder</visible>
 						<visible>!Integer.IsGreater(Container(42000).NumItems,0) + !Integer.IsGreater(Container(43000).NumItems,0)</visible>

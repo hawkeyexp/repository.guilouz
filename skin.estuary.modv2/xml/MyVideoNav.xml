@@ -108,13 +108,9 @@
 					</control>
 					<control type="textbox">
 						<left>30</left>
-						<top>360</top>
+						<top>401</top>
 						<width>537</width>
-						<height>413</height>
-						<align>center</align>
-						<aligny>center</aligny>
-						<font>font27</font>
-						<textcolor>80FFFFFF</textcolor>
+						<height>372</height>
 						<label>$LOCALIZE[19055]</label>
 						<visible>String.IsEmpty(Listitem.Plot) + String.IsEmpty(Listitem.Tagline) + !ListItem.IsCollection + !ListItem.IsParentFolder</visible>
 					</control>
@@ -158,13 +154,9 @@
 						</control>
 						<control type="textbox">
 							<left>10</left>
-							<top>0</top>
+							<top>41</top>
 							<width>537</width>
-							<bottom>300</bottom>
-							<align>center</align>
-							<aligny>center</aligny>
-							<font>font27</font>
-							<textcolor>80FFFFFF</textcolor>
+							<bottom>341</bottom>
 							<label>$LOCALIZE[19055]</label>
 							<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))</visible>
 						</control>
@@ -340,11 +332,10 @@
 				</control>
 				<control type="textbox">
 					<left>645</left>
-					<top>673</top>
-					<height>205</height>
+					<top>714</top>
+					<height>164</height>
 					<right>50</right>
 					<label>$LOCALIZE[19055]</label>
-					<textcolor>80FFFFFF</textcolor>
 					<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))</visible>
 				</control>
 				<control type="list" id="50051">

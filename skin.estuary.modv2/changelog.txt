@@ -7,6 +7,7 @@
 • Improve video OSD info
 • Improve 'TV Show - Next Aired' addon
 • Enable more views for video addons
+• Improvements
 • Minor fixes
 
 [B]2.7.4[/B]

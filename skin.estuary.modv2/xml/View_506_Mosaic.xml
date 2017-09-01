@@ -131,7 +131,16 @@
 						<height>290</height>
 						<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 						<aspectratio>scale</aspectratio>
-						<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + Container.Content(musicvideos)</visible>
+						<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + Container.Content(musicvideos) + !Skin.HasSetting(show_borders)</visible>
+					</control>
+					<control type="image">
+						<left>28</left>
+						<top>28</top>
+						<width>294</width>
+						<height>294</height>
+						<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+						<aspectratio>scale</aspectratio>
+						<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + Container.Content(musicvideos) + Skin.HasSetting(show_borders)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="300" width="300" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(musicvideos)">
@@ -256,7 +265,16 @@
 						<height>290</height>
 						<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 						<aspectratio>scale</aspectratio>
-						<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+						<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Skin.HasSetting(show_borders)</visible>
+					</control>
+					<control type="image">
+						<left>28</left>
+						<top>28</top>
+						<width>204</width>
+						<height>294</height>
+						<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+						<aspectratio>scale</aspectratio>
+						<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + Skin.HasSetting(show_borders)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="300" width="210" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">

@@ -150,7 +150,16 @@
 							<height>198</height>
 							<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 							<aspectratio aligny="center">scale</aspectratio>
-							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Skin.HasSetting(show_borders)</visible>
+						</control>
+						<control type="image">
+							<left>18</left>
+							<top>18</top>
+							<width>824</width>
+							<height>202</height>
+							<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+							<aspectratio aligny="center">scale</aspectratio>
+							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + Skin.HasSetting(show_borders)</visible>
 						</control>
 						<control type="image">
 							<left>20</left>
