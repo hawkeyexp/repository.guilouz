@@ -257,7 +257,7 @@
 					<height>50</height>
 					<texture diffuse="dialogs/language-back1.png">dialogs/dialog-bg-nobo.png</texture>
 					<visible>![String.IsEmpty(VideoPlayer.AudioLanguage) + String.IsEmpty(VideoPlayer.SubtitlesLanguage)]</visible>
-					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+					<visible>[!String.IsEmpty(VideoPlayer.AudioLanguage) + String.IsEmpty(VideoPlayer.SubtitlesLanguage)] | [String.IsEmpty(VideoPlayer.AudioLanguage) + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)]</visible>
 					<visible>![String.Contains(Player.Filenameandpath,WEB-DL) | String.Contains(Player.Filenameandpath,WEBDL) | String.Contains(Player.Filenameandpath,WEB) | String.Contains(Player.Filenameandpath,web-dl) | String.Contains(Player.Filenameandpath,webdl) | String.Contains(Player.Filenameandpath,web) | String.Contains(Player.Filenameandpath,DVD) | String.Contains(Player.Filenameandpath,dvd) | String.Contains(Player.Filenameandpath,bluray) | String.Contains(Player.Filenameandpath,blu-ray) | String.Contains(Player.Filenameandpath,bdrip) | String.Contains(Player.Filenameandpath,BLURAY) | String.Contains(Player.Filenameandpath,BLU-RAY) | String.Contains(Player.Filenameandpath,BDRIP)]</visible>
 				</control>
 				<control type="image">
@@ -267,7 +267,7 @@
 					<height>50</height>
 					<texture diffuse="dialogs/language-back2.png">dialogs/dialog-bg-nobo.png</texture>
 					<visible>![String.IsEmpty(VideoPlayer.AudioLanguage) + String.IsEmpty(VideoPlayer.SubtitlesLanguage)]</visible>
-					<visible>!String.IsEmpty(VideoPlayer.AudioLanguage) + String.IsEmpty(VideoPlayer.SubtitlesLanguage)</visible>
+					<visible>[!String.IsEmpty(VideoPlayer.AudioLanguage) + String.IsEmpty(VideoPlayer.SubtitlesLanguage)] | [String.IsEmpty(VideoPlayer.AudioLanguage) + !String.IsEmpty(VideoPlayer.SubtitlesLanguage)]</visible>
 					<visible>String.Contains(Player.Filenameandpath,WEB-DL) | String.Contains(Player.Filenameandpath,WEBDL) | String.Contains(Player.Filenameandpath,WEB) | String.Contains(Player.Filenameandpath,web-dl) | String.Contains(Player.Filenameandpath,webdl) | String.Contains(Player.Filenameandpath,web) | String.Contains(Player.Filenameandpath,DVD) | String.Contains(Player.Filenameandpath,dvd) | String.Contains(Player.Filenameandpath,bluray) | String.Contains(Player.Filenameandpath,blu-ray) | String.Contains(Player.Filenameandpath,bdrip) | String.Contains(Player.Filenameandpath,BLURAY) | String.Contains(Player.Filenameandpath,BLU-RAY) | String.Contains(Player.Filenameandpath,BDRIP)</visible>
 				</control>
 				<control type="image">
