@@ -170,7 +170,6 @@
 				<include content="Visible_Right_Delayed_Home">
 					<param name="id" value="PersonalWidgetList"/>
 				</include>
-				<animation effect="slide" end="0,35" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
 				<control type="grouplist" id="22001">
 					<include>WidgetGroupListCommon</include>
 					<skinshortcuts>visibility</skinshortcuts>
@@ -294,7 +293,6 @@
 				<include content="Visible_Right_Delayed_Home">
 					<param name="id" value="PersonalWidgetPanel"/>
 				</include>
-				<animation effect="slide" end="0,35" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
 				<control type="grouplist" id="23001">
 					<include>WidgetGroupListCommon</include>
 					<skinshortcuts>visibility</skinshortcuts>

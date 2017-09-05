@@ -654,7 +654,6 @@
 	<include name="WidgetPanelPoster">
 		<param name="visible">true</param>
 		<definition>
-			<animation effect="slide" end="0,10" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
@@ -671,7 +670,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<visible>$PARAM[visible]</visible>
 				<right>0</right>
-				<height>920</height>
+				<height>965</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<onleft>9000</onleft>
@@ -715,7 +714,6 @@
 		<param name="sortorder">ascending</param>
 		<param name="widget_limit">$VAR[Label_SkinSetting_WidgetNumber]</param>
 		<definition>
-			<animation effect="slide" end="0,10" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
@@ -732,7 +730,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<visible>$PARAM[visible]</visible>
 				<right>0</right>
-				<height>920</height>
+				<height>965</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<onleft>9000</onleft>
@@ -740,7 +738,7 @@
 				<onright/>
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
-				<itemlayout width="340" height="310">
+				<itemlayout width="340" height="290">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -752,7 +750,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="340" height="310">
+				<focusedlayout width="340" height="290">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -782,7 +780,6 @@
 		<param name="sortorder">ascending</param>
 		<param name="widget_limit">$VAR[Label_SkinSetting_WidgetNumber]</param>
 		<definition>
-			<animation effect="slide" end="0,10" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
@@ -799,7 +796,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<visible>$PARAM[visible]</visible>
 				<right>0</right>
-				<height>920</height>
+				<height>965</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<onleft>9000</onleft>
@@ -848,7 +845,6 @@
 		<param name="widget_limit">$VAR[Label_SkinSetting_WidgetNumber]</param>
 		<param name="fallback_icon">DefaultAudio.png</param>
 		<definition>
-			<animation effect="slide" end="0,10" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
@@ -865,7 +861,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<visible>$PARAM[visible]</visible>
 				<right>0</right>
-				<height>920</height>
+				<height>965</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<onleft>9000</onleft>
@@ -907,7 +903,6 @@
 	<include name="WidgetPanelBanners">
 		<param name="visible">True</param>
 		<definition>
-			<animation effect="slide" end="0,10" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
@@ -924,7 +919,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<visible>$PARAM[visible]</visible>
 				<right>0</right>
-				<height>920</height>
+				<height>965</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<onleft>9000</onleft>
@@ -1234,7 +1229,6 @@
 	<include name="WidgetPanelCategoriesPersonal">
 		<param name="visible">true</param>
 		<definition>
-			<animation effect="slide" end="0,10" time="0" condition="!String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))">Conditional</animation>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
@@ -1251,7 +1245,7 @@
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<visible>$PARAM[visible]</visible>
 				<right>0</right>
-				<height>920</height>
+				<height>965</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>vertical</orientation>
 				<onleft>9000</onleft>
