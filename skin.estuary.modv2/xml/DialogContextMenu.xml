@@ -52,7 +52,7 @@
 			<animation effect="slide" end="-40,-40" time="0" condition="String.IsEqual(Container.ViewMode,$LOCALIZE[20020]) + !String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
 			<animation effect="slide" end="-40,-40" time="0" condition="String.IsEqual(Container.ViewMode,$LOCALIZE[20020]) + String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
 			<control type="group">
-			<width>450</width>
+			<width>470</width>
 			<height>80</height>
 			<control type="image">
 				<left>0</left>
@@ -128,7 +128,7 @@
 				<description>background image</description>
 				<left>0</left>
 				<top>80</top>
-				<width>450</width>
+				<width>470</width>
 				<height>780</height>
 				<texture colordiffuse="dialog_tint">colors/white.png</texture>
 			</control>
@@ -136,7 +136,7 @@
 				<description>grouplist for context buttons</description>
 				<left>0</left>
 				<top>80</top>
-				<width>450</width>
+				<width>470</width>
 				<height max="780">auto</height>
 				<usecontrolcoords>true</usecontrolcoords>
 			</control>
@@ -151,7 +151,7 @@
 			<description>button template</description>
 			<left>0</left>
 			<top></top>
-			<width>450</width>
+			<width>470</width>
 			<height>65</height>
 			<align>center</align>
 			<texturefocus colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texturefocus>
