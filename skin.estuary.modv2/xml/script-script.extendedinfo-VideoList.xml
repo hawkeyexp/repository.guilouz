@@ -319,7 +319,7 @@
 				<orientation>horizontal</orientation>
 				<width>900</width>
 				<itemgap>10</itemgap>
-				<visible>!Window.IsVisible(extendedprogressdialog) + !Window.IsActive(fullscreenvideo)</visible>
+				<visible>!Window.IsVisible(extendedprogressdialog) + !Window.IsActive(fullscreenvideo) + !Window.IsActive(FullscreenGame)</visible>
 				<animation effect="fade" time="150">VisibleChange</animation>
 				<control type="group">
 					<width>600</width>
