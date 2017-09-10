@@ -18,6 +18,7 @@
 					<ondown>50</ondown>
 					<onleft>9000</onleft>
 					<onright>73</onright>
+					<onback>9000</onback> 
 					<movement>3</movement>
 					<focusposition>4</focusposition>
 					<pagecontrol>73</pagecontrol>

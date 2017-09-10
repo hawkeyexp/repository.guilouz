@@ -36,6 +36,7 @@
 						<onright>60</onright>
 						<onup>50</onup>
 						<ondown>50</ondown>
+						<onback>9000</onback>
 						<viewtype label="19297">list</viewtype>
 						<progresstexture border="0,60,18,14" colordiffuse="$VAR[SkinColorVar]">windows/pvr/epg_progress.png</progresstexture>
 						<rulerlayout height="45" width="1400">
@@ -167,6 +168,7 @@
 						<onright>60</onright>
 						<onup>50</onup>
 						<ondown>50</ondown>
+						<onback>9000</onback> 
 						<viewtype label="19298">list</viewtype>
 						<progresstexture border="5,10,5,10" colordiffuse="$VAR[SkinColorVar]">windows/pvr/epg_progress_horizontal.png</progresstexture>
 						<rulerdatelayout height="45" width="1920">

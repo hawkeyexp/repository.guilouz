@@ -5,7 +5,7 @@
 			<left>55</left>
 			<top>80</top>
 			<height>90</height>
-			<width>900</width>
+			<right>55</right>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)</visible>
 			<visible>!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
 			<control type="image">
@@ -18,7 +18,7 @@
 			<control type="label">
 				<left>22</left>
 				<top>0</top>
-				<width>900</width>
+				<right>2</right>
 				<height>90</height>
 				<label>$VAR[LabelCategoriesSmallVar]</label>
 				<font>font25_title</font>
@@ -154,7 +154,7 @@
 			<left>55</left>
 			<top>80</top>
 			<height>90</height>
-			<width>900</width>
+			<right>55</right>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)</visible>
 			<visible>!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
 			<control type="image">
@@ -167,7 +167,7 @@
 			<control type="label">
 				<left>22</left>
 				<top>0</top>
-				<width>900</width>
+				<right>2</right>
 				<height>90</height>
 				<label>$VAR[LabelCategoriesSmallVar]</label>
 				<font>font25_title</font>
@@ -301,7 +301,7 @@
 			<left>55</left>
 			<top>80</top>
 			<height>90</height>
-			<width>900</width>
+			<right>55</right>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)</visible>
 			<visible>Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
 			<control type="image">
@@ -314,7 +314,7 @@
 			<control type="label">
 				<left>22</left>
 				<top>0</top>
-				<width>900</width>
+				<right>2</right>
 				<height>90</height>
 				<label>$VAR[LabelCategoriesSmallVar]</label>
 				<font>font25_title</font>
@@ -427,7 +427,7 @@
 			<left>55</left>
 			<top>80</top>
 			<height>90</height>
-			<width>900</width>
+			<right>55</right>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)</visible>
 			<visible>Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
 			<control type="image">
@@ -440,7 +440,7 @@
 			<control type="label">
 				<left>22</left>
 				<top>0</top>
-				<width>900</width>
+				<right>2</right>
 				<height>90</height>
 				<label>$VAR[LabelCategoriesSmallVar]</label>
 				<font>font25_title</font>
@@ -580,7 +580,7 @@
 				<left>55</left>
 				<top>80</top>
 				<height>90</height>
-				<width>900</width>
+				<right>55</right>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
 				<control type="image">
@@ -593,7 +593,7 @@
 				<control type="label">
 					<left>22</left>
 					<top>0</top>
-					<width>900</width>
+					<right>2</right>
 					<height>90</height>
 					<label>$PARAM[label]</label>
 					<font>font25_title</font>
