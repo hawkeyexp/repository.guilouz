@@ -1,5 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<include name="GenresLayout">
+		<param name="focused">false</param>
+		<definition>
+			<control type="group">
+				<control type="image">
+					<left>-22</left>
+					<top>-22</top>
+					<width>425</width>
+					<height>273</height>
+					<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-genrelayout.png</texture>
+					<aspectratio>stretch</aspectratio>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<visible>Skin.HasSetting(show_borders)</visible>
+				</control>
+				<control type="image">
+					<top>-20</top>
+					<left>-20</left>
+					<width>421</width>
+					<height>269</height>
+					<texture>dialogs/dialog-bg-nobo.png</texture>
+					<bordersize>20</bordersize>
+					<visible>Skin.HasSetting(show_borders)</visible>
+				</control>
+				<control type="image">
+					<top>-20</top>
+					<left>-20</left>
+					<width>421</width>
+					<height>269</height>
+					<texture>dialogs/dialog-bg-nobo.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<visible>!Skin.HasSetting(show_borders)</visible>
+				</control>
+				<control type="image">
+					<top>-20</top>
+					<left>-20</left>
+					<width>421</width>
+					<height>269</height>
+					<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+				</control>
+				<control type="image">
+					<top>-20</top>
+					<left>-20</left>
+					<width>421</width>
+					<height>269</height>
+					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+					<bordersize>20</bordersize>
+					<visible>$PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
+					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				</control>
+				<control type="label">
+					<left>6</left>
+					<top>175</top>
+					<width>371</width>
+					<height>54</height>
+					<font>font27</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$INFO[ListItem.Label]</label>
+					<autoscroll>$PARAM[focused]</autoscroll>
+				</control>
+				<control type="image">
+					<left>6</left>
+					<top>6</top>
+					<width>371</width>
+					<height>169</height>
+					<texture fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<visible>String.IsEmpty(ListItem.Art(poster.0))</visible>
+				</control>
+				<control type="group">
+					<left>6</left>
+					<top>6</top>
+					<control type="image">
+						<width>119</width>
+						<height>169</height>
+						<texture background="true">$INFO[ListItem.Art(poster.0)]</texture>
+						<aspectratio>scale</aspectratio>
+					</control>
+					<control type="image">
+						<left>125</left>
+						<width>119</width>
+						<height>169</height>
+						<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster.1)]</texture>
+						<aspectratio>scale</aspectratio>
+					</control>
+					<control type="image">
+						<left>250</left>
+						<width>119</width>
+						<height>169</height>
+						<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster.2)]</texture>
+						<aspectratio>scale</aspectratio>
+					</control>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="WidgetListGenres">
+		<param name="visible">true</param>
+		<definition>
+			<include content="CategoryLabel">
+				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="posy" value="190"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<control type="panel" id="$PARAM[list_id]">
+				<left>0</left>
+				<top>71</top>
+				<right>0</right>
+				<height>415</height>
+				<include content="WidgetListCommon">
+					<param name="list_id" value="$PARAM[list_id]"/>
+				</include>
+				<visible>$PARAM[visible]</visible>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<itemlayout width="415">
+					<control type="group">
+						<left>80</left>
+						<top>64</top>
+						<include content="GenresLayout">
+							<param name="focused" value="false" />
+							<param name="list_id" value="$PARAM[list_id]" />
+						</include>
+					</control>
+				</itemlayout>
+				<focusedlayout width="415">
+					<control type="group">
+						<depth>DepthContentPopout</depth>
+						<left>80</left>
+						<top>64</top>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
+						<include content="GenresLayout">
+							<param name="focused" value="true" />
+							<param name="list_id" value="$PARAM[list_id]" />
+						</include>
+					</control>
+				</focusedlayout>
+				<content sortby="sorttitle" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="1000">$PARAM[content_path]</content>
+			</control>
+		</definition>
+	</include>
 	<include name="PersonalWidgetListCategoriesBig">
 		<control type="group" id="22900666">
 			<left>55</left>
@@ -93,9 +245,9 @@
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
 					<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            			<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="228,70" />
-            			<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="228,70" />
-       				</animation>
+						<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="228,70" />
+						<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="228,70" />
+					</animation>
 					<control type="image">
 						<width>316</width>
 						<height>200</height>
@@ -118,7 +270,6 @@
 						<width>328</width>
 						<height>212</height>
 						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
 						<visible>Skin.HasSetting(EnableGradientColor)</visible>
 					</control>
@@ -242,9 +393,9 @@
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
 					<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            			<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="228,70" />
-            			<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="228,70" />
-       				</animation>
+						<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="228,70" />
+						<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="228,70" />
+					</animation>
 					<control type="image">
 						<width>316</width>
 						<height>200</height>
@@ -378,9 +529,9 @@
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
 					<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            			<effect type="zoom" end="120" time="75" tween="sine" easing="out" center="140,70" />
-            			<effect type="zoom" end="83.5" time="225" tween="sine" delay="100" easing="out" center="140,70" />
-       				</animation>
+						<effect type="zoom" end="120" time="75" tween="sine" easing="out" center="140,70" />
+						<effect type="zoom" end="83.5" time="225" tween="sine" delay="100" easing="out" center="140,70" />
+					</animation>
 					<control type="image">
 						<width>140</width>
 						<height>120</height>
@@ -403,7 +554,6 @@
 						<width>152</width>
 						<height>132</height>
 						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
 						<visible>Skin.HasSetting(EnableGradientColor)</visible>
 					</control>
@@ -504,9 +654,9 @@
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
 					<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            			<effect type="zoom" end="120" time="75" tween="sine" easing="out" center="140,70" />
-            			<effect type="zoom" end="83.5" time="225" tween="sine" delay="100" easing="out" center="140,70" />
-       				</animation>
+						<effect type="zoom" end="120" time="75" tween="sine" easing="out" center="140,70" />
+						<effect type="zoom" end="83.5" time="225" tween="sine" delay="100" easing="out" center="140,70" />
+					</animation>
 					<control type="image">
 						<width>140</width>
 						<height>120</height>
@@ -693,9 +843,9 @@
 						<left>68</left>
 						<top>10</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoWallMovieLayout">
 							<param name="focused" value="true" />
 						</include>
@@ -756,9 +906,9 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					</animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoNextAiringEpisodeLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -822,9 +972,9 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					</animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoNextAiringEpisodeBannerLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -885,9 +1035,9 @@
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					</animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoWallMusicLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="single_label" value="$PARAM[single_label]" />
@@ -1094,9 +1244,9 @@
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					</animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<control type="image">
 							<left>89</left>
 							<top>0</top>
@@ -1122,7 +1272,6 @@
 							<width>685</width>
 							<height>212</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
@@ -1257,39 +1406,39 @@
 					<control type="group">
 						<left>70</left>
 						<control type="image">
-						<left>-2</left>
-						<top>-2</top>
-						<width>320</width>
-						<height>204</height>
-						<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-category.png</texture>
-						<aspectratio>stretch</aspectratio>
-						<bordertexture border="21">overlays/shadow.png</bordertexture>
-						<bordersize>20</bordersize>
-						<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
-					</control>
-					<control type="image">
-						<width>316</width>
-						<height>200</height>
-						<texture>dialogs/dialog-bg-nobo.png</texture>
-						<bordersize>20</bordersize>
-						<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
-					</control>
-					<control type="image">
-						<width>316</width>
-						<height>200</height>
-						<texture>dialogs/dialog-bg-nobo.png</texture>
-						<bordertexture border="21">overlays/shadow.png</bordertexture>
-						<bordersize>20</bordersize>
-						<visible>Skin.HasSetting(show_borders) + [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
-					</control>
-					<control type="image">
-						<width>316</width>
-						<height>200</height>
-						<texture>dialogs/dialog-bg-nobo.png</texture>
-						<bordertexture border="21">overlays/shadow.png</bordertexture>
-						<bordersize>20</bordersize>
-						<visible>!Skin.HasSetting(show_borders)</visible>
-					</control>
+							<left>-2</left>
+							<top>-2</top>
+							<width>320</width>
+							<height>204</height>
+							<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-category.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="image">
+							<width>316</width>
+							<height>200</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="image">
+							<width>316</width>
+							<height>200</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders) + [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						</control>
+						<control type="image">
+							<width>316</width>
+							<height>200</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>!Skin.HasSetting(show_borders)</visible>
+						</control>
 						<control type="image">
 							<top>20</top>
 							<left>-2</left>
@@ -1404,9 +1553,9 @@
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					</animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<control type="image">
 							<width>316</width>
 							<height>200</height>
@@ -1429,7 +1578,6 @@
 							<width>328</width>
 							<height>212</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
@@ -1561,9 +1709,9 @@
 						<left>68</left>
 						<top>10</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoWallMovieLayout">
 							<param name="focused" value="true" />
 						</include>
@@ -1681,7 +1829,6 @@
 				<width>328</width>
 				<height>289</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
@@ -1877,7 +2024,6 @@
 				<width>328</width>
 				<height>328</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
@@ -2088,7 +2234,6 @@
 				<width>328</width>
 				<height>289</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
@@ -2317,7 +2462,6 @@
 				<width>328</width>
 				<height>328</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
@@ -2543,7 +2687,6 @@
 				<width>328</width>
 				<height>289</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
@@ -2698,7 +2841,6 @@
 				<width>328</width>
 				<height>328</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
@@ -2858,9 +3000,9 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoNextAiringEpisodeLayoutPreconfigured">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -2920,9 +3062,9 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoNextAiringEpisodeBannerLayoutPreconfigured">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -2982,9 +3124,9 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					</animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoNextAiringEpisodeLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -3044,9 +3186,9 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					</animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoNextAiringEpisodeBannerLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -3106,9 +3248,9 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoNextWatchEpisodeLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -3168,9 +3310,9 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoNextWatchEpisodeBannerLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -3230,9 +3372,9 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoWallEpisodeLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -3292,9 +3434,9 @@
 						<left>70</left>
 						<top>5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoWallEpisodeBannerLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="sub_label" value="$PARAM[sub_label]" />
@@ -3351,9 +3493,9 @@
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<include content="InfoWallMusicLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="single_label" value="$PARAM[single_label]" />
@@ -3430,9 +3572,9 @@
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="228,70" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="228,70" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="228,70" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="228,70" />
+						</animation>
 						<control type="image">
 							<width>316</width>
 							<height>200</height>
@@ -3455,7 +3597,6 @@
 							<width>328</width>
 							<height>212</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
@@ -3598,7 +3739,7 @@
 						<font>font25_narrow</font>
 						<shadowcolor>text_shadow</shadowcolor>
 						<align>left</align>
-							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 					</control>
 					<control type="image">
 						<left>21</left>
@@ -3653,9 +3794,9 @@
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
 					<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            			<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            			<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       				</animation>
+						<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+						<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+					</animation>
 					<control type="image">
 						<width>316</width>
 						<height>200</height>
@@ -3678,7 +3819,6 @@
 						<width>328</width>
 						<height>212</height>
 						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
 						<visible>Skin.HasSetting(EnableGradientColor)</visible>
 					</control>
@@ -3732,7 +3872,7 @@
 						<font>font25_narrow</font>
 						<shadowcolor>text_shadow</shadowcolor>
 						<align>left</align>
-							<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+						<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 					</control>
 					<control type="image">
 						<left>21</left>
@@ -3825,9 +3965,9 @@
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
 					<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            			<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="228,70" />
-            			<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="228,70" />
-       				</animation>
+						<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="228,70" />
+						<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="228,70" />
+					</animation>
 					<control type="image">
 						<width>316</width>
 						<height>200</height>
@@ -3850,7 +3990,6 @@
 						<width>328</width>
 						<height>212</height>
 						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
 						<visible>Skin.HasSetting(EnableGradientColor)</visible>
 					</control>
@@ -3925,9 +4064,9 @@
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
 					<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            			<effect type="zoom" end="120" time="75" tween="sine" easing="out" center="140,70" />
-            			<effect type="zoom" end="83.5" time="225" tween="sine" delay="100" easing="out" center="140,70" />
-       				</animation>
+						<effect type="zoom" end="120" time="75" tween="sine" easing="out" center="140,70" />
+						<effect type="zoom" end="83.5" time="225" tween="sine" delay="100" easing="out" center="140,70" />
+					</animation>
 					<control type="image">
 						<width>140</width>
 						<height>120</height>
@@ -3950,7 +4089,6 @@
 						<width>152</width>
 						<height>132</height>
 						<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
 						<visible>Skin.HasSetting(EnableGradientColor)</visible>
 					</control>
@@ -4081,11 +4219,11 @@
 				<focusedlayout width="310" height="500">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
-						<left>70</left>					       					 
+						<left>70</left>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<control type="image">
 							<width>319</width>
 							<height>340</height>
@@ -4108,7 +4246,6 @@
 							<width>331</width>
 							<height>352</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
@@ -4235,9 +4372,9 @@
 						<left>70</left>
 						<depth>DepthContentPopout</depth>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
-            				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
-            				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
-       					 </animation>
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
 						<control type="image">
 							<left>0</left>
 							<top>20</top>
@@ -4262,7 +4399,6 @@
 							<width>266</width>
 							<height>292</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>

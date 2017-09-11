@@ -2228,7 +2228,6 @@
 					<width>422</width>
 					<height>282</height>
 					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<visible>Skin.HasSetting(EnableGradientColor)</visible>
 				</control>
@@ -2330,7 +2329,6 @@
 				<width>302</width>
 				<height>412</height>
 				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
-				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>

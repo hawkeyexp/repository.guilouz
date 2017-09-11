@@ -113,7 +113,6 @@
 							<width>408</width>
 							<height>257</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient2.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
@@ -224,7 +223,6 @@
 							<width>342</width>
 							<height>152</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient2.png</texture>
-							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
