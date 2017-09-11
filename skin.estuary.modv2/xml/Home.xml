@@ -140,6 +140,7 @@
 							<param name="content_path" value="plugin://script.skin.helper.widgets/?action=browsegenres&mediatype=movies&limit=1000"/>
 							<param name="widget_header" value="$LOCALIZE[135]"/>
 							<param name="widget_target" value="videos"/>
+							<param name="sortby" value="sorttitle"/>
 							<param name="list_id" value="5500"/>
 						</include>
 						<!--<include content="WidgetListCategories" condition="Library.HasContent(movies) + !Skin.HasSetting(hide_genremovies)">
@@ -273,6 +274,7 @@
 							<param name="content_path" value="plugin://script.skin.helper.widgets/?action=browsegenres&mediatype=tvshows&limit=1000"/>
 							<param name="widget_header" value="$LOCALIZE[135]"/>
 							<param name="widget_target" value="videos"/>
+							<param name="sortby" value="sorttitle"/>
 							<param name="list_id" value="6400"/>
 						</include>
 						<!--<include content="WidgetListCategories" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_genretvshows)">

@@ -1,6 +1,7 @@
 [B]2.7.6[/B]
 • KODI 18 : Implement FullscreenGame window
 • Replace genres widget by new one based on genres content (thanks to sualfred for his idea)
+• Add new genres widgets list/panel for Personal widgets
 • Improvements
 • Minor fixes
 

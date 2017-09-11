@@ -45,35 +45,48 @@
 				</control>
 				<control type="image">
 					<left>6</left>
-					<top>6</top>
+					<top>11</top>
 					<width>371</width>
 					<height>169</height>
 					<texture fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<visible>String.IsEmpty(ListItem.Art(poster.0))</visible>
+					<visible>String.IsEmpty(ListItem.Art(poster.0)) + String.IsEqual(listitem.dbtype,genre)</visible>
+				</control>
+				<control type="image">
+					<left>6</left>
+					<top>11</top>
+					<width>371</width>
+					<height>169</height>
+					<texture fallback="DefaultVideo.png">$VAR[InfoWidgetThumbVar]</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<visible>String.IsEmpty(ListItem.Art(poster.0)) + !String.IsEqual(listitem.dbtype,genre)</visible>
 				</control>
 				<control type="group">
 					<left>6</left>
 					<top>6</top>
 					<visible>!Skin.HasSetting(show_borders)</visible>
 					<control type="image">
+						<left>0</left>
 						<width>119</width>
 						<height>169</height>
 						<texture background="true">$INFO[ListItem.Art(poster.0)]</texture>
 						<aspectratio>scale</aspectratio>
+						<animation effect="slide" end="62,0" time="0" condition="String.IsEmpty(ListItem.Art(poster.2))">Conditional</animation>
+						<animation effect="slide" end="63,0" time="0" condition="String.IsEmpty(ListItem.Art(poster.1))">Conditional</animation>
 					</control>
 					<control type="image">
 						<left>125</left>
 						<width>119</width>
 						<height>169</height>
-						<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster.1)]</texture>
+						<texture background="true">$INFO[ListItem.Art(poster.1)]</texture>
 						<aspectratio>scale</aspectratio>
+						<animation effect="slide" end="63,0" time="0" condition="String.IsEmpty(ListItem.Art(poster.2))">Conditional</animation>
 					</control>
 					<control type="image">
 						<left>250</left>
 						<width>119</width>
 						<height>169</height>
-						<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster.2)]</texture>
+						<texture background="true">$INFO[ListItem.Art(poster.2)]</texture>
 						<aspectratio>scale</aspectratio>
 					</control>
 				</control>
@@ -82,27 +95,31 @@
 					<top>6</top>
 					<visible>Skin.HasSetting(show_borders)</visible>
 					<control type="image">
+						<left>0</left>
 						<width>119</width>
 						<height>169</height>
 						<texture background="true">$INFO[ListItem.Art(poster.0)]</texture>
 						<aspectratio>scale</aspectratio>
 						<bordertexture colordiffuse="$VAR[BorderColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
+						<animation effect="slide" end="62,0" time="0" condition="String.IsEmpty(ListItem.Art(poster.2))">Conditional</animation>
+						<animation effect="slide" end="63,0" time="0" condition="String.IsEmpty(ListItem.Art(poster.1))">Conditional</animation>
 					</control>
 					<control type="image">
 						<left>125</left>
 						<width>119</width>
 						<height>169</height>
-						<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster.1)]</texture>
+						<texture background="true">$INFO[ListItem.Art(poster.1)]</texture>
 						<aspectratio>scale</aspectratio>
 						<bordertexture colordiffuse="$VAR[BorderColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
+						<animation type="effect" end="63,0" time="0" condition="String.IsEmpty(ListItem.Art(poster.2))">Conditional</animation>
 					</control>
 					<control type="image">
 						<left>250</left>
 						<width>119</width>
 						<height>169</height>
-						<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster.2)]</texture>
+						<texture background="true">$INFO[ListItem.Art(poster.2)]</texture>
 						<aspectratio>scale</aspectratio>
 						<bordertexture colordiffuse="$VAR[BorderColorVar]">colors/white.png</bordertexture>
 						<bordersize>1</bordersize>
@@ -159,7 +176,63 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<content sortby="sorttitle" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="1000">$PARAM[content_path]</content>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="1000">$PARAM[content_path]</content>
+			</control>
+		</definition>
+	</include>
+	<include name="WidgetPanelGenres">
+		<param name="visible">true</param>
+		<definition>
+			<include content="CategoryLabel">
+				<param name="label">$PARAM[widget_header]</param>
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<include content="BusyListSpinner">
+				<param name="list_id" value="$PARAM[list_id]"/>
+				<param name="posy" value="190"/>
+				<param name="visible" value="$PARAM[visible]"/>
+			</include>
+			<control type="panel" id="$PARAM[list_id]">
+				<left>0</left>
+				<top>115</top>
+				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<visible>$PARAM[visible]</visible>
+				<right>0</right>
+				<height>965</height>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<orientation>vertical</orientation>
+				<onleft>9000</onleft>
+				<onback>9000</onback>
+				<onright/>
+				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
+				<preloaditems>2</preloaditems>
+				<itemlayout width="415" height="270">
+					<control type="group">
+						<left>80</left>
+						<top>20</top>
+						<include content="GenresLayout">
+							<param name="focused" value="false" />
+							<param name="list_id" value="$PARAM[list_id]" />
+						</include>
+					</control>
+				</itemlayout>
+				<focusedlayout width="415" height="270">
+					<control type="group">
+						<depth>DepthContentPopout</depth>
+						<left>80</left>
+						<top>20</top>
+						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+						</animation>
+						<include content="GenresLayout">
+							<param name="focused" value="true" />
+							<param name="list_id" value="$PARAM[list_id]" />
+						</include>
+					</control>
+				</focusedlayout>
+				<content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="1000">$PARAM[content_path]</content>
 			</control>
 		</definition>
 	</include>
