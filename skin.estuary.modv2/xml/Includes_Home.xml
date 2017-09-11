@@ -5,26 +5,6 @@
 		<definition>
 			<control type="group">
 				<control type="image">
-					<left>-22</left>
-					<top>-22</top>
-					<width>425</width>
-					<height>273</height>
-					<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-genrelayout.png</texture>
-					<aspectratio>stretch</aspectratio>
-					<bordertexture border="21">overlays/shadow.png</bordertexture>
-					<bordersize>20</bordersize>
-					<visible>Skin.HasSetting(show_borders)</visible>
-				</control>
-				<control type="image">
-					<top>-20</top>
-					<left>-20</left>
-					<width>421</width>
-					<height>269</height>
-					<texture>dialogs/dialog-bg-nobo.png</texture>
-					<bordersize>20</bordersize>
-					<visible>Skin.HasSetting(show_borders)</visible>
-				</control>
-				<control type="image">
 					<top>-20</top>
 					<left>-20</left>
 					<width>421</width>
@@ -32,7 +12,6 @@
 					<texture>dialogs/dialog-bg-nobo.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
-					<visible>!Skin.HasSetting(show_borders)</visible>
 				</control>
 				<control type="image">
 					<top>-24</top>
@@ -76,6 +55,7 @@
 				<control type="group">
 					<left>6</left>
 					<top>6</top>
+					<visible>!Skin.HasSetting(show_borders)</visible>
 					<control type="image">
 						<width>119</width>
 						<height>169</height>
@@ -95,6 +75,37 @@
 						<height>169</height>
 						<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster.2)]</texture>
 						<aspectratio>scale</aspectratio>
+					</control>
+				</control>
+				<control type="group">
+					<left>6</left>
+					<top>6</top>
+					<visible>Skin.HasSetting(show_borders)</visible>
+					<control type="image">
+						<width>119</width>
+						<height>169</height>
+						<texture background="true">$INFO[ListItem.Art(poster.0)]</texture>
+						<aspectratio>scale</aspectratio>
+						<bordertexture colordiffuse="$VAR[BorderColorVar]">colors/white.png</bordertexture>
+						<bordersize>1</bordersize>
+					</control>
+					<control type="image">
+						<left>125</left>
+						<width>119</width>
+						<height>169</height>
+						<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster.1)]</texture>
+						<aspectratio>scale</aspectratio>
+						<bordertexture colordiffuse="$VAR[BorderColorVar]">colors/white.png</bordertexture>
+						<bordersize>1</bordersize>
+					</control>
+					<control type="image">
+						<left>250</left>
+						<width>119</width>
+						<height>169</height>
+						<texture background="true" fallback="DefaultVideo.png">$INFO[ListItem.Art(poster.2)]</texture>
+						<aspectratio>scale</aspectratio>
+						<bordertexture colordiffuse="$VAR[BorderColorVar]">colors/white.png</bordertexture>
+						<bordersize>1</bordersize>
 					</control>
 				</control>
 			</control>
