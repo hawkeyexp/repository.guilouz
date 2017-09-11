@@ -1088,6 +1088,12 @@
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.SetNumeric(widgetnumber)</onclick>
 				</control>
+				<control type="radiobutton" id="10021">
+					<label>$LOCALIZE[40268]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(HideWidgetLabels)</onclick>
+					<selected>!Skin.HasSetting(HideWidgetLabels)</selected>
+				</control>
 				<control type="radiobutton" id="10014">
 					<label>$LOCALIZE[40011]</label>
 					<include>DefaultSettingButton</include>
@@ -1136,7 +1142,7 @@
 				<control type="button" id="10022">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HideMainMenuWithWidgets)|Skin.Reset(enable_power_background)|Skin.Reset(power_background)|Skin.Reset(enable_settings_background)|Skin.Reset(settings_background)|Skin.Reset(enable_search_background)|Skin.Reset(search_background)|Skin.Reset(widgetnumber)|Skin.Reset(UseSmallerCategories)|Skin.Reset(HomeClearLogo)|Skin.Reset(HomeClearLogoMenu)|Skin.Reset(enable_HomeDiscArt)|Skin.Reset(enable_HomeDiscArtOverlay)|Skin.Reset(greyedout_watched_home)|Skin.Reset(enable_settingswidget))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(HideMainMenuWithWidgets)|Skin.Reset(enable_power_background)|Skin.Reset(power_background)|Skin.Reset(enable_settings_background)|Skin.Reset(settings_background)|Skin.Reset(enable_search_background)|Skin.Reset(search_background)|Skin.Reset(widgetnumber)|Skin.Reset(HideWidgetLabels)|Skin.Reset(UseSmallerCategories)|Skin.Reset(HomeClearLogo)|Skin.Reset(HomeClearLogoMenu)|Skin.Reset(enable_HomeDiscArt)|Skin.Reset(enable_HomeDiscArtOverlay)|Skin.Reset(greyedout_watched_home)|Skin.Reset(enable_settingswidget))</onclick>
 				</control>
 			</control>
 			<control type="image">

@@ -2533,7 +2533,7 @@
 		<value>$LOCALIZE[40064]</value>
 	</variable>
 	<variable name="LabelCategoriesSmallVar">
-		<value condition="Control.HasFocus(59001) | Control.HasFocus(69001) | Control.HasFocus(79001) | Control.HasFocus(89001) | Control.HasFocus(119001) | Control.HasFocus(129001) | Control.HasFocus(139001) | Control.HasFocus(169001) | Control.HasFocus(229001) | Control.HasFocus(239001)">$INFO[Container($PARAM[list_id]).ListItem.Label]</value>
+		<value condition="Control.HasFocus(59001) | Control.HasFocus(69001) | Control.HasFocus(79001) | Control.HasFocus(89001) | Control.HasFocus(119001) | Control.HasFocus(129001) | Control.HasFocus(139001) | Control.HasFocus(169001) | Control.HasFocus(229001) | Control.HasFocus(239001)">$LOCALIZE[31148]$INFO[Container($PARAM[list_id]).ListItem.Label, | ]</value>
 		<value>$LOCALIZE[31148]</value>
 	</variable>
 	<variable name="Label_SkinSetting_StudioLogos">

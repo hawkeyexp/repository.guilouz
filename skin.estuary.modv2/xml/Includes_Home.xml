@@ -133,6 +133,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -185,6 +186,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -207,6 +209,7 @@
 				<onright/>
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
+				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
 				<itemlayout width="415" height="270">
 					<control type="group">
 						<left>80</left>
@@ -252,14 +255,35 @@
 				<texture colordiffuse="$VAR[SkinColorVar]">frame/puce.png</texture>
 			</control>
 			<control type="label">
-				<left>22</left>
-				<top>0</top>
-				<right>2</right>
-				<height>90</height>
-				<label>$VAR[LabelCategoriesSmallVar]</label>
-				<font>font25_title</font>
-				<shadowcolor>text_shadow</shadowcolor>
-			</control>
+					<left>22</left>
+					<top>0</top>
+					<right>2</right>
+					<height>90</height>
+					<label>$LOCALIZE[31148]</label>
+					<font>font25_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>Skin.HasSetting(HideWidgetLabels)</visible>
+				</control>
+				<control type="label">
+					<left>22</left>
+					<top>0</top>
+					<right>2</right>
+					<height>90</height>
+					<label>$LOCALIZE[31148]</label>
+					<font>font25_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>!Control.HasFocus(22900) + !Skin.HasSetting(HideWidgetLabels)</visible>
+				</control>
+				<control type="label">
+					<left>22</left>
+					<top>0</top>
+					<right>2</right>
+					<height>90</height>
+					<label>$LOCALIZE[31148]$INFO[Container(22900).ListItem.Label, | ]</label>
+					<font>font25_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>Control.HasFocus(22900) + !Skin.HasSetting(HideWidgetLabels)</visible>
+				</control>
 		</control>
 		<control type="group" id="22900599">
 			<height>160</height>
@@ -400,14 +424,35 @@
 				<texture colordiffuse="$VAR[SkinColorVar]">frame/puce.png</texture>
 			</control>
 			<control type="label">
-				<left>22</left>
-				<top>0</top>
-				<right>2</right>
-				<height>90</height>
-				<label>$VAR[LabelCategoriesSmallVar]</label>
-				<font>font25_title</font>
-				<shadowcolor>text_shadow</shadowcolor>
-			</control>
+					<left>22</left>
+					<top>0</top>
+					<right>2</right>
+					<height>90</height>
+					<label>$LOCALIZE[31148]</label>
+					<font>font25_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>Skin.HasSetting(HideWidgetLabels)</visible>
+				</control>
+				<control type="label">
+					<left>22</left>
+					<top>0</top>
+					<right>2</right>
+					<height>90</height>
+					<label>$LOCALIZE[31148]</label>
+					<font>font25_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>!Control.HasFocus(23900) + !Skin.HasSetting(HideWidgetLabels)</visible>
+				</control>
+				<control type="label">
+					<left>22</left>
+					<top>0</top>
+					<right>2</right>
+					<height>90</height>
+					<label>$LOCALIZE[31148]$INFO[Container(23900).ListItem.Label, | ]</label>
+					<font>font25_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>Control.HasFocus(23900) + !Skin.HasSetting(HideWidgetLabels)</visible>
+				</control>
 		</control>
 		<control type="group" id="23900599">
 			<height>160</height>
@@ -817,6 +862,7 @@
 				<right>55</right>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
 				<control type="image">
 					<left>2</left>
 					<top>13</top>
@@ -832,6 +878,27 @@
 					<label>$PARAM[label]</label>
 					<font>font25_title</font>
 					<shadowcolor>text_shadow</shadowcolor>
+					<visible>Skin.HasSetting(HideWidgetLabels)</visible>
+				</control>
+				<control type="label">
+					<left>22</left>
+					<top>0</top>
+					<right>2</right>
+					<height>90</height>
+					<label>$PARAM[label]</label>
+					<font>font25_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>!Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels)</visible>
+				</control>
+				<control type="label">
+					<left>22</left>
+					<top>0</top>
+					<right>2</right>
+					<height>90</height>
+					<label>$PARAM[label]$PARAM[label_focus]</label>
+					<font>font25_title</font>
+					<shadowcolor>text_shadow</shadowcolor>
+					<visible>Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels)</visible>
 				</control>
 			</control>
 		</definition>
@@ -890,6 +957,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -912,6 +980,7 @@
 				<onright/>
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
+				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
 				<itemlayout width="310" height="430">
 					<control type="group">
 						<left>68</left>
@@ -950,6 +1019,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -972,6 +1042,7 @@
 				<onright/>
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
+				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
 				<itemlayout width="340" height="290">
 					<control type="group">
 						<left>70</left>
@@ -1016,6 +1087,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -1038,6 +1110,7 @@
 				<onright/>
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
+				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
 				<itemlayout width="340" height="340">
 					<control type="group">
 						<left>70</left>
@@ -1081,6 +1154,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -1103,6 +1177,7 @@
 				<onright/>
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
+				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
 				<itemlayout width="340" height="410">
 					<control type="group">
 						<left>70</left>
@@ -1139,6 +1214,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -1161,6 +1237,7 @@
 				<onright/>
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
+				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
 				<itemlayout height="210" width="680">
 					<control type="group">
 						<control type="image">
@@ -1464,6 +1541,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -1486,6 +1564,7 @@
 				<onright/>
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
+				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
 				<itemlayout width="310" height="215">
 					<control type="group">
 						<left>70</left>
@@ -1760,6 +1839,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3048,6 +3128,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3110,6 +3191,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3172,6 +3254,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3234,6 +3317,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3296,6 +3380,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3358,6 +3443,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3420,6 +3506,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3482,6 +3569,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3543,6 +3631,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3603,6 +3692,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 				<param name="visible" value="$PARAM[visible]"/>
 			</include>
@@ -3720,6 +3810,7 @@
 	<include name="WidgetListCategoriesPersonal">
 		<include content="CategoryLabel">
 			<param name="label">$PARAM[widget_header]</param>
+			<param name="label_focus">$PARAM[widget_header_focus]</param>
 			<param name="list_id" value="$PARAM[list_id]"/>
 			<param name="visible" value="$PARAM[visible]"/>
 		</include>
@@ -3997,6 +4088,7 @@
 	<include name="WidgetListCategoriesBig">
 		<include content="CategoryLabel">
 			<param name="label">$PARAM[widget_header]</param>
+			<param name="label_focus">$PARAM[widget_header_focus]</param>
 			<param name="list_id" value="$PARAM[list_id]"/>
 			<param name="visible" value="$PARAM[visible]"/>
 		</include>
@@ -4236,6 +4328,7 @@
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
+				<param name="label_focus">$PARAM[widget_header_focus]</param>
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<include content="BusyListSpinner">

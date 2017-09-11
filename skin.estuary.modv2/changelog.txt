@@ -2,6 +2,8 @@
 • KODI 18 : Implement FullscreenGame window
 • Replace genres widget by new one based on genres content (thanks to sualfred for his idea)
 • Add new genres widgets list/panel for Personal widgets
+• Add new 'Most played music videos' default widget
+• Add possibility to show media names with widgets names
 • Improvements
 • Minor fixes
 

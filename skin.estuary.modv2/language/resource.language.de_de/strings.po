@@ -2033,3 +2033,13 @@ msgstr "Standardhintergrund"
 msgctxt "#40266"
 msgid "Genres panel"
 msgstr ""
+
+#: /xml/Home.xml
+msgctxt "#40267"
+msgid "Most played music videos"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40268"
+msgid "Show media names with widgets names"
+msgstr ""

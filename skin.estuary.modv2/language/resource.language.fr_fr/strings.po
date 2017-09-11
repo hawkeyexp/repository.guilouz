@@ -2035,3 +2035,13 @@ msgstr "Arrière-plan de remplacement"
 msgctxt "#40266"
 msgid "Genres panel"
 msgstr "Panneau de genres"
+
+#: /xml/Home.xml
+msgctxt "#40267"
+msgid "Most played music videos"
+msgstr "Clips vidéos les plus regardés"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40268"
+msgid "Show media names with widgets names"
+msgstr "Afficher les noms des médias avec les noms des widgets"
