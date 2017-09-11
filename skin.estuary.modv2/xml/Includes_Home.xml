@@ -35,19 +35,19 @@
 					<visible>!Skin.HasSetting(show_borders)</visible>
 				</control>
 				<control type="image">
-					<top>-20</top>
-					<left>-20</left>
-					<width>421</width>
-					<height>269</height>
+					<top>-24</top>
+					<left>-24</left>
+					<width>429</width>
+					<height>277</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
 				</control>
 				<control type="image">
-					<top>-20</top>
-					<left>-20</left>
-					<width>421</width>
-					<height>269</height>
+					<top>-24</top>
+					<left>-24</left>
+					<width>429</width>
+					<height>277</height>
 					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 					<bordersize>20</bordersize>
 					<visible>$PARAM[focused] + Control.HasFocus($PARAM[list_id])</visible>
