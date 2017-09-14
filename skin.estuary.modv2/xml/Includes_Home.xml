@@ -140,6 +140,29 @@
 					<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 				</control>
 				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>144</width>
+					<height>58</height>
+					<texture colordiffuse="4DFFFFFF">dialogs/clearlogo-widget-back.png</texture>
+					<aspectratio align="left" aligny="top">keep</aspectratio>
+					<visible>String.IsEmpty(ListItem.Art(poster.0))</visible>
+					<visible>String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(hide_thumbforspoiler)</visible>
+					<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+					<visible>![String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
+				</control>
+				<control type="image">
+					<left>2</left>
+					<top>2</top>
+					<width>140</width>
+					<height>54</height>
+					<texture background="true">$VAR[LibraryClearLogoVar]</texture>
+					<aspectratio align="left" aligny="top">keep</aspectratio>
+					<visible>String.IsEmpty(ListItem.Art(poster.0))</visible>
+					<visible>String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(hide_thumbforspoiler)</visible>
+					<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+				</control>
+				<control type="image">
 					<left>221</left>
 					<top>159</top>
 					<width>160</width>
