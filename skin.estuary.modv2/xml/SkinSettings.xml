@@ -639,12 +639,6 @@
 					<onclick>Skin.ToggleSetting(autoscroll)</onclick>
 					<selected>Skin.HasSetting(autoscroll)</selected>
 				</control>
-				<control type="radiobutton" id="916">
-					<label>$LOCALIZE[40165]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(scroll_alphabet)</onclick>
-					<selected>Skin.HasSetting(scroll_alphabet)</selected>
-				</control>
 				<control type="radiobutton" id="902">
 					<label>$LOCALIZE[40031]</label>
 					<include>DefaultSettingButton</include>
@@ -760,7 +754,7 @@
 				<control type="button" id="915">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(scroll_alphabet)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(hide_thumbforspoiler)|Skin.Reset(LibraryClearLogo)|Skin.Reset(enable_LibraryDiscArt)|Skin.Reset(enable_LibraryDiscArtOverlay)|Skin.Reset(TrailerInWindow)|Skin.Reset(SkinHelper.ForcedViews.Enabled))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(hide_thumbforspoiler)|Skin.Reset(LibraryClearLogo)|Skin.Reset(enable_LibraryDiscArt)|Skin.Reset(enable_LibraryDiscArtOverlay)|Skin.Reset(TrailerInWindow)|Skin.Reset(SkinHelper.ForcedViews.Enabled))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="700">

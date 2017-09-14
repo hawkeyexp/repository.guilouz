@@ -30,7 +30,8 @@
 			<include content="BottomBar">
 				<param name="info_visible" value="true" />
 			</include>
-			<include>CommonScrollbarsWithAlphabet</include>
+			<include>CommonScrollbars</include>
+			<include>CommonAlphabet</include>
 			<control type="group">
 				<visible>[Control.IsVisible(500) | Control.IsVisible(506) | Control.IsVisible(507)] + String.IsEqual(listitem.dbtype,artist)</visible>
 				<visible>!Skin.HasSetting(show_albumsartistlag)</visible>

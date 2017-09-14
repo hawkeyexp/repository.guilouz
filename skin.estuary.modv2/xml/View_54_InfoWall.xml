@@ -90,6 +90,19 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(Container(9000).ListItem.Property(widget),FavoritesWidget) | [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]]</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>-2</left>
+				<top>-2</top>
+				<width>320</width>
+				<height>320</height>
+				<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-musiclayout-nolabel.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(Container(9000).ListItem.Property(widget),FavoritesWidget) | [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]]</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>0</top>
@@ -98,6 +111,16 @@
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordersize>20</bordersize>
 				<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(Container(9000).ListItem.Property(widget),FavoritesWidget) | [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]]</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>0</top>
+				<width>316</width>
+				<height>316</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders) + ![String.IsEqual(Container(9000).ListItem.Property(widget),FavoritesWidget) | [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]]</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>0</top>
@@ -107,6 +130,17 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>Skin.HasSetting(show_borders) + [String.IsEqual(Container(9000).ListItem.Property(widget),FavoritesWidget) | [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]]</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>0</top>
+				<width>316</width>
+				<height>316</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders) + [String.IsEqual(Container(9000).ListItem.Property(widget),FavoritesWidget) | [String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]]</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>0</top>
@@ -116,6 +150,17 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>!Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>0</top>
+				<width>316</width>
+				<height>316</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>!Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>-6</top>
@@ -126,6 +171,18 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>-6</top>
+				<left>-6</left>
+				<width>328</width>
+				<height>328</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>-6</top>
@@ -136,6 +193,18 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>-6</top>
+				<left>-6</left>
+				<width>328</width>
+				<height>328</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -155,6 +224,7 @@
 				<texture fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
+				<animation effect="slide" end="0,-10" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 			</control>
 			<control type="textbox">
 				<left>28</left>
@@ -167,9 +237,11 @@
 				<label>$PARAM[single_label]</label>
 				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
 				<visible>!String.IsEqual(ListItem.DBType,album) + !String.IsEqual(ListItem.DBType,song) + !String.IsEqual(ListItem.DBType,musicvideo)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="group">
 				<visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song) | String.IsEqual(ListItem.DBType,musicvideo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 				<control type="label">
 					<left>29</left>
 					<top>300</top>
@@ -192,31 +264,24 @@
 				</control>
 			</control>
 			<control type="image">
-				<left>25</left>
-				<top>265</top>
+				<left>23</left>
+				<top>263</top>
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
 				<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)</visible>
 				<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
 			</control>
-			<control type="image">
-				<top>20</top>
-				<left>20</left>
-				<width>276</width>
-				<height>346</height>
-				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
-				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo) + !Skin.HasSetting(show_borders)</visible>
-			</control>
-			<control type="image">
-				<top>18</top>
-				<left>18</left>
-				<width>280</width>
-				<height>350</height>
-				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
-				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo) + Skin.HasSetting(show_borders)</visible>
+			<control type="label">
+				<left>31</left>
+				<top>268</top>
+				<width>260</width>
+				<label>$INFO[ListItem.Season,,x]$INFO[ListItem.Episode]</label>
+				<font>font20_title</font>
+				<shadowcolor>text_shadow</shadowcolor>
+				<align>right</align>
+				<visible>String.IsEqual(listitem.dbtype,episode)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>20</top>
@@ -225,7 +290,7 @@
 				<height>346</height>
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo) + !Skin.HasSetting(show_borders)</visible>
+				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo) + !Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
 			</control>
 			<control type="image">
 				<top>18</top>
@@ -234,7 +299,7 @@
 				<height>350</height>
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo) + Skin.HasSetting(show_borders)</visible>
+				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo) + Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
 			</control>
 			<control type="image">
 				<top>20</top>
@@ -243,7 +308,18 @@
 				<height>346</height>
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)] + !Skin.HasSetting(show_borders)</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo) + !Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>20</top>
+				<left>20</left>
+				<width>276</width>
+				<height>276</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo) + !Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>18</top>
@@ -252,7 +328,58 @@
 				<height>350</height>
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)] + Skin.HasSetting(show_borders)</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo) + Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>18</top>
+				<left>18</left>
+				<width>280</width>
+				<height>280</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo) + Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>20</top>
+				<left>20</left>
+				<width>276</width>
+				<height>346</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)] + !Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>20</top>
+				<left>20</left>
+				<width>276</width>
+				<height>276</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)] + !Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>18</top>
+				<left>18</left>
+				<width>280</width>
+				<height>350</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)] + Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>18</top>
+				<left>18</left>
+				<width>280</width>
+				<height>280</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)] + Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -261,6 +388,16 @@
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>306</top>
+				<width>276</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="progress">
 				<left>20</left>
@@ -271,6 +408,18 @@
 				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
 				<info>ListItem.PercentPlayed</info>
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="progress">
+				<left>20</left>
+				<top>278</top>
+				<width>276</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.PercentPlayed</info>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="group">
 				<left>133</left>
@@ -295,7 +444,7 @@
 				<left>133</left>
 				<top>1</top>
 				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)] + !String.IsEqual(listitem.dbtype,genre)</visible>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
 			</control>
 		</definition>
@@ -318,6 +467,19 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>-2</left>
+				<top>8</top>
+				<width>444</width>
+				<height>269</height>
+				<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-episodelayout-nolabel.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>10</top>
@@ -326,6 +488,16 @@
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordersize>20</bordersize>
 				<visible>Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>440</width>
+				<height>265</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>10</top>
@@ -335,6 +507,17 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>!Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>440</width>
+				<height>265</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>!Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>4</top>
@@ -345,6 +528,18 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>4</top>
+				<left>-6</left>
+				<width>452</width>
+				<height>277</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>4</top>
@@ -355,6 +550,18 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>4</top>
+				<left>-6</left>
+				<width>452</width>
+				<height>277</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -364,6 +571,17 @@
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio aligny="top">keep</aspectratio>
 				<visible>!Container.Content(videos)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>30</top>
+				<width>400</width>
+				<height>225</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
+				<aspectratio aligny="top">keep</aspectratio>
+				<visible>!Container.Content(videos)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -373,6 +591,40 @@
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio>scale</aspectratio>
 				<visible>Container.Content(videos)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>30</top>
+				<width>400</width>
+				<height>225</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
+				<aspectratio>scale</aspectratio>
+				<visible>Container.Content(videos)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>30</top>
+				<width>144</width>
+				<height>58</height>
+				<texture colordiffuse="4DFFFFFF">dialogs/clearlogo-widget-back.png</texture>
+				<aspectratio align="left" aligny="top">keep</aspectratio>
+				<visible>!Container.Content(videos)</visible>
+				<visible>String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(hide_thumbforspoiler)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+				<visible>![String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
+			</control>
+			<control type="image">
+				<left>22</left>
+				<top>32</top>
+				<width>140</width>
+				<height>54</height>
+				<texture background="true">$VAR[LibraryClearLogoVar]</texture>
+				<aspectratio align="left" aligny="top">keep</aspectratio>
+				<visible>!Container.Content(videos)</visible>
+				<visible>String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(hide_thumbforspoiler)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<left>136</left>
@@ -382,6 +634,7 @@
 				<texture flipx="true">overlays/overlay-bg.png</texture>
 				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]] + ![String.IsEqual(listitem.dbtype,episode) + Window.IsVisible(MyVideoNav.xml) + [String.IsEqual(Container.ViewMode,$LOCALIZE[31102]) | String.IsEqual(Container.ViewMode,$LOCALIZE[31101])]]</visible>
 				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + ![Container.Content(videos) + String.IsEmpty(ListItem.Label2)]</visible>
+				<animation effect="slide" end="124,69" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 			</control>
 			<control type="label">
 				<left>31</left>
@@ -392,6 +645,7 @@
 				<shadowcolor>text_shadow</shadowcolor>
 				<align>right</align>
 				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]] + ![String.IsEqual(listitem.dbtype,episode) + Window.IsVisible(MyVideoNav.xml) + [String.IsEqual(Container.ViewMode,$LOCALIZE[31102]) | String.IsEqual(Container.ViewMode,$LOCALIZE[31101])]]</visible>
+				<animation effect="slide" end="124,69" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -400,6 +654,7 @@
 				<height>70</height>
 				<texture>overlays/overlay-bg.png</texture>
 				<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<animation effect="slide" end="0,69" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -407,6 +662,7 @@
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
+				<animation effect="slide" end="0,69" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 			</control>
 			<control type="textbox">
 				<left>28</left>
@@ -420,6 +676,7 @@
 				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
 				<visible>Window.IsActive(videos)</visible>
 				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="textbox">
 				<left>28</left>
@@ -432,9 +689,11 @@
 				<label>$PARAM[label]</label>
 				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
 				<visible>Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(videos)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 				<control type="label">
 					<left>29</left>
 					<top>195</top>
@@ -482,6 +741,17 @@
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + !Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>30</top>
+				<left>20</left>
+				<width>400</width>
+				<height>225</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + !Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>28</top>
@@ -491,6 +761,17 @@
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>28</top>
+				<left>18</left>
+				<width>404</width>
+				<height>229</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -499,6 +780,16 @@
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>265</top>
+				<width>400</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="progress">
 				<left>20</left>
@@ -509,10 +800,23 @@
 				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
 				<info>ListItem.PercentPlayed</info>
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="progress">
+				<left>20</left>
+				<top>237</top>
+				<width>400</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.PercentPlayed</info>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="group">
 				<left>133</left>
 				<top>11</top>
+				<animation effect="slide" end="62,0" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 			<control type="group">
@@ -526,6 +830,7 @@
 				<left>133</left>
 				<top>11</top>
 				<visible>!$PARAM[focused]</visible>
+				<animation effect="slide" end="62,0" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home)</visible>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
 			</control>
@@ -549,6 +854,19 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>-2</left>
+				<top>8</top>
+				<width>444</width>
+				<height>343</height>
+				<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-episodebannerlayout-nolabel.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>10</top>
@@ -557,6 +875,16 @@
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordersize>20</bordersize>
 				<visible>Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>440</width>
+				<height>339</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordersize>20</bordersize>
+				<visible>Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>10</top>
@@ -566,6 +894,17 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>!Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>10</top>
+				<width>440</width>
+				<height>339</height>
+				<texture>dialogs/dialog-bg-nobo.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>!Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>4</top>
@@ -576,6 +915,18 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>4</top>
+				<left>-6</left>
+				<width>452</width>
+				<height>351</height>
+				<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
+				<bordertexture border="21">overlays/shadow.png</bordertexture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>4</top>
@@ -586,6 +937,18 @@
 				<bordersize>20</bordersize>
 				<visible>$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>4</top>
+				<left>-6</left>
+				<width>452</width>
+				<height>351</height>
+				<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
+				<bordersize>20</bordersize>
+				<visible>$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(EnableGradientColor)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -594,6 +957,16 @@
 				<height>155</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio aligny="top">keep</aspectratio>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>104</top>
+				<width>400</width>
+				<height>225</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
+				<aspectratio aligny="top">keep</aspectratio>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -602,6 +975,16 @@
 				<height>51</height>
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[BannerVar]</texture>
 				<aspectratio aligny="top">keep</aspectratio>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>30</top>
+				<width>400</width>
+				<height>74</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[BannerVar]</texture>
+				<aspectratio aligny="center">scale</aspectratio>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<left>136</left>
@@ -610,6 +993,7 @@
 				<height>70</height>
 				<texture flipx="true">overlays/overlay-bg.png</texture>
 				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]]</visible>
+				<animation effect="slide" end="124,93" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 			</control>
 			<control type="label">
 				<left>31</left>
@@ -620,6 +1004,7 @@
 				<shadowcolor>text_shadow</shadowcolor>
 				<align>right</align>
 				<visible>![String.IsEqual(listitem.dbtype,episode) + [Control.IsVisible(500) | Control.IsVisible(54)]]</visible>
+				<animation effect="slide" end="124,93" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -628,6 +1013,7 @@
 				<height>70</height>
 				<texture>overlays/overlay-bg.png</texture>
 				<visible>ListItem.IsResumable | ListItem.IsPlaying | Integer.IsGreater(ListItem.Playcount,0)</visible>
+				<animation effect="slide" end="0,93" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -635,6 +1021,7 @@
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[WallWatchedIconVar]</texture>
+				<animation effect="slide" end="0,93" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 			</control>
 			<control type="textbox">
 				<left>28</left>
@@ -647,9 +1034,11 @@
 				<label>$PARAM[label]</label>
 				<visible>Window.IsActive(videos)</visible>
 				<autoscroll delay="1000" time="1000" repeat="1000">$PARAM[focused]</autoscroll>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="group">
 				<visible>!Window.IsActive(videos)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 				<control type="label">
 					<left>29</left>
 					<top>238</top>
@@ -679,6 +1068,17 @@
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + !Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>30</top>
+				<left>20</left>
+				<width>400</width>
+				<height>299</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + !Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<top>28</top>
@@ -688,6 +1088,17 @@
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + Skin.HasSetting(show_borders)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<top>28</top>
+				<left>18</left>
+				<width>404</width>
+				<height>303</height>
+				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
+				<visible>!$PARAM[focused]</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + Skin.HasSetting(show_borders)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="image">
 				<left>20</left>
@@ -696,6 +1107,16 @@
 				<height>4</height>
 				<texture>dialogs/back.png</texture>
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>339</top>
+				<width>400</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="progress">
 				<left>20</left>
@@ -706,16 +1127,30 @@
 				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
 				<info>ListItem.PercentPlayed</info>
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
+			</control>
+			<control type="progress">
+				<left>20</left>
+				<top>311</top>
+				<width>400</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.PercentPlayed</info>
+				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
 			</control>
 			<control type="group">
 				<left>133</left>
 				<top>11</top>
+				<animation effect="slide" end="62,0" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
 			</control>
 			<control type="group">
 				<left>133</left>
 				<top>11</top>
 				<visible>!$PARAM[focused]</visible>
+				<animation effect="slide" end="62,0" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home)</visible>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
 			</control>
@@ -797,6 +1232,7 @@
 					<label>$INFO[ListItem.Label]</label>
 					<autoscroll time="2000" delay="3000" repeat="5000">$PARAM[focused]</autoscroll>
 					<visible>!ListItem.IsParentFolder</visible>
+					<visible>![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)  + String.IsEqual(listitem.dbtype,genre)]</visible>
 				</control>
 				<control type="image">
 					<left>24</left>
@@ -816,6 +1252,7 @@
 					<texture fallback="DefaultGenre.png">$VAR[WidgetGenreIconVar]</texture>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<visible>String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]</visible>
+					<animation effect="slide" end="0,44" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 				</control>
 			</control>
 			<control type="group">
@@ -940,7 +1377,7 @@
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home) + !Skin.HasSetting(show_borders)</visible>
+				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home) + !Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
 			</control>
 			<control type="image">
 				<left>33</left>
@@ -950,7 +1387,7 @@
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home) + Skin.HasSetting(show_borders)</visible>
+				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home) + Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
 			</control>
 			<control type="image">
 				<left>35</left>
@@ -960,7 +1397,7 @@
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + !Skin.HasSetting(show_borders)</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + !Skin.HasSetting(show_borders) + !String.IsEqual(listitem.dbtype,genre)</visible>
 			</control>
 			<control type="image">
 				<left>33</left>
@@ -970,7 +1407,7 @@
 				<texture background="true" colordiffuse="BFFFFFFF">colors/black.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + Skin.HasSetting(show_borders)</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + Skin.HasSetting(show_borders)  + !String.IsEqual(listitem.dbtype,genre)</visible>
 			</control>
 			<control type="group">
 				<left>135</left>
@@ -988,7 +1425,7 @@
 				<left>135</left>
 				<top>-9</top>
 				<visible>!$PARAM[focused]</visible>
-				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home)</visible>
+				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home)  + !String.IsEqual(listitem.dbtype,genre)</visible>
 				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
 			</control>
 			<control type="image">

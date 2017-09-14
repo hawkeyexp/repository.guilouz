@@ -40,7 +40,7 @@
 				<width>250</width>
 				<height>300</height>
 				<aspectratio aligny="center">keep</aspectratio>
-				<texture>$INFO[Player.Art(thumb)]</texture>
+				<texture fallback="DefaultAddonVideo.png">$INFO[Player.Art(thumb)]</texture>
 			</control>
 			<control type="label">
 				<left>310</left>
@@ -155,7 +155,7 @@
 					<width>440</width>
 					<height>610</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-					<texture background="true">$VAR[NowPlayingPosterVar]</texture>
+					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingPosterVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)</visible>
@@ -173,7 +173,7 @@
 					<width>440</width>
 					<height>610</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture background="true">$VAR[NowPlayingPosterVar]</texture>
+					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingPosterVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<visible>!VideoPlayer.HasMenu + !VideoPlayer.Content(movies) + !VideoPlayer.Content(episodes) + !VideoPlayer.Content(files)</visible>
@@ -185,7 +185,7 @@
 					<width>440</width>
 					<height>380</height>
 					<aspectratio aligny="center" align="center">keep</aspectratio>
-					<texture background="true">$VAR[NowPlayingPosterVar]</texture>
+					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingPosterVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<visible>!VideoPlayer.HasMenu + !VideoPlayer.Content(movies) + !VideoPlayer.Content(episodes)</visible>

@@ -4,6 +4,7 @@
 • Add new genres widgets list/panel for Personal widgets
 • Add new 'Most played music videos' default widget
 • Add possibility to show media names with widgets names
+• Add new functionality 'Jump to letter' when scrollbar is focused (thanks to jurialmunkey for his idea)
 • Improvements
 • Minor fixes
 

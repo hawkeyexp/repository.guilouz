@@ -17,6 +17,7 @@
 					<width>100%</width>
 					<height>110</height>
 					<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
+					<visible>!Window.IsVisible(DialogBusy.xml)</visible>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -24,6 +25,7 @@
 					<width>100%</width>
 					<height>190</height>
 					<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
+					<visible>!Window.IsVisible(DialogBusy.xml)</visible>
 				</control>
 			</control>
 			<control type="group">
