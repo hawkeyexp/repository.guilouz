@@ -288,6 +288,7 @@
 						<include content="WidgetListCategories" condition="Library.HasContent(tvshows) + !Skin.HasSetting(hide_studiotvshows)">
 							<param name="content_path" value="videodb://tvshows/studios/"/>
 							<param name="widget_header" value="$LOCALIZE[20388]"/>
+							<param name="widget_header_focus" value="$INFO[Container(6500).ListItem.Label, | ]"/>
 							<param name="widget_target" value="videos"/>
 							<param name="list_id" value="6500"/>
 							<param name="icon" value="$VAR[WidgetStudioIconVar]"/>
@@ -1160,6 +1161,7 @@
 						<include content="WidgetListCategories" condition="Library.HasContent(musicvideos) + !Skin.HasSetting(hide_musicvideostudios)">
 							<param name="content_path" value="videodb://musicvideos/studios/"/>
 							<param name="widget_header" value="$LOCALIZE[20388]"/>
+							<param name="widget_header_focus" value="$INFO[Container(16600).ListItem.Label, | ]"/>
 							<param name="widget_target" value="music"/>
 							<param name="list_id" value="16600"/>
 							<param name="icon" value="$VAR[WidgetStudioIconVar]"/>
