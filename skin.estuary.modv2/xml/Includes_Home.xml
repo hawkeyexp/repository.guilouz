@@ -149,7 +149,7 @@
 					<visible>String.IsEmpty(ListItem.Art(poster.0))</visible>
 					<visible>String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(hide_thumbforspoiler)</visible>
 					<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
-					<visible>![String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
+					<visible>![String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
 				</control>
 				<control type="image">
 					<left>2</left>
@@ -3267,7 +3267,7 @@
 				<visible>!Container.Content(videos)</visible>
 				<visible>String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(hide_thumbforspoiler)</visible>
 				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
-				<visible>![String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
+				<visible>![String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
 			</control>
 			<control type="image">
 				<left>22</left>
@@ -4029,7 +4029,7 @@
 				<aspectratio align="left" aligny="top">keep</aspectratio>
 				<visible>String.IsEqual(ListItem.DBType,episode) + !Skin.HasSetting(hide_thumbforspoiler)</visible>
 				<visible>[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]</visible>
-				<visible>![String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
+				<visible>![String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))]</visible>
 			</control>
 			<control type="image">
 				<left>22</left>
