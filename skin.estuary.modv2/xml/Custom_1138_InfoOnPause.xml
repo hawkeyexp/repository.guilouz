@@ -47,7 +47,7 @@
 				<top>20</top>
 				<right>29</right>
 				<height>30</height>
-				<label>[B]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.EpisodeName, - ][/B]</label>
+				<label>[B]$INFO[VideoPlayer.Title]$INFO[ListItem.Season, - ,x]$INFO[ListItem.Episode,,. ]$INFO[VideoPlayer.EpisodeName, - ][/B]</label>
 				<scroll>true</scroll>
 				<textcolor>$VAR[SkinColorVar]</textcolor>
 			</control>

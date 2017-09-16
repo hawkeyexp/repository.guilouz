@@ -377,7 +377,7 @@
 					<right>40</right>
 					<bottom>114</bottom>
 					<align>justify</align>
-					<label>[B]$INFO[ListItem.EpisodeName,,[CR]][/B]$INFO[ListItem.Plot]</label>
+					<label>[B]$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.EpisodeName,,[CR]][/B]$INFO[ListItem.Plot]</label>
 				</control>
 				<control type="textbox">
 					<top>612</top>
