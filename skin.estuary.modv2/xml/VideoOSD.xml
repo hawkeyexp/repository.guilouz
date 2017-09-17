@@ -56,7 +56,7 @@
 							<param name="texture" value="osd/fullscreen/buttons/rewind.png"/>
 						</include>
 						<onclick>PlayerControl(Rewind)</onclick>
-						<visible>VideoPlayer.Content(livetv) + PVR.IsTimeShift</visible>
+						<visible>![VideoPlayer.Content(livetv) + !PVR.IsTimeShift]</visible>
 					</control>
 					<control type="radiobutton" id="602">
 						<textureradioonfocus colordiffuse="white">osd/fullscreen/buttons/play.png</textureradioonfocus>
@@ -79,6 +79,14 @@
 						<selected>Player.Paused</selected>
 						<onclick>PlayerControl(Play)</onclick>
 						<visible>Player.PauseEnabled</visible>
+						<visible>!Player.Rewinding + !Player.Forwarding</visible>
+					</control>
+					<control type="radiobutton" id="6021">
+						<include content="OSDButton">
+							<param name="texture" value="osd/fullscreen/buttons/play.png"/>
+						</include>
+						<onclick>PlayerControl(Play)</onclick>
+						<visible>Player.Rewinding | Player.Forwarding</visible>
 					</control>
 					<control type="radiobutton" id="603">
 						<include content="OSDButton">
@@ -86,19 +94,19 @@
 						</include>
 						<onclick>PlayerControl(Stop)</onclick>
 					</control>
-					<control type="radiobutton" id="605">
-						<include content="OSDButton">
-							<param name="texture" value="osd/fullscreen/buttons/next.png"/>
-						</include>
-						<onclick>PlayerControl(Next)</onclick>
-						<visible>!VideoPlayer.Content(livetv) + [Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1)]</visible>
-					</control>
 					<control type="radiobutton" id="604">
 						<include content="OSDButton">
 							<param name="texture" value="osd/fullscreen/buttons/forward.png"/>
 						</include>
 						<onclick>PlayerControl(Forward)</onclick>
-						<visible>VideoPlayer.Content(livetv) + PVR.IsTimeShift</visible>
+						<visible>![VideoPlayer.Content(livetv) + !PVR.IsTimeShift]</visible>
+					</control>
+					<control type="radiobutton" id="605">
+						<include content="OSDButton">
+							<param name="texture" value="osd/fullscreen/buttons/next.png"/>
+						</include>
+						<onclick>PlayerControl(Next)</onclick>
+						<visible>!VideoPlayer.Content(livetv)</visible>
 					</control>
 					<control type="radiobutton" id="804">
 						<include content="OSDButton">
