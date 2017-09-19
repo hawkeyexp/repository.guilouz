@@ -22,6 +22,7 @@
 				<pagecontrol>3000</pagecontrol>
 				<font>font37</font>
 				<label>$INFO[Window(home).Property(TextViewer_Text)]</label>
+				<align>center</align>
 			</control>
 			<control type="scrollbar" id="3000">
 				<include>HiddenObject</include>

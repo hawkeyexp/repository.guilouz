@@ -9,7 +9,7 @@
 	</coordinates>
 	<controls>
 		<control type="group">
-			<include>OpenClose_Right</include>
+			<include>Animation_TopSlide</include>
 			<!-- ** Required ** Do not change <id> or <type> (Smooth scrolling list for lyrics) -->
 			<include condition="Skin.HasSetting(enable_animatedlyrics)">ClassicLyrics</include>
 			<include condition="!Skin.HasSetting(enable_animatedlyrics)">AnimatedLyrics</include>
@@ -94,25 +94,24 @@
 					</control>
 				</control>
 			</control>
-			<control type="label">
-				<description>Scraper label</description>
-				<right>30</right>
-				<bottom>208</bottom>
-				<width>900</width>
-				<height>30</height>
-				<label>$LOCALIZE[40092] : $INFO[Control.GetLabel(200)]</label>
-				<font>font12</font>
-				<align>right</align>
-				<aligny>center</aligny>
-				<shadowcolor>black</shadowcolor>
-				<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
-				<include>OpenClose_Right</include>
-				<include>Visible_Right</include>
-			</control>
 			<control type="label" id="200">
 				<description>Scraper label</description>
 				<visible>false</visible>
 			</control>
+		</control>
+		<control type="label">
+			<description>Scraper label</description>
+			<right>30</right>
+			<bottom>94</bottom>
+			<width>900</width>
+			<height>30</height>
+			<label>$LOCALIZE[40092] : $INFO[Control.GetLabel(200)]</label>
+			<font>font20_title</font>
+			<align>right</align>
+			<aligny>bottom</aligny>
+			<scroll>true</scroll>
+			<include>Animation_BottomSlide</include>
+			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
 		</control>
 		<!-- ** Required ** Do not change <id> or <type> -->
 		<!-- ** Required ** Do not change <id> or <type> -->

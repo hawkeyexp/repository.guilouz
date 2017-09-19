@@ -8,14 +8,14 @@
 		<textureradioondisabled colordiffuse="disabled">$PARAM[texture]</textureradioondisabled>
 		<textureradiooffdisabled colordiffuse="disabled">$PARAM[texture]</textureradiooffdisabled>
 		<texturefocus colordiffuse="$VAR[SkinColorVar]">osd/fullscreen/buttons/button-fo-76.png</texturefocus>
-		<width>76</width>
+		<width>56</width>
 		<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
             <effect type="zoom" end="125" time="75" tween="sine" easing="out" center="auto" />
             <effect type="zoom" end="80" time="225" tween="sine" delay="100" easing="out" center="auto" />
         </animation>    
-		<height>76</height>
-		<radiowidth>74</radiowidth>
-		<radioheight>74</radioheight>
+		<height>56</height>
+		<radiowidth>54</radiowidth>
+		<radioheight>54</radioheight>
 		<font></font>
 		<texturenofocus />
 		<radioposx>1</radioposx>

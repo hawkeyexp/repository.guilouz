@@ -40,17 +40,10 @@
 					</control>
 					<control type="radiobutton" id="50011">
 						<width>700</width>
-						<label>$LOCALIZE[40095]</label>
+						<label>$LOCALIZE[40087]</label>
 						<include>DialogSettingButton</include>
 						<selected>!Skin.HasSetting(show_disc)</selected>
 						<onclick>Skin.ToggleSetting(show_disc)</onclick>
-					</control>
-					<control type="radiobutton" id="50012">
-						<width>700</width>
-						<label>$LOCALIZE[40088]</label>
-						<include>DialogSettingButton</include>
-						<selected>Skin.HasSetting(hide_cdcase)</selected>
-						<onclick>Skin.ToggleSetting(hide_cdcase)</onclick>
 					</control>
 					<control type="radiobutton" id="50014">
 						<width>700</width>
@@ -70,7 +63,7 @@
 					<control type="button" id="5005">
 						<width>700</width>
 						<include>DialogSettingButton</include>
-						<label>$LOCALIZE[31084]</label>
+						<label>  ∟$LOCALIZE[31084]</label>
 						<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 					</control>
 					<control type="button" id="5006">

@@ -243,8 +243,8 @@ msgstr "Mevcut"
 
 #: /xml/Variables.xml
 msgctxt "#31050"
-msgid "Press [B]OK[/B] to stop"
-msgstr "Durdurmak için [B]TAMAM[/B] tuşuna basın"
+msgid "Show plot"
+msgstr ""
 
 #: /xml/VideoOSD.xml
 msgctxt "#31051"
@@ -263,8 +263,13 @@ msgstr "Arial tabanlı"
 
 #: /xml/Variables.xml
 msgctxt "#31054"
-msgid "Press [B]Left[/B] to rewind, or [B]Right[/B] to fast-forward"
-msgstr "Geri sarmak için [B]Sol[/B] tuşuna, ileri sarmak için [B]Sağ[/B] tuşana basın"
+msgid "Forward jumping"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#31055"
+msgid "Backward jumping"
+msgstr ""
 
 #: /xml/MyMusicNav.xml /xml/MyVideoNav.xml
 msgctxt "#31056"
@@ -881,14 +886,20 @@ msgctxt "#40033"
 msgid "Background color"
 msgstr "Arka plan rengi"
 
-#: Empty String 40034
+#: /xml/Variables.xml
+msgctxt "#40034"
+msgid "Next chapter"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40035"
 msgid "Background pattern color"
 msgstr "Arka plan desen rengi"
 
-#: Empty String 40036
+#: /xml/Variables.xml
+msgctxt "#40036"
+msgid "Previous chapter"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40037"
@@ -1145,10 +1156,7 @@ msgctxt "#40087"
 msgid "Show album CDArt"
 msgstr "Göster albüm CDArt"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40088"
-msgid "Hide CD case"
-msgstr "CD kutusunu gizle"
+#: Empty String 40088
 
 #: /xml/SkinSettings.xml
 msgctxt "#40089"
@@ -1853,8 +1861,8 @@ msgstr "Kişisel API anahtarlarını yapılandır"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40230"
-msgid "Displaying video information"
-msgstr "Video bilgilerini görüntüleme"
+msgid "Hide video info when video is paused"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40231"
@@ -1986,20 +1994,11 @@ msgctxt "#40256"
 msgid "Show albums of artist"
 msgstr "Sanatçının albümlerini göster"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40257"
-msgid "Never"
-msgstr "Asla"
+#: Empty String 40257
 
-#: /xml/SkinSettings.xml
-msgctxt "#40258"
-msgid "Only when video is paused"
-msgstr "Yalnızca video duraklatıldığında"
+#: Empty String 40258
 
-#: /xml/SkinSettings.xml
-msgctxt "#40259"
-msgid "Always"
-msgstr "Her zaman"
+#: Empty String 40259
 
 #: /xml/Home.xml
 msgctxt "#40260"

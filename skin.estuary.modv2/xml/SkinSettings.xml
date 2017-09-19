@@ -70,11 +70,11 @@
 				<ondown>100</ondown>
 				<pagecontrol>60</pagecontrol>
 				<visible>Container(9000).HasFocus(10)</visible>
-				<control type="button" id="105">
+				<control type="radiobutton" id="105">
 					<label>$LOCALIZE[40230]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(40230, 40257|enable_neverinfo, 40258|enable_infowithpause, 40259|enable_alwaysinfo)</onclick>
-					<label2>$VAR[OSDInfoLabel2Var]</label2>
+					<selected>Skin.HasSetting(Hide_OSDInfo)</selected>
+                    <onclick>Skin.ToggleSetting(Hide_OSDInfo)</onclick>
 				</control>
 				<control type="radiobutton" id="106">
 					<label>$LOCALIZE[40241]</label>
@@ -110,7 +110,7 @@
 				<control type="button" id="104">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(enable_neverinfo)|Skin.Reset(enable_infowithpause)|Skin.Reset(enable_alwaysinfo)|Skin.Reset(disable_PauseOnExtraInfos)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp)|Skin.Reset(show_musicvideoinfo))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(Hide_OSDInfo)|Skin.Reset(disable_PauseOnExtraInfos)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp)|Skin.Reset(show_musicvideoinfo))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">
@@ -169,12 +169,6 @@
 					<selected>!Skin.HasSetting(show_disc)</selected>
 					<onclick>Skin.ToggleSetting(show_disc)</onclick>
 				</control>
-				<control type="radiobutton" id="207">
-					<label>$LOCALIZE[40088]</label>
-					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(hide_cdcase)</selected>
-					<onclick>Skin.ToggleSetting(hide_cdcase)</onclick>
-				</control>
 				<control type="radiobutton" id="208">
 					<label>$LOCALIZE[40089]</label>
 					<include>DefaultSettingButton</include>
@@ -208,7 +202,7 @@
 				<control type="button" id="211">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(show_musicvisualisation)|Skin.Reset(hide_background_fanart)|Skin.Reset(enable_artistslideshow)|Skin.Reset(animate_artistslideshow)|Skin.Reset(hide_fanartopacity)|Skin.Reset(enable_visualisation)|Skin.Reset(show_disc)|Skin.Reset(hide_cdcase)|Skin.Reset(show_artistclearlogo)|Skin.Reset(show_artistbanner)|Skin.Reset(enable_animatedlyrics)|Skin.Reset(enable_scrollingtext)|Skin.Reset(SkinHelper.DisableScreenSaverOnFullScreenMusic))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(show_musicvisualisation)|Skin.Reset(hide_background_fanart)|Skin.Reset(enable_artistslideshow)|Skin.Reset(animate_artistslideshow)|Skin.Reset(hide_fanartopacity)|Skin.Reset(enable_visualisation)|Skin.Reset(show_disc)|Skin.Reset(show_artistclearlogo)|Skin.Reset(show_artistbanner)|Skin.Reset(enable_animatedlyrics)|Skin.Reset(enable_scrollingtext)|Skin.Reset(SkinHelper.DisableScreenSaverOnFullScreenMusic))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="300">

@@ -241,8 +241,8 @@ msgstr "Verfügbar"
 
 #: /xml/Variables.xml
 msgctxt "#31050"
-msgid "Press [B]OK[/B] to stop"
-msgstr "[B]OK[/B] zum Stoppen drücken"
+msgid "Show plot"
+msgstr ""
 
 #: /xml/VideoOSD.xml
 msgctxt "#31051"
@@ -261,8 +261,13 @@ msgstr "Arial-basiert"
 
 #: /xml/Variables.xml
 msgctxt "#31054"
-msgid "Press [B]Left[/B] to rewind, or [B]Right[/B] to fast-forward"
-msgstr "[B]Links[/B] zum Zurückspulen, [B]Rechts[/B] zum Vorspulen drücken"
+msgid "Forward jumping"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#31055"
+msgid "Backward jumping"
+msgstr ""
 
 #: /xml/MyMusicNav.xml /xml/MyVideoNav.xml
 msgctxt "#31056"
@@ -879,14 +884,20 @@ msgctxt "#40033"
 msgid "Background color"
 msgstr "Hintergrundfarbe"
 
-#: Empty String 40034
+#: /xml/Variables.xml
+msgctxt "#40034"
+msgid "Next chapter"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40035"
 msgid "Background pattern color"
 msgstr "Hintergrund-Musterfarbe"
 
-#: Empty String 40036
+#: /xml/Variables.xml
+msgctxt "#40036"
+msgid "Previous chapter"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40037"
@@ -1143,10 +1154,7 @@ msgctxt "#40087"
 msgid "Show album CDArt"
 msgstr "CD-Art für Alben anzeigen"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40088"
-msgid "Hide CD case"
-msgstr "CD-Hülle ausblenden"
+#: Empty String 40088
 
 #: /xml/SkinSettings.xml
 msgctxt "#40089"
@@ -1851,8 +1859,8 @@ msgstr "Persönliche API Schlüssel konfigurieren"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40230"
-msgid "Displaying video information"
-msgstr "Zeige Video Informationen"
+msgid "Hide video info when video is paused"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40231"
@@ -1984,20 +1992,11 @@ msgctxt "#40256"
 msgid "Show albums of artist"
 msgstr "Zeige Alben des Künstlers"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40257"
-msgid "Never"
-msgstr "Niemals"
+#: Empty String 40257
 
-#: /xml/SkinSettings.xml
-msgctxt "#40258"
-msgid "Only when video is paused"
-msgstr "Nur wenn das Video pausiert ist"
+#: Empty String 40258
 
-#: /xml/SkinSettings.xml
-msgctxt "#40259"
-msgid "Always"
-msgstr "Immer"
+#: Empty String 40259
 
 #: /xml/Home.xml
 msgctxt "#40260"

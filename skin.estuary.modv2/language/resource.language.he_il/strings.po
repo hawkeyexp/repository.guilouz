@@ -244,8 +244,8 @@ msgstr "זמין"
 
 #: /xml/Variables.xml
 msgctxt "#31050"
-msgid "Press [B]OK[/B] to stop"
-msgstr "לחץ [B]אישור[/B] כדי לעצור"
+msgid "Show plot"
+msgstr ""
 
 #: /xml/VideoOSD.xml
 msgctxt "#31051"
@@ -264,8 +264,13 @@ msgstr "מבוסס על אריאל"
 
 #: /xml/Variables.xml
 msgctxt "#31054"
-msgid "Press [B]Left[/B] to rewind, or [B]Right[/B] to fast-forward"
-msgstr "לחצו על [B]שמאלה[/B] כדי להריץ אחורה, או [B]ימינה[/B] כדי להריץ קדימה"
+msgid "Forward jumping"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#31055"
+msgid "Backward jumping"
+msgstr ""
 
 #: /xml/MyMusicNav.xml /xml/MyVideoNav.xml
 msgctxt "#31056"
@@ -882,12 +887,20 @@ msgctxt "#40033"
 msgid "Background color"
 msgstr "צבע רקע"
 
-#: Empty String 40034 /xml/SkinSettings.xml
+#: /xml/Variables.xml
+msgctxt "#40034"
+msgid "Next chapter"
+msgstr ""
+
 msgctxt "#40035"
 msgid "Background pattern color"
 msgstr "צבע תבנית רקע"
 
-#: Empty String 40036 /xml/SkinSettings.xml
+#: /xml/Variables.xml
+msgctxt "#40036"
+msgid "Previous chapter"
+msgstr ""
+
 msgctxt "#40037"
 msgid "Opacity for fanart as background"
 msgstr "אטימות לפאנארט כרקע"
@@ -1142,10 +1155,7 @@ msgctxt "#40087"
 msgid "Show album CDArt"
 msgstr "הצג גרפיקת דיסק"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40088"
-msgid "Hide CD case"
-msgstr "הסתר עטיפת דיסק"
+#: Empty String 40088
 
 #: /xml/SkinSettings.xml
 msgctxt "#40089"
@@ -1846,8 +1856,8 @@ msgstr "הגדר מפתח API מותאם אישית"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40230"
-msgid "Displaying video information"
-msgstr "הצג מידע ווידאו"
+msgid "Hide video info when video is paused"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40231"
@@ -1979,20 +1989,11 @@ msgctxt "#40256"
 msgid "Show albums of artist"
 msgstr "הצג אלבומים של אמנים"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40257"
-msgid "Never"
-msgstr "לעולם לא"
+#: Empty String 40257
 
-#: /xml/SkinSettings.xml
-msgctxt "#40258"
-msgid "Only when video is paused"
-msgstr "רק כאשר הווידאו מושהה"
+#: Empty String 40258
 
-#: /xml/SkinSettings.xml
-msgctxt "#40259"
-msgid "Always"
-msgstr "תמיד"
+#: Empty String 40259
 
 #: /xml/Home.xml
 msgctxt "#40260"

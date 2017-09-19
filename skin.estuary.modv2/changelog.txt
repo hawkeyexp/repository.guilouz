@@ -1,5 +1,8 @@
 [B]2.7.7[/B]
+• Add 'Jump to letter' functionality to context menu
 • Video OSD improvements
+• Music OSD improvements
+• PVR OSD improvements
 • Fix for PVR info
 • Minor fixes
 

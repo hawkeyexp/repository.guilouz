@@ -2,16 +2,8 @@
 <includes>
 	<include name="ClassicLyrics">
 		<control type="group">
-			<animation effect="zoom" end="150" condition="!Player.ShowInfo + !Window.IsVisible(musicosd)">Conditional</animation>
-			<animation effect="slide" end="-741,10" condition="!Player.ShowInfo + !Window.IsVisible(musicosd)">Conditional</animation>
-				<control type="image">
-					<right>30</right>
-					<top>48</top>
-					<width>1019</width>
-					<height>510</height>
-					<texture background="true">dialogs/back.png</texture>
-					<visible>Player.ShowInfo | Window.IsVisible(musicosd)</visible>
-				</control>
+			<animation effect="zoom" end="150" center="auto" condition="!Player.ShowInfo + !Window.IsVisible(musicosd)">Conditional</animation>
+			<animation effect="slide" end="-8,200" condition="!Player.ShowInfo + !Window.IsVisible(musicosd)">Conditional</animation>
 				<control type="image">
 					<top>-1000</top>
 					<bottom>-1000</bottom>
@@ -21,7 +13,7 @@
 					<visible>!Player.ShowInfo + !Window.IsVisible(musicosd)</visible>
 				</control>
 				<control type="list" id="110">
-					<right>55</right>
+					<centerleft>50%</centerleft>
 					<top>48</top>
 					<width>965</width>
 					<height>500</height>

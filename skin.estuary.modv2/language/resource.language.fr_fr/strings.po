@@ -243,8 +243,8 @@ msgstr "Disponible"
 
 #: /xml/Variables.xml
 msgctxt "#31050"
-msgid "Press [B]OK[/B] to stop"
-msgstr "Appuyer sur [B]OK[/B] pour stopper"
+msgid "Show plot"
+msgstr "Afficher le résumé"
 
 #: /xml/VideoOSD.xml
 msgctxt "#31051"
@@ -263,8 +263,13 @@ msgstr "Police basée sur Arial"
 
 #: /xml/Variables.xml
 msgctxt "#31054"
-msgid "Press [B]Left[/B] to rewind, or [B]Right[/B] to fast-forward"
-msgstr "Appuyer sur [B]Gauche[/B] pour le retour rapide, ou [B]Droite[/B] pour l'avance rapide"
+msgid "Forward jumping"
+msgstr "Saut vers l'avant"
+
+#: /xml/Variables.xml
+msgctxt "#31055"
+msgid "Backward jumping"
+msgstr "Saut vers l'arrière"
 
 #: /xml/MyMusicNav.xml /xml/MyVideoNav.xml
 msgctxt "#31056"
@@ -881,14 +886,20 @@ msgctxt "#40033"
 msgid "Background color"
 msgstr "Couleur de l'arrière-plan"
 
-#: Empty String 40034
+#: /xml/Variables.xml
+msgctxt "#40034"
+msgid "Next chapter"
+msgstr "Chapitre suivant"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40035"
 msgid "Background pattern color"
 msgstr "Couleur du modèle d'arrière-plan"
 
-#: Empty String 40036
+#: /xml/Variables.xml
+msgctxt "#40036"
+msgid "Previous chapter"
+msgstr "Chapitre précédent"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40037"
@@ -1145,10 +1156,7 @@ msgctxt "#40087"
 msgid "Show album CDArt"
 msgstr "Afficher le disque de l'album"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40088"
-msgid "Hide CD case"
-msgstr "Masquer le boîtier du disque"
+#: Empty String 40088
 
 #: /xml/SkinSettings.xml
 msgctxt "#40089"
@@ -1853,8 +1861,8 @@ msgstr "Configurer les clés API personnelles"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40230"
-msgid "Displaying video information"
-msgstr "Affichage des informations de la vidéo"
+msgid "Hide video info when video is paused"
+msgstr "Masquer les informations vidéos lorsque la vidéo est mise en pause"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40231"
@@ -1986,20 +1994,11 @@ msgctxt "#40256"
 msgid "Show albums of artist"
 msgstr "Afficher les albums de l'artiste"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40257"
-msgid "Never"
-msgstr "Jamais"
+#: Empty String 40257
 
-#: /xml/SkinSettings.xml
-msgctxt "#40258"
-msgid "Only when video is paused"
-msgstr "Uniquement quand la vidéo est en pause"
+#: Empty String 40258
 
-#: /xml/SkinSettings.xml
-msgctxt "#40259"
-msgid "Always"
-msgstr "Toujours"
+#: Empty String 40259
 
 #: /xml/Home.xml
 msgctxt "#40260"

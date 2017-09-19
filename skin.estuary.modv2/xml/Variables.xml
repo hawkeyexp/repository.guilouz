@@ -2899,7 +2899,7 @@
 	</variable>
 	<variable name="NowPlayingSublabelVar">
 		<value condition="VideoPlayer.Content(episodes)">$INFO[VideoPlayer.TvShowTitle]</value>
-		<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]$INFO[VideoPlayer.Genre, - ]</value>
+		<value condition="VideoPlayer.Content(movies)">$INFO[VideoPlayer.Year]</value>
 		<value condition="VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelName]</value>
 		<value condition="Player.HasAudio">$INFO[MusicPlayer.Artist]</value>
 	</variable>
@@ -3063,12 +3063,6 @@
 		<value condition="Skin.HasSetting(circle_userrating)">$LOCALIZE[40233]</value>
 		<value>$LOCALIZE[40148]</value>
 	</variable>
-	<variable name="OSDInfoLabel2Var">
-		<value condition="Skin.HasSetting(enable_infowithpause)">$LOCALIZE[40258]</value>
-		<value condition="Skin.HasSetting(enable_alwaysinfo)">$LOCALIZE[40259]</value>
-		<value condition="Skin.HasSetting(enable_neverinfo)">$LOCALIZE[40257]</value>
-		<value>$LOCALIZE[40259]</value>
-	</variable>
 	<variable name="AddonsListIconVar">
 		<value condition="!String.IsEmpty(ListItem.AddonBroken)">icons/addonstatus/disable.png</value>
 		<value condition="ListItem.Property(addon.orphaned)">icons/addonstatus/orphan.png</value>
@@ -3079,11 +3073,11 @@
 		<value condition="!ListItem.IsParentFolder">OverlayUnwatched.png</value>
 	</variable>
 	<variable name="ResolutionFlagVar">
-		<value condition="ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
+		<value condition="ListItem.IsStereoscopic + !String.StartsWith(ListItem.FolderPath,plugin://)">flags/videoresolution/3D.png</value>
 		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + Container(50).ListItem.IsStereoscopic">flags/videoresolution/3D.png</value>
-		<value condition="String.Contains(ListItem.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
+		<value condition="String.Contains(ListItem.Filenameandpath,3D) + !String.StartsWith(ListItem.FolderPath,plugin://)">flags/videoresolution/3D.png</value>
 		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
-		<value condition="String.Contains(ListItem.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
+		<value condition="String.Contains(ListItem.Filenameandpath,3d) + !String.StartsWith(ListItem.FolderPath,plugin://)">flags/videoresolution/3D.png</value>
 		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + String.Contains(Container(50).ListItem.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
 		<value condition="Integer.IsGreater(ListItem.VideoResolution,1080)">flags/videoresolution/4K.png</value>
 		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + Integer.IsGreater(Container(50).ListItem.VideoResolution,1080)">flags/videoresolution/4K.png</value>
@@ -3229,8 +3223,8 @@
 		<value condition="!String.IsEmpty(Player.SeekStepSize)">$LOCALIZE[773][COLOR white] $INFO[Player.SeekStepSize][/COLOR]</value>
 		<value condition="Player.Caching">$LOCALIZE[15107]</value>
 		<value condition="Player.Paused">$LOCALIZE[112]</value>
-		<value condition="Player.Forwarding">$LOCALIZE[31039] [COLOR white] $VAR[VideoPlayerForwardRewindVar][/COLOR]</value>
-		<value condition="Player.Rewinding">$LOCALIZE[31038] [COLOR white] $VAR[VideoPlayerForwardRewindVar][/COLOR]</value>
+		<value condition="Player.Forwarding">$LOCALIZE[31039][COLOR white] $VAR[VideoPlayerForwardRewindVar][/COLOR]</value>
+		<value condition="Player.Rewinding">$LOCALIZE[31038][COLOR white] $VAR[VideoPlayerForwardRewindVar][/COLOR]</value>
 		<value condition="[Player.Playing + !Player.Caching] + !Player.Seeking">$LOCALIZE[14086]</value>
 	</variable>
 	<variable name="SeekTimeLabelVar">
@@ -3239,8 +3233,18 @@
 		<value>$INFO[Player.Time]$INFO[Player.Duration, / ]</value>
 	</variable>
 	<variable name="VideoOSDHelpTextVar">
-		<value condition="Control.HasFocus(87) + [Player.Rewinding | Player.Forwarding]">$LOCALIZE[31050]</value>
-		<value condition="Control.HasFocus(70010)">$LOCALIZE[20060]</value>
+		<value condition="Control.HasFocus(600)">$LOCALIZE[40036]</value>
+		<value condition="Control.HasFocus(6001)">$LOCALIZE[31055]</value>
+		<value condition="Control.HasFocus(601)">$LOCALIZE[31038]</value>
+		<value condition="Control.HasFocus(602) + Player.Paused">$LOCALIZE[208]</value>
+		<value condition="Control.HasFocus(602) + !Player.Paused">$LOCALIZE[112]</value>
+		<value condition="Control.HasFocus(603)">$LOCALIZE[36044]</value>
+		<value condition="Control.HasFocus(604)">$LOCALIZE[31039]</value>
+		<value condition="Control.HasFocus(605)">$LOCALIZE[40034]</value>
+		<value condition="Control.HasFocus(6051)">$LOCALIZE[31054]</value>
+		<value condition="Control.HasFocus(606)">$LOCALIZE[19043]</value>
+		<value condition="Control.HasFocus(607)">$LOCALIZE[31050]</value>
+		<value condition="Control.HasFocus(6021)">$LOCALIZE[208]</value>
 		<value condition="Control.HasFocus(70011)">$LOCALIZE[31138]</value>
 		<value condition="Control.HasFocus(70012) | Control.HasFocus(70013)">$LOCALIZE[31034]</value>
 		<value condition="Control.HasFocus(70014) + !Window.IsVisible(1122)">$LOCALIZE[40096]</value>
@@ -3255,9 +3259,16 @@
 		<value condition="Control.HasFocus(255)">$LOCALIZE[36501]</value>
 		<value condition="Control.HasFocus(606)+ Player.Recording">$LOCALIZE[19059]</value>
 		<value condition="Control.HasFocus(606)">$LOCALIZE[264]</value>
-		<value condition="ControlGroup(6000).HasFocus + Player.SeekEnabled">$LOCALIZE[31054]</value>
 	</variable>
 	<variable name="MusicOSDHelpTextVar">
+		<value condition="Control.HasFocus(600)">$LOCALIZE[210]</value>
+		<value condition="Control.HasFocus(601)">$LOCALIZE[31038]</value>
+		<value condition="Control.HasFocus(602) + Player.Paused">$LOCALIZE[208]</value>
+		<value condition="Control.HasFocus(602) + !Player.Paused">$LOCALIZE[112]</value>
+		<value condition="Control.HasFocus(6021)">$LOCALIZE[208]</value>
+		<value condition="Control.HasFocus(603)">$LOCALIZE[36044]</value>
+		<value condition="Control.HasFocus(604)">$LOCALIZE[31039]</value>
+		<value condition="Control.HasFocus(605)">$LOCALIZE[209]</value>
 		<value condition="Control.HasFocus(620)">$LOCALIZE[31033]$INFO[MusicPlayer.UserRating, : ]</value>
 		<value condition="Control.HasFocus(621)">$LOCALIZE[559]</value>
 		<value condition="Control.HasFocus(704)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>
@@ -3310,14 +3321,6 @@
 		<value condition="String.IsEqual(ListItem.DBType,episode)">$INFO[ListItem.TVShowTitle,, [COLOR white]-[/COLOR] ]$INFO[ListItem.Season,$LOCALIZE[20373] , [COLOR white]-[/COLOR] ]$INFO[ListItem.Episode,$LOCALIZE[20359] ,]</value>
 		<value condition="String.IsEqual(ListItem.DBType,movie)">$INFO[ListItem.Tagline]</value>
 		<value>$INFO[ListItem.Genre]</value>
-	</variable>
-	<variable name="NowPlayingBreadcrumbsVar">
-		<value condition="Window.IsActive(fullscreenvideo)"></value>
-		<value condition="MusicPartyMode.Enabled">$LOCALIZE[589]</value>
-		<value>$LOCALIZE[31000]...</value>
-	</variable>
-	<variable name="OSDSubLabelVar">
-		<value condition="Window.IsActive(visualisation) + Integer.IsGreater(Playlist.Length,1)">$LOCALIZE[554] $INFO[Playlist.Position] / $INFO[Playlist.Length]</value>
 	</variable>
 	<variable name="AddonsFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)"></value>
