@@ -163,7 +163,7 @@
 		<font>
 			<name>lyr1</name>
 			<filename>lyrics/Theboldfont.ttf</filename>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr1b</name>
@@ -177,7 +177,7 @@
 			<filename>lyrics/Luckiest Guy.ttf</filename>
 			<style>uppercase</style>
 			<linespacing>0.9</linespacing>
-			<size>130</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr2b</name>
@@ -190,7 +190,7 @@
 			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr3b</name>
@@ -203,7 +203,7 @@
 			<name>lyr4</name>
 			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>80</size>
 		</font>
 		<font>
 			<name>lyr4b</name>
@@ -229,7 +229,7 @@
 		<font>
 			<name>lyr6</name>
 			<filename>lyrics/Theboldfont.ttf</filename>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr6b</name>
@@ -242,19 +242,19 @@
 			<name>lyr7</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>110</size>
+			<size>80</size>
 		</font>
 		<font>
 			<name>lyr7a</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>165</size>
+			<size>135</size>
 		</font>
 		<font>
 			<name>lyr7b</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>220</size>
+			<size>190</size>
 		</font>
 		<font>
 			<name>lyr7c</name>
@@ -267,7 +267,7 @@
 			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr8b</name>
@@ -280,7 +280,7 @@
 			<name>lyr9</name>
 			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
 			<linespacing>0.9</linespacing>
-			<size>130</size>
+			<size>90</size>
 		</font>
 		<font>
 			<name>lyr9b</name>
@@ -293,19 +293,19 @@
 			<name>lyr10</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>170</size>
+			<size>140</size>
 		</font>
 		<font>
 			<name>lyr10b</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>145</size>
+			<size>115</size>
 		</font>
 		<font>
 			<name>lyr10c</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>120</size>
+			<size>90</size>
 		</font>
 		<font>
 			<name>lyr10d</name>
@@ -316,7 +316,7 @@
 		<font>
 			<name>lyr11</name>
 			<filename>lyrics/Theboldfont.ttf</filename>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr11b</name>
@@ -330,7 +330,7 @@
 			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>275</size>
+			<size>255</size>
 		</font>
 		<font>
 			<name>lyr12b</name>
@@ -344,7 +344,7 @@
 			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>220</size>
+			<size>200</size>
 		</font>
 		<font>
 			<name>lyr12d</name>
@@ -357,7 +357,7 @@
 			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr13b</name>
@@ -370,19 +370,19 @@
 			<name>lyr14</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>130</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr14b</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>150</size>
+			<size>120</size>
 		</font>
 		<font>
 			<name>lyr14c</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>170</size>
+			<size>140</size>
 		</font>
 		<font>
 			<name>lyr14d</name>
@@ -394,7 +394,7 @@
 			<name>lyr15</name>
 			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
 			<linespacing>0.9</linespacing>
-			<size>130</size>
+			<size>90</size>
 		</font>
 		<font>
 			<name>lyr15b</name>
@@ -406,7 +406,7 @@
 		<font>
 			<name>lyr16</name>
 			<filename>lyrics/Theboldfont.ttf</filename>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr16b</name>
@@ -419,19 +419,19 @@
 			<name>lyr17</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>110</size>
+			<size>80</size>
 		</font>
 		<font>
 			<name>lyr17a</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>165</size>
+			<size>135</size>
 		</font>
 		<font>
 			<name>lyr17b</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>220</size>
+			<size>190</size>
 		</font>
 		<font>
 			<name>lyr17c</name>
@@ -443,7 +443,7 @@
 			<name>lyr18</name>
 			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>80</size>
 		</font>
 		<font>
 			<name>lyr18b</name>
@@ -457,7 +457,7 @@
 			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>230</size>
+			<size>210</size>
 		</font>
 		<font>
 			<name>lyr19b</name>
@@ -484,7 +484,7 @@
 			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr20b</name>
@@ -695,7 +695,7 @@
 		<font>
 			<name>lyr1</name>
 			<filename>lyrics/Theboldfont.ttf</filename>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr1b</name>
@@ -709,7 +709,7 @@
 			<filename>lyrics/Luckiest Guy.ttf</filename>
 			<style>uppercase</style>
 			<linespacing>0.9</linespacing>
-			<size>130</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr2b</name>
@@ -722,7 +722,7 @@
 			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr3b</name>
@@ -735,7 +735,7 @@
 			<name>lyr4</name>
 			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>80</size>
 		</font>
 		<font>
 			<name>lyr4b</name>
@@ -761,7 +761,7 @@
 		<font>
 			<name>lyr6</name>
 			<filename>lyrics/Theboldfont.ttf</filename>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr6b</name>
@@ -774,19 +774,19 @@
 			<name>lyr7</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>110</size>
+			<size>80</size>
 		</font>
 		<font>
 			<name>lyr7a</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>165</size>
+			<size>135</size>
 		</font>
 		<font>
 			<name>lyr7b</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>220</size>
+			<size>190</size>
 		</font>
 		<font>
 			<name>lyr7c</name>
@@ -799,7 +799,7 @@
 			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr8b</name>
@@ -812,7 +812,7 @@
 			<name>lyr9</name>
 			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
 			<linespacing>0.9</linespacing>
-			<size>130</size>
+			<size>90</size>
 		</font>
 		<font>
 			<name>lyr9b</name>
@@ -825,19 +825,19 @@
 			<name>lyr10</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>170</size>
+			<size>140</size>
 		</font>
 		<font>
 			<name>lyr10b</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>145</size>
+			<size>115</size>
 		</font>
 		<font>
 			<name>lyr10c</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>120</size>
+			<size>90</size>
 		</font>
 		<font>
 			<name>lyr10d</name>
@@ -848,7 +848,7 @@
 		<font>
 			<name>lyr11</name>
 			<filename>lyrics/Theboldfont.ttf</filename>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr11b</name>
@@ -862,7 +862,7 @@
 			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>275</size>
+			<size>255</size>
 		</font>
 		<font>
 			<name>lyr12b</name>
@@ -876,7 +876,7 @@
 			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>220</size>
+			<size>200</size>
 		</font>
 		<font>
 			<name>lyr12d</name>
@@ -889,7 +889,7 @@
 			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr13b</name>
@@ -902,19 +902,19 @@
 			<name>lyr14</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>130</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr14b</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>150</size>
+			<size>120</size>
 		</font>
 		<font>
 			<name>lyr14c</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>170</size>
+			<size>140</size>
 		</font>
 		<font>
 			<name>lyr14d</name>
@@ -926,7 +926,7 @@
 			<name>lyr15</name>
 			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
 			<linespacing>0.9</linespacing>
-			<size>130</size>
+			<size>90</size>
 		</font>
 		<font>
 			<name>lyr15b</name>
@@ -938,7 +938,7 @@
 		<font>
 			<name>lyr16</name>
 			<filename>lyrics/Theboldfont.ttf</filename>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr16b</name>
@@ -951,19 +951,19 @@
 			<name>lyr17</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>110</size>
+			<size>80</size>
 		</font>
 		<font>
 			<name>lyr17a</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>165</size>
+			<size>135</size>
 		</font>
 		<font>
 			<name>lyr17b</name>
 			<style>uppercase</style>
 			<filename>lyrics/Luckiest Guy.ttf</filename>
-			<size>220</size>
+			<size>190</size>
 		</font>
 		<font>
 			<name>lyr17c</name>
@@ -975,7 +975,7 @@
 			<name>lyr18</name>
 			<filename>lyrics/Geomancy - Extra Bold.ttf</filename>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>80</size>
 		</font>
 		<font>
 			<name>lyr18b</name>
@@ -989,7 +989,7 @@
 			<filename>lyrics/BOXING.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>230</size>
+			<size>210</size>
 		</font>
 		<font>
 			<name>lyr19b</name>
@@ -1016,7 +1016,7 @@
 			<filename>lyrics/SF Distant Galaxy.ttf</filename>
 			<style>lowercase</style>
 			<linespacing>0.9</linespacing>
-			<size>120</size>
+			<size>100</size>
 		</font>
 		<font>
 			<name>lyr20b</name>
