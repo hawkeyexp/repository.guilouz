@@ -21,7 +21,7 @@
 				<visible>!VideoPlayer.HasMenu</visible>
 				<animation effect="slide" end="0,-80" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo)">Conditional</animation>
 				<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139)">Conditional</animation>
-				<animation effect="slide" end="0,35" time="0" condition="[VideoPlayer.Content(files) | String.Contains(Player.Art(thumb),ytimg)] + ![Window.IsVisible(playerprocessinfo) | Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139) | Window.IsVisible(MusicVisualisation.xml)]">Conditional</animation>
+				<animation effect="slide" end="0,35" time="0" condition="[[VideoPlayer.Content(files) + !String.StartsWith(Player.Filenameandpath,http)] | String.Contains(Player.Art(thumb),ytimg)] + ![Window.IsVisible(playerprocessinfo) | Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139) | Window.IsVisible(MusicVisualisation.xml)]">Conditional</animation>
 				<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
 			</control>
 			<control type="image">
@@ -210,7 +210,7 @@
 					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingPosterVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
-					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)</visible>
+					<visible>[VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.StartsWith(Player.Filenameandpath,http)</visible>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -231,10 +231,10 @@
 					<width>440</width>
 					<height>610</height>
 					<aspectratio aligny="bottom">keep</aspectratio>
-					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingPosterVar]</texture>
+					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingLandscapeVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
-					<visible>!VideoPlayer.HasMenu + !VideoPlayer.Content(movies) + !VideoPlayer.Content(episodes) + !VideoPlayer.Content(LiveTV) + !Window.IsVisible(MusicVisualisation.xml)</visible>
+					<visible>!VideoPlayer.HasMenu + ![VideoPlayer.Content(movies) + !String.StartsWith(Player.Filenameandpath,http)] + ![VideoPlayer.Content(episodes) + !String.StartsWith(Player.Filenameandpath,http)] + !VideoPlayer.Content(LiveTV) + !Window.IsVisible(MusicVisualisation.xml)</visible>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -359,15 +359,14 @@
 						<bottom>270</bottom>
 						<right>30</right>
 						<height>30</height>
-						<label>[B]$INFO[VideoPlayer.Artist,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Album,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.TVShowTitle,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Season,$LOCALIZE[20373] , [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Episode,$LOCALIZE[20359] , [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)][/B]</label>
+						<label>[B]$INFO[VideoPlayer.Artist,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Album,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.TVShowTitle,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode,,. ]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)][/B]</label>
 						<scroll>true</scroll>
 						<font>font37</font>
 						<scroll>true</scroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>!VideoPlayer.Content(LiveTV) + !Window.IsVisible(MusicVisualisation.xml)</visible>
-						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
+						<visible>!VideoPlayer.Content(LiveTV) + !Window.IsVisible(MusicVisualisation.xml) + !Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
 						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(1138)">Conditional</animation>
-						<animation effect="slide" end="0,40" time="0" condition="[VideoPlayer.Content(files) | String.Contains(Player.Art(thumb),ytimg)] + !Window.IsVisible(1138)">Conditional</animation>
+						<animation effect="slide" end="0,40" time="0" condition="[[VideoPlayer.Content(files) + !String.StartsWith(Player.Filenameandpath,http)] | String.Contains(Player.Art(thumb),ytimg)] + !Window.IsVisible(1138)">Conditional</animation>
 					</control>
 					<control type="label">
 						<left>460</left>
@@ -402,7 +401,7 @@
 						<bottom>270</bottom>
 						<right>30</right>
 						<height>30</height>
-						<label>[B]$INFO[VideoPlayer.Title]$INFO[ListItem.Season, - ,x]$INFO[ListItem.Episode,,. ]$INFO[VideoPlayer.EpisodeName, - ][/B]</label>
+						<label>[B]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Season, - ,x]$INFO[VideoPlayer.Episode,,. ]$INFO[VideoPlayer.EpisodeName][/B]</label>
 						<scroll>true</scroll>
 						<font>font37</font>
 						<scroll>true</scroll>

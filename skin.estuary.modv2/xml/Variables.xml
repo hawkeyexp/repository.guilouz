@@ -2913,6 +2913,12 @@
 		<value condition="String.IsEmpty(Player.Art(thumb)) + VideoPlayer.Content(livetv)">DefaultTVShows.png</value>
 		<value>$INFO[Player.Art(thumb)]</value>
 	</variable>
+	<variable name="NowPlayingLandscapeVar">
+		<value condition="!String.IsEmpty(Player.Art(tvshow.landscape))">$INFO[Player.Art(tvshow.landscape)]</value>
+		<value condition="!String.IsEmpty(Player.Art(landscape))">$INFO[Player.Art(landscape)]</value>
+		<value condition="String.IsEmpty(Player.Art(thumb)) + VideoPlayer.Content(livetv)">DefaultTVShows.png</value>
+		<value>$INFO[Player.Art(thumb)]</value>
+	</variable>
 	<variable name="ShiftThumbVar">
 		<value condition="ListItem.IsParentFolder">DefaultFolderBackSquare.png</value>
 		<value condition="String.IsEmpty(Listitem.Thumb) + [String.IsEqual(listitem.dbtype,album) | String.IsEqual(listitem.dbtype,artist)]">DefaultAudio.png</value>
@@ -3085,9 +3091,9 @@
 		<value>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</value>
 	</variable>
 	<variable name="VideoPlayerResolutionFlagVar">
-		<value condition="VideoPlayer.IsStereoscopic">flags/videoresolution/3D.png</value>
-		<value condition="String.Contains(VideoPlayer.Filenameandpath,3D)">flags/videoresolution/3D.png</value>
-		<value condition="String.Contains(VideoPlayer.Filenameandpath,3d)">flags/videoresolution/3D.png</value>
+		<value condition="VideoPlayer.IsStereoscopic + !String.StartsWith(Player.Filenameandpath,http)">flags/videoresolution/3D.png</value>
+		<value condition="String.Contains(VideoPlayer.Filenameandpath,3D) + !String.StartsWith(Player.Filenameandpath,http)">flags/videoresolution/3D.png</value>
+		<value condition="String.Contains(VideoPlayer.Filenameandpath,3d) + !String.StartsWith(Player.Filenameandpath,http)">flags/videoresolution/3D.png</value>
 		<value condition="Integer.IsGreater(VideoPlayer.VideoResolution,1080)">flags/videoresolution/4K.png</value>
 		<value>$INFO[VideoPlayer.VideoResolution,flags/videoresolution/,.png]</value>
 	</variable>
