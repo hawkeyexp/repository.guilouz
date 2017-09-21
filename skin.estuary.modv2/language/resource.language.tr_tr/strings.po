@@ -65,8 +65,8 @@ msgstr "Simgeleri indir"
 
 #: /xml/Home.xml
 msgctxt "#31010"
-msgid "Devam eden filmler"
-msgstr ""
+msgid "In progress movies"
+msgstr "Devam eden filmler"
 
 #: /xml/Home.xml
 msgctxt "#31011"
@@ -244,7 +244,7 @@ msgstr "Mevcut"
 #: /xml/Variables.xml
 msgctxt "#31050"
 msgid "Show plot"
-msgstr ""
+msgstr "Özeti göster"
 
 #: /xml/VideoOSD.xml
 msgctxt "#31051"
@@ -254,7 +254,7 @@ msgstr "Dili değiştir"
 #: /xml/Includes.xml
 msgctxt "#31052"
 msgid "filtered"
-msgstr "filtrelendi"
+msgstr "filtre edilmiş"
 
 #: /xml/Font.xml
 msgctxt "#31053"
@@ -264,12 +264,12 @@ msgstr "Arial tabanlı"
 #: /xml/Variables.xml
 msgctxt "#31054"
 msgid "Forward jumping"
-msgstr ""
+msgstr "İleri atlama"
 
 #: /xml/Variables.xml
 msgctxt "#31055"
 msgid "Backward jumping"
-msgstr ""
+msgstr "Geri atlama"
 
 #: /xml/MyMusicNav.xml /xml/MyVideoNav.xml
 msgctxt "#31056"
@@ -869,7 +869,7 @@ msgstr "yazılım kod çözme"
 #: /xml/Variables.xml
 msgctxt "#40030"
 msgid "Plot masked to avoid spoilers."
-msgstr "Spoiler önlemek için maskelenmiş alan."
+msgstr "Spoiler önlemek için maskelenmiş özet."
 
 #: /xml/SkinSettings.xml
 msgctxt "#40031"
@@ -889,7 +889,7 @@ msgstr "Arka plan rengi"
 #: /xml/Variables.xml
 msgctxt "#40034"
 msgid "Next chapter"
-msgstr ""
+msgstr "Sonraki bölüm"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40035"
@@ -899,7 +899,7 @@ msgstr "Arka plan desen rengi"
 #: /xml/Variables.xml
 msgctxt "#40036"
 msgid "Previous chapter"
-msgstr ""
+msgstr "Önceki bölüm"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40037"
@@ -1029,7 +1029,7 @@ msgstr "Açıklamayı okumak için [B]OK[/B] tuşuna basın"
 #: /xml/SkinSettings.xml
 msgctxt "#40062"
 msgid "Weather icons pack"
-msgstr "Hava durumu simgeleri paketi"
+msgstr "Hava durumu simge paketi"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40063"
@@ -1256,17 +1256,17 @@ msgstr "Gelecekte yayınlanacak bölümler"
 #: /xml/SkinSettings.xml
 msgctxt "#40108"
 msgid "Studios icons pack"
-msgstr "Stüdyo simgeleri paketi"
+msgstr "Stüdyo simge paketi"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40109"
 msgid "Records labels icons pack"
-msgstr "Plak etiketleri simgeleri paketi"
+msgstr "Plak etiketleri simge paketi"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40110"
 msgid "Video genres icons pack"
-msgstr "Video türleri simgeleri paketi"
+msgstr "Video türleri simge paketi"
 
 #: /xml/Variables.xml
 msgctxt "#40111"
@@ -1852,7 +1852,7 @@ msgstr "Klasik liste"
 #: /xml/SkinSettings.xml
 msgctxt "#40228"
 msgid "Icons list"
-msgstr "Simgeler listesi"
+msgstr "Simge listesi"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40229"
@@ -1862,7 +1862,7 @@ msgstr "Kişisel API anahtarlarını yapılandır"
 #: /xml/SkinSettings.xml
 msgctxt "#40230"
 msgid "Hide video info when video is paused"
-msgstr ""
+msgstr "Video duraklatıldığında video bilgilerini gizle"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40231"
@@ -2013,7 +2013,7 @@ msgstr "Önerilen Youtube videoları"
 #: /xml/SkinSettings.xml
 msgctxt "#40262"
 msgid "Video countries icons pack"
-msgstr "Video ülkeleri simgeleri paketi"
+msgstr "Video ülkeleri simge paketi"
 
 #: /xml/Includes.xml
 msgctxt "#40263"
