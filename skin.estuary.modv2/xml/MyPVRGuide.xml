@@ -372,7 +372,7 @@
 						<right>540</right>
 						<height>30</height>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][B]$INFO[ListItem.EpgEventTitle,  [COLOR white],[/COLOR]]$INFO[ListItem.EpisodeName, [COLOR white](,)[/COLOR]][/B]</label>
+						<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][B]$INFO[ListItem.EpgEventTitle,  [COLOR white],[/COLOR]]$INFO[ListItem.Season, [COLOR white],x[/COLOR]]$INFO[ListItem.Episode,[COLOR white],. [/COLOR]]$INFO[ListItem.EpisodeName,[COLOR white],[/COLOR]][/B]</label>
 						<scroll>true</scroll>
 					</control>
 					<control type="label">
