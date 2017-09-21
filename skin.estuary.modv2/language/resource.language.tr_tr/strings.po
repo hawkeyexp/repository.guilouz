@@ -878,7 +878,7 @@ msgstr "Spoiler önlemek için bölüm özetlerini gizle"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40032"
-msgid "Debug infos"
+msgid "Debug info"
 msgstr "Hata ayıklama bilgileri"
 
 #: /xml/SkinSettings.xml
@@ -1156,7 +1156,10 @@ msgctxt "#40087"
 msgid "Show album CDArt"
 msgstr "Göster albüm CDArt"
 
-#: Empty String 40088
+#: /xml/SkinSettings.xml
+msgctxt "#40088"
+msgid "Show Clearlogo on video info"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40089"
@@ -1185,12 +1188,12 @@ msgstr "Medya etiketleri rengi"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40094"
-msgid "Show ClearArt on video infos"
+msgid "Show ClearArt on video info"
 msgstr "Video bilgilerinde ClearArt'ı göster"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40095"
-msgid "Show CDArt on video infos"
+msgid "Show CDArt on video info"
 msgstr "Video bilgilerinde CDArt'ı göster"
 
 #: /xml/VideoOSD.xml

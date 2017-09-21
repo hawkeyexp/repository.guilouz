@@ -82,6 +82,12 @@
                     <selected>!Skin.HasSetting(disable_PauseOnExtraInfos)</selected>
                     <onclick>Skin.ToggleSetting(disable_PauseOnExtraInfos)</onclick>
                 </control>
+                <control type="radiobutton" id="108">
+					<label>$LOCALIZE[40088]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(enable_playerclearlogo)</selected>
+					<onclick>Skin.ToggleSetting(enable_playerclearlogo)</onclick>
+				</control>
 				<control type="radiobutton" id="101">
 					<label>$LOCALIZE[40094]</label>
 					<include>DefaultSettingButton</include>
@@ -110,7 +116,7 @@
 				<control type="button" id="104">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(Hide_OSDInfo)|Skin.Reset(disable_PauseOnExtraInfos)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp)|Skin.Reset(show_musicvideoinfo))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(Hide_OSDInfo)|Skin.Reset(disable_PauseOnExtraInfos)|Skin.Reset(enable_playerclearlogo)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp)|Skin.Reset(show_musicvideoinfo))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">

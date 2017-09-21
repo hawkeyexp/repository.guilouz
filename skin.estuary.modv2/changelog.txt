@@ -1,4 +1,5 @@
 [B]2.7.8[/B]
+• Add possibility to disable Clearlogo on OSD
 • OSD info improvements
 • Fix Video Lyrics
 • Minor fixes

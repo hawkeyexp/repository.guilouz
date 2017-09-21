@@ -878,7 +878,7 @@ msgstr "Masquer les résumés des épisodes pour éviter les spoilers"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40032"
-msgid "Debug infos"
+msgid "Debug info"
 msgstr "Informations de débogage"
 
 #: /xml/SkinSettings.xml
@@ -1059,7 +1059,7 @@ msgstr "Nombre d'éléments à afficher sur les widgets"
 #: /xml/SkinSettings.xml
 msgctxt "#40068"
 msgid "Show media clearlogos"
-msgstr "Afficher les Clearlogos des médias"
+msgstr "Afficher les logos (ClearLogos) des médias"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40069"
@@ -1156,12 +1156,15 @@ msgctxt "#40087"
 msgid "Show album CDArt"
 msgstr "Afficher le disque de l'album"
 
-#: Empty String 40088
+#: /xml/SkinSettings.xml
+msgctxt "#40088"
+msgid "Show Clearlogo on video info"
+msgstr "Afficher le logo (ClearLogo) sur les informations de la vidéo"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40089"
 msgid "Show artist Clearlogo"
-msgstr "Afficher le logo de l'artiste"
+msgstr "Afficher le logo (ClearLogo) de l'artiste"
 
 #: /xml/MusicVisualisation.xml
 msgctxt "#40090"
@@ -1185,12 +1188,12 @@ msgstr "Couleur des indicateurs des médias"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40094"
-msgid "Show ClearArt on video infos"
-msgstr "Afficher le logo transparent sur les informations de la vidéo"
+msgid "Show ClearArt on video info"
+msgstr "Afficher le logo transparent (ClearArt) sur les informations de la vidéo"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40095"
-msgid "Show CDArt on video infos"
+msgid "Show CDArt on video info"
 msgstr "Afficher le disque sur les informations de la vidéo"
 
 #: /xml/VideoOSD.xml
@@ -1790,7 +1793,7 @@ msgstr "Triples listes"
 #: /xml/SkinSettings.xml
 msgctxt "#40215"
 msgid "Show clearlogos at the top of menu"
-msgstr "Afficher les Clearlogos au dessus du menu"
+msgstr "Afficher les logos (ClearLogos) au dessus du menu"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40216"

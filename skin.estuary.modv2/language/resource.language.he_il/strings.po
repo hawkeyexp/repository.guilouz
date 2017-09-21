@@ -879,7 +879,7 @@ msgstr "הסתר פרקים  כדי למנוע ספוילרים"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40032"
-msgid "Debug infos"
+msgid "Debug info"
 msgstr "מידע ניפוי באגים"
 
 #: /xml/SkinSettings.xml
@@ -1155,7 +1155,10 @@ msgctxt "#40087"
 msgid "Show album CDArt"
 msgstr "הצג גרפיקת דיסק"
 
-#: Empty String 40088
+#: /xml/SkinSettings.xml
+msgctxt "#40088"
+msgid "Show Clearlogo on video info"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40089"
@@ -1184,12 +1187,12 @@ msgstr "צבעי הדגל של המדיה"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40094"
-msgid "Show ClearArt on video infos"
+msgid "Show ClearArt on video info"
 msgstr "הצג אמנות שקופה על מידע הווידאו"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40095"
-msgid "Show CDArt on video infos"
+msgid "Show CDArt on video info"
 msgstr "הצג גרפיקת דיסק על מידע הווידאו"
 
 #: /xml/VideoOSD.xml

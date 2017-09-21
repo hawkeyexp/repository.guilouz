@@ -876,7 +876,7 @@ msgstr "Handlung von Episoden ausblenden"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40032"
-msgid "Debug infos"
+msgid "Debug info"
 msgstr "Debuginfo"
 
 #: /xml/SkinSettings.xml
@@ -1154,7 +1154,10 @@ msgctxt "#40087"
 msgid "Show album CDArt"
 msgstr "CD-Art für Alben anzeigen"
 
-#: Empty String 40088
+#: /xml/SkinSettings.xml
+msgctxt "#40088"
+msgid "Show Clearlogo on video info"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40089"
@@ -1183,12 +1186,12 @@ msgstr "Farbe der Medien-Flags"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40094"
-msgid "Show ClearArt on video infos"
+msgid "Show ClearArt on video info"
 msgstr "Clear-Art bei den Informationen zum Video anzeigen"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40095"
-msgid "Show CDArt on video infos"
+msgid "Show CDArt on video info"
 msgstr "CD-Art bei den Informationen zum Video anzeigen"
 
 #: /xml/VideoOSD.xml
