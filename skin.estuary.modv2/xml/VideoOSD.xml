@@ -40,7 +40,7 @@
 				<scrolltime tween="sine">200</scrolltime>
 				<orientation>horizontal</orientation>
 				<onup>87</onup>
-				<ondown/>
+				<ondown>Action(close)</ondown>
 				<onleft>200</onleft>
 				<onright>200</onright>
 				<control type="radiobutton" id="600">
