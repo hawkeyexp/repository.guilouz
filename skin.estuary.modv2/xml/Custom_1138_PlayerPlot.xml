@@ -8,13 +8,13 @@
 			<height>550</height>
 			<control type="textbox">
 				<left>460</left>
-				<top>125</top>
+				<top>123</top>
 				<right>30</right>
-				<height>222</height>
+				<height>190</height>
 				<align>justify</align>
 				<font>fontplot</font>
 				<label>$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</label>
-				<autoscroll delay="9000" time="6000" repeat="8000">true</autoscroll>
+				<autoscroll delay="9000" time="5000" repeat="8000">true</autoscroll>
 			</control>
 			<control type="button" id="800">
 				<left>-10000</left>

@@ -20,8 +20,8 @@
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<visible>!VideoPlayer.HasMenu</visible>
 				<animation effect="slide" end="0,-80" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo)">Conditional</animation>
-				<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139)">Conditional</animation>
-				<animation effect="slide" end="0,35" time="0" condition="[[VideoPlayer.Content(files) + !String.StartsWith(Player.Filenameandpath,http)] | String.Contains(Player.Art(thumb),ytimg)] + ![Window.IsVisible(playerprocessinfo) | Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139) | Window.IsVisible(MusicVisualisation.xml)]">Conditional</animation>
+				<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139) | [Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]">Conditional</animation>
+				<animation effect="slide" end="0,35" time="0" condition="[[VideoPlayer.Content(files) + !String.StartsWith(Player.Filenameandpath,http)] | String.Contains(Player.Art(thumb),ytimg)] + ![Window.IsVisible(playerprocessinfo) | Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139) | Window.IsVisible(MusicVisualisation.xml) | [Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]]">Conditional</animation>
 				<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
 			</control>
 			<control type="image">
@@ -57,9 +57,26 @@
 					</control>
 				</control>
 			</control>
+			<control type="group">
+				<bottom>0</bottom>
+				<height>550</height>
+				<visible>Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)</visible>
+				<visible>!VideoPlayer.HasMenu</visible>
+				<control type="textbox">
+					<left>460</left>
+					<top>123</top>
+					<right>30</right>
+					<height>190</height>
+					<align>justify</align>
+					<font>fontplot</font>
+					<label>$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</label>
+					<autoscroll delay="9000" time="5000" repeat="8000">true</autoscroll>
+				</control>
+			</control>	
 			<control type="group" id="6000">
 				<top>-5</top>
 				<visible>PVR.IsTimeShift + !Player.ChannelPreviewActive</visible>
+				<visible>!Window.IsActive(fullscreeninfo</visible>
 				<animation effect="fade" time="300">VisibleChange</animation>
 				<control type="label">
 					<left>460</left>
@@ -265,7 +282,7 @@
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
 						<visible>!Skin.HasSetting(enable_playerclearart)</visible>
 						<animation effect="slide" end="0,-80" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo)">Conditional</animation>
-						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139)">Conditional</animation>
+						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139) | [Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]">Conditional</animation>
 					</control>
 					<control type="image">
 						<bottom>320</bottom>
@@ -365,8 +382,8 @@
 						<scroll>true</scroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>!VideoPlayer.Content(LiveTV) + !Window.IsVisible(MusicVisualisation.xml) + !Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
-						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(1138)">Conditional</animation>
-						<animation effect="slide" end="0,40" time="0" condition="[[VideoPlayer.Content(files) + !String.StartsWith(Player.Filenameandpath,http)] | String.Contains(Player.Art(thumb),ytimg)] + !Window.IsVisible(1138)">Conditional</animation>
+						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(1138) | [Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]">Conditional</animation>
+						<animation effect="slide" end="0,40" time="0" condition="[[VideoPlayer.Content(files) + !String.StartsWith(Player.Filenameandpath,http)] | String.Contains(Player.Art(thumb),ytimg)] + !Window.IsVisible(1138) + ![Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]">Conditional</animation>
 					</control>
 					<control type="label">
 						<left>460</left>
@@ -378,8 +395,7 @@
 						<font>font37</font>
 						<scroll>true</scroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
-						<visible>String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+						<visible>Window.IsVisible(MusicVisualisation.xml) + String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 					</control>
 					<control type="label">
 						<left>460</left>
@@ -393,8 +409,7 @@
 						<scroll>true</scroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<scroll>true</scroll>
-						<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
-						<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+						<visible>Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 					</control>
 					<control type="label">
 						<left>460</left>
@@ -408,7 +423,7 @@
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>VideoPlayer.Content(LiveTV)</visible>
 						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
-						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(1138)">Conditional</animation>
+						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(1138) | [Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]">Conditional</animation>
 						<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
 					</control>
 					<control type="label">
@@ -418,8 +433,21 @@
 						<height>30</height>
 						<label>$INFO[VideoPlayer.Genre]</label>
 						<font>font12</font>
-						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1138) + !Window.IsVisible(1139)</visible>
-						<visible>!VideoPlayer.Content(LiveTV)</visible>
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<visible>!VideoPlayer.Content(LiveTV) + !Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1138) + !Window.IsVisible(1139)</visible>
+						<visible>![Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]</visible>
+					</control>
+					<control type="label">
+						<left>460</left>
+						<bottom>210</bottom>
+						<right>30</right>
+						<height>30</height>
+						<label>$INFO[VideoPlayer.Genre]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<visible>!VideoPlayer.Content(LiveTV) + !Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
+						<visible>[Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)] | Window.IsVisible(1138)</visible>
 					</control>
 					<control type="label">
 						<left>460</left>
@@ -429,8 +457,24 @@
 						<label>$INFO[VideoPlayer.ChannelName,[COLOR white],[/COLOR]]$INFO[VideoPlayer.Genre, / [COLOR white],[/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<animation effect="fade" time="200">VisibleChange</animation>
 						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1138) + !Window.IsVisible(1139)</visible>
 						<visible>VideoPlayer.Content(LiveTV)</visible>
+						<visible>![Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]</visible>
+						<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
+					</control>
+					<control type="label">
+						<left>460</left>
+						<bottom>210</bottom>
+						<right>30</right>
+						<height>30</height>
+						<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Genre, [COLOR white]/[/COLOR]]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
+						<visible>VideoPlayer.Content(LiveTV)</visible>
+						<visible>[Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)] | Window.IsVisible(1138)</visible>
 						<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
 					</control>
 					<control type="label">
@@ -441,8 +485,7 @@
 						<label>$INFO[MusicPlayer.Album,[COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]$INFO[MusicPlayer.TrackNumber, / [COLOR white],. [/COLOR]]$INFO[MusicPlayer.Title,[COLOR white],[/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
-						<visible>String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+						<visible>Window.IsVisible(MusicVisualisation.xml) + String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 					</control>
 					<control type="label">
 						<left>460</left>
@@ -454,8 +497,7 @@
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<scroll>true</scroll>
-						<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
-						<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+						<visible>Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
 					</control>
 					<control type="label">
 						<left>460</left>
@@ -465,8 +507,24 @@
 						<align>right</align>
 						<label>$INFO[player.chapter,$LOCALIZE[21396] ]$INFO[player.chaptercount, / ]</label>
 						<font>font12</font>
+						<animation effect="fade" time="200">VisibleChange</animation>
 						<visible>player.chaptercount</visible>
 						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1138) + !Window.IsVisible(1139)</visible>
+						<visible>![Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]</visible>
+					</control>
+					<control type="label">
+						<left>460</left>
+						<bottom>210</bottom>
+						<right>30</right>
+						<height>30</height>
+						<align>right</align>
+						<label>$INFO[player.chapter,$LOCALIZE[21396] ]$INFO[player.chaptercount, / ]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<animation effect="fade" time="200">VisibleChange</animation>
+						<visible>player.chaptercount</visible>
+						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
+						<visible>[Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)] | Window.IsVisible(1138)</visible>
 					</control>
 					<control type="label">
 						<left>460</left>
@@ -479,7 +537,7 @@
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<scroll>true</scroll>
 						<visible>VideoPlayer.HasEpg + VideoPlayer.Content(LiveTV)</visible>
-						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1138) + !Window.IsVisible(1139)</visible>
+						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
 						<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
 					</control>
 				</control>
