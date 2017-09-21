@@ -244,7 +244,7 @@ msgstr "Mevcut"
 #: /xml/Variables.xml
 msgctxt "#31050"
 msgid "Show plot"
-msgstr "Plot göster"
+msgstr "Özeti göster"
 
 #: /xml/VideoOSD.xml
 msgctxt "#31051"
@@ -869,7 +869,7 @@ msgstr "yazılım kod çözme"
 #: /xml/Variables.xml
 msgctxt "#40030"
 msgid "Plot masked to avoid spoilers."
-msgstr "Spoiler önlemek için maskelenmiş alan."
+msgstr "Spoiler önlemek için maskelenmiş özet."
 
 #: /xml/SkinSettings.xml
 msgctxt "#40031"
