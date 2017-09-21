@@ -1832,7 +1832,7 @@
 						<animation effect="fade" time="200">VisibleChange</animation>
 						<onclick>SetFocus(8000)</onclick>
 						<visible>!Control.IsVisible(6160)</visible>
-						<visible>[Control.HasFocus(531) | Control.HasFocus(5199)] + ![Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(503) | Control.IsVisible(506)]</visible>
+						<visible>[Control.HasFocus(531) | Control.HasFocus(5199) | Control.HasFocus(50600) | Control.HasFocus(502600)] + ![Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(503) | Control.IsVisible(506)]</visible>
 						<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,set) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,artist) | String.IsEqual(ListItem.dbtype,album) | String.IsEqual(ListItem.dbtype,musicvideo) | Container.Content(addons)</visible>
 					</control>
 					<control type="button">
@@ -1884,7 +1884,7 @@
 						<onclick>SetFocus(8000)</onclick>
 						<texturefocus />
 						<texturenofocus />
-						<visible>Control.HasFocus(531) | Control.HasFocus(5199)</visible>
+						<visible>Control.HasFocus(531) | Control.HasFocus(5199) | Control.HasFocus(50600) | Control.HasFocus(502600)</visible>
 						<animation effect="fade" time="200">VisibleChange</animation>
 						<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,set) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,artist) | String.IsEqual(ListItem.dbtype,album) | String.IsEqual(ListItem.dbtype,musicvideo) | Container.Content(addons)</visible>
 					</control>
