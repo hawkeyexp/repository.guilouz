@@ -676,7 +676,7 @@
 					<include content="InfoDialogButton">
 						<param name="id" value="8" />
 						<param name="icon" value="icons/infodialogs/play.png" />
-						<param name="label" value="$LOCALIZE[208]" />
+						<param name="label" value="$VAR[PlayButtonLabelInfoDialog]" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="11" />
