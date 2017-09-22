@@ -740,7 +740,7 @@
 							<include content="Visible_Right_Delayed">
 								<param name="id" value="4"/>
 							</include>
-							<itemlayout height="300" width="300">
+							<itemlayout height="300" width="320">
 								<control type="group">
 									<left>64</left>
 									<top>110</top>
@@ -749,7 +749,7 @@
 									</include>
 								</control>
 							</itemlayout>
-							<focusedlayout height="300" width="300">
+							<focusedlayout height="300" width="320">
 								<control type="group">
 									<depth>DepthContentPopout</depth>
 									<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
@@ -1167,7 +1167,7 @@
 					<left>490</left>
 					<top>0</top>
 					<right>15</right>
-					<height>1920</height>
+					<height>100%</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font32_title</font>

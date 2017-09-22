@@ -1500,9 +1500,9 @@
 									</control>
 									<control type="textbox">
 										<left>40</left>
-										<top>40</top>
+										<top>45</top>
 										<width>550</width>
-										<height>320</height>
+										<height>310</height>
 										<align>center</align>
 										<font>font12</font>
 										<label>$INFO[ListItem.Property(Author),[B],[/B][CR]]$INFO[ListItem.Property(Content)]</label>
@@ -1538,12 +1538,13 @@
 									</control>
 									<control type="textbox">
 										<left>40</left>
-										<top>40</top>
+										<top>45</top>
 										<width>550</width>
-										<height>320</height>
+										<height>310</height>
 										<align>center</align>
 										<font>font12</font>
 										<label>$INFO[ListItem.Property(Author),[B],[/B][CR]]$INFO[ListItem.Property(Content)]</label>
+										<autoscroll delay="8000" time="5000" repeat="8000">true</autoscroll>
 									</control>
 								</control>
 							</focusedlayout>
