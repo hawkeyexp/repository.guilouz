@@ -76,7 +76,7 @@
 			<control type="group" id="6000">
 				<top>-5</top>
 				<visible>PVR.IsTimeShift + !Player.ChannelPreviewActive</visible>
-				<visible>!Window.IsActive(fullscreeninfo</visible>
+				<visible>!Window.IsActive(fullscreeninfo)</visible>
 				<animation effect="fade" time="300">VisibleChange</animation>
 				<control type="label">
 					<left>460</left>
@@ -178,7 +178,7 @@
 					<bottom>245</bottom>
 					<width>360</width>
 					<height>360</height>
-					<visible>Window.IsVisible(MusicVisualisation.xml + !Skin.HasSetting(show_disc)</visible>
+					<visible>Window.IsVisible(MusicVisualisation.xml) + !Skin.HasSetting(show_disc)</visible>
 					<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
 					<control type="image" id="88888">
 						<left>0</left>
