@@ -1874,6 +1874,7 @@
 								<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 								<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000) | System.HasActiveModalDialog">Conditional</animation>
 								<visible>!Skin.HasSetting(MinimizeMainMenu)</visible>
+								<visible>!ControlGroup(700).HasFocus</visible>
 							</control>
 							<control type="image">
 								<left>0</left>
@@ -1883,6 +1884,7 @@
 								<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
 								<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000) | System.HasActiveModalDialog">Conditional</animation>
 								<visible>!Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(EnableGradientColor)</visible>
+								<visible>!ControlGroup(700).HasFocus</visible>
 							</control>
 							<control type="image">
 								<left>0</left>
@@ -1892,6 +1894,7 @@
 								<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 								<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000) | System.HasActiveModalDialog">Conditional</animation>
 								<visible>Skin.HasSetting(MinimizeMainMenu)</visible>
+								<visible>!ControlGroup(700).HasFocus</visible>
 							</control>
 							<control type="image">
 								<left>0</left>
@@ -1901,6 +1904,7 @@
 								<texture colordiffuse="$VAR[GradientColorVar]">lists/focus-gradient.png</texture>
 								<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000) | System.HasActiveModalDialog">Conditional</animation>
 								<visible>Skin.HasSetting(MinimizeMainMenu) + Skin.HasSetting(EnableGradientColor)</visible>
+								<visible>!ControlGroup(700).HasFocus</visible>
 							</control>
 							<control type="image">
 								<left>71</left>
@@ -1918,6 +1922,7 @@
 								<texture colordiffuse="51FFFFFF">colors/black.png</texture>
 								<animation effect="fade" start="100" end="50" time="40" condition="!Control.HasFocus(9000) | System.HasActiveModalDialog">Conditional</animation>
 								<visible>!Skin.HasSetting(MinimizeMainMenu) + !Skin.HasSetting(EnableGradientColor)</visible>
+								<visible>!ControlGroup(700).HasFocus</visible>
 							</control>
 						</control>
 						<control type="image">
@@ -1927,6 +1932,16 @@
 							<height>95</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<include>Animation_FocusBounce_Home</include>
+							<visible>!ControlGroup(700).HasFocus</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<width>95</width>
+							<height>95</height>
+							<texture colordiffuse="44FFFFFF">$INFO[ListItem.Icon]</texture>
+							<include>Animation_FocusBounce_Home</include>
+							<visible>ControlGroup(700).HasFocus</visible>
 						</control>
 						<control type="image">
 							<left>71</left>
@@ -1982,7 +1997,6 @@
 					<top>100</top>
 					<onup>SetFocus(9000,99,absolute)</onup>
 					<ondown>SetFocus(9000,0,absolute)</ondown>
-					<onright>2000</onright>
 					<align>justify</align>
 					<visible>!Skin.HasSetting(MinimizeMainMenu)</visible>
 					<include content="IconButton">
@@ -2083,7 +2097,6 @@
 					<top>100</top>
 					<onup>SetFocus(9000,99,absolute)</onup>
 					<ondown>SetFocus(9000,0,absolute)</ondown>
-					<onright>2000</onright>
 					<visible>Skin.HasSetting(MinimizeMainMenu)</visible>
 					<include content="IconButton">
 						<param name="control_id" value="804" />
@@ -2192,7 +2205,7 @@
 						<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 						<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 						<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
-						<visible>ControlGroup(700).HasFocus + Container(700).HasPrevious</visible>
+						<visible>ControlGroup(700).HasFocus</visible>
 						<visible>Skin.HasSetting(MinimizeMainMenu)</visible>
 					</control>
 					<control type="image">
@@ -2204,7 +2217,7 @@
 						<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 						<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 						<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
-						<visible>ControlGroup(700).HasFocus + [Container(700).HasPrevious | Container(700).HasNext]</visible>
+						<visible>ControlGroup(700).HasFocus</visible>
 						<visible>Skin.HasSetting(MinimizeMainMenu)</visible>
 					</control>
 					<control type="image">
@@ -2216,7 +2229,7 @@
 						<animation effect="zoom" start="0,100" end="100,100" center="auto" time="200">VisibleChange</animation>
 						<animation effect="zoom" start="0,100" end="100,100" delay="500" center="auto" time="200">WindowOpen</animation>
 						<animation effect="zoom" start="100,100" end="0,100" center="auto" time="200">WindowClose</animation>
-						<visible>ControlGroup(700).HasFocus + Container(700).HasNext</visible>
+						<visible>ControlGroup(700).HasFocus</visible>
 						<visible>Skin.HasSetting(MinimizeMainMenu)</visible>
 					</control>
 				</control>

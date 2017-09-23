@@ -1,4 +1,5 @@
 [B]2.7.9[/B]
+• Improvements
 • Fix missing 'Jump to letter' functionality for some views
 • Minor fixes
 

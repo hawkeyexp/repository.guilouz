@@ -468,7 +468,7 @@
 						<bottom>210</bottom>
 						<right>30</right>
 						<height>30</height>
-						<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Genre, [COLOR white]/[/COLOR]]</label>
+						<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Genre,[COLOR white] / [/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<animation effect="fade" time="200">VisibleChange</animation>
