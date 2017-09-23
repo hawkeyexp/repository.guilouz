@@ -3,6 +3,7 @@
 	<defaultcontrol always="true">8</defaultcontrol>
 	<onload>SetProperty(infobackground,$ESCINFO[ListItem.Art(fanart)],home)</onload>
 	<onunload>ClearProperty(infobackground,home)</onunload>
+	<onunload>ClearProperty(CastPosition,home)</onunload>
 	<controls>
 		<include condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml)">DefaultBackground</include>
 		<control type="group">
@@ -181,7 +182,7 @@
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
-						<onup>50</onup>
+						<onup>501</onup>
 						<onleft>138</onleft>
 						<onright>138</onright>
 						<ondown>5000</ondown>
@@ -216,7 +217,7 @@
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Header,$LOCALIZE[207],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">SetProperty(TextViewer_Text,$ESCINFO[ListItem.Plot],home)</onclick>
 						<onclick condition="!String.IsEmpty(ListItem.Plot)">ActivateWindow(1102)</onclick>
-						<onup>50</onup>
+						<onup>501</onup>
 						<onleft>138</onleft>
 						<onright>138</onright>
 						<ondown>5000</ondown>
@@ -355,7 +356,7 @@
 					<height>358</height>
 					<itemgap>-8</itemgap>
 					<ondown>5000</ondown>
-					<onup>50</onup>
+					<onup>501</onup>
 					<onright>140</onright>
 					<onleft>140</onleft>
 					<visible>!Control.HasFocus(439)</visible>
@@ -500,6 +501,13 @@
 						<label>$LOCALIZE[31079]</label>
 					</control>
 				</control>
+				<control type="button" id="501">
+					<left>-10000</left>
+            		<width>10</width>
+            		<height>1</height>
+					<onfocus condition="String.IsEmpty(Window(home).Property(CastPosition))">Control.SetFocus(50,0,absolute)</onfocus>
+					<onfocus condition="!String.IsEmpty(Window(home).Property(CastPosition))">Control.SetFocus(50)</onfocus>
+				</control>
 				<control type="panel" id="50">
 					<top>158</top>
 					<width>1246</width>
@@ -508,6 +516,7 @@
 					<onright>50</onright>
 					<onup condition="System.hasAddon(script.extendedinfo) + Control.HasFocus(50)">RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onup>
 					<onup condition="!System.hasAddon(script.extendedinfo)">InstallAddon(script.extendedinfo)</onup>
+					<onfocus>SetProperty(CastPosition,true,home)</onfocus>
 					<ondown>140</ondown>
 					<scrolltime>200</scrolltime>
 					<orientation>horizontal</orientation>
