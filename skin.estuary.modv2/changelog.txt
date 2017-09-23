@@ -1,6 +1,8 @@
 [B]2.7.9[/B]
 • Improvements
 • Fix missing 'Jump to letter' functionality for some views
+• Fix pause video during access to extended info with TV Shows
+• Fix on PVR Radio
 • Minor fixes
 
 [B]2.7.8[/B]

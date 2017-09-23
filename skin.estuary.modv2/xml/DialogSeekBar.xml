@@ -211,7 +211,7 @@
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>Font-Disc</font>
-						<label>$INFO[MusicPlayer.Album]</label>
+						<label>$VAR[MusicPlayerDiscAlbumVar]</label>
 						<textcolor>black</textcolor>
 						<wrapmultiline>true</wrapmultiline>
 						<visible>String.IsEqual(Control.GetLabel(88888),osd/cd.png)</visible>
@@ -235,22 +235,11 @@
 					<bottom>5</bottom>
 					<width>440</width>
 					<height>440</height>
-					<aspectratio aligny="bottom">stretch</aspectratio>
-					<texture background="true" colordiffuse="FF1E1E1E">colors/white.png</texture>
-					<bordersize>20</bordersize>
-					<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
-				</control>
-				<control type="image">
-					<depth>DepthOSD+</depth>
-					<left>10</left>
-					<bottom>5</bottom>
-					<width>440</width>
-					<height>440</height>
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<texture background="true" fallback="DefaultAudio.png">$VAR[MusicPlayerCover]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
-					<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
+					<visible>Window.IsVisible(MusicVisualisation.xml) + !Pvr.IsPlayingRadio</visible>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -273,7 +262,30 @@
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<texture background="true" fallback="DefaultTVSquare.png">$VAR[NowPlayingPosterVar]</texture>
 					<bordersize>20</bordersize>
-					<visible>VideoPlayer.Content(LiveTV)</visible>
+					<visible>VideoPlayer.Content(LiveTV) + !Pvr.IsPlayingRadio</visible>
+				</control>
+				<control type="image">
+					<depth>DepthOSD+</depth>
+					<left>10</left>
+					<bottom>5</bottom>
+					<width>440</width>
+					<height>440</height>
+					<aspectratio aligny="bottom">stretch</aspectratio>
+					<texture background="true" colordiffuse="FF1E1E1E">colors/white.png</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+					<visible>VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio</visible>
+				</control>
+				<control type="image">
+					<depth>DepthOSD+</depth>
+					<left>20</left>
+					<bottom>15</bottom>
+					<width>420</width>
+					<height>420</height>
+					<aspectratio aligny="center" align="center">keep</aspectratio>
+					<texture background="true" fallback="DefaultAudio.png">$INFO[Player.Art(thumb)]</texture>
+					<bordersize>20</bordersize>
+					<visible>VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio</visible>
 				</control>
 				<control type="group">
 					<left>205</left>
@@ -493,7 +505,7 @@
 						<bottom>210</bottom>
 						<right>30</right>
 						<height>30</height>
-						<label>$INFO[MusicPlayer.Artist,[COLOR white][B],[/COLOR] - [/B]]$INFO[MusicPlayer.Album,[COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]</label>
+						<label>$INFO[MusicPlayer.Artist,[COLOR white][B],[/B][/COLOR]]$INFO[MusicPlayer.Album,[B] - [/B][COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>Window.IsVisible(MusicVisualisation.xml) + String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
@@ -504,7 +516,7 @@
 						<right>30</right>
 						<height>30</height>
 						<width>36.5%</width>
-						<label>$INFO[MusicPlayer.Artist,[COLOR white][B],[/COLOR] - [/B]]$INFO[MusicPlayer.Album,[COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]</label>
+						<label>$INFO[MusicPlayer.Artist,[COLOR white][B],[/B][/COLOR]]$INFO[MusicPlayer.Album,[B] - [/B][COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<scroll>true</scroll>

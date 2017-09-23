@@ -191,7 +191,7 @@
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/extendedinfo.png"/>
 					</include>
-					<onclick>PlayerControl(Play)</onclick>
+					<onclick condition="!Skin.HasSetting(disable_PauseOnExtraInfos)">PlayerControl(Play)</onclick>
 					<onclick>RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[VideoPlayer.TvShowTitle])</onclick>
 					<visible>!VideoPlayer.Content(livetv) + !VideoPlayer.HasMenu + !VideoPlayer.Content(musicvideos)</visible>
 					<visible>VideoPlayer.Content(episodes) + System.HasAddon(script.extendedinfo)</visible>

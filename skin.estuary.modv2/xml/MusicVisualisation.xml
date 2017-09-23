@@ -69,6 +69,20 @@
                 <textcolor>99cccccc</textcolor>
                 <align>left</align>
                 <scrollspeed>80</scrollspeed>
+                 <visible>!Pvr.IsPlayingRadio</visible>
+            </control>
+             <control type="label">
+                <description>Now Playing</description>
+                <left>0</left>
+                <top>210</top>
+                <right>0</right>
+                <label>$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]$INFO[VideoPlayer.ChannelName,  ,]</label>
+                <scroll>true</scroll>
+                <font>font_musicvis_big</font>
+                <textcolor>99cccccc</textcolor>
+                <align>left</align>
+                <scrollspeed>80</scrollspeed>
+                <visible>Pvr.IsPlayingRadio</visible>
             </control>
         </control>
 	</controls>

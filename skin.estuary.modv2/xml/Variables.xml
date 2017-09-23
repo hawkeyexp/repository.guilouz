@@ -2572,10 +2572,16 @@
 		<value condition="VideoPlayer.Content(livetv)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[VideoPlayer.Title]</value>
 	</variable>
 	<variable name="MusicPlayerDiscTitleVar">
+		<value condition="Pvr.IsPlayingRadio">$INFO[VideoPlayer.ChannelName]</value>
 		<value condition="!String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]</value>
-		<value>$INFO[Player.Title]</value>
+		<value>$INFO[MusicPlayer.Title]</value>
+	</variable>
+	<variable name="MusicPlayerDiscAlbumVar">
+		<value condition="Pvr.IsPlayingRadio">$INFO[MusicPlayer.Title]</value>
+		<value>$INFO[MusicPlayer.Album]</value>
 	</variable>
 	<variable name="PlayerFanartVar">
+		<value condition="Pvr.IsPlayingRadio">special://skin/extras/home-images/radio.jpg</value>
 		<value condition="Skin.HasSetting(enable_artistslideshow) + !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)]</value>
 		<value condition="Skin.HasSetting(enable_artistslideshow) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Player.Art(fanart)]</value>
 		<value condition="!Skin.HasSetting(enable_artistslideshow)">$INFO[Player.Art(fanart)]</value>
