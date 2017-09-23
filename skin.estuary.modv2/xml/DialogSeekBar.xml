@@ -236,6 +236,17 @@
 					<width>440</width>
 					<height>440</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
+					<texture background="true" colordiffuse="FF1E1E1E">colors/white.png</texture>
+					<bordersize>20</bordersize>
+					<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
+				</control>
+				<control type="image">
+					<depth>DepthOSD+</depth>
+					<left>10</left>
+					<bottom>5</bottom>
+					<width>440</width>
+					<height>440</height>
+					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<texture background="true" fallback="DefaultAudio.png">$VAR[MusicPlayerCover]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
@@ -247,7 +258,7 @@
 					<bottom>5</bottom>
 					<width>440</width>
 					<height>610</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingLandscapeVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
@@ -259,7 +270,7 @@
 					<bottom>5</bottom>
 					<width>440</width>
 					<height>610</height>
-					<aspectratio aligny="bottom">keep</aspectratio>
+					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<texture background="true" fallback="DefaultTVSquare.png">$VAR[NowPlayingPosterVar]</texture>
 					<bordersize>20</bordersize>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
@@ -337,7 +348,7 @@
 							<width>526</width>
 							<align>right</align>
 							<height>38</height>
-							<label>[COLOR white]$INFO[MusicPlayer.Offset(1).Title]$INFO[MusicPlayer.Offset(1).Artist, - [B],[/B]][/COLOR]</label>
+							<label>[COLOR white]$INFO[MusicPlayer.Offset(1).TrackNumber,,. ]$INFO[MusicPlayer.Offset(1).Title]$INFO[MusicPlayer.Offset(1).Artist, - [B],[/B]][/COLOR]</label>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<font>font12</font>
 							<aligny>center</aligny>
@@ -350,7 +361,7 @@
 							<width>526</width>
 							<align>right</align>
 							<height>38</height>
-							<label>[COLOR white]$INFO[MusicPlayer.Offset(2).Title]$INFO[MusicPlayer.Offset(2).Artist, - [B],[/B]][/COLOR]</label>
+							<label>[COLOR white]$INFO[MusicPlayer.Offset(2).TrackNumber,,. ]$INFO[MusicPlayer.Offset(2).Title]$INFO[MusicPlayer.Offset(2).Artist, - [B],[/B]][/COLOR]</label>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<font>font12</font>
 							<aligny>center</aligny>
@@ -363,7 +374,7 @@
 							<width>526</width>
 							<align>right</align>
 							<height>38</height>
-							<label>[COLOR white]$INFO[MusicPlayer.Offset(3).Title]$INFO[MusicPlayer.Offset(3).Artist, - [B],[/B]][/COLOR]</label>
+							<label>[COLOR white]$INFO[MusicPlayer.Offset(3).TrackNumber,,. ]$INFO[MusicPlayer.Offset(3).Title]$INFO[MusicPlayer.Offset(3).Artist, - [B],[/B]][/COLOR]</label>
 							<textcolor>$VAR[SkinColorVar]</textcolor>
 							<font>font12</font>
 							<aligny>center</aligny>
@@ -390,7 +401,7 @@
 						<bottom>270</bottom>
 						<right>30</right>
 						<height>30</height>
-						<label>[B]$INFO[MusicPlayer.Artist][/B]</label>
+						<label>[B]$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title][/B]</label>
 						<scroll>true</scroll>
 						<font>font37</font>
 						<scroll>true</scroll>
@@ -403,7 +414,7 @@
 						<right>30</right>
 						<height>30</height>
 						<width>36.5%</width>
-						<label>[B]$INFO[MusicPlayer.Artist][/B]</label>
+						<label>[B]$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title][/B]</label>
 						<scroll>true</scroll>
 						<font>font37</font>
 						<scroll>true</scroll>
@@ -454,7 +465,7 @@
 						<bottom>210</bottom>
 						<right>30</right>
 						<height>30</height>
-						<label>$INFO[VideoPlayer.ChannelName,[COLOR white],[/COLOR]]$INFO[VideoPlayer.Genre, / [COLOR white],[/COLOR]]</label>
+						<label>$INFO[VideoPlayer.ChannelName,[COLOR white][B],[/B][/COLOR]]$INFO[VideoPlayer.Genre, [B]-[/B] [COLOR white],[/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<animation effect="fade" time="200">VisibleChange</animation>
@@ -468,7 +479,7 @@
 						<bottom>210</bottom>
 						<right>30</right>
 						<height>30</height>
-						<label>$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Genre,[COLOR white] / [/COLOR]]</label>
+						<label>$INFO[VideoPlayer.ChannelName,[B],[/B]]$INFO[VideoPlayer.Genre,[COLOR white] [B]-[/B] [/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<animation effect="fade" time="200">VisibleChange</animation>
@@ -482,7 +493,7 @@
 						<bottom>210</bottom>
 						<right>30</right>
 						<height>30</height>
-						<label>$INFO[MusicPlayer.Album,[COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]$INFO[MusicPlayer.TrackNumber, / [COLOR white],. [/COLOR]]$INFO[MusicPlayer.Title,[COLOR white],[/COLOR]]</label>
+						<label>$INFO[MusicPlayer.Artist,[COLOR white][B],[/COLOR] - [/B]]$INFO[MusicPlayer.Album,[COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>Window.IsVisible(MusicVisualisation.xml) + String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
@@ -493,7 +504,7 @@
 						<right>30</right>
 						<height>30</height>
 						<width>36.5%</width>
-						<label>$INFO[MusicPlayer.Album,[COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]$INFO[MusicPlayer.TrackNumber, / [COLOR white],. [/COLOR]]$INFO[MusicPlayer.Title,[COLOR white],[/COLOR]]</label>
+						<label>$INFO[MusicPlayer.Artist,[COLOR white][B],[/COLOR] - [/B]]$INFO[MusicPlayer.Album,[COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<scroll>true</scroll>
