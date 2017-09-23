@@ -112,6 +112,7 @@
 			<scroll>true</scroll>
 			<include>Animation_BottomSlide</include>
 			<visible>Player.ShowInfo | Window.IsActive(musicosd)</visible>
+			<visible>!Window.IsActive(musicosd)</visible>
 		</control>
 		<!-- ** Required ** Do not change <id> or <type> -->
 		<!-- ** Required ** Do not change <id> or <type> -->
