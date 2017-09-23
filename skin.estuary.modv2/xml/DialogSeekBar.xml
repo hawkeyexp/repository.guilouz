@@ -339,7 +339,7 @@
 							<right>0</right>
 							<width>151</width>
 							<height>151</height>
-							<texture background="true" border="2" fallback="DefaultAudioCover.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
+							<texture background="true" border="2" fallback="DefaultAudio.png">$INFO[MusicPlayer.offset(1).Cover]</texture>
 							<bordertexture>dialogs/back.png</bordertexture>
 							<bordersize>2</bordersize>
 							<visible>!String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
