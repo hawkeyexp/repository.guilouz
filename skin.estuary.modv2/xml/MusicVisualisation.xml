@@ -7,7 +7,7 @@
 		<control type="visualisation">
 			<include>FullScreenDimensions</include>
 			<visible>Player.HasAudio</visible>
-			<visible>Skin.HasSetting(enable_visualisation)</visible>
+			<visible>Skin.HasSetting(enable_visualisation) + Skin.HasSetting(show_visualisationbehind)</visible>
 		</control>
 		<control type="multiimage">
 			<left>0</left>
@@ -24,6 +24,11 @@
 			<animation effect="zoom" start="110" end="130" center="auto" time="10000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 			<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 			<visible>!Skin.HasSetting(hide_background_fanart)</visible>
+		</control>
+		<control type="visualisation">
+			<include>FullScreenDimensions</include>
+			<visible>Player.HasAudio</visible>
+			<visible>Skin.HasSetting(enable_visualisation) + !Skin.HasSetting(show_visualisationbehind)</visible>
 		</control>
 		<control type="group">
             <top>150</top>

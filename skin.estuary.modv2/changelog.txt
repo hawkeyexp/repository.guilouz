@@ -1,4 +1,5 @@
 [B]2.7.9[/B]
+• Add possibility to show visualisation effects behind background
 • Improvements
 • Fix missing 'Jump to letter' functionality for some views
 • Fix pause video during access to extended info with TV Shows

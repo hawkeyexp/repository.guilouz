@@ -1726,7 +1726,10 @@ msgctxt "#40201"
 msgid "Rating text color"
 msgstr "Couleur du texte des notes"
 
-#: Empty String 40202
+#: /xml/SkinSettings.xml
+msgctxt "#40202"
+msgid "Show visualisation effects behind background"
+msgstr "Afficher les effets de visualisation derrière l'arrière-plan"
 
 #: /shortcuts/overrides.xml
 msgctxt "#40203"

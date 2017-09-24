@@ -1725,7 +1725,11 @@ msgctxt "#40201"
 msgid "Rating text color"
 msgstr "צבע הטקס לדירוג"
 
-#: Empty String 40202 /shortcuts/overrides.xml
+#: /xml/SkinSettings.xml
+msgctxt "#40202"
+msgid "Show visualisation effects behind background"
+msgstr ""
+
 msgctxt "#40203"
 msgid "Posters panel"
 msgstr "לוח פוסטרים"
@@ -1837,7 +1841,8 @@ msgctxt "#40224"
 msgid "Secondary color"
 msgstr "צבע משני"
 
-#: Empty String 40225 /xml/script-skinshortcuts.xml
+#: Empty String 40225
+
 msgctxt "#40226"
 msgid "Personalize 'Categories' widget"
 msgstr "התאם אישית את יישומון 'הקטגוריות'"

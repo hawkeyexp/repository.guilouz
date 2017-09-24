@@ -1726,7 +1726,10 @@ msgctxt "#40201"
 msgid "Rating text color"
 msgstr "Derecelendirme metni rengi"
 
-#: Empty String 40202
+#: /xml/SkinSettings.xml
+msgctxt "#40202"
+msgid "Show visualisation effects behind background"
+msgstr ""
 
 #: /shortcuts/overrides.xml
 msgctxt "#40203"
