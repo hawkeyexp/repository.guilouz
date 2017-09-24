@@ -808,7 +808,7 @@
 						</include>
 						<include content="WidgetListChannels" condition="System.HasPVRAddon + !Skin.HasSetting(hide_recordingradio)">
 							<param name="content_path" value="pvr://recordings/radio/active?view=flat"/>
-							<param name="sortby" value="date"/>
+							<param name="sortby" value="sorttitle"/>
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[31015]"/>
 							<param name="widget_header_focus" value="$INFO[Container(13300).ListItem.Label, | ]"/>
