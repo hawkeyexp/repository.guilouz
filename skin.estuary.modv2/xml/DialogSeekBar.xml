@@ -615,39 +615,6 @@
 				<align>right</align>
 				<visible>VideoPlayer.Content(livetv)</visible>
 			</control>
-			<control type="group">
-				<left>460</left>
-				<bottom>145</bottom>
-				<right>30</right>
-				<height>50</height>
-				<visible>!Window.IsVisible(1122) + !Window.IsVisible(1139) + !Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(MusicVisualisation.xml)</visible>
-				<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
-				<control type="image">
-					<right>0</right>
-					<width>160</width>
-					<bottom>21</bottom>
-					<height>8</height>
-					<texture border="3" colordiffuse="60FFFFFF">colors/white50.png</texture>
-				</control>
-				<control type="progress" id="30000">
-					<right>0</right>
-					<width>160</width>
-					<bottom>29</bottom>
-					<height>2</height>
-					<info>Player.Volume</info>
-					<midtexture colordiffuse="$VAR[SkinColorVar]" border="4">colors/white.png</midtexture>
-					<texturebg />
-					<visible>!Player.Muted</visible>
-				</control>
-				<control type="image">
-					<bottom>10</bottom>
-					<right>170</right>
-					<height>30</height>
-					<width>30</width>
-					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture>$VAR[VolumeIconOSDVar]</texture>
-				</control>
-			</control>
 			<control type="grouplist">
 				<left>460</left>
 				<bottom>145</bottom>

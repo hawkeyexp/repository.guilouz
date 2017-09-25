@@ -73,7 +73,7 @@
 						<fadetime>300</fadetime>
 						<aspectratio aligny="center" align="right">keep</aspectratio>
 						<texture>dialogs/volume/mute.png</texture>
-						<visible>Player.Muted + ![Window.IsActive(seekbar) + Window.IsActive(fullscreenvideo)]</visible>
+						<visible>Player.Muted</visible>
 					</control>
 				</control>
 			</control>
