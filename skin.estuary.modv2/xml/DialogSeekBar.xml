@@ -76,7 +76,6 @@
 			<control type="group" id="6000">
 				<top>-5</top>
 				<visible>PVR.IsTimeShift + !Player.ChannelPreviewActive</visible>
-				<visible>!Window.IsActive(fullscreeninfo)</visible>
 				<animation effect="fade" time="300">VisibleChange</animation>
 				<control type="label">
 					<left>460</left>
