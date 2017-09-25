@@ -3325,6 +3325,12 @@
 		<value condition="player.passthrough">dialogs/volume/volume.png</value>
 		<value>dialogs/volume/volume1.png</value>
 	</variable>
+	<variable name="VolumeIconOSDVar">
+		<value condition="Integer.IsGreater(Control.GetLabel(30000),66)">dialogs/volume/volume.png</value>
+		<value condition="Integer.IsGreater(Control.GetLabel(30000),33)">dialogs/volume/volume2.png</value>
+		<value condition="Integer.IsGreaterOrEqual(Control.GetLabel(30000),1)">dialogs/volume/volume1.png</value>
+		<value>dialogs/volume/mute.png</value>
+	</variable>
 	<variable name="ListSubLabelVar">
 		<value condition="ListItem.IsCollection"></value>
 		<value>$INFO[ListItem.Year, (,)]</value>
