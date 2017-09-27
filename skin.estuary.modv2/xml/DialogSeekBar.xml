@@ -308,7 +308,7 @@
 				<control type="group">
 					<visible>!VideoPlayer.HasMenu</visible>
 					<control type="image">
-						<right>30</right>
+						<right>0</right>
 						<bottom>310</bottom>
 						<width>500</width>
 						<height>281</height>

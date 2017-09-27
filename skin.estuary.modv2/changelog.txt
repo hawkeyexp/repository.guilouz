@@ -1,3 +1,7 @@
+[B]2.7.10[/B]
+• Improvements
+• Minor fixes
+
 [B]2.7.9[/B]
 • Add possibility to show visualisation effects behind background
 • Improvements
