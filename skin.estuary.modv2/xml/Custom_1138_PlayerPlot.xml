@@ -16,6 +16,139 @@
 				<label>$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</label>
 				<autoscroll delay="9000" time="5000" repeat="8000">true</autoscroll>
 				<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
+				<visible>![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]</visible>
+			</control>
+			<control type="group">
+				<visible>[Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]</visible>
+				<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
+				<control type="label">
+					<left>30</left>
+					<bottom>390</bottom>
+					<right>30</right>
+					<height>30</height>
+					<label>[B]$INFO[VideoPlayer.Artist,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Album,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.TVShowTitle,, [COLOR white]-[/COLOR] ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode,,. ]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Year, (,)][/B]</label>
+					<scroll>true</scroll>
+					<font>font37</font>
+					<scroll>true</scroll>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<visible>!VideoPlayer.Content(LiveTV) + !Window.IsVisible(MusicVisualisation.xml)</visible>
+				</control>
+				<control type="label">
+					<left>30</left>
+					<bottom>390</bottom>
+					<right>30</right>
+					<height>30</height>
+					<label>[B]$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title][/B]</label>
+					<scroll>true</scroll>
+					<font>font37</font>
+					<scroll>true</scroll>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<visible>Window.IsVisible(MusicVisualisation.xml) + String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+				</control>
+				<control type="label">
+					<left>30</left>
+					<bottom>390</bottom>
+					<right>30</right>
+					<height>30</height>
+					<width>36.5%</width>
+					<label>[B]$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title][/B]</label>
+					<scroll>true</scroll>
+					<font>font37</font>
+					<scroll>true</scroll>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<scroll>true</scroll>
+					<visible>Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+				</control>
+				<control type="label">
+					<left>30</left>
+					<bottom>390</bottom>
+					<right>30</right>
+					<height>30</height>
+					<label>[B]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Season, - ,x]$INFO[VideoPlayer.Episode,,. ]$INFO[VideoPlayer.EpisodeName][/B]</label>
+					<scroll>true</scroll>
+					<font>font37</font>
+					<scroll>true</scroll>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="label">
+					<left>30</left>
+					<bottom>150</bottom>
+					<right>30</right>
+					<height>30</height>
+					<label>$INFO[VideoPlayer.Genre]</label>
+					<font>font12</font>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="label">
+					<left>30</left>
+					<bottom>150</bottom>
+					<right>30</right>
+					<height>30</height>
+					<label>$INFO[VideoPlayer.Genre]</label>
+					<font>font12</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<visible>!VideoPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="label">
+					<left>30</left>
+					<bottom>150</bottom>
+					<right>30</right>
+					<height>30</height>
+					<label>$INFO[VideoPlayer.ChannelName,[B],[/B]]$INFO[VideoPlayer.Genre,[COLOR white] [B]-[/B] [/COLOR]]</label>
+					<font>font12</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="label">
+					<left>30</left>
+					<bottom>150</bottom>
+					<right>30</right>
+					<height>30</height>
+					<width>36.5%</width>
+					<label>$INFO[MusicPlayer.Artist,[COLOR white][B],[/B][/COLOR]]$INFO[MusicPlayer.Album,[B] - [/B][COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]</label>
+					<font>font12</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<scroll>true</scroll>
+					<visible>Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Offset(1).Title) + !Pvr.IsPlayingRadio</visible>
+				</control>
+				<control type="label">
+					<left>30</left>
+					<bottom>150</bottom>
+					<right>30</right>
+					<height>30</height>
+					<align>right</align>
+					<label>$INFO[player.chapter,$LOCALIZE[21396] ]$INFO[player.chaptercount, / ]</label>
+					<font>font12</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<animation effect="fade" time="200">VisibleChange</animation>
+					<visible>player.chaptercount</visible>
+				</control>
+				<control type="label">
+					<left>30</left>
+					<bottom>150</bottom>
+					<right>30</right>
+					<height>30</height>
+					<align>right</align>
+					<label>$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031] : [COLOR white], - ][COLOR white]$INFO[VideoPlayer.NextStartTime]$INFO[VideoPlayer.NextEndTime : ][/COLOR]</label>
+					<font>font12</font>
+					<textcolor>$VAR[SkinColorVar]</textcolor>
+					<scroll>true</scroll>
+					<visible>VideoPlayer.HasEpg + VideoPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="textbox">
+					<left>30</left>
+					<top>183</top>
+					<right>30</right>
+					<height>190</height>
+					<align>justify</align>
+					<font>fontplot</font>
+					<label>$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</label>
+					<autoscroll delay="9000" time="5000" repeat="8000">true</autoscroll>
+				</control>
 			</control>
 			<control type="button" id="800">
 				<left>-10000</left>
@@ -38,6 +171,7 @@
 				<ondown>SetFocus(800)</ondown>
 				<usecontrolcoords>true</usecontrolcoords>
 				<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
+				<animation effect="slide" end="-430,60" time="0" condition="[Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">Conditional</animation>
 				<control type="button" id="1">
 					<width>auto</width>
 					<height>100</height>

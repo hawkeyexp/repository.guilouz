@@ -1841,7 +1841,10 @@ msgctxt "#40224"
 msgid "Secondary color"
 msgstr "צבע משני"
 
-#: Empty String 40225
+#: /xml/SkinSettings.xml
+msgctxt "#40225"
+msgid "Use small OSD"
+msgstr ""
 
 msgctxt "#40226"
 msgid "Personalize 'Categories' widget"

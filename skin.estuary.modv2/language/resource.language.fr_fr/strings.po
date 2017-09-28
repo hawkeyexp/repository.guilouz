@@ -1843,7 +1843,10 @@ msgctxt "#40224"
 msgid "Secondary color"
 msgstr "Couleur secondaire"
 
-#: Empty String 40225
+#: /xml/SkinSettings.xml
+msgctxt "#40225"
+msgid "Use small OSD"
+msgstr "Utiliser l'OSD réduit"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40226"

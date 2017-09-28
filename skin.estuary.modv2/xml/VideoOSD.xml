@@ -43,6 +43,7 @@
 				<ondown>Action(close)</ondown>
 				<onleft>200</onleft>
 				<onright>200</onright>
+				<animation effect="slide" end="-430,0" time="0" condition="[Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">Conditional</animation>
 				<control type="radiobutton" id="600">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
@@ -274,7 +275,12 @@
 				</control>
 				<control type="slider">
 					<top>-5</top>
-					<left>460</left>
+					<include content="ItemLeft" condition="![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">
+						<param name="left" value="460"/>
+					</include>
+					<include content="ItemLeft" condition="[Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">
+						<param name="left" value="30"/>
+					</include>
 					<right>30</right>
 					<height>20</height>
 					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
@@ -286,7 +292,12 @@
 				</control>
 				<control type="slider">
 					<top>-5</top>
-					<left>460</left>
+					<include content="ItemLeft" condition="![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">
+						<param name="left" value="460"/>
+					</include>
+					<include content="ItemLeft" condition="[Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">
+						<param name="left" value="30"/>
+					</include>
 					<right>30</right>
 					<height>20</height>
 					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
