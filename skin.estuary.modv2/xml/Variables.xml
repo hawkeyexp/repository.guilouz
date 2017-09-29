@@ -2915,7 +2915,7 @@
 	</variable>
 	<variable name="NowPlayingIconVar">
 		<value condition="Player.Paused">icons/now-playing/pause.png</value>
-		<value>icons/now-playing/play.png</value>
+		<value condition="!Player.HasAudio">icons/now-playing/play.png</value>
 	</variable>
 	<variable name="NowPlayingPosterVar">
 		<value condition="!String.IsEmpty(Player.Art(poster))">$INFO[Player.Art(poster)]</value>
