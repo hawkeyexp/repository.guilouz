@@ -22,7 +22,12 @@
 				<visible>[Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]</visible>
 				<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
 				<control type="label">
-					<left>30</left>
+					<include content="ItemLeft" condition="[VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.StartsWith(Player.Filenameandpath,http)">
+						<param name="left" value="239"/>
+					</include>
+					<include content="ItemLeft" condition="!VideoPlayer.HasMenu + ![VideoPlayer.Content(movies) + !String.StartsWith(Player.Filenameandpath,http)] + ![VideoPlayer.Content(episodes) + !String.StartsWith(Player.Filenameandpath,http)]">
+						<param name="left" value="315"/>
+					</include>
 					<bottom>390</bottom>
 					<right>30</right>
 					<height>30</height>
@@ -34,33 +39,12 @@
 					<visible>!VideoPlayer.Content(LiveTV) + !Window.IsVisible(MusicVisualisation.xml)</visible>
 				</control>
 				<control type="label">
-					<left>30</left>
-					<bottom>390</bottom>
-					<right>30</right>
-					<height>30</height>
-					<label>[B]$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title][/B]</label>
-					<scroll>true</scroll>
-					<font>font37</font>
-					<scroll>true</scroll>
-					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<visible>Window.IsVisible(MusicVisualisation.xml) + String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
-				</control>
-				<control type="label">
-					<left>30</left>
-					<bottom>390</bottom>
-					<right>30</right>
-					<height>30</height>
-					<width>36.5%</width>
-					<label>[B]$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title][/B]</label>
-					<scroll>true</scroll>
-					<font>font37</font>
-					<scroll>true</scroll>
-					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<scroll>true</scroll>
-					<visible>Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
-				</control>
-				<control type="label">
-					<left>30</left>
+					<include content="ItemLeft" condition="[VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.StartsWith(Player.Filenameandpath,http)">
+						<param name="left" value="239"/>
+					</include>
+					<include content="ItemLeft" condition="!VideoPlayer.HasMenu + ![VideoPlayer.Content(movies) + !String.StartsWith(Player.Filenameandpath,http)] + ![VideoPlayer.Content(episodes) + !String.StartsWith(Player.Filenameandpath,http)]">
+						<param name="left" value="315"/>
+					</include>
 					<bottom>390</bottom>
 					<right>30</right>
 					<height>30</height>
@@ -72,17 +56,12 @@
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="label">
-					<left>30</left>
-					<bottom>150</bottom>
-					<right>30</right>
-					<height>30</height>
-					<label>$INFO[VideoPlayer.Genre]</label>
-					<font>font12</font>
-					<animation effect="fade" time="200">VisibleChange</animation>
-					<visible>!VideoPlayer.Content(LiveTV)</visible>
-				</control>
-				<control type="label">
-					<left>30</left>
+					<include content="ItemLeft" condition="[VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.StartsWith(Player.Filenameandpath,http)">
+						<param name="left" value="239"/>
+					</include>
+					<include content="ItemLeft" condition="!VideoPlayer.HasMenu + ![VideoPlayer.Content(movies) + !String.StartsWith(Player.Filenameandpath,http)] + ![VideoPlayer.Content(episodes) + !String.StartsWith(Player.Filenameandpath,http)]">
+						<param name="left" value="315"/>
+					</include>
 					<bottom>150</bottom>
 					<right>30</right>
 					<height>30</height>
@@ -93,7 +72,12 @@
 					<visible>!VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="label">
-					<left>30</left>
+					<include content="ItemLeft" condition="[VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.StartsWith(Player.Filenameandpath,http)">
+						<param name="left" value="239"/>
+					</include>
+					<include content="ItemLeft" condition="!VideoPlayer.HasMenu + ![VideoPlayer.Content(movies) + !String.StartsWith(Player.Filenameandpath,http)] + ![VideoPlayer.Content(episodes) + !String.StartsWith(Player.Filenameandpath,http)]">
+						<param name="left" value="315"/>
+					</include>
 					<bottom>150</bottom>
 					<right>30</right>
 					<height>30</height>
@@ -102,18 +86,6 @@
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<animation effect="fade" time="200">VisibleChange</animation>
 					<visible>VideoPlayer.Content(LiveTV)</visible>
-				</control>
-				<control type="label">
-					<left>30</left>
-					<bottom>150</bottom>
-					<right>30</right>
-					<height>30</height>
-					<width>36.5%</width>
-					<label>$INFO[MusicPlayer.Artist,[COLOR white][B],[/B][/COLOR]]$INFO[MusicPlayer.Album,[B] - [/B][COLOR white],[/COLOR]]$INFO[MusicPlayer.Year, [COLOR white](,)[/COLOR]]</label>
-					<font>font12</font>
-					<textcolor>$VAR[SkinColorVar]</textcolor>
-					<scroll>true</scroll>
-					<visible>Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Offset(1).Title) + !Pvr.IsPlayingRadio</visible>
 				</control>
 				<control type="label">
 					<left>30</left>
@@ -140,7 +112,12 @@
 					<visible>VideoPlayer.HasEpg + VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="textbox">
-					<left>30</left>
+					<include content="ItemLeft" condition="[VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.StartsWith(Player.Filenameandpath,http)">
+						<param name="left" value="239"/>
+					</include>
+					<include content="ItemLeft" condition="!VideoPlayer.HasMenu + ![VideoPlayer.Content(movies) + !String.StartsWith(Player.Filenameandpath,http)] + ![VideoPlayer.Content(episodes) + !String.StartsWith(Player.Filenameandpath,http)]">
+						<param name="left" value="315"/>
+					</include>
 					<top>183</top>
 					<right>30</right>
 					<height>190</height>
@@ -148,6 +125,38 @@
 					<font>fontplot</font>
 					<label>$INFO[VideoPlayer.Tagline,[B],[/B][CR]]$INFO[VideoPlayer.Plot]</label>
 					<autoscroll delay="9000" time="5000" repeat="8000">true</autoscroll>
+				</control>
+				<control type="image">
+					<depth>DepthOSD+</depth>
+					<left>30</left>
+					<top>142</top>
+					<width>179</width>
+					<height>255</height>
+					<aspectratio aligny="bottom">stretch</aspectratio>
+					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingPosterVar]</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<visible>[VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.StartsWith(Player.Filenameandpath,http)</visible>
+				</control>
+				<control type="image">
+					<depth>DepthOSD+</depth>
+					<left>30</left>
+					<top>142</top>
+					<width>255</width>
+					<height>255</height>
+					<aspectratio aligny="center" align="center">keep</aspectratio>
+					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingLandscapeVar]</texture>
+					<bordertexture border="21">overlays/shadow.png</bordertexture>
+					<visible>!VideoPlayer.HasMenu + ![VideoPlayer.Content(movies) + !String.StartsWith(Player.Filenameandpath,http)] + ![VideoPlayer.Content(episodes) + !String.StartsWith(Player.Filenameandpath,http)] + !VideoPlayer.Content(LiveTV)</visible>
+				</control>
+				<control type="image">
+					<depth>DepthOSD+</depth>
+					<left>30</left>
+					<top>142</top>
+					<width>255</width>
+					<height>255</height>
+					<aspectratio aligny="center" align="center">keep</aspectratio>
+					<texture background="true" fallback="DefaultTVSquare.png">$VAR[NowPlayingPosterVar]</texture>
+					<visible>VideoPlayer.Content(LiveTV)</visible>
 				</control>
 			</control>
 			<control type="button" id="800">

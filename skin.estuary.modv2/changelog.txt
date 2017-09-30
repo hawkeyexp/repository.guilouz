@@ -1,3 +1,6 @@
+[B]2.8.0[/B]
+• Improvements
+
 [B]2.7.10[/B]
 • KODI 18 : RetroPlayer: Add renderer for Windows, OpenGL and OpenGLES
 • Add possibility to use small video OSD
