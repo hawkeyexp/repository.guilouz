@@ -40,7 +40,7 @@
 				<ondown>450</ondown>
 				<preloaditems>2</preloaditems>
 				<pagecontrol>60</pagecontrol>
-				<scrolltime tween="sine">200</scrolltime>
+				<scrolltime easing="inout" tween="sine">300</scrolltime>
 				<orientation>vertical</orientation>
 				<itemlayout width="300" height="380">
 					<control type="group">

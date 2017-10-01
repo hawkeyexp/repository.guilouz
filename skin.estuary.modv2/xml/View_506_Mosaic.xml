@@ -40,7 +40,7 @@
 						<top>10</top>
 						<width>310</width>
 						<height>210</height>
-						<texture fallback="DefaultPicture.png" background="true">$VAR[ShiftThumbVar]</texture>
+						<texture fallback="DefaultNoPreview.png" background="true">$VAR[ShiftThumbVar]</texture>
 						<bordersize>20</bordersize>
 						<aspectratio>scale</aspectratio>
 						<visible>Skin.HasSetting(show_borders)</visible>
@@ -50,7 +50,7 @@
 						<top>10</top>
 						<width>310</width>
 						<height>210</height>
-						<texture fallback="DefaultPicture.png" background="true">$VAR[ShiftThumbVar]</texture>
+						<texture fallback="DefaultNoPreview.png" background="true">$VAR[ShiftThumbVar]</texture>
 						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
 						<aspectratio>scale</aspectratio>
@@ -84,7 +84,7 @@
 						<top>10</top>
 						<width>310</width>
 						<height>210</height>
-						<texture fallback="DefaultPicture.png" background="true">$VAR[ShiftThumbVar]</texture>
+						<texture fallback="DefaultNoPreview.png" background="true">$VAR[ShiftThumbVar]</texture>
 						<bordersize>20</bordersize>
 						<aspectratio>scale</aspectratio>
 					</control>
