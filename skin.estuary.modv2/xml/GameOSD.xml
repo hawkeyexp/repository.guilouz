@@ -47,7 +47,6 @@
 							<font>font13</font>
 							<align>right</align>
 							<aligny>center</aligny>
-							<textcolor>grey</textcolor>
 						</control>
 					</itemlayout>
 					<itemlayout condition="Control.IsVisible(200)" width="688" height="80">

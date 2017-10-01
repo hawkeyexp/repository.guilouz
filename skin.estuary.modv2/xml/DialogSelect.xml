@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">3</defaultcontrol>
-	<include>Animation_DialogPopupOpenClose</include>
+	<include condition="![Window.IsActive(gameviewmode) | Window.IsActive(gamevideofilter)]">Animation_DialogPopupOpenClose</include>
+	<include condition="Window.IsActive(gameviewmode) | Window.IsActive(gamevideofilter)">Animation_BottomSlide</include>
 	<depth>DepthOSD</depth>
 	<controls>
 		<include condition="Window.IsActive(gameviewmode) | Window.IsActive(gamevideofilter)">GameDialogSelectLayout</include>

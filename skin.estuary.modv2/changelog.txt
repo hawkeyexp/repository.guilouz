@@ -1,5 +1,7 @@
 [B]2.8.0[/B]
+• KODI 18 : Add Volume setting to Game OSD
 • Improvements
+• Minor fixes
 
 [B]2.7.10[/B]
 • KODI 18 : RetroPlayer: Add renderer for Windows, OpenGL and OpenGLES
