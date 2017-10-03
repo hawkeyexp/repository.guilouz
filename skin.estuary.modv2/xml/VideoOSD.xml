@@ -131,7 +131,7 @@
 						<param name="texture" value="osd/fullscreen/buttons/home.png"/>
 					</include>
 					<onclick>PlayerControl(ShowVideoMenu)</onclick>
-					<visible>VideoPlayer.HasMenu</visible>
+					<visible>[VideoPlayer.HasMenu + System.HasMediaDVD] </visible>
 				</control>
 				<control type="radiobutton" id="606">
 					<textureradioonfocus colordiffuse="white">osd/fullscreen/buttons/record-white.png</textureradioonfocus>
@@ -185,7 +185,7 @@
 					</include>
 					<onclick condition="!Skin.HasSetting(disable_PauseOnExtraInfos)">PlayerControl(Play)</onclick>
 					<onclick>RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[VideoPlayer.Title])</onclick>
-					<visible>!VideoPlayer.Content(livetv) + !VideoPlayer.HasMenu + !VideoPlayer.Content(musicvideos)</visible>
+					<visible>!VideoPlayer.Content(livetv) + ![VideoPlayer.HasMenu + System.HasMediaDVD] + !VideoPlayer.Content(musicvideos)</visible>
 					<visible>VideoPlayer.Content(movies) + System.HasAddon(script.extendedinfo)</visible>
 				</control>
 				<control type="radiobutton" id="70013">
@@ -194,7 +194,7 @@
 					</include>
 					<onclick condition="!Skin.HasSetting(disable_PauseOnExtraInfos)">PlayerControl(Play)</onclick>
 					<onclick>RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[VideoPlayer.TvShowTitle])</onclick>
-					<visible>!VideoPlayer.Content(livetv) + !VideoPlayer.HasMenu + !VideoPlayer.Content(musicvideos)</visible>
+					<visible>!VideoPlayer.Content(livetv) + ![VideoPlayer.HasMenu + System.HasMediaDVD]  + !VideoPlayer.Content(musicvideos)</visible>
 					<visible>VideoPlayer.Content(episodes) + System.HasAddon(script.extendedinfo)</visible>
 				</control>
 				<control type="radiobutton" id="70015">
@@ -209,7 +209,7 @@
 						<param name="texture" value="osd/fullscreen/buttons/actors.png"/>
 					</include>
 					<onclick>ActivateWindow(1122)</onclick>
-					<visible>!VideoPlayer.Content(livetv) + !VideoPlayer.HasMenu + !VideoPlayer.Content(musicvideos) + !String.Contains(Player.Art(thumb),ytimg) + !VideoPlayer.Content(files)</visible>
+					<visible>!VideoPlayer.Content(livetv) + ![VideoPlayer.HasMenu + System.HasMediaDVD]  + !VideoPlayer.Content(musicvideos) + !String.Contains(Player.Art(thumb),ytimg) + !VideoPlayer.Content(files)</visible>
 				</control>
 				<control type="radiobutton" id="700">
 					<include content="OSDButton">

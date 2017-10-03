@@ -2368,7 +2368,7 @@
 				<width>100%</width>
 				<height>550</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
-				<visible>!VideoPlayer.HasMenu</visible>
+				<visible>![VideoPlayer.HasMenu + System.HasMediaDVD]</visible>
 				<animation effect="slide" end="0,-80" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo) + !Window.IsActive(fullscreeninfo)">Conditional</animation>
 				<animation effect="slide" end="0,100" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo) + Window.IsActive(fullscreeninfo)">Conditional</animation>
 				<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139) | [Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]">Conditional</animation>
@@ -2381,9 +2381,10 @@
 				<width>100%</width>
 				<height>550</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
-				<visible>VideoPlayer.HasMenu</visible>
+				<visible>[VideoPlayer.HasMenu + System.HasMediaDVD]</visible>
 				<animation effect="slide" end="0,-340" time="50" tween="sine" easing="out" condition="Window.IsVisible(videobookmarks)">Conditional</animation>
 				<animation effect="slide" end="0,-240" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo)">Conditional</animation>
+				<animation effect="slide" end="0,-340" time="50" tween="sine" easing="out" condition="Window.IsVisible(1138)">Conditional</animation>
 			</control>
 			<control type="group">
 				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
@@ -2412,7 +2413,7 @@
 				<bottom>0</bottom>
 				<height>550</height>
 				<visible>Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)</visible>
-				<visible>!VideoPlayer.HasMenu + !Window.IsVisible(1138) + !Window.IsVisible(1139) + !Window.IsVisible(1122) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(playerprocessinfo)</visible>
+				<visible>![VideoPlayer.HasMenu + System.HasMediaDVD] + !Window.IsVisible(1138) + !Window.IsVisible(1139) + !Window.IsVisible(1122) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(playerprocessinfo)</visible>
 				<control type="textbox">
 					<left>460</left>
 					<top>123</top>
@@ -2505,13 +2506,13 @@
 			<texture background="true">special://skin/extras/home-images/disc.jpg</texture>
 			<bordertexture border="21">overlays/shadow.png</bordertexture>
 			<bordersize>20</bordersize>
-			<visible>VideoPlayer.HasMenu</visible>
+			<visible>[VideoPlayer.HasMenu + System.HasMediaDVD]</visible>
 		</control>
 		<control type="group">
 			<bottom>0</bottom>
 			<height>250</height>
 			<control type="group">
-				<visible>!VideoPlayer.HasMenu</visible>
+				<visible>![VideoPlayer.HasMenu + System.HasMediaDVD]</visible>
 				<control type="image">
 					<left>50</left>
 					<bottom>415</bottom>
@@ -2613,7 +2614,7 @@
 					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingLandscapeVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
-					<visible>!VideoPlayer.HasMenu + ![VideoPlayer.Content(movies) + !String.StartsWith(Player.Filenameandpath,http)] + ![VideoPlayer.Content(episodes) + !String.StartsWith(Player.Filenameandpath,http)] + !VideoPlayer.Content(LiveTV) + !Window.IsVisible(MusicVisualisation.xml)</visible>
+					<visible>![VideoPlayer.HasMenu + System.HasMediaDVD] + ![VideoPlayer.Content(movies) + !String.StartsWith(Player.Filenameandpath,http)] + ![VideoPlayer.Content(episodes) + !String.StartsWith(Player.Filenameandpath,http)] + !VideoPlayer.Content(LiveTV) + !Window.IsVisible(MusicVisualisation.xml)</visible>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -2654,10 +2655,10 @@
 					<bottom>0</bottom>
 					<height>44</height>
 					<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">VideoPlayerRatingCircle</include>
-					<visible>!String.StartsWith(Player.FolderPath,http) + !VideoPlayer.HasMenu</visible>
+					<visible>!String.StartsWith(Player.FolderPath,http) + ![VideoPlayer.HasMenu + System.HasMediaDVD]</visible>
 				</control>
 				<control type="group">
-					<visible>!VideoPlayer.HasMenu</visible>
+					<visible>![VideoPlayer.HasMenu + System.HasMediaDVD]</visible>
 					<control type="image">
 						<right>0</right>
 						<bottom>310</bottom>
@@ -2975,7 +2976,7 @@
 				<align>left</align>
 				<orientation>horizontal</orientation>
 				<itemgap>5</itemgap>
-				<visible>!Player.ChannelPreviewActive + !VideoPlayer.HasMenu  + !Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
+				<visible>!Player.ChannelPreviewActive + ![VideoPlayer.HasMenu + System.HasMediaDVD]  + !Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
 				<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
 				<include content="MediaFlagOSD">
 					<param name="texture" value="flags/webdl.png" />
