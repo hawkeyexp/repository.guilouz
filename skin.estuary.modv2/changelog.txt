@@ -1,3 +1,6 @@
+[B]2.8.1[/B]
+• KODI 18 : Add filter description to video filter dialog
+
 [B]2.8.0[/B]
 • KODI 18 : Add Volume setting to Game OSD
 • Improvements
