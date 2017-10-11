@@ -15,8 +15,8 @@
                 <param name="header_id" value="" />
             </include>
             <control type="image">
-                <posy>84</posy>
-                <posx>667</posx>
+                <top>84</top>
+                <left>667</left>
                 <width>48</width>
                 <height>24</height>
                 <texture flipy="true" colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texture>
@@ -26,8 +26,8 @@
                 <visible>Container(3110).HasPrevious</visible>
             </control>
             <control type="image">
-                <posy>690</posy>
-                <posx>667</posx>
+                <top>690</top>
+                <left>667</left>
                 <width>48</width>
                 <height>24</height>
                 <texture colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texture>
@@ -37,8 +37,8 @@
                 <visible>Container(3110).HasNext</visible>
             </control>
             <control type="panel" id="3110">
-                <posx>61</posx>
-                <posy>130</posy>
+                <left>61</left>
+                <top>130</top>
                 <width>1260</width>
                 <height>540</height>
                 <orientation>vertical</orientation>
@@ -49,8 +49,8 @@
                 <preloaditems>4</preloaditems>
                 <itemlayout height="60" width="90">
                     <control type="image">
-                        <posx>4</posx>
-                        <posy>4</posy>
+                        <left>4</left>
+                        <top>4</top>
                         <width>82</width>
                         <height>52</height>
                         <texture>$INFO[ListItem.Icon]</texture>
@@ -65,8 +65,8 @@
                             <texture colordiffuse="ff242424" border="5">colors/white.png</texture>
                         </control>
                         <control type="image">
-                            <posx>4</posx>
-                            <posy>4</posy>
+                            <left>4</left>
+                            <top>4</top>
                             <width>82</width>
                             <height>52</height>
                             <texture>$INFO[ListItem.Icon]</texture>
@@ -139,7 +139,7 @@
                 <!-- color preview-->
                 <control type="group">
                     <control type="image">
-                        <posx>20</posx>
+                        <left>20</left>
                         <width>260</width>
                         <height>70</height>
                         <texture colordiffuse="ff171717">colors/white.png</texture>
