@@ -25,7 +25,7 @@
 				<animation effect="slide" end="-20,0" time="0" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
 				<itemlayout height="275" width="900">
 					<control type="group">
-						<posy>130</posy>
+						<top>130</top>
 						<control type="image">
 							<left>-2</left>
 							<top>-2</top>
@@ -199,7 +199,7 @@
             				<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
             				<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
        					</animation>
-						<posy>130</posy>
+						<top>130</top>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>

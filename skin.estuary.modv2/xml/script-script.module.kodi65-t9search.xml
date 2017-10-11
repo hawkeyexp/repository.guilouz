@@ -10,7 +10,7 @@
                 <effect type="slide" start="-520" end="0" time="400" tween="cubic" easing="out" />
             </animation>
             <left>-520</left>
-            <posy>0</posy>
+            <top>0</top>
               <control type="image">
 			    <width>4000</width>
 			    <height>100%</height>
