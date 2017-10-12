@@ -128,6 +128,30 @@
 						<bordersize>1</bordersize>
 						<visible>!ListItem.IsCollection + !ListItem.IsParentFolder</visible>
 					</control>
+					<control type="label">
+						<left>30</left>
+						<bottom>80</bottom>
+						<width>537</width>
+						<height>25</height>
+						<align>center</align>
+						<label>$INFO[ListItem.Genre]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<scroll>true</scroll>
+						<visible>!ListItem.IsCollection</visible>
+					</control>
+					<control type="label">
+						<left>30</left>
+						<bottom>80</bottom>
+						<width>537</width>
+						<height>25</height>
+						<align>center</align>
+						<label>$INFO[Window(Home).Property(SkinHelper.ListItem.Genre)]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<scroll>true</scroll>
+						<visible>ListItem.IsCollection</visible>
+					</control>
 					<control type="group">
 						<left>20</left>
 						<top>240</top>
