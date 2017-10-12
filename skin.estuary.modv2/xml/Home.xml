@@ -878,8 +878,8 @@
 						<param name="visible" value="![String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
 					</include>
 					<control type="panel" id="14100">
-						<left>60</left>
-						<top>-10</top>
+						<left>-10</left>
+						<top>120</top>
 						<right>0</right>
 						<bottom>0</bottom>
 						<onleft>9000</onleft>
@@ -893,19 +893,42 @@
 						<pagecontrol>14010</pagecontrol>
 						<visible>Integer.IsGreater(Container(14100).NumItems,0) | Container(14100).IsUpdating</visible>
 						<visible>![String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]</visible>
-						<itemlayout width="330" height="396">
+						<itemlayout width="340" height="410" condition="Skin.HasSetting(HideWidgetLabels)">
 							<control type="group">
-								<top>130</top>
+								<left>70</left>
 								<include content="InfoWallMusicLayout">
 									<param name="fallback_image" value="DefaultFavourites.png" />
 									<param name="focused" value="false" />
 								</include>
 							</control>
 						</itemlayout>
-						<focusedlayout width="330" height="396">
+						<focusedlayout width="340" height="410" condition="Skin.HasSetting(HideWidgetLabels)">
 							<control type="group">
 								<depth>DepthContentPopout</depth>
-								<top>130</top>			       					 
+								<left>70</left>       					 
+								<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+            						<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+            						<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+       					 		</animation>
+								<include content="InfoWallMusicLayout">
+									<param name="fallback_image" value="DefaultFavourites.png" />
+									<param name="focused" value="true" />
+								</include>
+							</control>
+						</focusedlayout>
+						<itemlayout width="340" height="340" condition="!Skin.HasSetting(HideWidgetLabels)">
+							<control type="group">
+								<left>70</left>
+								<include content="InfoWallMusicLayout">
+									<param name="fallback_image" value="DefaultFavourites.png" />
+									<param name="focused" value="false" />
+								</include>
+							</control>
+						</itemlayout>
+						<focusedlayout width="340" height="340" condition="!Skin.HasSetting(HideWidgetLabels)">
+							<control type="group">
+								<depth>DepthContentPopout</depth>
+								<left>70</left>       					 
 								<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
             						<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
             						<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />

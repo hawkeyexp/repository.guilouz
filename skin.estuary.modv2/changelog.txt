@@ -1,3 +1,7 @@
+[B]2.8.2[/B]
+• New Favourites window
+• Fix Favourites widget
+
 [B]2.8.1[/B]
 • KODI 18 : Add filter description to video filter dialog
 • Minor fixes
