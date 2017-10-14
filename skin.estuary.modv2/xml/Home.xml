@@ -489,7 +489,7 @@
 							<param name="sortby" value="lastused"/>
 							<param name="sortorder" value="descending"/>
 							<param name="list_id" value="8700"/>
-							<param name="fallback_icon" value="DefaultAddon.png"/>
+							<param name="fallback_icon" value="DefaultAddonGame.png"/>
 							<param name="visible" value="System.GetBool(gamesgeneral.enable)"/>
 						</include>
 						<include content="WidgetListSquare" condition="!Skin.HasSetting(hide_executableaddons)">
@@ -1277,6 +1277,9 @@
 						<param name="right" value="555"/>
 						<param name="visible" value="Skin.HasSetting(HideMainMenuWithWidgets) + [String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
 					</include>
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
+						<param name="scrollbar_id" value="4010"/>
+					</include>
 				</control>
 				<control type="group" id="17000">
 					<animation effect="slide" end="502,0" time="300" tween="sine" easing="inout" condition="[Control.HasFocus(9000) | ControlGroup(700).HasFocus] + Skin.HasSetting(HideMainMenuWithWidgets) + !Skin.HasSetting(MinimizeMainMenu)">Conditional</animation>
@@ -1294,13 +1297,23 @@
 							<param name="widget_target" value="games"/>
 							<param name="list_id" value="17100"/>
 						</include>
+						<include content="WidgetListSquare">
+ 							<param name="content_path" value="addons://sources/game/"/>
+ 							<param name="widget_header" value="$LOCALIZE[35049]"/>
+ 							<param name="widget_header_focus" value="$INFO[Container(17200).ListItem.Label, | ]"/>
+ 							<param name="widget_target" value="games"/>
+ 							<param name="sortby" value="lastused"/>
+ 							<param name="sortorder" value="descending"/>
+ 							<param name="list_id" value="17200"/>
+ 							<param name="fallback_icon" value="DefaultAddonGame.png"/>
+ 						</include>
 					</control>
 					<include content="ImageWidget">
 						<param name="text_label" value="$LOCALIZE[40173]" />
 						<param name="button_label" value="$LOCALIZE[31116]" />
 						<param name="button2_label" value="$LOCALIZE[31118]" />
 						<param name="button_onclick" value="ActivateWindow(games)"/>
-						<param name="button_id" value="17200"/>
+						<param name="button_id" value="17300"/>
 						<param name="button2_onclick" value="ActivateWindow(addonbrowser)"/>
 						<param name="visible" value="!Integer.IsGreater(Container(17001).NumItems,0) + !Skin.HasSetting(HideMainMenuWithWidgets) + ![String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]"/>
 					</include>
@@ -1309,7 +1322,7 @@
 						<param name="button_label" value="$LOCALIZE[31116]" />
 						<param name="button2_label" value="$LOCALIZE[31118]" />
 						<param name="button_onclick" value="ActivateWindow(games)"/>
-						<param name="button_id" value="17200"/>
+						<param name="button_id" value="17300"/>
 						<param name="button2_onclick" value="ActivateWindow(addonbrowser)"/>
 						<param name="right" value="555"/>
 						<param name="visible" value="!Integer.IsGreater(Container(17001).NumItems,0) + Skin.HasSetting(HideMainMenuWithWidgets) + ![String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]"/>
@@ -1328,6 +1341,9 @@
 						<param name="visible_2" value="false"/>
 						<param name="right" value="555"/>
 						<param name="visible" value="Skin.HasSetting(HideMainMenuWithWidgets) + [String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]" />
+					</include>
+					<include content="WidgetScrollbar" condition="Skin.HasSetting(touchmode)">
+						<param name="scrollbar_id" value="17010"/>
 					</include>
 				</control>
 				<control type="group" id="21000">

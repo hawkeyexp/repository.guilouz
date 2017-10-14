@@ -256,7 +256,7 @@
 						<height>40</height>
 						<label>$INFO[ListItem.AddonOrigin,$LOCALIZE[31150] : [COLOR white],[/COLOR]]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>!String.IsEmpty(ListItem.AddonOrigin)</visible>
+						<visible>!String.IsEmpty(ListItem.AddonOrigin) + ListItem.Property(addon.isinstalled)</visible>
 					</control>
 				</control>
 			</control>
