@@ -295,7 +295,7 @@
 						<bottom>-10</bottom>
 						<movement>6</movement>
 						<focusposition>1</focusposition>
-						<onleft>500</onleft>
+						<onleft>Addon.OpenSettings(script.globalsearch)</onleft>
 						<onright>500</onright>
 						<onup>998</onup>
 						<ondown>998</ondown>

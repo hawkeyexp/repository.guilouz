@@ -3,6 +3,7 @@
 • Add Genres on list and wide list views
 • New Favourites window
 • Fix Favourites widget
+• Improvements
 • Minor fixes
 
 [B]2.8.1[/B]
