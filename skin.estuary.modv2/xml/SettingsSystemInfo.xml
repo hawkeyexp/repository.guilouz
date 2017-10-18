@@ -8,69 +8,69 @@
 			<top>70</top>
 			<include>OpenClose_Right</include>
 			<control type="grouplist">
-				<left>430</left>
+				<left>400</left>
 				<top>105</top>
 				<height>550</height>
 				<orientation>vertical</orientation>
 				<control type="label" id="2">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 				<control type="label" id="3">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 				<control type="label" id="4">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 				<control type="label" id="5">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 				<control type="label" id="6">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 				<control type="label" id="7">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 				<control type="label" id="8">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 				<control type="label" id="9">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 				<control type="label" id="10">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 				<control type="label" id="11">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 				<control type="label" id="12">
 					<height>47</height>
-					<width>1370</width>
+					<right>40</right>
 					<font>font13</font>
 				</control>
 			</control>
 			<control type="textbox" id="30">
-				<left>430</left>
-				<right>50</right>
+				<left>400</left>
+				<right>40</right>
 				<top>100</top>
 				<bottom>315</bottom>
 				<pagecontrol>60</pagecontrol>
@@ -110,11 +110,11 @@
 					<texture colordiffuse="$VAR[SkinColorVar]" border="2">dialogs/separator-grey.png</texture>
 				</control>
 				<control type="grouplist">
-					<left>430</left>
+					<left>400</left>
 					<orientation>vertical</orientation>
 					<control type="label">
 						<description>CPU Text</description>
-						<width>730</width>
+						<width>800</width>
 						<height>80</height>
 						<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
 						<aligny>top</aligny>
@@ -124,13 +124,13 @@
 					</control>
 					<control type="progress">
 						<description>CPU BAR</description>
-						<width>730</width>
+						<width>800</width>
 						<height>16</height>
 						<info>System.CPUUsage</info>
 					</control>
 					<control type="label">
 						<description>Memory Text</description>
-						<width>730</width>
+						<width>800</width>
 						<height>40</height>
 						<label>$LOCALIZE[31030]: $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)]</label>
 						<aligny>center</aligny>
@@ -139,14 +139,14 @@
 					</control>
 					<control type="progress">
 						<description>Memory BAR</description>
-						<width>730</width>
+						<width>800</width>
 						<height>16</height>
 						<info>system.memory(used)</info>
 					</control>
 				</control>
 				<control type="label">
 					<top>34</top>
-					<left>1210</left>
+					<left>1250</left>
 					<width>auto</width>
 					<height>50</height>
 					<aligny>bottom</aligny>
@@ -159,7 +159,7 @@
 					<description>Kodi build version</description>
 					<itemgap>10</itemgap>
 					<top>80</top>
-					<left>1210</left>
+					<left>1250</left>
 					<width>800</width>
 					<height>45</height>
 					<orientation>horizontal</orientation>
@@ -188,7 +188,7 @@
 					<description>Build date</description>
 					<itemgap>10</itemgap>
 					<top>125</top>
-					<left>1210</left>
+					<left>1250</left>
 					<width>800</width>
 					<orientation>horizontal</orientation>
 					<control type="label">
