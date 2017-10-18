@@ -1,3 +1,6 @@
+[B]2.8.3[/B]
+• Remove 'doNotShareMenu' argument
+
 [B]2.8.2[/B]
 • Add games addons widget to games tab
 • Add Genres on list and wide list views
