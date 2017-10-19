@@ -2822,7 +2822,7 @@
 						<label>$INFO[VideoPlayer.Genre]</label>
 						<font>font12</font>
 						<animation effect="fade" time="200">VisibleChange</animation>
-						<visible>!VideoPlayer.Content(LiveTV) + !Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1138) + !Window.IsVisible(1139)</visible>
+						<visible>!VideoPlayer.Content(LiveTV) + !VideoPlayer.Content(files) + !Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1138) + !Window.IsVisible(1139)</visible>
 						<visible>![Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]</visible>
 					</control>
 					<control type="label">

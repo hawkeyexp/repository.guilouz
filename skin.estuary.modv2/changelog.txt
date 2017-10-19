@@ -1,3 +1,6 @@
+[B]2.8.4[/B]
+• Minor fixes
+
 [B]2.8.3[/B]
 • Remove 'doNotShareMenu' argument
 
