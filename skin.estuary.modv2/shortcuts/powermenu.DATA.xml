@@ -54,10 +54,9 @@
         <label2>Common Shortcut</label2>
         <label>$VAR[SystemLogOffVar]</label>
         <action>dialog.close(all,true)</action>
-        <action>System.LogOff</action>
-        <icon>special://skin/extras/icons/Power menu/logoff.png</icon> 
+        <icon>special://skin/extras/icons/Power menu/logoff.png</icon>
         <visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
-        <visible>System.Loggedon</visible>        
+        <visible>System.Loggedon</visible>
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
