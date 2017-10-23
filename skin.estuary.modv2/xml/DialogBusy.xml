@@ -16,14 +16,13 @@
 			</control>
 			<control type="image">
 				<texture>colors/black.png</texture>
-				<top>158</top>
+				<top>154</top>
 				<left>620</left>
 				<width>1206</width>
-				<height>678</height>
+				<height>682</height>
 				<animation effect="fade" start="100" end="70" time="0" condition="true">Conditional</animation>
 				<animation effect="fade" start="100" end="0" time="240" condition="Window.IsVisible(fullscreenvideo)">Conditional</animation>
-				<visible>Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)</visible>
-				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)</visible>
+				<visible>Skin.HasSetting(TrailerInWindow) + [Window.IsVisible(DialogVideoInfo.xml) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)]]</visible>
 			</control>
 			<control type="group">
 				<visible>![Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)]</visible>
@@ -62,14 +61,13 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)</visible>
-				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml)</visible>
+				<visible>Skin.HasSetting(TrailerInWindow) + [Window.IsVisible(DialogVideoInfo.xml) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)]]</visible>
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
-				<top>168</top>
+				<top>164</top>
 				<left>620</left>
 				<width>1206</width>
-				<height>678</height>
+				<height>682</height>
 				<control type="image">
 					<centerleft>50%</centerleft>
 					<centertop>50%</centertop>

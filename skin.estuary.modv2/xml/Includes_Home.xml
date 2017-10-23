@@ -5231,10 +5231,10 @@
 				<top>120</top>
 				<right>0</right>
 				<include content="WidgetHeight" condition="Skin.HasSetting(HideWidgetLabels)">
-					<param name="height" value="500"/>
+					<param name="height" value="480"/>
 				</include>
 				<include content="WidgetHeight" condition="!Skin.HasSetting(HideWidgetLabels)">
-					<param name="height" value="415"/>
+					<param name="height" value="410"/>
 				</include>
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
@@ -5244,6 +5244,7 @@
 				<itemlayout width="310" height="500">
 					<control type="group">
 						<left>70</left>
+						<top>-5</top>
 						<include content="InfoWallMusicLayout">
 							<param name="main_label" value="$PARAM[main_label]" />
 							<param name="single_label" value="$PARAM[single_label]" />
@@ -5256,6 +5257,7 @@
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
+						<top>-5</top>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
 							<effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
 							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
