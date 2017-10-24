@@ -993,7 +993,7 @@
 						<control type="group" id="16678">
 							<description>Weather info</description>
 							<left>60</left>
-							<right>20</right>
+							<right>-30</right>
 							<top>102</top>
 							<height>300</height>
 							<visible>!String.IsEmpty(Weather.plugin)</visible>
@@ -1007,7 +1007,7 @@
 								<top>60</top>
 								<aligny>center</aligny>
 								<height>24</height>
-								<right>50</right>
+								<right>100</right>
 								<align>right</align>
 								<font>font30_title</font>
 								<label>$INFO[Weather.Location]</label>
@@ -1019,7 +1019,7 @@
 								<top>120</top>
 								<aligny>center</aligny>
 								<height>24</height>
-								<right>50</right>
+								<right>100</right>
 								<align>right</align>
 								<font>font13</font>
 								<scroll>true</scroll>

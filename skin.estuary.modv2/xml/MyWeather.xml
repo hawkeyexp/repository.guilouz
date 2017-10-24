@@ -49,7 +49,7 @@
 		</control>
 		<control type="grouplist" id="2000">
 			<orientation>vertical</orientation>
-			<top>0</top>
+			<top>10</top>
 			<height>100%</height>
 			<left>0</left>
 			<ondown>20001</ondown>
@@ -70,9 +70,9 @@
 				<height>410</height>
 				<left>22</left>
 				<control type="image">
-					<left>2.5%</left>
+					<left>-50</left>
 					<top>100</top>
-					<width>95%</width>
+					<right>-50</right>
 					<height>220</height>
 					<texture border="21">dialogs/dialog-bg.png</texture>
 				</control>
@@ -88,9 +88,9 @@
 					<animation effect="fade" time="400">VisibleChange</animation>
 				</control>
 				<control type="button" id="20">
-					<left>2.5%</left>
+					<left>-50</left>
 					<top>100</top>
-					<width>95%</width>
+					<right>-50</right>
 					<height>220</height>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -121,6 +121,7 @@
 					<label>$INFO[Window(Weather).Property(Location)][CR][I]$LOCALIZE[402] : $INFO[Window(weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/I][CR]$INFO[Weather.Conditions]</label>
 					<font>font14</font>
 					<width>630</width>
+					<visible>!String.StartsWith(Weather.Temperature,$LOCALIZE[503])</visible>
 				</control>
 				<control type="grouplist">
 					<top>154</top>

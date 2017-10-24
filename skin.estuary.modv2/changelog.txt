@@ -1,4 +1,5 @@
 [B]2.8.4[/B]
+• Improvements
 • Fix logon/logoff on power menu
 • Minor fixes
 
