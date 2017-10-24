@@ -51,7 +51,7 @@
 			<orientation>vertical</orientation>
 			<top>10</top>
 			<height>100%</height>
-			<left>0</left>
+			<left>-1</left>
 			<ondown>20001</ondown>
 			<usecontrolcoords>true</usecontrolcoords>
 			<animation type="Conditional" condition="Control.IsVisible(20000)" reversible="false">
@@ -70,9 +70,9 @@
 				<height>410</height>
 				<left>22</left>
 				<control type="image">
-					<left>-50</left>
+					<left>38</left>
 					<top>100</top>
-					<right>-50</right>
+					<right>59</right>
 					<height>220</height>
 					<texture border="21">dialogs/dialog-bg.png</texture>
 				</control>
@@ -88,9 +88,9 @@
 					<animation effect="fade" time="400">VisibleChange</animation>
 				</control>
 				<control type="button" id="20">
-					<left>-50</left>
+					<left>38</left>
 					<top>100</top>
-					<right>-50</right>
+					<right>59</right>
 					<height>220</height>
 					<align>center</align>
 					<aligny>center</aligny>
