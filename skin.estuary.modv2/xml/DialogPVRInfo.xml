@@ -112,7 +112,7 @@
 			</control>
 			<include content="InfoDialogTopBarInfo">
 				<param name="main_label" value="$INFO[ListItem.Title]" />
-				<param name="sub_label" value="$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,. ]$INFO[ListItem.EpisodeName]" />
+				<param name="sub_label" value="$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,.]$INFO[ListItem.EpisodeName, ]" />
 				<param name="posy" value="40" />
 				<param name="subtextcolor" value="$VAR[SkinColorVar]" />
 			</include>
