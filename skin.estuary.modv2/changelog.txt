@@ -1,4 +1,5 @@
 [B]2.8.4[/B]
+• Add protection against banned addons (Thanks to sualfred)
 • Add (rating) star symbols to fontset (Thanks to Jeroen)
 • Improvements
 • Fix logon/logoff on power menu

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1110">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<include>Animation_DialogPopupOpenClose</include>
+	<visible>String.IsEqual(Window(home).Property(script.service.caretaker.found.blacklisted),true)</visible>
+	<onload condition="String.IsEmpty(Skin.String(caretakerCounter))">Skin.SetString(caretakerCounter,1)</onload>
+	<onload condition="String.IsEqual(Skin.String(caretakerCounter),1)">Skin.SetString(caretakerCounter,2)</onload>
+	<onload condition="String.IsEqual(Skin.String(caretakerCounter),2)">Skin.SetString(caretakerCounter,3)</onload>
+	<onload condition="String.IsEqual(Skin.String(caretakerCounter),3)">Skin.SetString(caretakerCounter,4)</onload>
+	<onload condition="String.IsEqual(Skin.String(caretakerCounter),4)">Skin.SetString(caretakerCounter,5)</onload>
+	<onload condition="String.IsEqual(Skin.String(caretakerCounter),5)">UnloadSkin()</onload>
+	<controls>
+		<control type="group">
+			<centerleft>50%</centerleft>
+			<centertop>50%</centertop>
+			<height>500</height>
+			<width>1100</width>
+			<visible>!String.IsEqual(Skin.String(caretakerCounter),5)</visible>
+			<include content="DialogBackgroundCommons">
+				<param name="width" value="1100" />
+				<param name="height" value="500" />
+				<param name="header_label" value="$LOCALIZE[40199]" />
+				<param name="header_id" value="1" />
+			</include>
+			<control type="textbox">
+				<left>30</left>
+				<top>95</top>
+				<width>1040</width>
+				<height>300</height>
+				<shadowcolor>black</shadowcolor>
+				<pagecontrol>3000</pagecontrol>
+				<font>font13</font>
+				<label>$LOCALIZE[40257]</label>
+				<autoscroll delay="5000" time="5000" repeat="5000">true</autoscroll>
+			</control>
+			<control type="grouplist" id="9000">
+				<orientation>horizontal</orientation>
+				<left>0</left>
+				<top>390</top>
+				<width>1100</width>
+				<align>center</align>
+				<control type="button" id="3">
+					<width>400</width>
+					<height>100</height>
+					<label>$LOCALIZE[15067]</label>
+					<font>font25_title</font>
+					<textoffsetx>30</textoffsetx>
+					<onclick>Dialog.Close(1110)</onclick>
+					<align>center</align>
+					<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texturefocus>
+					<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>
