@@ -1,0 +1,78 @@
+# XBMC Media Center language file
+# Addon Name: KN Addon Caretaker
+# Addon id: script.service.caretaker
+# Addon version: 0.0.5
+# Addon Provider: Birger Jesch
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC-Addons\n"
+"Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
+"POT-Creation-Date: 2017-08-17 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Guilouz\n"
+"Language-Team: French (France)"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+msgctxt "#30010"
+msgid "KN Addon Caretaker"
+msgstr "KN Addon Caretaker"
+
+msgctxt "#30011"
+msgid "Unauthorized repository"
+msgstr "Dépôt non autorisé"
+
+msgctxt "#30012"
+msgid "You have potentially harmful repositories installed"
+msgstr "Vous avez installé des dépôts d'extensions potentiellement dangereux"
+
+msgctxt "#30013"
+msgid "You have one or more unauthorized repositories installed. These repositories may contain harmful addons. It's highly recommended to clean up your addon list."
+msgstr "Vous avez installé un ou plusieurs dépôts d'extensions non autorisés. Ces dépôts peuvent contenir des addons nuisibles. Il est fortement recommandé de nettoyer votre liste d'extensions."
+
+msgctxt "#30014"
+msgid "No unauthorized repositories found"
+msgstr "Aucun dépôt d'extensions non autorisé trouvé"
+
+msgctxt "#30030"
+msgid "Blacklist update check"
+msgstr "Mise à jour de la liste noire"
+
+msgctxt "#30031"
+msgid "daily"
+msgstr "Journalier"
+
+msgctxt "#30032"
+msgid "weekly"
+msgstr "Hebdomadaire"
+
+msgctxt "#30033"
+msgid "monthly"
+msgstr "Mensuel"
+
+msgctxt "#30035"
+msgid "Check for addons installed with same timestamp"
+msgstr "Vérifier les extensions installées avec le même horodatage"
+
+msgctxt "#30036"
+msgid "permanent monitoring"
+msgstr "Surveillance permanente"
+
+msgctxt "#30037"
+msgid "max timestamp variation of installation"
+msgstr "Variation d'horodatage max de l'installation"
+
+msgctxt "#30038"
+msgid "1 min"
+msgstr "1 min"
+
+msgctxt "#30039"
+msgid "2 min"
+msgstr "2 min"
+
+msgctxt "#30040"
+msgid "3 min"
+msgstr "3 min"
