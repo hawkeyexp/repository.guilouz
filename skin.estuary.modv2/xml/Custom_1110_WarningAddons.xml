@@ -2,7 +2,6 @@
 <window type="dialog" id="1110">
 	<defaultcontrol always="true">3</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
-	<visible>String.IsEqual(Window(home).Property(script.service.caretaker.found.blacklisted),true)</visible>
 	<onload condition="String.IsEmpty(Skin.String(caretakerCounter))">Skin.SetString(caretakerCounter,1)</onload>
 	<onload condition="String.IsEqual(Skin.String(caretakerCounter),1)">Skin.SetString(caretakerCounter,2)</onload>
 	<onload condition="String.IsEqual(Skin.String(caretakerCounter),2)">Skin.SetString(caretakerCounter,3)</onload>
