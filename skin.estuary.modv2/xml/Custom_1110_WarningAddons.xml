@@ -2,19 +2,12 @@
 <window type="dialog" id="1110">
 	<defaultcontrol always="true">3</defaultcontrol>
 	<include>Animation_DialogPopupOpenClose</include>
-	<onload condition="String.IsEmpty(Skin.String(caretakerCounter))">Skin.SetString(caretakerCounter,1)</onload>
-	<onload condition="String.IsEqual(Skin.String(caretakerCounter),1)">Skin.SetString(caretakerCounter,2)</onload>
-	<onload condition="String.IsEqual(Skin.String(caretakerCounter),2)">Skin.SetString(caretakerCounter,3)</onload>
-	<onload condition="String.IsEqual(Skin.String(caretakerCounter),3)">Skin.SetString(caretakerCounter,4)</onload>
-	<onload condition="String.IsEqual(Skin.String(caretakerCounter),4)">Skin.SetString(caretakerCounter,5)</onload>
-	<onload condition="String.IsEqual(Skin.String(caretakerCounter),5)">UnloadSkin()</onload>
 	<controls>
 		<control type="group">
 			<centerleft>50%</centerleft>
 			<centertop>50%</centertop>
 			<height>500</height>
 			<width>1100</width>
-			<visible>!String.IsEqual(Skin.String(caretakerCounter),5)</visible>
 			<include content="DialogBackgroundCommons">
 				<param name="width" value="1100" />
 				<param name="height" value="500" />

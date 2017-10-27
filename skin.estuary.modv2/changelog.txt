@@ -1,3 +1,6 @@
+[B]2.8.6[/B]
+• Remove unload skin for protection against banned addons
+
 [B]2.8.5[/B]
 • Fix close warning popup
 
