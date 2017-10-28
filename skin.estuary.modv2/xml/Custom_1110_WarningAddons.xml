@@ -31,12 +31,32 @@
 				<top>390</top>
 				<width>1100</width>
 				<align>center</align>
+				<control type="radiobutton" id="2">
+					<width>430</width>
+					<height>100</height>
+					<label>$LOCALIZE[40200]</label>
+					<font>font25_title</font>
+					<textoffsetx>38</textoffsetx>
+					<textwidth>310</textwidth>
+					<onclick>Skin.ToggleSetting(FirstWarningPopup)</onclick>
+					<align>left</align>
+					<scroll>true</scroll>
+					<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texturefocus>
+					<texturenofocus border="40">buttons/dialogbutton-nofo.png</texturenofocus>
+					<textureradioonfocus>buttons/status-on.png</textureradioonfocus>
+					<textureradioonnofocus>buttons/status-on.png</textureradioonnofocus>
+					<textureradioofffocus>buttons/status-off.png</textureradioofffocus>
+					<textureradiooffnofocus>buttons/status-off.png</textureradiooffnofocus>
+					<textureradiooffdisabled>buttons/status-off.png</textureradiooffdisabled>
+					<textureradioondisabled>buttons/status-on.png</textureradioondisabled>
+				</control>
 				<control type="button" id="3">
-					<width>400</width>
+					<width>430</width>
 					<height>100</height>
 					<label>$LOCALIZE[15067]</label>
 					<font>font25_title</font>
 					<textoffsetx>30</textoffsetx>
+					<textwidth>310</textwidth>
 					<onclick>Dialog.Close(1110)</onclick>
 					<align>center</align>
 					<texturefocus border="40" colordiffuse="$VAR[SkinColorVar]">buttons/dialogbutton-fo.png</texturefocus>

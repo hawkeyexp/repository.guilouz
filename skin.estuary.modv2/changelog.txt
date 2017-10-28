@@ -1,4 +1,5 @@
 [B]2.8.6[/B]
+• Add warning popup to just alert people and possible to disable it
 • Remove unload skin for protection against banned addons
 
 [B]2.8.5[/B]
