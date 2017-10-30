@@ -1,4 +1,5 @@
 [B]2.8.7[/B]
+• Remove protection against banned addons aka Caretaker
 • Fix PVR Group Manager channellist scrollbar position
 
 [B]2.8.6[/B]

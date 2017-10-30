@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!--<onload condition="!Skin.HasSetting(FirstTimeRun2)">ActivateWindow(1136)</onload>-->
-	<onload condition="String.IsEqual(Window(home).Property(script.service.caretaker.found.blacklisted),true) + !Skin.HasSetting(FirstWarningPopup)">ActivateWindow(1110)</onload>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
 	<controls>

@@ -31,7 +31,7 @@
 				<width>1000</width>
 				<align>center</align>
 				<control type="radiobutton" id="2">
-					<width>400</width>
+					<width>430</width>
 					<height>100</height>
 					<label>$LOCALIZE[40200]</label>
 					<font>font25_title</font>
@@ -50,7 +50,7 @@
 					<textureradioondisabled>buttons/status-on.png</textureradioondisabled>
 				</control>
 				<control type="button" id="3">
-					<width>400</width>
+					<width>430</width>
 					<height>100</height>
 					<label>$LOCALIZE[15067]</label>
 					<font>font25_title</font>

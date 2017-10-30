@@ -68,7 +68,9 @@
 			</control>
 			<control type="spincontrolex" id="9">
 				<description>Default SpinControlex</description>
-				<include>DefaultSettingButton</include>
+				<include content="DefaultSettingButton">
+					<param name="textwidth" value="680" />
+				</include>
 			</control>
 			<control type="image" id="11">
 				<description>separator image</description>
@@ -80,7 +82,9 @@
 			</control>
 			<control type="sliderex" id="13">
 				<description>Default Slider</description>
-				<include>DefaultSettingButton</include>
+				<include content="DefaultSettingButton">
+					<param name="textwidth" value="680" />
+				</include>
 			</control>
 			<control type="label" id="14">
 				<description>Default Label</description>
