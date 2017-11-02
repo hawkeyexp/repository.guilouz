@@ -24,7 +24,7 @@
 
 If you like my work and would like to buy me a beer or a coffee, I would appreciate :)
 
-[ ![Download](http://i.imgur.com/zNN1EYG.png) ](paypal.me/CyrilGuislain)
+[ ![Download](http://i.imgur.com/zNN1EYG.png) ](https://www.paypal.me/CyrilGuislain)
 
 ### • Support on Kodi forum :
 
