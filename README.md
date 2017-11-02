@@ -24,7 +24,7 @@
 
 If you like my work and would like to buy me a beer or a coffee, I would appreciate :)
 
-[ ![Download](http://i.imgur.com/zNN1EYG.png) ](https://pledgie.com/campaigns/29797)
+[ ![Download](http://i.imgur.com/zNN1EYG.png) ](paypal.me/CyrilGuislain)
 
 ### • Support on Kodi forum :
 
