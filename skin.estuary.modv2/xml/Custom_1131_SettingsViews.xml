@@ -130,7 +130,7 @@
 						<include>DefaultSettingButton</include>
 						<onclick>Container.SetViewMode(502)</onclick>
 						<onclick>Action(close)</onclick>
-						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
+						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 					</control>
 					<control type="button" id="11121">
 						<label>$LOCALIZE[40005]</label>

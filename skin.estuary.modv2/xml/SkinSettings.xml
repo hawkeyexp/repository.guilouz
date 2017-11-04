@@ -269,6 +269,17 @@
 					<selected>System.HasAddon(repository.marcelveldt)</selected>
 					<include>DefaultSettingButton</include>
 				</control>
+				<control type="radiobutton" id="320">
+					<label>Rector Stuff Repository $INFO[System.AddonVersion(repository.rector.stuff),(,)]</label>
+					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+					<onclick condition="!System.HasAddon(repository.rector.stuff)">InstallAddon(repository.rector.stuff)</onclick>
+					<onclick condition="System.HasAddon(repository.rector.stuff)">Addon.OpenSettings(repository.rector.stuff)</onclick>
+					<selected>System.HasAddon(repository.rector.stuff)</selected>
+					<include>DefaultSettingButton</include>
+				</control>
 				<control type="label" id="30013">
 					<textoffsetx>45</textoffsetx>
 					<top>0</top>
@@ -334,6 +345,28 @@
 					<font>font28_title</font>
 					<textcolor>grey</textcolor>
 					<shadowcolor>black</shadowcolor>
+				</control>
+				<control type="radiobutton" id="313">
+					<label>Artwork Beef $INFO[System.AddonVersion(script.artwork.beef),(,)]</label>
+					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+					<onclick condition="!System.HasAddon(script.artwork.beef)">InstallAddon(script.artwork.beef)</onclick>
+					<onclick condition="System.HasAddon(script.artwork.beef)">Addon.OpenSettings(script.artwork.beef)</onclick>
+					<selected>System.HasAddon(script.artwork.beef)</selected>
+					<include>DefaultSettingButton</include>
+				</control>
+				<control type="radiobutton" id="319">
+					<label>Artwork Helper $INFO[System.AddonVersion(script.artwork.helper),(,)]</label>
+					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+					<onclick condition="!System.HasAddon(script.artwork.helper)">InstallAddon(script.artwork.helper)</onclick>
+					<onclick condition="System.HasAddon(script.artwork.helper)">Addon.OpenSettings(script.artwork.helper)</onclick>
+					<selected>System.HasAddon(script.artwork.helper)</selected>
+					<include>DefaultSettingButton</include>
 				</control>
 				<control type="radiobutton" id="307">
 					<label>ExtendedInfo Script $INFO[System.AddonVersion(script.extendedinfo),(,)]</label>
@@ -401,17 +434,6 @@
 					<selected>System.HasAddon(service.nextup.notification)</selected>
 					<include>DefaultSettingButton</include>
 				</control>
-				<control type="radiobutton" id="313">
-					<label>Artwork Downloader $INFO[System.AddonVersion(script.artwork.downloader),(,)]</label>
-					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
-					<onclick condition="!System.HasAddon(script.artwork.downloader)">InstallAddon(script.artwork.downloader)</onclick>
-					<onclick condition="System.HasAddon(script.artwork.downloader)">Addon.OpenSettings(script.artwork.downloader)</onclick>
-					<selected>System.HasAddon(script.artwork.downloader)</selected>
-					<include>DefaultSettingButton</include>
-				</control>
 				<control type="radiobutton" id="314">
 					<label>AutoCompletion for virtual keyboard $INFO[System.AddonVersion(plugin.program.autocompletion),(,)]</label>
 					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
@@ -467,6 +489,17 @@
 					<selected>System.HasAddon(script.tv.show.next.aired)</selected>
 					<include>DefaultSettingButton</include>
 				</control>
+				<control type="radiobutton" id="321">
+					<label>Movie Genres Icons for Estuary MOD V2 $INFO[System.AddonVersion(resource.images.moviegenreicons.estuarymod),(,)]</label>
+					<textureradioonfocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="ffffffff">buttons/status-on.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="fff02222">buttons/status-off.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="fff02222">buttons/status-off.png</textureradiooffnofocus>
+					<onclick condition="!System.HasAddon(resource.images.moviegenreicons.estuarymod)">InstallAddon(resource.images.moviegenreicons.estuarymod)</onclick>
+					<onclick condition="System.HasAddon(resource.images.moviegenreicons.estuarymod)">Addon.OpenSettings(resource.images.moviegenreicons.estuarymod)</onclick>
+					<selected>System.HasAddon(resource.images.moviegenreicons.estuarymod)</selected>
+					<include>DefaultSettingButton</include>
+				</control>
 			</control>
 			<control type="grouplist" id="400">
 				<top>168</top>
@@ -507,12 +540,6 @@
 				<ondown>500</ondown>
 				<pagecontrol>60</pagecontrol>
 				<visible>Container(9000).HasFocus(6)</visible>
-				<control type="radiobutton" id="501">
-					<label>$LOCALIZE[40060]</label>
-					<include>DefaultSettingButton</include>
-					<selected>Skin.HasSetting(enable_updateartworks)</selected>
-					<onclick>Skin.ToggleSetting(enable_updateartworks)</onclick>
-				</control>
 				<control type="button" id="506">
 					<label>$LOCALIZE[40125]</label>
 					<include>DefaultSettingButton</include>

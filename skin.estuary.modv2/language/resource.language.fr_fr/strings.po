@@ -1016,10 +1016,7 @@ msgctxt "#40059"
 msgid "Show ExtraFanarts"
 msgstr "Afficher les ExtraFanarts"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40060"
-msgid "Start automatically Artwork Downloader after library update"
-msgstr "Démarrer automatiquement Artwork Downloader après la mise à jour de la bibliothèque"
+#: Empty String 40060
 
 #: /xml/DialogMusicInfo.xml
 msgctxt "#40061"

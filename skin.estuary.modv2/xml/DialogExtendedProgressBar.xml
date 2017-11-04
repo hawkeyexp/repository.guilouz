@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<zorder>3</zorder>
-	<onload condition="Library.IsScanningVideo + Skin.HasSetting(enable_updateartworks)">SetProperty(UpdateArt,1)</onload>
-    <onunload condition="!String.IsEmpty(Window.Property(UpdateArt)) + Skin.HasSetting(enable_updateartworks)">XBMC.RunScript(script.artwork.downloader,mode=custom,silent=true,clearlogo,clearart,thumb,banner,tvthumb,seasonbanner,seasonthumb,seasonposter,discart,characterart)</onunload>
-    <onunload condition="!String.IsEmpty(Window.Property(UpdateArt)) + Skin.HasSetting(enable_updateartworks)">ClearProperty(UpdateArt)</onunload>
 	<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<controls>
@@ -14,7 +11,7 @@
 			<top>0</top>
 			<animation effect="slide" end="0,-90" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			<animation effect="slide" end="0,-80" time="150" condition="Window.IsVisible(FullscreenVideo)">conditional</animation>
-			<visible>!Window.IsVisible(Startup.xml)</visible>
+			<visible>!Window.IsVisible(Startup.xml) + !Window.IsVisible(Custom_1132_MoviesSetsInfo.xml)</visible>
 			<control type="image">
 				<left>20</left>
 				<top>10</top>

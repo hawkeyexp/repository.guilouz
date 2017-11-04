@@ -19,7 +19,7 @@
 				<top>80</top>
 				<control type="grouplist" id="11100">
 					<width>1000</width>
-					<height>480</height>
+					<height>500</height>
 					<itemgap>0</itemgap>
 					<onup>11100</onup>
 					<ondown>11100</ondown>
@@ -59,7 +59,7 @@
 						<include>DefaultSettingButton</include>
 						<selected>Skin.HasSetting(hide_allchannels)</selected>
 						<onclick>Skin.ToggleSetting(hide_allchannels)</onclick>
-					</control>			
+					</control>	
 				</control>
 			</control>
 		</control>

@@ -338,7 +338,7 @@
 					<height>205</height>
 					<right>50</right>
 					<align>justify</align>
-					<autoscroll time="8000" delay="5000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="4000" delay="7000" repeat="7000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 					<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -350,7 +350,7 @@
 					<height>198</height>
 					<right>50</right>
 					<align>justify</align>
-					<autoscroll time="8000" delay="5000" repeat="5000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+					<autoscroll time="4000" delay="7000" repeat="7000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 					<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 					<shadowcolor>text_shadow</shadowcolor>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -788,7 +788,7 @@
 						<selected>Skin.HasSetting(SkinHelper.EnableExtraFanart)</selected>
 						<onclick>Skin.ToggleSetting(SkinHelper.EnableExtraFanart)</onclick>
 						<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
-						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.content(seasons) | Container.Content(episodes)</visible>
+						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
 					</control>
 					<control type="radiobutton" id="627">
 						<include>MediaMenuItemsCommonRadio</include>

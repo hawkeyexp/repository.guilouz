@@ -418,9 +418,9 @@
 					<content sortby="year" sortorder="ascending">videodb://movies/sets/$INFO[ListItem.DBID]/</content>
 				</control>
 				<control type="grouplist" id="5000">
-					<left>-308</left>
+					<left>0</left>
 					<top>864</top>
-					<width>1246</width>
+					<width>631</width>
 					<height>400</height>
 					<onleft>5000</onleft>
 					<onright>5000</onright>
@@ -451,7 +451,32 @@
 						<param name="radioposx" value="138.5" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Art(fanart))" />
 					</include>
+					<include content="InfoDialogButton">
+						<param name="id" value="104" />
+						<param name="icon" value="icons/infodialogs/artworkdownloader.png" />
+						<param name="label" value="Artwork Beef" />
+						<param name="onclick_1" value="RunScript(script.artwork.beef, mode=gui, mediatype=set, dbid=$INFO[ListItem.DBID])" />
+						<param name="width" value="323.5" />
+						<param name="radioposx" value="138.5" />
+						<param name="visible" value="System.HasAddon(script.artwork.beef)" />
+					</include>
+					<include content="InfoDialogButton">
+						<param name="id" value="105" />
+						<param name="icon" value="icons/infodialogs/download.png" />
+						<param name="label" value="$LOCALIZE[40239]" />
+						<param name="onclick_1" value="RunScript(script.artwork.beef, mediatype=set, dbid=$INFO[ListItem.DBID])" />
+						<param name="width" value="323.5" />
+						<param name="radioposx" value="138.5" />
+						<param name="visible" value="System.HasAddon(script.artwork.beef)" />
+					</include>
 				</control>
+				<include content="LeftRightArrows">
+					<param name="list_id" value="5000" />
+					<param name="left_posx" value="-10" />
+					<param name="right_posx" value="613" />
+					<param name="posy" value="921" />
+					<param name="visible" value="true" />
+				</include>
 				<include content="LeftRightArrows">
 					<param name="list_id" value="50" />
 					<param name="left_posx" value="-21" />

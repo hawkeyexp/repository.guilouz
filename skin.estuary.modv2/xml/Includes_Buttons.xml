@@ -230,6 +230,8 @@
 		<param name="radioposx">108</param>
 		<param name="condition_1"></param>
 		<param name="condition_2"></param>
+		<param name="condition_3"></param>
+		<param name="condition_4"></param>
 		<definition>
 			<control type="radiobutton" id="$PARAM[id]">
 				<width>$PARAM[width]</width>
@@ -253,6 +255,8 @@
 				<label>$PARAM[label]</label>
 				<onclick condition="$PARAM[condition_1]">$PARAM[onclick_1]</onclick>
 				<onclick condition="$PARAM[condition_2]">$PARAM[onclick_2]</onclick>
+				<onclick condition="$PARAM[condition_3]">$PARAM[onclick_3]</onclick>
+				<onclick condition="$PARAM[condition_4]">$PARAM[onclick_4]</onclick>
 				<visible>$PARAM[visible]</visible>
 				<animation effect="fade" start="100" end="0" time="300" delay="300">Hidden</animation>
 			</control>

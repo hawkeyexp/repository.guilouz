@@ -1,6 +1,10 @@
 [B]2.8.7[/B]
 • Remove protection against banned addons aka Caretaker
+• Replace 'Artwork Downloader' support by 'Artwork Beef' (several advantages) 
+• Enable 'Fanart' view for music videos
 • Fix PVR Group Manager channellist scrollbar position
+• Fix video in background when opacity is set to 100%
+• Minor fixes
 
 [B]2.8.6[/B]
 • Add warning popup to just alert people and possible to disable it

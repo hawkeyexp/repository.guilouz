@@ -26,7 +26,7 @@
 						<aspectratio>scale</aspectratio>
 						<fadetime>400</fadetime>
 						<animation effect="fade" time="400">VisibleChange</animation>
-						<imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[MediaFanartVar]</imagepath>
+						<imagepath background="true" colordiffuse="$VAR[Background_Opacity]">$VAR[ExtraFanartVar]</imagepath>
 						<timeperimage>3000</timeperimage>
 						<randomize>true</randomize>
 					</control>
@@ -800,22 +800,30 @@
 					<include content="InfoDialogButton">
 						<param name="id" value="103" />
 						<param name="icon" value="icons/infodialogs/artworkdownloader.png" />
-						<param name="label" value="Artwork Downloader" />
-						<param name="onclick_1" value="XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])" />
+						<param name="label" value="Artwork Beef" />
+						<param name="onclick_1" value="RunScript(script.artwork.beef, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])" />
 						<param name="condition_1" value="String.IsEqual(ListItem.DBType,movie)" />
-						<param name="onclick_2" value="XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])" />
+						<param name="onclick_2" value="RunScript(script.artwork.beef, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])" />
 						<param name="condition_2" value="String.IsEqual(ListItem.DBType,tvshow)" />
-						<param name="visible" value="System.HasAddon(script.artwork.downloader) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)]" />
+						<param name="onclick_3" value="RunScript(script.artwork.beef, mode=gui, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])" />
+						<param name="condition_3" value="String.IsEqual(ListItem.DBType,musicvideo)" />
+						<param name="onclick_4" value="RunScript(script.artwork.beef, mode=gui, mediatype=episode, dbid=$INFO[ListItem.DBID])" />
+						<param name="condition_4" value="String.IsEqual(ListItem.DBType,episode)" />
+						<param name="visible" value="System.HasAddon(script.artwork.beef) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="104" />
 						<param name="icon" value="icons/infodialogs/download.png" />
 						<param name="label" value="$LOCALIZE[40239]" />
-						<param name="onclick_1" value="XBMC.RunScript(script.artwork.downloader, mediatype=movie, dbid=$INFO[ListItem.DBID])" />
+						<param name="onclick_1" value="RunScript(script.artwork.beef, mediatype=movie, dbid=$INFO[ListItem.DBID])" />
 						<param name="condition_1" value="String.IsEqual(ListItem.DBType,movie)" />
-						<param name="onclick_2" value="XBMC.RunScript(script.artwork.downloader, mediatype=tvshow, dbid=$INFO[ListItem.DBID])" />
+						<param name="onclick_2" value="RunScript(script.artwork.beef, mediatype=tvshow, dbid=$INFO[ListItem.DBID])" />
 						<param name="condition_2" value="String.IsEqual(ListItem.DBType,tvshow)" />
-						<param name="visible" value="System.HasAddon(script.artwork.downloader) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow)]" />
+						<param name="onclick_3" value="RunScript(script.artwork.beef, mediatype=musicvideo, dbid=$INFO[ListItem.DBID])" />
+						<param name="condition_3" value="String.IsEqual(ListItem.DBType,musicvideo)" />
+						<param name="onclick_4" value="RunScript(script.artwork.beef, mediatype=episode, dbid=$INFO[ListItem.DBID])" />
+						<param name="condition_4" value="String.IsEqual(ListItem.DBType,episode)" />
+						<param name="visible" value="System.HasAddon(script.artwork.beef) + [String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode) | String.IsEqual(ListItem.DBType,musicvideo)]" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="6" />

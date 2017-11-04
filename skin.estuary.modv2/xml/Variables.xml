@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="ExtraFanartVar">
+		<value condition="[Container.Content(movies) | String.IsEqual(ListItem.DBTYPE,movie) | ListItem.IsCollection | String.IsEqual(ListItem.DBTYPE,set) | Container.Content(musicvideos) | String.IsEqual(ListItem.DBTYPE,musicvideo) | Container.Content(tvshows) | String.IsEqual(ListItem.DBTYPE,tvshow)] + !String.IsEmpty(ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=fanart</value>
+		<value condition="[Container.Content(seasons) | Container.Content(episodes) | String.IsEqual(ListItem.DBTYPE,seasons) | String.IsEqual(ListItem.DBTYPE,episode)] + !String.IsEmpty(ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=tvshow.fanart</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
+	</variable>
+	<variable name="ExtraFanartHomeVar">
+	<value condition="Window.IsVisible(DialogVideoInfo.xml) + [Container.Content(movies) | String.IsEqual(ListItem.DBTYPE,movie) | ListItem.IsCollection | String.IsEqual(ListItem.DBTYPE,set) | Container.Content(musicvideos) | String.IsEqual(ListItem.DBTYPE,musicvideo) | Container.Content(tvshows) | String.IsEqual(ListItem.DBTYPE,tvshow)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=fanart</value>
+	<value condition="Window.IsVisible(DialogVideoInfo.xml) + [Container.Content(seasons) | Container.Content(episodes) | String.IsEqual(ListItem.DBTYPE,seasons) | String.IsEqual(ListItem.DBTYPE,episode)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=tvshow.fanart</value>
+	<value condition="[String.IsEqual(Container.ListItem.DBTYPE,movie) | String.IsEqual(Container.ListItem.DBTYPE,set) | String.IsEqual(Container.ListItem.DBTYPE,musicvideo) | String.IsEqual(Container.ListItem.DBTYPE,tvshow)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
+	<value condition="[String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
+	<value condition="[String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.Label]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
+	<value>$INFO[Container.ListItem.Art(fanart)]</value>
+	</variable>
 	<variable name="PlayButtonLabelInfoDialog">
 		<value condition="String.IsEqual(listitem.dbtype,tvshow)">$LOCALIZE[1024]</value>
 		<value>$LOCALIZE[208]</value>
@@ -341,8 +354,8 @@
 		<value>$INFO[Window(Home).Property(NextAired.Status)]</value>
 	</variable>
 	<variable name="PosterMoviesSetsInfoVar">
-        <value condition="!Control.HasFocus(50)">$INFO[ListItem.Art(poster)]</value>
         <value condition="Control.HasFocus(50)">$INFO[Container(50).ListItem.Art(poster)]</value>
+        <value>$INFO[ListItem.Art(poster)]</value>
     </variable>
     <variable name="PlotMoviesSetsInfoVar">
 		<value condition="!Control.HasFocus(50)">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)]</value>
@@ -2275,6 +2288,7 @@
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),53)">$LOCALIZE[31100]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),54)">$LOCALIZE[31101]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),502)">$LOCALIZE[20445]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),506)">$LOCALIZE[40017]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),507)">$LOCALIZE[40146]</value>
 		<value>$LOCALIZE[40148]</value>
@@ -2361,6 +2375,7 @@
 		<value condition="Container.Content(musicvideos) + Control.HasFocus(11114)">special://skin/extras/views/musicvideos/54.png</value>
 		<value condition="Container.Content(musicvideos) + Control.HasFocus(11116)">special://skin/extras/views/musicvideos/55.png</value>
 		<value condition="Container.Content(musicvideos) + Control.HasFocus(11117)">special://skin/extras/views/musicvideos/500.png</value>
+		<value condition="Container.Content(musicvideos) + Control.HasFocus(11120)">special://skin/extras/views/musicvideos/502.png</value>
 		<value condition="Container.Content(musicvideos) + Control.HasFocus(11122)">special://skin/extras/views/musicvideos/506.png</value>
 		<value condition="Container.Content(musicvideos) + Control.HasFocus(11123)">special://skin/extras/views/musicvideos/507.png</value>
 	</variable>
@@ -2667,8 +2682,8 @@
 		<value>$LOCALIZE[15109]</value>
 	</variable>
 	<variable name="BackgroundInfoVar">
-		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))">$VAR[MediaFanartVar]</value>
-		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))">$INFO[Window(home).Property(fanart)]</value>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(ListItem.Art(fanart1)) | !String.IsEmpty(ListItem.Art(tvshow.fanart1))">$VAR[MediaFanartVar]</value>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + [String.IsEmpty(ListItem.Art(fanart1)) | String.IsEmpty(ListItem.Art(tvshow.fanart1))]">$INFO[Window(home).Property(fanart)]</value>
 		<value condition="!Skin.HasSetting(SkinHelper.EnableExtraFanart)">$INFO[Window(home).Property(fanart)]</value>
 	</variable>
 	<variable name="PlotSpoilerInfoVar">
@@ -3030,12 +3045,9 @@
 	</variable>
 	<variable name="FanartImageVar">
 		<value condition="ListItem.IsParentFolder">special://skin/extras/home-images/movies.jpg</value>
-		<value condition="Skin.HasSetting(hide_thumbforspoiler) + Integer.IsLess(ListItem.Playcount,1) + Container.Content(episodes) + Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
-		<value condition="Skin.HasSetting(hide_thumbforspoiler) + Integer.IsLess(ListItem.Playcount,1) + Container.Content(episodes) + Skin.HasSetting(SkinHelper.EnableExtraFanart) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt))">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Skin.HasSetting(hide_thumbforspoiler) + Integer.IsLess(ListItem.Playcount,1) + Container.Content(episodes) + !Skin.HasSetting(SkinHelper.EnableExtraFanart)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(episodes)">$INFO[ListItem.Thumb]</value>
-		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + !ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
-		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + !ListItem.IsCollection">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(hide_thumbforspoiler) + Integer.IsLess(ListItem.Playcount,1) + Container.Content(episodes)">$VAR[MediaFanartVar]</value>
+		<value condition="Container.Content(episodes) + !String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">$VAR[MediaFanartVar]</value>
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="ListBoxInfoVar">
@@ -3344,7 +3356,8 @@
 		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="HomeFanartVar">
-		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + !Control.HasFocus(9000) + !Control.HasFocus(5600) + !String.IsEqual(Container.ListItem.DBtype,set)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + [String.IsEqual(Container.ListItem.DBTYPE,movie) | String.IsEqual(Container.ListItem.DBTYPE,set) | String.IsEqual(Container.ListItem.DBTYPE,tvshow) | String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode) | String.IsEqual(Container.ListItem.DBTYPE,musicvideo)]">$VAR[ExtraFanartHomeVar]</value>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + !Control.HasFocus(9000) + !Control.HasFocus(5600) + !String.IsEqual(Container.ListItem.DBTYPE,movie) + !String.IsEqual(Container.ListItem.DBTYPE,set) + !String.IsEqual(Container.ListItem.DBTYPE,tvshow) + !String.IsEqual(Container.ListItem.DBTYPE,season) + !String.IsEqual(Container.ListItem.DBTYPE,episode) + !String.IsEqual(Container.ListItem.DBTYPE,musicvideo)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
 		<value condition="Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window(home).Property(infobackground)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
 		<value condition="!String.IsEmpty(Container.ListItem.Property(FanartCode))">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container.ListItem.Property(FanartCode)]$INFO[Skin.String(WeatherFanart.ext)]</value>
@@ -3359,7 +3372,8 @@
 	<variable name="MediaFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)"></value>
 		<value condition="ListItem.IsParentFolder"></value>
-		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + !ListItem.IsCollection">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + [Container.Content(movies) | String.IsEqual(ListItem.DBTYPE,movie) | ListItem.IsCollection | String.IsEqual(ListItem.DBTYPE,set) | Container.Content(musicvideos) | String.IsEqual(ListItem.DBTYPE,musicvideo) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode)]">$VAR[ExtraFanartVar]</value>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + !Container.Content(movies) + !String.IsEqual(ListItem.DBTYPE,movie) + !ListItem.IsCollection + !String.IsEqual(ListItem.DBTYPE,set) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !String.IsEqual(ListItem.DBTYPE,tvshow) + !String.IsEqual(ListItem.DBTYPE,season) + !String.IsEqual(ListItem.DBTYPE,episode)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
 		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + Control.HasFocus(50) + !String.IsEmpty(Container(50).ListItem.Art(fanart))">$INFO[Container(50).ListItem.Art(fanart)]</value>
 		<value condition="Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window(home).Property(infobackground)]</value>
 		<value condition="Container.Content(genres) + Window.IsActive(videos)">$INFO[Skin.String(MovieGenreFanart.path)]$INFO[ListItem.Label]$INFO[Skin.String(MovieGenreFanart.ext)]</value>

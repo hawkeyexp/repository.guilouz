@@ -111,7 +111,7 @@
 				<onup>$PARAM[list_id]</onup>
 				<ondown>$PARAM[list_id]</ondown>
 				<viewtype label="$PARAM[viewtype_label]">list</viewtype>
-				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(games) | Window.IsActive(MyPlaylist.xml)</visible>
+				<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(games) | Container.Content(musicvideos) | Window.IsActive(MyPlaylist.xml)</visible>
 				<focusedlayout height="list_item_height">
 					<control type="image">
 						<left>0</left>
@@ -525,14 +525,6 @@
 						<label>$VAR[ListBoxInfoVar]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<visible>String.IsEqual(Skin.Font, Arial)</visible>
-					</control>
-					<control type="textbox">
-						<left>10</left>
-						<top>-99</top>
-						<width>535</width>
-						<bottom>311</bottom>
-						<label>$LOCALIZE[19055]</label>
-						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))</visible>
 					</control>
 					<control type="list" id="500551">
 						<left>7</left>

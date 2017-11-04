@@ -4,7 +4,7 @@
     <!-- Power menu: close before opening other window -->
      <groupoverride group="powermenu" condition="Window.IsActive(DialogButtonMenu.xml)">Close</groupoverride>
      
-     <override action="dialog.close(all,true)">
+    <override action="dialog.close(all,true)">
         <action>System.LogOff</action>
     </override>
     

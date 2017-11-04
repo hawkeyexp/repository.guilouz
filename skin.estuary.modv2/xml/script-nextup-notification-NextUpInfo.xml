@@ -39,20 +39,17 @@
                     <label>[UPPERCASE]$LOCALIZE[40075][/UPPERCASE]</label>
                     <shadowcolor>black</shadowcolor>
                 </control>
-                <control type="image" description="landscape">
+                <control type="image" id="3005" description="fanart">
                     <width>100%</width>
                     <height>100%</height>
                     <fadetime>350</fadetime>
                     <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture>$INFO[Player.Art(tvshow.landscape)]</texture>
                 </control>
-                <control type="image" description="fanart">
+                <control type="image" id="3010" description="landscape">
                     <width>100%</width>
                     <height>100%</height>
                     <fadetime>350</fadetime>
                     <aspectratio scalediffuse="false">scale</aspectratio>
-                    <texture>$INFO[Player.Art(fanart)]</texture>
-                    <visible>String.IsEmpty(Player.Art(tvshow.landscape))</visible>
                 </control>
                 <control type="image" description="blackline">
                     <width>100%</width>

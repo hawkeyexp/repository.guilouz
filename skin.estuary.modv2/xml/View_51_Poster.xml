@@ -99,7 +99,7 @@
 						<height>250</height>
 						<right>50</right>
 						<align>justify</align>
-						<autoscroll time="6000" delay="9000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="4000" delay="7000" repeat="7000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$VAR[PlotSpoilerVar]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -112,7 +112,7 @@
 						<height>255</height>
 						<right>50</right>
 						<align>justify</align>
-						<autoscroll time="6000" delay="9000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<autoscroll time="4000" delay="7000" repeat="7000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>$VAR[PlotSpoilerVar]</label>
 						<shadowcolor>text_shadow</shadowcolor>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
