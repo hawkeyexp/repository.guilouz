@@ -1,3 +1,6 @@
+[B]2.8.8[/B]
+• Improvements
+
 [B]2.8.7[/B]
 • Remove protection against banned addons aka Caretaker
 • Replace 'Artwork Downloader' support by 'Artwork Beef' (several advantages) 
