@@ -433,7 +433,7 @@
 				<visible>Control.IsVisible(53) + Window.IsVisible(MyVideoNav.xml)</visible>
 				<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 				<visible>!Container.Scrolling + ![Window.IsVisible(DialogVolumeBar.xml) + !Player.Muted] + !ListItem.IsParentFolder</visible>
-				<animation effect="slide" end=",-5" time="0" condition="ListItem.IsCollection">Conditional</animation>
+				<animation effect="slide" end=",-5" time="0" condition="String.IsEqual(ListItem.Art(clearlogo))">Conditional</animation>
 				<animation effect="slide" end="0,-120" time="300" tween="sine" easing="inout" condition="$EXP[infodialog_active]">conditional</animation>
 			</control>
 			<control type="image">

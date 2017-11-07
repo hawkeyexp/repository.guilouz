@@ -110,7 +110,6 @@
 							<height>100</height>
 							<aspectratio aligny="center">keep</aspectratio>
 							<texture>$VAR[ViewClearLogoVar]</texture>
-							<visible>!ListItem.IsCollection</visible>
 						</control>
 						<control type="image">
 							<left>20</left>
@@ -131,7 +130,7 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
-							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))] | ListItem.IsCollection</visible>
+							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
 						</control>
 						<control type="textbox">
 							<left>25</left>
@@ -143,7 +142,7 @@
 							<label>$INFO[ListItem.Label]</label>
 							<textcolor>grey</textcolor>
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
-							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))] | ListItem.IsCollection</visible>
+							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
 							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
 							<visible>!String.IsEqual(listitem.dbtype,album)</visible>
 						</control>
@@ -222,7 +221,6 @@
 							<height>100</height>
 							<aspectratio aligny="center">keep</aspectratio>
 							<texture>$VAR[ViewClearLogoVar]</texture>
-							<visible>!ListItem.IsCollection</visible>
 						</control>
 						<control type="textbox">
 							<left>25</left>
@@ -233,7 +231,7 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
-							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))] | ListItem.IsCollection</visible>
+							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
 						</control>
 						<control type="image">
 							<left>169</left>

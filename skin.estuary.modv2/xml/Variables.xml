@@ -2637,8 +2637,9 @@
 	<variable name="ViewClearArtVar">
 		<value condition="!String.IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
-		<value condition="!String.IsEmpty(ListItem.Art(clearlogo)) + ListItem.IsCollection">$INFO[ListItem.Art(clearlogo)]</value>
-		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearart))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearart)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
 	</variable>
 	<variable name="HomeClearLogoVar">
 		<value condition="!String.IsEmpty(Container().ListItem.Art(tvshow.clearlogo))">$INFO[Container().ListItem.Art(tvshow.clearlogo)]</value>

@@ -1,5 +1,6 @@
 [B]2.8.8[/B]
 • Improvements
+• Fix movies sets logos on 'Shift View'
 
 [B]2.8.7[/B]
 • Remove protection against banned addons aka Caretaker
