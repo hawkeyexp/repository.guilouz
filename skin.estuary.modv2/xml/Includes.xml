@@ -1744,12 +1744,6 @@
 				<visible>!Slideshow.IsActive</visible>
 				<visible>!Skin.HasSetting(background_showvideo) + ![Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)]</visible>
 			</control>
-			<control type="visualisation">
-				<include>FullScreenDimensions</include>
-				<visible>!Slideshow.IsActive</visible>
-				<visible>Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia)) + Visualisation.Enabled</visible>
-				<visible>!Skin.HasSetting(background_showvisualisation)</visible>
-			</control>
 			<control type="group">
 				<include>FullScreenDimensions</include>
 				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
@@ -1759,7 +1753,7 @@
 					<include>ColoredBackgroundImages</include>
 				</control>
 				<control type="group" id="31111">
-					<visible>![[Player.HasVideo + !Skin.HasSetting(background_showvideo)] | [Player.HasAudio + Visualisation.Enabled + !String.IsEmpty(Visualisation.Name)]] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
+					<visible>![Player.HasVideo + !Skin.HasSetting(background_showvideo)] | !String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))</visible>
 					<depth>DepthBackground</depth>
 					<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
@@ -1801,6 +1795,12 @@
 						<visible>Control.IsVisible(502) + !$EXP[infodialog_active]</visible>
 					</control>
 				</control>
+			</control>
+			<control type="visualisation">
+				<include>FullScreenDimensions</include>
+				<visible>!Slideshow.IsActive</visible>
+				<visible>Player.HasAudio + Visualisation.Enabled</visible>
+				<visible>!Skin.HasSetting(background_showvisualisation)</visible>
 			</control>
 		</definition>
 	</include>

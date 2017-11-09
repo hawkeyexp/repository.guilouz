@@ -1,5 +1,7 @@
 [B]2.8.8[/B]
 • Improvements
+• Add new 'Christmas' pattern
+• Fix libraries fanarts when music is played
 • Fix movies sets logos on 'Shift View'
 
 [B]2.8.7[/B]

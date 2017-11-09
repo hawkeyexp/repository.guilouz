@@ -41,7 +41,7 @@
 			<timeperimage>3000</timeperimage>
 			<randomize>true</randomize>
 			<visible>!Skin.HasSetting(no_fanart)</visible>
-			<visible>![Player.HasMedia + !Skin.HasSetting(background_showvideo)]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(background_showvideo)]</visible>
 		</control>
 		<control type="multiimage">
 			<depth>DepthBackground</depth>
@@ -57,7 +57,7 @@
 			<randomize>true</randomize>
 			<visible>[Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]</visible>
 			<visible>![Control.HasFocus(9000) + !String.IsEmpty(Container(9000).ListItem.Property(background))] + ![[[Control.HasFocus(9000) + !String.IsEmpty(Container(9000).ListItem.Property(background))] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(804) + !String.IsEmpty(Skin.String(power_background)) + !Skin.HasSetting(enable_power_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(804) + String.IsEmpty(Skin.String(power_background)) + !Skin.HasSetting(enable_power_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(802) + !String.IsEmpty(Skin.String(settings_background)) + !Skin.HasSetting(enable_settings_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(802) + String.IsEmpty(Skin.String(settings_background)) + !Skin.HasSetting(enable_settings_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(801) + !String.IsEmpty(Skin.String(search_background)) + !Skin.HasSetting(enable_search_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(801) + String.IsEmpty(Skin.String(search_background)) + !Skin.HasSetting(enable_search_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]]]</visible>
-			<visible>![Player.HasMedia + !Skin.HasSetting(background_showvideo)]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(background_showvideo)]</visible>
 		</control>
 		<control type="multiimage">
 			<depth>DepthBackground</depth>
@@ -72,7 +72,7 @@
 			<timeperimage>3000</timeperimage>
 			<randomize>true</randomize>
 			<visible>[[Control.HasFocus(9000) + !String.IsEmpty(Container(9000).ListItem.Property(background))] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(804) + !String.IsEmpty(Skin.String(power_background)) + !Skin.HasSetting(enable_power_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(804) + String.IsEmpty(Skin.String(power_background)) + !Skin.HasSetting(enable_power_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(802) + !String.IsEmpty(Skin.String(settings_background)) + !Skin.HasSetting(enable_settings_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(802) + String.IsEmpty(Skin.String(settings_background)) + !Skin.HasSetting(enable_settings_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(801) + !String.IsEmpty(Skin.String(search_background)) + !Skin.HasSetting(enable_search_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(801) + String.IsEmpty(Skin.String(search_background)) + !Skin.HasSetting(enable_search_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]]</visible>
-			<visible>![Player.HasMedia + !Skin.HasSetting(background_showvideo)]</visible>
+			<visible>![Player.HasVideo + !Skin.HasSetting(background_showvideo)]</visible>
 		</control>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
