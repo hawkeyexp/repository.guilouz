@@ -1015,7 +1015,10 @@ msgctxt "#40059"
 msgid "Show ExtraFanarts"
 msgstr "הצג פאנארט נוספים"
 
-#: Empty String 40060
+#: /xml/Variables.xml
+msgctxt "#40060"
+msgid "Pause"
+msgstr ""
 
 #: /xml/DialogMusicInfo.xml
 msgctxt "#40061"

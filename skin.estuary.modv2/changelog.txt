@@ -3,6 +3,7 @@
 • Add new 'Christmas' pattern
 • Fix libraries fanarts when music is played
 • Fix movies sets logos on 'Shift View'
+• Minor fixes
 
 [B]2.8.7[/B]
 • Remove protection against banned addons aka Caretaker
