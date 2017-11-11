@@ -2709,6 +2709,15 @@
 		<value condition="String.Contains(ListItem.mpaa,Rated) + String.Contains(System.Language,French)">Inconnue</value>
 		<value>$INFO[ListItem.mpaa]</value>
 	</variable>
+	<variable name="MPAALabelPVRVar">
+		<value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.MPAA),10) + String.Contains(System.Language,French)">Interdit au moins de 10 ans</value>
+		<value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.MPAA),12) + String.Contains(System.Language,French)">Interdit au moins de 12 ans</value>
+		<value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.MPAA),16) + String.Contains(System.Language,French)">Interdit au moins de 16 ans</value>
+		<value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.MPAA),18) + String.Contains(System.Language,French)">Interdit au moins de 18 ans</value>
+		<value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.MPAA),U) + String.Contains(System.Language,French)">Tout public</value>
+		<value condition="String.Contains(Window(Home).Property(SkinHelper.ListItem.MPAA),Rated) + String.Contains(System.Language,French)">Inconnue</value>
+		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.MPAA)]</value>
+	</variable>
 	<variable name="MPAAIconVar">
 		<value condition="String.Contains(Window.Property(mpaa),10) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa10.png</value>
 		<value condition="String.Contains(Window.Property(mpaa),12) + String.Contains(System.Language,French)">icons/extendedinfo/rating/csa12.png</value>

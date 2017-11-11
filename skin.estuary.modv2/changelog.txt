@@ -1,8 +1,9 @@
 [B]2.8.8[/B]
-• Improvements
+• Improve PVR info dialog
 • Add new 'Christmas' pattern
 • Fix libraries fanarts when music is played
 • Fix movies sets logos on 'Shift View'
+• Improvements
 • Minor fixes
 
 [B]2.8.7[/B]
