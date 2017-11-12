@@ -77,9 +77,7 @@
 					<left>-16</left>
 					<width>516</width>
 					<height>718</height>
-					<texture>colors/black.png</texture>
-					<bordertexture border="21">overlays/shadow.png</bordertexture>
-					<bordersize>20</bordersize>
+					<texture border="21">dialogs/dialog-bg.png</texture>
 				</control>
 				<control type="image">
 					<depth>DepthContentPopout</depth>
@@ -87,7 +85,7 @@
 					<top>4</top>
 					<width>476</width>
 					<height>678</height>
-					<aspectratio>scale</aspectratio>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
 					<texture fallback="DefaultVideo.png">$VAR[PVRArtworksVar]</texture>
 				</control>
 			</control>
@@ -228,16 +226,16 @@
 				<control type="group">
 					<control type="image">
 						<left>0</left>
-						<top>164</top>
+						<top>168</top>
 						<width>1245</width>
-						<height>178</height>
+						<height>174</height>
 						<texture border="21">dialogs/dialog-bg.png</texture>
 					</control>
 					<control type="textbox">
 						<left>17</left>
-						<top>185</top>
+						<top>189</top>
 						<width>1210</width>
-						<height>133</height>
+						<height>129</height>
 						<align>center</align>
 						<aligny>center</aligny>
 						<font>font32_title</font>
