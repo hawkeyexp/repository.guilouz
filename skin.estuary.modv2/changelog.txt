@@ -1,3 +1,6 @@
+[B]2.8.9[/B]
+• Improvements
+
 [B]2.8.8[/B]
 • Improve PVR info dialog
 • Add new 'Christmas' pattern

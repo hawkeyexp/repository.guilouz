@@ -45,7 +45,7 @@
 				<top>20</top>
 				<right>30</right>
 				<height>25</height>
-				<label>[B]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Season, - ,x]$INFO[VideoPlayer.Episode,,.]$INFO[VideoPlayer.EpisodeName, ][/B]</label>
+				<label>[B]$INFO[VideoPlayer.Title]$INFO[VideoPlayer.Season, - ,x]$INFO[VideoPlayer.Episode]$INFO[VideoPlayer.EpisodeName, - ][/B]</label>
 				<aligny>center</aligny>
 			</control>
 			<control type="progress">
