@@ -53,7 +53,7 @@
 						<param name="texture" value="osd/fullscreen/buttons/rewind.png"/>
 					</include>
 					<onclick>PlayerControl(Rewind)</onclick>
-					<visible>!Pvr.IsPlayingRadio</visible>
+					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
 				</control>
 				<control type="radiobutton" id="602">
 					<textureradioonfocus colordiffuse="white">osd/fullscreen/buttons/play.png</textureradioonfocus>
@@ -95,7 +95,7 @@
 						<param name="texture" value="osd/fullscreen/buttons/forward.png"/>
 					</include>
 					<onclick>PlayerControl(Forward)</onclick>
-					<visible>!Pvr.IsPlayingRadio</visible>
+					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
 				</control>
 				<control type="radiobutton" id="605">
 					<include content="OSDButton">
@@ -117,7 +117,7 @@
 						<param name="texture" value="osd/fullscreen/buttons/rating.png"/>
 					</include>
 					<onclick>SetRating</onclick>
-					<visible>!Pvr.IsPlayingRadio</visible>
+					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
 				</control>
 				<control type="radiobutton" id="621">
 					<include content="OSDButton">
@@ -125,11 +125,12 @@
 					</include>
 					<onclick>Close</onclick>
 					<onclick>ActivateWindow(musicplaylist)</onclick>
+					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
 				</control>
 				<control type="group" id="699">
 					<width>56</width>
 					<height>56</height>
-					<visible>!MusicPlayer.Content(LiveTV)</visible>
+					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
 					<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
 						<effect type="zoom" end="125" time="75" tween="sine" easing="out" center="auto" />
 						<effect type="zoom" end="80" time="225" tween="sine" delay="100" easing="out" center="auto" />
@@ -178,7 +179,7 @@
 					<radioposx>1</radioposx>
 					<radioposy>0</radioposy>
 					<selected>Playlist.IsRandom</selected>
-					<visible>!MusicPlayer.Content(LiveTV)</visible>
+					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
 					<onclick>PlayerControl(Random)</onclick>
 				</control>
 				<control type="radiobutton" id="703">
@@ -190,6 +191,7 @@
 					<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
 					<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">Close</onclick>
 					<onclick condition="String.IsEmpty(Skin.String(LyricScript_Path))">RunScript($INFO[Skin.String(LyricScript_Path)])</onclick>
+					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
 				</control>
 				<control type="radiobutton" id="5000">
 					<include content="OSDButton">

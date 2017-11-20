@@ -2590,7 +2590,7 @@
 					<texture background="true" colordiffuse="FF1E1E1E">colors/white.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
-					<visible>Window.IsVisible(MusicVisualisation.xml) + !Pvr.IsPlayingRadio</visible>
+					<visible>Window.IsVisible(MusicVisualisation.xml) + !Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -2601,7 +2601,7 @@
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
 					<texture background="true" fallback="DefaultAudio.png">$VAR[MusicPlayerCover]</texture>
 					<bordersize>20</bordersize>
-					<visible>Window.IsVisible(MusicVisualisation.xml) + !Pvr.IsPlayingRadio</visible>
+					<visible>Window.IsVisible(MusicVisualisation.xml) + !Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -2636,7 +2636,18 @@
 					<texture background="true" colordiffuse="FF1E1E1E">colors/white.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
-					<visible>VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio</visible>
+					<visible>[VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio] | Player.IsInternetStream</visible>
+				</control>
+				<control type="image">
+					<depth>DepthOSD+</depth>
+					<left>10</left>
+					<bottom>5</bottom>
+					<width>440</width>
+					<height>440</height>
+					<aspectratio aligny="center" align="center">keep</aspectratio>
+					<texture background="true">$VAR[RadioPlayerCover]</texture>
+					<bordersize>20</bordersize>
+					<visible>[VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio] | Player.IsInternetStream</visible>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -2645,22 +2656,10 @@
 					<width>420</width>
 					<height>420</height>
 					<aspectratio aligny="center" align="center">keep</aspectratio>
-					<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.Thumb)]</texture>
+					<texture background="true" fallback="DefaultAudio.png">$INFO[Player.Art(thumb)]</texture>
 					<bordersize>20</bordersize>
-					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))</visible>
-					<visible>VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio</visible>
-				</control>
-				<control type="image">
-					<depth>DepthOSD+</depth>
-					<left>20</left>
-					<bottom>15</bottom>
-					<width>420</width>
-					<height>420</height>
-					<aspectratio aligny="center" align="center">keep</aspectratio>
-					<texture background="true"  fallback="DefaultAudio.png">$INFO[Player.Art(thumb)]</texture>
-					<bordersize>20</bordersize>
-					<visible>String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))</visible>
-					<visible>VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio</visible>
+					<visible>String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.AlbumThumb)) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))</visible>
+					<visible>[VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio] | Player.IsInternetStream</visible>
 				</control>
 				<control type="group">
 					<left>205</left>
@@ -2678,7 +2677,7 @@
 						<height>281</height>
 						<texture background="true">$VAR[PlayerInfoClearArtVar]</texture>
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
-						<visible>!Skin.HasSetting(enable_playerclearart) + !Pvr.IsPlayingRadio</visible>
+						<visible>!Skin.HasSetting(enable_playerclearart) + !Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
 						<animation effect="slide" end="0,-80" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo) + !Window.IsActive(fullscreeninfo)">Conditional</animation>
 						<animation effect="slide" end="0,100" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo) + Window.IsActive(fullscreeninfo)">Conditional</animation>
 						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139) | [Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]">Conditional</animation>
@@ -2827,6 +2826,16 @@
 						<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
 					</control>
 					<control type="label">
+                        <left>460</left>
+                        <bottom>210</bottom>
+                        <right>30</right>
+                        <height>30</height>
+                        <label>$INFO[Window(Home).Property(SkinHelper.Player.Album),$LOCALIZE[558] : ]</label>
+                        <font>font12</font>
+                        <animation effect="fade" time="200">VisibleChange</animation>
+                        <visible>Player.IsInternetStream + Window.IsVisible(MusicVisualisation.xml)</visible>
+                    </control>
+					<control type="label">
 						<left>460</left>
 						<bottom>210</bottom>
 						<right>30</right>
@@ -2960,7 +2969,7 @@
 				<label>$VAR[SeekTimeLabelVar]</label>
 				<font>font12</font>
 				<align>center</align>
-				<visible>!Player.ChannelPreviewActive + !VideoPlayer.Content(livetv)</visible>
+				<visible>!Player.ChannelPreviewActive + !VideoPlayer.Content(livetv) + !Player.IsInternetStream</visible>
 			</control>
 			<control type="label">
 				<left>460</left>
@@ -2970,7 +2979,7 @@
 				<label>$INFO[Player.TimeRemaining,$LOCALIZE[31134] : ]</label>
 				<font>font12</font>
 				<align>right</align>
-				<visible>!VideoPlayer.Content(livetv)</visible>
+				<visible>!VideoPlayer.Content(livetv) + !Player.IsInternetStream</visible>
 			</control>
 			<control type="label">
 				<left>460</left>
@@ -2980,7 +2989,7 @@
 				<label>$INFO[Player.SeekTime]</label>
 				<font>font12</font>
 				<align>right</align>
-				<visible>VideoPlayer.Content(livetv)</visible>
+				<visible>VideoPlayer.Content(livetv) | Player.IsInternetStream</visible>
 			</control>
 			<control type="grouplist">
 				<left>460</left>

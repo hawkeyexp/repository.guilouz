@@ -287,8 +287,13 @@
 	</variable>
 	<variable name="MusicPlayerCover">
 		<value condition="!String.IsEmpty(Player.Art(thumb))">$INFO[Player.Art(thumb)]</value>
-		<value>$INFO[Window(Home).Property(SkinHelper.Player.Art.Thumb)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))">$INFO[Window(Home).Property(SkinHelper.Player.Art.Thumb)]</value>
+		<value>$INFO[Window(Home).Property(SkinHelper.Player.Art.AlbumThumb)]</value>
 	</variable>
+		<variable name="RadioPlayerCover">
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.AlbumThumb))">$INFO[Window(Home).Property(SkinHelper.Player.Art.AlbumThumb)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))">$INFO[Window(Home).Property(SkinHelper.Player.Art.Thumb)]</value>
+    </variable>
 	<variable name="DialogMusicInfoThumbBackVar">
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ThumbBack)) + Container.Content(albums)">$LOCALIZE[40169]</value>
 		<value>$LOCALIZE[40061]</value>
@@ -2588,18 +2593,21 @@
 	</variable>
 	<variable name="MusicPlayerDiscTitleVar">
 		<value condition="Pvr.IsPlayingRadio">$INFO[VideoPlayer.ChannelName]</value>
+		<value condition="Player.IsInternetStream">$INFO[MusicPlayer.Title]</value>
 		<value condition="!String.IsEmpty(MusicPlayer.Artist)">$INFO[MusicPlayer.Artist]</value>
 		<value>$INFO[MusicPlayer.Title]</value>
 	</variable>
 	<variable name="MusicPlayerDiscAlbumVar">
 		<value condition="Pvr.IsPlayingRadio">$INFO[MusicPlayer.Title]</value>
+		<value condition="Player.IsInternetStream">$INFO[Window(Home).Property(SkinHelper.Player.Album)]</value>
 		<value>$INFO[MusicPlayer.Album]</value>
 	</variable>
 	<variable name="PlayerFanartVar">
 		<value condition="Skin.HasSetting(enable_artistslideshow) + !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)]</value>
 		<value condition="Skin.HasSetting(enable_artistslideshow) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)) + !String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
 		<value condition="!Skin.HasSetting(enable_artistslideshow) + !String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
-		<value condition="Pvr.IsPlayingRadio">special://skin/extras/home-images/radio.jpg</value>
+		<value condition="[Pvr.IsPlayingRadio | Player.IsInternetStream] + !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.FanArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.FanArt)]</value>
+		<value condition="Pvr.IsPlayingRadio | Player.IsInternetStream">special://skin/extras/home-images/radio.jpg</value>
 	</variable>
 	<variable name="PlayerFanartOpacityVar">
 		<value condition="Skin.HasSetting(hide_fanartopacity) + !Player.ShowInfo + !Window.IsVisible(musicosd)"></value>
