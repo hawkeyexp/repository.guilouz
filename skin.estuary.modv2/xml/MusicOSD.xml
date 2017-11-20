@@ -53,6 +53,7 @@
 						<param name="texture" value="osd/fullscreen/buttons/rewind.png"/>
 					</include>
 					<onclick>PlayerControl(Rewind)</onclick>
+					<visible>!Pvr.IsPlayingRadio</visible>
 				</control>
 				<control type="radiobutton" id="602">
 					<textureradioonfocus colordiffuse="white">osd/fullscreen/buttons/play.png</textureradioonfocus>
@@ -94,6 +95,7 @@
 						<param name="texture" value="osd/fullscreen/buttons/forward.png"/>
 					</include>
 					<onclick>PlayerControl(Forward)</onclick>
+					<visible>!Pvr.IsPlayingRadio</visible>
 				</control>
 				<control type="radiobutton" id="605">
 					<include content="OSDButton">
@@ -101,12 +103,21 @@
 					</include>
 					<onclick>PlayerControl(Next)</onclick>
 					<visible>MusicPlayer.HasNext</visible>
+					<visible>!Pvr.IsPlayingRadio</visible>
+				</control>
+				<control type="radiobutton" id="6051">
+					<include content="OSDButton">
+						<param name="texture" value="osd/fullscreen/buttons/next.png"/>
+					</include>
+					<onclick>PlayerControl(Next)</onclick>
+					<visible>Pvr.IsPlayingRadio</visible>
 				</control>
 				<control type="radiobutton" id="620">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/rating.png"/>
 					</include>
 					<onclick>SetRating</onclick>
+					<visible>!Pvr.IsPlayingRadio</visible>
 				</control>
 				<control type="radiobutton" id="621">
 					<include content="OSDButton">

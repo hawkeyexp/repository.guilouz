@@ -2596,10 +2596,10 @@
 		<value>$INFO[MusicPlayer.Album]</value>
 	</variable>
 	<variable name="PlayerFanartVar">
-		<value condition="Pvr.IsPlayingRadio">special://skin/extras/home-images/radio.jpg</value>
 		<value condition="Skin.HasSetting(enable_artistslideshow) + !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)]</value>
-		<value condition="Skin.HasSetting(enable_artistslideshow) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt))">$INFO[Player.Art(fanart)]</value>
-		<value condition="!Skin.HasSetting(enable_artistslideshow)">$INFO[Player.Art(fanart)]</value>
+		<value condition="Skin.HasSetting(enable_artistslideshow) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ExtraFanArt)) + !String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
+		<value condition="!Skin.HasSetting(enable_artistslideshow) + !String.IsEmpty(Player.Art(fanart))">$INFO[Player.Art(fanart)]</value>
+		<value condition="Pvr.IsPlayingRadio">special://skin/extras/home-images/radio.jpg</value>
 	</variable>
 	<variable name="PlayerFanartOpacityVar">
 		<value condition="Skin.HasSetting(hide_fanartopacity) + !Player.ShowInfo + !Window.IsVisible(musicosd)"></value>
@@ -3307,6 +3307,7 @@
 		<value condition="Control.HasFocus(603)">$LOCALIZE[36044]</value>
 		<value condition="Control.HasFocus(604)">$LOCALIZE[31039]</value>
 		<value condition="Control.HasFocus(605)">$LOCALIZE[209]</value>
+		<value condition="Control.HasFocus(6051)">$LOCALIZE[209]</value>
 		<value condition="Control.HasFocus(620)">$LOCALIZE[31033]$INFO[MusicPlayer.UserRating, : ]</value>
 		<value condition="Control.HasFocus(621)">$LOCALIZE[559]</value>
 		<value condition="Control.HasFocus(704)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>

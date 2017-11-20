@@ -2645,8 +2645,21 @@
 					<width>420</width>
 					<height>420</height>
 					<aspectratio aligny="center" align="center">keep</aspectratio>
-					<texture background="true" fallback="DefaultAudio.png">$INFO[Player.Art(thumb)]</texture>
+					<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.Thumb)]</texture>
 					<bordersize>20</bordersize>
+					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))</visible>
+					<visible>VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio</visible>
+				</control>
+				<control type="image">
+					<depth>DepthOSD+</depth>
+					<left>20</left>
+					<bottom>15</bottom>
+					<width>420</width>
+					<height>420</height>
+					<aspectratio aligny="center" align="center">keep</aspectratio>
+					<texture background="true"  fallback="DefaultAudio.png">$INFO[Player.Art(thumb)]</texture>
+					<bordersize>20</bordersize>
+					<visible>String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))</visible>
 					<visible>VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio</visible>
 				</control>
 				<control type="group">
@@ -2665,7 +2678,7 @@
 						<height>281</height>
 						<texture background="true">$VAR[PlayerInfoClearArtVar]</texture>
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
-						<visible>!Skin.HasSetting(enable_playerclearart)</visible>
+						<visible>!Skin.HasSetting(enable_playerclearart) + !Pvr.IsPlayingRadio</visible>
 						<animation effect="slide" end="0,-80" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo) + !Window.IsActive(fullscreeninfo)">Conditional</animation>
 						<animation effect="slide" end="0,100" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo) + Window.IsActive(fullscreeninfo)">Conditional</animation>
 						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139) | [Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]">Conditional</animation>
@@ -2680,7 +2693,7 @@
 						<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.Banner)]</texture>
 						<bordertexture>dialogs/back.png</bordertexture>
 						<bordersize>2</bordersize>
-						<visible>!Skin.HasSetting(show_artistbanner) + Window.IsVisible(MusicVisualisation.xml)</visible>
+						<visible>!Skin.HasSetting(show_artistbanner) + [Window.IsVisible(MusicVisualisation.xml) | Pvr.IsPlayingRadio]</visible>
 					</control>
 					<control type="group">
 						<height>151</height>
@@ -2808,7 +2821,7 @@
 						<font>font37</font>
 						<scroll>true</scroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>VideoPlayer.Content(LiveTV)</visible>
+						<visible>VideoPlayer.Content(LiveTV) + !Pvr.IsPlayingRadio</visible>
 						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
 						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(1138) | [Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]">Conditional</animation>
 						<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
