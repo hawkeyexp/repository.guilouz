@@ -20,6 +20,16 @@
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
 			</control>
+			<control type="image">
+				<description>avatar</description>
+				<left>25</left>
+				<top>25</top>
+				<width>110</width>
+				<height>110</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>DefaultIconInfo.png</texture>
+				<visible>String.IsEmpty(Control.GetLabel(400))</visible>
+			</control>
 			<control type="image" id="400">
 				<description>avatar</description>
 				<left>25</left>

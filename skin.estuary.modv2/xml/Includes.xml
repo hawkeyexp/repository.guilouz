@@ -2636,7 +2636,7 @@
 					<texture background="true" colordiffuse="FF1E1E1E">colors/white.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
-					<visible>[VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio] | Player.IsInternetStream</visible>
+					<visible>[VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio] | [Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream]</visible>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -2647,7 +2647,7 @@
 					<aspectratio aligny="center" align="center">keep</aspectratio>
 					<texture background="true">$VAR[RadioPlayerCover]</texture>
 					<bordersize>20</bordersize>
-					<visible>[VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio] | Player.IsInternetStream</visible>
+					<visible>[VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio] | [Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream]</visible>
 				</control>
 				<control type="image">
 					<depth>DepthOSD+</depth>
@@ -2659,7 +2659,7 @@
 					<texture background="true" fallback="DefaultAudio.png">$INFO[Player.Art(thumb)]</texture>
 					<bordersize>20</bordersize>
 					<visible>String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.AlbumThumb)) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))</visible>
-					<visible>[VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio] | Player.IsInternetStream</visible>
+					<visible>[VideoPlayer.Content(LiveTV) + Pvr.IsPlayingRadio] | [Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream]</visible>
 				</control>
 				<control type="group">
 					<left>205</left>
