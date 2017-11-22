@@ -2677,7 +2677,7 @@
 						<height>281</height>
 						<texture background="true">$VAR[PlayerInfoClearArtVar]</texture>
 						<aspectratio align="center" aligny="bottom">keep</aspectratio>
-						<visible>!Skin.HasSetting(enable_playerclearart) + !Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
+						<visible>!Skin.HasSetting(enable_playerclearart) + !Pvr.IsPlayingRadio + ![Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream]</visible>
 						<animation effect="slide" end="0,-80" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo) + !Window.IsActive(fullscreeninfo)">Conditional</animation>
 						<animation effect="slide" end="0,100" time="50" tween="sine" easing="out" condition="Window.IsVisible(playerprocessinfo) + Window.IsActive(fullscreeninfo)">Conditional</animation>
 						<animation effect="slide" end="0,-180" time="50" tween="sine" easing="out" condition="Window.IsVisible(videobookmarks) | Window.IsVisible(1122) | Window.IsVisible(1138) | Window.IsVisible(1139) | [Window.IsActive(fullscreeninfo) + !String.IsEmpty(VideoPlayer.Plot)]">Conditional</animation>
@@ -2969,7 +2969,7 @@
 				<label>$VAR[SeekTimeLabelVar]</label>
 				<font>font12</font>
 				<align>center</align>
-				<visible>!Player.ChannelPreviewActive + !VideoPlayer.Content(livetv) + !Player.IsInternetStream</visible>
+				<visible>!Player.ChannelPreviewActive + !VideoPlayer.Content(livetv) + ![Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream]</visible>
 			</control>
 			<control type="label">
 				<left>460</left>
@@ -2979,7 +2979,7 @@
 				<label>$INFO[Player.TimeRemaining,$LOCALIZE[31134] : ]</label>
 				<font>font12</font>
 				<align>right</align>
-				<visible>!VideoPlayer.Content(livetv) + !Player.IsInternetStream</visible>
+				<visible>!VideoPlayer.Content(livetv) + ![Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream]</visible>
 			</control>
 			<control type="label">
 				<left>460</left>
@@ -2989,7 +2989,7 @@
 				<label>$INFO[Player.SeekTime]</label>
 				<font>font12</font>
 				<align>right</align>
-				<visible>VideoPlayer.Content(livetv) | Player.IsInternetStream</visible>
+				<visible>VideoPlayer.Content(livetv) | [Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream]</visible>
 			</control>
 			<control type="grouplist">
 				<left>460</left>
