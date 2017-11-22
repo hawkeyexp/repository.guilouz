@@ -1,4 +1,5 @@
 [B]2.8.9[/B]
+• Add support for music clearart on music OSD
 • Improvements
 • Fix font issue
 • Minor fixes

@@ -2003,7 +2003,10 @@ msgctxt "#40256"
 msgid "Show albums of artist"
 msgstr "Sanatçının albümlerini göster"
 
-#: Empty String 40257
+#: /xml/SkinSettings.xml
+msgctxt "#40257"
+msgid "Show artist ClearArt"
+msgstr ""
 
 #: Empty String 40258
 
