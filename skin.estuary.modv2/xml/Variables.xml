@@ -296,6 +296,7 @@
     </variable>
 	<variable name="DialogMusicInfoThumbBackVar">
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ThumbBack)) + Container.Content(albums)">$LOCALIZE[40169]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ThumbBack))">$LOCALIZE[40169]</value>
 		<value>$LOCALIZE[40061]</value>
 	</variable>
 	<variable name="AlbumsCount">
@@ -3319,6 +3320,7 @@
 		<value condition="Control.HasFocus(620)">$LOCALIZE[31033]$INFO[MusicPlayer.UserRating, : ]</value>
 		<value condition="Control.HasFocus(621)">$LOCALIZE[559]</value>
 		<value condition="Control.HasFocus(704)">$LOCALIZE[486]$INFO[Playlist.Repeat, : ]</value>
+		<value condition="Control.HasFocus(705)">$LOCALIZE[31034]</value>
 		<value condition="Control.HasFocus(607) + Playlist.IsRandom">$LOCALIZE[590] : $LOCALIZE[16041]</value>
 		<value condition="Control.HasFocus(607)">$LOCALIZE[590] : $LOCALIZE[16039]</value>
 		<value condition="Control.HasFocus(703)">$LOCALIZE[24013]</value>

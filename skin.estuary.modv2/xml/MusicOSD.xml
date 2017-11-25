@@ -17,7 +17,7 @@
 		<control type="group">
 			<bottom>0</bottom>
 			<height>180</height>
-			<visible>!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(playerprocessinfo)</visible>
+			<visible>!Window.IsActive(osdaudiosettings) + !Window.IsActive(osdvideosettings) + !Window.IsActive(playerprocessinfo) + !Window.IsActive(1141)</visible>
 			<animation effect="fade" time="200">VisibleChange</animation>
 			<control type="label">
 				<right>30</right>
@@ -112,6 +112,12 @@
 					<onclick>PlayerControl(Next)</onclick>
 					<visible>Pvr.IsPlayingRadio</visible>
 				</control>
+				<control type="radiobutton" id="705">
+                    <include content="OSDButton">
+                        <param name="texture" value="osd/fullscreen/buttons/extendedinfo.png"/>
+                    </include>
+                    <onclick>ActivateWindow(1141)</onclick>
+                </control>
 				<control type="radiobutton" id="620">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/rating.png"/>
