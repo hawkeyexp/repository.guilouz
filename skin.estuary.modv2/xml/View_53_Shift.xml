@@ -154,6 +154,14 @@
 							<texture>$VAR[WallWatchedIconVar]</texture>
 							<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
 						</control>
+						<control type="group">
+							<left>160</left>
+							<top>91</top>
+							<animation effect="slide" end="0,55" time="0" condition="String.IsEqual(listitem.dbtype,artist) | String.IsEqual(listitem.dbtype,album) | String.IsEqual(listitem.dbtype,musicvideo)">Conditional</animation>
+							<include content="RatingCircle">
+								<param name="animation" value="True" />
+							</include>
+						</control>
 					</itemlayout>
 					<focusedlayout width="370">
 						<control type="image">
@@ -240,6 +248,14 @@
 							<height>32</height>
 							<texture>$VAR[WallWatchedIconVar]</texture>
 							<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
+						</control>
+						<control type="group">
+							<left>160</left>
+							<top>91</top>
+							<animation effect="slide" end="0,55" time="0" condition="String.IsEqual(listitem.dbtype,artist) | String.IsEqual(listitem.dbtype,album) | String.IsEqual(listitem.dbtype,musicvideo)">Conditional</animation>
+							<include content="RatingCircle">
+								<param name="animation" value="True" />
+							</include>
 						</control>
 					</focusedlayout>
 				</control>

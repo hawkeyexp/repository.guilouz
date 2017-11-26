@@ -1,6 +1,7 @@
 [B]2.9.0[/B]
 • Add support for more aspect ratios (used by newer phones)
 • Add extended info when playing music
+• Minor fixes
 
 [B]2.8.9[/B]
 • Add support for music clearart on music OSD
