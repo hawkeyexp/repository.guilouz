@@ -2853,7 +2853,7 @@
                         <label>$INFO[Window(Home).Property(SkinHelper.Player.Album),$LOCALIZE[558] : ]</label>
                         <font>font12</font>
                         <animation effect="fade" time="200">VisibleChange</animation>
-                        <visible>Player.IsInternetStream + Window.IsVisible(MusicVisualisation.xml)</visible>
+                        <visible>Player.IsInternetStream + Window.IsVisible(MusicVisualisation.xml) + [String.IsEmpty(MusicPlayer.Artist) + String.IsEmpty(MusicPlayer.Album) + String.IsEmpty(MusicPlayer.Year)]</visible>
                     </control>
 					<control type="label">
 						<left>460</left>
