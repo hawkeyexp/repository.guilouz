@@ -2389,7 +2389,7 @@
 				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="group">
-					<visible>Player.Recording + !Player.ChannelPreviewActive</visible>
+					<visible>PVR.IsRecordingPlayingChannel + !Player.ChannelPreviewActive</visible>
 					<control type="image">
 						<top>100</top>
 						<left>20</left>
@@ -3184,7 +3184,7 @@
 				<visible>!Window.IsVisible(videoosd) + !Window.IsVisible(musicosd)</visible>
 				<animation effect="fade" time="200">VisibleChange</animation>
 				<control type="group">
-					<visible>Player.Recording + !Player.ChannelPreviewActive</visible>
+					<visible>PVR.IsRecordingPlayingChannel + !Player.ChannelPreviewActive</visible>
 					<control type="image">
 						<top>100</top>
 						<left>20</left>

@@ -1,4 +1,5 @@
 [B]2.9.0[/B]
+• KODI 18 : Move recording control and info functionality from player to PVR
 • Add support for more aspect ratios (used by newer phones)
 • Add extended info when playing music
 • Minor fixes
