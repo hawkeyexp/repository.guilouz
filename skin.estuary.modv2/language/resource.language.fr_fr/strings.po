@@ -2008,7 +2008,10 @@ msgctxt "#40257"
 msgid "Show artist ClearArt"
 msgstr "Afficher le logo transparent (ClearArt) de l'artiste"
 
-#: Empty String 40258
+#: /xml/Custom_1101_SettingsList.xml
+msgctxt "#40258"
+msgid "Select Program"
+msgstr "Sélectionner un programme"
 
 #: Empty String 40259
 

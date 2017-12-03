@@ -2006,7 +2006,10 @@ msgctxt "#40257"
 msgid "Show artist ClearArt"
 msgstr "Zeige Künstler ClearArt"
 
-#: Empty String 40258
+#: /xml/Custom_1101_SettingsList.xml
+msgctxt "#40258"
+msgid "Select Program"
+msgstr ""
 
 #: Empty String 40259
 
