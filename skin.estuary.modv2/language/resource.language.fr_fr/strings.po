@@ -2013,7 +2013,10 @@ msgctxt "#40258"
 msgid "Select Program"
 msgstr "Sélectionner un programme"
 
-#: Empty String 40259
+#: /xml/SkinSettings.xml
+msgctxt "#40259"
+msgid "Enable themes (Halloween & Christmas)"
+msgstr "Activer les thèmes (Halloween & Noël)"
 
 #: /xml/Home.xml
 msgctxt "#40260"
@@ -2059,3 +2062,13 @@ msgstr "Clips vidéos les plus regardés"
 msgctxt "#40268"
 msgid "Show media names with widgets names"
 msgstr "Afficher les noms des médias avec les noms des widgets"
+
+#: /xml/Variables.xml
+msgctxt "#40269"
+msgid "Christmas Theme"
+msgstr "Thème Noël"
+
+#: /xml/Variables.xml
+msgctxt "#40270"
+msgid "Halloween Theme"
+msgstr "Thème Halloween"

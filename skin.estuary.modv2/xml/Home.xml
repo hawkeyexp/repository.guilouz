@@ -74,6 +74,24 @@
 			<visible>[[Control.HasFocus(9000) + !String.IsEmpty(Container(9000).ListItem.Property(background))] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(804) + !String.IsEmpty(Skin.String(power_background)) + !Skin.HasSetting(enable_power_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(804) + String.IsEmpty(Skin.String(power_background)) + !Skin.HasSetting(enable_power_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(802) + !String.IsEmpty(Skin.String(settings_background)) + !Skin.HasSetting(enable_settings_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(802) + String.IsEmpty(Skin.String(settings_background)) + !Skin.HasSetting(enable_settings_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(801) + !String.IsEmpty(Skin.String(search_background)) + !Skin.HasSetting(enable_search_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]] | [[Control.HasFocus(801) + String.IsEmpty(Skin.String(search_background)) + !Skin.HasSetting(enable_search_background)] + [Skin.HasSetting(no_fanart) + !String.IsEmpty(Skin.String(global-background))]]</visible>
 			<visible>![Player.HasVideo + !Skin.HasSetting(background_showvideo)]</visible>
 		</control>
+		<control type="image">
+			<top>0</top>
+			<right>0</right>
+			<height>235</height>
+			<width>320</width>
+			<texture>themes/christmas/corner.png</texture>
+			<include>OpenClose_Right</include>
+			<visible>$EXP[ChristmasTheme] + !$EXP[infodialog_active]</visible>
+		</control>
+		<control type="image">
+			<top>0</top>
+			<right>0</right>
+			<height>271</height>
+			<width>300</width>
+			<texture>themes/halloween/corner.png</texture>
+			<include>OpenClose_Right</include>
+			<visible>$EXP[HalloweenTheme] + !$EXP[infodialog_active]</visible>
+		</control>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group" id="2000">
@@ -2359,7 +2377,22 @@
 					<aspectratio>keep</aspectratio>
 					<width>56</width>
 					<height>56</height>
+					<texture>themes/christmas/logo.png</texture>
+					<visible>$EXP[ChristmasTheme]</visible>
+				</control>
+				<control type="image">
+					<aspectratio>keep</aspectratio>
+					<width>56</width>
+					<height>56</height>
+					<texture>themes/halloween/logo.png</texture>
+					<visible>$EXP[HalloweenTheme]</visible>
+				</control>
+				<control type="image">
+					<aspectratio>keep</aspectratio>
+					<width>56</width>
+					<height>56</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">icons/logo.png</texture>
+					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</visible>
 				</control>
 				<control type="image">
 					<aspectratio>keep</aspectratio>
@@ -2367,6 +2400,7 @@
 					<height>56</height>
 					<texture colordiffuse="$VAR[GradientColorVar]">icons/logo-gradient.png</texture>
 					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</visible>
 				</control>
 				<control type="image">
 					<left>40</left>
@@ -2393,7 +2427,22 @@
 					<aspectratio>keep</aspectratio>
 					<width>56</width>
 					<height>56</height>
+					<texture>themes/christmas/logo.png</texture>
+					<visible>$EXP[ChristmasTheme]</visible>
+				</control>
+				<control type="image">
+					<aspectratio>keep</aspectratio>
+					<width>56</width>
+					<height>56</height>
+					<texture>themes/halloween/logo.png</texture>
+					<visible>$EXP[HalloweenTheme]</visible>
+				</control>
+				<control type="image">
+					<aspectratio>keep</aspectratio>
+					<width>56</width>
+					<height>56</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">icons/logo.png</texture>
+					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</visible>
 				</control>
 				<control type="image">
 					<aspectratio>keep</aspectratio>
@@ -2401,6 +2450,7 @@
 					<height>56</height>
 					<texture colordiffuse="$VAR[GradientColorVar]">icons/logo-gradient.png</texture>
 					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</visible>
 				</control>
 				<control type="image">
 					<left>40</left>

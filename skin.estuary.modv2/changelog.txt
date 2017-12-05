@@ -2,6 +2,7 @@
 • KODI 18 : Move recording control and info functionality from player to PVR
 • KODI 18 : Add button to bring up program selection dialog
 • Add support for more aspect ratios (used by newer phones)
+• Add Christmas (1 december to 2 january) & Halloween (30 & 31 october) themes
 • Add extended info when playing music
 • Minor fixes
 

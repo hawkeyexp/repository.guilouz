@@ -44,6 +44,8 @@
 	<constant name="list_item_height">80</constant>
 	<expression name="infodialog_active">Window.IsActive(musicinformation) | Window.IsActive(songinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml) | Window.IsVisible(Custom_1132_MoviesSetsInfo.xml)</expression>
 	<expression name="sidebar_visible">ControlGroup(9000).HasFocus | ControlGroup(8000).HasFocus | Control.HasFocus(6130) | Control.HasFocus(6131) | Window.IsActive(MyPlaylist.xml)</expression>
+	<expression name="ChristmasTheme">System.Date(12-01,01-02) + !Skin.HasSetting(DisableThemes) + [!VideoPlayer.IsFullscreen + !Window.IsActive(fullscreeninfo) + !Window.IsVisible(visualisation)]</expression>
+	<expression name="HalloweenTheme">System.Date(10-30,10-31) + !Skin.HasSetting(DisableThemes) + [!VideoPlayer.IsFullscreen + !Window.IsActive(fullscreeninfo) + !Window.IsVisible(visualisation)]</expression>
 	<include name="CommonScrollbars">
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="150">WindowClose</animation>
@@ -1731,8 +1733,25 @@
 			<depth>DepthBackground</depth>
 			<include>FullScreenDimensions</include>
 			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern13.png</texture>
+			<visible>!Window.IsVisible(MusicVisualisation.xml)</visible>
+			<visible>$EXP[ChristmasTheme]</visible>
+		</control>
+		<control type="image">
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="$VAR[PatternColorVar]">special://skin/extras/patterns/pattern14.png</texture>
+			<visible>!Window.IsVisible(MusicVisualisation.xml)</visible>
+			<visible>$EXP[HalloweenTheme]</visible>
+		</control>
+		<control type="image">
+			<depth>DepthBackground</depth>
+			<include>FullScreenDimensions</include>
+			<aspectratio>scale</aspectratio>
 			<texture colordiffuse="$VAR[PatternColorVar]">$INFO[Skin.String(background_overlay),special://skin/extras/patterns/pattern,.png]</texture>
 			<visible>!Window.IsVisible(MusicVisualisation.xml)</visible>
+			<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] </visible>
 		</control>
 	</include>
 	<include name="DefaultBackground">
