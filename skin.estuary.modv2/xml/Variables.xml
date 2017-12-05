@@ -3325,6 +3325,7 @@
 		<value condition="Control.HasFocus(603)">$LOCALIZE[36044]</value>
 		<value condition="Control.HasFocus(604)">$LOCALIZE[31039]</value>
 		<value condition="Control.HasFocus(605)">$LOCALIZE[209]</value>
+		<value condition="Control.HasFocus(606)">$LOCALIZE[264]</value>
 		<value condition="Control.HasFocus(6051)">$LOCALIZE[209]</value>
 		<value condition="Control.HasFocus(620)">$LOCALIZE[31033]$INFO[MusicPlayer.UserRating, : ]</value>
 		<value condition="Control.HasFocus(621)">$LOCALIZE[559]</value>
