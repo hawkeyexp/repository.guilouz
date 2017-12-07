@@ -306,6 +306,7 @@
 				<visible>Control.IsVisible(52)</visible>
 				<include>OpenClose_Right</include>
 				<include>Visible_Right</include>
+				<animation effect="slide" end="56,0" time="0" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
 				<control type="panel" id="52">
 					<centerleft>50%</centerleft>
 					<top>0</top>
