@@ -1838,6 +1838,7 @@
 					<width>110%</width>
 					<height>115</height>
 					<texture flipy="true" colordiffuse="$VAR[Bars_Opacity]">frame/InfoBar.png</texture>
+					<visible>![Window.IsVisible(MyPVRChannels.xml) + Control.IsVisible(52)]</visible>
 				</control>
 				<control type="group">
 					<visible>$PARAM[info_visible]</visible>
