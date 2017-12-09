@@ -1,5 +1,6 @@
 [B]2.9.1[/B]
 • Add new 'Icons Wall' view for PVR channels
+• Minor fixes
 
 [B]2.9.0[/B]
 • KODI 18 : Move recording control and info functionality from player to PVR
