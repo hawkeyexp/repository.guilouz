@@ -528,7 +528,7 @@
 					</control>
 					<control type="list" id="500551">
 						<left>7</left>
-						<top>45</top>
+						<bottom>85</bottom>
 						<width>540</width>
 						<height>170</height>
 						<orientation>horizontal</orientation>
