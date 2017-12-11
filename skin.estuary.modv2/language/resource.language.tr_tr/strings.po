@@ -2015,8 +2015,8 @@ msgstr "Programı seç"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40259"
-msgid "Enable themes (Halloween & Christmas)"
-msgstr "Temaları etkinleştir (Cadılar bayramı & Noel"
+msgid "Enable themes (Valentine's Day, Easter, Halloween & Christmas)"
+msgstr "Temaları etkinleştir (Sevgililer Günü, Paskalya, Cadılar bayramı & Noel)"
 
 #: /xml/Home.xml
 msgctxt "#40260"
@@ -2072,3 +2072,13 @@ msgstr "Noel Teması"
 msgctxt "#40270"
 msgid "Halloween Theme"
 msgstr "Cadılar bayramı Teması"
+
+#: /xml/Variables.xml
+msgctxt "#40271"
+msgid "Easter Theme"
+msgstr "Paskalya Teması"
+
+#: /xml/Variables.xml
+msgctxt "#40272"
+msgid "Valentine's Day Theme"
+msgstr "Sevgililer Günü Teması"

@@ -2013,8 +2013,8 @@ msgstr "Sender wählen"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40259"
-msgid "Enable themes (Halloween & Christmas)"
-msgstr "Aktiviere Themes (Halloween & Weihnachten)"
+msgid "Enable themes (Valentine's Day, Easter, Halloween & Christmas)"
+msgstr "Aktiviere Themes (Valentinstag, Ostern, Halloween & Weihnachten)"
 
 #: /xml/Home.xml
 msgctxt "#40260"
@@ -2070,3 +2070,13 @@ msgstr "Weihnachts-Theme"
 msgctxt "#40270"
 msgid "Halloween Theme"
 msgstr "Halloween Theme"
+
+#: /xml/Variables.xml
+msgctxt "#40271"
+msgid "Easter Theme"
+msgstr "Ostern Theme"
+
+#: /xml/Variables.xml
+msgctxt "#40272"
+msgid "Valentine's Day Theme"
+msgstr "Valentinstag Theme"

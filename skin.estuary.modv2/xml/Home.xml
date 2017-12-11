@@ -92,6 +92,24 @@
 			<include>OpenClose_Right</include>
 			<visible>$EXP[HalloweenTheme] + !$EXP[infodialog_active]</visible>
 		</control>
+		<control type="image">
+			<top>0</top>
+			<right>20</right>
+			<height>271</height>
+			<width>224</width>
+			<texture>themes/easter/corner.png</texture>
+			<include>OpenClose_Right</include>
+			<visible>$EXP[EasterTheme] + !$EXP[infodialog_active]</visible>
+		</control>
+		<control type="image">
+			<top>0</top>
+			<right>20</right>
+			<height>271</height>
+			<width>186</width>
+			<texture>themes/valentine/corner.png</texture>
+			<include>OpenClose_Right</include>
+			<visible>$EXP[ValentineTheme] + !$EXP[infodialog_active]</visible>
+		</control>
 		<control type="group">
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="$EXP[infodialog_active]">Conditional</animation>
 			<control type="group" id="2000">
@@ -2391,8 +2409,22 @@
 					<aspectratio>keep</aspectratio>
 					<width>56</width>
 					<height>56</height>
+					<texture>themes/easter/logo.png</texture>
+					<visible>$EXP[EasterTheme]</visible>
+				</control>
+				<control type="image">
+					<aspectratio>keep</aspectratio>
+					<width>56</width>
+					<height>56</height>
+					<texture>themes/valentine/logo.png</texture>
+					<visible>$EXP[ValentineTheme]</visible>
+				</control>
+				<control type="image">
+					<aspectratio>keep</aspectratio>
+					<width>56</width>
+					<height>56</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">icons/logo.png</texture>
-					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</visible>
+					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</visible>
 				</control>
 				<control type="image">
 					<aspectratio>keep</aspectratio>
@@ -2400,7 +2432,7 @@
 					<height>56</height>
 					<texture colordiffuse="$VAR[GradientColorVar]">icons/logo-gradient.png</texture>
 					<visible>Skin.HasSetting(EnableGradientColor)</visible>
-					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</visible>
+					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</visible>
 				</control>
 				<control type="image">
 					<left>40</left>
@@ -2441,8 +2473,22 @@
 					<aspectratio>keep</aspectratio>
 					<width>56</width>
 					<height>56</height>
+					<texture>themes/easter/logo.png</texture>
+					<visible>$EXP[EasterTheme]</visible>
+				</control>
+				<control type="image">
+					<aspectratio>keep</aspectratio>
+					<width>56</width>
+					<height>56</height>
+					<texture>themes/valentine/logo.png</texture>
+					<visible>$EXP[ValentineTheme]</visible>
+				</control>
+				<control type="image">
+					<aspectratio>keep</aspectratio>
+					<width>56</width>
+					<height>56</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">icons/logo.png</texture>
-					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</visible>
+					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</visible>
 				</control>
 				<control type="image">
 					<aspectratio>keep</aspectratio>
@@ -2450,7 +2496,7 @@
 					<height>56</height>
 					<texture colordiffuse="$VAR[GradientColorVar]">icons/logo-gradient.png</texture>
 					<visible>Skin.HasSetting(EnableGradientColor)</visible>
-					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</visible>
+					<visible>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</visible>
 				</control>
 				<control type="image">
 					<left>40</left>

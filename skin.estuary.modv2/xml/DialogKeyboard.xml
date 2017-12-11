@@ -25,26 +25,28 @@
 				<texture colordiffuse="dialog_tint">colors/white.png</texture>
 			</control>
 			<control type="label" id="311">
-				<centerleft>50%</centerleft>
 				<top>50</top>
-				<width>1542</width>
+				<left>20</left>
+				<right>20</right>
 				<height>100</height>
 				<font>font45</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
 				<visible>!Window.IsVisible(Custom_1133_ParentalControl.xml)</visible>
 			</control>
 			<control type="label">
-				<centerleft>50%</centerleft>
 				<top>50</top>
-				<width>1542</width>
+				<left>20</left>
+				<right>20</right>
 				<height>100</height>
 				<font>font45</font>
 				<label>$LOCALIZE[40192]</label>
 				<align>center</align>
 				<aligny>center</aligny>
 				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
 				<visible>Window.IsVisible(Custom_1133_ParentalControl.xml)</visible>
 			</control>
 			<control type="image">

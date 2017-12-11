@@ -2012,7 +2012,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40259"
-msgid "Enable themes (Halloween & Christmas)"
+msgid "Enable themes (Valentine's Day, Easter, Halloween & Christmas)"
 msgstr ""
 
 #: /xml/Home.xml
@@ -2068,4 +2068,14 @@ msgstr ""
 #: /xml/Variables.xml
 msgctxt "#40270"
 msgid "Halloween Theme"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40271"
+msgid "Easter Theme"
+msgstr ""
+
+#: /xml/Variables.xml
+msgctxt "#40272"
+msgid "Valentine's Day Theme"
 msgstr ""

@@ -613,7 +613,7 @@
 					<include>DefaultSettingButton</include>
 					<onclick condition="!Skin.String(SkinColor)">RunScript(script.skin.helper.colorpicker,skinstring=SkinColor)</onclick>
 					<onclick condition="Skin.String(SkinColor)">Skin.Reset(SkinColor)</onclick>
-					<enable>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</enable>
+					<enable>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</enable>
 				</control>
 				<control type="radiobutton" id="810">
 					<label>$LOCALIZE[40223]</label>
@@ -628,6 +628,7 @@
 					<onclick condition="!Skin.String(GradientColor)">RunScript(script.skin.helper.colorpicker,skinstring=GradientColor)</onclick>
 					<onclick condition="Skin.String(GradientColor)">Skin.Reset(GradientColor)</onclick>
 					<visible>Skin.HasSetting(EnableGradientColor)</visible>
+					<enable>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</enable>
 				</control>
 				<control type="button" id="801">
 					<label>$LOCALIZE[40033]</label>
@@ -635,14 +636,16 @@
 					<include>DefaultSettingButton</include>
 					<onclick condition="!Skin.String(BackgroundColor)">RunScript(script.skin.helper.colorpicker,skinstring=BackgroundColor)</onclick>
 					<onclick condition="Skin.String(BackgroundColor)">Skin.Reset(BackgroundColor)</onclick>
-					<enable>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</enable>
+					<enable>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</enable>
 				</control>
 				<control type="button" id="809">
 					<label>$LOCALIZE[31156]</label>
 					<label2>$VAR[BackgroundOverlayTypeVar]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick condition="String.IsEmpty(Skin.String(background_overlay))">Skin.SetString(background_overlay,0)</onclick>
-					<onclick condition="String.IsEqual(Skin.String(background_overlay),14)">Skin.SetString(background_overlay,0)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),16)">Skin.SetString(background_overlay,0)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),15)">Skin.SetString(background_overlay,16)</onclick>
+					<onclick condition="String.IsEqual(Skin.String(background_overlay),14)">Skin.SetString(background_overlay,15)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(background_overlay),13)">Skin.SetString(background_overlay,14)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(background_overlay),12)">Skin.SetString(background_overlay,13)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(background_overlay),11)">Skin.SetString(background_overlay,12)</onclick>
@@ -657,7 +660,7 @@
 					<onclick condition="String.IsEqual(Skin.String(background_overlay),2)">Skin.SetString(background_overlay,3)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(background_overlay),1)">Skin.SetString(background_overlay,2)</onclick>
 					<onclick condition="String.IsEqual(Skin.String(background_overlay),0)">Skin.SetString(background_overlay,1)</onclick>
-					<enable>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme]</enable>
+					<enable>!$EXP[ChristmasTheme] + !$EXP[HalloweenTheme] + !$EXP[EasterTheme] + !$EXP[ValentineTheme]</enable>
 				</control>
 				<control type="button" id="805">
 					<label>  ∟$LOCALIZE[40035]</label>
@@ -679,6 +682,31 @@
 					<onclick>Skin.SelectBool(40124, 15109|, 40038|opacitybars_0, 40039|opacitybars_5, 40040|opacitybars_10, 40041|opacitybars_15, 40042|opacitybars_20, 40043|opacitybars_25, 40044|opacitybars_30, 40045|opacitybars_35, 40046|opacitybars_40, 40047|opacitybars_45, 40048|opacitybars_50, 40049|opacitybars_55, 40050|opacitybars_60, 40051|opacitybars_65, 40052|opacitybars_70, 40053|opacitybars_75, 40054|opacitybars_80, 40055|opacitybars_85, 40056|opacitybars_90, 40057|opacitybars_95, 40058|opacitybars_100)</onclick>
 					<label2>$VAR[OpacityBarsSettingLabel2Var]</label2>
 				</control>
+				<!--<control type="radiobutton" id="802">
+					<label>Enable day/night color themes</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(SkinHelper.EnableDayNightThemes)</onclick>
+                    <selected>Skin.HasSetting(SkinHelper.EnableDayNightThemes)</selected>
+				</control>
+				<control type="button" id="804">
+					<label>Theme to use at day time</label>
+                    <label2>$INFO[Skin.String(SkinHelper.ColorTheme.day.Theme)] $INFO[Skin.String(SkinHelper.ColorTheme.day.time),(every day at ,)]</label2>
+                    <include>DefaultSettingButton</include>
+                    <onclick>RunScript(script.skin.helper.skinbackup,action=ColorThemes,daynight=day)</onclick>
+                    <visible>Skin.HasSetting(SkinHelper.EnableDayNightThemes)</visible>
+                 </control>
+                 <control type="button" id="806">
+                 	<label>Theme to use at night time</label>
+                    <label2>$INFO[Skin.String(SkinHelper.ColorTheme.night.Theme)] $INFO[Skin.String(SkinHelper.ColorTheme.night.time),(every day at ,)]</label2>
+                    <include>DefaultSettingButton</include>
+                    <onclick>RunScript(script.skin.helper.skinbackup,action=ColorThemes,daynight=night)</onclick>
+                    <visible>Skin.HasSetting(SkinHelper.EnableDayNightThemes)</visible>
+                </control>
+                <control type="button"  id="812">
+                    <label>Manage Color Themes</label>
+                    <onclick>RunScript(script.skin.helper.skinbackup,action=colorthemes)</onclick>
+                    <include>DefaultSettingButton</include>
+                </control>-->
 			</control>
 			<control type="grouplist" id="900">
 				<top>168</top>
@@ -898,6 +926,7 @@
 					<onclick condition="!Skin.String(RatingStringColor)">RunScript(script.skin.helper.colorpicker,skinstring=RatingStringColor)</onclick>
 					<onclick condition="Skin.String(RatingStringColor)">Skin.Reset(RatingStringColor)</onclick>
 					<visible>Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)</visible>
+					<enable>!$EXP[EasterTheme]</enable>
 				</control>
 				<control type="radiobutton" id="708">
 					<label>$LOCALIZE[40085]</label>
