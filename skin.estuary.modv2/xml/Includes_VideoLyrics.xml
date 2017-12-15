@@ -95,92 +95,47 @@
 			</control>
 	</include>
 	<variable name="Col_lyr1">
-		<value condition="String.EndsWith(Player.Duration,1) + Skin.HasSetting(Alt_color.lyrics)">ffe16b6b</value>
-		<value condition="String.EndsWith(Player.Duration,2) + Skin.HasSetting(Alt_color.lyrics)">ff4cb050</value>
-		<value condition="String.EndsWith(Player.Duration,3) + Skin.HasSetting(Alt_color.lyrics)">ffbd7cb4</value>
-		<value condition="String.EndsWith(Player.Duration,4) + Skin.HasSetting(Alt_color.lyrics)">ffEA80FC</value>
-		<value condition="String.EndsWith(Player.Duration,5) + Skin.HasSetting(Alt_color.lyrics)">ffFF9800</value>
-		<value condition="String.EndsWith(Player.Duration,6) + Skin.HasSetting(Alt_color.lyrics)">ff00e676</value>
-		<value condition="String.EndsWith(Player.Duration,7) + Skin.HasSetting(Alt_color.lyrics)">ff00BFC0</value>
-		<value condition="String.EndsWith(Player.Duration,8) + Skin.HasSetting(Alt_color.lyrics)">ff0ebeff</value>
-		<value condition="String.EndsWith(Player.Duration,9) + Skin.HasSetting(Alt_color.lyrics)">ff00e676</value>
-		<value condition="String.EndsWith(Player.Duration,0) + Skin.HasSetting(Alt_color.lyrics)">ff1fb58f</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,1)">ffe16b6b</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,2)">ffEA80FC</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,3)">ffbd7cb4</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,4)">ff00BFC0</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,5)">ff1fb58f</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,6)">ff00e676</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,7)">ff0ebeff</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,8)">ff4cb050</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,9)">ff00e676</value>
-		<value>ffFF9800</value>
+		<value condition="[String.EndsWith(Player.Duration,1) | String.EndsWith(Player.Duration,2) | String.EndsWith(Player.Duration,3) | String.EndsWith(Player.Duration,4) | String.EndsWith(Player.Duration,5) | String.EndsWith(Player.Duration,6) | String.EndsWith(Player.Duration,7) | String.EndsWith(Player.Duration,8) | String.EndsWith(Player.Duration,9)] + Skin.HasSetting(Alt_color.lyrics)">$VAR[LyricsColor1Var]</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,1) + !Skin.HasSetting(Alt_color.lyrics)">ffffea4f</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,2) + !Skin.HasSetting(Alt_color.lyrics)">ffff4d99</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,3) + !Skin.HasSetting(Alt_color.lyrics)">ffff8554</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,4) + !Skin.HasSetting(Alt_color.lyrics)">ff4a7eb8</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,5) + !Skin.HasSetting(Alt_color.lyrics)">ffFF5354</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,6) + !Skin.HasSetting(Alt_color.lyrics)">ff46e046</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,7) + !Skin.HasSetting(Alt_color.lyrics)">ffFFEA4F</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,8) + !Skin.HasSetting(Alt_color.lyrics)">ffFF4D99</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,9) + !Skin.HasSetting(Alt_color.lyrics)">ffFF8655</value>
+		<value>ff4A7EB8</value>
 	</variable>
 	<variable name="Col_lyr2">
-		<value condition="String.EndsWith(Player.Duration,1) + Skin.HasSetting(Alt_color.lyrics)">ff69bbd3</value>
-		<value condition="String.EndsWith(Player.Duration,2) + Skin.HasSetting(Alt_color.lyrics)">fffec106</value>
-		<value condition="String.EndsWith(Player.Duration,3) + Skin.HasSetting(Alt_color.lyrics)">ff56c4c5</value>
-		<value condition="String.EndsWith(Player.Duration,4) + Skin.HasSetting(Alt_color.lyrics)">ffFFEB3B</value>
-		<value condition="String.EndsWith(Player.Duration,5) + Skin.HasSetting(Alt_color.lyrics)">fffffaf0</value>
-		<value condition="String.EndsWith(Player.Duration,6) + Skin.HasSetting(Alt_color.lyrics)">fffffaf0</value>
-		<value condition="String.EndsWith(Player.Duration,7) + Skin.HasSetting(Alt_color.lyrics)">ff98EA33</value>
-		<value condition="String.EndsWith(Player.Duration,8) + Skin.HasSetting(Alt_color.lyrics)">fffffaf0</value>
-		<value condition="String.EndsWith(Player.Duration,9) + Skin.HasSetting(Alt_color.lyrics)">ffEA80FC</value>
-		<value condition="String.EndsWith(Player.Duration,0) + Skin.HasSetting(Alt_color.lyrics)">ffeab126</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,1)">ff69bbd3</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,2)">ffFFEB3B</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,3)">ff56c4c5</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,4)">ff98EA33</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,5)">ffeab126</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,6)">ffEA80FC</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,7)">fffffaf0</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,8)">fffec106</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,9)">fffffaf0</value>
-		<value>fffffaf0</value>
+		<value condition="[String.EndsWith(Player.Duration,1) | String.EndsWith(Player.Duration,2) | String.EndsWith(Player.Duration,3) | String.EndsWith(Player.Duration,4) | String.EndsWith(Player.Duration,5) | String.EndsWith(Player.Duration,6) | String.EndsWith(Player.Duration,7) | String.EndsWith(Player.Duration,8) | String.EndsWith(Player.Duration,9)] + Skin.HasSetting(Alt_color.lyrics)">$VAR[LyricsColor2Var]</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,1) + !Skin.HasSetting(Alt_color.lyrics)">ff46e046</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,2) + !Skin.HasSetting(Alt_color.lyrics)">ffffea4f</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,3) + !Skin.HasSetting(Alt_color.lyrics)">ff46e046</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,4) + !Skin.HasSetting(Alt_color.lyrics)">ffFF8655</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,5) + !Skin.HasSetting(Alt_color.lyrics)">ff46E046</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,6) + !Skin.HasSetting(Alt_color.lyrics)">ffffea4f</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,7) + !Skin.HasSetting(Alt_color.lyrics)">ffFF8655</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,8) + !Skin.HasSetting(Alt_color.lyrics)">ff46E046</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,9) + !Skin.HasSetting(Alt_color.lyrics)">ffFFEA4F</value>
+		<value>ffFF5354</value>
 	</variable>
 	<variable name="Col_lyr3">
-		<value condition="String.EndsWith(Player.Duration,1) + Skin.HasSetting(Alt_color.lyrics)">fff8e950</value>
-		<value condition="String.EndsWith(Player.Duration,2) + Skin.HasSetting(Alt_color.lyrics)">ff2095f4</value>
-		<value condition="String.EndsWith(Player.Duration,3) + Skin.HasSetting(Alt_color.lyrics)">fffcc777</value>
-		<value condition="String.EndsWith(Player.Duration,4) + Skin.HasSetting(Alt_color.lyrics)">ff4DD0E1</value>
-		<value condition="String.EndsWith(Player.Duration,5) + Skin.HasSetting(Alt_color.lyrics)">ff00BCD4</value>
-		<value condition="String.EndsWith(Player.Duration,6) + Skin.HasSetting(Alt_color.lyrics)">fffb8c00</value>
-		<value condition="String.EndsWith(Player.Duration,7) + Skin.HasSetting(Alt_color.lyrics)">ffF7F6E4</value>
-		<value condition="String.EndsWith(Player.Duration,8) + Skin.HasSetting(Alt_color.lyrics)">ffef4051</value>
-		<value condition="String.EndsWith(Player.Duration,9) + Skin.HasSetting(Alt_color.lyrics)">ff009ee3</value>
-		<value condition="String.EndsWith(Player.Duration,0) + Skin.HasSetting(Alt_color.lyrics)">fff24c4e</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,1)">fff8e950</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,2)">ff4DD0E1</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,3)">fffcc777</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,4)">ffF7F6E4</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,5)">fff24c4e</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,6)">ff009ee3</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,7)">ffef4051</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,8)">ff2095f4</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,9)">fffb8c00</value>
-		<value>ff00BCD4</value>
+		<value condition="[String.EndsWith(Player.Duration,1) | String.EndsWith(Player.Duration,2) | String.EndsWith(Player.Duration,3) | String.EndsWith(Player.Duration,4) | String.EndsWith(Player.Duration,5) | String.EndsWith(Player.Duration,6) | String.EndsWith(Player.Duration,7) | String.EndsWith(Player.Duration,8) | String.EndsWith(Player.Duration,9)] + Skin.HasSetting(Alt_color.lyrics)">$VAR[LyricsColor3Var]</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,1) + !Skin.HasSetting(Alt_color.lyrics)">ff4a7eb8</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,2) + !Skin.HasSetting(Alt_color.lyrics)">ff4a80b9</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,3) + !Skin.HasSetting(Alt_color.lyrics)">ffff4d99</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,4) + !Skin.HasSetting(Alt_color.lyrics)">ffFF4D99</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,5) + !Skin.HasSetting(Alt_color.lyrics)">ffFF8655</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,6) + !Skin.HasSetting(Alt_color.lyrics)">ffff4d99</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,7) + !Skin.HasSetting(Alt_color.lyrics)">ffFF5354</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,8) + !Skin.HasSetting(Alt_color.lyrics)">ff4A7EB8</value>
+		<value condition="String.EndsWith(Container(110).Currentitem,9) + !Skin.HasSetting(Alt_color.lyrics)">ff46E046</value>
+		<value>ffFFEA4F</value>
 	</variable>
 	<variable name="Col_lyr4">
-		<value condition="String.EndsWith(Player.Duration,1) + Skin.HasSetting(Alt_color.lyrics)">fffffaf0</value>
-		<value condition="String.EndsWith(Player.Duration,2) + Skin.HasSetting(Alt_color.lyrics)">fffffaf0</value>
-		<value condition="String.EndsWith(Player.Duration,3) + Skin.HasSetting(Alt_color.lyrics)">fffffaf0</value>
-		<value condition="String.EndsWith(Player.Duration,4) + Skin.HasSetting(Alt_color.lyrics)">fffffaf0</value>
-		<value condition="String.EndsWith(Player.Duration,5) + Skin.HasSetting(Alt_color.lyrics)">fff395b5</value>
-		<value condition="String.EndsWith(Player.Duration,6) + Skin.HasSetting(Alt_color.lyrics)">ffb39ddb</value>
-		<value condition="String.EndsWith(Player.Duration,7) + Skin.HasSetting(Alt_color.lyrics)">ffDAA8EA</value>
-		<value condition="String.EndsWith(Player.Duration,8) + Skin.HasSetting(Alt_color.lyrics)">ffb3dbc0</value>
-		<value condition="String.EndsWith(Player.Duration,9) + Skin.HasSetting(Alt_color.lyrics)">fffffaf0</value>
-		<value condition="String.EndsWith(Player.Duration,0) + Skin.HasSetting(Alt_color.lyrics)">fffffaf0</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,1)">fffffaf0</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,2)">fffffaf0</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,3)">fffffaf0</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,4)">ffDAA8EA</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,5)">fffffaf0</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,6)">fffffaf0</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,7)">ffb3dbc0</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,8)">fffffaf0</value>
-		<value condition="String.EndsWith(Container(110).Currentitem,9)">ffb39ddb</value>
-		<value>fff395b5</value>
+		<value condition="[String.EndsWith(Player.Duration,1) | String.EndsWith(Player.Duration,2) | String.EndsWith(Player.Duration,3) | String.EndsWith(Player.Duration,4) | String.EndsWith(Player.Duration,5) | String.EndsWith(Player.Duration,6) | String.EndsWith(Player.Duration,7) | String.EndsWith(Player.Duration,8) | String.EndsWith(Player.Duration,9)] + Skin.HasSetting(Alt_color.lyrics)">$VAR[LyricsColor4Var]</value>
+		<value>fffffaf0</value>
 	</variable>
 	<!-- ##### MOD.SPIN #####-->
 	<include name="Lyrics1">

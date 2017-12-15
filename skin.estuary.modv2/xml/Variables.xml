@@ -2831,6 +2831,22 @@
 		<value condition="!String.IsEmpty(Skin.String(PatternColor))">$INFO[Skin.String(PatternColor)]</value>
 		<value>$LOCALIZE[15109]</value>
 	</variable>
+	<variable name="Label_SkinSetting_LyricsColor1">
+		<value condition="!String.IsEmpty(Skin.String(LyricsColor1))">$INFO[Skin.String(LyricsColor1)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="Label_SkinSetting_LyricsColor2">
+		<value condition="!String.IsEmpty(Skin.String(LyricsColor2))">$INFO[Skin.String(LyricsColor2)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="Label_SkinSetting_LyricsColor3">
+		<value condition="!String.IsEmpty(Skin.String(LyricsColor3))">$INFO[Skin.String(LyricsColor3)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="Label_SkinSetting_LyricsColor4">
+		<value condition="!String.IsEmpty(Skin.String(LyricsColor4))">$INFO[Skin.String(LyricsColor4)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
 	<variable name="BorderColorVar">
 		<value condition="!String.IsEmpty(Skin.String(BorderColor))">$INFO[Skin.String(BorderColor)]</value>
 		<value></value>
@@ -2843,6 +2859,22 @@
 	<variable name="MediaFlagsColorVar">
 		<value condition="!String.IsEmpty(Skin.String(MediaFlagsColor))">$INFO[Skin.String(MediaFlagsColor)]</value>
 		<value>FFFFFFFF</value>
+	</variable>
+	<variable name="LyricsColor1Var">
+		<value condition="!String.IsEmpty(Skin.String(LyricsColor1))">$INFO[Skin.String(LyricsColor1)]</value>
+		<value>$VAR[SkinColorVar]</value>
+	</variable>
+	<variable name="LyricsColor2Var">
+		<value condition="!String.IsEmpty(Skin.String(LyricsColor2))">$INFO[Skin.String(LyricsColor2)]</value>
+		<value>ffffffff</value>
+	</variable>
+	<variable name="LyricsColor3Var">
+		<value condition="!String.IsEmpty(Skin.String(LyricsColor3))">$INFO[Skin.String(LyricsColor3)]</value>
+		<value>$VAR[SkinColorVar]</value>
+	</variable>
+	<variable name="LyricsColor4Var">
+		<value condition="!String.IsEmpty(Skin.String(LyricsColor4))">$INFO[Skin.String(LyricsColor4)]</value>
+		<value>ffffffff</value>
 	</variable>
 	<variable name="SkinColorVar">
 		<value condition="System.Date(12-01,01-03) + !Skin.HasSetting(DisableThemes)">ffe30022</value>

@@ -213,6 +213,45 @@
 					<onclick>Skin.ToggleSetting(enable_animatedlyrics)</onclick>
 					<selected>!Skin.HasSetting(enable_animatedlyrics)</selected>
 				</control>
+				<control type="radiobutton" id="216">
+					<label>  ∟$LOCALIZE[40163]</label>
+					<include>DefaultSettingButton</include>
+					<selected>Skin.HasSetting(Alt_color.lyrics)</selected>
+					<onclick>Skin.ToggleSetting(Alt_color.lyrics)</onclick>
+					<visible>!Skin.HasSetting(enable_animatedlyrics)</visible>
+				</control>
+				<control type="button" id="217">
+					<label>    ∟$LOCALIZE[737] 1</label>
+					<label2>$VAR[Label_SkinSetting_LyricsColor1]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!Skin.String(LyricsColor1)">RunScript(script.skin.helper.colorpicker,skinstring=LyricsColor1)</onclick>
+					<onclick condition="Skin.String(LyricsColor1)">Skin.Reset(LyricsColor1)</onclick>
+					<visible>!Skin.HasSetting(enable_animatedlyrics) + Skin.HasSetting(Alt_color.lyrics)</visible>
+				</control>
+				<control type="button" id="218">
+					<label>    ∟$LOCALIZE[737] 2</label>
+					<label2>$VAR[Label_SkinSetting_LyricsColor2]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!Skin.String(LyricsColor2)">RunScript(script.skin.helper.colorpicker,skinstring=LyricsColor2)</onclick>
+					<onclick condition="Skin.String(LyricsColor2)">Skin.Reset(LyricsColor2)</onclick>
+					<visible>!Skin.HasSetting(enable_animatedlyrics) + Skin.HasSetting(Alt_color.lyrics)</visible>
+				</control>
+				<control type="button" id="219">
+					<label>    ∟$LOCALIZE[737] 3</label>
+					<label2>$VAR[Label_SkinSetting_LyricsColor3]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!Skin.String(LyricsColor3)">RunScript(script.skin.helper.colorpicker,skinstring=LyricsColor3)</onclick>
+					<onclick condition="Skin.String(LyricsColor3)">Skin.Reset(LyricsColor3)</onclick>
+					<visible>!Skin.HasSetting(enable_animatedlyrics) + Skin.HasSetting(Alt_color.lyrics)</visible>
+				</control>
+				<control type="button" id="220">
+					<label>    ∟$LOCALIZE[737] 4</label>
+					<label2>$VAR[Label_SkinSetting_LyricsColor4]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!Skin.String(LyricsColor4)">RunScript(script.skin.helper.colorpicker,skinstring=LyricsColor4)</onclick>
+					<onclick condition="Skin.String(LyricsColor4)">Skin.Reset(LyricsColor4)</onclick>
+					<visible>!Skin.HasSetting(enable_animatedlyrics) + Skin.HasSetting(Alt_color.lyrics)</visible>
+				</control>
 				<control type="radiobutton" id="213">
 					<label>$LOCALIZE[40231]</label>
 					<include>DefaultSettingButton</include>
@@ -228,7 +267,7 @@
 				<control type="button" id="211">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(show_musicvisualisation)|Skin.Reset(hide_background_fanart)|Skin.Reset(enable_artistslideshow)|Skin.Reset(animate_artistslideshow)|Skin.Reset(hide_fanartopacity)|Skin.Reset(enable_visualisation)|Skin.Reset(show_visualisationbehind)|Skin.Reset(show_disc)|Skin.Reset(show_artistclearlogo)|Skin.Reset(show_artistbanner)|Skin.Reset(enable_artistclearart)|Skin.Reset(enable_animatedlyrics)|Skin.Reset(enable_scrollingtext)|Skin.Reset(SkinHelper.DisableScreenSaverOnFullScreenMusic))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(show_musicvisualisation)|Skin.Reset(hide_background_fanart)|Skin.Reset(enable_artistslideshow)|Skin.Reset(animate_artistslideshow)|Skin.Reset(hide_fanartopacity)|Skin.Reset(enable_visualisation)|Skin.Reset(show_visualisationbehind)|Skin.Reset(show_disc)|Skin.Reset(show_artistclearlogo)|Skin.Reset(show_artistbanner)|Skin.Reset(enable_artistclearart)|Skin.Reset(enable_animatedlyrics)|Skin.Reset(Alt_color.lyrics)|Skin.Reset(LyricsColor1)|Skin.Reset(LyricsColor2)|Skin.Reset(LyricsColor3)|Skin.Reset(LyricsColor4)|Skin.Reset(enable_scrollingtext)|Skin.Reset(SkinHelper.DisableScreenSaverOnFullScreenMusic))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="300">
