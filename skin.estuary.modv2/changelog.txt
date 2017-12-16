@@ -1,4 +1,5 @@
 [B]2.9.2[/B]
+• Fix for movies sets overview
 • Minor fixes (Thanks to Angelinas)
 
 [B]2.9.1[/B]

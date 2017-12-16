@@ -441,6 +441,7 @@
 				</control>
 				<control type="group">
 					<visible>!Container.Content() | !String.IsEmpty(ListItem.Plot)</visible>
+					<visible>!ListItem.IsCollection</visible>
 					<left>30</left>
 					<control type="textbox" id="15500">
 						<top>640</top>
@@ -574,9 +575,31 @@
 						<left>10</left>
 						<align>justify</align>
 						<autoscroll time="5000" delay="5000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[ListItem.Plot][/COLOR]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>!String.IsEqual(Skin.Font, Arial) + !String.IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="textbox">
+						<top>0</top>
+						<width>535</width>
+						<bottom>235</bottom>
+						<left>10</left>
+						<align>justify</align>
+						<autoscroll time="5000" delay="5000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+						<visible>!String.IsEqual(Skin.Font, Arial) + String.IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="textbox">
+						<top>0</top>
+						<width>535</width>
+						<bottom>244</bottom>
+						<left>10</left>
+						<align>justify</align>
+						<autoscroll time="5000" delay="5000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
+						<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[ListItem.Plot][/COLOR]</label>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>String.IsEqual(Skin.Font, Arial) + !String.IsEmpty(ListItem.Plot)</visible>
 					</control>
 					<control type="textbox">
 						<top>0</top>
@@ -587,7 +610,7 @@
 						<autoscroll time="5000" delay="5000" repeat="5000">!System.HasModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
 						<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>String.IsEqual(Skin.Font, Arial)</visible>
+						<visible>String.IsEqual(Skin.Font, Arial) + String.IsEmpty(ListItem.Plot)</visible>
 					</control>
 					<control type="textbox">
 						<top>41</top>
@@ -595,7 +618,7 @@
 						<bottom>276</bottom>
 						<left>10</left>
 						<label>$LOCALIZE[19055]</label>
-						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))</visible>
+						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)) + String.IsEmpty(ListItem.Plot)</visible>
 					</control>
 					<control type="list" id="50055">
 						<left>20</left>

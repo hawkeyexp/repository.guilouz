@@ -83,7 +83,7 @@
 					<top>472</top>
 					<left>1283</left>
 					<visible>Skin.HasSetting(enable_LibraryDiscArt)</visible>
-					<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
+					<visible>!String.IsEmpty(ListItem.Art(discart)) + !ListItem.IsCollection</visible>
 					<animation effect="slide" start="0,0" end="-375,0" time="300" tween="cubic" easing="out">VisibleChange</animation>
 					<animation effect="fade" start="100" end="0" time="0" condition="String.IsEmpty(ListItem.Art(discart))">Conditional</animation>
 					<animation effect="slide" end="640,0" time="0" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
@@ -184,7 +184,7 @@
 					<label>$VAR[PlotSpoilerVar]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<autoscroll delay="10000" time="5000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+					<visible>!String.IsEqual(Skin.Font, Arial) + !ListItem.IsCollection</visible>
 				</control>
 				<control type="textbox">
 					<left>50</left>
@@ -195,7 +195,7 @@
 					<label>$VAR[PlotSpoilerVar]</label>
 					<textcolor>$VAR[SkinColorVar]</textcolor>
 					<autoscroll delay="10000" time="5000" repeat="10000">!System.HasActiveModalDialog + Skin.HasSetting(AutoScroll)</autoscroll>
-					<visible>String.IsEqual(Skin.Font, Arial)</visible>
+					<visible>String.IsEqual(Skin.Font, Arial) + !ListItem.IsCollection</visible>
 				</control>
 				<control type="scrollbar" id="502600">
 					<left>20</left>
@@ -218,10 +218,32 @@
 						<right>45</right>
 						<bottom>95</bottom>
 						<align>justify</align>
+						<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[ListItem.Plot][/COLOR]</label>
+						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>!String.IsEqual(Skin.Font, Arial) + !String.IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="textbox">
+						<left>0</left>
+						<top>10</top>
+						<right>45</right>
+						<bottom>95</bottom>
+						<align>justify</align>
 						<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>!String.IsEqual(Skin.Font, Arial)</visible>
+						<visible>!String.IsEqual(Skin.Font, Arial) + String.IsEmpty(ListItem.Plot)</visible>
+					</control>
+					<control type="textbox">
+						<left>0</left>
+						<top>10</top>
+						<right>45</right>
+						<bottom>75</bottom>
+						<align>justify</align>
+						<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[ListItem.Plot][/COLOR]</label>
+						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<visible>String.IsEqual(Skin.Font, Arial) + !String.IsEmpty(ListItem.Plot)</visible>
 					</control>
 					<control type="textbox">
 						<left>0</left>
@@ -232,7 +254,7 @@
 						<label>[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</label>
 						<autoscroll delay="10000" time="5000" repeat="10000">Skin.HasSetting(autoscroll)</autoscroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>String.IsEqual(Skin.Font, Arial)</visible>
+						<visible>String.IsEqual(Skin.Font, Arial) + String.IsEmpty(ListItem.Plot)</visible>
 					</control>
 					<control type="textbox">
 						<left>0</left>
@@ -244,7 +266,7 @@
 						<font>font27</font>
 						<textcolor>80FFFFFF</textcolor>
 						<label>$LOCALIZE[19055]</label>
-						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))</visible>
+						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)) + String.IsEmpty(ListItem.Plot)</visible>
 					</control>
 				</control>
 			</control>
