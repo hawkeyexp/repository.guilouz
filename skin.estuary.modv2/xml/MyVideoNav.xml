@@ -788,7 +788,7 @@
 						<selected>Skin.HasSetting(SkinHelper.EnableExtraFanart)</selected>
 						<onclick>Skin.ToggleSetting(SkinHelper.EnableExtraFanart)</onclick>
 						<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
-						<visible>Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)</visible>
+						<visible>System.HasAddon(script.artwork.helper) + [Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.content(seasons) | Container.Content(episodes) | Container.Content(musicvideos)]</visible>
 					</control>
 					<control type="radiobutton" id="627">
 						<include>MediaMenuItemsCommonRadio</include>

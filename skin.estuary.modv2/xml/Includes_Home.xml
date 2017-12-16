@@ -2269,6 +2269,57 @@
 			</control>
 		</definition>
 	</include>
+	<include name="Widget">
+        <param name="visible">true</param>
+        <definition>
+            <include content="CategoryLabel">
+                <param name="label">$PARAM[widget_header]</param>
+                <param name="label_focus">$PARAM[widget_header_focus]</param>
+                <param name="list_id" value="$PARAM[list_id]"/>
+                <param name="visible" value="$PARAM[visible]"/>
+            </include>
+            <include content="BusyListSpinner">
+                <param name="list_id" value="$PARAM[list_id]"/>
+                <param name="posy" value="250"/>
+                <param name="visible" value="$PARAM[visible]"/>
+            </include>
+            <control type="panel" id="$PARAM[list_id]">
+                <left>-23</left>
+                <top>115</top>
+                <visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
+                <visible>$PARAM[visible]</visible>
+                <right>0</right>
+                <height>503</height>
+                <include content="WidgetListCommon">
+                    <param name="list_id" value="$PARAM[list_id]"/>
+                </include>
+                <itemlayout width="310" height="486">
+                    <control type="group">
+                        <left>68</left>
+                        <top>10</top>
+                        <include content="InfoWallMovieLayout">
+                            <param name="focused" value="false" />
+                        </include>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="310" height="486">
+                    <control type="group">
+                        <depth>DepthContentPopout</depth>
+                        <left>68</left>
+                        <top>10</top>
+                        <animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
+                            <effect type="zoom" end="110" time="75" tween="sine" easing="out" center="auto" />
+                            <effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
+                        </animation>
+                        <include content="InfoWallMovieLayout">
+                            <param name="focused" value="true" />
+                        </include>
+                    </control>
+                </focusedlayout>
+                <content sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[widget_target]" limit="$VAR[Label_SkinSetting_WidgetNumber]">$PARAM[content_path]</content>
+            </control>
+        </definition>
+    </include>
 	<include name="WidgetListPoster">
 		<param name="visible">true</param>
 		<definition>
