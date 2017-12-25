@@ -110,6 +110,7 @@
 							<height>100</height>
 							<aspectratio aligny="center">keep</aspectratio>
 							<texture>$VAR[ViewClearLogoVar]</texture>
+							<visible>!String.IsEqual(listitem.dbtype,season)</visible>
 						</control>
 						<control type="image">
 							<left>20</left>
@@ -130,7 +131,7 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
-							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
+							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))] | String.IsEqual(listitem.dbtype,season)</visible>
 						</control>
 						<control type="textbox">
 							<left>25</left>
@@ -229,6 +230,7 @@
 							<height>100</height>
 							<aspectratio aligny="center">keep</aspectratio>
 							<texture>$VAR[ViewClearLogoVar]</texture>
+							<visible>!String.IsEqual(listitem.dbtype,season)</visible>
 						</control>
 						<control type="textbox">
 							<left>25</left>
@@ -239,7 +241,7 @@
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<autoscroll time="3000" delay="3000" repeat="3000">True</autoscroll>
-							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))]</visible>
+							<visible>[String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + String.IsEmpty(ListItem.Art(clearlogo))] | String.IsEqual(listitem.dbtype,season)</visible>
 						</control>
 						<control type="image">
 							<left>169</left>
