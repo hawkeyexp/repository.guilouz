@@ -350,6 +350,15 @@
 								<label>$INFO[ListItem.ChannelName,[B],[/B]]</label>
 							</control>
 							<control type="label">
+								<top>95</top>
+								<left>30</left>
+								<right>12</right>
+								<height>30</height>
+								<label>[B]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][/B]</label>
+								<font>font09</font>
+								<textcolor>$VAR[SkinColorVar]</textcolor>
+							</control>
+							<control type="label">
 								<top>126</top>
 								<left>30</left>
 								<right>12</right>
@@ -427,6 +436,14 @@
 								<aligny>center</aligny>
 								<label>$INFO[ListItem.ChannelName,[B],[/B]]</label>
 								<scroll>true</scroll>
+							</control>
+							<control type="label">
+								<top>95</top>
+								<left>30</left>
+								<right>12</right>
+								<height>30</height>
+								<label>[B]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][/B]</label>
+								<font>font09</font>
 							</control>
 							<control type="label">
 								<top>126</top>

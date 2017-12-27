@@ -1,3 +1,7 @@
+[B]2.9.3[/B]
+• Add movies set button on video info dialog
+• Improve 'Icons Wall' view for PVR channels
+
 [B]2.9.2[/B]
 • Fix for movies sets overview
 • Minor fixes (Thanks to Angelinas)
