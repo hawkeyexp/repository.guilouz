@@ -31,7 +31,7 @@
 					<ondown>9000</ondown>
 					<label/>
 					<texturenofocus/>
-					<visible>Container.Content(albums) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ThumbBack))</visible>
+					<visible>Container.Content(albums) + !String.IsEmpty(ListItem.Art(back))</visible>
 				</control>
 				<control type="image">
 					<left>24</left>
@@ -63,9 +63,9 @@
 					<height>574</height>
 					<aspectratio aligny="top">scale</aspectratio>
 					<fadetime>300</fadetime>
-					<texture background="true">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ThumbBack)]</texture>
+					<texture background="true">$INFO[ListItem.Art(back)]</texture>
 					<animation effect="fade" time="150">VisibleChange</animation>
-					<visible>Control.HasFocus(1300) + Container.Content(albums) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ThumbBack))</visible>
+					<visible>Control.HasFocus(1300) + Container.Content(albums) + !String.IsEmpty(ListItem.Art(back))</visible>
 				</control>
 			</control>
 			<control type="group">

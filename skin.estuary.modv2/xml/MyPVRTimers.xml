@@ -12,7 +12,7 @@
 				<control type="fixedlist" id="50">
 					<left>0</left>
 					<top>list_y_offset</top>
-					<right>860</right>
+					<right>922</right>
 					<bottom>list_y_offset</bottom>
 					<onup>50</onup>
 					<ondown>50</ondown>
@@ -29,7 +29,7 @@
 							<top>0</top>
 							<right>30</right>
 							<height>100</height>
-							<font>font36_title</font>
+							<font>font32_title</font>
 							<aligny>center</aligny>
 							<visible>String.IsEmpty(ListItem.Date)</visible>
 							<label>$INFO[ListItem.Label]</label>
@@ -103,7 +103,7 @@
 							<top>0</top>
 							<right>30</right>
 							<height>100</height>
-							<font>font36_title</font>
+							<font>font32_title</font>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>String.IsEmpty(ListItem.Date)</visible>
@@ -159,7 +159,7 @@
 			<control type="group">
 				<depth>DepthContentPanel</depth>
 				<include>OpenClose_Right</include>
-				<width>810</width>
+				<width>870</width>
 				<right>0</right>
 				<include content="ContentPanel">
 					<param name="left" value="-72" />
@@ -177,7 +177,9 @@
 					<orientation>vertical</orientation>
 					<animation effect="zoom" start="100,100" end="50,100" center="-50,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(73)">conditional</animation>
 				</control>
-				<include>PVRInfoPanel</include>
+				<include content="PVRInfoPanel">
+					<param name="folder_sortorder" value="ascending" />
+				</include>
 			</control>
 		</control>
 		<include content="TopBar">
@@ -190,7 +192,7 @@
 			<right>20</right>
 			<include>OpenClose_Right</include>
 			<bottom>10</bottom>
-			<width>800</width>
+			<width>850</width>
 			<height>60</height>
 			<label>$INFO[PVR.NextTimer]</label>
 			<shadowcolor>black</shadowcolor>

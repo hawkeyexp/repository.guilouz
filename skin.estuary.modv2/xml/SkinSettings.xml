@@ -810,76 +810,76 @@
 				<control type="radiobutton" id="905">
 					<label>$LOCALIZE[40149]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(SkinHelper.ForcedViews.Enabled)</onclick>
-					<selected>Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</selected>
+					<onclick>Skin.ToggleSetting(ForcedViews.Enabled)</onclick>
+					<selected>Skin.HasSetting(ForcedViews.Enabled)</selected>
 				</control>
 				<control type="button" id="906">
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=movies)</onclick>
-					<visible>Library.HasContent(movies) + Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
+					<visible>Library.HasContent(movies) + Skin.HasSetting(ForcedViews.Enabled)</visible>
 					<label>  ∟$LOCALIZE[40150]</label>
 					<label2>$VAR[SettingsForcedViewsMoviesVar]</label2>
 				</control>
 				<control type="button" id="907">
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=sets)</onclick>
-					<visible>Library.HasContent(movies) + Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
+					<visible>Library.HasContent(movies) + Skin.HasSetting(ForcedViews.Enabled)</visible>
 					<label>  ∟$LOCALIZE[40151]</label>
 					<label2>$VAR[SettingsForcedViewsSetsVar]</label2>
 				</control>
 				<control type="button" id="908">
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=setmovies)</onclick>
-					<visible>Library.HasContent(movies) + Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
+					<visible>Library.HasContent(movies) + Skin.HasSetting(ForcedViews.Enabled)</visible>
 					<label>  ∟$LOCALIZE[40152]</label>
 					<label2>$VAR[SettingsForcedViewsSetMoviesVar]</label2>
 				</control>
 				<control type="button" id="909">
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=tvshows)</onclick>
-					<visible>Library.HasContent(tvshows) + Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
+					<visible>Library.HasContent(tvshows) + Skin.HasSetting(ForcedViews.Enabled)</visible>
 					<label>  ∟$LOCALIZE[40153]</label>
 					<label2>$VAR[SettingsForcedViewsTVShowsVar]</label2>
 				</control>
 				<control type="button" id="910">
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=seasons)</onclick>
-					<visible>Library.HasContent(tvshows) + Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
+					<visible>Library.HasContent(tvshows) + Skin.HasSetting(ForcedViews.Enabled)</visible>
 					<label>  ∟$LOCALIZE[40154]</label>
 					<label2>$VAR[SettingsForcedViewsSeasonsVar]</label2>
 				</control>
 				<control type="button" id="911">
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=episodes)</onclick>
-					<visible>Library.HasContent(tvshows) + Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
+					<visible>Library.HasContent(tvshows) + Skin.HasSetting(ForcedViews.Enabled)</visible>
 					<label>  ∟$LOCALIZE[40155]</label>
 					<label2>$VAR[SettingsForcedViewsEpisodesVar]</label2>
 				</control>
 				<control type="button" id="912">
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=artists)</onclick>
-					<visible>Library.HasContent(music) + Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
+					<visible>Library.HasContent(music) + Skin.HasSetting(ForcedViews.Enabled)</visible>
 					<label>  ∟$LOCALIZE[40156]</label>
 					<label2>$VAR[SettingsForcedViewsArtistsVar]</label2>
 				</control>
 				<control type="button" id="913">
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=albums)</onclick>
-					<visible>Library.HasContent(music) + Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
+					<visible>Library.HasContent(music) + Skin.HasSetting(ForcedViews.Enabled)</visible>
 					<label>  ∟$LOCALIZE[40157]</label>
 					<label2>$VAR[SettingsForcedViewsAlbumsVar]</label2>
 				</control>
 				<control type="button" id="914">
 					<include>DefaultSettingButton</include>
 					<onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=musicvideos)</onclick>
-					<visible>Library.HasContent(musicvideos) + Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
+					<visible>Library.HasContent(musicvideos) + Skin.HasSetting(ForcedViews.Enabled)</visible>
 					<label>  ∟$LOCALIZE[40158]</label>
 					<label2>$VAR[SettingsForcedViewsMusicVideosVar]</label2>
 				</control>
 				<control type="button" id="915">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(hide_thumbforspoiler)|Skin.Reset(LibraryClearLogo)|Skin.Reset(enable_LibraryDiscArt)|Skin.Reset(enable_LibraryDiscArtOverlay)|Skin.Reset(TrailerInWindow)|Skin.Reset(SkinHelper.ForcedViews.Enabled))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(autoscroll)|Skin.Reset(hide_plotforspoiler)|Skin.Reset(hide_thumbforspoiler)|Skin.Reset(LibraryClearLogo)|Skin.Reset(enable_LibraryDiscArt)|Skin.Reset(enable_LibraryDiscArtOverlay)|Skin.Reset(TrailerInWindow)|Skin.Reset(ForcedViews.Enabled))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="700">

@@ -1,3 +1,7 @@
+[B]2.9.4[/B]
+• KODI 18 : Changes in PVR
+• Fix forced views with a script from hawkeyexp
+
 [B]2.9.3[/B]
 • Add movies set button on video info dialog
 • Improve 'Icons Wall' view for PVR channels

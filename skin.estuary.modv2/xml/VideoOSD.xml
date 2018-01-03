@@ -288,7 +288,7 @@
 					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
 					<info>Player.Progress</info>
 					<action>seek</action>
-					<visible>!Control.HasFocus(87)</visible>
+					<visible>!Control.HasFocus(87) + !VideoPlayer.HasEpg</visible>
 				</control>
 				<control type="slider">
 					<top>-5</top>
@@ -305,7 +305,39 @@
 					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
 					<info>Player.Progress</info>
 					<action>seek</action>
-					<visible>Control.HasFocus(87)</visible>
+					<visible>Control.HasFocus(87) + !VideoPlayer.HasEpg</visible>
+				</control>	
+				<control type="slider">
+					<top>-5</top>
+					<include content="ItemLeft" condition="![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">
+						<param name="left" value="460"/>
+					</include>
+					<include content="ItemLeft" condition="[Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">
+						<param name="left" value="30"/>
+					</include>
+					<right>30</right>
+					<height>20</height>
+					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+					<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
+					<info>PVR.EpgEventProgress</info>
+					<visible>!Control.HasFocus(87) + VideoPlayer.HasEpg</visible>
+				</control>
+				<control type="slider">
+					<top>-5</top>
+					<include content="ItemLeft" condition="![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">
+						<param name="left" value="460"/>
+					</include>
+					<include content="ItemLeft" condition="[Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">
+						<param name="left" value="30"/>
+					</include>
+					<right>30</right>
+					<height>20</height>
+					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+					<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
+					<info>PVR.EpgEventProgress</info>
+					<visible>Control.HasFocus(87) + VideoPlayer.HasEpg</visible>
 				</control>
 			</control>
 		</control>

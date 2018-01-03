@@ -252,9 +252,8 @@
 					<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
 					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
 					<info>Player.Progress</info>
-					<visible>Player.SeekEnabled</visible>
 					<action>seek</action>
-					<visible>!Control.HasFocus(87)</visible>
+					<visible>Player.SeekEnabled + !Control.HasFocus(87) + !VideoPlayer.HasEpg</visible>
 				</control>
 				<control type="slider">
 					<left>460</left>
@@ -267,9 +266,34 @@
 					<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernib>
 					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
 					<info>Player.Progress</info>
-					<visible>Player.SeekEnabled</visible>
 					<action>seek</action>
-					<visible>Control.HasFocus(87)</visible>
+					<visible>Player.SeekEnabled + Control.HasFocus(87) + !VideoPlayer.HasEpg</visible>
+				</control>
+				<control type="slider">
+					<left>460</left>
+					<top>-5</top>
+					<right>30</right>
+					<height>20</height>
+					<onup>8010</onup>
+					<ondown>650</ondown>
+					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+					<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
+					<info>PVR.EpgEventProgress</info>
+					<visible>Player.SeekEnabled + !Control.HasFocus(87) + VideoPlayer.HasEpg</visible>
+				</control>
+				<control type="slider">
+					<left>460</left>
+					<top>-5</top>
+					<right>30</right>
+					<height>20</height>
+					<onup>8010</onup>
+					<ondown>650</ondown>
+					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
+					<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
+					<info>PVR.EpgEventProgress</info>
+					<visible>Player.SeekEnabled + Control.HasFocus(87) + VideoPlayer.HasEpg</visible>
 				</control>
 			</control>
 		</control>
