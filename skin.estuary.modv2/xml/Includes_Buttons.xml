@@ -204,6 +204,7 @@
 	</include>
 	<include name="VideoInfoButtonsCommon">
 		<param name="width">262</param>
+		<param name="radioposx">108</param>
 		<definition>
 			<width>$PARAM[width]</width>
 			<height>142</height>
@@ -213,7 +214,7 @@
 			<texturenofocus border="21">buttons/button-nofo.png</texturenofocus>
 			<textoffsetx>35</textoffsetx>
 			<textoffsety>86</textoffsety>
-			<radioposx>108</radioposx>
+			<radioposx>$PARAM[radioposx]</radioposx>
 			<radioposy>18</radioposy>
 			<radiowidth>48</radiowidth>
 			<font>font20_title</font>

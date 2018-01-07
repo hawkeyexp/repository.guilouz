@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog" id="1134">
 	<onload>Dialog.Close(fullscreeninfo,true)</onload>
-	<visible>Window.IsActive(fullscreenvideo) + VideoPlayer.Content(livetv) + !Skin.HasSetting(disable_PVRNextUp) + [Integer.IsGreater(Player.Duration(mm),05) | Integer.IsGreater(Player.Duration(hh),00)]</visible>
+	<visible>Window.IsActive(fullscreenvideo) + VideoPlayer.Content(livetv) + !Skin.HasSetting(disable_PVRNextUp)</visible>
 	<visible>!Window.IsVisible(VideoOSD.xml) + !Window.IsVisible(DialogPVRChannelsOSD.xml) + !Window.IsVisible(DialogPVRChannelGuide.xml) + !Window.IsVisible(DialogFullScreenInfo.xml) + !Window.IsVisible(Custom_1135_PVROverlay.xml)</visible>
 	<controls>
 		<control type="group">
-			<visible>!Window.IsVisible(videoosd) + Window.IsVisible(fullscreenvideo) + Integer.IsEqual(Player.TimeRemaining(hh),00) + Integer.IsEqual(Player.TimeRemaining(mm),00) + Integer.IsLessOrEqual(Player.TimeRemaining(ss),30)</visible>
+			<visible>!Window.IsVisible(videoosd) + Window.IsVisible(fullscreenvideo) + [String.IsEqual(PVR.EpgEventRemainingTime,00:30) | String.IsEqual(PVR.EpgEventRemainingTime,00:29) | String.IsEqual(PVR.EpgEventRemainingTime,00:28) | String.IsEqual(PVR.EpgEventRemainingTime,00:27) | String.IsEqual(PVR.EpgEventRemainingTime,00:26) | String.IsEqual(PVR.EpgEventRemainingTime,00:25) | String.IsEqual(PVR.EpgEventRemainingTime,00:24) | String.IsEqual(PVR.EpgEventRemainingTime,00:23) | String.IsEqual(PVR.EpgEventRemainingTime,00:22) | String.IsEqual(PVR.EpgEventRemainingTime,00:21) | String.IsEqual(PVR.EpgEventRemainingTime,00:20) | String.IsEqual(PVR.EpgEventRemainingTime,00:19) | String.IsEqual(PVR.EpgEventRemainingTime,00:18) | String.IsEqual(PVR.EpgEventRemainingTime,00:17) | String.IsEqual(PVR.EpgEventRemainingTime,00:16) | String.IsEqual(PVR.EpgEventRemainingTime,00:15) | String.IsEqual(PVR.EpgEventRemainingTime,00:14) | String.IsEqual(PVR.EpgEventRemainingTime,00:13) | String.IsEqual(PVR.EpgEventRemainingTime,00:12) | String.IsEqual(PVR.EpgEventRemainingTime,00:11) | String.IsEqual(PVR.EpgEventRemainingTime,00:10) | String.IsEqual(PVR.EpgEventRemainingTime,00:09) | String.IsEqual(PVR.EpgEventRemainingTime,00:08) | String.IsEqual(PVR.EpgEventRemainingTime,00:07) | String.IsEqual(PVR.EpgEventRemainingTime,00:06) | String.IsEqual(PVR.EpgEventRemainingTime,00:05)]</visible>
 			<right>64</right>
 			<bottom>90</bottom>
 			<width>378</width>

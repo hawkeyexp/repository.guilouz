@@ -80,12 +80,12 @@
 				</control>
 			</control>
 			<control type="image">
-				<top>15</top>
-				<width>274</width>
-				<height>105</height>
+				<top>10</top>
+				<width>326</width>
+				<height>125</height>
 				<centerleft>50%</centerleft>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</texture>
+				<texture>$VAR[ViewClearArtVar]</texture>
 				<visible>Control.IsVisible(53)</visible>
 		  		<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 		  		<visible>!Container.Scrolling + ![Window.IsVisible(DialogVolumeBar.xml) + !Player.Muted] + !ListItem.IsParentFolder</visible>
@@ -97,7 +97,7 @@
 				<height>95</height>
 				<centerleft>50%</centerleft>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</texture>
+				<texture>$VAR[LibraryClearLogoVar]</texture>
 				<visible>Control.IsVisible(506) + !Control.HasFocus(5199)</visible>
 		  		<visible>!Skin.HasSetting(enable_LibraryClearLogo)</visible>
 		  		<visible>!Container.Scrolling + ![Window.IsVisible(DialogVolumeBar.xml) + !Player.Muted] + !ListItem.IsParentFolder</visible>
@@ -114,15 +114,15 @@
 					<height>95</height>
 					<centerleft>50%</centerleft>
 					<texture colordiffuse="4DFFFFFF">dialogs/clearlogo-back.png</texture>
-					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))</visible>
+					<visible>!String.IsEmpty(Control.GetLabel(25000))</visible>
 				</control>
-				<control type="image">
+				<control type="image" id="25000">
 					<top>5</top>
 					<width>222</width>
 					<height>85</height>
 					<centerleft>50%</centerleft>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</texture>
+					<texture>$VAR[LibraryClearLogoVar]</texture>
 				</control>
 			</control>
 			<control type="group">
@@ -135,7 +135,7 @@
 				<height>110</height>
 				<left>155</left>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</texture>
+				<texture>$VAR[LibraryClearLogoVar]</texture>
 				<visible>Control.IsVisible(54) | Control.IsVisible(55)</visible>
 			</control>
 			</control>
@@ -150,15 +150,15 @@
 				<height>115</height>
 				<centerleft>50%</centerleft>
 				<texture colordiffuse="4DFFFFFF">dialogs/clearlogo-back.png</texture>
-				<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))</visible>
+				<visible>!String.IsEmpty(Control.GetLabel(25001))</visible>
 			</control>
-			<control type="image">
+			<control type="image" id="25001">
 				<top>5</top>
 				<width>274</width>
 				<height>105</height>
 				<centerleft>50%</centerleft>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<texture>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</texture>				
+				<texture>$VAR[LibraryClearLogoVar]</texture>				
 			</control>
 			</control>
 			<control type="group">

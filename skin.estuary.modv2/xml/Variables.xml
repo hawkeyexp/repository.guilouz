@@ -6,13 +6,38 @@
 		<value>$INFO[ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="ExtraFanartHomeVar">
-	<value condition="System.HasAddon(script.artwork.helper) + Window.IsVisible(DialogVideoInfo.xml) + [Container.Content(movies) | String.IsEqual(ListItem.DBTYPE,movie) | ListItem.IsCollection | String.IsEqual(ListItem.DBTYPE,set) | Container.Content(musicvideos) | String.IsEqual(ListItem.DBTYPE,musicvideo) | Container.Content(tvshows) | String.IsEqual(ListItem.DBTYPE,tvshow)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=fanart</value>
-	<value condition="System.HasAddon(script.artwork.helper) + Window.IsVisible(DialogVideoInfo.xml) + [Container.Content(seasons) | Container.Content(episodes) | String.IsEqual(ListItem.DBTYPE,seasons) | String.IsEqual(ListItem.DBTYPE,episode)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=tvshow.fanart</value>
-	<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,movie) | String.IsEqual(Container.ListItem.DBTYPE,set) | String.IsEqual(Container.ListItem.DBTYPE,musicvideo) | String.IsEqual(Container.ListItem.DBTYPE,tvshow)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
-	<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
-	<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.Label]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
-	<value>$INFO[Container.ListItem.Art(fanart)]</value>
+		<value condition="System.HasAddon(script.artwork.helper) + Window.IsVisible(DialogVideoInfo.xml) + [Container.Content(movies) | String.IsEqual(ListItem.DBTYPE,movie) | ListItem.IsCollection | String.IsEqual(ListItem.DBTYPE,set) | Container.Content(musicvideos) | String.IsEqual(ListItem.DBTYPE,musicvideo) | Container.Content(tvshows) | String.IsEqual(ListItem.DBTYPE,tvshow)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + Window.IsVisible(DialogVideoInfo.xml) + [Container.Content(seasons) | Container.Content(episodes) | String.IsEqual(ListItem.DBTYPE,seasons) | String.IsEqual(ListItem.DBTYPE,episode)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=tvshow.fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,movie) | String.IsEqual(Container.ListItem.DBTYPE,set) | String.IsEqual(Container.ListItem.DBTYPE,musicvideo) | String.IsEqual(Container.ListItem.DBTYPE,tvshow)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.Label]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
+		<value>$INFO[Container.ListItem.Art(fanart)]</value>
 	</variable>
+	<!--<variable name="ExtraFanartVar">
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,set) | String.IsEqual(ListItem.DBTYPE,musicvideo) | String.IsEqual(ListItem.DBTYPE,tvshow)] + !String.IsEmpty(ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode)] + !String.IsEmpty(ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=tvshow.fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)]">plugin://script.artwork.helper/multiimage/smartseries/?title=$INFO[ListItem.Artist]</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
+	</variable>-->
+	<!--<variable name="ExtraFanartHomeVar">
+		<value condition="System.HasAddon(script.artwork.helper) + Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,set) | String.IsEqual(ListItem.DBTYPE,musicvideo) |  String.IsEqual(ListItem.DBTYPE,tvshow)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + Window.IsVisible(DialogVideoInfo.xml) + [String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.DBID]&amp;&amp;arttype=tvshow.fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + Window.IsVisible(DialogMusicInfo.xml) + [String.IsEqual(ListItem.DBTYPE,artist) | String.IsEqual(ListItem.DBTYPE,album) | String.IsEqual(ListItem.DBTYPE,song)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[ListItem.Artist]&amp;&amp;arttype=fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,movie) | String.IsEqual(Container.ListItem.DBTYPE,set) | String.IsEqual(Container.ListItem.DBTYPE,musicvideo) | String.IsEqual(Container.ListItem.DBTYPE,tvshow)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.Label]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,album) | String.IsEqual(Container.ListItem.DBTYPE,song)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,artist)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.Artist]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
+		<value>$INFO[Container.ListItem.Art(fanart)]</value>
+	</variable>-->
+	<variable name="PlayButtonLabelInfoDialog">
+		<value condition="String.IsEqual(listitem.dbtype,tvshow)">$LOCALIZE[1024]</value>
+		<value>$LOCALIZE[208]</value>
+	</variable>
+	<variable name="Label_SkinSetting_GlobalBackground">
+        <value condition="!String.IsEmpty(Skin.String(global-background))">$INFO[Skin.String(global-background)]</value>
+        <value>$LOCALIZE[40064]</value>
+    </variable>
 	<variable name="PlayButtonLabelInfoDialog">
 		<value condition="String.IsEqual(listitem.dbtype,tvshow)">$LOCALIZE[1024]</value>
 		<value>$LOCALIZE[208]</value>
@@ -295,7 +320,7 @@
         <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Thumb))">$INFO[Window(Home).Property(SkinHelper.Player.Art.Thumb)]</value>
     </variable>
 	<variable name="DialogMusicInfoThumbBackVar">
-		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ThumbBack)) + Container.Content(albums)">$LOCALIZE[40169]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ThumbBack)) + [Container.Content(albums) | Container.Content(songs)]">$LOCALIZE[40169]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ThumbBack))">$LOCALIZE[40169]</value>
 		<value>$LOCALIZE[40061]</value>
 	</variable>
@@ -2637,6 +2662,8 @@
 	<variable name="LibraryClearLogoVar">
 		<value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(artist.clearlogo))">$INFO[ListItem.Art(artist.clearlogo)]</value>
+		<value condition="!String.IsEmpty(Container.Art(artist.clearlogo))">$INFO[Container.Art(artist.clearlogo)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
 	</variable>
 	<variable name="ViewClearLogoVar">
@@ -2646,13 +2673,21 @@
 	<variable name="ViewClearArtVar">
 		<value condition="!String.IsEmpty(ListItem.Art(tvshow.clearart))">$INFO[ListItem.Art(tvshow.clearart)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(artist.clearart))">$INFO[ListItem.Art(artist.clearart)]</value>
+		<value condition="!String.IsEmpty(Container.Art(artist.clearart))">$INFO[Container.Art(artist.clearart)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearart))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearart)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
 	</variable>
+	<variable name="InfoClearArtVar">
+		<value condition="!String.IsEmpty(ListItem.Art(artist.clearart))">$INFO[ListItem.Art(artist.clearart)]</value>
+		<value condition="!String.IsEmpty(Container.Art(artist.clearart))">$INFO[Container.Art(artist.clearart)]</value>
+		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearart))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearart)]</value>
+	</variable>
 	<variable name="HomeClearLogoVar">
 		<value condition="!String.IsEmpty(Container().ListItem.Art(tvshow.clearlogo))">$INFO[Container().ListItem.Art(tvshow.clearlogo)]</value>
 		<value condition="!String.IsEmpty(Container().ListItem.Art(clearlogo))">$INFO[Container().ListItem.Art(clearlogo)]</value>
+		<value condition="!String.IsEmpty(Container().ListItem.Art(artist.clearlogo))">$INFO[Container().ListItem.Art(artist.clearlogo)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
 	</variable>
 	<variable name="Label_SkinSetting_Backgrounds">
@@ -2707,6 +2742,8 @@
 	<variable name="ClearLogoVar">
 		<value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(artist.clearlogo))">$INFO[ListItem.Art(artist.clearlogo)]</value>
+		<value condition="!String.IsEmpty(Container.Art(artist.clearlogo))">$INFO[Container.Art(artist.clearlogo)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
 	</variable>
 	<variable name="MPAALabelVar">
@@ -3118,9 +3155,15 @@
 	<variable name="BannerArtVar">
 		<value condition="ListItem.IsParentFolder">DefaultBackBanner.png</value>
 		<value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(artist.banner))">$INFO[ListItem.Art(artist.banner)]</value>
+		<value condition="!String.IsEmpty(Container.Art(artist.banner))">$INFO[Container.Art(artist.banner)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Banner))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Banner)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value>dialogs/dialog-bg-nobo.png</value>
+	</variable>
+	<variable name="BannerPlayerArtVar">
+		<value condition="!String.IsEmpty(Player.Art(banner))">$INFO[Player.Art(banner)]</value>
+		<value>$INFO[Window(Home).Property(SkinHelper.Player.Art.Banner)]</value>
 	</variable>
 	<variable name="FanartImageVar">
 		<value condition="ListItem.IsParentFolder">special://skin/extras/home-images/movies.jpg</value>
@@ -3192,9 +3235,9 @@
 		<value>$INFO[ListItem.VideoResolution,flags/videoresolution/,.png]</value>
 	</variable>
 	<variable name="VideoPlayerResolutionFlagVar">
-		<value condition="VideoPlayer.IsStereoscopic + !String.StartsWith(Player.Filenameandpath,http)">flags/videoresolution/3D.png</value>
-		<value condition="String.Contains(VideoPlayer.Filenameandpath,3D) + !String.StartsWith(Player.Filenameandpath,http)">flags/videoresolution/3D.png</value>
-		<value condition="String.Contains(VideoPlayer.Filenameandpath,3d) + !String.StartsWith(Player.Filenameandpath,http)">flags/videoresolution/3D.png</value>
+		<value condition="VideoPlayer.IsStereoscopic + !String.StartsWith(Player.Filenameandpath,http) + !VideoPlayer.Content(livetv) + !Player.IsInternetStream">flags/videoresolution/3D.png</value>
+		<value condition="String.Contains(VideoPlayer.Filenameandpath,3D) + !String.StartsWith(Player.Filenameandpath,http) + !VideoPlayer.Content(livetv) + !Player.IsInternetStream">flags/videoresolution/3D.png</value>
+		<value condition="String.Contains(VideoPlayer.Filenameandpath,3d) + !String.StartsWith(Player.Filenameandpath,http) + !VideoPlayer.Content(livetv) + !Player.IsInternetStream">flags/videoresolution/3D.png</value>
 		<value condition="Integer.IsGreater(VideoPlayer.VideoResolution,1080)">flags/videoresolution/4K.png</value>
 		<value>$INFO[VideoPlayer.VideoResolution,flags/videoresolution/,.png]</value>
 	</variable>
@@ -3452,6 +3495,19 @@
 		<value condition="Control.HasFocus(801) + String.IsEmpty(Skin.String(search_background)) + !Skin.HasSetting(enable_search_background)">special://skin/extras/home-images/search.jpg</value>
 		<value condition="!String.IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
 	</variable>
+	<!--<variable name="HomeFanartVar">
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + [String.IsEqual(Container.ListItem.DBTYPE,movie) | String.IsEqual(Container.ListItem.DBTYPE,set) | String.IsEqual(Container.ListItem.DBTYPE,musicvideo) | String.IsEqual(Container.ListItem.DBTYPE,tvshow) | String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode) | String.IsEqual(Container.ListItem.DBTYPE,artist) | String.IsEqual(Container.ListItem.DBTYPE,album) | String.IsEqual(Container.ListItem.DBTYPE,song)]">$VAR[ExtraFanartHomeVar]</value>
+		<value condition="Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window(home).Property(infobackground)]</value>
+		<value condition="!String.IsEmpty(Container.ListItem.Art(fanart))">$INFO[Container.ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container.ListItem.Property(FanartCode))">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container.ListItem.Property(FanartCode)]$INFO[Skin.String(WeatherFanart.ext)]</value>
+		<value condition="Control.HasFocus(804) + !String.IsEmpty(Skin.String(power_background)) + !Skin.HasSetting(enable_power_background)">$INFO[Skin.String(power_background)]</value>
+		<value condition="Control.HasFocus(804) + String.IsEmpty(Skin.String(power_background)) + !Skin.HasSetting(enable_power_background)">special://skin/extras/home-images/power.jpg</value>
+		<value condition="Control.HasFocus(802) + !String.IsEmpty(Skin.String(settings_background)) + !Skin.HasSetting(enable_settings_background)">$INFO[Skin.String(settings_background)]</value>
+		<value condition="Control.HasFocus(802) + String.IsEmpty(Skin.String(settings_background)) + !Skin.HasSetting(enable_settings_background)">special://skin/extras/home-images/settings.jpg</value>
+		<value condition="Control.HasFocus(801) + !String.IsEmpty(Skin.String(search_background)) + !Skin.HasSetting(enable_search_background)">$INFO[Skin.String(search_background)]</value>
+		<value condition="Control.HasFocus(801) + String.IsEmpty(Skin.String(search_background)) + !Skin.HasSetting(enable_search_background)">special://skin/extras/home-images/search.jpg</value>
+		<value condition="!String.IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
+	</variable>-->
 	<variable name="MediaFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)"></value>
 		<value condition="ListItem.IsParentFolder"></value>
@@ -3466,6 +3522,19 @@
 		<value condition="!String.IsEmpty(Container.Art(artist.fanart)) + !ListItem.IsParentFolder">$INFO[Container.Art(artist.fanart)]</value>
 		<value>$INFO[Container.Art(fanart)]</value>
 	</variable>
+	<!--<variable name="MediaFanartVar">
+		<value condition="Skin.HasSetting(no_fanart)"></value>
+		<value condition="ListItem.IsParentFolder"></value>
+		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">$VAR[ExtraFanartVar]</value>
+		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + Control.HasFocus(50) + !String.IsEmpty(Container(50).ListItem.Art(fanart))">$INFO[Container(50).ListItem.Art(fanart)]</value>
+		<value condition="Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window(home).Property(infobackground)]</value>
+		<value condition="Container.Content(genres) + Window.IsActive(videos)">$INFO[Skin.String(MovieGenreFanart.path)]$INFO[ListItem.Label]$INFO[Skin.String(MovieGenreFanart.ext)]</value>
+		<value condition="Window.IsActive(pictures) + String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.FolderPath]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="!String.IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
+		<value condition="!String.IsEmpty(Container.Art(artist.fanart)) + !ListItem.IsParentFolder">$INFO[Container.Art(artist.fanart)]</value>
+		<value>$INFO[Container.Art(fanart)]</value>
+	</variable>-->
 	<variable name="WeatherFanartVar">
 		<value condition="!String.IsEmpty(Container.ListItem.Property(FanartCode))">$INFO[Skin.String(WeatherFanart.path)]$INFO[Container.ListItem.Property(FanartCode)]$INFO[Skin.String(WeatherFanart.ext)]</value>
 		<value condition="!String.IsEmpty(Window(weather).Property(current.fanartcode)) + !String.IsEmpty(Skin.String(weatherfanart.path))">$INFO[Skin.String(weatherfanart.path)]$INFO[Window(Weather).Property(Current.FanartCode)]$INFO[Skin.String(weatherfanart.ext)]</value>

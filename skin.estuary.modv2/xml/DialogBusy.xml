@@ -16,10 +16,10 @@
 			</control>
 			<control type="image">
 				<texture>colors/black.png</texture>
-				<top>154</top>
+				<top>158</top>
 				<left>620</left>
 				<width>1206</width>
-				<height>682</height>
+				<height>678</height>
 				<animation effect="fade" start="100" end="70" time="0" condition="true">Conditional</animation>
 				<animation effect="fade" start="100" end="0" time="240" condition="Window.IsVisible(fullscreenvideo)">Conditional</animation>
 				<visible>Skin.HasSetting(TrailerInWindow) + [Window.IsVisible(DialogVideoInfo.xml) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)]]</visible>

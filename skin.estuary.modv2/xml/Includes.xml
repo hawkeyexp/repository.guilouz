@@ -2425,18 +2425,20 @@
 			</control>
 			<control type="group">
 				<visible>Window.IsActive(fullscreenvideo) + PVR.IsRecordingPlayingChannel + !Player.ChannelPreviewActive</visible>
+				<width>400</width>
+				<right>50</right>
 				<control type="image">
-					<top>100</top>
+					<top>-17</top>
 					<left>20</left>
 					<width>74</width>
 					<height>74</height>
 					<texture>osd/fullscreen/buttons/record.png</texture>
 				</control>
 				<control type="label">
-					<top>110</top>
+					<top>-18</top>
 					<left>90</left>
 					<width>400</width>
-					<height>50</height>
+					<height>74</height>
 					<aligny>center</aligny>
 					<font>font25_title</font>
 					<label>$LOCALIZE[19158]</label>
@@ -2444,22 +2446,24 @@
 			</control>	
 			<control type="group">
  				<visible>Window.IsActive(visualisation) + PVR.IsRecordingPlayingChannel + !Player.ChannelPreviewActive</visible>
+ 				<width>400</width>
+				<right>50</right>
  				<control type="image">
- 					<top>100</top>
- 					<left>20</left>
- 					<width>74</width>
- 					<height>74</height>
- 					<texture>osd/fullscreen/buttons/record.png</texture>
- 				</control>
- 				<control type="label">
- 					<top>110</top>
- 					<left>90</left>
- 					<width>400</width>
- 					<height>50</height>
- 					<aligny>center</aligny>
- 					<font>font25_title</font>
+					<top>-17</top>
+					<left>20</left>
+					<width>74</width>
+					<height>74</height>
+					<texture>osd/fullscreen/buttons/record.png</texture>
+				</control>
+				<control type="label">
+					<top>-18</top>
+					<left>90</left>
+					<width>400</width>
+					<height>74</height>
+					<aligny>center</aligny>
+					<font>font25_title</font>
 					<label>$LOCALIZE[19158]</label>
- 				</control>
+				</control>
  			</control>
 			<control type="group">
 				<bottom>0</bottom>
@@ -2587,7 +2591,7 @@
 					<fadetime>300</fadetime>
 					<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="Player.Playing">Conditional</animation>
 					<texture background="true">$INFO[Player.Art(discart)]</texture>
-					<visible>!Skin.HasSetting(show_discart)</visible>
+					<visible>!Skin.HasSetting(show_discart) + !Window.IsVisible(MusicVisualisation.xml)</visible>
 				</control>
 				<control type="group">
 					<left>50</left>
@@ -2604,7 +2608,7 @@
 						<aligny>top</aligny>
 						<aspectratio align="left">keep</aspectratio>
 						<fadetime>300</fadetime>
-						<texture background="true" fallback="osd/cd.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+						<texture background="true" fallback="osd/cd.png">$VAR[PlayerInfoDiscArtVar]</texture>
 					</control>
 					<control type="label">
 						<left>70</left>
@@ -2763,10 +2767,10 @@
 						<width>640</width>
 						<height>151</height>
 						<aspectratio align="right" aligny="center">keep</aspectratio>
-						<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.Banner)]</texture>
+						<texture background="true">$VAR[BannerPlayerArtVar]</texture>
 						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
-						<visible>!Skin.HasSetting(show_artistbanner) + [Window.IsVisible(MusicVisualisation.xml) | Pvr.IsPlayingRadio] + [String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Clearart)) | Skin.HasSetting(enable_artistclearart)]</visible>
+						<visible>!Skin.HasSetting(show_artistbanner) + [Window.IsVisible(MusicVisualisation.xml) | Pvr.IsPlayingRadio] + [[String.IsEmpty(Player.Art(clearart)) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Clearart))] | Skin.HasSetting(enable_artistclearart)]</visible>
 					</control>
 					<control type="image">
 						<bottom>294</bottom>
@@ -2774,10 +2778,10 @@
 						<width>640</width>
 						<height>151</height>
 						<aspectratio align="right" aligny="center">keep</aspectratio>
-						<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.Banner)]</texture>
+						<texture background="true">$VAR[BannerPlayerArtVar]</texture>
 						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
-						<visible>!Skin.HasSetting(show_artistbanner) + [Window.IsVisible(MusicVisualisation.xml) | Pvr.IsPlayingRadio] + ![String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Clearart)) | Skin.HasSetting(enable_artistclearart)]</visible>
+						<visible>!Skin.HasSetting(show_artistbanner) + [Window.IsVisible(MusicVisualisation.xml) | Pvr.IsPlayingRadio] + ![[String.IsEmpty(Player.Art(clearart)) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Clearart))] | Skin.HasSetting(enable_artistclearart)]</visible>
 					</control>
 					<control type="group">
 						<height>151</height>
@@ -3162,7 +3166,7 @@
 				<control type="group">
 					<width>163</width>
 					<height>40</height>
-					<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
+					<visible>Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.UserRating)</visible>
 					<control type="image">
 						<top>5</top>
 						<width>163</width>
@@ -3258,17 +3262,17 @@
 			<control type="group">
 				<visible>Window.IsActive(fullscreenvideo) + PVR.IsRecordingPlayingChannel + !Player.ChannelPreviewActive</visible>
 				<control type="image">
-					<top>100</top>
-					<left>20</left>
+					<top>116</top>
+					<left>970</left>
 					<width>74</width>
 					<height>74</height>
 					<texture>osd/fullscreen/buttons/record.png</texture>
 				</control>
 				<control type="label">
-					<top>110</top>
-					<left>90</left>
+					<top>115</top>
+					<left>1040</left>
 					<width>400</width>
-					<height>50</height>
+					<height>74</height>
 					<aligny>center</aligny>
 					<font>font25_title</font>
 					<label>$LOCALIZE[19158]</label>
@@ -3277,21 +3281,21 @@
 			<control type="group">
  				<visible>Window.IsActive(visualisation) + PVR.IsRecordingPlayingChannel + !Player.ChannelPreviewActive</visible>
  				<control type="image">
- 					<top>100</top>
- 					<left>20</left>
- 					<width>74</width>
- 					<height>74</height>
- 					<texture>osd/fullscreen/buttons/record.png</texture>
- 				</control>
- 				<control type="label">
- 					<top>110</top>
- 					<left>90</left>
- 					<width>400</width>
- 					<height>50</height>
- 					<aligny>center</aligny>
- 					<font>font25_title</font>
+					<top>116</top>
+					<left>970</left>
+					<width>74</width>
+					<height>74</height>
+					<texture>osd/fullscreen/buttons/record.png</texture>
+				</control>
+				<control type="label">
+					<top>115</top>
+					<left>1040</left>
+					<width>400</width>
+					<height>74</height>
+					<aligny>center</aligny>
+					<font>font25_title</font>
 					<label>$LOCALIZE[19158]</label>
- 				</control>
+				</control>
  			</control>
 			<control type="group" id="6000">
 				<top>-5</top>
