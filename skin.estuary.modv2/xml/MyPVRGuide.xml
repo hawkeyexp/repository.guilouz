@@ -363,7 +363,17 @@
 						<height>202</height>
 						<fadetime>400</fadetime>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<texture fallback="DefaultTVGuide.png">$VAR[PVRArtworksVar]</texture>				
+						<texture fallback="DefaultTVGuide.png">$INFO[ListItem.Icon]</texture>				
+						<visible>!Player.HasVideo</visible>
+						<visible>String.IsEmpty(Control.GetLabel(25000))</visible>
+					</control>
+					<control type="image" id="25000">
+						<left>30</left>
+						<width>242</width>
+						<height>202</height>
+						<fadetime>400</fadetime>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture>$VAR[PVRArtworksVar]</texture>				
 						<visible>!Player.HasVideo</visible>
 					</control>
 					<control type="label">
