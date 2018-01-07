@@ -536,7 +536,7 @@
 							<control type="image">
 								<left>30</left>
 								<width>202</width>
-								<height>90</height>
+								<height>110</height>
 								<bottom>20</bottom>
 								<texture>overlays/overlayfade.png</texture>
 								<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
@@ -549,7 +549,8 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font12</font>
-								<label>$INFO[ListItem.Label]</label>
+								<textcolor>$VAR[SkinColorVar]</textcolor>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 							<control type="label">
 								<left>34</left>
@@ -559,8 +560,7 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font12</font>
-								<textcolor>$VAR[SkinColorVar]</textcolor>
-								<label>$INFO[ListItem.Label2]</label>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</control>
 					</itemlayout>
@@ -592,7 +592,7 @@
 							<control type="image">
 								<left>30</left>
 								<width>202</width>
-								<height>90</height>
+								<height>110</height>
 								<bottom>20</bottom>
 								<texture>overlays/overlayfade.png</texture>
 								<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
@@ -605,8 +605,9 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font12</font>
+								<textcolor>$VAR[SkinColorVar]</textcolor>
 								<scroll>true</scroll>
-								<label>$INFO[ListItem.Label]</label>
+								<label>$INFO[ListItem.Label2]</label>
 							</control>
 							<control type="label">
 								<left>34</left>
@@ -616,9 +617,8 @@
 								<align>center</align>
 								<aligny>center</aligny>
 								<font>font12</font>
-								<textcolor>$VAR[SkinColorVar]</textcolor>
 								<scroll>true</scroll>
-								<label>$INFO[ListItem.Label2]</label>
+								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</control>
 					</focusedlayout>
@@ -632,10 +632,10 @@
 					<visible>Control.HasFocus(444)</visible>
 					<itemlayout height="317" width="203.2">
 						<control type="image">
-							<top>20</top>
-							<left>20</left>
-							<width>190</width>
-							<height>277</height>
+							<top>29</top>
+							<left>29</left>
+							<width>172</width>
+							<height>259</height>
 							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture>colors/white.png</bordertexture>
@@ -644,10 +644,10 @@
 					</itemlayout>
 					<focusedlayout height="317" width="203.2">
 						<control type="image">
-							<top>20</top>
-							<left>20</left>
-							<width>190</width>
-							<height>277</height>
+							<top>29</top>
+							<left>29</left>
+							<width>172</width>
+							<height>259</height>
 							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture>colors/white.png</bordertexture>
