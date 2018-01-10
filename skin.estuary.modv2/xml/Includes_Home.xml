@@ -6167,11 +6167,30 @@
 					<control type="group">
 						<left>70</left>
 						<control type="image">
+							<left>-2</left>
+							<top>-2</top>
+							<width>323</width>
+							<height>344</height>
+							<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-picturelayout.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders)</visible>
+						</control>
+						<control type="image">
+							<width>319</width>
+							<height>340</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders)</visible>
+						</control>
+						<control type="image">
 							<width>319</width>
 							<height>340</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+							<visible>!Skin.HasSetting(show_borders)</visible>
 						</control>
 						<control type="image">
 							<top>43</top>
@@ -6224,11 +6243,30 @@
 							<effect type="zoom" end="91" time="225" tween="sine" delay="100" easing="out" center="auto" />
 						</animation>
 						<control type="image">
+							<left>-2</left>
+							<top>-2</top>
+							<width>323</width>
+							<height>344</height>
+							<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-picturelayout.png</texture>
+							<aspectratio>stretch</aspectratio>
+							<bordertexture border="21">overlays/shadow.png</bordertexture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders)</visible>
+						</control>
+						<control type="image">
+							<width>319</width>
+							<height>340</height>
+							<texture>dialogs/dialog-bg-nobo.png</texture>
+							<bordersize>20</bordersize>
+							<visible>Skin.HasSetting(show_borders)</visible>
+						</control>
+						<control type="image">
 							<width>319</width>
 							<height>340</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
+							<visible>!Skin.HasSetting(show_borders)</visible>
 						</control>
 						<control type="image">
 							<top>-6</top>

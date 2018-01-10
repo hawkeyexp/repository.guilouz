@@ -363,7 +363,7 @@
 				<left>30</left>
 				<top>45</top>
 				<right>30</right>
-				<height>170</height>
+				<height>168</height>
 				<align>justify</align>
 				<label>$PARAM[textbox_content]</label>
 				<shadowcolor>text_shadow</shadowcolor>

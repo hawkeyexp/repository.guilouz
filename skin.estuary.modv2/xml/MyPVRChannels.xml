@@ -506,9 +506,17 @@
 						<left>30</left>
 						<width>242</width>
 						<height>202</height>
-						<fadetime>400</fadetime>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<texture fallback="DefaultTVGuide.png">$VAR[PVRArtworksVar]</texture>
+						<texture fallback="DefaultTVGuide.png">$INFO[ListItem.Icon]</texture>		
+						<visible>!Player.HasVideo</visible>
+						<visible>String.IsEmpty(Control.GetLabel(25001))</visible>
+					</control>
+					<control type="image" id="25001">
+						<left>30</left>
+						<width>242</width>
+						<height>202</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture>$VAR[PVRArtworksVar]</texture>
 						<visible>!Player.HasVideo</visible>
 					</control>
 					<control type="label">
@@ -517,7 +525,7 @@
 						<right>540</right>
 						<height>30</height>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][B]$INFO[ListItem.EpgEventTitle,  [COLOR white],[/COLOR]]$INFO[ListItem.Season,[COLOR white] - ,x[/COLOR]]$INFO[ListItem.Episode,[COLOR white],[/COLOR]]$INFO[ListItem.EpisodeName, - [COLOR white],[/COLOR]][/B]</label>
+						<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][B]$INFO[ListItem.EpgEventTitle,  [COLOR white],[/COLOR]][COLOR white]$VAR[SeasonEpisodeLabel][/COLOR][/B]</label>
 						<scroll>true</scroll>
 					</control>
 					<control type="label">

@@ -722,7 +722,7 @@
 							<param name="sortby" value="lastplayed"/>
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[31016]"/>
-							<param name="widget_header_focus" value="$INFO[Container(12200).ListItem.Label, | ]"/>
+							<param name="widget_header_focus" value="$INFO[Container(12200).ListItem.Label, | ]$INFO[Container(12200).ListItem.Label2, - ,]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12200"/>
 						</include>
@@ -731,21 +731,22 @@
 							<param name="sortby" value="date"/>
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[31015]"/>
-							<param name="widget_header_focus" value="$INFO[Container(12300).ListItem.Label, | ]"/>
+							<param name="widget_header_focus" value="$INFO[Container(12300).ListItem.ChannelName, | ]$INFO[Container(12300).ListItem.Label, - ,]$INFO[Container(12300).ListItem.Label2, - ,]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12300"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
-							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.Season, - ,x]$INFO[ListItem.Episode,,.]$INFO[ListItem.EpisodeName, ]"/>
+							<param name="label2" value="$INFO[ListItem.Title]$VAR[SeasonEpisodeLabel]$INFO[ListItem.Label2, - ,]"/>
+							<param name="icon" value="http://localhost:52307/getpvrthumb&amp;title=$INFO[ListItem.Label]&amp;channel=$INFO[ListItem.ChannelName]&amp;type=landscape,thumb,fanart,poster"/>
 						</include>
 						<include content="WidgetListChannels" condition="System.HasPVRAddon + !Skin.HasSetting(hide_allchannels)">
 							<param name="content_path" value="pvr://channels/tv/*"/>
 							<param name="widget_header" value="$LOCALIZE[40161]"/>
-							<param name="widget_header_focus" value="$INFO[Container(12400).ListItem.Label, | ]"/>
+							<param name="widget_header_focus" value="$INFO[Container(12400).ListItem.Label, | ]$INFO[Container(12400).ListItem.Label2, - ,]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="12400"/>
 							<param name="item_limit" value="2000"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
-							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.Season, - ,x]$INFO[ListItem.Episode,,.]$INFO[ListItem.EpisodeName, ]"/>
+							<param name="label2" value="$INFO[ListItem.Title]$VAR[SeasonEpisodeLabel]"/>
 						</include>
 					</control>
 					<include content="ImageWidget" condition="!System.HasPVRAddon">
@@ -847,11 +848,12 @@
 							<param name="sortby" value="sorttitle"/>
 							<param name="sortorder" value="descending"/>
 							<param name="widget_header" value="$LOCALIZE[31015]"/>
-							<param name="widget_header_focus" value="$INFO[Container(13300).ListItem.Label, | ]"/>
+							<param name="widget_header_focus" value="$INFO[Container(13300).ListItem.Label, | ]$INFO[Container(13300).ListItem.Label2, - ,]"/>
 							<param name="widget_target" value="pvr"/>
 							<param name="list_id" value="13300"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
-							<param name="label2" value="$INFO[ListItem.Title]$INFO[ListItem.Season, - ,x]$INFO[ListItem.Episode,,.]$INFO[ListItem.EpisodeName, ]"/>
+							<param name="label2" value="$INFO[ListItem.Label2]"/>
+							<param name="icon" value="http://localhost:52307/getpvrthumb&amp;title=$INFO[ListItem.Label]&amp;channel=$INFO[ListItem.ChannelName]&amp;type=thumb,landscape,fanart"/>
 						</include>
 						<include content="WidgetListChannels" condition="System.HasPVRAddon + !Skin.HasSetting(hide_allradios)">
 							<param name="content_path" value="pvr://channels/radio/*"/>

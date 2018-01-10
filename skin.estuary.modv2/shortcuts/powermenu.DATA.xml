@@ -60,9 +60,7 @@
     </shortcut>
     <shortcut>
         <label2>Common Shortcut</label2>
-        <label>20046</label>
-        <altlabel>20045</altlabel>
-        <usealttexture>!System.IsMaster</usealttexture>
+        <label>$VAR[MasterModeLabel]</label>
         <action>mastermode</action>
         <icon>special://skin/extras/icons/Power menu/mastermode.png</icon> 
         <visible>System.HasLocks</visible>        

@@ -26,7 +26,7 @@
 		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,movie) | String.IsEqual(Container.ListItem.DBTYPE,set) | String.IsEqual(Container.ListItem.DBTYPE,musicvideo) | String.IsEqual(Container.ListItem.DBTYPE,tvshow)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
 		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
 		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.Label]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
-		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,album) | String.IsEqual(Container.ListItem.DBTYPE,song)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,album) | String.IsEqual(Container.ListItem.DBTYPE,song)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=artist.fanart</value>
 		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,artist)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.Artist]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
 		<value>$INFO[Container.ListItem.Art(fanart)]</value>
 	</variable>-->
@@ -3031,7 +3031,11 @@
 	</variable>
 	<variable name="MusicInfoTextboxVar">
 		<value condition="String.IsEqual(ListItem.DbType,song) + !String.IsEmpty(ListItem.Comment)">$INFO[ListItem.Comment,[B]$LOCALIZE[569][/B][CR][COLOR=white],[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DbType,song) + String.IsEmpty(ListItem.Comment) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description),[COLOR=white],[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DbType,song) + String.IsEmpty(ListItem.Comment) + String.IsEmpty(ListItem.Property(Album_Description)) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description),[COLOR=white],[/COLOR]]</value>
 		<value condition="String.IsEqual(ListItem.DbType,song) + String.IsEmpty(ListItem.Comment) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DbType,album) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description),[COLOR=white],[/COLOR]]</value>
+		<value condition="String.IsEqual(ListItem.DbType,artist) + !String.IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description),[COLOR=white],[/COLOR]]</value>
 		<value condition="[String.IsEqual(ListItem.DbType,album) | String.IsEqual(ListItem.DbType,artist)] + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
 		<value>[COLOR=white]$LOCALIZE[19055][/COLOR]</value>
 	</variable>
@@ -3134,10 +3138,10 @@
 		<value condition="!String.IsEqual(listitem.dbtype,artist)">$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Director,$LOCALIZE[20339] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Writer,$LOCALIZE[20417] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Premiered,$LOCALIZE[20416] : [COLOR white],[/COLOR]]</value>
 	</variable>
 	<variable name="ShiftRightTextBoxVar">
+		<value condition="String.IsEqual(listitem.dbtype,artist) + !String.IsEmpty(ListItem.Property(Artist_Description))">$VAR[AlbumsCount][CR]$INFO[ListItem.Property(Artist_Description),[COLOR white],[/COLOR]]</value>
 		<value condition="String.IsEqual(listitem.dbtype,artist) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$VAR[AlbumsCount][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
-		<value condition="String.IsEqual(listitem.dbtype,artist)">$VAR[AlbumsCount][CR]$INFO[ListItem.Property(artist_description),[COLOR white],[/COLOR]]</value>
+		<value condition="String.IsEqual(listitem.dbtype,album) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description),[COLOR white],[/COLOR]]</value>
 		<value condition="String.IsEqual(listitem.dbtype,album) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
-		<value condition="String.IsEqual(listitem.dbtype,album)">$INFO[ListItem.Property(album_description),[COLOR white],[/COLOR]]</value>
 		<value condition="Window.IsActive(pictures)">$INFO[ListItem.Size,$LOCALIZE[289] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureAperture,$LOCALIZE[21826] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureFocalLen,$LOCALIZE[21827] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.PictureExpTime,$LOCALIZE[21830] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Date,$LOCALIZE[552] : [COLOR white],[/COLOR][CR]]</value>
 		<value condition="!String.IsEmpty(ListItem.Plot) + ListItem.IsCollection">[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[ListItem.Plot][/COLOR]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot)) + ListItem.IsCollection">[B]$VAR[CollectionNumberVar][/B][CR][COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot)][/COLOR]</value>
@@ -3174,11 +3178,11 @@
 	<variable name="ListBoxInfoVar">
 		<value condition="String.IsEqual(Container.FolderPath,addons://outdated/) + !String.IsEmpty(ListItem.Addonnews)">$INFO[ListItem.Addonnews]</value>
 		<value condition="Container.Content(addons)">[COLOR white]$INFO[ListItem.AddonDescription][/COLOR]</value>
+		<value condition="String.IsEqual(listitem.dbtype,album) + !String.IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description),[COLOR=white],[/COLOR]]</value>
 		<value condition="String.IsEqual(listitem.dbtype,album) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
-		<value condition="String.IsEqual(listitem.dbtype,album)">[COLOR white]$INFO[ListItem.Property(album_description)][/COLOR]</value>
 		<value condition="String.IsEqual(listitem.dbtype,musicvideo) | String.IsEqual(listitem.dbtype,video)">$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Plot,[COLOR white],[/COLOR]]</value>
+		<value condition="String.IsEqual(listitem.dbtype,artist) + !String.IsEmpty(ListItem.Property(Artist_Description))">$VAR[AlbumsCount][CR]$INFO[ListItem.Property(Artist_Description),[COLOR white],[/COLOR]]]</value>
 		<value condition="String.IsEqual(listitem.dbtype,artist) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Plot))">$VAR[AlbumsCount][CR]$INFO[Window(Home).Property(SkinHelper.ListItem.Plot),[COLOR=white],[/COLOR]]</value>
-		<value condition="String.IsEqual(listitem.dbtype,artist)">$VAR[AlbumsCount][CR][COLOR white]$INFO[ListItem.Property(artist_description)][/COLOR]</value>
 		<value condition="!String.IsEmpty(ListItem.Plot)">$INFO[ListItem.Tagline,[B],[/B][CR]]$INFO[ListItem.Plot,[COLOR white],[/COLOR]]</value>
 		<value condition="String.IsEqual(listitem.dbtype,song)">$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Duration,$LOCALIZE[180] : [COLOR white],[/COLOR][CR]]$INFO[ListItem.Playcount,$LOCALIZE[567] : [COLOR white],[/COLOR][CR]]</value>
 		<value>$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR][CR]]</value>
@@ -3392,7 +3396,8 @@
 		<value condition="Control.HasFocus(604)">$LOCALIZE[31039]</value>
 		<value condition="Control.HasFocus(605)">$LOCALIZE[40034]</value>
 		<value condition="Control.HasFocus(6051)">$LOCALIZE[31054]</value>
-		<value condition="Control.HasFocus(606)">$LOCALIZE[19043]</value>
+		<value condition="Control.HasFocus(606) + PVR.IsRecordingPlayingChannel">$LOCALIZE[19059]</value>
+		<value condition="Control.HasFocus(606)">$LOCALIZE[264]</value>
 		<value condition="Control.HasFocus(607)">$LOCALIZE[31050]</value>
 		<value condition="Control.HasFocus(6021)">$LOCALIZE[208]</value>
 		<value condition="Control.HasFocus(70011)">$LOCALIZE[31138]</value>
@@ -3407,8 +3412,6 @@
 		<value condition="Control.HasFocus(70041)">$LOCALIZE[19069]</value>
 		<value condition="Control.HasFocus(70043)">$LOCALIZE[5]</value>
 		<value condition="Control.HasFocus(255)">$LOCALIZE[36501]</value>
-		<value condition="Control.HasFocus(606) + PVR.IsRecordingPlayingChannel">$LOCALIZE[19059]</value>
-		<value condition="Control.HasFocus(606)">$LOCALIZE[264]</value>
 	</variable>
 	<variable name="MusicOSDHelpTextVar">
 		<value condition="Control.HasFocus(600)">$LOCALIZE[210]</value>
@@ -3419,6 +3422,7 @@
 		<value condition="Control.HasFocus(603)">$LOCALIZE[36044]</value>
 		<value condition="Control.HasFocus(604)">$LOCALIZE[31039]</value>
 		<value condition="Control.HasFocus(605)">$LOCALIZE[209]</value>
+		<value condition="Control.HasFocus(606) + PVR.IsRecordingPlayingChannel">$LOCALIZE[19059]</value>
 		<value condition="Control.HasFocus(606)">$LOCALIZE[264]</value>
 		<value condition="Control.HasFocus(6051)">$LOCALIZE[209]</value>
 		<value condition="Control.HasFocus(620)">$LOCALIZE[31033]$INFO[MusicPlayer.UserRating, : ]</value>
@@ -3640,6 +3644,21 @@
 		<value condition="ListItem.HasTimerSchedule">icons/pvr/PVR-HasTimerSchedule.png</value>
 		<value condition="ListItem.HasTimer">icons/pvr/PVR-HasTimer.png</value>
 	</variable>
+	<variable name="SeasonEpisodePlayerLabel">
+		<value condition="String.IsEmpty(VideoPlayer.EpisodeName)">$INFO[VideoPlayer.Season, - $LOCALIZE[20373] ]$INFO[VideoPlayer.Episode, - $LOCALIZE[20359] ]</value>
+		<value condition="String.IsEmpty(VideoPlayer.Season) + String.IsEmpty(VideoPlayer.Episode)">$INFO[VideoPlayer.EpisodeName, - ]</value>
+		<value>$INFO[VideoPlayer.Season, - ,x]$INFO[VideoPlayer.Episode,,.]$INFO[VideoPlayer.EpisodeName, ]</value>
+  	</variable>
+	<variable name="SeasonEpisodeLabel">
+		<value condition="String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season, - $LOCALIZE[20373] ]$INFO[ListItem.Episode, - $LOCALIZE[20359] ]</value>
+		<value condition="String.IsEmpty(ListItem.Season) + String.IsEmpty(ListItem.Episode)">$INFO[ListItem.EpisodeName, - ]</value>
+		<value>$INFO[ListItem.Season, - ,x]$INFO[ListItem.Episode,,.]$INFO[ListItem.EpisodeName, ]</value>
+  	</variable>
+  	<variable name="SeasonEpisodeLabel2">
+		<value condition="String.IsEmpty(ListItem.EpisodeName)">$INFO[ListItem.Season,$LOCALIZE[20373] ]$INFO[ListItem.Episode, - $LOCALIZE[20359] ]</value>
+		<value condition="String.IsEmpty(ListItem.Season) + String.IsEmpty(ListItem.Episode)">$INFO[ListItem.EpisodeName]</value>
+		<value>$INFO[ListItem.Season,,x]$INFO[ListItem.Episode,,.]$INFO[ListItem.EpisodeName, ]</value>
+  	</variable>
 	<variable name="ExpirationDateTimeLabel">
  		<value condition="!String.IsEmpty(ListItem.ExpirationDate)">$LOCALIZE[19299] : [COLOR white]$INFO[ListItem.ExpirationDate] $INFO[ListItem.ExpirationTime][/COLOR][CR]</value>
  	</variable>
@@ -3663,4 +3682,8 @@
 		<value condition="String.IsEqual(Skin.String(background_overlay),0)">$LOCALIZE[231]</value>
 		<value>$INFO[Skin.String(background_overlay),$LOCALIZE[467] ]</value>
 	</variable>
+	<variable name="MasterModeLabel">
+ 		<value condition="!System.IsMaster">$LOCALIZE[20045]</value>
+ 		<value>$LOCALIZE[20046]</value>
+ 	</variable>
 </includes>
