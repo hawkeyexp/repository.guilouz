@@ -352,7 +352,6 @@
 				<top>0</top>
 				<height>100%</height>
 				<visible>Control.IsVisible(51) + ListItem.IsCollection</visible>
-				<visible>!Skin.HasSetting(show_moviessetflag)</visible>
 				<include>OpenClose_Right</include>
 				<control type="textbox">
 					<left>645</left>
@@ -418,6 +417,7 @@
 					<orientation>horizontal</orientation>
 					<autoscroll time="1500">true</autoscroll>
 					<itemgap>5</itemgap>
+					<visible>!Skin.HasSetting(show_moviessetflag)</visible>
 					<focusedlayout height="170" width="129">
 						<control type="image">
 							<left>5</left>
