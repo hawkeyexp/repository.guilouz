@@ -700,11 +700,16 @@
 					<itemgap>-16</itemgap>
 					<orientation>horizontal</orientation>
 					<scrolltime tween="quadratic">200</scrolltime>
-					<include content="InfoDialogButton">
+					<include content="InfoDialogButton" condition="!String.IsEqual(ListItem.DBType,tvshow) + !String.IsEqual(ListItem.DBType,season)">
 						<param name="id" value="8" />
 						<param name="icon" value="icons/infodialogs/play.png" />
-						<param name="label" value="$VAR[PlayButtonLabelInfoDialog]" />
+						<param name="label" value="$LOCALIZE[208]" />
 					</include>
+					<include content="InfoDialogButton" condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,season)">
+  						<param name="id" value="8" />
+  						<param name="icon" value="icons/filemanager.png" />
+ 						<param name="label" value="$LOCALIZE[1024]" />
+  					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="11" />
 						<param name="icon" value="icons/infodialogs/trailer.png" />

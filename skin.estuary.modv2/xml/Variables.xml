@@ -30,10 +30,6 @@
 		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,artist)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.Artist]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
 		<value>$INFO[Container.ListItem.Art(fanart)]</value>
 	</variable>-->
-	<variable name="PlayButtonLabelInfoDialog">
-		<value condition="String.IsEqual(listitem.dbtype,tvshow)">$LOCALIZE[1024]</value>
-		<value>$LOCALIZE[208]</value>
-	</variable>
 	<variable name="Label_SkinSetting_GlobalBackground">
         <value condition="!String.IsEmpty(Skin.String(global-background))">$INFO[Skin.String(global-background)]</value>
         <value>$LOCALIZE[40064]</value>
@@ -2885,7 +2881,7 @@
 	</variable>
 	<variable name="BorderColorVar">
 		<value condition="!String.IsEmpty(Skin.String(BorderColor))">$INFO[Skin.String(BorderColor)]</value>
-		<value></value>
+		<value>d8181818</value>
 	</variable>
 	<variable name="RatingColorVar">
 		<value condition="System.Date(03-31,04-02) + !Skin.HasSetting(DisableThemes)">ff23729b</value>
@@ -3514,6 +3510,13 @@
 	<variable name="MediaFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)"></value>
 		<value condition="ListItem.IsParentFolder"></value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + Control.HasFocus(990)">special://skin/extras/home-images/search.jpg</value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + Control.HasFocus(9000) + [String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[342]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[344]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20348])]">special://skin/extras/home-images/movies.jpg</value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + Control.HasFocus(9000) + [String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20343]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20360]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20373]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20360])]">special://skin/extras/home-images/tvshows.jpg</value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + Control.HasFocus(9000) + String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20389])">special://skin/extras/home-images/musicvideos.jpg</value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + Control.HasFocus(9000) + [String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[133]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[132]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[134])]">special://skin/extras/home-images/music.jpg</value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[19069])">special://skin/extras/home-images/livetv.jpg</value>
+		<value condition="!String.IsEmpty(Container(9000).ListItem.Property(background))">$INFO[Container(9000).ListItem.Property(background)]</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + [Container.Content(movies) | String.IsEqual(ListItem.DBTYPE,movie) | ListItem.IsCollection | String.IsEqual(ListItem.DBTYPE,set) | Container.Content(musicvideos) | String.IsEqual(ListItem.DBTYPE,musicvideo) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | String.IsEqual(ListItem.DBTYPE,tvshow) | String.IsEqual(ListItem.DBTYPE,season) | String.IsEqual(ListItem.DBTYPE,episode)]">$VAR[ExtraFanartVar]</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)) + !Container.Content(movies) + !String.IsEqual(ListItem.DBTYPE,movie) + !ListItem.IsCollection + !String.IsEqual(ListItem.DBTYPE,set) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes) + !String.IsEqual(ListItem.DBTYPE,tvshow) + !String.IsEqual(ListItem.DBTYPE,season) + !String.IsEqual(ListItem.DBTYPE,episode)">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ExtraFanArt)]</value>
 		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + Control.HasFocus(50) + !String.IsEmpty(Container(50).ListItem.Art(fanart))">$INFO[Container(50).ListItem.Art(fanart)]</value>
@@ -3528,6 +3531,12 @@
 	<!--<variable name="MediaFanartVar">
 		<value condition="Skin.HasSetting(no_fanart)"></value>
 		<value condition="ListItem.IsParentFolder"></value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + Control.HasFocus(990)">special://skin/extras/home-images/search.jpg</value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + Control.HasFocus(9000) + [String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[342]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[344]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20348])]">special://skin/extras/home-images/movies.jpg</value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + Control.HasFocus(9000) + [String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20343]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20360]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20373]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20360])]">special://skin/extras/home-images/tvshows.jpg</value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + Control.HasFocus(9000) + String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[20389])">special://skin/extras/home-images/musicvideos.jpg</value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + Control.HasFocus(9000) + [String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[133]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[132]) | String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[134])]">special://skin/extras/home-images/music.jpg</value>
+		<value condition="System.HasAddon(script.globalsearch) + Window.IsVisible(script-globalsearch.xml) + String.IsEqual(Container(9000).ListItem.Label,$LOCALIZE[19069])">special://skin/extras/home-images/livetv.jpg</value>
 		<value condition="Skin.HasSetting(SkinHelper.EnableExtraFanart)">$VAR[ExtraFanartVar]</value>
 		<value condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml) + Control.HasFocus(50) + !String.IsEmpty(Container(50).ListItem.Art(fanart))">$INFO[Container(50).ListItem.Art(fanart)]</value>
 		<value condition="Window.IsActive(musicinformation) | Window.IsActive(movieinformation) | Window.IsActive(addoninformation) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrrecordinginfo) | Window.IsActive(pictureinfo) | Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[Window(home).Property(infobackground)]</value>
@@ -3557,7 +3566,7 @@
 		<value condition="ListItem.IsCollection">overlays/set.png</value>
 		<value condition="ListItem.IsPlaying">overlays/watched/OverlayPlaying-List.png</value>
 		<value condition="ListItem.IsResumable">overlays/watched/resume.png</value>
-		<value condition="Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(script-globalsearch-main.xml)">OverlayWatched.png</value>
+		<value condition="Integer.IsGreater(ListItem.Playcount,0) + [Window.IsVisible(script-globalsearch-main.xml) | Window.IsVisible(script-globalsearch.xml)]">OverlayWatched.png</value>
 		<value condition="Integer.IsGreater(ListItem.Playcount,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]">OverlayWatched.png</value>
 		<value condition="Integer.IsGreater(ListItem.Playcount,0)">$INFO[ListItem.Overlay]</value>
 	</variable>
