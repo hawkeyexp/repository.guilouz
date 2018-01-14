@@ -930,7 +930,7 @@
 						<pagecontrol>14010</pagecontrol>
 						<visible>Integer.IsGreater(Container(14100).NumItems,0) | Container(14100).IsUpdating</visible>
 						<visible>![String.IsEqual(Container(9000).ListItem.Property(ParentalControl),yes) + !String.IsEqual(Skin.String(mypassword),Skin.String(passcode))]</visible>
-						<itemlayout width="340" height="410" condition="Skin.HasSetting(HideWidgetLabels)">
+						<itemlayout width="356" height="410" condition="Skin.HasSetting(HideWidgetLabels)">
 							<control type="group">
 								<left>70</left>
 								<include content="InfoWallMusicLayout">
@@ -939,7 +939,7 @@
 								</include>
 							</control>
 						</itemlayout>
-						<focusedlayout width="340" height="410" condition="Skin.HasSetting(HideWidgetLabels)">
+						<focusedlayout width="356" height="410" condition="Skin.HasSetting(HideWidgetLabels)">
 							<control type="group">
 								<depth>DepthContentPopout</depth>
 								<left>70</left>       					 
@@ -1030,7 +1030,7 @@
 						<control type="group" id="16678">
 							<description>Weather info</description>
 							<left>60</left>
-							<right>-30</right>
+							<right>30</right>
 							<top>102</top>
 							<height>300</height>
 							<visible>!String.IsEmpty(Weather.plugin)</visible>

@@ -1164,7 +1164,7 @@
 				<control type="image">
 					<left>13</left>
 					<top>-12</top>
-					<width>294</width>
+					<width>320</width>
 					<height>404</height>
 					<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-movielayout.png</texture>
 					<aspectratio>stretch</aspectratio>
@@ -1175,7 +1175,7 @@
 				<control type="image">
 					<left>15</left>
 					<top>-10</top>
-					<width>290</width>
+					<width>316</width>
 					<height>400</height>
 					<texture>dialogs/dialog-bg-nobo.png</texture>
 					<bordersize>20</bordersize>
@@ -1184,7 +1184,7 @@
 				<control type="image">
 					<left>15</left>
 					<top>-10</top>
-					<width>290</width>
+					<width>316</width>
 					<height>400</height>
 					<texture>dialogs/dialog-bg-nobo.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
@@ -1194,7 +1194,7 @@
 				<control type="image">
 					<left>15</left>
 					<top>-10</top>
-					<width>290</width>
+					<width>316</width>
 					<height>400</height>
 					<texture>dialogs/dialog-bg-nobo.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
@@ -1204,7 +1204,7 @@
 				<control type="image">
 					<left>9</left>
 					<top>-16</top>
-					<width>302</width>
+					<width>328</width>
 					<height>412</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
@@ -1214,7 +1214,7 @@
 				<control type="image">
 					<left>9</left>
 					<top>-16</top>
-					<width>302</width>
+					<width>328</width>
 					<height>412</height>
 					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 					<bordersize>20</bordersize>
@@ -1224,7 +1224,7 @@
 				<control type="textbox">
 					<left>40</left>
 					<top>244</top>
-					<width>242</width>
+					<width>266</width>
 					<height>120</height>
 					<font>font27</font>
 					<align>center</align>
@@ -1237,8 +1237,8 @@
 				<control type="image">
 					<left>24</left>
 					<top>-1</top>
-					<width>272</width>
-					<height>270</height>
+					<width>300</width>
+					<height>260</height>
 					<texture fallback="DefaultMovies.png" background="true">$INFO[ListItem.Icon]</texture>
 					<aspectratio>scale</aspectratio>
 					<bordersize>20</bordersize>
@@ -1260,7 +1260,7 @@
 				<control type="image">
 					<left>9</left>
 					<top>-16</top>
-					<width>302</width>
+					<width>328</width>
 					<height>412</height>
 					<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
@@ -1270,7 +1270,7 @@
 				<control type="image">
 					<left>9</left>
 					<top>-16</top>
-					<width>302</width>
+					<width>328</width>
 					<height>412</height>
 					<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 					<bordersize>20</bordersize>
@@ -1280,7 +1280,7 @@
 				<control type="image">
 					<left>15</left>
 					<top>-10</top>
-					<width>290</width>
+					<width>316</width>
 					<height>400</height>
 					<texture background="true">$VAR[IconWallPosterVar]</texture>
 					<aspectratio>stretch</aspectratio>
@@ -1290,7 +1290,7 @@
 				<control type="image">
 					<left>13</left>
 					<top>-12</top>
-					<width>294</width>
+					<width>320</width>
 					<height>404</height>
 					<texture colordiffuse="$VAR[BorderColorVar]">dialogs/border-movielayout.png</texture>
 					<aspectratio>stretch</aspectratio>
@@ -1302,7 +1302,7 @@
 				<control type="image">
 					<left>15</left>
 					<top>-10</top>
-					<width>290</width>
+					<width>316</width>
 					<height>400</height>
 					<texture background="true">$VAR[IconWallPosterVar]</texture>
 					<aspectratio>stretch</aspectratio>
@@ -1313,7 +1313,7 @@
 				<control type="image">
 					<left>15</left>
 					<top>-10</top>
-					<width>290</width>
+					<width>316</width>
 					<height>400</height>
 					<texture background="true">$VAR[IconWallPosterVar]</texture>
 					<aspectratio>stretch</aspectratio>
