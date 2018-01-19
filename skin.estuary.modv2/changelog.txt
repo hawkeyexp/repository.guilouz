@@ -1,17 +1,15 @@
-[B]2.9.4[/B]
+[B]2.9.3[/B]
 • Add support GlobalSearch 8.x.x addon
 • Add support for music artworks with Artwork Beef addon
+• Add movies set button on video info dialog
 • Add progress bar to PVR widgets
 • Add possibility to show channels groups on PVR Guide
+• Improve 'Icons Wall' view for PVR channels
 • Improve dialog info windows
 • Many others improvements in PVR
 • Fix forced views with a script from hawkeyexp
 • Fix PVR NextUp popup
 • Minor fixes
-
-[B]2.9.3[/B]
-• Add movies set button on video info dialog
-• Improve 'Icons Wall' view for PVR channels
 
 [B]2.9.2[/B]
 • Fix for movies sets overview
