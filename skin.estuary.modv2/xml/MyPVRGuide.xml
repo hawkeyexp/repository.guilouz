@@ -20,134 +20,225 @@
 						<left>0</left>
 						<top>-10</top>
 						<width>100%</width>
-						<bottom>336</bottom>
+						<bottom>332</bottom>
 						<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
+						<visible>Skin.HasSetting(ShowPVRGroups)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>44</top>
+						<width>100%</width>
+						<bottom>278</bottom>
+						<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
+						<visible>!Skin.HasSetting(ShowPVRGroups) + Control.IsVisible(50)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>44</top>
+						<width>100%</width>
+						<bottom>288</bottom>
+						<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
+						<visible>!Skin.HasSetting(ShowPVRGroups) + Control.IsVisible(51)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>-10</top>
+						<width>100%</width>
+						<height>44</height>
+						<texture colordiffuse="E6FFFFFF">dialogs/dialog-bg-nobo.png</texture>
+						<visible>!Skin.HasSetting(ShowPVRGroups)</visible>
+					</control>
+					<control type="list" id="11">
+						<top>-10</top>
+						<left>0</left>
+						<width>100%</width>
+						<onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
+						<onup condition="Control.IsVisible(50)">50</onup>
+						<onup condition="Control.IsVisible(51)">51</onup>
+						<ondown condition="Control.IsVisible(50)">50</ondown>
+						<ondown condition="Control.IsVisible(51)">51</ondown>
+						<orientation>horizontal</orientation>
+						<focusposition>3</focusposition>
+						<scrolltime tween="quadratic" easing="out">300</scrolltime>
+						<visible>!Skin.HasSetting(ShowPVRGroups)</visible>
+						<itemlayout height="44" width="384">
+							<control type="label">
+								<top>-4</top>
+								<left>5</left>
+								<width>374</width>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</itemlayout>
+						<focusedlayout height="44" width="384">
+							<control type="image">
+								<left>0</left>
+								<width>384</width>
+								<height>44</height>
+								<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+								<visible>Control.HasFocus(11)</visible>
+							</control>
+							<control type="label">
+								<top>-4</top>
+								<left>5</left>
+								<width>374</width>
+								<align>center</align>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<label>$INFO[ListItem.Label]</label>
+								<visible>Control.HasFocus(11)</visible>
+							</control>
+							<control type="label">
+								<top>-4</top>
+								<left>5</left>
+								<width>374</width>
+								<align>center</align>
+								<aligny>center</aligny>
+								<scroll>true</scroll>
+								<label>$INFO[ListItem.Label]</label>
+								<textcolor>$VAR[SkinColorVar]</textcolor>
+								<visible>!Control.HasFocus(11)</visible>
+							</control>
+						</focusedlayout>
 					</control>
 					<control type="epggrid" id="50">
 						<left>0</left>
 						<top>0</top>
 						<right>20</right>
-						<bottom>340</bottom>
+						<bottom>335</bottom>
 						<pagecontrol>60</pagecontrol>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
-						<timeblocks>34</timeblocks>
-						<rulerunit>6</rulerunit>
-						<onleft>9000</onleft>
+						<timeblocks>30</timeblocks>
+						<rulerunit>3</rulerunit>
+						<onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
 						<onright>60</onright>
-						<onup>50</onup>
-						<ondown>50</ondown>
-						<onback>9000</onback>
+						<onup condition="Skin.HasSetting(ShowPVRGroups)">50</onup>
+						<onup condition="!Skin.HasSetting(ShowPVRGroups)">11</onup>
+						<ondown condition="Skin.HasSetting(ShowPVRGroups)">50</ondown>
+						<ondown condition="Skin.HasSetting(ShowPVRGroups)">11</ondown>
 						<viewtype label="19297">list</viewtype>
 						<progresstexture border="0,60,18,14" colordiffuse="$VAR[SkinColorVar]">windows/pvr/epg_progress.png</progresstexture>
-						<rulerlayout height="45" width="1400">
+						<animation effect="slide" end="0,54" time="0" condition="!Skin.HasSetting(ShowPVRGroups) + Control.IsVisible(50)">Conditional</animation>
+						<animation effect="slide" end="0,44" time="0" condition="!Skin.HasSetting(ShowPVRGroups) + Control.IsVisible(51)">Conditional</animation>
+						<rulerlayout height="45" width="390">
 							<control type="label">
-								<width>365</width>
+								<top>-5</top>
+								<width>350</width>
 								<height>45</height>
-								<font>font12</font>
+								<font>font13</font>
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>10</textoffsetx>
 								<textcolor>$VAR[SkinColorVar]</textcolor>
 							</control>
 						</rulerlayout>
-						<channellayout height="62" width="350">
+						<channellayout height="70" width="390">
 							<control type="image">
 								<left>7</left>
 								<top>3</top>
-								<width>65</width>
-								<height>56</height>
+								<width>64</width>
+								<height>64</height>
 								<texture fallback="DefaultTVGuide.png">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
 							</control>
 							<control type="label" id="1">
 								<left>68</left>
-								<top>-2</top>
-								<width>290</width>
-								<height>60</height>
-								<font>font12</font>
+								<top>0</top>
+								<width>326</width>
+								<height>70</height>
+								<font>font13</font>
 								<label>$INFO[ListItem.ChannelName]</label>
 								<aligny>center</aligny>
 								<textoffsetx>10</textoffsetx>
 							</control>
 						</channellayout>
-						<focusedchannellayout height="62" width="350">
+						<focusedchannellayout height="70" width="390">
+							<control type="image">
+								<top>3</top>
+								<left>0</left>
+								<width>386</width>
+								<height>64</height>
+								<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
+							</control>
 							<control type="image">
 								<left>7</left>
 								<top>3</top>
-								<width>65</width>
-								<height>56</height>
+								<width>64</width>
+								<height>64</height>
 								<texture fallback="DefaultTVGuide.png">$INFO[ListItem.Icon]</texture>
 								<aspectratio align="center" aligny="center">keep</aspectratio>
 							</control>
 							<control type="label" id="1">
 								<left>68</left>
-								<top>-2</top>
-								<width>290</width>
-								<height>60</height>
-								<font>font12</font>
+								<top>0</top>
+								<width>326</width>
+								<height>70</height>
+								<font>font13</font>
 								<label>$INFO[ListItem.ChannelName]</label>
-								<textcolor>$VAR[SkinColorVar]</textcolor>
 								<aligny>center</aligny>
 								<textoffsetx>10</textoffsetx>
 								<scroll>true</scroll>
 							</control>
 						</focusedchannellayout>
-						<itemlayout height="62" width="60">
+						<itemlayout height="70" width="60">
 							<control type="image" id="2">
+								<top>1</top>
 								<width>58</width>
-								<height>58</height>
+								<height>68</height>
 								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[PVRGenresVar]</texture>
 							</control>
 							<control type="label" id="1">
 								<left>6</left>
-								<top>0</top>
+								<top>5</top>
 								<width>50</width>
 								<height>36</height>
 								<aligny>center</aligny>
-								<font>font12</font>
+								<font>font13</font>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 							<control type="image">
 								<left>6</left>
-								<top>35</top>
+								<top>43</top>
 								<width>20</width>
 								<height>20</height>
 								<texture>$VAR[PVRTimerIcon]</texture>
 							</control>
 						</itemlayout>
-						<focusedlayout height="62" width="60">
+						<focusedlayout height="70" width="60">
 							<control type="image" id="2">
-								<top>2</top>
+								<top>3</top>
 								<left>2</left>
 								<width>54</width>
-								<height>54</height>
+								<height>64</height>
 								<texture colordiffuse="$VAR[SkinColorVar]">lists/focus.png</texture>
 								<visible>Control.HasFocus(50)</visible>
 							</control>
 							<control type="image" id="2">
+								<top>1</top>
 								<width>58</width>
-								<height>58</height>
+								<height>68</height>
 								<texture border="8" colordiffuse="$VAR[SkinColorVar]">buttons/thumbnail_focused.png</texture>
 							</control>
 							<control type="image" id="2">
+								<top>1</top>
 								<width>58</width>
-								<height>58</height>
-								<top>0</top>
+								<height>68</height>
 								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[PVRGenresVar]</texture>
 								<visible>!Control.HasFocus(50)</visible>
 							</control>
 							<control type="label" id="1">
 								<left>6</left>
-								<top>0</top>
+								<top>5</top>
 								<width>50</width>
 								<height>36</height>
 								<aligny>center</aligny>
-								<font>font12</font>
+								<font>font13</font>
 								<label>$INFO[ListItem.Label]</label>
 								<scroll>true</scroll>
 							</control>
 							<control type="image">
 								<left>6</left>
-								<top>35</top>
+								<top>43</top>
 								<width>20</width>
 								<height>20</height>
 								<texture>$VAR[PVRTimerIcon]</texture>
@@ -158,37 +249,40 @@
 						<left>0</left>
 						<top>0</top>
 						<right>15</right>
-						<bottom>340</bottom>
+						<bottom>333</bottom>
 						<orientation>horizontal</orientation>
 						<pagecontrol>60</pagecontrol>
 						<scrolltime tween="quadratic" easing="out">300</scrolltime>
-						<timeblocks>34</timeblocks>
-						<rulerunit>6</rulerunit>
-						<onleft>9000</onleft>
+						<timeblocks>30</timeblocks>
+						<rulerunit>3</rulerunit>
+						<onleft condition="!Skin.HasSetting(KioskMode)">9000</onleft>
 						<onright>60</onright>
-						<onup>50</onup>
-						<ondown>50</ondown>
-						<onback>9000</onback> 
+						<onup condition="Skin.HasSetting(ShowPVRGroups)">51</onup>
+						<onup condition="!Skin.HasSetting(ShowPVRGroups)">11</onup>
+						<ondown condition="Skin.HasSetting(ShowPVRGroups)">51</ondown>
+						<ondown condition="Skin.HasSetting(ShowPVRGroups)">11</ondown>
 						<viewtype label="19298">list</viewtype>
 						<progresstexture border="5,10,5,10" colordiffuse="$VAR[SkinColorVar]">windows/pvr/epg_progress_horizontal.png</progresstexture>
+						<animation effect="slide" end="0,44" time="0" condition="!Skin.HasSetting(ShowPVRGroups)">Conditional</animation>
 						<rulerdatelayout height="45" width="1920">
 							<control type="label">
-								<top>-4</top>
+								<top>0</top>
 								<left>10</left>
 								<right>0</right>
 								<height>45</height>
-								<font>font12</font>
+								<font>font13</font>
 								<label>$INFO[ListItem.Label]</label>
 								<textcolor>$VAR[SkinColorVar]</textcolor>
 								<align>left</align>
 								<aligny>center</aligny>
 							</control>
 						</rulerdatelayout>
-						<rulerlayout height="70" width="90">
+						<rulerlayout height="70" width="100">
 							<control type="label">
-								<width>90</width>
+								<top>-25</top>
+								<width>100</width>
 								<height>70</height>
-								<font>font12</font>
+								<font>font13</font>
 								<label>$INFO[ListItem.Label]</label>
 								<textoffsetx>10</textoffsetx>
 								<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -219,7 +313,7 @@
 								<top>-2</top>
 								<width>271</width>
 								<height>60</height>
-								<font>font12</font>
+								<font>font13</font>
 								<label>$INFO[ListItem.ChannelName]</label>
 								<aligny>center</aligny>
 								<textoffsetx>10</textoffsetx>
@@ -251,7 +345,7 @@
 								<top>-2</top>
 								<width>271</width>
 								<height>60</height>
-								<font>font12</font>
+								<font>font13</font>
 								<label>$INFO[ListItem.ChannelName]</label>
 								<scroll>true</scroll>
 								<textcolor>$VAR[SkinColorVar]</textcolor>
@@ -266,7 +360,7 @@
 								<texture border="3" fallback="windows/pvr/epg-genres/0.png">$VAR[PVRGenresVar]</texture>
 							</control>
 							<control type="label" id="1">
-								<left>6</left>
+								<left>7</left>
 								<top>0</top>
 								<width>50</width>
 								<height>36</height>
@@ -276,7 +370,7 @@
 							</control>
 							<control type="image">
 								<left>6</left>
-								<top>32</top>
+								<top>34</top>
 								<width>20</width>
 								<height>20</height>
 								<texture>$VAR[PVRTimerIcon]</texture>
@@ -304,7 +398,7 @@
 								<visible>!Control.HasFocus(51)</visible>
 							</control>
 							<control type="label" id="1">
-								<left>6</left>
+								<left>7</left>
 								<top>0</top>
 								<width>50</width>
 								<height>36</height>
@@ -315,7 +409,7 @@
 							</control>
 							<control type="image">
 								<left>6</left>
-								<top>32</top>
+								<top>34</top>
 								<width>20</width>
 								<height>20</height>
 								<texture>$VAR[PVRTimerIcon]</texture>
@@ -333,6 +427,7 @@
 						<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
 						<animation effect="fade" start="100" end="40" time="0" condition="!system.getbool(input.enablemouse)">Conditional</animation>
 						<visible>Control.IsVisible(51)</visible>
+						<animation effect="slide" end="0,44" time="0" condition="!Skin.HasSetting(ShowPVRGroups)">Conditional</animation>
 					</control>
 					<control type="scrollbar" id="60">
 						<right>0</right>
@@ -345,11 +440,16 @@
 						<texturesliderbackground colordiffuse="22FFFFFF">colors/white.png</texturesliderbackground>
 						<animation effect="fade" start="100" end="40" time="0" condition="!system.getbool(input.enablemouse)">Conditional</animation>
 						<visible>Control.IsVisible(50)</visible>
+						<animation effect="slide" end="0,54" time="0" condition="!Skin.HasSetting(ShowPVRGroups)">Conditional</animation>
 					</control>
 				</control>
+				<include content="BottomBar">
+					<param name="info_visible" value="true" />
+				</include>
 				<control type="group">
 					<bottom>0</bottom>
 					<height>300</height>
+					<animation effect="slide" end="0,44" time="0" condition="!Skin.HasSetting(ShowPVRGroups)">Conditional</animation>
 					<control type="videowindow">
 						<left>30</left>
 						<width>242</width>
@@ -419,9 +519,6 @@
 			<include content="TopBar">
 				<param name="breadcrumbs_label" value="$VAR[BreadcrumbsPVRGuideVar]" />
 				<param name="sublabel" value="" />
-			</include>
-			<include content="BottomBar">
-				<param name="info_visible" value="true" />
 			</include>
 			<control type="group">
 				<include>MediaMenuCommon</include>

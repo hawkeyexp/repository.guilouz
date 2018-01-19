@@ -1540,6 +1540,7 @@
 					<height>100</height>
 					<label/>
 					<onclick>Action(Back)</onclick>
+					<visible>!Window.IsActive(home)</visible>
 					<texturefocus />
 					<texturenofocus />
 				</control>
@@ -1890,6 +1891,7 @@
 						<visible>!Control.IsVisible(6160) + !Window.IsVisible(script-globalsearch.xml)</visible>
 						<visible>[Control.HasFocus(531) | Control.HasFocus(5199) | Control.HasFocus(50600) | Control.HasFocus(502600)] + ![Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(503) | Control.IsVisible(506)]</visible>
 						<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,set) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,artist) | String.IsEqual(ListItem.dbtype,album) | String.IsEqual(ListItem.dbtype,musicvideo) | Container.Content(addons)</visible>
+						<animation effect="slide" end="-186,0" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					</control>
 					<control type="button">
 						<bottom>12</bottom>
@@ -1903,14 +1905,15 @@
 						<visible>!Control.IsVisible(6160)</visible>
 						<visible>[Control.HasFocus(531) | Control.HasFocus(5199)] + [Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(503) | Control.IsVisible(506)]</visible>
 						<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,set) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,artist) | String.IsEqual(ListItem.dbtype,album) | String.IsEqual(ListItem.dbtype,musicvideo) | Container.Content(addons)</visible>
+						<animation effect="slide" end="-184,0" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					</control>
 					<control type="button" id="6160">
 						<bottom>10</bottom>
 						<left>12</left>
 						<width>36</width>
 						<height>36</height>
-						<texturefocus colordiffuse="$VAR[SkinColorVar]">icons/menu.png</texturefocus>
-						<texturenofocus>icons/menu.png</texturenofocus>
+						<texturefocus colordiffuse="$VAR[SkinColorVar]">frame/menu-nofo.png</texturefocus>
+						<texturenofocus>frame/menu-nofo.png</texturenofocus>
 						<animation effect="fade" time="200">VisibleChange</animation>
 						<onclick>SetFocus(9000)</onclick>
 						<visible>Window.IsActive(MyPVRGuide.xml)</visible>
@@ -1944,6 +1947,7 @@
 						<animation effect="fade" time="200">VisibleChange</animation>
 						<visible>String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,set) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,artist) | String.IsEqual(ListItem.dbtype,album) | String.IsEqual(ListItem.dbtype,musicvideo) | Container.Content(addons)</visible>
 						<visible>!Window.IsVisible(script-globalsearch.xml)</visible>
+						<animation effect="slide" end="-186,0" time="0" condition="Skin.HasSetting(KioskMode)">Conditional</animation>
 					</control>
 				</control>
 				<include>TouchButtons</include>

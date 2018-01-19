@@ -1,9 +1,10 @@
 [B]2.9.4[/B]
-• KODI 18 : Changes in PVR
-• Add support GlobalSearch 8.0.0 addon
-• Add support for music artworks with Artwork Beef addon (in progress)
+• Add support GlobalSearch 8.x.x addon
+• Add support for music artworks with Artwork Beef addon
 • Add progress bar to PVR widgets
+• Add possibility to show channels groups on PVR Guide
 • Improve dialog info windows
+• Many others improvements in PVR
 • Fix forced views with a script from hawkeyexp
 • Fix PVR NextUp popup
 • Minor fixes

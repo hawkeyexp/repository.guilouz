@@ -178,8 +178,8 @@
 					<control type="radiobutton" id="626">
                         <include>MediaMenuItemsCommonRadio</include>
                         <label>ExtraFanarts</label>
-                        <selected>Skin.HasSetting(SkinHelper.EnableExtraFanart)</selected>
-                        <onclick>Skin.ToggleSetting(SkinHelper.EnableExtraFanart)</onclick>
+                        <selected>Skin.HasSetting(EnableExtraFanart)</selected>
+                        <onclick>Skin.ToggleSetting(EnableExtraFanart)</onclick>
                         <visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
                         <visible>Container.Content(artists) | Container.Content(albums) | Container.Content(songs)</visible>
                     </control>

@@ -852,7 +852,6 @@
 							<param name="list_id" value="13300"/>
 							<param name="label" value="$INFO[ListItem.ChannelName]"/>
 							<param name="label2" value="$INFO[ListItem.Label2]"/>
-							<param name="icon" value="http://localhost:52307/getpvrthumb&amp;title=$INFO[ListItem.Label]&amp;channel=$INFO[ListItem.ChannelName]&amp;type=thumb,landscape,fanart"/>
 						</include>
 						<include content="WidgetListChannels" condition="System.HasPVRAddon + !Skin.HasSetting(hide_allradios)">
 							<param name="content_path" value="pvr://channels/radio/*"/>
@@ -1098,16 +1097,16 @@
 							</control>
 						</control>
 						<include content="WeatherWidget" condition="!String.IsEmpty(Weather.Plugin)">
-							<param name="content_include" value="DailyItems" />
-							<param name="list_id" value="15200" />
-							<param name="widget_header" value="$LOCALIZE[31019]"/>
-							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
-						</include>
-						<include content="WeatherWidget" condition="!String.IsEmpty(Weather.Plugin)">
 							<param name="content_include" value="HourlyItems" />
 							<param name="list_id" value="15100" />
 							<param name="widget_header" value="$LOCALIZE[33036]"/>
 							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Hourly.IsFetched))" />
+						</include>
+						<include content="WeatherWidget" condition="!String.IsEmpty(Weather.Plugin)">
+							<param name="content_include" value="DailyItems" />
+							<param name="list_id" value="15200" />
+							<param name="widget_header" value="$LOCALIZE[31019]"/>
+							<param name="visible" value="!String.IsEmpty(Window(weather).Property(Daily.IsFetched))" />
 						</include>
 					</control>
 					<include content="ImageWidget" condition="String.IsEmpty(Weather.plugin)">

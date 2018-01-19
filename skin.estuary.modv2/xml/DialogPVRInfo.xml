@@ -192,20 +192,8 @@
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="162" />
-						<param name="label" value="$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB),$LOCALIZE[563] IMDb : [COLOR white],[/COLOR]]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.IMDB), [COLOR white](, $LOCALIZE[40027])[/COLOR]]$INFO[Window(Home).Property(SkinHelper.ListItem.IMDB.Top250), [COLOR white]-[/COLOR] Top 250 : [COLOR white]#,[/COLOR]]" />
-						<param name="visible" value="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.IMDB)) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250))" />
-						<param name="textcolor" value="$VAR[SkinColorVar]" />
-					</include>
-					<include content="InfoDialogMetadata">
-						<param name="control_id" value="1621" />
-						<param name="label" value="$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB),$LOCALIZE[563] IMDb : [COLOR white],[/COLOR]]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.IMDB), [COLOR white](, $LOCALIZE[40027])[/COLOR]]" />
-						<param name="visible" value="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + !String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.IMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.IMDB.Top250))" />
-						<param name="textcolor" value="$VAR[SkinColorVar]" />
-					</include>
-					<include content="InfoDialogMetadata">
-						<param name="control_id" value="1622" />
-						<param name="label" value="$INFO[Window(Home).Property(SkinHelper.ListItem.IMDB.Top250),[COLOR white][/COLOR]Top 250 : [COLOR white]#,[/COLOR]]" />
-						<param name="visible" value="String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.IMDB))" />
+						<param name="label" value="$LOCALIZE[563] IMdB : [COLOR white]$INFO[Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)]$INFO[Window(Home).Property(SkinHelper.ListItem.Votes.IMDB), (, $LOCALIZE[40027])][/COLOR]" />
+						<param name="visible" value="![String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Rating.IMDB)) + String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Votes.IMDB))]" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata">
@@ -338,16 +326,16 @@
 			<control type="group">
 				<visible>String.IsEqual(Control.GetLabel(3334),fallback.png)</visible>
 				<include content="InfoDialogTopBarInfo">
-					<param name="main_label" value="$INFO[ListItem.Title]$INFO[ListItem.Year, (,)]" />
-					<param name="sub_label" value="$VAR[SeasonEpisodeLabel]" />
+					<param name="main_label" value="$INFO[ListItem.Title]$INFO[Window(Home).Property(SkinHelper.ListItem.Year), (,)]" />
+					<param name="sub_label" value="$INFO[Window(Home).Property(SkinHelper.ListItem.Tagline)]$VAR[SeasonEpisodeLabel]" />
 					<param name="subtextcolor" value="$VAR[SkinColorVar]" />
 				</include>
 			</control>
 			<control type="group">
 				<visible>!String.IsEqual(Control.GetLabel(3334),fallback.png)</visible>
 				<include content="InfoDialogTopBarInfo">
-					<param name="main_label" value="$INFO[ListItem.Title]$INFO[ListItem.Year, (,)]" />
-					<param name="sub_label" value="$VAR[SeasonEpisodeLabel]" />
+					<param name="main_label" value="$INFO[ListItem.Title]$INFO[Window(Home).Property(SkinHelper.ListItem.Year, (,)]" />
+					<param name="sub_label" value="$INFO[Window(Home).Property(SkinHelper.ListItem.Tagline)]$VAR[SeasonEpisodeLabel]" />
 					<param name="subtextcolor" value="$VAR[SkinColorVar]" />
 					<param name="left" value="620" />
 					<param name="right" value="94" />

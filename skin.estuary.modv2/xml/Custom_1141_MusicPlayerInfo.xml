@@ -17,7 +17,8 @@
 					<width>574</width>
 					<height>110</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture fallback="fallback.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.Clearlogo)]</texture>
+					<texture fallback="fallback.png">$VAR[PlayerInfoClearLogoVar]</texture>
+					<visible>!Skin.HasSetting(show_artistclearlogo)</visible>
 				</control>
 				<control type="group">
 					<left>81</left>
@@ -34,7 +35,7 @@
 						<aligny>top</aligny>
 						<aspectratio align="left">keep</aspectratio>
 						<fadetime>300</fadetime>
-						<texture background="true" fallback="osd/cd.png">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</texture>
+						<texture background="true" fallback="osd/cd.png">$VAR[PlayerInfoDiscArtVar]</texture>
 					</control>
 					<control type="label">
 						<left>90</left>
@@ -72,7 +73,7 @@
 					<ondown>9000</ondown>
 					<label/>
 					<texturenofocus/>
-					<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ThumbBack))</visible>
+					<visible>!String.IsEmpty(Player.Art(album.back))</visible>
 				</control>
 				<control type="image">
 					<left>24</left>
@@ -142,9 +143,9 @@
 					<height>574</height>
 					<aspectratio aligny="top">scale</aspectratio>
 					<fadetime>300</fadetime>
-					<texture background="true">$INFO[Window(Home).Property(SkinHelper.Player.Art.ThumbBack)]</texture>
+					<texture background="true">$INFO[Player.Art(album.back)]</texture>
 					<animation effect="fade" time="150">VisibleChange</animation>
-					<visible>Control.HasFocus(1300) + !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ThumbBack))</visible>
+					<visible>Control.HasFocus(1300) + !String.IsEmpty(Player.Art(album.back))</visible>
 				</control>
 			</control>
 			<control type="image">
@@ -168,10 +169,10 @@
 						<width>1190</width>
 						<height>253</height>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
-						<texture>$INFO[Window(Home).Property(SkinHelper.Player.Art.Banner)]</texture>
+						<texture>$VAR[BannerPlayerArtVar]</texture>
 						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
-						<visible>!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Banner))</visible>
+						<visible>![String.IsEmpty(Player.Art(banner)) + String.IsEmpty(Player.Art(artist.banner)) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Banner))]</visible>
 					</control>
 					<control type="image">
 						<left>586</left>
@@ -179,10 +180,10 @@
 						<width>1190</width>
 						<height>253</height>
 						<aspectratio aligny="top">scale</aspectratio>
-						<texture fallback="special://skin/extras/home-images/radio.jpg">$INFO[Window(Home).Property(SkinHelper.Player.Art.Fanart)]</texture>
+						<texture fallback="special://skin/extras/home-images/radio.jpg">$VAR[PlayerInfoFanartVar]</texture>
 						<bordertexture border="21">overlays/shadow.png</bordertexture>
 						<bordersize>20</bordersize>
-						<visible>String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Banner))</visible>
+						<visible>[String.IsEmpty(Player.Art(banner)) + String.IsEmpty(Player.Art(artist.banner)) + String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.Banner))]</visible>
 					</control>
 				</control>
 				<control type="group">
