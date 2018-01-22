@@ -335,13 +335,18 @@
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="154" />
-						<param name="label" value="$INFO[Container(50).ListItem.Tag,$LOCALIZE[20459] : [COLOR white],[/COLOR]]" />
-						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.Tag)" />
+						<param name="label" value="$INFO[Container(50).ListItem.RatingAndVotes(imdb),$LOCALIZE[563] IMDb : [COLOR white],[/COLOR]]" />
+						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.RatingAndVotes(imdb))" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
-						<param name="width" value="568" />
 					</include>
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="155" />
+						<param name="label" value="$INFO[Container(50).ListItem.RatingAndVotes(themoviedb),$LOCALIZE[563] TheMovieDb : [COLOR white],[/COLOR]]" />
+						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.RatingAndVotes(themoviedb))" />
+						<param name="textcolor" value="$VAR[SkinColorVar]" />
+					</include>
+					<include content="InfoDialogMetadata">
+						<param name="control_id" value="156" />
 						<param name="label" value="$INFO[Container(50).ListItem.LastPlayed,$LOCALIZE[568] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(Container(50).ListItem.LastPlayed)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />

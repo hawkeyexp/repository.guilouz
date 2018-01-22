@@ -16,7 +16,7 @@
 		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + !String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
 		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,season) | String.IsEqual(Container.ListItem.DBTYPE,episode)] + String.IsEmpty(Container.ListItem.DBID)">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.Label]&amp;&amp;containerid=&amp;&amp;arttype=tvshow.fanart</value>
 		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,album) | String.IsEqual(Container.ListItem.DBTYPE,song)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=artist.fanart</value>
-		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,artist)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.Artist]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
+		<value condition="System.HasAddon(script.artwork.helper) + [String.IsEqual(Container.ListItem.DBTYPE,artist)]">plugin://script.artwork.helper/multiimage/listitem/?refresh=$INFO[Container.ListItem.DBID]&amp;&amp;containerid=&amp;&amp;arttype=fanart</value>
 		<value>$INFO[Container.ListItem.Art(fanart)]</value>
 	</variable>
 	<variable name="Label_SkinSetting_GlobalBackground">
@@ -2665,6 +2665,8 @@
 		<value condition="!String.IsEmpty(ListItem.Art(clearart))">$INFO[ListItem.Art(clearart)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(artist.clearart))">$INFO[ListItem.Art(artist.clearart)]</value>
 		<value condition="!String.IsEmpty(Container.Art(artist.clearart))">$INFO[Container.Art(artist.clearart)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(artist.clearlogo))">$INFO[ListItem.Art(artist.clearlogo)]</value>
+		<value condition="!String.IsEmpty(Container.Art(artist.clearlogo))">$INFO[Container.Art(artist.clearlogo)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearart))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearart)]</value>
 		<value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo))">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Clearlogo)]</value>
@@ -3336,6 +3338,7 @@
 		<value condition="!String.IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(tvshow.banner))">$INFO[ListItem.Art(tvshow.banner)]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(artist.banner))">$INFO[ListItem.Art(artist.banner)]</value>
+		<value condition="!String.IsEmpty(Container.Art(artist.banner))">$INFO[Container.Art(artist.banner)]</value>
 		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.Art.Banner)]</value>
 	</variable>
 	<variable name="PosterVar">

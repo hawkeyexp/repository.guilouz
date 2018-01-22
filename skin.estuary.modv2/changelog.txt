@@ -4,6 +4,7 @@
 • Add movies set button on video info dialog
 • Add progress bar to PVR widgets
 • Add possibility to show channels groups on PVR Guide
+• Add support for 'KN Switchtimer Service' addon on PVR info dialog
 • Improve 'Icons Wall' view for PVR channels
 • Improve dialog info windows
 • Many others improvements in PVR
