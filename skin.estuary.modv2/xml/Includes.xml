@@ -2649,7 +2649,7 @@
 					<width>440</width>
 					<height>610</height>
 					<aspectratio aligny="bottom">stretch</aspectratio>
-					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingPosterVar]</texture>
+					<texture background="true" fallback="DefaultVideoCover.png">$VAR[NowPlayingPosterVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<visible>[VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)] + !String.StartsWith(Player.Filenameandpath,http)</visible>
