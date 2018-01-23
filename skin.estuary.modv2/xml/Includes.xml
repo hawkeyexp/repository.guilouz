@@ -2684,7 +2684,7 @@
 					<width>440</width>
 					<height>610</height>
 					<aspectratio aligny="bottom" align="center">keep</aspectratio>
-					<texture background="true" fallback="DefaultVideo.png">$VAR[NowPlayingLandscapeVar]</texture>
+					<texture background="true" fallback="DefaultVideoFanart.png">$VAR[NowPlayingLandscapeVar]</texture>
 					<bordertexture border="21">overlays/shadow.png</bordertexture>
 					<bordersize>20</bordersize>
 					<visible>![VideoPlayer.HasMenu + System.HasMediaDVD] + ![VideoPlayer.Content(movies) + !String.StartsWith(Player.Filenameandpath,http)] + ![VideoPlayer.Content(episodes) + !String.StartsWith(Player.Filenameandpath,http)] + !VideoPlayer.Content(LiveTV) + !Window.IsVisible(MusicVisualisation.xml)</visible>
