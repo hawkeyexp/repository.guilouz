@@ -447,7 +447,13 @@
 					<include content="InfoDialogMetadata">
 						<param name="control_id" value="161" />
 						<param name="label" value="$INFO[ListItem.RatingAndVotes,$LOCALIZE[563] TVDB : [COLOR white],[/COLOR]]" />
-						<param name="visible" value="!String.IsEmpty(ListItem.RatingAndVotes) + [Container.Content(tvshows) |Container.Content(seasons) | Container.Content(episodes)]" />
+						<param name="visible" value="!String.IsEmpty(ListItem.RatingAndVotes) + [Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]" />
+						<param name="textcolor" value="$VAR[SkinColorVar]" />
+					</include>
+					<include content="InfoDialogMetadata">
+						<param name="control_id" value="167" />
+						<param name="label" value="$INFO[ListItem.RatingAndVotes,$LOCALIZE[563] : [COLOR white],[/COLOR]]" />
+						<param name="visible" value="[String.IsEmpty(ListItem.RatingAndVotes(imdb)) + String.IsEmpty(ListItem.RatingAndVotes(themoviedb)) + !String.IsEmpty(ListItem.RatingAndVotes)] + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(episodes)" />
 						<param name="textcolor" value="$VAR[SkinColorVar]" />
 					</include>
 					<include content="InfoDialogMetadata">
