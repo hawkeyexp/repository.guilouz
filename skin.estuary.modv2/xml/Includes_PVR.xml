@@ -256,7 +256,7 @@
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</itemlayout>
-					<content sortby="date" sortorder=$PARAM[folder_sortorder]>$INFO[ListItem.FilenameAndPath]</content>
+					<content sortby="date" sortorder="$PARAM[folder_sortorder]">$INFO[ListItem.FilenameAndPath]</content>
 				</control>
 			</control>
 		</control>

@@ -1,3 +1,7 @@
+[B]2.9.4[/B]
+• Add tags on dialog info
+• Minor fixes
+
 [B]2.9.3[/B]
 • Add support GlobalSearch 8.x.x addon
 • Add support for music artworks with Artwork Beef addon
