@@ -335,15 +335,15 @@
 							<control type="image">
 								<right>12</right>
 								<top>30</top>
-								<width>60</width>
-								<height>60</height>
+								<width>80</width>
+								<height>80</height>
 								<texture>$INFO[ListItem.Icon]</texture>
 								<aspectratio align="right" aligny="top">keep</aspectratio>
 							</control>
 							<control type="label">
 								<left>30</left>
 								<top>30</top>
-								<width>256</width>
+								<width>236</width>
 								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
@@ -354,17 +354,17 @@
 								<left>30</left>
 								<right>12</right>
 								<height>30</height>
-								<label>[B]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][/B]</label>
-								<font>font09</font>
+								<label>[B]$INFO[ListItem.EpgEventTitle][/B]</label>
+								<font>font10</font>
 								<textcolor>$VAR[SkinColorVar]</textcolor>
 							</control>
 							<control type="label">
-								<top>126</top>
+								<top>128</top>
 								<left>30</left>
 								<right>12</right>
 								<height>30</height>
-								<label>$INFO[ListItem.EpgEventTitle]</label>
-								<font>font09</font>
+								<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
+								<font>font10</font>
 							</control>
 							<control type="progress">
 								<top>160</top>
@@ -380,8 +380,8 @@
 								<left>30</left>
 								<right>12</right>
 								<height>30</height>
-								<label>$INFO[ListItem.NextTitle,$LOCALIZE[19031] : ]</label>
-								<font>font09</font>
+								<label>$INFO[ListItem.NextTitle,[COLOR grey]$LOCALIZE[19031] : [/COLOR]]</label>
+								<font>font10</font>
 							</control>
 						</control>
 					</itemlayout>
@@ -422,15 +422,15 @@
 							<control type="image">
 								<right>12</right>
 								<top>30</top>
-								<width>60</width>
-								<height>60</height>
+								<width>80</width>
+								<height>80</height>
 								<texture>$INFO[ListItem.Icon]</texture>
 								<aspectratio align="right" aligny="top">keep</aspectratio>
 							</control>
 							<control type="label">
 								<left>30</left>
 								<top>30</top>
-								<width>256</width>
+								<width>236</width>
 								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
@@ -442,16 +442,16 @@
 								<left>30</left>
 								<right>12</right>
 								<height>30</height>
-								<label>[B]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][/B]</label>
-								<font>font09</font>
+								<label>[B]$INFO[ListItem.EpgEventTitle][/B]</label>
+								<font>font10</font>
 							</control>
 							<control type="label">
-								<top>126</top>
+								<top>128</top>
 								<left>30</left>
 								<right>12</right>
 								<height>30</height>
-								<label>$INFO[ListItem.EpgEventTitle]</label>
-								<font>font09</font>
+								<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]</label>
+								<font>font10</font>
 								<scroll>true</scroll>
 							</control>
 							<control type="progress">
@@ -470,7 +470,7 @@
 								<right>12</right>
 								<height>30</height>
 								<label>$INFO[ListItem.NextTitle,$LOCALIZE[19031] : ]</label>
-								<font>font09</font>
+								<font>font10</font>
 								<scroll>true</scroll>
 							</control>
 						</control>

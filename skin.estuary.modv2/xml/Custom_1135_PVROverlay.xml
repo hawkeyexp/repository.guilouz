@@ -58,7 +58,7 @@
 				<texturebg border="3" colordiffuse="00FFFFFF">colors/white50.png</texturebg>
 				<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
 				<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
-				<visible>!Player.ChannelPreviewActive</visible>
+				<visible>!VideoPlayer.Content(livetv)</visible>
 			</control>
 			<control type="progress" id="23">
 				<animation effect="fade" end="0" time="200">WindowClose</animation>
@@ -66,10 +66,10 @@
 				<top>72</top>
 				<right>30</right>
 				<height>15</height>
-				<info>Player.Progress</info>
+				<info>PVR.EpgEventProgress</info>
 				<texturebg border="3" colordiffuse="80FFFFFF">colors/white50.png</texturebg>
 				<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white50.png</midtexture>
-				<visible>!Player.ChannelPreviewActive | VideoPlayer.HasEpg</visible>
+				<visible>VideoPlayer.HasEpg</visible>
 			</control>
 			<control type="label">
 				<left>530</left>
