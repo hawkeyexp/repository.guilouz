@@ -4002,7 +4002,7 @@
 			<control type="image">
 				<top>10</top>
 				<width>390</width>
-				<height>277</height>
+				<height>237</height>
 				<texture>dialogs/dialog-bg-nobo.png</texture>
 				<bordertexture border="21">overlays/shadow.png</bordertexture>
 				<bordersize>20</bordersize>
