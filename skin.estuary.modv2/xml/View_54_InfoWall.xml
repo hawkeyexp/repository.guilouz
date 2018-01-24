@@ -215,6 +215,17 @@
 				<aspectratio>keep</aspectratio>
 				<bordersize>20</bordersize>
 				<visible>![String.IsEqual(listitem.dbtype,genre) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(Custom_1107_SearchDialog.xml) | Window.IsVisible(DialogButtonMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogVideoInfo.xml) | Window.IsVisible(DialogMusicInfo.xml)]]</visible>
+				<visible>!Window.IsVisible(script-globalsearch.xml)</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>316</width>
+				<height>316</height>
+				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
+				<aspectratio>scale</aspectratio>
+				<bordersize>20</bordersize>
+				<visible>Window.IsVisible(script-globalsearch.xml)</visible>
 			</control>
 			<control type="image">
 				<left>40</left>

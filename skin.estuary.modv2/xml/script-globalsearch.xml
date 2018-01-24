@@ -133,7 +133,7 @@
 							<width>560</width>
 							<aligny>center</aligny>
 							<font>font37</font>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</itemlayout>
@@ -193,7 +193,7 @@
 							<width>560</width>
 							<aligny>center</aligny>
 							<font>font37</font>
-							<label>$INFO[ListItem.Label]</label>
+							<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
 							<shadowcolor>text_shadow</shadowcolor>
 						</control>
 					</focusedlayout>
@@ -231,7 +231,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<itemlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos)">
+				<itemlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(actors) | Container.Content(directors)">
 					<control type="group">
 						<top>130</top>
 						<left>40</left>
@@ -316,7 +316,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<focusedlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos)">
+				<focusedlayout height="410" width="310" condition="Container.Content(artists) | Container.Content(albums) | Container.Content(songs) | Container.Content(musicvideos) | Container.Content(actors) | Container.Content(directors)">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<animation type="Focus" condition="!Skin.HasSetting(no_animations)" reversible="false">
