@@ -1461,7 +1461,7 @@
 				<top>195</top>
 				<visible>[Skin.HasSetting(enable_LibraryDiscArt) + !Window.IsVisible(Home)] | [Skin.HasSetting(enable_HomeDiscArt) + Window.IsVisible(Home)]</visible>
 				<visible>$PARAM[focused]</visible>
-				<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
+				<visible>!String.IsEmpty(ListItem.Art(discart)) + !ListItem.IsCollection</visible>
 				<visible>!Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)</visible>
 				<animation effect="slide" start="0,50" end="0,0" time="300" tween="cubic" easing="out" reversible="false">Focus</animation>
 				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
@@ -1687,7 +1687,7 @@
 				<top>126</top>
 				<visible>Skin.HasSetting(enable_LibraryDiscArt)</visible>
 				<visible>$PARAM[focused]</visible>
-				<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
+				<visible>!String.IsEmpty(ListItem.Art(discart)) + !ListItem.IsCollection</visible>
 				<animation effect="slide" start="0,50" end="0,0" time="300" tween="cubic" easing="out" reversible="false">Focus</animation>
 				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 				<animation effect="slide" end="1,0" time="0" condition="Control.IsVisible(505) | [String.IsEqual(Container.ViewMode,$LOCALIZE[40016]) + [Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogKeyboard.xml) | Window.IsVisible(DialogConfirm.xml) | Window.IsVisible(DialogVideoInfo.xml)]]">Conditional</animation>
@@ -1931,7 +1931,7 @@
 				<top>126</top>
 				<visible>Skin.HasSetting(enable_LibraryDiscArt)</visible>
 				<visible>$PARAM[focused]</visible>
-				<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
+				<visible>!String.IsEmpty(ListItem.Art(discart)) + !ListItem.IsCollection</visible>
 				<animation effect="slide" start="0,50" end="0,0" time="300" tween="cubic" easing="out" reversible="false">Focus</animation>
 				<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 				<animation effect="slide" end="1,0" time="0" condition="Control.IsVisible(505) | [String.IsEqual(Container.ViewMode,$LOCALIZE[40016]) + [Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogBusy.xml) | Window.IsVisible(DialogKeyboard.xml) | Window.IsVisible(DialogConfirm.xml) | Window.IsVisible(DialogVideoInfo.xml)]]">Conditional</animation>

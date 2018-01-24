@@ -47,7 +47,7 @@
 						<top>650</top>
 						<left>680</left>
 						<visible>Skin.HasSetting(enable_LibraryDiscArt)</visible>
-						<visible>!String.IsEmpty(ListItem.Art(discart))</visible>
+						<visible>!String.IsEmpty(ListItem.Art(discart)) + !ListItem.IsCollection</visible>
 						<animation effect="slide" start="0,0" end="-375,0" time="300" tween="cubic" easing="out">VisibleChange</animation>
 						<animation effect="fade" start="100" end="0" time="0" condition="String.IsEmpty(ListItem.Art(discart))">Conditional</animation>
 						<animation effect="slide" end="640,0" time="0" condition="String.IsEqual(Skin.AspectRatio,21:9)">Conditional</animation>
@@ -271,7 +271,7 @@
 					<top>405</top>
 					<left>-403</left>
 					<visible>Skin.HasSetting(enable_LibraryDiscArt)</visible>
-					<visible>!String.IsEmpty(ListItem.Art(discart)) + !String.IsEqual(ListItem.DbType,album) + !String.IsEqual(ListItem.DbType,song)</visible>
+					<visible>!String.IsEmpty(ListItem.Art(discart)) + !String.IsEqual(ListItem.DbType,album) + !String.IsEqual(ListItem.DbType,song) + !ListItem.IsCollection</visible>
 					<animation effect="slide" start="0,0" end="460,0" time="300" tween="cubic" easing="out">VisibleChange</animation>
 					<animation effect="fade" start="100" end="0" time="0" condition="String.IsEmpty(ListItem.Art(discart))">Conditional</animation>
 					<control type="image">
