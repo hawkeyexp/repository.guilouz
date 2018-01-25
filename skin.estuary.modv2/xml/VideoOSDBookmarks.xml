@@ -143,18 +143,22 @@
 							<top>5</top>
 							<width>330</width>
 							<height>250</height>
-							<texture border="8" colordiffuse="$VAR[SkinColorVar]">colors/white.png</texture>
-							<visible>Control.HasFocus(11)</visible>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>5</top>
-							<width>330</width>
-							<height>250</height>
 							<aspectratio>scale</aspectratio>
 							<texture border="4" fallback="DefaultVideo.png">$INFO[ListItem.Art(thumb)]</texture>
 							<bordertexture colordiffuse="border_alpha">colors/black.png</bordertexture>
 							<bordersize>4</bordersize>
+							<visible>!Control.HasFocus(11)</visible>
+						</control>
+						<control type="image">
+							<left>-2</left>
+							<top>3</top>
+							<width>334</width>
+							<height>254</height>
+							<aspectratio>scale</aspectratio>
+							<texture border="4" fallback="DefaultVideo.png">$INFO[ListItem.Art(thumb)]</texture>
+							<bordertexture colordiffuse="$VAR[SkinColorVar]">colors/white.png</bordertexture>
+							<bordersize>6</bordersize>
+							<visible>Control.HasFocus(11)</visible>
 						</control>
 						<control type="label">
 							<left>20</left>

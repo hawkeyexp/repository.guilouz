@@ -1,6 +1,7 @@
 [B]2.9.4[/B]
 • Improve support for GlobalSearch 8.x.x addon
 • Add tags on dialog info
+• Improvements
 • Minor fixes
 
 [B]2.9.3[/B]
