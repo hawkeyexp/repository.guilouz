@@ -3037,7 +3037,7 @@
 						<right>30</right>
 						<height>30</height>
 						<align>right</align>
-						<label>$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031] : [COLOR white], - ][COLOR white]$INFO[VideoPlayer.NextStartTime]$INFO[VideoPlayer.NextEndTime : ][/COLOR]</label>
+						<label>$INFO[VideoPlayer.NextTitle,$LOCALIZE[19031] : [COLOR white]][COLOR white]$INFO[VideoPlayer.NextStartTime, (]$INFO[VideoPlayer.NextEndTime, : ,)][/COLOR]</label>
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<scroll>true</scroll>

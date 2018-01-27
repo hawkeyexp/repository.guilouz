@@ -721,31 +721,6 @@
 					<onclick>Skin.SelectBool(40124, 15109|, 40038|opacitybars_0, 40039|opacitybars_5, 40040|opacitybars_10, 40041|opacitybars_15, 40042|opacitybars_20, 40043|opacitybars_25, 40044|opacitybars_30, 40045|opacitybars_35, 40046|opacitybars_40, 40047|opacitybars_45, 40048|opacitybars_50, 40049|opacitybars_55, 40050|opacitybars_60, 40051|opacitybars_65, 40052|opacitybars_70, 40053|opacitybars_75, 40054|opacitybars_80, 40055|opacitybars_85, 40056|opacitybars_90, 40057|opacitybars_95, 40058|opacitybars_100)</onclick>
 					<label2>$VAR[OpacityBarsSettingLabel2Var]</label2>
 				</control>
-				<!--<control type="radiobutton" id="802">
-					<label>Enable day/night color themes</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(SkinHelper.EnableDayNightThemes)</onclick>
-                    <selected>Skin.HasSetting(SkinHelper.EnableDayNightThemes)</selected>
-				</control>
-				<control type="button" id="804">
-					<label>Theme to use at day time</label>
-                    <label2>$INFO[Skin.String(SkinHelper.ColorTheme.day.Theme)] $INFO[Skin.String(SkinHelper.ColorTheme.day.time),(every day at ,)]</label2>
-                    <include>DefaultSettingButton</include>
-                    <onclick>RunScript(script.skin.helper.skinbackup,action=ColorThemes,daynight=day)</onclick>
-                    <visible>Skin.HasSetting(SkinHelper.EnableDayNightThemes)</visible>
-                 </control>
-                 <control type="button" id="806">
-                 	<label>Theme to use at night time</label>
-                    <label2>$INFO[Skin.String(SkinHelper.ColorTheme.night.Theme)] $INFO[Skin.String(SkinHelper.ColorTheme.night.time),(every day at ,)]</label2>
-                    <include>DefaultSettingButton</include>
-                    <onclick>RunScript(script.skin.helper.skinbackup,action=ColorThemes,daynight=night)</onclick>
-                    <visible>Skin.HasSetting(SkinHelper.EnableDayNightThemes)</visible>
-                </control>
-                <control type="button"  id="812">
-                    <label>Manage Color Themes</label>
-                    <onclick>RunScript(script.skin.helper.skinbackup,action=colorthemes)</onclick>
-                    <include>DefaultSettingButton</include>
-                </control>-->
 			</control>
 			<control type="grouplist" id="900">
 				<top>168</top>
