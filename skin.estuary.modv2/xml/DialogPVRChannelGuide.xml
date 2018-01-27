@@ -104,23 +104,11 @@
 						</control>
 					</focusedlayout>
 				</control>
-				<control type="scrollbar" id="60">
-					<left>768</left>
-					<width>12</width>
-					<height>100%</height>
-					<onleft>11</onleft>
-					<texturesliderbackground />
-					<onright>NextChannelGroup</onright>
-					<ondown>61</ondown>
-					<onup>61</onup>
-					<animation effect="zoom" start="100,100" end="50,100" center="780,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
-					<orientation>vertical</orientation>
-				</control>
 			</control>
 			<control type="image">
 				<left>0</left>
 				<bottom>0</bottom>
-				<width>100%</width>
+				<width>780</width>
 				<height>115</height>
 				<texture flipy="true">frame/InfoBar.png</texture>
 			</control>
@@ -137,12 +125,24 @@
 					<textoffsetx>40</textoffsetx>
 					<width>1300</width>
 					<height>70</height>
-					<font>font45</font>
+					<font>font37</font>
 					<aligny>center</aligny>
 					<label>$LOCALIZE[19069]$INFO[Container(11).ListItem.StartDate, - ]</label>
-					<shadowcolor>black</shadowcolor>
+					<shadowcolor>text_shadow</shadowcolor>
 				</control>
 			</control>
+			<control type="scrollbar" id="60">
+				<left>768</left>
+				<width>12</width>
+				<height>100%</height>
+				<onleft>11</onleft>
+				<texturesliderbackground />
+				<onright>NextChannelGroup</onright>
+				<ondown>61</ondown>
+				<onup>61</onup>
+				<animation effect="zoom" start="100,100" end="50,100" center="780,0" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(60)">conditional</animation>
+				<orientation>vertical</orientation>
+	   		</control>
 		</control>
 	</controls>
 </window>
