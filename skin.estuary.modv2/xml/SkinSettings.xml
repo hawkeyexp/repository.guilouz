@@ -153,7 +153,8 @@
 					<label>$LOCALIZE[40081]</label>
 					<include>DefaultSettingButton</include>
 					<selected>Skin.HasSetting(enable_artistslideshow)</selected>
-					<onclick>Skin.ToggleSetting(enable_artistslideshow)</onclick>
+					<onclick condition="!System.HasAddon(script.artwork.helper)">InstallAddon(script.artwork.helper)</onclick>
+					<onclick condition="System.HasAddon(script.artwork.helper)">Skin.ToggleSetting(enable_artistslideshow)</onclick>
 					<enable>!Skin.HasSetting(hide_background_fanart)</enable>
 				</control>
 				<control type="radiobutton" id="204">
@@ -988,7 +989,8 @@
 				<control type="radiobutton" id="602">
 					<label>$LOCALIZE[40059]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.ToggleSetting(EnableExtraFanart)</onclick>
+					<onclick condition="!System.HasAddon(script.artwork.helper)">InstallAddon(script.artwork.helper)</onclick>
+					<onclick condition="System.HasAddon(script.artwork.helper)">Skin.ToggleSetting(EnableExtraFanart)</onclick>
 					<selected>Skin.HasSetting(EnableExtraFanart)</selected>
 					<enable>!Skin.HasSetting(no_fanart)</enable>
 				</control>
