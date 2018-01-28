@@ -497,20 +497,22 @@
 					<control type="label">
 						<top>-9</top>
 						<left>300</left>
-						<right>540</right>
+						<right>845</right>
 						<height>30</height>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<label>$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime][B]$INFO[ListItem.EpgEventTitle,  [COLOR white],[/COLOR]][COLOR white]$VAR[SeasonEpisodeLabel][/COLOR][/B]</label>
+						<label>[B]$INFO[ListItem.StartTime,, - ]$INFO[ListItem.EndTime]$INFO[ListItem.EpgEventTitle,  [COLOR white],[/COLOR]][COLOR white]$VAR[SeasonEpisodeLabel][/COLOR][/B]</label>
 						<scroll>true</scroll>
 					</control>
 					<control type="label">
-						<top>-9</top>
-						<width>500</width>
+						<top>-3</top>
+						<left>1115</left>
 						<right>30</right>
 						<height>30</height>
 						<align>right</align>
+						<aligny>center</aligny>
+						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<label>$INFO[ListItem.Genre, $LOCALIZE[515] : [COLOR white],[/COLOR]]</label>
+						<label>[B]$INFO[ListItem.Genre, $LOCALIZE[515] : [COLOR white],[/COLOR]][/B]</label>
 						<scroll>true</scroll>
 					</control>
 					<control type="textbox">
