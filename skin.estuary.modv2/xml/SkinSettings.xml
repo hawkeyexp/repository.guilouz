@@ -70,6 +70,31 @@
 				<ondown>100</ondown>
 				<pagecontrol>60</pagecontrol>
 				<visible>Container(9000).HasFocus(10)</visible>
+				<control type="radiobutton" id="1091">
+					<label>$LOCALIZE[40274]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.ToggleSetting(ScopeMode)</onclick>
+					<selected>Skin.HasSetting(ScopeMode)</selected>
+				</control>
+				<!--<control type="button" id="1092">
+					<label>  ∟$LOCALIZE[21374]</label>
+					<include>DefaultSettingButton</include>
+					<onclick>Skin.SelectBool(21374, 40277|ratio_177, 40278|ratio_185, 40275|ratio_235, 40279|ratio_237, 40276|ratio_240)</onclick>
+					<label2>$VAR[ScopeSettingLabel2Var]</label2>
+					<visible>Skin.HasSetting(ScopeMode)</visible>
+				</control>-->
+				<control type="button" id="1092">
+					<label>  ∟$LOCALIZE[21374]</label>
+					<include>DefaultSettingButton</include>
+					<label2>$VAR[ScopeSettingLabel2Var]</label2>
+					<onclick condition="String.IsEmpty(Skin.String(scope_mode))">Skin.SetString(scope_mode,$LOCALIZE[40277])</onclick>
+					<onclick condition="String.IsEqual(Skin.String(scope_mode),$LOCALIZE[40276])">Skin.SetString(scope_mode,$LOCALIZE[40277])</onclick>
+					<onclick condition="String.IsEqual(Skin.String(scope_mode),$LOCALIZE[40279])">Skin.SetString(scope_mode,$LOCALIZE[40276])</onclick>
+					<onclick condition="String.IsEqual(Skin.String(scope_mode),$LOCALIZE[40275])">Skin.SetString(scope_mode,$LOCALIZE[40279])</onclick>
+					<onclick condition="String.IsEqual(Skin.String(scope_mode),$LOCALIZE[40278])">Skin.SetString(scope_mode,$LOCALIZE[40275])</onclick>
+					<onclick condition="String.IsEqual(Skin.String(scope_mode),$LOCALIZE[40277])">Skin.SetString(scope_mode,$LOCALIZE[40278])</onclick>
+					<visible>Skin.HasSetting(ScopeMode)</visible>
+				</control>
 				<control type="radiobutton" id="109">
 					<label>$LOCALIZE[40225]</label>
 					<include>DefaultSettingButton</include>
@@ -123,7 +148,7 @@
 				<control type="button" id="104">
 					<label>$LOCALIZE[10041]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(SmallOSDVideo)|Skin.Reset(Hide_OSDInfo)|Skin.Reset(disable_PauseOnExtraInfos)|Skin.Reset(enable_playerclearlogo)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp)|Skin.Reset(show_musicvideoinfo))</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=dialogyesno,header=$LOCALIZE[10041],message=$LOCALIZE[10042],yesaction=Skin.Reset(ScopeMode)|Skin.Reset(scope_mode)|Skin.Reset(SmallOSDVideo)|Skin.Reset(Hide_OSDInfo)|Skin.Reset(disable_PauseOnExtraInfos)|Skin.Reset(enable_playerclearlogo)|Skin.Reset(enable_playerclearart)|Skin.Reset(show_discart)|Skin.Reset(disable_PVRNextUp)|Skin.Reset(show_musicvideoinfo))</onclick>
 				</control>
 			</control>
 			<control type="grouplist" id="200">

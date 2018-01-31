@@ -3212,6 +3212,16 @@
 		<value condition="Skin.HasSetting(circle_userrating)">$LOCALIZE[40233]</value>
 		<value>$LOCALIZE[40148]</value>
 	</variable>
+	<variable name="ScopeSettingLabel2Var">
+		<!--<value condition="Skin.HasSetting(ratio_235)">$LOCALIZE[40275]</value>
+		<value condition="Skin.HasSetting(ratio_240)">$LOCALIZE[40276]</value>
+		<value condition="Skin.HasSetting(ratio_177)">$LOCALIZE[40277]</value>
+		<value condition="Skin.HasSetting(ratio_185)">$LOCALIZE[40278]</value>
+		<value condition="Skin.HasSetting(ratio_237)">$LOCALIZE[40279]</value>
+		<value>$LOCALIZE[40277]</value>-->
+		<value condition="String.IsEmpty(Skin.String(scope_mode))">$LOCALIZE[40277]</value>
+		<value>$INFO[Skin.String(scope_mode)]</value>
+	</variable>
 	<variable name="AddonsListIconVar">
 		<value condition="!String.IsEmpty(ListItem.AddonBroken)">icons/addonstatus/disable.png</value>
 		<value condition="ListItem.Property(addon.orphaned)">icons/addonstatus/orphan.png</value>
@@ -3409,6 +3419,7 @@
 		<value condition="Control.HasFocus(70040)">$LOCALIZE[19019]</value>
 		<value condition="Control.HasFocus(70041)">$LOCALIZE[19069]</value>
 		<value condition="Control.HasFocus(70043)">$LOCALIZE[5]</value>
+		<value condition="Control.HasFocus(70044)">$LOCALIZE[40280] : $VAR[ScopeSettingLabel2Var]</value>
 		<value condition="Control.HasFocus(255)">$LOCALIZE[36501]</value>
 	</variable>
 	<variable name="MusicOSDHelpTextVar">

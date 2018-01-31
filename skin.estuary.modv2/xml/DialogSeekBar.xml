@@ -8,7 +8,13 @@
 	<zorder>0</zorder>
 	<controls>
 		<include>PVRChannelNumberInput</include>
-		<include condition="![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">OSDWithInfo</include>
-		<include condition="[Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">OSDWithoutInfo</include>
+		<control type="group">
+			<animation effect="slide" end="0,-140" time="0" condition="Window.IsVisible(fullscreenvideo) + Skin.HasSetting(ScopeMode) + !VideoPlayer.Content(livetv) + String.IsEqual(Skin.String(scope_mode),$LOCALIZE[40276])">Conditional</animation>
+			<animation effect="slide" end="0,-135" time="0" condition="Window.IsVisible(fullscreenvideo) + Skin.HasSetting(ScopeMode) + !VideoPlayer.Content(livetv) + String.IsEqual(Skin.String(scope_mode),$LOCALIZE[40279])">Conditional</animation>
+			<animation effect="slide" end="0,-131.5" time="0" condition="Window.IsVisible(fullscreenvideo) + Skin.HasSetting(ScopeMode) + !VideoPlayer.Content(livetv) + String.IsEqual(Skin.String(scope_mode),$LOCALIZE[40275])">Conditional</animation>
+			<animation effect="slide" end="0,-21" time="0" condition="Window.IsVisible(fullscreenvideo) + Skin.HasSetting(ScopeMode) + !VideoPlayer.Content(livetv) + String.IsEqual(Skin.String(scope_mode),$LOCALIZE[40278])">Conditional</animation>
+			<include condition="![Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">OSDWithInfo</include>
+			<include condition="[Skin.HasSetting(SmallOSDVideo) + Window.IsVisible(fullscreenvideo) + !Window.IsActive(fullscreeninfo)]">OSDWithoutInfo</include>
+		</control>	
 	</controls>
 </window>

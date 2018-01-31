@@ -360,7 +360,17 @@
 					<aspectratio aligny="bottom">keep</aspectratio>
 					<fadetime>300</fadetime>
 					<texture background="true" fallback="DefaultActor.png">$INFO[Container.ListItem.Art(thumb)]</texture>
-					<visible>Container.Content(actors) | Container.Content(directors)</visible>
+					<visible>Container.Content(actors)</visible>
+				</control>
+				<control type="image">
+					<left>30</left>
+					<top>140</top>
+					<width>535</width>
+					<height>470</height>
+					<aspectratio aligny="bottom">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture background="true" fallback="DefaultDirector.png">http://localhost:52307/getthumb&title=$ESCINFO[Container.ListItem.Label,, imdb]</texture>
+					<visible>Container.Content(directors)</visible>
 				</control>
 				<control type="image">
 					<left>30</left>
