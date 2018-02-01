@@ -131,7 +131,7 @@
 							<texture>windows/subtitles/icon_sync.png</texture>
 							<visible>ListItem.property(sync)</visible>
 						</control>
-						<control type="textbox">
+						<control type="label">
 							<left>130</left>
 							<width>645</width>
 							<height>100</height>
@@ -178,10 +178,10 @@
 							<width>100</width>
 							<height>100</height>
 							<font>font12</font>
-							<textcolor>grey</textcolor>
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[ListItem.Label]</label>
+							<scroll>true</scroll>
 						</control>
 						<control type="image">
 							<left>810</left>
@@ -199,13 +199,14 @@
 							<texture>windows/subtitles/icon_sync.png</texture>
 							<visible>ListItem.property(sync)</visible>
 						</control>
-						<control type="textbox">
+						<control type="label">
 							<left>130</left>
 							<width>645</width>
 							<height>100</height>
 							<aligny>center</aligny>
 							<font>font12</font>
 							<label>$INFO[ListItem.Label2]</label>
+							<scroll>true</scroll>
 						</control>
 						<control type="image">
 							<left>810</left>
