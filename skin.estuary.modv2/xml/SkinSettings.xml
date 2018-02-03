@@ -956,17 +956,25 @@
 				<control type="button" id="707">
 					<label>$LOCALIZE[31024]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(31024, 40148|, 40232|circle_rating, 40233|circle_userrating)</onclick>
+					<onclick>Skin.SelectBool(31024, 40148|, 40232|circle_rating, 40233|circle_userrating, 40281|circle_bothrating)</onclick>
 					<label2>$VAR[RatingSettingLabel2Var]</label2>
 				</control>
 				<control type="button" id="711">
-					<label>  ∟$LOCALIZE[40201]</label>
+					<label>  ∟$VAR[Label_SkinSetting_RatingColor]</label>
 					<label2>$VAR[Label_SkinSetting_RatingStringColor]</label2>
 					<include>DefaultSettingButton</include>
 					<onclick condition="!Skin.String(RatingStringColor)">RunScript(script.skin.helper.colorpicker,skinstring=RatingStringColor)</onclick>
 					<onclick condition="Skin.String(RatingStringColor)">Skin.Reset(RatingStringColor)</onclick>
-					<visible>Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)</visible>
+					<visible>Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)</visible>
 					<enable>!$EXP[EasterTheme]</enable>
+				</control>
+				<control type="button" id="715">
+					<label>  ∟$LOCALIZE[40283]</label>
+					<label2>$VAR[Label_SkinSetting_UserRatingStringColor]</label2>
+					<include>DefaultSettingButton</include>
+					<onclick condition="!Skin.String(UserRatingStringColor)">RunScript(script.skin.helper.colorpicker,skinstring=UserRatingStringColor)</onclick>
+					<onclick condition="Skin.String(UserRatingStringColor)">Skin.Reset(UserRatingStringColor)</onclick>
+					<visible>Skin.HasSetting(circle_bothrating)</visible>
 				</control>
 				<control type="radiobutton" id="708">
 					<label>$LOCALIZE[40085]</label>

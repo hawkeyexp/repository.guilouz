@@ -1,5 +1,6 @@
 [B]2.9.4[/B]
 • Add scope mode for constant image height (CIH) setup (OSD only)
+• Add possibility to show ratings and user ratings in same time
 • Add tags on dialog info
 • Improve support for GlobalSearch 8.x.x addon
 • Improve PVR channels OSD

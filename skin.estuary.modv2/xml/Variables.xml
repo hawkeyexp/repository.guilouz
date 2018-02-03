@@ -2827,9 +2827,18 @@
 		<value condition="!String.IsEmpty(Skin.String(MediaFlagsColor))">$INFO[Skin.String(MediaFlagsColor)]</value>
 		<value>$LOCALIZE[15109]</value>
 	</variable>
+	<variable name="Label_SkinSetting_RatingColor">
+		<value condition="Skin.HasSetting(circle_bothrating)">$LOCALIZE[40282]</value>
+		<value>$LOCALIZE[40201]</value>
+	</variable>
 	<variable name="Label_SkinSetting_RatingStringColor">
 		<value condition="$EXP[EasterTheme]">$LOCALIZE[40271]</value>
 		<value condition="!String.IsEmpty(Skin.String(RatingStringColor))">$INFO[Skin.String(RatingStringColor)]</value>
+		<value>$LOCALIZE[15109]</value>
+	</variable>
+	<variable name="Label_SkinSetting_UserRatingStringColor">
+		<value condition="$EXP[EasterTheme]">$LOCALIZE[40271]</value>
+		<value condition="!String.IsEmpty(Skin.String(UserRatingStringColor))">$INFO[Skin.String(UserRatingStringColor)]</value>
 		<value>$LOCALIZE[15109]</value>
 	</variable>
 	<variable name="Label_SkinSetting_SkinColor">
@@ -2883,6 +2892,11 @@
 	<variable name="RatingColorVar">
 		<value condition="System.Date(03-31,04-02) + !Skin.HasSetting(DisableThemes)">ff23729b</value>
 		<value condition="!String.IsEmpty(Skin.String(RatingStringColor))">$INFO[Skin.String(RatingStringColor)]</value>
+		<value>white</value>
+	</variable>
+	<variable name="UserRatingColorVar">
+		<value condition="System.Date(03-31,04-02) + !Skin.HasSetting(DisableThemes)">ff23729b</value>
+		<value condition="!String.IsEmpty(Skin.String(UserRatingStringColor))">$INFO[Skin.String(UserRatingStringColor)]</value>
 		<value>white</value>
 	</variable>
 	<variable name="MediaFlagsColorVar">
@@ -3118,9 +3132,13 @@
 		<value condition="String.IsEmpty(Container.PluginName) + [Container.Content(tvshows) | Container.Content(seasons)] + String.IsEqual(Container.SortMethod,$LOCALIZE[556])">$INFO[ListItem.Property(WatchedEpisodes)]$INFO[ListItem.Property(TotalEpisodes), / ,]</value>
 		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[556]) + Skin.HasSetting(circle_rating)">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year]</value>
  		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[556]) + Skin.HasSetting(circle_userrating)">$INFO[ListItem.UserRating,, • ]$INFO[ListItem.Year]</value>
+ 		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[556]) + Skin.HasSetting(circle_bothrating) + !String.IsEmpty(ListItem.UserRating)">$INFO[ListItem.UserRating,, • ]$INFO[ListItem.Year]</value>
+ 		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[556]) + Skin.HasSetting(circle_bothrating) + String.IsEmpty(ListItem.UserRating)">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year]</value>
 		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[556])">$INFO[ListItem.Year]</value>
 		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[20359]) + Skin.HasSetting(circle_rating) + Container.Content(episodes)">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Premiered]</value>
  		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[20359]) + Skin.HasSetting(circle_userrating) + Container.Content(episodes)">$INFO[ListItem.UserRating,, • ]$INFO[ListItem.Premiered]</value>
+ 		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[20359]) + Skin.HasSetting(circle_bothrating) + !String.IsEmpty(ListItem.UserRating) + Container.Content(episodes)">$INFO[ListItem.UserRating,, • ]$INFO[ListItem.Premiered]</value>
+ 		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[20359]) + Skin.HasSetting(circle_bothrating) + String.IsEmpty(ListItem.UserRating) + Container.Content(episodes)">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Premiered]</value>
  		<value condition="String.IsEqual(Container.SortMethod,$LOCALIZE[20359]) + Container.Content(episodes)">$INFO[ListItem.Premiered]</value>
  		<value condition="!String.IsEmpty(ListItem.Appearances)">$LOCALIZE[38026] : $INFO[ListItem.Appearances]</value>
 		<value>$INFO[ListItem.Label2]</value>
@@ -3210,15 +3228,10 @@
 	<variable name="RatingSettingLabel2Var">
 		<value condition="Skin.HasSetting(circle_rating)">$LOCALIZE[40232]</value>
 		<value condition="Skin.HasSetting(circle_userrating)">$LOCALIZE[40233]</value>
+		<value condition="Skin.HasSetting(circle_bothrating)">$LOCALIZE[40281]</value>
 		<value>$LOCALIZE[40148]</value>
 	</variable>
 	<variable name="ScopeSettingLabel2Var">
-		<!--<value condition="Skin.HasSetting(ratio_235)">$LOCALIZE[40275]</value>
-		<value condition="Skin.HasSetting(ratio_240)">$LOCALIZE[40276]</value>
-		<value condition="Skin.HasSetting(ratio_177)">$LOCALIZE[40277]</value>
-		<value condition="Skin.HasSetting(ratio_185)">$LOCALIZE[40278]</value>
-		<value condition="Skin.HasSetting(ratio_237)">$LOCALIZE[40279]</value>
-		<value>$LOCALIZE[40277]</value>-->
 		<value condition="String.IsEmpty(Skin.String(scope_mode))">$LOCALIZE[40277]</value>
 		<value>$INFO[Skin.String(scope_mode)]</value>
 	</variable>

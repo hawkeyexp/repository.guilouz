@@ -435,28 +435,28 @@
 			<control type="group">
 				<left>133</left>
 				<top>1</top>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircle</include>
 			</control>
 			<control type="group">
 				<left>133</left>
 				<top>1</top>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo)</visible>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 			</control>
 			<control type="group">
 				<left>133</left>
 				<top>1</top>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + String.IsEqual(ListItem.DBType,musicvideo)</visible>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 			</control>
 			<control type="group">
 				<left>133</left>
 				<top>1</top>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)] + !String.IsEqual(listitem.dbtype,genre)</visible>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 			</control>
 		</definition>
 	</include>
@@ -828,14 +828,14 @@
 				<left>133</left>
 				<top>11</top>
 				<animation effect="slide" end="37,0" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + [Window.IsVisible(Home) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)]]]">Conditional</animation>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircle</include>
 			</control>
 			<control type="group">
 				<left>133</left>
 				<top>11</top>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home)</visible>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 			</control>
 			<control type="group">
 				<left>133</left>
@@ -843,7 +843,7 @@
 				<visible>!$PARAM[focused]</visible>
 				<animation effect="slide" end="37,0" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home)</visible>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 			</control>
 		</definition>
 	</include>
@@ -1155,7 +1155,7 @@
 				<left>133</left>
 				<top>11</top>
 				<animation effect="slide" end="37,0" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircle</include>
 			</control>
 			<control type="group">
 				<left>133</left>
@@ -1163,7 +1163,7 @@
 				<visible>!$PARAM[focused]</visible>
 				<animation effect="slide" end="37,0" time="0" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">Conditional</animation>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home)</visible>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 			</control>
 		</definition>
 	</include>
@@ -1423,21 +1423,21 @@
 			<control type="group">
 				<left>135</left>
 				<top>-9</top>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircle</include>
 			</control>
 			<control type="group">
 				<left>135</left>
 				<top>-9</top>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0) + !Window.IsVisible(Home)</visible>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 			</control>
 			<control type="group">
 				<left>135</left>
 				<top>-9</top>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched_home) + Integer.IsGreater(ListItem.Playcount,0) + Window.IsVisible(Home)  + !String.IsEqual(listitem.dbtype,genre)</visible>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 			</control>
 			<control type="image">
 				<left>35</left>
@@ -1656,14 +1656,14 @@
 			<control type="group">
 				<left>285</left>
 				<top>-9</top>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircle</include>
 			</control>
 			<control type="group">
 				<left>285</left>
 				<top>-9</top>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 			</control>
 			<control type="image">
 				<left>35</left>
@@ -1900,14 +1900,14 @@
 			<control type="group">
 				<left>285</left>
 				<top>-9</top>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircle</include>
 			</control>
 			<control type="group">
 				<left>285</left>
 				<top>-9</top>
 				<visible>!$PARAM[focused]</visible>
 				<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
-				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+				<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 			</control>
 			<control type="image">
 				<left>35</left>

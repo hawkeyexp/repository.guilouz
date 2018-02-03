@@ -2122,3 +2122,18 @@ msgstr "2:37:1 (1920x810)"
 msgctxt "#40280"
 msgid "Scope mode"
 msgstr "Mode scope"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40281"
+msgid "My ratings and scrapers ratings"
+msgstr "Mes notes et les notes des fournisseurs d'informations"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40282"
+msgid "Scrapers ratings text color"
+msgstr "Couleur du texte des notes des fournisseurs d'informations"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40283"
+msgid "My ratings text color"
+msgstr "Couleur du texte de mes notes"

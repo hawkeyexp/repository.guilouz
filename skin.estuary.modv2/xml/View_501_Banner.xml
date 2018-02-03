@@ -182,13 +182,13 @@
 						<control type="group">
 							<left>405</left>
 							<top>1</top>
-							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircle</include>
 						</control>
 						<control type="group">
 							<left>405</left>
 							<top>1</top>
 							<visible>Skin.HasSetting(greyedout_watched) + Integer.IsGreater(ListItem.Playcount,0)</visible>
-							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircleGreyed</include>
+							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircleGreyed</include>
 						</control>
 					</control>
 				</itemlayout>
@@ -336,7 +336,7 @@
 						<control type="group">
 							<left>405</left>
 							<top>1</top>
-							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating)">RatingCircle</include>
+							<include condition="Skin.HasSetting(circle_rating) | Skin.HasSetting(circle_userrating) | Skin.HasSetting(circle_bothrating)">RatingCircle</include>
 						</control>
 					</control>
 				</focusedlayout>

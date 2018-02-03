@@ -2122,3 +2122,18 @@ msgstr ""
 msgctxt "#40280"
 msgid "Scope mode"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40281"
+msgid "My ratings and scrapers ratings"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40282"
+msgid "Scrapers ratings text color"
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40283"
+msgid "My ratings text color"
+msgstr ""
