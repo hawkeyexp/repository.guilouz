@@ -155,7 +155,7 @@
 					</include>
 					<onclick>Close</onclick>
 					<onclick>ActivateWindow(musicplaylist)</onclick>
-					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
+					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream + !MusicPartyMode.Enabled</visible>
 				</control>
 				<control type="group" id="699">
 					<width>56</width>
@@ -209,7 +209,7 @@
 					<radioposx>1</radioposx>
 					<radioposy>0</radioposy>
 					<selected>Playlist.IsRandom</selected>
-					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
+					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream + !MusicPartyMode.Enabled</visible>
 					<onclick>PlayerControl(Random)</onclick>
 				</control>
 				<control type="radiobutton" id="703">
