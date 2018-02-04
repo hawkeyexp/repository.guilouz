@@ -151,8 +151,8 @@
 			<control type="image">
 				<right>0</right>
 				<bottom>0</bottom>
-				<width>500</width>
-				<height>281</height>
+				<width>356</width>
+				<height>200</height>
 				<texture background="true">$VAR[PlayerInfoClearArtVar]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
 				<include>OpenClose_Right</include>
@@ -241,6 +241,8 @@
 						<param name="icon" value="icons/infodialogs/disable.png" />
 						<param name="onclick_1" value="Action(close)" />
 						<param name="label" value="$LOCALIZE[15067]" />
+						<param name="width" value="1190" />
+						<param name="radioposx" value="571" />
 					</include>
 				</control>
 			</control>
