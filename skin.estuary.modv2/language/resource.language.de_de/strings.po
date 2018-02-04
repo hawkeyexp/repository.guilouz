@@ -1696,7 +1696,7 @@ msgstr "Aktiviere Next Up Popup für Live TV"
 
 #: /xml/Custom_1134_PVRNextUp.xml
 msgctxt "#40196"
-msgid "To be continued ..."
+msgid "Next up ..."
 msgstr "Als nächstes ..."
 
 #: /xml/SkinSettings.xml

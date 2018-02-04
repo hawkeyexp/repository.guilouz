@@ -1697,7 +1697,7 @@ msgstr "אפשר את חלונית 'השידור הבא' עבור טלוויזי
 
 #: /xml/Custom_1134_PVRNextUp.xml
 msgctxt "#40196"
-msgid "To be continued ..."
+msgid "Next up ..."
 msgstr "המשך יבוא..."
 
 #: /xml/SkinSettings.xml

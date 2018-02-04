@@ -1698,7 +1698,7 @@ msgstr ""
 
 #: /xml/Custom_1134_PVRNextUp.xml
 msgctxt "#40196"
-msgid "To be continued ..."
+msgid "Next up ..."
 msgstr "Devam edecek..."
 
 #: /xml/SkinSettings.xml
