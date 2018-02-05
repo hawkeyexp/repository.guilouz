@@ -1923,8 +1923,8 @@ msgstr "Standardfarben für Genres"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40241"
-msgid "Pause video during access to extended info"
-msgstr "Während Zugriff auf erweiterte Info, Video pausieren"
+msgid "Pause video during access to info"
+msgstr "Während Zugriff auf Info, Video pausieren"
 
 #: /xml/script-NextAired-TVGuide.xml
 msgctxt "#40242"

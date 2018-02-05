@@ -3268,11 +3268,16 @@
 					<param name="width" value="58" />
 					<param name="visible" value="String.Contains(Player.Filenameandpath,bluray) | String.Contains(Player.Filenameandpath,blu-ray) | String.Contains(Player.Filenameandpath,bdrip) | String.Contains(Player.Filenameandpath,BLURAY) | String.Contains(Player.Filenameandpath,BLU-RAY) | String.Contains(Player.Filenameandpath,BDRIP)" />
 				</include>
+				<include content="MediaFlag">
+					<param name="texture" value="flags/hdr.png" />
+					<param name="width" value="104" />
+					<param name="visible" value="String.Contains(Player.Filenameandpath,hdr) | String.Contains(Player.Filenameandpath,HDR)" />
+				</include>
 				<include content="MediaFlagOSD">
 					<param name="texture" value="$VAR[VideoPlayerResolutionFlagVar]" />
 					<param name="fallback" value="flags/videoresolution/fallback.png" />
 					<param name="width" value="58" />
-					<param name="visible" value="!Window.IsVisible(MusicVisualisation.xml)" />
+					<param name="visible" value="!Window.IsVisible(MusicVisualisation.xml) + !String.Contains(Player.Filenameandpath,hdr) + !String.Contains(Player.Filenameandpath,HDR)" />
 				</include>
 				<include content="MediaFlagOSD">
 					<param name="texture" value="$INFO[VideoPlayer.VideoCodec,flags/videocodec/,.png]" />

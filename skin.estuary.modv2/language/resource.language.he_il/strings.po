@@ -1922,7 +1922,7 @@ msgstr "צבעים סטנדרטיים לז'אנרים"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40241"
-msgid "Pause video during access to extended info"
+msgid "Pause video during access to info"
 msgstr "השהה את הווידאו במהלך גישה למידע מורחב"
 
 #: /xml/script-NextAired-TVGuide.xml

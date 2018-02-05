@@ -1925,8 +1925,8 @@ msgstr "Türler için standart renkler"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40241"
-msgid "Pause video during access to extended info"
-msgstr "Genişletilmiş bilgilere erişirken videoyu duraklat"
+msgid "Pause video during access to info"
+msgstr "Bilgilere erişirken videoyu duraklat"
 
 #: /xml/script-NextAired-TVGuide.xml
 msgctxt "#40242"
