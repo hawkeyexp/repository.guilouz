@@ -368,17 +368,9 @@
 		<value condition="String.IsEqual(ListItem.Season,1)">$INFO[ListItem.Season,, $LOCALIZE[36904]]</value>
 		<value>$INFO[ListItem.Season,, $LOCALIZE[36905]]</value>
 	</variable>
-	<variable name="PlayerInfoSeasonNumberVar">
-		<value condition="String.IsEqual(VideoPlayer.Season,1)">$INFO[VideoPlayer.Season,, $LOCALIZE[36904]]</value>
-		<value>$INFO[VideoPlayer.Season,, $LOCALIZE[36905]]</value>
-	</variable>
 	<variable name="EpisodeNumberVar">
 		<value condition="String.IsEqual(ListItem.Episode,1)">$INFO[ListItem.Episode, (, $LOCALIZE[20452])]</value>
 		<value>$INFO[ListItem.Episode, (, $LOCALIZE[20453])]</value>
-	</variable>
-	<variable name="PlayerInfoEpisodeNumberVar">
-		<value condition="String.IsEqual(VideoPlayer.Episode,1)">$INFO[VideoPlayer.Episode, (, $LOCALIZE[20452])]</value>
-		<value>$INFO[VideoPlayer.Episode, (, $LOCALIZE[20453])]</value>
 	</variable>
 	<variable name="EpisodeNumberViewVar">
 		<value condition="String.IsEqual(ListItem.Episode,1)">$INFO[ListItem.Episode,, $LOCALIZE[20452]]</value>
