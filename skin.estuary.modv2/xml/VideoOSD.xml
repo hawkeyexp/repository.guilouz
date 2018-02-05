@@ -31,7 +31,7 @@
 				<aligny>bottom</aligny>
 				<font>font20_title</font>
 				<height>30</height>
-				<width>320</width>
+				<width>310</width>
 				<label>$VAR[VideoOSDHelpTextVar]</label>
 				<scroll>true</scroll>
 			</control>
@@ -183,11 +183,17 @@
 					<onclick>ActivateWindow(pvrchannelguide)</onclick>
 					<visible>VideoPlayer.Content(livetv)</visible>
 				</control>
+				<control type="radiobutton" id="70042">
+					<include content="OSDButton">
+						<param name="texture" value="osd/fullscreen/buttons/information.png"/>
+					</include>
+					<onclick>ActivateWindow(fullscreeninfo)</onclick>
+					<visible>VideoPlayer.Content(movies) | VideoPlayer.Content(episodes)</visible>
+				</control>
 				<control type="radiobutton" id="70012">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/extendedinfo.png"/>
 					</include>
-					<onclick condition="!Skin.HasSetting(disable_PauseOnExtraInfos)">PlayerControl(Play)</onclick>
 					<onclick>RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[VideoPlayer.Title])</onclick>
 					<visible>!VideoPlayer.Content(livetv) + ![VideoPlayer.HasMenu + System.HasMediaDVD] + !VideoPlayer.Content(musicvideos)</visible>
 					<visible>VideoPlayer.Content(movies) + System.HasAddon(script.extendedinfo)</visible>
@@ -196,7 +202,6 @@
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/extendedinfo.png"/>
 					</include>
-					<onclick condition="!Skin.HasSetting(disable_PauseOnExtraInfos)">PlayerControl(Play)</onclick>
 					<onclick>RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[VideoPlayer.TvShowTitle])</onclick>
 					<visible>!VideoPlayer.Content(livetv) + ![VideoPlayer.HasMenu + System.HasMediaDVD]  + !VideoPlayer.Content(musicvideos)</visible>
 					<visible>VideoPlayer.Content(episodes) + System.HasAddon(script.extendedinfo)</visible>
