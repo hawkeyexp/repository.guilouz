@@ -226,7 +226,7 @@
 									<right>5</right>
 									<bottom>0</bottom>
 									<aspectratio>stretch</aspectratio>
-									<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+									<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
 									<bordertexture>colors/white.png</bordertexture>
 									<bordersize>1</bordersize>
 								</control>
@@ -238,7 +238,7 @@
 									<right>5</right>
 									<bottom>0</bottom>
 									<aspectratio>stretch</aspectratio>
-									<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+									<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
 									<bordertexture>colors/white.png</bordertexture>
 									<bordersize>1</bordersize>
 								</control>
@@ -281,7 +281,7 @@
 							<right>5</right>
 							<bottom>0</bottom>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>
@@ -293,7 +293,7 @@
 							<right>5</right>
 							<bottom>0</bottom>
 							<aspectratio align="center" aligny="center">scale</aspectratio>
-							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>
@@ -327,7 +327,7 @@
 							<right>5</right>
 							<bottom>0</bottom>
 							<aspectratio>stretch</aspectratio>
-							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>
@@ -339,7 +339,7 @@
 							<right>5</right>
 							<bottom>0</bottom>
 							<aspectratio>stretch</aspectratio>
-							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>
@@ -425,7 +425,7 @@
 							<right>5</right>
 							<bottom>0</bottom>
 							<aspectratio>stretch</aspectratio>
-							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>
@@ -437,7 +437,7 @@
 							<right>5</right>
 							<bottom>0</bottom>
 							<aspectratio>stretch</aspectratio>
-							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
 						</control>
