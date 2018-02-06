@@ -642,7 +642,7 @@
 							<left>29</left>
 							<width>172</width>
 							<height>259</height>
-							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
@@ -654,7 +654,7 @@
 							<left>29</left>
 							<width>172</width>
 							<height>259</height>
-							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Thumb]</texture>
+							<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.Art(poster)]</texture>
 							<aspectratio aligny="center">scale</aspectratio>
 							<bordertexture>colors/white.png</bordertexture>
 							<bordersize>1</bordersize>
