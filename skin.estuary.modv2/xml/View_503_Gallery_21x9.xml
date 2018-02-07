@@ -123,7 +123,17 @@
                 <fadetime>200</fadetime>
                 <aspectratio>stretch</aspectratio>
                 <texture background="true" fallback="DefaultVideoFanart.png">$INFO[ListItem.Art(thumb)]</texture>
-                <visible>Container.Content(episodes)</visible>
+                <visible>Container.Content(episodes) + ![Skin.HasSetting(hide_thumbforspoiler) + Integer.IsLess(ListItem.Playcount,1) + Container.Content(episodes)]</visible>
+            </control>
+            <control type="image">
+                <left>10</left>
+                <right>10</right>
+                <top>10</top>
+                <bottom>10</bottom>
+                <fadetime>200</fadetime>
+                <aspectratio>stretch</aspectratio>
+                <texture background="true" fallback="DefaultVideoFanart.png">$INFO[ListItem.Art(fanart)]</texture>
+                <visible>Container.Content(episodes) + [Skin.HasSetting(hide_thumbforspoiler) + Integer.IsLess(ListItem.Playcount,1) + Container.Content(episodes)]</visible>
             </control>
         </control>
     </include>
