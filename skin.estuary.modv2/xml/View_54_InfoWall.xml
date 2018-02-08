@@ -225,7 +225,17 @@
 				<texture fallback="$PARAM[fallback_image]" background="true">$VAR[InfoWallThumbVar]</texture>
 				<aspectratio>scale</aspectratio>
 				<bordersize>20</bordersize>
-				<visible>Window.IsVisible(script-globalsearch.xml)</visible>
+				<visible>Window.IsVisible(script-globalsearch.xml) + !Container.Content(directors)</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>316</width>
+				<height>316</height>
+				<texture fallback="DefaultDirector.png" background="true">http://localhost:52307/getthumb&title=$ESCINFO[ListItem.Label,, imdb]</texture>
+				<aspectratio>scale</aspectratio>
+				<bordersize>20</bordersize>
+				<visible>Window.IsVisible(script-globalsearch.xml) + Container.Content(directors)</visible>
 			</control>
 			<control type="image">
 				<left>40</left>

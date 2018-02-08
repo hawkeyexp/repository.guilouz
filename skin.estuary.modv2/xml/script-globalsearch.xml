@@ -65,7 +65,7 @@
 						<aligny>center</aligny>
 						<font>font37</font>
 						<shadowcolor>text_shadow</shadowcolor>
-						<label>$LOCALIZE[31001]...</label>
+						<label>$LOCALIZE[31001]</label>
 						<visible>!Control.IsVisible(991)</visible>
 					</control>
 					<control type="label">
