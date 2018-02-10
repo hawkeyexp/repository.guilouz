@@ -746,8 +746,8 @@ msgstr "Galerie"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40006"
-msgid "Reset main menu and power menu settings"
-msgstr "Hauptmenü- und Power-Menü-Einstellungen zurücksetzen"
+msgid "Reset main menu settings"
+msgstr "Hauptmenü-Einstellungen zurücksetzen"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40007"
@@ -1509,10 +1509,7 @@ msgctxt "#40158"
 msgid "Forced view for music videos"
 msgstr "Erzwungene Ansicht für Musikvideos"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40159"
-msgid "Customize power menu"
-msgstr "Power-Menü anpassen"
+#: 40159 Empty String
 
 #: /xml/Variables.xml
 msgctxt "#40160"

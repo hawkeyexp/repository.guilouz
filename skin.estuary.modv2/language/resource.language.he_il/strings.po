@@ -749,8 +749,8 @@ msgstr "גלרייה"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40006"
-msgid "Reset main menu and power menu settings"
-msgstr "איפוס הגדרות התפריט הראשי ואת תפריט הכיבוי"
+msgid "Reset main menu settings"
+msgstr "אפס את הגדרות התפריט הראשי"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40007"
@@ -1510,10 +1510,7 @@ msgctxt "#40158"
 msgid "Forced view for music videos"
 msgstr "תצוגות כפויות לסרטיוני מוזיקה"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40159"
-msgid "Customize power menu"
-msgstr "התאמה אישית לתפריט הכיבוי"
+#: 40159 Empty String
 
 #: /xml/Variables.xml
 msgctxt "#40160"

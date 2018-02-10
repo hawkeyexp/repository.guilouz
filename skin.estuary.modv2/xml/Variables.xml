@@ -2568,12 +2568,6 @@
 		<value condition="String.StartsWith(Container(5084).ListItem.Duration,58:)">58 min</value>
 		<value condition="String.StartsWith(Container(5084).ListItem.Duration,59:)">59 min</value>
 	</variable>
-	<variable name="SystemLogOffVar">
-		<value>$LOCALIZE[20126] $INFO[system.profilename,(,)]</value>
-	</variable>
-	<variable name="CancelAlarmVar">
-		<value>$LOCALIZE[20151] $INFO[System.AlarmPos,(,)]</value>
-	</variable>
 	<variable name="SettingsForcedViewsMoviesVar">
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),50)">$LOCALIZE[535]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),55)">$LOCALIZE[31107]</value>

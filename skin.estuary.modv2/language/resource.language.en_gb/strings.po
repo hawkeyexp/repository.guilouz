@@ -748,7 +748,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40006"
-msgid "Reset main menu and power menu settings"
+msgid "Reset main menu settings"
 msgstr ""
 
 #: /xml/SkinSettings.xml
@@ -1511,10 +1511,7 @@ msgctxt "#40158"
 msgid "Forced view for music videos"
 msgstr ""
 
-#: /xml/SkinSettings.xml
-msgctxt "#40159"
-msgid "Customize power menu"
-msgstr ""
+#: 40159 Empty String
 
 #: /xml/Variables.xml
 msgctxt "#40160"

@@ -748,8 +748,8 @@ msgstr "Galeri"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40006"
-msgid "Reset main menu and power menu settings"
-msgstr "Ana menü ve güç menüsü ayarlarını sıfırlama"
+msgid "Reset main menu settings"
+msgstr "Ana menü ayarlarını sıfırlama"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40007"
@@ -1511,10 +1511,7 @@ msgctxt "#40158"
 msgid "Forced view for music videos"
 msgstr "Müzik videoları için görünümü zorla"
 
-#: /xml/SkinSettings.xml
-msgctxt "#40159"
-msgid "Customize power menu"
-msgstr "Güç menüsünü özelleştir"
+#: 40159 Empty String
 
 #: /xml/Variables.xml
 msgctxt "#40160"
