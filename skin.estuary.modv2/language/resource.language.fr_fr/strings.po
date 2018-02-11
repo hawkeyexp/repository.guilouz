@@ -2134,3 +2134,8 @@ msgstr "Couleur du texte des notes des fournisseurs d'informations"
 msgctxt "#40283"
 msgid "My ratings text color"
 msgstr "Couleur du texte de mes notes"
+
+#: /xml/Includes.xml
+msgctxt "#40284"
+msgid "Loading..."
+msgstr "Chargement..."

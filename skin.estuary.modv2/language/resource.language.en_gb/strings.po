@@ -2134,3 +2134,8 @@ msgstr ""
 msgctxt "#40283"
 msgid "My ratings text color"
 msgstr ""
+
+#: /xml/Includes.xml
+msgctxt "#40284"
+msgid "Loading..."
+msgstr ""

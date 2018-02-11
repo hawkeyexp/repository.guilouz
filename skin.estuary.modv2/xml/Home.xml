@@ -11,6 +11,7 @@
 	<onload>Skin.SetBool(SkinHelper.EnablePVRThumbs)</onload>
 	<onload condition="Window.Previous(startup)">Skin.Reset(mypassword)</onload>
 	<onload condition="!Window.Previous(startup)">AlarmClock(parental,Skin.Reset(mypassword),$VAR[password_time],silent)</onload>
+	<onload>AlarmClock(SkinSplashStarted,SetProperty(SplashStarted,1,home),00:01,silent,false)</onload>
 	<onunload>ClearProperty(SkinHelper.WidgetContainer,home)</onunload>
 	<defaultcontrol>9000</defaultcontrol>
 	<backgroundcolor>background</backgroundcolor>
@@ -2564,5 +2565,6 @@
 				<include>OpenClose_Right</include>
 			</control>
 		</control>
+		<include>SplashScreen</include>
 	</controls>
 </window>
