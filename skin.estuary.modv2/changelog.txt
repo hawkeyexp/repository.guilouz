@@ -1,5 +1,5 @@
 [B]2.9.5[/B]
-• Add a default splash screen
+• Add default splash screen
 • Add icon for font addons
 • Remove possibility to edit power menu to avoid some crash
 
