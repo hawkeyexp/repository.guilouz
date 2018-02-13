@@ -320,9 +320,9 @@
 				</control>
 		</control>
 		<control type="image">
-            <left>0</left>
+            <left>66.5</left>
             <bottom>20</bottom>
-            <width>470</width>
+            <width>337</width>
             <height>100</height>
             <texture>dialogs/logo.png</texture>
             <animation effect="slide" end="0,-70" time="0" condition="Window.Isvisible(AddonBrowser.xml)">Conditional</animation>

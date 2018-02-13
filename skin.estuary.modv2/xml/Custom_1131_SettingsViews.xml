@@ -37,22 +37,8 @@
             		<left>812</left>
             		<bottom>20</bottom>
             		<width>470</width>
-            		<height>100</height>
-            		<texture>dialogs/logo.png</texture>
-       		    </control>
-       		    <control type="image">
-            		<left>600</left>
-            		<bottom>73</bottom>
-            		<width>212</width>
-            		<height>4</height>
-            		<texture>colors/white.png</texture>
-       		    </control>
-       		    <control type="image">
-            		<left>1282</left>
-            		<bottom>22</bottom>
-            		<width>212</width>
-            		<height>4</height>
-            		<texture>colors/white.png</texture>
+            		<height>140</height>
+            		<texture>dialogs/logo-big.png</texture>
        		    </control>
 				<control type="grouplist" id="11100">
 					<width>600</width>

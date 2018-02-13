@@ -1,5 +1,6 @@
 [B]2.9.5[/B]
 • Add default splash screen
+• Add new Icon and Fanart
 • Add icon for font addons
 • Remove possibility to edit power menu to avoid some crash
 
