@@ -442,6 +442,46 @@
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]</visible>
 				<visible>[!Skin.HasSetting(HideWidgetLabels) + [Window.IsVisible(Home) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsActive(Favourites)]]]</visible>
 			</control>
+			<control type="image">
+				<left>20</left>
+				<top>376</top>
+				<width>276</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.Progress,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + [Window.IsVisible(Home) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsActive(Favourites)]]]</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>306</top>
+				<width>276</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.Progress,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + [Window.IsVisible(Home) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsActive(Favourites)]]]</visible>
+			</control>
+			<control type="progress">
+				<left>20</left>
+				<top>348</top>
+				<width>276</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.Progress</info>
+				<visible>!Integer.IsEqual(ListItem.Progress,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]</visible>
+				<visible>![!Skin.HasSetting(HideWidgetLabels) + [Window.IsVisible(Home) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsActive(Favourites)]]]</visible>
+			</control>
+			<control type="progress">
+				<left>20</left>
+				<top>278</top>
+				<width>276</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.Progress</info>
+				<visible>!Integer.IsEqual(ListItem.Progress,0) + [String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList) | String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)]</visible>
+				<visible>[!Skin.HasSetting(HideWidgetLabels) + [Window.IsVisible(Home) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsActive(Favourites)]]]</visible>
+			</control>
 			<control type="group">
 				<left>133</left>
 				<top>1</top>
@@ -1466,6 +1506,24 @@
 				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
 				<info>ListItem.PercentPlayed</info>
 				<visible>!Integer.IsEqual(ListItem.PercentPlayed,0)</visible>
+			</control>
+			<control type="image">
+				<left>35</left>
+				<top>352</top>
+				<width>250</width>
+				<height>4</height>
+				<texture>dialogs/back.png</texture>
+				<visible>!Integer.IsEqual(ListItem.Progress,0)</visible>
+			</control>
+			<control type="progress">
+				<left>35</left>
+				<top>352</top>
+				<width>250</width>
+				<height>1</height>
+				<texturebg></texturebg>
+				<midtexture colordiffuse="$VAR[SkinColorVar]" border="3">progress/texturebg_alt_white.png</midtexture>
+				<info>ListItem.Progress</info>
+				<visible>!Integer.IsEqual(ListItem.Progress,0)</visible>
 			</control>
 			<control type="group">
 				<top>195</top>
