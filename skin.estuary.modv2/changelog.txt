@@ -1,4 +1,5 @@
 [B]2.9.5[/B]
+• KODI 18 : RetroPlayer: Disable reset hotkey
 • Add default splash screen
 • Add new Icon and Fanart
 • Add icon for font addons
