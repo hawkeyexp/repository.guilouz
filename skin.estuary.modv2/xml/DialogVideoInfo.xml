@@ -361,6 +361,12 @@
 					<onleft>140</onleft>
 					<visible>!Control.HasFocus(439)</visible>
 					<include content="InfoDialogMetadata">
+						<param name="control_id" value="146" />
+						<param name="label" value="$INFO[ListItem.OriginalTitle,$LOCALIZE[20376] : [COLOR white],[/COLOR]]" />
+						<param name="visible" value="!String.IsEmpty(ListItem.OriginalTitle)" />
+						<param name="textcolor" value="$VAR[SkinColorVar]" />
+					</include>
+					<include content="InfoDialogMetadata">
 						<param name="control_id" value="147" />
 						<param name="label" value="$INFO[ListItem.Director,$LOCALIZE[20339] : [COLOR white],[/COLOR]]" />
 						<param name="visible" value="!String.IsEmpty(ListItem.Director)" />
