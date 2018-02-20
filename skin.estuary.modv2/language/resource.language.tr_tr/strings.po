@@ -246,10 +246,7 @@ msgctxt "#31050"
 msgid "Show plot"
 msgstr "Özeti göster"
 
-#: /xml/VideoOSD.xml
-msgctxt "#31051"
-msgid "Toggle language"
-msgstr "Dili değiştir"
+#: Empty String 31051
 
 #: /xml/Includes.xml
 msgctxt "#31052"

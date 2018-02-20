@@ -244,10 +244,7 @@ msgctxt "#31050"
 msgid "Show plot"
 msgstr "Zeige Handlung"
 
-#: /xml/VideoOSD.xml
-msgctxt "#31051"
-msgid "Toggle language"
-msgstr "Sprache umstellen"
+#: Empty String 31051
 
 #: /xml/Includes.xml
 msgctxt "#31052"
