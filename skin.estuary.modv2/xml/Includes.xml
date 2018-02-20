@@ -2251,7 +2251,7 @@
 			<left>-8</left>
 			<width>480</width>
 			<height>110</height>
-			<bottom>0</bottom>
+			<bottom>-4</bottom>
 			<onup/>
 			<ondown>9000</ondown>
 			<onright>2000</onright>
@@ -2273,7 +2273,7 @@
 			</include>
 			<control type="group">
 				<width>120</width>
-				<control type="button">
+				<control type="button" id="26000">
 					<top>0</top>
 					<width>120</width>
 					<height>120</height>
@@ -2288,6 +2288,15 @@
 					<width>52</width>
 					<height>52</height>
 					<texture colordiffuse="grey">$VAR[VolumeIconVar]</texture>
+					<visible>!Control.HasFocus(26000)</visible>
+				</control>
+				<control type="image">
+					<left>34</left>
+					<top>34</top>
+					<width>52</width>
+					<height>52</height>
+					<texture>$VAR[VolumeIconVar]</texture>
+					<visible>Control.HasFocus(26000)</visible>
 				</control>
 			</control>
 			<include content="IconButton">
@@ -2301,7 +2310,7 @@
 	<include name="TouchBackButton">
 		<control type="radiobutton" id="701">
 			<left>-10</left>
-			<top>-10</top>
+			<top>-25</top>
 			<width>120</width>
 			<height>120</height>
 			<align>center</align>
@@ -2309,7 +2318,7 @@
 			<onclick>Action(Back)</onclick>
 			<animation effect="fade" start="0" end="100" time="400" condition="Window.Previous(home)">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="300" condition="Window.Next(home)">WindowClose</animation>
-			<texturefocus colordiffuse="$VAR[SkinColorVar]">buttons/roundbutton-fo.png</texturefocus>
+			<texturefocus />
 			<texturenofocus />
 			<radioposx>30</radioposx>
 			<radiowidth>60</radiowidth>
