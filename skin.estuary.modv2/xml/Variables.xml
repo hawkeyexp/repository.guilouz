@@ -4103,4 +4103,24 @@
  		<value condition="!System.IsMaster">$LOCALIZE[20045]</value>
  		<value>$LOCALIZE[20046]</value>
  	</variable>
+ 	<variable name="PVRInfoDirector">
+ 		<value condition="!String.IsEmpty(ListItem.Director)">$INFO[ListItem.Director,$LOCALIZE[20339] : [COLOR white],[/COLOR]]</value>
+ 		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.Director),$LOCALIZE[20339] : [COLOR white],[/COLOR]]</value>
+ 	</variable>
+ 	<variable name="PVRInfoWriter">
+ 		<value condition="!String.IsEmpty(ListItem.Writer)">$INFO[ListItem.Writer,$LOCALIZE[20417] : [COLOR white],[/COLOR]]</value>
+ 		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.Writer),$LOCALIZE[20417] : [COLOR white],[/COLOR]]</value>
+ 	</variable>
+ 	<variable name="PVRInfoGenre">
+ 		<value condition="!String.IsEmpty(ListItem.Genre)">$INFO[ListItem.Genre,$LOCALIZE[515] : [COLOR white],[/COLOR]]</value>
+ 		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.Genre),$LOCALIZE[515] : [COLOR white],[/COLOR]]</value>
+ 	</variable>
+ 	<variable name="PVRInfoCountry">
+ 		<value condition="!String.IsEmpty(ListItem.Country)">$INFO[ListItem.Country,$LOCALIZE[21875] : [COLOR white],[/COLOR]]</value>
+ 		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.Country),$LOCALIZE[21875] : [COLOR white],[/COLOR]]</value>
+ 	</variable>
+ 	<variable name="PVRInfoStudio">
+ 		<value condition="!String.IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio,$LOCALIZE[29909] : [COLOR white],[/COLOR]]</value>
+ 		<value>$INFO[Window(Home).Property(SkinHelper.ListItem.Studio),$LOCALIZE[29909] : [COLOR white],[/COLOR]]</value>
+ 	</variable>
 </includes>
