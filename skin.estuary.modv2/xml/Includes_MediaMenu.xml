@@ -4,7 +4,7 @@
 		<width>470</width>
 		<textoffsetx>20</textoffsetx>
 		<top>0</top>
-		<height>80</height>
+		<height>70</height>
 		<radioposx>370</radioposx>
 		<aligny>center</aligny>
 		<invalidcolor>invalid</invalidcolor>
@@ -18,7 +18,7 @@
 		<textoffsetx>20</textoffsetx>
 		<textwidth>370</textwidth>
 		<top>0</top>
-		<height>80</height>
+		<height>70</height>
 		<radioposx>370</radioposx>
 		<aligny>center</aligny>
 		<invalidcolor>invalid</invalidcolor>
@@ -264,9 +264,9 @@
 		<width>470</width>
 		<textoffsetx>20</textoffsetx>
 		<textoffsety>15</textoffsety>
-		<height>50</height>
+		<height>60</height>
 		<radioposx>300</radioposx>
-		<font>font25_title</font>
+		<font>font28_title</font>
 		<aligny>top</aligny>
 		<textcolor>$VAR[SkinColorVar]</textcolor>
 	</include>
