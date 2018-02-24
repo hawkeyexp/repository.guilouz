@@ -246,7 +246,10 @@ msgctxt "#31050"
 msgid "Show plot"
 msgstr ""
 
-#: Empty String 31051
+#: /xml/SkinSettings.xml
+msgctxt "#31051"
+msgid "Enable Splash screen"
+msgstr ""
 
 #: /xml/Includes.xml
 msgctxt "#31052"

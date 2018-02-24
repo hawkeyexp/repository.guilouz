@@ -1,5 +1,6 @@
 [B]2.9.6[/B]
 • KODI 18 : Use subtitle setting osd instead of custom dialog
+• Add possibility to disable default splash screen
 • Improvements
 • Minor fixes
 

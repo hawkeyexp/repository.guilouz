@@ -12,7 +12,7 @@
 			<texture background="true">$INFO[Window(Home).Property(SkinHelper.SplashScreen)]</texture>
 		</control>
 		<control type="group">
-			<visible>String.IsEmpty(Skin.String(SplashScreen))</visible>
+			<visible>String.IsEmpty(Skin.String(SplashScreen)) + !Skin.HasSetting(EnableSpashScreen)</visible>
 			<control type="image">
 				<depth>DepthBackground</depth>
 				<include>FullScreenDimensions</include>
@@ -32,8 +32,9 @@
 			</control>
 		</control>
 		<control type="button" id="8000">
-			<onfocus condition="Skin.String(SplashScreen)">RunScript(script.skin.helper.service,action=splashscreen,file=$INFO[Skin.String(SplashScreen)],duration=5)</onfocus>
-			<onfocus condition="!Skin.String(SplashScreen)">AlarmClock(GoHome,ReplaceWindow($INFO[System.StartupWindow]),00:01,silent,false)</onfocus>
+			<onfocus condition="Skin.HasSetting(EnableSpashScreen)">ReplaceWindow($INFO[System.StartupWindow])</onfocus>
+			<onfocus condition="Skin.String(SplashScreen) + !Skin.HasSetting(EnableSpashScreen)">RunScript(script.skin.helper.service,action=splashscreen,file=$INFO[Skin.String(SplashScreen)],duration=5)</onfocus>
+			<onfocus condition="!Skin.String(SplashScreen) + !Skin.HasSetting(EnableSpashScreen)">AlarmClock(GoHome,ReplaceWindow($INFO[System.StartupWindow]),00:01,silent,false)</onfocus>
 			<visible allowhiddenfocus="true">false</visible>
 		</control>
 	</controls>

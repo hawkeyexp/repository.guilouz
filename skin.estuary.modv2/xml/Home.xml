@@ -2565,6 +2565,6 @@
 				<include>OpenClose_Right</include>
 			</control>
 		</control>
-		<include>SplashScreen</include>
+		<include condition="!Skin.HasSetting(EnableSpashScreen)">SplashScreen</include>
 	</controls>
 </window>
