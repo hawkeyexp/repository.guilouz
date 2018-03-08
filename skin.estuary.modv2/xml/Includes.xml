@@ -3616,16 +3616,14 @@
 				<aspectratio>scale</aspectratio>
 				<texture>special://skin/extras/backgrounds/splash.png</texture>
 			</control>
-			<control type="multiimage">
+			<control type="image">
 				<centerleft>50%</centerleft>
-				<bottom>140</bottom>
-				<width>200</width>
-				<height>200</height>
+				<bottom>160</bottom>
+				<width>100</width>
+				<height>100</height>
 				<aspectratio>keep</aspectratio>
-				<imagepath colordiffuse="$VAR[SkinColorVar]">special://skin/extras/loading</imagepath>
-				<timeperimage>150</timeperimage>
-				<fadetime>250</fadetime>
-				<randomize>false</randomize>
+				<texture colordiffuse="$VAR[SkinColorVar]">spinner.png</texture>
+				<animation effect="rotate" end="-45" center="auto" time="200" delay="600" loop="true" reversible="false" condition="true">Conditional</animation>
 				<animation type="WindowOpen">
 					<effect type="Fade" start="0" end="100" time="350" />
 				</animation>
