@@ -2672,7 +2672,7 @@
 					<height>30</height>
 					<font>font12</font>
 					<align>center</align>
-					<label>[B]$LOCALIZE[31026][/B] $INFO[PVR.timeshiftcur]</label>
+					<label>[B]$LOCALIZE[31026][/B] $INFO[PVR.TimeshiftCur] (-$INFO[PVR.TimeshiftOffset])</label>
 				</control>
 				<control type="progress">
 					<left>460</left>
@@ -3502,7 +3502,7 @@
 					<height>30</height>
 					<font>font12</font>
 					<align>center</align>
-					<label>[B]$LOCALIZE[31026][/B] $INFO[PVR.timeshiftcur]</label>
+					<label>[B]$LOCALIZE[31026][/B] $INFO[PVR.TimeshiftCur] (-$INFO[PVR.TimeshiftOffset])</label>
 				</control>
 				<control type="progress">
 					<left>30</left>
