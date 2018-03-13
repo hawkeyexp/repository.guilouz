@@ -49,7 +49,7 @@
 					<width>476</width>
 					<height>110</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture fallback="fallback.png">$VAR[ClearLogoVar]</texture>
+					<texture background="true" fallback="fallback.png">$VAR[ClearLogoVar]</texture>
 				</control>
 				<control type="image">
 					<top>680</top>
@@ -64,7 +64,7 @@
 					<width>458</width>
 					<height>102</height>
 					<aspectratio align="center" aligny="center">keep</aspectratio>
-					<texture fallback="fallback.png">$VAR[BannerVar]</texture>
+					<texture background="true" fallback="fallback.png">$VAR[BannerVar]</texture>
 				</control>
 				<control type="image">
 					<top>820</top>

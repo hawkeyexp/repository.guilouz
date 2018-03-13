@@ -2713,7 +2713,7 @@
 				<info>Player.Progress</info>
 				<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
 				<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white.png</midtexture>
-				<visible>!VideoPlayer.HasEpg</visible>
+				<visible>!VideoPlayer.HasEpg + !Player.ChannelPreviewActive</visible>
 			</control>
 			<control type="slider" id="401">
 				<left>465</left>
@@ -2723,8 +2723,18 @@
 				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
 				<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_bar.png</textureslidernib>
 				<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">colors/white.png</textureslidernibfocus>
-				<visible>!VideoPlayer.HasEpg</visible>
+				<visible>Player.SeekEnabled + !VideoPlayer.HasEpg + !Player.ChannelPreviewActive</visible>
 			</control>
+			<control type="slider" id="402">
+				<left>465</left>
+				<top>95</top>
+				<right>30</right>
+				<height>20</height>
+				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
+				<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_bar.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">colors/white.png</textureslidernibfocus>
+				<visible>Player.SeekEnabled + VideoPlayer.HasEpg + !Player.ChannelPreviewActive</visible>
+ 			</control>
 		</control>
 		<control type="image">
 			<depth>DepthOSD+</depth>
@@ -3533,7 +3543,7 @@
 				<info>Player.Progress</info>
 				<texturebg border="3" colordiffuse="60FFFFFF">colors/white50.png</texturebg>
 				<midtexture colordiffuse="$VAR[SkinColorVar]">colors/white.png</midtexture>
-				<visible>!VideoPlayer.HasEpg</visible>
+				<visible>!VideoPlayer.HasEpg + !Player.ChannelPreviewActive</visible>
 			</control>
 			<control type="slider" id="401">
 				<left>35</left>
@@ -3543,8 +3553,18 @@
 				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
 				<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_bar.png</textureslidernib>
 				<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">colors/white.png</textureslidernibfocus>
-				<visible>!VideoPlayer.HasEpg</visible>
+				<visible>Player.SeekEnabled + !VideoPlayer.HasEpg + !Player.ChannelPreviewActive</visible>
 			</control>
+			<control type="slider" id="402">
+				<left>35</left>
+				<top>95</top>
+				<right>30</right>
+				<height>20</height>
+				<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
+				<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_bar.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">colors/white.png</textureslidernibfocus>
+				<visible>Player.SeekEnabled + VideoPlayer.HasEpg + !Player.ChannelPreviewActive</visible>
+ 			</control>
 		</control>
 		<control type="label">
 			<left>30</left>

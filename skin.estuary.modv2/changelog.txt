@@ -1,4 +1,5 @@
 [B]2.9.7[/B]
+• KODI 18 : Introduced control 402 for epg event seek percentage
 • Improvements
 
 [B]2.9.6[/B]
