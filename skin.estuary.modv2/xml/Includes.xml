@@ -3230,7 +3230,7 @@
 				<label>$VAR[SeekTimeLabelVar]</label>
 				<font>font12</font>
 				<align>center</align>
-				<visible>!Player.ChannelPreviewActive + ![Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream]</visible>
+				<visible>!Player.ChannelPreviewActive + ![Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream] | VideoPlayer.HasEpg</visible>
 			</control>
 			<control type="label">
 				<left>460</left>
@@ -3582,7 +3582,7 @@
 			<label>$VAR[SeekTimeLabelVar]</label>
 			<font>font12</font>
 			<align>center</align>
-			<visible>!Player.ChannelPreviewActive + ![Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream]</visible>
+			<visible>!Player.ChannelPreviewActive + ![Window.IsVisible(MusicVisualisation.xml) + Player.IsInternetStream] | VideoPlayer.HasEpg</visible>
 		</control>
 		<control type="label">
 			<left>30</left>
