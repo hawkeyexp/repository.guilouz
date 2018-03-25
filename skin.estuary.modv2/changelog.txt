@@ -3,6 +3,7 @@
 • KODI 18 : Add Epg Event Seek Time
 • KODI 18 : Introduced control 402 for epg event seek percentage
 • Improvements
+• Fix forced views (thanks to hawkeyexp)
 
 [B]2.9.6[/B]
 • KODI 18 : Use subtitle setting osd instead of custom dialog
