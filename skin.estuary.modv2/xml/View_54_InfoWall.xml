@@ -1904,7 +1904,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<scroll>$PARAM[focused]</scroll>
-				<visible>String.StartsWith(Container.FolderPath,plugin://)</visible>
+				<visible>String.StartsWith(Container.FolderPath,plugin://) | Container.Content(artists)</visible>
 			</control>
 			<control type="label">
 				<left>73</left>
@@ -1943,7 +1943,7 @@
 				<width>32</width>
 				<height>32</height>
 				<texture>$VAR[ListWatchedIconVar]</texture>
-				<visible>!String.StartsWith(Container.FolderPath,plugin://)</visible>
+				<visible>!String.StartsWith(Container.FolderPath,plugin://) + !Container.Content(artists)</visible>
 			</control>
 			<control type="image">
 				<left>35</left>

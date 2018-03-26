@@ -2659,7 +2659,9 @@
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),55)">$LOCALIZE[31107]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),53)">$LOCALIZE[31100]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),54)">$LOCALIZE[31101]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),505)">$LOCALIZE[40016]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),500)">$LOCALIZE[31102]</value>
+		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),504)">$LOCALIZE[40015]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),506)">$LOCALIZE[40017]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),507)">$LOCALIZE[40146]</value>
 		<value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),508)">$LOCALIZE[40212]</value>
@@ -2746,8 +2748,10 @@
 		<value condition="Container.Content(episodes) + Control.HasFocus(11121)">special://skin/extras/views/episodes/503.png</value>
 		<value condition="Container.Content(artists) + Control.HasFocus(11113)">special://skin/extras/views/artists/53.png</value>
 		<value condition="Container.Content(artists) + Control.HasFocus(11114)">special://skin/extras/views/artists/54.png</value>
+		<value condition="Container.Content(artists) + Control.HasFocus(11115)">special://skin/extras/views/artists/505.png</value>
 		<value condition="Container.Content(artists) + Control.HasFocus(11116)">special://skin/extras/views/artists/55.png</value>
 		<value condition="Container.Content(artists) + Control.HasFocus(11117)">special://skin/extras/views/artists/500.png</value>
+		<value condition="Container.Content(artists) + Control.HasFocus(11118)">special://skin/extras/views/artists/504.png</value>
 		<value condition="Container.Content(artists) + Control.HasFocus(11122)">special://skin/extras/views/artists/506.png</value>
 		<value condition="Container.Content(artists) + Control.HasFocus(11123)">special://skin/extras/views/artists/507.png</value>
 		<value condition="Container.Content(artists) + Control.HasFocus(11124)">special://skin/extras/views/artists/508.png</value>
