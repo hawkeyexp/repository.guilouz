@@ -143,13 +143,6 @@
 						<visible>System.CanReboot</visible>
 					</item>
 					<item>
-						<label>$LOCALIZE[40159]</label>
-						<icon>special://skin/extras/icons/Power menu/reboot.png</icon>
-						<onclick>System.ExecWait("/usr/sbin/rebootfromnand")</onclick>
-						<visible>System.CanReboot</visible>
-						<visible>System.Platform.Android + System.HasAddon(service.libreelec.settings)</visible>
-					</item>
-					<item>
 						<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
 						<icon>special://skin/extras/icons/Power menu/logoff.png</icon>
 						<onclick>dialog.close(all,true)</onclick>
@@ -347,13 +340,6 @@
 						<visible>System.CanReboot</visible>
 					</item>
 					<item>
-						<label>$LOCALIZE[40159]</label>
-						<icon>special://skin/extras/icons/Power menu/reboot.png</icon>
-						<onclick>System.ExecWait("/usr/sbin/rebootfromnand")</onclick>
-						<visible>System.CanReboot</visible>
-						<visible>System.Platform.Android + System.HasAddon(service.libreelec.settings)</visible>
-					</item>
-					<item>
 						<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
 						<icon>special://skin/extras/icons/Power menu/logoff.png</icon>
 						<onclick>dialog.close(all,true)</onclick>
@@ -456,13 +442,6 @@
 						<icon>special://skin/extras/icons/Power menu/suspend.png</icon> 
 						<onclick>Suspend()</onclick>
 						<visible>System.CanSuspend</visible>
-					</item>
-					<item>
-						<label>$LOCALIZE[40159]</label>
-						<icon>special://skin/extras/icons/Power menu/reboot.png</icon>
-						<onclick>System.ExecWait("/usr/sbin/rebootfromnand")</onclick>
-						<visible>System.CanReboot</visible>
-						<visible>System.Platform.Android + System.HasAddon(service.libreelec.settings)</visible>
 					</item>
 					<item>
 						<label>$LOCALIZE[13010]</label>

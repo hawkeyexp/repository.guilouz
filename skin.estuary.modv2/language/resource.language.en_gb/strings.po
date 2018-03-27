@@ -1511,10 +1511,7 @@ msgctxt "#40158"
 msgid "Forced view for music videos"
 msgstr ""
 
-#: /xml/DialogButtonMenu.xml
-msgctxt "#40159"
-msgid "Reboot from NAND"
-msgstr ""
+#: Empty String 40159
 
 #: /xml/Variables.xml
 msgctxt "#40160"
