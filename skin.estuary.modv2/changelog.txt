@@ -5,6 +5,7 @@
 • Enable 'Wall (thumbnails)' and 'InfoWall (thumbnails)' views for artists
 • Improvements
 • Fix forced views (thanks to hawkeyexp)
+• Minor fixes
 
 [B]2.9.6[/B]
 • KODI 18 : Use subtitle setting osd instead of custom dialog
