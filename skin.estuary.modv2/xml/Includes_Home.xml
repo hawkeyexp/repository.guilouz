@@ -362,7 +362,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="415">
+				<itemlayout width="442">
 					<control type="group">
 						<left>80</left>
 						<top>64</top>
@@ -372,7 +372,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="415">
+				<focusedlayout width="442">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>80</left>
@@ -420,7 +420,7 @@
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
 				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
-				<itemlayout width="415" height="270">
+				<itemlayout width="442" height="270">
 					<control type="group">
 						<left>80</left>
 						<top>20</top>
@@ -430,7 +430,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="415" height="270">
+				<focusedlayout width="442" height="270">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>80</left>
@@ -527,7 +527,7 @@
 			</include>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetList)</visible>
 			<visible>!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
-			<itemlayout width="310" height="340">
+			<itemlayout width="356" height="372">
 				<control type="group">
 					<left>70</left>
 					<control type="image">
@@ -558,7 +558,7 @@
 					</control>
 				</control>
 			</itemlayout>
-			<focusedlayout width="310" height="340">
+			<focusedlayout width="356" height="372">
 				<control type="group">
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
@@ -696,7 +696,7 @@
 			</include>
 			<visible>String.IsEqual(Container(9000).ListItem.Property(widget),PersonalWidgetPanel)</visible>
 			<visible>!Skin.HasSetting(UseSmallerCategories) + String.IsEmpty(Container(9000).ListItem.Property(HideSubMenu))</visible>
-			<itemlayout width="310" height="340">
+			<itemlayout width="356" height="372">
 				<control type="group">
 					<left>70</left>
 					<control type="image">
@@ -727,7 +727,7 @@
 					</control>
 				</control>
 			</itemlayout>
-			<focusedlayout width="310" height="340">
+			<focusedlayout width="356" height="372">
 				<control type="group">
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
@@ -1046,7 +1046,7 @@
 	</include>
 	<include name="NoMinimizeTopMainMenu">
 		<left>-8</left>
-		<width>480</width>
+		<width>472</width>
 	</include>
 	<include name="MinimizeTopMainMenu">
 		<left>-10</left>
@@ -1191,7 +1191,7 @@
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
 				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
-				<itemlayout width="310" height="430">
+				<itemlayout width="356" height="430">
 					<control type="group">
 						<left>68</left>
 						<top>10</top>
@@ -1200,7 +1200,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="430">
+				<focusedlayout width="356" height="430">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>68</left>
@@ -1253,7 +1253,7 @@
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
 				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
-				<itemlayout width="340" height="290" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="290" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -1265,7 +1265,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="340" height="290" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="290" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -1282,7 +1282,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout width="430" height="242" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="452" height="280" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>0</top>
@@ -1294,7 +1294,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="430" height="242" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="452" height="280" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -1350,7 +1350,7 @@
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
 				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
-				<itemlayout width="340" height="340" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="340" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -1362,7 +1362,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="340" height="340" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="340" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -1379,7 +1379,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout width="430" height="330" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="452" height="360" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>0</top>
@@ -1391,7 +1391,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="430" height="330" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="452" height="360" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -1446,7 +1446,7 @@
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
 				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
-				<itemlayout width="340" height="410" condition="Skin.HasSetting(HideWidgetLabels)">
+				<itemlayout width="356" height="410" condition="Skin.HasSetting(HideWidgetLabels)">
 					<control type="group">
 						<left>70</left>
 						<include content="InfoWallMusicLayout">
@@ -1484,7 +1484,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="340" height="340" condition="!Skin.HasSetting(HideWidgetLabels)">
+				<focusedlayout width="356" height="372" condition="!Skin.HasSetting(HideWidgetLabels)">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -1896,7 +1896,7 @@
 				<onfocus>SetProperty(SkinHelper.WidgetContainer,$PARAM[list_id],Home)</onfocus>
 				<preloaditems>2</preloaditems>
 				<animation effect="slide" end="0,45" time="300" tween="sine" easing="out" condition="Control.HasFocus($PARAM[list_id]) + !Skin.HasSetting(HideWidgetLabels) + !Skin.HasSetting(HomeClearLogo)">Conditional</animation>
-				<itemlayout width="320" height="215">
+				<itemlayout width="356" height="215">
 					<control type="group">
 						<left>70</left>
 						<control type="image">
@@ -2140,7 +2140,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout width="320" height="215">
+				<focusedlayout width="356" height="215">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -2436,7 +2436,7 @@
 				<include content="WidgetListCommon">
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
-				<itemlayout width="310" height="486">
+				<itemlayout width="356" height="486">
 					<control type="group">
 						<left>68</left>
 						<top>10</top>
@@ -2445,7 +2445,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="486">
+				<focusedlayout width="356" height="486">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>68</left>
@@ -4689,7 +4689,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -4701,7 +4701,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -4718,7 +4718,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout width="390" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="452" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>0</top>
@@ -4730,7 +4730,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="390" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="452" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -4786,7 +4786,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -4798,7 +4798,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -4815,7 +4815,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout width="390" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="452" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>0</top>
@@ -4827,7 +4827,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="390" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="452" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -4883,7 +4883,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -4895,7 +4895,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -4912,7 +4912,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout width="390" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>0</top>
@@ -4924,7 +4924,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="390" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -4980,7 +4980,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -4992,7 +4992,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5009,7 +5009,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout width="390" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>0</top>
@@ -5021,7 +5021,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="390" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5077,7 +5077,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -5089,7 +5089,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5106,7 +5106,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout width="390" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="452" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>0</top>
@@ -5118,7 +5118,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="390" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="452" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5174,7 +5174,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -5186,7 +5186,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5203,7 +5203,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout width="390" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="452" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>0</top>
@@ -5215,7 +5215,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="390" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="452" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5271,7 +5271,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -5283,7 +5283,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="500" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5300,7 +5300,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout width="390" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="452" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>0</top>
@@ -5312,7 +5312,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="390" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="452" height="400" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5368,7 +5368,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="356" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>5</top>
@@ -5380,7 +5380,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="356" height="550" condition="![!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5397,7 +5397,7 @@
 						</include>
 					</control>
 				</focusedlayout>
-				<itemlayout width="390" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<itemlayout width="452" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<left>70</left>
 						<top>0</top>
@@ -5409,7 +5409,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="390" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
+				<focusedlayout width="452" height="450" condition="[!Skin.HasSetting(HideWidgetLabels) + Window.IsVisible(Home)]">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5464,7 +5464,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="500">
+				<itemlayout width="356" height="500">
 					<control type="group">
 						<left>70</left>
 						<top>-5</top>
@@ -5476,7 +5476,7 @@
 						</include>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="500">
+				<focusedlayout width="356" height="500">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5526,7 +5526,7 @@
 				</include>
 				<visible>$PARAM[visible]</visible>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="340">
+				<itemlayout width="356" height="372">
 					<control type="group">
 						<left>70</left>
 						<control type="image">
@@ -5559,7 +5559,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="340">
+				<focusedlayout width="356" height="372">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -5647,7 +5647,7 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<visible>$PARAM[visible]</visible>
-			<itemlayout width="310" height="340">
+			<itemlayout width="356" height="372">
 				<control type="group">
 					<left>70</left>
 					<top>10</top>
@@ -5892,7 +5892,7 @@
 					</control>
 				</control>
 			</itemlayout>
-			<focusedlayout width="310" height="340">
+			<focusedlayout width="356" height="372">
 				<control type="group">
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
@@ -6132,7 +6132,7 @@
 				<param name="list_id" value="$PARAM[list_id]"/>
 			</include>
 			<visible>$PARAM[visible]</visible>
-			<itemlayout width="310" height="340">
+			<itemlayout width="356" height="372">
 				<control type="group">
 					<left>70</left>
 					<control type="image">
@@ -6163,7 +6163,7 @@
 					</control>
 				</control>
 			</itemlayout>
-			<focusedlayout width="310" height="340">
+			<focusedlayout width="356" height="372">
 				<control type="group">
 					<depth>DepthContentPopout</depth>
 					<left>70</left>
@@ -6371,7 +6371,7 @@
 					<param name="list_id" value="$PARAM[list_id]"/>
 				</include>
 				<visible>Integer.IsGreater(Container($PARAM[list_id]).NumItems,0) | Container($PARAM[list_id]).IsUpdating</visible>
-				<itemlayout width="310" height="500">
+				<itemlayout width="356" height="500">
 					<control type="group">
 						<left>70</left>
 						<control type="image">
@@ -6460,7 +6460,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout width="310" height="500">
+				<focusedlayout width="356" height="500">
 					<control type="group">
 						<depth>DepthContentPopout</depth>
 						<left>70</left>
@@ -6579,7 +6579,7 @@
 		</definition>
 	</include>
 	<include name="WeatherWidget">
-		<param name="width">266</param>
+		<param name="width">250</param>
 		<definition>
 			<include content="CategoryLabel">
 				<param name="label">$PARAM[widget_header]</param>
@@ -6601,25 +6601,25 @@
 						<control type="image">
 							<left>0</left>
 							<top>20</top>
-							<width>254</width>
+							<width>234</width>
 							<height>280</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
 							<bordersize>20</bordersize>
 						</control>
 						<control type="image">
-							<left>68</left>
+							<left>58</left>
 							<top>108</top>
-							<width>130</width>
-							<height>130</height>
+							<width>120</width>
+							<height>120</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<visible>!String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) + !String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) + !String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)</visible>
 						</control>
 						<control type="multiimage">
-							<left>68</left>
+							<left>58</left>
 							<top>113</top>
-							<width>120</width>
-							<height>120</height>
+							<width>110</width>
+							<height>110</height>
 							<imagepath>$INFO[ListItem.Icon]</imagepath>
 							<timeperimage>110</timeperimage>
 							<randomize>false</randomize>
@@ -6627,27 +6627,27 @@
 							<visible>String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)</visible>
 						</control>
 						<control type="label">
-							<left>15</left>
+							<left>8</left>
 							<top>45</top>
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
-							<width>230</width>
+							<width>220</width>
 						</control>
 						<control type="label">
-							<left>15</left>
+							<left>8</left>
 							<top>78</top>
 							<align>center</align>
 							<font>font12</font>
 							<label>$INFO[ListItem.Property(ShortDate)]</label>
-							<width>230</width>
+							<width>220</width>
 						</control>
 						<control type="label">
-							<left>15</left>
+							<left>8</left>
 							<top>236</top>
 							<align>center</align>
 							<label>$INFO[ListItem.Label2]</label>
 							<font>font12</font>
-							<width>230</width>
+							<width>220</width>
 						</control>
 					</control>
 				</itemlayout>
@@ -6662,7 +6662,7 @@
 						<control type="image">
 							<left>0</left>
 							<top>20</top>
-							<width>254</width>
+							<width>234</width>
 							<height>280</height>
 							<texture>dialogs/dialog-bg-nobo.png</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
@@ -6671,7 +6671,7 @@
 						<control type="image">
 							<left>-6</left>
 							<top>14</top>
-							<width>266</width>
+							<width>246</width>
 							<height>292</height>
 							<texture colordiffuse="$VAR[SkinColorVar]">colors/grey.png</texture>
 							<bordertexture border="21">overlays/shadow.png</bordertexture>
@@ -6680,25 +6680,25 @@
 						<control type="image">
 							<left>-6</left>
 							<top>14</top>
-							<width>266</width>
+							<width>246</width>
 							<height>292</height>
 							<texture colordiffuse="$VAR[GradientColorVar]">colors/gradient.png</texture>
 							<bordersize>20</bordersize>
 							<visible>Skin.HasSetting(EnableGradientColor)</visible>
 						</control>
 						<control type="image">
-							<left>68</left>
+							<left>58</left>
 							<top>108</top>
-							<width>130</width>
-							<height>130</height>
+							<width>120</width>
+							<height>120</height>
 							<texture>$INFO[ListItem.Icon]</texture>
 							<visible>!String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) + !String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) + !String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)</visible>
 						</control>
 						<control type="multiimage">
-							<left>68</left>
+							<left>58</left>
 							<top>113</top>
-							<width>120</width>
-							<height>120</height>
+							<width>110</width>
+							<height>110</height>
 							<imagepath>$INFO[ListItem.Icon]</imagepath>
 							<timeperimage>110</timeperimage>
 							<randomize>false</randomize>
@@ -6706,27 +6706,27 @@
 							<visible>String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - HD Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Cloud Animated) | String.IsEqual(Skin.String(WeatherIcons.name),Weather Icons - Animated)</visible>
 						</control>
 						<control type="label">
-							<left>15</left>
+							<left>8</left>
 							<top>45</top>
 							<align>center</align>
 							<label>$INFO[ListItem.Label]</label>
-							<width>230</width>
+							<width>220</width>
 						</control>
 						<control type="label">
-							<left>15</left>
+							<left>8</left>
 							<top>78</top>
 							<align>center</align>
 							<font>font12</font>
 							<label>$INFO[ListItem.Property(ShortDate)]</label>
-							<width>230</width>
+							<width>220</width>
 						</control>
 						<control type="label">
-							<left>15</left>
+							<left>8</left>
 							<top>236</top>
 							<align>center</align>
 							<label>$INFO[ListItem.Label2]</label>
 							<font>font12</font>
-							<width>230</width>
+							<width>220</width>
 						</control>
 					</control>
 				</focusedlayout>
