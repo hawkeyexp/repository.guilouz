@@ -48,8 +48,6 @@
             <centertop>50%</centertop>
             <width>350</width>
             <height>70</height>
-			<animation delay="300" effect="fade" time="200">Visible</animation>
-			<animation effect="fade" delay="200" time="150">Hidden</animation>
 			<control type="image" id="1">
                 <centerleft>50%</centerleft>
                 <centertop>50%</centertop>
@@ -73,6 +71,7 @@
  				<aligny>center</aligny>
  				<align>right</align>
  				<font>font10</font>
+ 				<visible>Integer.IsGreater(Player.CacheLevel,0)</visible>
  			</control>        
  			<control type="label" id="2">
  				<label>$LOCALIZE[15107]</label>

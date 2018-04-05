@@ -1,3 +1,7 @@
+[B]2.9.8[/B]
+• KODI 18 : Drop leftovers from audio dsp removal
+• Minor fixes
+
 [B]2.9.7[/B]
 • KODI 18 : Add PVR Timeshift Offset
 • KODI 18 : Add Epg Event Seek Time
