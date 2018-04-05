@@ -2080,7 +2080,6 @@ msgctxt "#40272"
 msgid "Valentine's Day Theme"
 msgstr ""
 
-<<<<<<< HEAD
 #: /xml/Includes_MediaMenu.xml
 msgctxt "#40273"
 msgid "Show channel groups"
