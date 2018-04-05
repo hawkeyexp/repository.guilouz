@@ -2082,3 +2082,8 @@ msgstr "Valentinstag Theme"
 msgctxt "#40285"
 msgid "Enable German Telecast Offers"
 msgstr "Aktiviere German Telecast Offers"
+
+#: /xml/SkinSettings.xml
+msgctxt "#40399"
+msgid "Opacity for default background"
+msgstr "Deckkraft für Standard-Hintergrund"
