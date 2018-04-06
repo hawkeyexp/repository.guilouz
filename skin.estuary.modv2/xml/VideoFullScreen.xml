@@ -71,7 +71,6 @@
  				<aligny>center</aligny>
  				<align>right</align>
  				<font>font10</font>
- 				<visible>Integer.IsGreater(Player.CacheLevel,0)</visible>
  			</control>        
  			<control type="label" id="2">
  				<label>$LOCALIZE[15107]</label>
