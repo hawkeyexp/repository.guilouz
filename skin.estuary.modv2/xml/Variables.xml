@@ -3935,11 +3935,6 @@
 		<value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus] + !String.IsEqual(Window.Property(groupname),powermenu)">$LOCALIZE[31130]</value>
 		<value condition="Control.HasFocus(211) | [Control.HasFocus(60) | ControlGroup(90001).HasFocus] + String.IsEqual(Window.Property(groupname),powermenu)">$LOCALIZE[40160]</value>
 	</variable>
-	<variable name="DSPManagerHelpTextVar">
-		<value condition="Control.HasFocus(20)">$INFO[Container(20).ListItem.Property(Description)]</value>
-		<value condition="Control.HasFocus(21)">$INFO[Container(21).ListItem.Property(Description)]</value>
-		<value>$INFO[Container(9000).ListItem.Label2]</value>
-	</variable>
 	<variable name="VolumeIconVar">
 		<value condition="Player.Muted">dialogs/volume/mute.png</value>
 		<value condition="Integer.IsGreater(Player.Volume,66)">dialogs/volume/volume.png</value>
