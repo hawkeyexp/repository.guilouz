@@ -1511,7 +1511,10 @@ msgctxt "#40158"
 msgid "Forced view for music videos"
 msgstr ""
 
-#: Empty String 40159
+#: /xml/SkinSettings.xml
+msgctxt "#40159"
+msgid "Enable music themes for movies and TV shows (theme.mp3 files)"
+msgstr ""
 
 #: /xml/Variables.xml
 msgctxt "#40160"
