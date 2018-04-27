@@ -833,6 +833,12 @@
 					<onclick>Skin.ToggleSetting(TrailerInWindow)</onclick>
 					<selected>Skin.HasSetting(TrailerInWindow)</selected>
 				</control>
+				<control type="radiobutton" id="921">
+					<include>DefaultSettingButton</include>
+					<label>$LOCALIZE[40159]</label>
+					<onclick>Skin.ToggleSetting(MusicTheme)</onclick>
+					<selected>!Skin.HasSetting(MusicTheme)</selected>
+				</control>
 				<control type="radiobutton" id="905">
 					<label>$LOCALIZE[40149]</label>
 					<include>DefaultSettingButton</include>
