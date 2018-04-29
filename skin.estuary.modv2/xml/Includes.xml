@@ -1869,7 +1869,7 @@
 				<include>FullScreenDimensions</include>
 				<visible>!Slideshow.IsActive</visible>
 				<visible>Player.HasAudio + Visualisation.Enabled</visible>
-				<visible>!Skin.HasSetting(background_showvisualisation)</visible>
+				<visible>!Skin.HasSetting(background_showvisualisation) + !String.Contains(Player.Filenameandpath,theme.mp3)</visible>
 			</control>
 		</definition>
 	</include>
