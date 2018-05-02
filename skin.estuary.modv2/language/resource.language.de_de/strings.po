@@ -1825,8 +1825,8 @@ msgstr "Stoppe Wiedergabe"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40222"
-msgid "Play trailers on movie information screen"
-msgstr "Zeige Filmvorschauen im Film-Info Bildschirm"
+msgid "Play trailers in full screen"
+msgstr "Zeige Filmvorschauen im Vollbildmodus"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40223"

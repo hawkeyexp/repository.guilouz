@@ -1826,8 +1826,8 @@ msgstr "Zatrzymaj odtwarzanie"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40222"
-msgid "Play trailers on movie information screen"
-msgstr "Odtwórz zwiastuny na ekranie z informacjami o filmie"
+msgid "Play trailers in full screen"
+msgstr "Odtwórz zwiastuny na pełnym ekranie"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40223"

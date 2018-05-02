@@ -13,7 +13,7 @@
 				<include>FullScreenDimensions</include>
 				<animation effect="fade" start="100" end="70" time="0" condition="true">Conditional</animation>
 				<animation effect="fade" start="100" end="0" time="240" condition="Window.IsVisible(fullscreenvideo) | Window.IsVisible(FullscreenGame)">Conditional</animation>
-				<visible>![Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)]</visible>
+				<visible>![!Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)]</visible>
 			</control>
 			<control type="image">
 				<texture>colors/black.png</texture>
@@ -23,10 +23,10 @@
 				<height>678</height>
 				<animation effect="fade" start="100" end="70" time="0" condition="true">Conditional</animation>
 				<animation effect="fade" start="100" end="0" time="240" condition="Window.IsVisible(fullscreenvideo)">Conditional</animation>
-				<visible>Skin.HasSetting(TrailerInWindow) + [Window.IsVisible(DialogVideoInfo.xml) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)]]</visible>
+				<visible>!Skin.HasSetting(TrailerInWindow) + [Window.IsVisible(DialogVideoInfo.xml) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)]]</visible>
 			</control>
 			<control type="group">
-				<visible>![Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)]</visible>
+				<visible>![!Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)]</visible>
 				<depth>DepthMax</depth>
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
@@ -62,7 +62,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Skin.HasSetting(TrailerInWindow) + [Window.IsVisible(DialogVideoInfo.xml) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)]]</visible>
+				<visible>!Skin.HasSetting(TrailerInWindow) + [Window.IsVisible(DialogVideoInfo.xml) + ![Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)]]</visible>
 				<centerleft>50%</centerleft>
 				<centertop>50%</centertop>
 				<top>164</top>

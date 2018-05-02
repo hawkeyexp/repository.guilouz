@@ -1830,8 +1830,8 @@ msgstr "Stopper la lecture"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40222"
-msgid "Play trailers on movie information screen"
-msgstr "Lire les bandes-annonces sur l'écran des informations du film"
+msgid "Play trailers in full screen"
+msgstr "Lire les bandes-annonces en plein écran"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40223"

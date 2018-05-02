@@ -1830,7 +1830,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40222"
-msgid "Play trailers on movie information screen"
+msgid "Play trailers in full screen"
 msgstr ""
 
 #: /xml/SkinSettings.xml
