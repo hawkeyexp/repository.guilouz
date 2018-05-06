@@ -2142,3 +2142,8 @@ msgstr "Couleur du texte de mes notes"
 msgctxt "#40284"
 msgid "Loading..."
 msgstr "Chargement..."
+
+#: /xml/SkinSettings.xml
+msgctxt "#40285"
+msgid "Parental control related settings."
+msgstr "Paramètres relatifs au contrôle parental."

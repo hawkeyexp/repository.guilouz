@@ -2142,3 +2142,8 @@ msgstr ""
 msgctxt "#40284"
 msgid "Loading..."
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40285"
+msgid "Parental control related settings."
+msgstr ""
