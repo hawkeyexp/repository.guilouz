@@ -66,13 +66,6 @@
 					<onclick>Skin.ToggleSetting(ScopeMode)</onclick>
 					<selected>Skin.HasSetting(ScopeMode)</selected>
 				</control>
-				<!--<control type="button" id="1092">
-					<label>  ∟$LOCALIZE[21374]</label>
-					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(21374, 40277|ratio_177, 40278|ratio_185, 40275|ratio_235, 40279|ratio_237, 40276|ratio_240)</onclick>
-					<label2>$VAR[ScopeSettingLabel2Var]</label2>
-					<visible>Skin.HasSetting(ScopeMode)</visible>
-				</control>-->
 				<control type="button" id="1092">
 					<label>  ∟$LOCALIZE[21374]</label>
 					<include>DefaultSettingButton</include>
@@ -662,7 +655,7 @@
 					<selected>Skin.HasSetting(KioskMode)</selected>
 				</control>
 				<control type="radiobutton" id="510">
-					<label>$LOCALIZE[40285]</label>
+					<label>$LOCALIZE[40398]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(EnableGTO)</onclick>
 					<selected>Skin.HasSetting(EnableGTO)</selected>

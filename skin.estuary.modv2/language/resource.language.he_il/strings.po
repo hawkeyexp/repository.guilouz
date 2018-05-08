@@ -1825,8 +1825,8 @@ msgstr "עצור את הניגון"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40222"
-msgid "Play trailers on movie information screen"
-msgstr "נגן קדימון על מסך מידע הסרט"
+msgid "Play trailers in full screen"
+msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40223"

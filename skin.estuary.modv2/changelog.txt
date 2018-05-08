@@ -1,3 +1,7 @@
+[B]2.9.9[/B]
+• Changes in playing trailers on video info (Thanks to jurialmunkey)
+• Minor fixes
+
 [B]2.9.8[/B]
 • KODI 18 : Audio DSP removal
 • Add support for music themes for movies and TV shows (theme.mp3 files) (Thanks to manfeed)

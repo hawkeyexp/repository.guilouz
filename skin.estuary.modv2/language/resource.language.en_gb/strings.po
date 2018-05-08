@@ -1830,7 +1830,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40222"
-msgid "Play trailers on movie information screen"
+msgid "Play trailers in full screen"
 msgstr ""
 
 #: /xml/SkinSettings.xml
@@ -2144,7 +2144,12 @@ msgid "Loading..."
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40285"
+msgctxt "#40398"
+msgid "Parental control related settings."
+msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40398"
 msgid "Enable German Telecast Offers"
 msgstr ""
 

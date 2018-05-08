@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Main\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2018-04-05 22:56+0200\n"
+"PO-Revision-Date: 2018-05-05 22:56+0200\n"
 "Last-Translator: Arahael\n"
 "Language-Team: Polish (Poland)\n"
 "MIME-Version: 1.0\n"
@@ -1512,7 +1512,12 @@ msgctxt "#40158"
 msgid "Forced view for music videos"
 msgstr "Wymuszaj widok dla teledysku"
 
-#: Empty String 40159 /xml/Variables.xml
+#: /xml/SkinSettings.xml
+msgctxt "#40159"
+msgid "Enable music themes for movies and TV shows (theme.mp3 files)"
+msgstr "Włącz motywy muzyczne dla filmów i programów telewizyjnych (plik theme.mp3)"
+
+#: /xml/Variables.xml
 msgctxt "#40160"
 msgid "Power menu-related settings: Configure it to your likings."
 msgstr "Menu zasilania-powiązane ustawienia: Skonfiguruj według własnych upodobań."
@@ -1826,8 +1831,8 @@ msgstr "Zatrzymaj odtwarzanie"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40222"
-msgid "Play trailers on movie information screen"
-msgstr "Odtwórz zwiastuny na ekranie z informacjami o filmie"
+msgid "Play trailers in full screen"
+msgstr "Odtwórz zwiastuny na pełnym ekranie"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40223"

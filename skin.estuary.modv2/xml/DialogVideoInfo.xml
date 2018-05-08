@@ -4,10 +4,11 @@
 	<onload>SetProperty(infobackground,$ESCINFO[ListItem.Art(fanart)],home)</onload>
 	<onunload>ClearProperty(infobackground,home)</onunload>
 	<onunload>ClearProperty(CastPosition,home)</onunload>
+	<onunload condition="String.IsEqual(Window(Home).Property(TrailerPlaying),439)">ClearProperty(TrailerPlaying,Home)</onunload>
 	<controls>
 		<include condition="Window.IsVisible(Custom_1132_MoviesSetsInfo.xml)">DefaultBackground</include>
 		<control type="group">
-			<visible>Skin.HasSetting(TrailerInWindow) + Player.HasVideo + String.IsEqual(ListItem.DBType,movie)</visible>
+			<visible>Player.HasVideo + !Skin.HasSetting(TrailerInWindow) + String.IsEqual(Window(Home).Property(TrailerPlaying),439) + String.IsEqual(ListItem.DBType,movie)</visible>
 			<control type="group">
 				<include>FullScreenDimensions</include>
 				<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
@@ -671,7 +672,7 @@
 				<control type="group">
 					<top>168</top>
 					<left>0</left>
-					<visible>Control.HasFocus(439) + Skin.HasSetting(TrailerInWindow)</visible>
+					<visible>[Control.HasFocus(439) | Control.HasFocus(9004) | Control.HasFocus(9005)] + !Skin.HasSetting(TrailerInWindow)</visible>
 					<control type="image">
 						<left>0</left>
 						<width>1246</width>
@@ -688,14 +689,14 @@
 						<aligny>center</aligny>
 						<font>font36_title</font>
 						<label>$LOCALIZE[40220]</label>
-						<visible>!Player.HasVideo + !Window.IsVisible(DialogBusy.xml)</visible>
+						<visible>!String.IsEqual(Window(Home).Property(TrailerPlaying),439)  + !Window.IsVisible(DialogBusy.xml)</visible>
 					</control>
 					<control type="videowindow">
 						<left>20</left>
 						<top>20</top>
 						<width>1206</width>
 						<height>678</height>
-						<visible>Player.HasVideo</visible>
+						<visible>Player.HasVideo + !Skin.HasSetting(TrailerInWindow) + String.IsEqual(Window(Home).Property(TrailerPlaying),439)</visible>
 					</control>
 				</control>
 				<control type="grouplist" id="5000">
@@ -723,20 +724,24 @@
  						<param name="label" value="$LOCALIZE[1024]" />
   					</include>
 					<include content="InfoDialogButton">
-						<param name="id" value="11" />
+						<param name="id" value="4391" />
 						<param name="icon" value="icons/infodialogs/trailer.png" />
+						<param name="onclick_1" value="SetProperty(TrailerPlaying,4391,Home)" />
+						<param name="onclick_2" value="SetFocus(9002)" />
+						<param name="onclick_3" value="PlayMedia($INFO[ListItem.Trailer],false,1)" />
 						<param name="label" value="$LOCALIZE[20410]" />
-						<param name="visible" value="!String.IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)] + !Skin.HasSetting(TrailerInWindow)" />
+						<param name="visible" value="!String.IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)] + Skin.HasSetting(TrailerInWindow)" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="439" />
 						<param name="icon" value="icons/infodialogs/trailer.png" />
-						<param name="onclick_1" value="PlayMedia($INFO[ListItem.Trailer],1)" />
-						<param name="condition_1" value="!Player.HasVideo" />
-						<param name="onclick_2" value="Stop" />
-						<param name="condition_2" value="Player.HasVideo" />
+						<param name="onclick_1" value="SetProperty(TrailerPlaying,439,Home)" />
+						<param name="onclick_2" value="PlayMedia($INFO[ListItem.Trailer],1)" />
+						<param name="condition_2" value="!Player.HasVideo" />
+						<param name="onclick_3" value="Stop" />
+						<param name="condition_3" value="Player.HasVideo" />
 						<param name="label" value="$VAR[TrailerButtonLabelVar]" />
-						<param name="visible" value="!String.IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)] + Skin.HasSetting(TrailerInWindow)" />
+						<param name="visible" value="!String.IsEmpty(ListItem.Trailer) + ![String.StartsWith(Container.FolderPath,plugin://) + String.Contains(Container.FolderPath,trailer)] + !Skin.HasSetting(TrailerInWindow)" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="440" />
@@ -744,7 +749,7 @@
 						<param name="label" value="$LOCALIZE[31090]" />
 						<param name="onclick_1" value="Action(close)" />
 						<param name="onclick_2" value="RunScript(script.extendedinfo,info=youtubebrowser,id=$INFO[ListItem.Title] $INFO[ListItem.Year])" />
-						<param name="visible" value="System.hasAddon(script.extendedinfo) + [String.IsEqual(ListItem.DBType,movie) | Container.Content(tvshows)] + !Control.IsVisible(11) + !Control.IsVisible(439)" />
+						<param name="visible" value="System.hasAddon(script.extendedinfo) + [String.IsEqual(ListItem.DBType,movie) | Container.Content(tvshows)] + String.IsEmpty(ListItem.Trailer) + !Control.IsVisible(439)" />
 					</include>
 					<include content="InfoDialogButton">
 						<param name="id" value="441" />
@@ -991,5 +996,45 @@
 			</control>	
 		</control>
 		<include condition="Skin.HasSetting(touchmode)">TouchBackButton</include>
+		<control type="button" id="9002">
+			<visible allowhiddenfocus="true">false</visible>
+        	<width>1</width>
+       	 	<height>1</height>
+        	<texturefocus />
+        	<texturenofocus />
+			<onclick condition="!String.IsEmpty(Window(Home).Property(TrailerPlaying)) + Player.HasMedia">Stop</onclick>
+            <onleft condition="!String.IsEmpty(Window(Home).Property(TrailerPlaying)) + Player.HasMedia">Stop</onleft>
+            <onright condition="!String.IsEmpty(Window(Home).Property(TrailerPlaying)) + Player.HasMedia">Stop</onright>
+            <ondown condition="!String.IsEmpty(Window(Home).Property(TrailerPlaying)) + Player.HasMedia">Stop</ondown>
+            <onup condition="!String.IsEmpty(Window(Home).Property(TrailerPlaying)) + Player.HasMedia">Stop</onup>
+            <onback condition="!String.IsEmpty(Window(Home).Property(TrailerPlaying)) + Player.HasMedia">Stop</onback>
+            <oninfo condition="!String.IsEmpty(Window(Home).Property(TrailerPlaying)) + Player.HasMedia">Stop</oninfo>
+            <onclick>SetFocus(9003)</onclick>
+            <onleft>SetFocus(9003)</onleft>
+            <onright>SetFocus(9003)</onright>
+            <onup>SetFocus(9003)</onup>
+            <ondown>SetFocus(9003)</ondown>
+            <onback>SetFocus(9003)</onback>
+            <oninfo>SetFocus(9003)</oninfo>
+            <onback>9003</onback>
+            <oninfo>9003</oninfo>
+         </control>
+         <control type="button" id="9003">
+         	<visible allowhiddenfocus="true">false</visible>
+        	<width>1</width>
+       	 	<height>1</height>
+        	<texturefocus />
+        	<texturenofocus />
+            <onclick>SetFocus(4391)</onclick>
+            <onfocus>SetFocus($INFO[Window(Home).Property(TrailerPlaying)])</onfocus>
+            <onfocus>ClearProperty(TrailerPlaying,Home)</onfocus>
+         </control>
+         <control type="videowindow">
+			<left>0</left>
+			<top>0</top>
+			<width>100%</width>
+			<height>100%</height>
+			<visible>Player.HasVideo + Skin.HasSetting(TrailerInWindow) + String.IsEqual(Window(Home).Property(TrailerPlaying),4391)</visible>
+		</control>
 	</controls>
 </window>

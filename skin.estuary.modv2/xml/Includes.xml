@@ -1820,7 +1820,7 @@
 				<include>FullScreenDimensions</include>
 				<visible>Player.HasVideo</visible>
 				<visible>!Slideshow.IsActive</visible>
-				<visible>!Skin.HasSetting(background_showvideo) + ![Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml)]</visible>
+				<visible>!Skin.HasSetting(background_showvideo) + ![!Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(Window(Home).Property(TrailerPlaying),439)] + ![Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(Window(Home).Property(TrailerPlaying),4391)]</visible>
 			</control>
 			<control type="group">
 				<include>FullScreenDimensions</include>

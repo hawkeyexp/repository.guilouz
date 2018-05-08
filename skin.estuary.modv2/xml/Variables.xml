@@ -3928,6 +3928,7 @@
 		<value condition="Container(9000).HasFocus(8)">$LOCALIZE[40116]</value>
 		<value condition="Container(9000).HasFocus(9)">$LOCALIZE[40113]</value>
 		<value condition="Container(9000).HasFocus(10)">$LOCALIZE[40114]</value>
+		<value condition="Container(9000).HasFocus(11)">$LOCALIZE[40285]</value>
 		<value condition="Control.HasFocus(301)">$LOCALIZE[40130].</value>
 		<value condition="Control.HasFocus(302)">$LOCALIZE[40131].</value>
 		<value condition="Control.HasFocus(303)">$LOCALIZE[40128].</value>
