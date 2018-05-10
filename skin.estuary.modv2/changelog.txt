@@ -1,4 +1,5 @@
 [B]2.9.9[/B]
+• Add video fps flag icon on OSD
 • Changes in playing trailers on video info (Thanks to jurialmunkey)
 • Minor fixes
 
