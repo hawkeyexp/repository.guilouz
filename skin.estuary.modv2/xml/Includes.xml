@@ -3202,6 +3202,27 @@
 					<param name="width" value="86" />
 					<param name="visible" value="!Window.IsVisible(MusicVisualisation.xml)" />
 				</include>
+				<control type="group">
+					<width>155</width>
+					<height>40</height>
+					<visible>!String.IsEmpty(Player.Process(VideoFPS)) + Integer.IsGreater(Player.Process(VideoFPS),0)</visible>
+					<control type="image">
+						<top>5</top>
+						<width>155</width>
+						<height>40</height>
+						<texture>flags/fps.png</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="label">
+						<left>2</left>
+						<width>104</width>
+						<height>40</height>
+						<align>center</align>
+						<top>2</top>
+						<label>$INFO[Player.Process(VideoFPS)]</label>
+						<font>Font-Flag-Small2</font>
+					</control>
+				</control>
 				<include content="MediaFlagOSD">
 					<param name="texture" value="$VAR[VideoPlayerAudioCodecFlagVar]" />
 					<param name="fallback" value="flags/audiocodec/fallback.png" />
