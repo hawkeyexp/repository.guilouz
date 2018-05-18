@@ -2147,3 +2147,8 @@ msgstr "Chargement..."
 msgctxt "#40285"
 msgid "Parental control related settings."
 msgstr "Paramètres relatifs au contrôle parental."
+
+#: /xml/Custom_1101_SettingsList.xml
+msgctxt "#40286"
+msgid "Select Resolution"
+msgstr "Sélectionner la résolution"
