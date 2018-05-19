@@ -2,6 +2,7 @@
 • KODI 18 : Allow user to select resolutions
 • Add video fps flag icon on OSD
 • Changes in playing trailers on video info (Thanks to jurialmunkey)
+• Fix music themes with video addons
 • Minor fixes
 
 [B]2.9.8[/B]
