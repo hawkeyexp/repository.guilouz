@@ -2152,3 +2152,8 @@ msgstr ""
 msgctxt "#40286"
 msgid "Select Resolution"
 msgstr ""
+
+#: /xml/SkinSettings.xml
+msgctxt "#40287"
+msgid "Show fullscreen video info for movies and TV shows"
+msgstr ""

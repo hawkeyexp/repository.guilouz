@@ -1,4 +1,5 @@
 [B]3.0.0[/B]
+• Add setting to disable fullscreen video info for movies and TV shows
 • Minor fixes
 
 [B]2.9.9[/B]
