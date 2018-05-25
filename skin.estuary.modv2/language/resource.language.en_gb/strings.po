@@ -1513,7 +1513,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40159"
-msgid "Enable music themes for movies and TV shows (theme.mp3 files)"
+msgid "Show fullscreen video info for movies and TV shows"
 msgstr ""
 
 #: /xml/Variables.xml
@@ -2151,9 +2151,4 @@ msgstr ""
 #: /xml/Custom_1101_SettingsList.xml
 msgctxt "#40286"
 msgid "Select Resolution"
-msgstr ""
-
-#: /xml/SkinSettings.xml
-msgctxt "#40287"
-msgid "Show fullscreen video info for movies and TV shows"
 msgstr ""

@@ -1513,8 +1513,8 @@ msgstr "Vue forcée pour les clips musicaux"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40159"
-msgid "Enable music themes for movies and TV shows (theme.mp3 files)"
-msgstr "Activer les thèmes musicaux pour les films et séries TV (fichiers theme.mp3)"
+msgid "Show fullscreen video info for movies and TV shows"
+msgstr "Afficher les informations vidéos en plein écran pour les films et séries TV"
 
 #: /xml/Variables.xml
 msgctxt "#40160"
@@ -2152,8 +2152,3 @@ msgstr "Paramètres relatifs au contrôle parental."
 msgctxt "#40286"
 msgid "Select Resolution"
 msgstr "Sélectionner la résolution"
-
-#: /xml/SkinSettings.xml
-msgctxt "#40287"
-msgid "Show fullscreen video info for movies and TV shows"
-msgstr "Afficher les informations vidéos en plein écran pour les films et séries TV"

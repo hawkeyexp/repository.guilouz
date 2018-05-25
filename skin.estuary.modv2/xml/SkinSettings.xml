@@ -95,7 +95,7 @@
                     <onclick>Skin.ToggleSetting(SmallOSDVideo)</onclick>
 				</control>
 				<control type="radiobutton" id="114">
-					<label>$LOCALIZE[40287]</label>
+					<label>$LOCALIZE[40159]</label>
 					<include>DefaultSettingButton</include>
 					<selected>!Skin.HasSetting(ExtendedOSDInfo)</selected>
                     <onclick>Skin.ToggleSetting(ExtendedOSDInfo)</onclick>
@@ -813,12 +813,6 @@
 					<label>$LOCALIZE[40222]</label>
 					<onclick>Skin.ToggleSetting(TrailerInWindow)</onclick>
 					<selected>Skin.HasSetting(TrailerInWindow)</selected>
-				</control>
-				<control type="radiobutton" id="921">
-					<include>DefaultSettingButton</include>
-					<label>$LOCALIZE[40159]</label>
-					<onclick>Skin.ToggleSetting(MusicTheme)</onclick>
-					<selected>!Skin.HasSetting(MusicTheme)</selected>
 				</control>
 				<control type="radiobutton" id="905">
 					<label>$LOCALIZE[40149]</label>
