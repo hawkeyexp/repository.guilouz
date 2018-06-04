@@ -1513,7 +1513,7 @@ msgstr ""
 
 #: /xml/SkinSettings.xml
 msgctxt "#40159"
-msgid "Enable music themes for movies and TV shows (theme.mp3 files)"
+msgid "Show fullscreen video info for movies and TV shows"
 msgstr ""
 
 #: /xml/Variables.xml
@@ -2143,17 +2143,22 @@ msgctxt "#40284"
 msgid "Loading..."
 msgstr ""
 
+#: /xml/Custom_1101_SettingsList.xml
+msgctxt "#40286"
+msgid "Select Resolution"
+msgstr ""
+
 #: /xml/SkinSettings.xml
 msgctxt "#40398"
 msgid "Parental control related settings."
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40398"
-msgid "Enable German Telecast Offers"
+msgctxt "#40500"
+msgid "Opacity for default background"
 msgstr ""
 
 #: /xml/SkinSettings.xml
-msgctxt "#40399"
-msgid "Opacity for default background"
+msgctxt "#40501"
+msgid "Enable German Telecast Offers"
 msgstr ""

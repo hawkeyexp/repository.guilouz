@@ -84,6 +84,12 @@
 					<selected>Skin.HasSetting(SmallOSDVideo)</selected>
 					<onclick>Skin.ToggleSetting(SmallOSDVideo)</onclick>
 				</control>
+				<control type="radiobutton" id="114">
+					<label>$LOCALIZE[40159]</label>
+					<include>DefaultSettingButton</include>
+					<selected>!Skin.HasSetting(ExtendedOSDInfo)</selected>
+                    <onclick>Skin.ToggleSetting(ExtendedOSDInfo)</onclick>
+				</control>
 				<control type="radiobutton" id="105">
 					<label>$LOCALIZE[40230]</label>
 					<include>DefaultSettingButton</include>
@@ -655,7 +661,7 @@
 					<selected>Skin.HasSetting(KioskMode)</selected>
 				</control>
 				<control type="radiobutton" id="510">
-					<label>$LOCALIZE[40398]</label>
+					<label>$LOCALIZE[40501]</label>
 					<include>DefaultSettingButton</include>
 					<onclick>Skin.ToggleSetting(EnableGTO)</onclick>
 					<selected>Skin.HasSetting(EnableGTO)</selected>
@@ -825,12 +831,6 @@
 					<label>$LOCALIZE[40222]</label>
 					<onclick>Skin.ToggleSetting(TrailerInWindow)</onclick>
 					<selected>Skin.HasSetting(TrailerInWindow)</selected>
-				</control>
-				<control type="radiobutton" id="921">
-					<include>DefaultSettingButton</include>
-					<label>$LOCALIZE[40159]</label>
-					<onclick>Skin.ToggleSetting(MusicTheme)</onclick>
-					<selected>!Skin.HasSetting(MusicTheme)</selected>
 				</control>
 				<control type="radiobutton" id="905">
 					<label>$LOCALIZE[40149]</label>
@@ -1192,9 +1192,9 @@
 					<visible>!Skin.HasSetting(enable_default_background)</visible>
 				</control>
 				<control type="button" id="10028">
-					<label>  ∟$LOCALIZE[40399]</label>
+					<label>  ∟$LOCALIZE[40500]</label>
 					<include>DefaultSettingButton</include>
-					<onclick>Skin.SelectBool(40399, 15109|, 40038|opacity_dbg_0, 40039|opacity_dbg_5, 40040|opacity_dbg_10, 40041|opacity_dbg_15, 40042|opacity_dbg_20, 40043|opacity_dbg_25, 40044|opacity_dbg_30, 40045|opacity_dbg_35, 40046|opacity_dbg_40, 40047|opacity_dbg_45, 40048|opacity_dbg_50, 40049|opacity_dbg_55, 40050|opacity_dbg_60, 40051|opacity_dbg_65, 40052|opacity_dbg_70, 40053|opacity_dbg_75, 40054|opacity_dbg_80, 40055|opacity_dbg_85, 40056|opacity_dbg_90, 40057|opacity_dbg_95, 40058|opacity_dbg_100)</onclick>
+					<onclick>Skin.SelectBool(40500, 15109|, 40038|opacity_dbg_0, 40039|opacity_dbg_5, 40040|opacity_dbg_10, 40041|opacity_dbg_15, 40042|opacity_dbg_20, 40043|opacity_dbg_25, 40044|opacity_dbg_30, 40045|opacity_dbg_35, 40046|opacity_dbg_40, 40047|opacity_dbg_45, 40048|opacity_dbg_50, 40049|opacity_dbg_55, 40050|opacity_dbg_60, 40051|opacity_dbg_65, 40052|opacity_dbg_70, 40053|opacity_dbg_75, 40054|opacity_dbg_80, 40055|opacity_dbg_85, 40056|opacity_dbg_90, 40057|opacity_dbg_95, 40058|opacity_dbg_100)</onclick>
 					<label2>$VAR[OpacitySettingDefaultBackground]</label2>
 					<visible>!Skin.HasSetting(enable_default_background)</visible>
 				</control>

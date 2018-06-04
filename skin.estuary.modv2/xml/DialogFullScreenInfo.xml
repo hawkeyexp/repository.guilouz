@@ -5,7 +5,7 @@
 	<onunload condition="!Skin.HasSetting(disable_PauseOnExtraInfos)">PlayerControl(Play)</onunload>
 	<controls>
 		<control type="group">
-			<visible>VideoPlayer.content(movies) | VideoPlayer.Content(episodes)</visible>
+			<visible>[VideoPlayer.content(movies) | VideoPlayer.Content(episodes)] + !Skin.HasSetting(ExtendedOSDInfo)</visible>
 			<include>FullScreenDimensions</include>
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">Conditional</animation>
 			<animation effect="zoom" center="auto" end="102,102" time="0" condition="Integer.IsGreater(System.StereoscopicMode,0)">conditional</animation>
@@ -30,7 +30,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>VideoPlayer.content(movies) | VideoPlayer.Content(episodes)</visible>
+			<visible>[VideoPlayer.content(movies) | VideoPlayer.Content(episodes)] + !Skin.HasSetting(ExtendedOSDInfo)</visible>
 			<centertop>50%</centertop>
 			<height>1080</height>
 			<centerleft>50%</centerleft>
@@ -614,7 +614,7 @@
 			<animation effect="fade" start="100" end="0" time="200" tween="sine" condition="Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) | Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) | Window.IsVisible(script-script.extendedinfo-VideoList.xml)">Conditional</animation>
 			<bottom>0</bottom>
 			<height>70</height>
-			<visible>VideoPlayer.content(movies) | VideoPlayer.Content(episodes)</visible>
+			<visible>[VideoPlayer.content(movies) | VideoPlayer.Content(episodes)] + !Skin.HasSetting(ExtendedOSDInfo)</visible>
 			<control type="grouplist">
 				<orientation>horizontal</orientation>
 				<left>620</left>
