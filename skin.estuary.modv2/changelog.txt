@@ -1,5 +1,6 @@
 [B]3.0.0[/B]
 • KODI 18 : Add 'Advanced settings' button to settings list for Game OSD
+• KODI 18 : Add video rotation setting for Game OSD
 • Add new video info dialog (Thanks to jurialmunkey & VikkiXavier)
 • Add new music info dialog
 • Add new extended info dialog
