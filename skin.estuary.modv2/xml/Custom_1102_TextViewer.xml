@@ -10,14 +10,14 @@
 			<top>0</top>
 			<control type="image">
 				<include>FullScreenDimensions</include>
-				<texture colordiffuse="D9FFFFFF">colors/black.png</texture>
+				<texture colordiffuse="E6FFFFFF">colors/black.png</texture>
 			</control>
 			<control type="label">
 				<left>50</left>
 				<top>50</top>
 				<right>50</right>
 				<height>662</height>
-				<font>font52_title</font>
+				<font>font_MainMenu</font>
 				<label>$INFO[Window(home).Property(TextViewer_Header)]</label>
 				<textcolor>$VAR[SkinColorVar]</textcolor>
 				<scroll>true</scroll>
@@ -28,7 +28,7 @@
 				<right>50</right>
 				<bottom>75</bottom>
 				<pagecontrol>3000</pagecontrol>
-				<font>font37</font>
+				<font>font45</font>
 				<label>$INFO[Window(home).Property(TextViewer_Text)]</label>
 			</control>
 			<control type="scrollbar" id="3000">
