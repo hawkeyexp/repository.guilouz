@@ -111,6 +111,7 @@
 						<onleft condition="!String.IsEmpty(Player.Art(album.back))">1300</onleft>
 						<onright>138</onright>
 						<ondown>5000</ondown>
+						<onup>5002</onup>
 						<texturenofocus border="21"></texturenofocus>
 						<visible>!String.IsEqual(Control.GetLabel(3334),fallback.png)</visible>
 					</control>
@@ -137,6 +138,7 @@
 						<onleft condition="!String.IsEmpty(Player.Art(album.back))">1300</onleft>
 						<onright>138</onright>
 						<ondown>5000</ondown>
+						<onup>5002</onup>
 						<texturenofocus border="21"></texturenofocus>
 						<visible>String.IsEqual(Control.GetLabel(3334),fallback.png)</visible>
 					</control>
