@@ -1190,7 +1190,7 @@
 				<control type="group">
 					<top>5</top>
 					<width>130</width>
-					<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.Rating) + [String.IsEmpty($PARAM[infolabel_prefix]ListItem.Rating(imdb)) + String.IsEmpty($PARAM[infolabel_prefix]ListItem.Rating(themoviedb))]</visible>
+					<visible>!String.IsEmpty($PARAM[infolabel_prefix]ListItem.Rating) + [String.IsEmpty($PARAM[infolabel_prefix]ListItem.Rating(imdb)) + String.IsEmpty($PARAM[infolabel_prefix]ListItem.Rating(themoviedb))] + ![Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(albums) | Container.Content(songs)]</visible>
 					<include content="MediaFlag">
 						<param name="texture" value="flags/rating.png" />
 						<param name="width" value="130" />
