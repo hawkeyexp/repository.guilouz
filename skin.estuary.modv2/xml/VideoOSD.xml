@@ -235,13 +235,13 @@
 					<onclick>ActivateWindow(Teletext)</onclick>
 					<visible>VideoPlayer.HasTeletext</visible>
 				</control>
-				<!--<control type="radiobutton" id="704">
+				<control type="radiobutton" id="704">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/settings-subtitle.png"/>
 					</include>
-					<onclick>ActivateWindow(osdsubtitlesettings)</onclick>
-					<visible>!VideoPlayer.Content(LiveTV) | VideoPlayer.HasSubtitles</visible>
-				</control>-->
+					<onclick>NextSubtitle</onclick>
+					<visible>VideoPlayer.HasSubtitles</visible>
+				</control>
 				<control type="radiobutton" id="70011">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/processinfo.png"/>

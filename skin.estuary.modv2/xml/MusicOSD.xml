@@ -140,7 +140,7 @@
                         <param name="texture" value="osd/fullscreen/buttons/extendedinfo.png"/>
                     </include>
                     <onclick>ActivateWindow(1141)</onclick>
-                    <visible>!Pvr.IsPlayingRadio</visible>
+                    <visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
                 </control>
 				<control type="radiobutton" id="620">
 					<include content="OSDButton">
