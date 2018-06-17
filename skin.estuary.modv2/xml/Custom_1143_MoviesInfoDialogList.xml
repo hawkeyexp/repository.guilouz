@@ -5,7 +5,8 @@
 	<controls>
 		<control type="group">
 			<centerleft>50%</centerleft>
-			<height>500</height>
+			<!--<height>500</height>-->
+			<height>290</height>
 			<centertop>50%</centertop>
 			<width>700</width>
 			<animation effect="fade" time="200">VisibleChange</animation>
@@ -39,7 +40,7 @@
 						<onclick>Skin.ToggleSetting(VideoInfo_MoviesFromMovieSet)</onclick>
                     	<selected>!Skin.HasSetting(VideoInfo_MoviesFromMovieSet)</selected>
 					</control>
-					<control type="radiobutton" id="11103">
+					<!--<control type="radiobutton" id="11103">
 						<width>700</width>
 						<include>DialogSettingButton</include>
 						<label>$LOCALIZE[40295]</label>
@@ -59,7 +60,7 @@
 						<label>$LOCALIZE[40297]</label>
 						<onclick>Skin.ToggleSetting(VideoInfo_StudioMovies)</onclick>
                     	<selected>!Skin.HasSetting(VideoInfo_StudioMovies)</selected>
-					</control>
+					</control>-->
 					<control type="radiobutton" id="11106">
 						<width>700</width>
 						<include>DialogSettingButton</include>
