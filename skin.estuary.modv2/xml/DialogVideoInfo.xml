@@ -565,6 +565,7 @@
 			</include>-->
 			<include content="WidgetListPosterInfo" condition="!String.IsEmpty(ListItem.Set)">
 				<param name="content_path" value="videodb://movies/sets/$INFO[ListItem.SetId]/"/>
+				<param name="onclick" value="RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[ListItem.Label],imdb_id=$INFO[ListItem.IMDBNumber])"/>
 				<param name="sortby" value="year"/>
 				<param name="sortorder" value="ascending"/>
 				<param name="widget_target" value="videos"/>
