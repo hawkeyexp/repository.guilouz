@@ -981,6 +981,7 @@
 			<texturefocus />
 			<texturenofocus />
 			<onup>5000</onup>
+			<ondown condition="!Control.IsVisible(5500) + !Control.IsVisible(5600) + !Control.IsVisible(5700) + !Control.IsVisible(5800) + !Control.IsVisible(5900) + !Control.IsVisible(6000) + !Control.IsVisible(63000)">SetFocus(5002)</ondown>
 			<ondown condition="Control.IsVisible(63000)">SetFocus(63000)</ondown>
 			<ondown condition="Control.IsVisible(6000)">SetFocus(6000)</ondown>
 			<ondown condition="Control.IsVisible(5900)">SetFocus(5900)</ondown>
