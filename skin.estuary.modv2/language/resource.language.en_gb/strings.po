@@ -2220,7 +2220,7 @@ msgstr ""
 
 #: /xml/Custom_1104_InfoDialogList.xml
 msgctxt "#40300"
-msgid "Pictures list"
+msgid "Fanarts list"
 msgstr ""
 
 #: /xml/Variables.xml

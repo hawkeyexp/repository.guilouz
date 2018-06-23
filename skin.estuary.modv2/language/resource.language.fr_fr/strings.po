@@ -2220,8 +2220,8 @@ msgstr "Séries TV similaires"
 
 #: /xml/Custom_1104_InfoDialogList.xml
 msgctxt "#40300"
-msgid "Pictures list"
-msgstr "Liste des images"
+msgid "Fanarts list"
+msgstr "Liste des fanarts"
 
 #: /xml/Variables.xml
 msgctxt "#40301"
