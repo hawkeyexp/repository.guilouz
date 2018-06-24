@@ -1,6 +1,7 @@
 [B]3.0.1[/B]
 • Fix lists on dialog video info
 • Fix some textures
+• Minor fixes
 
 [B]3.0.0[/B]
 • KODI 18 : Add 'Advanced settings' button to settings list for Game OSD

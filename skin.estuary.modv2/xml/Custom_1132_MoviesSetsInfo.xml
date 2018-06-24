@@ -307,7 +307,6 @@
 				<visible>!String.IsEmpty(Container(60).ListItem.Property(SubtitleLanguage.3))</visible>
 			</control>
 		</control>
-		<include condition="Skin.HasSetting(touchmode)">TouchBackButton</include>
 		<control type="group">
 			<left>30</left>
 			<top>600</top>
