@@ -1,6 +1,7 @@
 [B]3.0.1[/B]
 • Fix lists on dialog video info
 • Fix some textures
+• Fix keyboard navigation
 • Minor fixes
 
 [B]3.0.0[/B]
