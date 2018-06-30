@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: KODI Main\n"
 "Report-Msgid-Bugs-To: http://trac.kodi.tv/\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2018-05-29 20:30+0200\n"
+"PO-Revision-Date: 2018-07-01 01:18+0200\n"
 "Last-Translator: Arahael\n"
 "Language-Team: Polish (Poland)\n"
 "MIME-Version: 1.0\n"
@@ -30,7 +30,7 @@ msgstr "Szukaj..."
 #: /xml/SkinSettings.xml
 msgctxt "#31002"
 msgid "Show media fanart as background"
-msgstr "Pokaż fototapety mediów w tle interfejsu"
+msgstr "Pokaż fanarty mediów jako tło"
 
 #: /xml/DialogVideoInfo.xml
 msgctxt "#31003"
@@ -57,9 +57,7 @@ msgctxt "#31007"
 msgid "Unwatched movies"
 msgstr "Nieobejrzane filmy"
 
-#: Missing string 31108
-
-#: /xml/MyVideoNav.xml
+#: Missing string 31108 /xml/MyVideoNav.xml
 msgctxt "#31009"
 msgid "Download icons"
 msgstr "Pobierz ikony"
@@ -122,7 +120,8 @@ msgctxt "#31020"
 msgid "Actions"
 msgstr "Operacje"
 
-#: /xml/AddonBrowser.xml /xml/DialogPVRChannelManager.xml /xml/Includes_MediaMenu.xml /xml/EventLog.xml
+#: /xml/AddonBrowser.xml /xml/DialogPVRChannelManager.xml
+#: /xml/Includes_MediaMenu.xml /xml/EventLog.xml
 msgctxt "#31021"
 msgid "Misc options"
 msgstr "Opcje dodatkowe"
@@ -180,14 +179,15 @@ msgstr "Porządek"
 #: /xml/DialogVideoInfo.xml /xml/DialogSongInfo.xml
 msgctxt "#31033"
 msgid "My rating"
-msgstr "Twoja ocena"
+msgstr "Moja ocena"
 
 #: /xml/DialogVideoInfo.xml
 msgctxt "#31034"
 msgid "Extended info"
 msgstr "Dodatkowe"
 
-#: /xml/DialogPVRChannelManager.xml /xml/DialogPVRChannelsOSD.xml /xml/DialogPVRGuideOSD.xml /xml/Variables.xml /xml/FileBrowser.xm
+#: /xml/DialogPVRChannelManager.xml /xml/DialogPVRChannelsOSD.xml
+#: /xml/DialogPVRGuideOSD.xml /xml/Variables.xml /xml/FileBrowser.xm
 msgctxt "#31035"
 msgid "Pages"
 msgstr "Strony"
@@ -540,12 +540,12 @@ msgstr "Pokaż obrazy na mapie"
 #: /xml/Variables.xml
 msgctxt "#31125"
 msgid "is"
-msgstr ""
+msgstr "jest"
 
 #: /xml/DialogVideoInfo.xml
 msgctxt "#31126"
 msgid "Press [B]OK[/B] to show plot"
-msgstr "Naciśnij kursor Góra, aby przeczytać fabułę"
+msgstr "Naciśnij [B]OK[/B] aby wyświetlić wykres"
 
 #: /xml/Includes_MediaMenu.xml
 msgctxt "#31127"
@@ -670,7 +670,7 @@ msgstr "Nie masz zainstalowanych dodatków tego typu. Zainstaluj dodatek stworzo
 #: /xml/MyWeather.xml
 msgctxt "#31154"
 msgid "Press [B]OK[/B] to switch between locations"
-msgstr "Naciśnij przycisk [B]OK[/B], aby przełączyć się między lokalizacjami"
+msgstr "Naciśnij przycisk [B]OK[/B] aby przełączyć się między lokalizacjami"
 
 #: /xml/VideoOSDBookmarks.xml
 msgctxt "#31155"
@@ -1415,7 +1415,7 @@ msgstr "Plakaty"
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40139"
 msgid "Thumbs without banners"
-msgstr "miniatury bez banerów"
+msgstr "Miniatury bez banerów"
 
 #: /xml/script-skinshortcuts.xml
 msgctxt "#40140"
@@ -1822,12 +1822,12 @@ msgstr "Opcjonalne dodatki"
 #: /xml/Variables.xml
 msgctxt "#40220"
 msgid "Directed by"
-msgstr ""
+msgstr "W reżyserii"
 
 #: /xml/Variables.xml
 msgctxt "#40221"
 msgid "Similar to"
-msgstr ""
+msgstr "Podobny do"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40222"
@@ -1937,7 +1937,7 @@ msgstr "Ostatni odcinek"
 #: /xml/script-NextAired-TVGuide.xml
 msgctxt "#40243"
 msgid "Airs"
-msgstr "?Wkrótce?"
+msgstr "Wkrótce"
 
 #: /xml/SkinSettings.xml
 msgctxt "#40244"
@@ -2153,3 +2153,143 @@ msgstr "Ustawienia związane z kontrolą rodzicielską."
 msgctxt "#40286"
 msgid "Select Resolution"
 msgstr "Ustaw rozdzielczość"
+
+#: /xml/DialogVideoInfo.xml
+msgctxt "#40287"
+msgid "Date added"
+msgstr "Data dodania"
+
+#: /xml/DialogVideoInfo.xml
+msgctxt "#40288"
+msgid "Show extended info"
+msgstr "Pokaż informacje rozszerzone"
+
+#: /xml/Variables.xml
+msgctxt "#40289"
+msgid "By"
+msgstr "Przez"
+
+#: /xml/Variables.xml
+msgctxt "#40290"
+msgid "Movies from movie set"
+msgstr "Filmy z sagi"
+
+#: /xml/Custom_1132_MoviesSetsInfo.xml
+msgctxt "#40291"
+msgid "Press [B]DOWN[/B] to show info from selected movie"
+msgstr "Naciśnij [B]w dół[/B] aby wyświetlić informacje o wybranym filmie"
+
+#: /xml/Variables.xml
+msgctxt "#40292"
+msgid "Lists settings"
+msgstr "Wyświetl ustawienia"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40293"
+msgid "Actors list"
+msgstr "Lista aktorów"
+
+#: /xml/script-script.extendedinfo-DialogVideoInfo.xml
+msgctxt "#40294"
+msgid "Episode count"
+msgstr "Liczba odcinków"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40295"
+msgid "Movies from director"
+msgstr "Filmy reżysera"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40296"
+msgid "Similar movies"
+msgstr "Podobne filmy"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40297"
+msgid "Movies from studio"
+msgstr "Filmy studia"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40298"
+msgid "Next Up episodes"
+msgstr "Następne odcinki do obejrzenia"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40299"
+msgid "Similar TV shows"
+msgstr "Podobne seriale"
+
+#: /xml/Custom_1104_InfoDialogList.xml
+msgctxt "#40300"
+msgid "Fanarts list"
+msgstr "Lista fanartów"
+
+#: /xml/Variables.xml
+msgctxt "#40301"
+msgid "Albums from library"
+msgstr "Albumy biblioteki"
+
+#: /xml/Variables.xml
+msgctxt "#40302"
+msgid "Complete discography"
+msgstr "Pełna dyskografia"
+
+#: /xml/Variables.xml
+msgctxt "#40303"
+msgid "Songs from album"
+msgstr "Utwory z albumu"
+
+#: /xml/DialogMusicInfo.xml
+msgctxt "#40304"
+msgid "Press [B]OK[/B] to show back thumb"
+msgstr ""
+
+#: /xml/script-script.extendedinfo-DialogVideoInfo.xml
+msgctxt "#40305"
+msgid "Episode of the season"
+msgstr "Odcinki sezonu"
+
+#: /xml/Variables.xml
+msgctxt "#40306"
+msgid "Posters"
+msgstr "Plakaty"
+
+#: /xml/Variables.xml
+msgctxt "#40307"
+msgid "Fanarts"
+msgstr "Fanarty"
+
+#: /xml/Variables.xml
+msgctxt "#40308"
+msgid "Resume playback at"
+msgstr "Wznów odtwarzanie w"
+
+#: /xml/script-script.extendedinfo-DialogInfo.xml
+msgctxt "#40309"
+msgid "Press [B]OK[/B] to show biography"
+msgstr "Naciśnij [B]OK[/B] aby wyświetlić biografię"
+
+#: /xml/script-script.extendedinfo-DialogInfo.xml
+msgctxt "#40310"
+msgid "Website"
+msgstr "Strona internetowa"
+
+#: /xml/Variables.xml
+msgctxt "#40311"
+msgid "Role in movie"
+msgstr "Rola w filmie"
+
+#: /xml/Variables.xml
+msgctxt "#40312"
+msgid "Crew member in movie"
+msgstr "Członek zespołu w filmie"
+
+#: /xml/Variables.xml
+msgctxt "#40313"
+msgid "Role in TV show"
+msgstr "Rola w serialu"
+
+#: /xml/Variables.xml
+msgctxt "#40314"
+msgid "Crew member in TV show"
+msgstr "Członek zespołu w serialu"
