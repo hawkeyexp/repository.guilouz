@@ -307,7 +307,6 @@
 				<visible>!String.IsEmpty(Container(60).ListItem.Property(SubtitleLanguage.3))</visible>
 			</control>
 		</control>
-		<include condition="Skin.HasSetting(touchmode)">TouchBackButton</include>
 		<control type="group">
 			<left>30</left>
 			<top>600</top>
@@ -497,7 +496,7 @@
 			<height>12</height>
 			<texture colordiffuse="$VAR[SkinColorVar]">overlays/arrowdown.png</texture>
 			<animation effect="zoom" start="100,0" end="100,100" center="auto" time="200" delay="10">VisibleChange</animation>
-			<visible>ControlGroup(5001).HasFocus | Control.HasFocus(9004)</visible>
+			<visible>ControlGroup(5001).HasFocus</visible>
 		</control>
 		<control type="image">
 			<centerleft>50%</centerleft>

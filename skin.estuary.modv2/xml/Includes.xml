@@ -2002,9 +2002,7 @@
 					<usecontrolcoords>true</usecontrolcoords>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(701)">Conditional</animation>
-					<animation effect="slide" end="-70,0" time="200" reversible="true" condition="!Skin.HasSetting(touchmode) + Window.IsVisible(SkinSettings.xml)">Conditional</animation>
-					<animation effect="slide" end="70,0" time="200" reversible="true" condition="!Skin.HasSetting(touchmode) + Window.IsVisible(script-skinshortcuts.xml)">Conditional</animation>
+					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(799)">Conditional</animation>
 					<visible>![[Window.IsVisible(MyVideoNav.xml) + !Container.Content(addons)] + !Window.IsVisible(script-script.extendedinfo-YoutubeList.xml)] + ![Window.IsVisible(MyMusicNav.xml) + !Container.Content(addons)] + ![Window.IsVisible(MyPics.xml) + !Container.Content(addons)]</visible>
 					<control type="label">
 						<label>$PARAM[breadcrumbs_label]</label>
@@ -2058,7 +2056,7 @@
 					<width>900</width>
 					<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
 					<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
-					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(701)">Conditional</animation>
+					<animation effect="slide" end="70,0" time="200" reversible="true" condition="Control.IsVisible(799)">Conditional</animation>
 					<visible>![Window.IsVisible(MyVideoNav.xml) + !Container.Content(addons)] + ![Window.IsVisible(MyMusicNav.xml) + !Container.Content(addons)] + ![Window.IsVisible(MyPics.xml) + !Container.Content(addons)]</visible>
 				</control>
 				<control type="grouplist">
@@ -2294,7 +2292,7 @@
 				<include>FullScreenDimensions</include>
 				<visible>Player.HasVideo</visible>
 				<visible>!Slideshow.IsActive</visible>
-				<visible>!Skin.HasSetting(background_showvideo) + ![!Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(Window(Home).Property(TrailerPlaying),439)] + ![Skin.HasSetting(TrailerInWindow) + Window.IsVisible(DialogVideoInfo.xml) + String.IsEqual(Window(Home).Property(TrailerPlaying),4391)]</visible>
+				<visible>!Skin.HasSetting(background_showvideo) + ![Player.HasVideo + String.IsEqual(Window(Home).Property(TrailerPlaying),439)]</visible>
 			</control>
 			<control type="group">
 				<include>FullScreenDimensions</include>
@@ -2681,7 +2679,7 @@
 		</control>
 	</include>
 	<include name="TouchBackButton">
-		<control type="radiobutton" id="701">
+		<control type="radiobutton" id="799">
 			<left>-10</left>
 			<top>-25</top>
 			<width>120</width>

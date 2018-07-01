@@ -482,7 +482,6 @@
 				<visible>!String.IsEmpty(ListItem.Property(SubtitleLanguage.3))</visible>
 			</control>
 		</control>
-		<include condition="Skin.HasSetting(touchmode)">TouchBackButton</include>
 		<control type="group">
 			<left>30</left>
 			<top>600</top>
@@ -535,7 +534,7 @@
 				<param name="onfocus" value="SetFocus(9004)"/>
 				<param name="visible" value="!Skin.HasSetting(VideoInfo_TVShowsCastList)"/>
 			</include>
-			<include content="WidgetListCastPlayerInfo" condition="String.IsEmpty(ListItem.DBID) + String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(script.skin.helper.service)">
+			<!--<include content="WidgetListCastPlayerInfo" condition="String.IsEmpty(ListItem.DBID) + String.IsEqual(ListItem.DBTYPE,movie) + System.HasAddon(script.skin.helper.service)">
 				<param name="content_path" value="plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[ListItem.Title]&amp;castaction=extendedinfo"/>
 				<param name="widget_target" value="videos"/>
 				<param name="limit" value="100"/>
@@ -562,9 +561,10 @@
 				<param name="limit" value="100"/>
 				<param name="list_id" value="5400"/>
 				<param name="visible" value="!Skin.HasSetting(VideoInfo_TVShowsCastList)"/>
-			</include>
+			</include>-->
 			<include content="WidgetListPosterInfo" condition="!String.IsEmpty(ListItem.Set)">
 				<param name="content_path" value="videodb://movies/sets/$INFO[ListItem.SetId]/"/>
+				<param name="onclick" value="RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[ListItem.Label],imdb_id=$INFO[ListItem.IMDBNumber])"/>
 				<param name="sortby" value="year"/>
 				<param name="sortorder" value="ascending"/>
 				<param name="widget_target" value="videos"/>
@@ -572,7 +572,7 @@
 				<param name="list_id" value="5500"/>
 				<param name="visible" value="!Skin.HasSetting(VideoInfo_MoviesFromMovieSet)"/>
 			</include>
-			<include content="WidgetListPosterInfo" condition="String.IsEqual(ListItem.DBType,movie)">
+			<!--<include content="WidgetListPosterInfo" condition="String.IsEqual(ListItem.DBType,movie)">
 				<param name="content_path" value="plugin://script.extendedinfo?info=personmovies&amp;&amp;person=$INFO[ListItem.Director]"/>
 				<param name="onclick" value="RunScript(script.extendedinfo,info=extendedinfo,name=$INFO[ListItem.Label],imdb_id=$INFO[ListItem.IMDBNumber])"/>
 				<param name="sortby" value="year"/>
@@ -599,7 +599,7 @@
 				<param name="limit" value="100"/>
 				<param name="list_id" value="5800"/>
 				<param name="visible" value="!Skin.HasSetting(VideoInfo_StudioMovies)"/>
-			</include>
+			</include>-->
 			<include content="WidgetListThumbInfo" condition="!String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(ListItem.DBType,musicvideo)">
 				<param name="content_path" value="videodb://inprogresstvshows/$INFO[ListItem.DBID]/-2/?tvshowid=$INFO[ListItem.DBID]"/>
 				<param name="widget_target" value="videos"/>
@@ -612,14 +612,14 @@
 				<param name="onclick2" value="PlayMedia($ESCINFO[ListItem.FileNameAndPath])"/>
 				<param name="visible" value="!Skin.HasSetting(VideoInfo_NextUpEpisodes)"/>
 			</include>
-			<include content="WidgetListPosterInfo" condition="!String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(ListItem.DBType,musicvideo)">
+			<!--<include content="WidgetListPosterInfo" condition="!String.IsEqual(ListItem.DBType,movie) + !String.IsEqual(ListItem.DBType,musicvideo)">
 				<param name="content_path" value="plugin://script.skin.helper.widgets/?action=similar&amp;mediatype=tvshows&amp;imdbid=$INFO[ListItem.IMDBNumber]"/>
 				<param name="onclick" value="RunScript(script.extendedinfo,info=extendedtvinfo,name=$INFO[ListItem.Label])"/>
 				<param name="widget_target" value="videos"/>
 				<param name="limit" value="100"/>
 				<param name="list_id" value="6000"/>
 				<param name="visible" value="!Skin.HasSetting(VideoInfo_SimilarTVShows)"/>
-			</include>
+			</include>-->
 			<include content="WidgetListThumbInfo" condition="String.IsEqual(ListItem.DBType,movie)">
 				<param name="content_path" value="$VAR[VideoInfoImagesVar]"/>
 				<param name="list_id" value="63000"/>
@@ -980,9 +980,14 @@
 			<texturefocus />
 			<texturenofocus />
 			<onup>5000</onup>
-			<ondown condition="Container.Content(movies) + !String.IsEmpty(ListItem.Set)">5500</ondown>
-			<ondown condition="Container.Content(movies) + String.IsEmpty(ListItem.Set)">5600</ondown>
-			<ondown condition="!Container.Content(movies)">5900</ondown>
+			<ondown condition="!Control.IsVisible(5500) + !Control.IsVisible(5600) + !Control.IsVisible(5700) + !Control.IsVisible(5800) + !Control.IsVisible(5900) + !Control.IsVisible(6000) + !Control.IsVisible(63000)">SetFocus(5002)</ondown>
+			<ondown condition="Control.IsVisible(63000)">SetFocus(63000)</ondown>
+			<ondown condition="Control.IsVisible(6000)">SetFocus(6000)</ondown>
+			<ondown condition="Control.IsVisible(5900)">SetFocus(5900)</ondown>
+			<ondown condition="Control.IsVisible(5800)">SetFocus(5800)</ondown>
+			<ondown condition="Control.IsVisible(5700)">SetFocus(5700)</ondown>
+			<ondown condition="Control.IsVisible(5600)">SetFocus(5600)</ondown>
+			<ondown condition="Control.IsVisible(5500)">SetFocus(5500)</ondown>
 			<onleft>SetFocus(50)</onleft>
 			<onleft>Left</onleft>
 			<onleft>SetFocus(9004)</onleft>

@@ -157,16 +157,6 @@
 					<onright>5000</onright>
 					<onup>140</onup>
 					<ondown condition="Control.IsVisible(63000)">SetFocus(63000)</ondown>
-					<ondown condition="Control.IsVisible(6000)">SetFocus(6000)</ondown>
-					<ondown condition="Control.IsVisible(5900)">SetFocus(5900)</ondown>
-					<ondown condition="Control.IsVisible(5800)">SetFocus(5800)</ondown>
-					<ondown condition="Control.IsVisible(5700)">SetFocus(5700)</ondown>
-					<ondown condition="Control.IsVisible(5600)">SetFocus(5600)</ondown>
-					<ondown condition="Control.IsVisible(5500)">SetFocus(5500)</ondown>
-					<ondown condition="Control.IsVisible(5400)">SetFocus(5400)</ondown>
-					<ondown condition="Control.IsVisible(5300)">SetFocus(5300)</ondown>
-					<ondown condition="Control.IsVisible(5200)">SetFocus(5200)</ondown>
-					<ondown condition="Control.IsVisible(5100)">SetFocus(5100)</ondown>
 					<ondown condition="Control.IsVisible(50)">SetFocus(50)</ondown>
 					<ondown condition="!Control.IsVisible(50) + !Control.IsVisible(5100) + !Control.IsVisible(5200) + !Control.IsVisible(5300) + !Control.IsVisible(5400) + !Control.IsVisible(5500) + !Control.IsVisible(5600) + !Control.IsVisible(5700) + !Control.IsVisible(5800) + !Control.IsVisible(5900) + !Control.IsVisible(6000) + !Control.IsVisible(63000)">SetFocus(5002)</ondown>
 					<align>left</align>
@@ -288,7 +278,7 @@
 				<width>11</width>
 				<height>11</height>
 				<texture colordiffuse="$VAR[SkinColorVar]">frame/puce.png</texture>
-				<visible>Control.HasFocus(9004) | Control.HasFocus(5002) | Control.HasFocus(63000) | Control.HasFocus(50) | Control.HasFocus(5100) | Control.HasFocus(5200) | Control.HasFocus(5300) | Control.HasFocus(5400) | Control.HasFocus(5500) | Control.HasFocus(5600) | Control.HasFocus(5700) | Control.HasFocus(5800) | Control.HasFocus(5900) | Control.HasFocus(6000)</visible>
+				<visible>Control.HasFocus(5002) | Control.HasFocus(63000) | Control.HasFocus(50)</visible>
 			</control>
 			<control type="label">
 				<left>18</left>
