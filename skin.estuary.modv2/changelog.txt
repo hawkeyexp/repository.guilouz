@@ -1,5 +1,6 @@
 [B]3.0.1[/B]
 • Add DefaultMusicSources icon
+• Game : Update avialable views
 • Game OSD : Rename 'View mode' setting label to 'Stretch mode'
 • Game OSD : Rename 'Input settings' setting label to 'Controls'
 • Fix lists on dialog video info
