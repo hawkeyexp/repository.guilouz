@@ -1,4 +1,5 @@
 [B]3.0.1[/B]
+• Add support for CoreELEC settings addon
 • Add DefaultMusicSources icon
 • Game : Update avialable views
 • Game OSD : Rename 'View mode' setting label to 'Stretch mode'
