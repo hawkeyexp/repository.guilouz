@@ -1,7 +1,10 @@
+[B]3.0.2[/B]
+• Minor fixes
+
 [B]3.0.1[/B]
 • Add support for CoreELEC settings addon
 • Add DefaultMusicSources icon
-• Game : Update avialable views
+• Game : Update available views
 • Game OSD : Rename 'View mode' setting label to 'Stretch mode'
 • Game OSD : Rename 'Input settings' setting label to 'Controls'
 • Fix lists on dialog video info
