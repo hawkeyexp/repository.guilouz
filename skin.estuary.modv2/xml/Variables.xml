@@ -3802,6 +3802,8 @@
 	</variable>
 	<variable name="ShiftThumbVar">
 		<value condition="ListItem.IsParentFolder">DefaultFolderBackSquare.png</value>
+		<value condition="!String.IsEmpty(Listitem.Art(poster)) + Container.Content(seasons)">$INFO[Listitem.Art(poster)]</value>
+		<value condition="!String.IsEmpty(Listitem.Art(tvshow.poster)) + Container.Content(seasons)">$INFO[Listitem.Art(tvshow.poster)]</value>
 		<value condition="String.IsEmpty(Listitem.Thumb) + [String.IsEqual(listitem.dbtype,album) | String.IsEqual(listitem.dbtype,artist)]">DefaultAudio.png</value>
 		<value condition="ListItem.IsFolder + String.IsEmpty(ListItem.Thumb)">DefaultFolderSquare.png</value>
 		<value condition="!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)">$INFO[ListItem.Art(animatedposter)]</value>
@@ -3816,6 +3818,13 @@
 		<value>DefaultAudio.png</value>
 	</variable>
 	<variable name="InfoWallThumbVar">
+		<value condition="!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)">$INFO[ListItem.Art(animatedposter)]</value>
+		<value condition="!String.IsEmpty(Listitem.Art(poster))">$INFO[Listitem.Art(poster)]</value>
+		<value condition="!String.IsEmpty(Listitem.Art(tvshow.poster)) + Container.Content(seasons)">$INFO[Listitem.Art(tvshow.poster)]</value>
+		<value condition="Skin.HasSetting(hide_thumbforspoiler) + Integer.IsLess(ListItem.Playcount,1) + String.IsEqual(listitem.dbtype,episode)">$VAR[InfoWidgetThumbVar]</value>
+		<value>$INFO[ListItem.Icon]</value>
+	</variable>
+	<variable name="InfoWallThumbVar2">
 		<value condition="!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)">$INFO[ListItem.Art(animatedposter)]</value>
 		<value condition="!String.IsEmpty(Listitem.Art(poster))">$INFO[Listitem.Art(poster)]</value>
 		<value condition="Skin.HasSetting(hide_thumbforspoiler) + Integer.IsLess(ListItem.Playcount,1) + String.IsEqual(listitem.dbtype,episode)">$VAR[InfoWidgetThumbVar]</value>
@@ -3835,7 +3844,8 @@
 	</variable>
 	<variable name="IconWallPosterVar">
 		<value condition="!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)">$INFO[ListItem.Art(animatedposter)]</value>
-		<value condition="!String.IsEmpty(ListItem.Art(season.poster)) + Container.Content(episodes)">$INFO[ListItem.Art(season.poster)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(season.poster)) + [Container.Content(episodes) | Container.Content(seasons)]">$INFO[ListItem.Art(season.poster)]</value>
+		<value condition="!String.IsEmpty(ListItem.Art(tvshow.poster)) + [Container.Content(episodes) | Container.Content(seasons)]">$INFO[ListItem.Art(tvshow.poster)]</value>
 		<value>$INFO[Listitem.Art(poster)]</value>
 	</variable>
 	<variable name="IconWallThumbVar">
@@ -3856,6 +3866,8 @@
 		<value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.coloured/)">$INFO[ListItem.Label,resource://resource.images.studios.coloured/,.png]</value>
 		<value condition="String.IsEqual(listitem.dbtype,studio) + String.IsEqual(Skin.String(studiologos.path),resource://resource.images.studios.squarehd/)">$INFO[ListItem.Label,resource://resource.images.studios.squarehd/,.jpg]</value>
 		<value condition="!String.IsEmpty(ListItem.Art(animatedposter)) + Skin.HasSetting(Skin_EnableAnimatedPosters)">$INFO[ListItem.Art(animatedposter)]</value>
+		<value condition="!String.IsEmpty(Listitem.Art(poster)) + Container.Content(seasons)">$INFO[Listitem.Art(poster)]</value>
+		<value condition="!String.IsEmpty(Listitem.Art(tvshow.poster)) + Container.Content(seasons)">$INFO[Listitem.Art(tvshow.poster)]</value>
 		<value condition="!String.IsEmpty(ListItem.Thumb)">$INFO[ListItem.Thumb]</value>
 		<value>$INFO[ListItem.Icon]</value>
 	</variable>
@@ -4355,6 +4367,9 @@
 	<variable name="BreadcrumbsPVRSearchVar">
 		<value condition="Window.IsActive(TVSearch)">$LOCALIZE[19020] / $LOCALIZE[137]</value>
 		<value>$LOCALIZE[19021] / $LOCALIZE[137]</value>
+	</variable>
+	<variable name="BreadcrumbsGameVar">
+		<value>$LOCALIZE[15016]</value>
 	</variable>
 	<variable name="RepeatButtonColordiffuseVar">
 		<value condition="Control.HasFocus(704)">$VAR[SkinColorVar]</value>

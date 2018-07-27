@@ -1221,7 +1221,7 @@
 		<param name="focused">false</param>
 		<definition>
 			<control type="group">
-				<visible>String.IsEmpty(ListItem.Art(poster))</visible>
+				<visible>[String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(tvshow.poster))]</visible>
 				<control type="image">
 					<left>13</left>
 					<top>-12</top>
@@ -1317,7 +1317,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!String.IsEmpty(ListItem.Art(poster))</visible>
+				<visible>![String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(tvshow.poster))]</visible>
 				<control type="image">
 					<left>9</left>
 					<top>-16</top>
@@ -2055,7 +2055,7 @@
 				<preloaditems>2</preloaditems>
 				<pagecontrol>531</pagecontrol>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
-				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(images) | Container.Content(videos)</visible>
+				<visible>Container.Content(artists) | Container.Content(albums) | Container.Content(sets) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(images) | Container.Content(videos) | Container.Content(games)</visible>
 				<itemlayout height="445" width="320" condition="Container.Content(movies) | Container.Content(sets) | Container.Content(tvshows) | Container.Content(seasons)">
 					<control type="group">
 						<left>30</left>
