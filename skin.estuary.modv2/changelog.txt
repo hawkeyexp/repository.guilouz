@@ -1,4 +1,5 @@
 [B]3.0.2[/B]
+• Add 'sorty by' and 'sort order' for epg grid channels
 • Minor fixes
 
 [B]3.0.1[/B]
