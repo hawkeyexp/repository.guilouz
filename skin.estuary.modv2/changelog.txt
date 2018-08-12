@@ -1,5 +1,8 @@
+[B]3.0.3[/B]
+• Add 'HDTV', 'VSH' and 'HDDVD' flag icons
+
 [B]3.0.2[/B]
-• Add 'sorty by' and 'sort order' for epg grid channels
+• KODI 18 : Add 'sorty by' and 'sort order' for epg grid channels
 • Add 'mp3float' flag icon
 • Fix TV Shows ratings in some views
 • Minor fixes
