@@ -1,5 +1,6 @@
 [B]3.0.3[/B]
 • Add 'HDTV', 'VSH' and 'HDDVD' flag icons
+• Fix condition for focus on the stop button
 
 [B]3.0.2[/B]
 • KODI 18 : Add 'sorty by' and 'sort order' for epg grid channels
