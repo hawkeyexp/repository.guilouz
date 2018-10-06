@@ -5,7 +5,7 @@
 • KODI 18 : Game OSD - Show help dialog on first view
 • KODI 18 : Game OSD - Finish renaming 'View mode' to 'Stretch mode'
 • KODI 18 : Game OSD - Extend help dialog to explain lack of remote support
-• Add 'HDTV', 'VSH' and 'HDDVD' flag icons
+• Add 'HDTV', 'VHS' and 'HDDVD' flag icons
 • Fix condition for focus on the stop button
 • Minor fixes
 
