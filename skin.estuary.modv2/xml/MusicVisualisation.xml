@@ -4,7 +4,7 @@
 	<backgroundcolor>background</backgroundcolor>
 	<controls>
 		<include>ColoredBackgroundImages</include>
-		<control type="visualisation">
+		<control type="visualisation" id="2">
 			<include>FullScreenDimensions</include>
 			<visible>Player.HasAudio</visible>
 			<visible>Skin.HasSetting(enable_visualisation) + Skin.HasSetting(show_visualisationbehind)</visible>
@@ -25,7 +25,7 @@
 			<animation effect="slide" start="-30,-30" end="30,30" time="6000" tween="sine" easing="inout" pulse="true" condition="Skin.HasSetting(animate_artistslideshow)">Conditional</animation>
 			<visible>!Skin.HasSetting(hide_background_fanart)</visible>
 		</control>
-		<control type="visualisation">
+		<control type="visualisation" id="2">
 			<include>FullScreenDimensions</include>
 			<visible>Player.HasAudio</visible>
 			<visible>Skin.HasSetting(enable_visualisation) + !Skin.HasSetting(show_visualisationbehind)</visible>

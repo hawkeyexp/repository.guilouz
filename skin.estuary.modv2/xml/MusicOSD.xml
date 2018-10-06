@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
+	<onload condition="!Player.PauseEnabled">SetFocus(603)</onload>
 	<depth>DepthOSD</depth>
 	<defaultcontrol always="true">602</defaultcontrol>
 	<include>Animation_BottomSlide</include>
@@ -47,13 +48,14 @@
 						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
 					</include>
 					<onclick>PlayerControl(Previous)</onclick>
+					<visible>MusicPlayer.HasPrevious | Player.SeekEnabled</visible>
 				</control>
 				<control type="radiobutton" id="601">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/rewind.png"/>
 					</include>
 					<onclick>PlayerControl(Rewind)</onclick>
-					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream</visible>
+					<visible>!Pvr.IsPlayingRadio + !Player.IsInternetStream + !MusicPlayer.Content(livetv)</visible>
 				</control>
 				<control type="radiobutton" id="602">
 					<textureradioonfocus colordiffuse="white">osd/fullscreen/buttons/play.png</textureradioonfocus>
@@ -75,6 +77,7 @@
 					<radioposy>0</radioposy>
 					<selected>Player.Paused</selected>
 					<onclick>PlayerControl(Play)</onclick>
+					<visible>Player.PauseEnabled</visible>
 					<visible>!Player.Rewinding + !Player.Forwarding</visible>
 				</control>
 				<control type="radiobutton" id="6021">
@@ -102,7 +105,7 @@
 						<param name="texture" value="osd/fullscreen/buttons/next.png"/>
 					</include>
 					<onclick>PlayerControl(Next)</onclick>
-					<visible>MusicPlayer.HasNext</visible>
+					<visible>MusicPlayer.HasNext | [MusicPlayer.Content(LiveTV) + Player.SeekEnabled]</visible>
 					<visible>!Pvr.IsPlayingRadio</visible>
 				</control>
 				<control type="radiobutton" id="6051">

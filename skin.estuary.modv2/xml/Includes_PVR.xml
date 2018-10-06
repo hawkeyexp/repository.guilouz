@@ -118,16 +118,6 @@
 				<width>200</width>
 				<height>195</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<texture>$INFO[ListItem.Icon]</texture>	
-				<visible>!Player.HasVideo</visible>
-				<visible>String.IsEmpty(Control.GetLabel(25000))</visible>
-			</control>
-			<control type="image" id="25000">
-				<left>630</left>
-				<top>137</top>
-				<width>200</width>
-				<height>195</height>
-				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<texture>$VAR[PVRArtworksVar]</texture>
 			</control>
 			<control type="group">

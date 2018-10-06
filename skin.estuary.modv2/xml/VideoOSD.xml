@@ -53,16 +53,14 @@
 						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
 					</include>
 					<onclick>PlayerControl(Previous)</onclick>
-					<visible>!VideoPlayer.Content(livetv)</visible>
-					<visible>player.chaptercount</visible>
+					<visible>Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1) | Player.SeekEnabled</visible>
 				</control>
 				<control type="radiobutton" id="6001">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/previous.png"/>
 					</include>
 					<onclick>PlayerControl(BigSkipBackward)</onclick>
-					<visible>!VideoPlayer.Content(livetv)</visible>
-					<visible>!player.chaptercount</visible>
+					<visible>!VideoPlayer.Content(livetv) + !Player.ChapterCount</visible>
 				</control>
 				<control type="radiobutton" id="601">
 					<include content="OSDButton">
@@ -119,16 +117,14 @@
 						<param name="texture" value="osd/fullscreen/buttons/next.png"/>
 					</include>
 					<onclick>PlayerControl(Next)</onclick>
-					<visible>!VideoPlayer.Content(livetv)</visible>
-					<visible>player.chaptercount</visible>
+					<visible>Player.ChapterCount | Integer.IsGreater(Playlist.Length(video),1) | [VideoPlayer.Content(LiveTV) + Player.SeekEnabled]</visible>
 				</control>
 				<control type="radiobutton" id="6051">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/next.png"/>
 					</include>
 					<onclick>PlayerControl(BigSkipForward)</onclick>
-					<visible>!VideoPlayer.Content(livetv)</visible>
-					<visible>!player.chaptercount</visible>
+					<visible>!VideoPlayer.Content(livetv) + !Player.ChapterCount</visible>
 				</control>
 				<control type="radiobutton" id="804">
 					<include content="OSDButton">
@@ -181,7 +177,7 @@
 					</include>
 					<onclick>Dialog.Close(VideoOSD)</onclick>
 					<onclick>ActivateWindow(pvrchannelguide)</onclick>
-					<visible>VideoPlayer.Content(livetv)</visible>
+					<visible>VideoPlayer.Content(livetv) + VideoPlayer.HasEPG</visible>
 				</control>
 				<control type="radiobutton" id="70042">
 					<include content="OSDButton">
@@ -307,7 +303,7 @@
 					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
 					<info>Player.Progress</info>
 					<action>seek</action>
-					<visible>!Control.HasFocus(87) + !VideoPlayer.HasEpg</visible>
+					<visible>!Control.HasFocus(87) + !VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="slider">
 					<top>-5</top>
@@ -324,7 +320,7 @@
 					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
 					<info>Player.Progress</info>
 					<action>seek</action>
-					<visible>Control.HasFocus(87) + !VideoPlayer.HasEpg</visible>
+					<visible>Control.HasFocus(87) + !VideoPlayer.Content(LiveTV)</visible>
 				</control>	
 				<control type="slider">
 					<top>-5</top>
@@ -339,8 +335,8 @@
 					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
 					<textureslidernib>osd/progress/nub_leftright.png</textureslidernib>
 					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
-					<info>PVR.EpgEventProgress</info>
-					<visible>!Control.HasFocus(87) + VideoPlayer.HasEpg</visible>
+					<info>PVR.TimeshiftProgressPlayPos</info>
+					<visible>!Control.HasFocus(87) + VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="slider">
 					<top>-5</top>
@@ -355,8 +351,8 @@
 					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_leftright.png</texturesliderbar>
 					<textureslidernib colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernib>
 					<textureslidernibfocus colordiffuse="$VAR[SkinColorVar]">osd/progress/nub_leftright.png</textureslidernibfocus>
-					<info>PVR.EpgEventProgress</info>
-					<visible>Control.HasFocus(87) + VideoPlayer.HasEpg</visible>
+					<info>PVR.TimeshiftProgressPlayPos</info>
+					<visible>Control.HasFocus(87) + VideoPlayer.Content(LiveTV)</visible>
 				</control>
 			</control>
 		</control>

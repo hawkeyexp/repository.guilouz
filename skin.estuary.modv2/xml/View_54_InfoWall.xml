@@ -1221,7 +1221,7 @@
 		<param name="focused">false</param>
 		<definition>
 			<control type="group">
-				<visible>[String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(tvshow.poster))]</visible>
+				<visible>[String.IsEmpty(ListItem.Art(poster) + String.IsEmpty(ListItem.Art(tvshow.poster) + String.IsEmpty(ListItem.Art(season.poster) + String.IsEmpty(ListItem.Art(animatedposter)]</visible>
 				<control type="image">
 					<left>13</left>
 					<top>-12</top>
@@ -1317,7 +1317,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>![String.IsEmpty(ListItem.Art(poster)) + String.IsEmpty(ListItem.Art(tvshow.poster))]</visible>
+				<visible>![String.IsEmpty(ListItem.Art(poster) + String.IsEmpty(ListItem.Art(tvshow.poster) + String.IsEmpty(ListItem.Art(season.poster) + String.IsEmpty(ListItem.Art(animatedposter)]</visible>
 				<control type="image">
 					<left>9</left>
 					<top>-16</top>
