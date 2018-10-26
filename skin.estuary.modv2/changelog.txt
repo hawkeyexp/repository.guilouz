@@ -1,3 +1,6 @@
+[B]3.0.4[/B]
+• Minor fixes
+
 [B]3.0.3[/B]
 • KODI 18 : Video OSD - Hide 'Previous' button for non-seekable streams
 • KODI 18 : Game - Add controller description
