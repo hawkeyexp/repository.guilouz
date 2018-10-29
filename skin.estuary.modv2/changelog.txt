@@ -1,4 +1,5 @@
 [B]3.0.4[/B]
+• KODI 18 : Add GUI for Radio Data System (RDS)
 • Add support for 'Next Up' addon by im85288
 • Minor fixes
 
