@@ -4143,6 +4143,7 @@
 		<value condition="Control.HasFocus(70042)">$LOCALIZE[19033]</value>
 		<value condition="Control.HasFocus(70043)">$LOCALIZE[5]</value>
 		<value condition="Control.HasFocus(70044)">$LOCALIZE[40280] : $VAR[ScopeSettingLabel2Var]</value>
+		<value condition="Control.HasFocus(70045)">$LOCALIZE[19033]</value>
 		<value condition="Control.HasFocus(255)">$LOCALIZE[36501]</value>
 	</variable>
 	<variable name="MusicOSDHelpTextVar">
@@ -4165,9 +4166,10 @@
 		<value condition="Control.HasFocus(607)">$LOCALIZE[590] : $LOCALIZE[16039]</value>
 		<value condition="Control.HasFocus(703)">$LOCALIZE[24013]</value>
 		<value condition="Control.HasFocus(5000)">$LOCALIZE[10004]</value>
-		<value condition="Control.HasFocus(62040)">$LOCALIZE[19019]</value>
-		<value condition="Control.HasFocus(62041)">$LOCALIZE[19069]</value>
-		<value condition="Control.HasFocus(62042)">$LOCALIZE[29900]</value>
+		<value condition="Control.HasFocus(62040)">$LOCALIZE[19033]</value>
+		<value condition="Control.HasFocus(62041)">$LOCALIZE[19019]</value>
+		<value condition="Control.HasFocus(62042)">$LOCALIZE[19069]</value>
+		<value condition="Control.HasFocus(62043)">$LOCALIZE[29900]</value>
 	</variable>
 	<variable name="SkinSettingsHelpTextVar">
 		<value condition="Container(9000).HasFocus(1)">$LOCALIZE[31129]</value>

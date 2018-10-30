@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<onload condition="!Player.PauseEnabled">SetFocus(603)</onload>
-	<depth>DepthOSD</depth>
 	<defaultcontrol always="true">602</defaultcontrol>
 	<include>Animation_BottomSlide</include>
+	<depth>DepthOSD</depth>
 	<controls>
 		<control type="button">
 			<description>background close area</description>
@@ -147,13 +147,20 @@
                 </control>
                 <control type="radiobutton" id="62040">
 					<include content="OSDButton">
+						<param name="texture" value="osd/fullscreen/buttons/information.png"/>
+					</include>
+					<onclick>Info</onclick>
+					<visible>MusicPlayer.Content(LiveTV)</visible>
+				</control>
+                <control type="radiobutton" id="62041">
+					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/channels.png"/>
 					</include>
 					<onclick>Dialog.Close(MusicOSD)</onclick>
 					<onclick>ActivateWindow(PVROSDChannels)</onclick>
 					<visible>MusicPlayer.Content(LiveTV)</visible>
 				</control>
-				<control type="radiobutton" id="62041">
+				<control type="radiobutton" id="62042">
 					<include content="OSDButton">
 						<param name="texture" value="osd/fullscreen/buttons/guide.png"/>
 					</include>
@@ -161,13 +168,12 @@
 					<onclick>ActivateWindow(PVRChannelGuide)</onclick>
 					<visible>MusicPlayer.Content(LiveTV) + VideoPlayer.HasEPG</visible>
 				</control>
-				<control type="radiobutton" id="62042">
+				<control type="radiobutton" id="62043">
 					<include content="OSDButton">
-						<param name="texture" value="osd/fullscreen/buttons/information.png"/>
+						<param name="texture" value="osd/fullscreen/buttons/rds.png"/>
 					</include>
-					<onclick>Dialog.Close(MusicOSD)</onclick>
-					<onclick>ActivateWindow(PVRRadioRDSInfo)</onclick>
-					<visible>MusicPlayer.Content(LiveTV) + RDS.HasRadiotext</visible>
+					<onclick>Info</onclick>
+					<visible>MusicPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="radiobutton" id="620">
 					<include content="OSDButton">
