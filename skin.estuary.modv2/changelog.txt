@@ -1,5 +1,17 @@
+[B]3.0.4[/B]
+• KODI 18 : Add GUI for Radio Data System (RDS)
+• Add support for 'Next Up' addon by im85288
+• Video OSD and Music OSD enhancements/fixes
+• Minor fixes
+
 [B]3.0.3[/B]
-• Add 'HDTV', 'VSH' and 'HDDVD' flag icons
+• KODI 18 : Video OSD - Hide 'Previous' button for non-seekable streams
+• KODI 18 : Game - Add controller description
+• KODI 18 : Game - Add 'Get all' button to controller dialog
+• KODI 18 : Game OSD - Show help dialog on first view
+• KODI 18 : Game OSD - Finish renaming 'View mode' to 'Stretch mode'
+• KODI 18 : Game OSD - Extend help dialog to explain lack of remote support
+• Add 'HDTV', 'VHS' and 'HDDVD' flag icons
 • Fix condition for focus on the stop button
 • Minor fixes
 
