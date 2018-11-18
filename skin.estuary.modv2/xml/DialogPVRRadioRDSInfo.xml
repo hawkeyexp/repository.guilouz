@@ -14,7 +14,6 @@
 			<height>1080</height>
 			<centerleft>50%</centerleft>
 			<width>1920</width>
-
 			<control type="image">
 				<left>120</left>
 				<top>160</top>
@@ -66,7 +65,6 @@
 					<param name="value" value="RDS.Comment" />
 				</include>
 			</control>
-
 			<control type="image">
 				<left>120</left>
 				<top>575</top>
@@ -102,7 +100,6 @@
 					<param name="value" value="RDS.SMSStudio" />
 				</include>
 			</control>
-
 			<control type="image">
 				<left>970</left>
 				<top>160</top>
@@ -154,7 +151,6 @@
 					<param name="value" value="RDS.ProgHomepage" />
 				</include>
 			</control>
-
 			<control type="image">
 				<left>970</left>
 				<top>575</top>
@@ -186,7 +182,6 @@
 					<param name="value" value="RDS.EmailHotline" />
 				</include>
 			</control>
-
 			<control type="image">
 				<left>120</left>
 				<top>810</top>
@@ -214,7 +209,6 @@
 					<autoscroll delay="5000" time="3000" repeat="10000">true</autoscroll>
 				</control>
 			</control>
-
 			<control type="image">
 				<left>970</left>
 				<top>810</top>
@@ -232,7 +226,6 @@
 					<font>font36_title</font>
 					<label>$LOCALIZE[14304]</label>
 				</control>
-
 				<control type="label">
 					<top>50</top>
 					<width>780</width>
@@ -265,37 +258,11 @@
 					<label>$INFO[RDS.GetLine(0)]</label>
 					<scroll>true</scroll>
 				</control>
-
-<!--				<control type="grouplist">
-					<top>50</top>
-					<width>780</width>
-					<height>170</height>
-					<orientation>vertical</orientation>
-					<include content="RDSInfoLine">
-						<param name="value" value="RDS.GetLine(3)" />
-					</include>
-					<include content="RDSInfoLine">
-						<param name="value" value="RDS.GetLine(2)" />
-					</include>
-					<include content="RDSInfoLine">
-						<param name="value" value="RDS.GetLine(1)" />
-					</include>
-					<include content="RDSInfoLine">
-						<param name="value" value="RDS.GetLine(0)" />
-					</include>
-				</control> -->
-<!--				<control type="textbox">
-					<top>50</top>
-					<width>780</width>
-					<height>170</height>
-					<align>justify</align>
-					<label>$INFO[RDS.GetLine(3)][CR]$INFO[RDS.GetLine(2)][CR]$INFO[RDS.GetLine(1)][CR]$INFO[RDS.GetLine(0)]</label>
-				</control> -->
 			</control>
-
 			<include content="InfoDialogTopBarInfo">
 				<param name="main_label" value="$LOCALIZE[29900]" />
-				<param name="sub_label" value="[COLOR grey]$VAR[RDSInfoSubTitle][/COLOR]" />
+				<param name="sub_label" value="[COLOR white]$VAR[RDSInfoSubTitle][/COLOR]" />
+				<param name="subtextcolor" value="$VAR[SkinColorVar]" />
 				<param name="posy" value="40" />
 			</include>
 		</control>

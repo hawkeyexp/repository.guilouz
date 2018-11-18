@@ -1,6 +1,8 @@
 [B]3.0.4[/B]
+• KODI 18 : Bump target GUI API to 5.14.0
 • KODI 18 : Add GUI for Radio Data System (RDS)
 • Add support for 'Next Up' addon by im85288
+• Add 8K flag icon
 • Video OSD and Music OSD enhancements/fixes
 • Minor fixes
 
