@@ -3457,21 +3457,7 @@
 						<font>font37</font>
 						<scroll>true</scroll>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<visible>Window.IsVisible(MusicVisualisation.xml) + String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
-					</control>
-					<control type="label">
-						<left>460</left>
-						<bottom>270</bottom>
-						<right>30</right>
-						<height>30</height>
-						<width>36.5%</width>
-						<label>[B]$INFO[MusicPlayer.TrackNumber,,. ]$INFO[MusicPlayer.Title][/B]</label>
-						<scroll>true</scroll>
-						<font>font37</font>
-						<scroll>true</scroll>
-						<textcolor>$VAR[SkinColorVar]</textcolor>
-						<scroll>true</scroll>
-						<visible>Window.IsVisible(MusicVisualisation.xml) + !String.IsEmpty(MusicPlayer.Offset(1).Title)</visible>
+						<visible>Window.IsVisible(MusicVisualisation.xml)</visible>
 					</control>
 					<control type="label">
 						<left>460</left>
@@ -3610,7 +3596,21 @@
 						<font>font12</font>
 						<textcolor>$VAR[SkinColorVar]</textcolor>
 						<scroll>true</scroll>
-						<visible>VideoPlayer.HasEpg + VideoPlayer.Content(LiveTV)</visible>
+						<visible>VideoPlayer.HasEpg + !RDS.HasRadioText</visible>
+						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
+						<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
+					</control>
+					<control type="label">
+						<left>1185</left>
+						<bottom>210</bottom>
+						<right>30</right>
+						<height>30</height>
+						<align>right</align>
+						<label>$LOCALIZE[14304][COLOR white] : $INFO[RDS.GetLine(0)][/COLOR]</label>
+						<font>font12</font>
+						<textcolor>$VAR[SkinColorVar]</textcolor>
+						<scroll>true</scroll>
+						<visible>RDS.HasRadioText</visible>
 						<visible>!Window.IsVisible(playerprocessinfo) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(1122) + !Window.IsVisible(1139)</visible>
 						<animation effect="slide" end="0,-45" time="50" tween="sine" easing="out" condition="PVR.IsTimeShift + !Player.ChannelPreviewActive">Conditional</animation>
 					</control>
@@ -3622,7 +3622,19 @@
 				<right>30</right>
 				<height>30</height>
 				<label>$VAR[SeekLabel]</label>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
 				<font>font12</font>
+				<visible>![Integer.IsGreater(Playlist.Length,1) + Integer.IsGreater(Playlist.Position,0)]</visible>
+			</control>
+			<control type="label">
+				<left>460</left>
+				<bottom>105</bottom>
+				<right>30</right>
+				<height>30</height>
+				<label>$VAR[SeekLabel] - [COLOR white]$LOCALIZE[554] $INFO[Playlist.Position]/$INFO[Playlist.Length][/COLOR]</label>
+				<textcolor>$VAR[SkinColorVar]</textcolor>
+				<font>font12</font>
+				<visible>Integer.IsGreater(Playlist.Length,1) + Integer.IsGreater(Playlist.Position,0)</visible>
 			</control>
 			<control type="label">
 				<left>460</left>
@@ -4031,6 +4043,17 @@
 			<height>30</height>
 			<label>$VAR[SeekLabel]</label>
 			<font>font12</font>
+			<visible>![Integer.IsGreater(Playlist.Length,1) + Integer.IsGreater(Playlist.Position,0)]</visible>
+		</control>
+		<control type="label">
+			<left>30</left>
+			<bottom>105</bottom>
+			<right>30</right>
+			<height>30</height>
+			<label>$VAR[SeekLabel] - [COLOR white]$INFO[Playlist.Position, $LOCALIZE[554]]$INFO[Playlist.Length,/][/COLOR]</label>
+			<textcolor>$VAR[SkinColorVar]</textcolor>
+			<font>font12</font>
+			<visible>Integer.IsGreater(Playlist.Length,1) + Integer.IsGreater(Playlist.Position,0)</visible>
 		</control>
 		<control type="label">
 			<left>30</left>
