@@ -3,6 +3,8 @@
 • KODI 18 : Add GUI for Radio Data System (RDS)
 • Add support for 'Next Up' addon by im85288
 • Add 8K flag icon
+• Add Rip audio-cd from 'Disc' on home menu
+• Add Hebrew and Armenian typefaces to the fonts
 • Video OSD and Music OSD enhancements/fixes
 • Minor fixes
 
