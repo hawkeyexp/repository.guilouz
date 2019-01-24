@@ -1,6 +1,10 @@
 [B]3.0.5[/B]
 • Add number of bits per sample on music OSD
+• Add Russian translation by salashnik
+• Add Czech translation by Pavuucek
+• Add Spanish translation by notorius28
 • Display seekbar on showtime action
+• Improve detection of audio CDs using an infobool
 • Fix Holidays themes
 • Minor fixes
 
