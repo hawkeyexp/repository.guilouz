@@ -1,3 +1,6 @@
+[B]3.0.6[/B]
+• Keyboard layout fixes
+
 [B]3.0.5[/B]
 • Add number of bits per sample on music OSD
 • Add Russian translation by salashnik
