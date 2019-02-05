@@ -1,5 +1,6 @@
 [B]3.0.6[/B]
 • Keyboard layout fixes
+• Fix for web-dl flag icon with movies have 'web' word in their names
 
 [B]3.0.5[/B]
 • Add number of bits per sample on music OSD
